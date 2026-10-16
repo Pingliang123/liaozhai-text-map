@@ -504,6 +504,11 @@
   ],
   "artifacts": [
     {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -511,7 +516,7 @@
     {
       "path": "data-package.json",
       "bytes": 21612145,
-      "sha256": "375822d0507a04fa53504e5ed259dad43cd1da1977dfd4caefd18366faded724"
+      "sha256": "c0b44aff2724abab66efbeadea61e255dba892808f909d6e573d86a09cea1986"
     },
     {
       "path": "data.html",
@@ -531,7 +536,7 @@
     {
       "path": "research-data.zip",
       "bytes": 22464186,
-      "sha256": "16a5f218a87a29fca9e8395a5688d780f8fc1fa17bee5fb2bfc0761c15dbe734"
+      "sha256": "c50173719fd815bb9a4d3d17c78ca5f7710b2482038db5fdeb204e26f54cc3f9"
     }
   ]
 }
