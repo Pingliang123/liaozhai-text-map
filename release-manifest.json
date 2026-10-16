@@ -133,8 +133,8 @@
     },
     {
       "path": "outputs/ghost_map_app.js",
-      "bytes": 149993,
-      "sha256": "28729259c5b88a74ef3f10d2e823a62b49dedb1a7c77195400e637bec8671560"
+      "bytes": 150896,
+      "sha256": "780e11a0e529aafb1898473db735322fbb89ebf681c41f33537361100d263818"
     },
     {
       "path": "outputs/ghost_map_chapter_review.py",
@@ -173,8 +173,8 @@
     },
     {
       "path": "outputs/ghost_map_template.html",
-      "bytes": 41786,
-      "sha256": "492252b11db32651750bdbe6b9dfe4f42dec41b955c989820a660ba066f27276"
+      "bytes": 42004,
+      "sha256": "eb4d97dc74c597b48faa62601ce359f582ce63f2cfc5d1c3cffaadf1f10c79fa"
     },
     {
       "path": "outputs/huangying_data.json",
@@ -458,8 +458,8 @@
     },
     {
       "path": "outputs/ghost_map/聊齋鬼怪歷史地理互動地圖.html",
-      "bytes": 22303359,
-      "sha256": "f69615007934cf74465ab452d22248d5a65ac49141692de39c1e23cfb29059e3"
+      "bytes": 22304480,
+      "sha256": "a42fa2741d1981c72c3635bb565ec9f77a08523ea89dfc51ae41b4b9387ba776"
     },
     {
       "path": "outputs/ghost_map/鬼怪地圖事件序列.json",
@@ -526,7 +526,7 @@
     {
       "path": "data-package.json",
       "bytes": 21614519,
-      "sha256": "6628725a9a3e55a7c1d72e0ea1a264c8673462b4bdefa16a7dadf9036c710aca"
+      "sha256": "00c5298982d3d6732a40a3f3e90be2f44fac5c5438e42657d8d6934694129608"
     },
     {
       "path": "data.html",
@@ -535,8 +535,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 22547166,
-      "sha256": "408236b2e7bb6ed0cd56ec93ffcc930ad2dfb4c675c02e8bacc57ceb9ca59ea5"
+      "bytes": 22548287,
+      "sha256": "d49a789b7235bb05631e83fe1bc3415d21c989d8a6a0bad393fc8608a18da278"
     },
     {
       "path": "README.md",
@@ -545,8 +545,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 22470396,
-      "sha256": "9d99b51f5979f5eb0f7d9e263fbddbda37fdc6047ed8ff7448d6dee9ba308baa"
+      "bytes": 22470972,
+      "sha256": "e8c9664f655ec604dcdfd72222aab53b35526527818bd0dec8398caaa92b44c3"
     }
   ]
 }

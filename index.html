@@ -83,7 +83,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <aside id="realm-panel" class="realm-panel" aria-label="三界空间证据"></aside>
 </div>
 <section id="movement-controls" class="work-step" aria-label="人物路线与空间解读"><h3>人物路线与空间解读</h3>
-<div class="toolbar"><label>路线范围 <select id="movement-scope"><option value="auto">自动跟随地点／篇目</option><option value="chapter">当前篇人物路线</option><option value="place">所选地点的多篇路线</option><option value="off">关闭路线</option></select></label><label>篇目 <select id="movement-chapter"></select></label><label>人物 <select id="movement-actor"></select></label><button id="movement-edit">修订本篇路径与空间分类</button></div>
+<div class="toolbar"><label>路线范围 <select id="movement-scope"><option value="auto">自动跟随地点／篇目</option><option value="chapter">当前篇人物路线</option><option value="place">所选地点的多篇路线</option><option value="off">关闭路线</option></select></label><label id="movement-place-scope-label">地点层级 <select id="movement-place-scope"><option value="direct">仅直接提及此地点</option><option value="aggregate">此地点及下辖地点</option></select></label><label>篇目 <select id="movement-chapter"></select></label><label>人物 <select id="movement-actor"></select></label><button id="movement-edit">修订本篇路径与空间分类</button></div>
 <p id="movement-status" class="muted" role="status"></p><p id="route-label-status" class="muted" role="status"></p><div id="movement-legend" class="chips" aria-label="路线图例"></div>
 <div class="toolbar"><label>地图中的空间步骤 <select id="movement-step"></select></label><button id="movement-next">下一步</button></div>
 <details id="movement-path-panel"><summary>空间路径与人物塑造 · 对照原文</summary><div id="movement-paths"></div></details>
@@ -1199,6 +1199,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
   }catch(_){}
   function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'chapter'):scope;}
+  function routeAggregatePlaces(){return $('movement-place-scope')?.value === 'aggregate';}
 
   function checkboxes(container, values, checked) {
     container.replaceChildren();
@@ -2092,9 +2093,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const mode=movementMode(),selected=allPlaces().find(p=>p.id===state.place);
     $('movement-chapter').replaceChildren(...model.ids.map(id=>element('option',{value:id},model.view(id).chapter)));
     $('movement-chapter').value=String(state.chapter);
-    const chapters=mode==='place' ? selected ? model.atPlace(selected,aggregatePlaces()) : [] : [model.view(state.chapter)];
+    const routeAggregate=routeAggregatePlaces(), directIds=selected ? new Set(model.atPlace(selected,false).map(c=>c.chapter_id)) : new Set();
+    const chapters=mode==='place' ? selected ? model.atPlace(selected,routeAggregate) : [] : [model.view(state.chapter)];
     const type=$('event-filter').value;
-    const all=N.rows(model,chapters.filter(c=>!type || c.event_types[type]>0),allPlaces());
+    const all=N.rows(model,chapters.filter(c=>!type || c.event_types[type]>0),allPlaces()).map(row=>({...row,route_scope:mode==='place' && routeAggregate && !directIds.has(row.chapter_id)?'descendant':'direct'}));
     const old=restoredRouteActor || $('movement-actor').value,actorChoices=[...new Set(all.flatMap(r=>r.actorsList.map(a=>r.chapter_id+'|'+a)))];restoredRouteActor='';
     $('movement-actor').replaceChildren(element('option',{value:''},'全部人物'),...actorChoices.map(key=>{
       const split=key.indexOf('|'),id=Number(key.slice(0,split));return element('option',{value:key},(mode==='place'?'《'+model.view(id).chapter+'》 · ':'')+key.slice(split+1));
@@ -2109,9 +2111,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('movement-step').value=moves.some(r=>r.chapter_id+':'+r.index===step)?step:moves.length?moves[0].chapter_id+':'+moves[0].index:'';
     $('movement-next').disabled=moves.length<2;
     message('movement-status',!mode || mode==='off' ? '选择当前篇或所选地点，查看人物路线、空间作用与时间关联。' : mode==='place' && !selected ? '请先在地图上选择一个地点。' :
-      (mode==='place'?selected.name+' · '+chapters.length+'篇关联篇目':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+mapped+'步可画地理参考线。地图下缘显示所选步骤的空间示意，所有步骤均可逐步查看；带地名的宅院只定位到区域参考点。颜色按'+(mode==='place'?'篇目':'人物称呼')+'区分。路线标注显示篇名与人物，点击可查看具体步骤；步骤按叙述顺序排列。AI路线与空间判断待核，人工修订优先。');
+      (mode==='place'?selected.name+' · '+(routeAggregate?'区域汇总（含下辖地点）':'直接提及')+' · '+chapters.length+'篇关联篇目':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+mapped+'步可画地理参考线。区域汇总中，实线为直接提及，虚线为下辖地点；地图下缘显示所选步骤的空间示意。颜色按'+(mode==='place'?'篇目':'人物称呼')+'区分。路线标注显示篇名与人物，点击可查看具体步骤；步骤按叙述顺序排列。AI路线与空间判断待核，人工修订优先。');
     const legend=$('movement-legend');legend.replaceChildren();
-    const keys=[...new Map(moves.map(r=>[mode==='place'?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),mode==='place'?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、')])).entries()];
+    const keys=[...new Map(moves.map(r=>[mode==='place'?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),(mode==='place' && r.route_scope==='descendant'?'下辖 · ':'')+(mode==='place'?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、'))])).entries()];
     for(const [key,label] of keys) {const chip=element('span',{class:'chip'},label);chip.style.borderColor=N.color(key);chip.style.color=N.color(key);legend.append(chip);}
     const paths=$('movement-paths');paths.replaceChildren();
     paths.append(element('p',{class:'muted'},'空间使用方式（私人／公共等）与所属世界分开判定。词汇线索均待核，寺庙、书斋或庭院须结合谁能进入、观看及控制空间判断。未定位场景保留名称，不借用籍贯坐标。'));
@@ -2152,6 +2154,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     };showPairs();
   }
   $('movement-scope').addEventListener('change',()=>{renderMovement();paintMap();});
+  $('movement-place-scope').addEventListener('change',()=>{renderMovement();paintMap();});
   $('movement-step').addEventListener('change',paintMap);
   $('movement-next').addEventListener('click',()=>{const options=[...$('movement-step').children],index=options.findIndex(o=>o.value===$('movement-step').value);if(options.length)$('movement-step').value=options[(index+1)%options.length].value;paintMap();});
   $('movement-actor').addEventListener('change',()=>{renderMovement();paintMap();});
@@ -2499,7 +2502,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const color=N.color(mode==='place'?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
       const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];
-      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':2.5,'marker-end':'url(#movement-arrow)'});
+      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='descendant'?1.8:2.8,'stroke-dasharray':row.route_scope==='descendant'?'7 5':'none','opacity':row.route_scope==='descendant' ? .76 : 1,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});
       line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+'；'+row.quote));movementLayer.append(line);
@@ -2509,7 +2512,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
       const actorText=row.actorsList.join('、')||'人物待核',actorChars=[...actorText],actorLines=[];
       for(let i=0;i<actorChars.length;i+=16) actorLines.push(actorChars.slice(i,i+16).join(''));
-      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',...actorLines],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
+      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.route_scope==='descendant'?'下辖 · ':'')+'《'+row.chapter+'》 · '+actorText,lines:[(row.route_scope==='descendant'?'下辖 · ':'')+'《'+row.chapter+'》',...actorLines],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.route_scope==='descendant'?'下辖地点路线；':'直接地点路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
     }
     const obstacles=[...placeLabels.map(l=>l.rect),...visible.map(p=>[p.display[0]-9,p.display[1]-9,18,18]),[0,0,240,54]];
     for(const row of movementRows.filter(r=>r.transition_kind==='movement')) for(const place of [row.from,row.to].filter(Boolean)){const xy=G.screen(projection([place.lon,place.lat]),state.transform);obstacles.push([xy[0]-9,xy[1]-9,18,18]);}
