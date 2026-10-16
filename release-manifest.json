@@ -78,8 +78,8 @@
     },
     {
       "path": "outputs/build_ghost_gis.py",
-      "bytes": 50913,
-      "sha256": "36d244148cd810feba1408fbc45f874725d63a59b53e1b6bb0f5bee86a83ff8e"
+      "bytes": 51040,
+      "sha256": "37e35396bfda5e65e3543d49389d8aed9f3181779b5f89484cb78978c7b0c68b"
     },
     {
       "path": "outputs/build_ghost_map_notebook.py",
@@ -133,8 +133,8 @@
     },
     {
       "path": "outputs/ghost_map_app.js",
-      "bytes": 148907,
-      "sha256": "cc0f0414aee8d2eeb52a8fd26e85a067435fdb3fc40c06a84bcfb644b473c9fb"
+      "bytes": 149993,
+      "sha256": "28729259c5b88a74ef3f10d2e823a62b49dedb1a7c77195400e637bec8671560"
     },
     {
       "path": "outputs/ghost_map_chapter_review.py",
@@ -153,8 +153,8 @@
     },
     {
       "path": "outputs/ghost_map_model.js",
-      "bytes": 30144,
-      "sha256": "e13e5e95a41e5c60c57058bbbdf9d89d6a4575c0abc39d1cf3eea9d3c43530d1"
+      "bytes": 30414,
+      "sha256": "dc9dc8f11decccd29de34c631bbcdb1ea6dc5418ba3cfa7402a4c747e11d225d"
     },
     {
       "path": "outputs/ghost_map_narrative.js",
@@ -173,8 +173,8 @@
     },
     {
       "path": "outputs/ghost_map_template.html",
-      "bytes": 41705,
-      "sha256": "2e8c459a3bd70b85f16a6f74b117b1683337c72d10b9c3a1aa645fefb1316fcb"
+      "bytes": 41786,
+      "sha256": "492252b11db32651750bdbe6b9dfe4f42dec41b955c989820a660ba066f27276"
     },
     {
       "path": "outputs/huangying_data.json",
@@ -282,6 +282,11 @@
       "sha256": "ec20001f961ab54b446702501f4e0fe9a1931b24995040fbbbba8a060ef7ca9f"
     },
     {
+      "path": "outputs/研究文献参照与空间标注框架.md",
+      "bytes": 2286,
+      "sha256": "af20e5f0c797aebb02c51074a946f879c60e87fae80b6ce8081fd8b0b640b7d3"
+    },
+    {
       "path": "outputs/空间叙事研究台使用说明.md",
       "bytes": 6371,
       "sha256": "ce9a7d756a29cde695272a541bbb352efe7eb76eae9da419b9f2196c92a0ccda"
@@ -295,6 +300,11 @@
       "path": "outputs/空间路径复查说明.md",
       "bytes": 4827,
       "sha256": "a4f7eccbca1a721647ebb29e9c6f96614016948530f86e3a31e3cc604e78aade"
+    },
+    {
+      "path": "outputs/网站发布说明.md",
+      "bytes": 2618,
+      "sha256": "cc692904347d3b5047aec728c1a5845b865c7c209566d8cc992a90fe6161a703"
     },
     {
       "path": "outputs/聊斋空间数字人文分析.md",
@@ -408,8 +418,8 @@
     },
     {
       "path": "outputs/ghost_map/歷史地名對照與文本地圖.json",
-      "bytes": 21466588,
-      "sha256": "7ea2d677388b70df4e9b14c9bf4a2fc4a63f56d5b8ad5c57c548cab31aca492f"
+      "bytes": 21468964,
+      "sha256": "88028047976401b219f62956aee824eb819e1527213dd24e8c513aabc71daae2"
     },
     {
       "path": "outputs/ghost_map/清洗後詞頻.json",
@@ -448,8 +458,8 @@
     },
     {
       "path": "outputs/ghost_map/聊齋鬼怪歷史地理互動地圖.html",
-      "bytes": 22299548,
-      "sha256": "7e68bfd506d627a992454b03387565e8a82134bcafc6d48d7faf024563b8c6bb"
+      "bytes": 22303359,
+      "sha256": "f69615007934cf74465ab452d22248d5a65ac49141692de39c1e23cfb29059e3"
     },
     {
       "path": "outputs/ghost_map/鬼怪地圖事件序列.json",
@@ -515,8 +525,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 21612145,
-      "sha256": "c0b44aff2724abab66efbeadea61e255dba892808f909d6e573d86a09cea1986"
+      "bytes": 21614519,
+      "sha256": "6628725a9a3e55a7c1d72e0ea1a264c8673462b4bdefa16a7dadf9036c710aca"
     },
     {
       "path": "data.html",
@@ -525,8 +535,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 22543355,
-      "sha256": "409b81f0d65dd09e309c2700dbbb6a9d9917c6ec7160b836a482588f74fb40f3"
+      "bytes": 22547166,
+      "sha256": "408236b2e7bb6ed0cd56ec93ffcc930ad2dfb4c675c02e8bacc57ceb9ca59ea5"
     },
     {
       "path": "README.md",
@@ -535,8 +545,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 22464186,
-      "sha256": "c50173719fd815bb9a4d3d17c78ca5f7710b2482038db5fdeb204e26f54cc3f9"
+      "bytes": 22470396,
+      "sha256": "9d99b51f5979f5eb0f7d9e263fbddbda37fdc6047ed8ff7448d6dee9ba308baa"
     }
   ]
 }
