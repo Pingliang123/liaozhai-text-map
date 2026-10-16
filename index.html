@@ -60,7 +60,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </div></div>
 <header>
 <div id="overview" class="overview" aria-live="polite"></div>
-<details><summary>资料备份与恢复</summary><div class="toolbar"><span id="version" class="chip"></span><button id="export-package" class="primary">合并并下载总资料包</button><label>从总资料包恢复 <input id="import-package" type="file" accept=".json,application/json"></label></div><p id="package-status" class="status" role="status"></p><p class="muted">先保存当前修改，再一键合并下载。总资料包恢复后会重新载入网页；恢复的是所选文件中的资料版本。下载不会自动改写工作区文件。</p><details><summary>其他备份工具</summary><div class="toolbar"><button id="export-edits">下载已保存修订</button><button id="export-draft">下载当前输入草稿</button><button id="load-latest">载入本机最新修订</button><label>恢复修订备份 <input id="import-edits" type="file" accept=".json,application/json"></label></div><p class="muted">小型修订备份可导入；输入草稿保留当前表单，即使尚未通过验证，暂不支持直接导入。多页面修改同一篇发生冲突时，先下载草稿，再载入最新修订。</p></details></details>
+<details><summary>资料备份与恢复</summary><div class="toolbar"><span id="version" class="chip"></span><button id="export-package" class="primary">合并并下载总资料包</button><button id="save-github">保存到 GitHub</button><label>从总资料包恢复 <input id="import-package" type="file" accept=".json,application/json"></label></div><p id="package-status" class="status" role="status"></p><p class="muted">先保存当前修改，再下载总资料包。点击「保存到 GitHub」会下载修订文件并打开 GitHub 上传入口；上传后由 GitHub Actions 自动验证、合并、提交并发布。网页不会保存 GitHub Token。</p><details><summary>其他备份工具</summary><div class="toolbar"><button id="export-edits">下载已保存修订</button><button id="export-draft">下载当前输入草稿</button><button id="load-latest">载入本机最新修订</button><label>恢复修订备份 <input id="import-edits" type="file" accept=".json,application/json"></label></div><p class="muted">小型修订备份可导入；输入草稿保留当前表单，即使尚未通过验证，暂不支持直接导入。多页面修改同一篇发生冲突时，先下载草稿，再载入最新修订。</p></details></details>
 <div id="storage-status" class="status muted" role="status" aria-live="polite"></div>
 </header>
 <main>
@@ -1514,6 +1514,14 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const url = URL.createObjectURL(new Blob([JSON.stringify(model.document(), null, 2)], {type: 'application/json'}));
     const a = element('a', {href: url, download: '聊斋人工修订-v2.json'}); document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+  $('save-github').addEventListener('click', () => {
+    if (state.dirty || locationDirty || reportDraft) { message('package-status', '有未保存修改，请先保存本篇或报表，再提交到 GitHub。', true); return; }
+    const url = URL.createObjectURL(new Blob([JSON.stringify(model.document(), null, 2)], {type: 'application/json'}));
+    const a = element('a', {href: url, download: 'manual-revisions.json'}); document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    window.open('https://github.com/Pingliang123/liaozhai-text-map/upload/main/updates/inbox', '_blank', 'noopener');
+    message('package-status', '修订已下载。请在新打开的 GitHub 页面上传 manual-revisions.json 并提交；之后 Actions 会自动合并、测试和发布。');
   });
   $('export-package').addEventListener('click', () => {
     if (state.dirty || locationDirty || reportDraft) { message('storage-status', '有未保存的篇目、报表或定位修改，请先保存再合并下载。', true); return; }
