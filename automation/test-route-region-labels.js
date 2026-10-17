@@ -10,7 +10,7 @@ const row=(from,to)=>({chapter_id:1,from,to});
 assert.equal(context.routeRegion(row(nanyang,guazhou),henan,true).route_scope,'crossing');
 assert.equal(context.routeRegion(row(guazhou,guazhou),henan,true).route_scope,'context');
 assert.equal(context.routeRegion(row(nanyang,nanyang),henan,true).route_scope,'within');
-assert(context.routeRegion(row(nanyang,guazhou),henan,true).region_label.includes('关联：南阳'));
+assert(/(?:关联|依据)：南阳/.test(context.routeRegion(row(nanyang,guazhou),henan,true).region_label));
 assert(!context.routeRegion(row(nanyang,guazhou),henan,true).region_label.includes('下辖'));
 assert.equal(context.routeRegion(row(nanyang,nanyang),henan,false).route_scope,'context');
 console.log('PASS: route endpoints and chapter association stay distinct across region scopes');

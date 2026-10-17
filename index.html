@@ -1236,7 +1236,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   }
   function markDirty() {
     state.dirty = true; syncSaveStatus();
-    message('edit-status', '有未保存修改；请保存本篇（Ctrl / ⌘ + S）。');
+    message('edit-status', '尚未保存（Ctrl / ⌘ + S）。');
   }
   function syncSaveStatus() {
     const label = '《' + model.view(state.chapter).chapter + '》';
@@ -1269,7 +1269,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function populateChapters() {
     const query = model.simplify($('chapter-search').value.trim());
     const matches = matchingChapters();
-    message('chapter-search-status', query ? '找到 ' + matches.length + ' 篇；上下篇仅在搜索结果中切换。' + (!matches.includes(state.chapter) ? '当前篇不在结果内，仍保留；按下一篇进入结果。' : '') : '按底本顺序浏览；可搜索繁体或简体篇名。');
+    message('chapter-search-status', query ? '找到 ' + matches.length + ' 篇；上下篇仅在搜索结果中切换。' + (!matches.includes(state.chapter) ? '当前篇不在结果内，仍保留；按下一篇进入结果。' : '') : '按原书顺序，可搜繁简篇名。');
     $('chapter-prev').disabled = adjacentChapter(-1) === undefined;
     $('chapter-next').disabled = adjacentChapter(1) === undefined;
     $('clear-chapter-search').hidden = !query;
@@ -1301,7 +1301,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const box = element('div', {class: 'evidence-card', 'data-evidence': e.id});
     box.append(element('strong', {}, e.realm + ' · ' + e.space + ' · 原文单位 ' + e.unit), element('blockquote', {}, e.excerpt));
     const select = element('select', {'aria-label': e.space + '的空间关联', 'data-field': 'kind'});
-    select.append(element('option', {value: 'mention'}, '待核／仅提到此空间'), element('option', {value: 'crossing'}, '有跨界：人物进入或离开此空间'), element('option', {value: 'reject'}, '排除：不属于此界空间'));
+    select.append(element('option', {value: 'mention'}, '仅提及／待核'), element('option', {value: 'crossing'}, '跨界出入'), element('option', {value: 'reject'}, '排除'));
     select.value = review?.kind || 'mention';
     const note = element('input', {type: 'text', value: review?.note || '', placeholder: '确认跨界时：人物、出发地、方向及原文依据', 'aria-label': '空间审核依据', 'data-field': 'note'});
     const origin = element('input', {type: 'text', value: review?.origin_place || '', placeholder: '跨界出发地（须与本篇地点词一致）', 'aria-label': '跨界出发地', 'data-field': 'origin_place'});
@@ -1315,7 +1315,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const c = model.view(state.chapter), changes = model.editable(state.chapter);
     populateChapters(); state.dirty = false; syncSaveStatus();
     message('research-preview-status', '');
-    $('chapter-status').textContent = model.hasEdit(state.chapter) ? '人工修订（逐项状态见下）' : (c.annotation_status || '模型／规则候选，待核对');
+    $('chapter-status').textContent = model.hasEdit(state.chapter) ? '人工修订' : (c.annotation_status || '模型／规则候选，待核对');
     const summary = $('chapter-summary'); summary.replaceChildren();
     summary.append(element('h3', {}, c.chapter + ' · 文本序号 #' + (c.chapter_id + 1)), element('p', {class: 'muted'},
       c.source_units.length + ' 个原文单位 · ' + c.token_count + ' 个分词 · 人物称呼 ' + c.people.length + ' 项（可能含别称）'));
@@ -1345,7 +1345,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('original-text').value = c.source_units.map(u => u.text || u.original).join('');
     $('traditional-text').value = c.source_units.map(u => u.original).join('');
     $('segmentation-editor').value = changes.segmentation_note || segmented(c);
-    message('edit-status', model.hasEdit(state.chapter) ? '已载入本篇修订。' : '原始候选已载入，尚未人工确认。');
+    message('edit-status', model.hasEdit(state.chapter) ? '已载入本篇修订。' : '候选待核。');
     if (projection) { renderMovement(); paintMap(); }
   }
   function chooseChapter(id, scroll = false) {
@@ -1361,7 +1361,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     edit.append(heading);
     const basic = element('div', {class:'narrative-fields'}), extra = element('details', {class:'narrative-fields'});
     extra.append(element('summary', {}, '补充信息 · 地点、身份、时间与解读'));
-    const fields = {actors:'人物（多人用顿号分隔）', location:'地点与角色（事发地／籍贯／不明）', space:'场景或空间变化', from_space:'出发空间（移动时必填）', to_space:'到达空间（移动时必填）', temporal_order:'事件时间顺序（可填回述、同时、先后待核）', event:'原文事件', identity:'人物身份阶段', interpretation:'研究解读（与事实分开）', quote:'原文引文（须与单位一致）'};
+    const fields = {actors:'人物（顿号分隔）', location:'地点及用途（事发地／籍贯）', space:'场景', from_space:'出发空间*', to_space:'到达空间*', temporal_order:'时间顺序（先后／同时／回述）', event:'原文事件', identity:'人物身份阶段', interpretation:'解读', quote:'原文引句'};
     for (const [field, title] of Object.entries(fields)) {
       const label = element('label', {}, title), input = element(['event','quote','interpretation'].includes(field) ? 'textarea' : 'input', {type:'text', 'data-field': field, 'aria-label': title});
       input.value = row[field] || ''; label.append(input);
@@ -1370,7 +1370,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     const unitLabel = element('label', {}, '引文所在原文单位'), select = element('select', {'data-field':'unit', 'aria-label':'引文所在原文单位'});
     const kindLabel = element('label', {}, '此步的空间关系'), kind = element('select', {'data-field':'transition_kind', 'aria-label':'空间关系类型'});
-    for (const [value, label] of [['mention','场景记录／待核'],['movement','人物移动（有原文依据）'],['plot','情节转换（可无人物移动）']]) kind.append(element('option', {value}, label));
+    for (const [value, label] of [['mention','场景记录／待核'],['movement','人物移动'],['plot','情节转换']]) kind.append(element('option', {value}, label));
     kind.value = row.transition_kind || 'mention'; kindLabel.append(kind); basic.insertBefore(kindLabel, basic.children[0]);
     const showRoute = () => { for (const label of basic.querySelectorAll('[data-route-field]')) label.hidden = kind.value === 'mention'; };
     showRoute(); kind.addEventListener('change', showRoute);
@@ -1382,11 +1382,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     for(const [field,label,values] of [
       ['from_place_id','出发空间对应地图地点',allPlaces().map(p=>[p.id,p.name])],
       ['to_place_id','到达空间对应地图地点',allPlaces().map(p=>[p.id,p.name])],
-      ['space_access','本步空间使用方式',['私人','公共','混合','开放自然','待核'].map(v=>[v,v])],
-      ['space_realm','本步空间所属世界',['人间','异境','待核'].map(v=>[v,v])],
-      ['from_access','出发端使用方式（人工覆盖）',['私人','公共','混合','开放自然','待核'].map(v=>[v,v])],
-      ['from_realm','出发端所属世界（人工覆盖）',['人间','异境','待核'].map(v=>[v,v])],
-      ...['from_type','to_type'].map(field=>[field,(field==='from_type'?'出发':'到达')+'端统一场所类型（人工覆盖）',['家宅','卧室内室','书斋','庭院园林','道路街市','官署考场','寺观','旅店','自然山野','水域','异境场所','城郭聚落','其他','待核'].map(v=>[v,v])])]) {
+      ['space_access','空间用途',['私人','公共','混合','开放自然','待核'].map(v=>[v,v])],
+      ['space_realm','所属世界',['人间','异境','待核'].map(v=>[v,v])],
+      ['from_access','出发处用途',['私人','公共','混合','开放自然','待核'].map(v=>[v,v])],
+      ['from_realm','出发处世界',['人间','异境','待核'].map(v=>[v,v])],
+      ...['from_type','to_type'].map(field=>[field,(field==='from_type'?'出发':'到达')+'处场所类型',['家宅','卧室内室','书斋','庭院园林','道路街市','官署考场','寺观','旅店','自然山野','水域','异境场所','城郭聚落','其他','待核'].map(v=>[v,v])])]) {
       const holder=element('label',{},label),select=element('select',{'data-field':field,'aria-label':label});
       select.append(element('option',{value:''},'自动线索／未绑定'),...values.map(([value,title])=>element('option',{value},title)));
       if(row[field] && !values.some(([value])=>value===row[field])) select.append(element('option',{value:row[field]},row[field]+'（地点待定位）'));
@@ -1473,7 +1473,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     try {
       const proposed = M.create(base); proposed.importDocument(model.document()); proposed.save(state.chapter,collectChanges());
       const durable = persist(proposed.document()); renderChapter(); updateResults();
-      message('edit-status', durable ? '保存成功：地图、篇目、人物、时间词与三界关联已同步。' : '已应用到当前页面，未写入本机存储；关闭前请下载修订 JSON。', !durable);
+      message('edit-status', durable ? '已保存，视图已更新。' : '未写入本机，关闭前请备份。', !durable);
     } catch (error) { reveal('save-chapter'); message('edit-status', '未保存：' + error.message, true); }
   }
   $('save-chapter').addEventListener('click', saveChapter);
@@ -1601,12 +1601,12 @@ section,details,#save-chapter{scroll-margin-top:90px}
   $('open-location-editor').addEventListener('click',()=>openLocation(allPlaces().find(p=>p.id===state.place)?.name || locationWord));
   $('location-word').addEventListener('change',()=>openLocation($('location-word').value));
   for (const id of ['location-modern','location-modern-level','location-region','location-source','location-note','location-level','location-parent','location-lon','location-lat','location-kind']) {
-    for (const event of ['input','change']) $(id).addEventListener(event,()=>{locationDirty=true;message('location-status','定位信息尚未保存。');});
+    for (const event of ['input','change']) $(id).addEventListener(event,()=>{locationDirty=true;message('location-status','定位未保存。');});
   }
   $('discard-location').addEventListener('click',()=>loadLocation(locationWord));
   $('clear-location-coordinates').addEventListener('click',()=>{
     $('location-lon').value='';$('location-lat').value='';$('location-kind').value='pending';locationDirty=true;
-    message('location-status','坐标已清空；保存后此地会列为待定位，区域说明保留。');
+    message('location-status','坐标已清空，保存后列为待定位。');
   });
   $('save-location').addEventListener('click',()=>{
     try {
@@ -1615,7 +1615,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       updateResults(); resize();
       const p=allPlaces().find(p=>p.name===locationWord);
       if(p) {$('map-search').value='';$('place-layer').value='';$('event-filter').value='';updateResults();choosePlace(p.id);state.transform={k:1,x:0,y:0};paintMap();}
-      message('location-status',durable?(p?'定位已保存并加入地图；相关篇目按地点词自动关联。':'区域信息已保存，等待补充坐标。'):'已应用到本页；请下载修订备份保存定位信息。',!durable);
+      message('location-status',durable?(p?'定位已保存，地图已更新。':'区域已保存，坐标待补。'):'已应用到本页；请下载修订备份保存定位信息。',!durable);
     } catch(error) {message('location-status',error.message,true);}
   });
   $('reset-location').addEventListener('click',()=>{
@@ -1626,7 +1626,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   $('pick-location').addEventListener('click',()=>{
     if(!locationWord){message('location-status','请先选择文本地名。',true);return;}
     pickingLocation=true;$('cancel-pick-location').hidden=false;$('map').style.cursor='crosshair';
-    message('location-status','请在地图上点击近似位置；拖动或缩放后仍可选点。');reveal('map');
+    message('location-status','点击地图选点，可拖动或缩放。');reveal('map');
   });
   $('cancel-pick-location').addEventListener('click',()=>{pickingLocation=false;$('cancel-pick-location').hidden=true;$('map').style.cursor='';message('location-status','已取消选点，原输入保留。');});
   window.addEventListener('beforeunload',event=>{if(locationDirty){event.preventDefault();event.returnValue='';}});
@@ -1678,7 +1678,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const direct=filteredChapters(p,false), total=filteredChapters(p,true), children=model.descendants(p);
     out.append(element('p', {class:'chips'}, '直接提及：'+direct.length+'篇 · 区域汇总：'+total.length+'篇（按篇目去重） · 当前列表：'+(aggregatePlaces()?'区域汇总':'直接提及')),
       element('p',{class:'muted'},(p.scale_label || '层级待核')+'。'+(p.historical_level_status || '')+(p.containment_note || '')));
-    const hierarchy=element('details'); hierarchy.append(element('summary',{},'包含关系与汇总范围 · '+children.length+'个已关联地点'), element('p',{class:'muted'},base.place_hierarchy?.basis || '未建立包含关系，不推测古代隶属。'));
+    const hierarchy=element('details'); hierarchy.append(element('summary',{},'包含地点 · '+children.length+'个地点'), element('p',{class:'muted'},base.place_hierarchy?.basis || '未建立包含关系，不推测古代隶属。'));
     const parent=allPlaces().find(q=>q.id===p.parent_id);
     if(parent) hierarchy.append(element('p',{},'关联上级：'+parent.name+'（'+(parent.level_label || M.LEVELS[parent.admin_level] || '参考区域')+'）'),button('查看上级'+parent.name,()=>{
       $('place-layer').value='';updateResults();choosePlace(parent.id);
@@ -1688,7 +1688,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       $('place-layer').value=''; updateResults(); choosePlace(child.id);
     }));
     hierarchy.append(childList);
-    if(!children.length) hierarchy.append(element('p',{},'本图未建立可汇总的下级地点；不代表该地区实际没有下级单位。'));
+    if(!children.length) hierarchy.append(element('p',{},'暂无已关联下级地点。'));
     const sources=new Set((base.place_hierarchy?.edges || []).filter(edge=>(edge.parent_id===p.id || edge.child_id===p.id) &&
       allPlaces().find(q=>q.id===edge.child_id)?.parent_id===edge.parent_id).map(edge=>edge.source_url));
     for(const child of children) if(child.coordinate_kind && child.source_url) sources.add(child.source_url);
@@ -1737,7 +1737,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if(place && aggregatePlaces()) panel.append(element('p',{class:'muted'},'汇总所选地区及已关联下级地点的三界证据；路线仍使用原地点，不把省域当作出发点。'));
     const links = place ? regionalRealmLinks(place) : globalRealmLinks();
     const allLinks = model.activeEvidence(new Set(model.ids));
-    panel.append(element('p', {class: 'muted'}, (place ? place.name + '的篇内空间关联' : '全书三界证据，采用当前筛选及人工修订') + '；虚线＝提及／待核，实线＝人工确认本篇跨界。0 表示本次范围未检出具名证据。'));
+    panel.append(element('p', {class: 'muted'}, (place ? place.name + '的篇内空间关联' : '全书三界证据，采用当前筛选及人工修订') + '；虚线：提及待核，实线：已确认跨界。0：未检出。'));
     for (const realm of ['天界', '地界']) {
       const section = element('section', {class: 'realm-section', 'data-realm': realm, id: realm === '天界' ? 'realm-sky' : 'realm-underworld'});
       section.append(element('h3', {class: 'realm-heading'}, realm + (realm === '天界' ? '／仙境与异域候选' : '／幽冥与地府候选')));
@@ -1823,7 +1823,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     locationDirty = true;
     $('location-coordinates').open = coordinates;
-    message('location-status', '已将清代历史地名候选填入编辑器；请结合篇目、层级和区域核对后再保存。', true);
+    message('location-status', '已填入历史候选，核对后保存。', true);
   }
   function unmappedList() {
     const query = model.simplify($('unmapped-search').value.trim()), list = $('unmapped-list'); list.replaceChildren();
@@ -2119,8 +2119,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const endpoints=[row.from,row.to].filter(Boolean);
     const inside=endpoints.filter(p=>ids.has(p.id));
     const scope=endpoints.length===2 && inside.length===2 ? 'within' : inside.length ? 'crossing' : 'context';
-    const label=scope==='within'?'区内路段':scope==='crossing'?'跨区行程':'同篇其他行程';
-    return {...row,route_scope:scope,region_label:label+' · 关联：'+anchors.join('、')};
+    const label=scope==='within'?'区内':scope==='crossing'?'跨区':'同篇行程';
+    return {...row,route_scope:scope,region_label:label+' · 依据：'+anchors.join('、')};
   }
   function renderMovement() {
     const mode=movementMode(),selected=allPlaces().find(p=>p.id===state.place);
@@ -2143,8 +2143,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('movement-step').replaceChildren(...moves.map(r=>element('option',{value:r.chapter_id+':'+r.index},'《'+r.chapter+'》第'+(r.index+1)+'步 '+r.from_space+' → '+r.to_space)));
     $('movement-step').value=moves.some(r=>r.chapter_id+':'+r.index===step)?step:moves.length?moves[0].chapter_id+':'+moves[0].index:'';
     $('movement-next').disabled=moves.length<2;
-    message('movement-status',!mode || mode==='off' ? '选择当前篇或所选地点，查看人物路线、空间作用与时间关联。' : mode==='place' && !selected ? '请先在地图上选择一个地点。' :
-      (mode==='place'?selected.name+' · '+(routeAggregate?'区域汇总（含下辖地点）':'直接提及')+' · '+chapters.length+'篇关联篇目':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+mapped+'步可画地理参考线。路线标明区内、跨区或同篇其他行程；关联地名说明篇目纳入依据，不表示所有端点都在本区域。虚线为同篇其他行程；地图下缘显示所选步骤的空间示意。颜色按'+(mode==='place'?'篇目':'人物称呼')+'区分。路线标注显示篇名与人物，点击可查看具体步骤；步骤按叙述顺序排列。AI路线与空间判断待核，人工修订优先。');
+    message('movement-status',!mode || mode==='off' ? '选择篇目或地点查看路线。' : mode==='place' && !selected ? '请先在地图上选择一个地点。' :
+      (mode==='place'?selected.name+' · '+(routeAggregate?'含下级地点':'直接提及')+' · '+chapters.length+'篇关联篇目':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+mapped+'步可画地理参考线。虚线：同篇行程；颜色按'+(mode==='place'?'篇目':'人物称呼')+'区分。点击路线查看原文；AI结果待核。');
     const legend=$('movement-legend');legend.replaceChildren();
     const keys=[...new Map(moves.map(r=>[mode==='place'?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),(mode==='place' && r.region_label?r.region_label+' · ':'')+(mode==='place'?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、'))])).entries()];
     for(const [key,label] of keys) {const chip=element('span',{class:'chip'},label);chip.style.borderColor=N.color(key);chip.style.color=N.color(key);legend.append(chip);}
@@ -2454,7 +2454,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const visible = G.visiblePoints(matched.map(p => ({...p, xy: projection([p.lon, p.lat])})), state.transform, drawWidth(), state.height, state.place,{expandAll});
     const scope = expandAll ? '显示所选层级／搜索结果。' : state.transform.k < 1.8 ? '总览：省域与文化区域。' : state.transform.k < 3 ? '展开至府／州与山川。' : state.transform.k < 5 ? '展开至县／散州。' : '展开至村镇与待核层级。';
     message('map-count', scope+' 当前显示 ' + visible.length + ' 个地点，符合筛选的共 ' + matched.length + ' 个。搜索或选单可直接选择下级地点。' +
-      ' 当前统计：'+(aggregatePlaces()?'区域汇总（含已关联下级地点）。':'直接提及篇目。'));
+      ' 当前统计：'+(aggregatePlaces()?'含下级地点。':'直接提及篇目。'));
     const ids = new Set(visible.map(p => p.id));
     for (const [id, node] of pointNodes) if (!ids.has(id)) { node.remove(); pointNodes.delete(id); }
     leaders.replaceChildren();
@@ -2656,9 +2656,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     .catch(() => { regionBoundaryReady = regionRings.length > 0; regionBoundaryRemote = false; drawBackground(); });
   Promise.allSettled([worldLoad, regionLoad]).then(() => {
     clearTimeout(timeout); clearTimeout(regionTimeout);
-    message('map-status', (backgroundReady ? '背景国界已载入（现代示意）。' : '背景国界未载入；已使用经纬网离线模式。') +
-      (regionBoundaryReady ? ' 省域虚线已载入（阿里云 DataV 现代省界，本地副本可离线使用）；不是清代疆界。' : ' 省域虚线暂未载入；地点、路线与地名仍可使用。') +
-      ' 地点及地名文字均可点击；细线连接标签与地点。');
+    message('map-status', (backgroundReady ? '国界已载入。' : '国界未载入，使用经纬网。') +
+      (regionBoundaryReady ? ' 虚线为现代省界（DataV）。' : ' 省界未载入，地点与路线可用。') +
+      ' 点击地名或点位查看。');
   });
 })();
 </script>
