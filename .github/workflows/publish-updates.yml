@@ -1,53 +1,72 @@
-name: Merge and publish map updates
-
+name: Validate revisions and publish map
 on:
   push:
+    branches: [main]
     paths:
-      - 'updates/inbox/*.json'
-      - 'automation/**'
-      - 'index.html'
-      - 'data-package.json'
+      - manual-revisions.json
+      - updates/inbox/*.json
+      - automation/**
+      - github-sync.js
+      - index.html
+      - data-package.json
+      - .github/workflows/publish-updates.yml
+  workflow_dispatch:
   schedule:
     - cron: '17 2 * * 1'
-  workflow_dispatch:
-
 permissions:
   contents: write
-
+  pages: write
+  id-token: write
+concurrency:
+  group: map-cloud-publish
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout canonical data repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Merge pending browser revisions
+      - name: Validate and merge canonical revisions
         shell: bash
         run: |
           set -euo pipefail
-          files=(updates/inbox/*.json)
-          if [ ! -e "${files[0]}" ]; then
-            echo "No pending revision file; validating current release only."
-            node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('data-package.json')); if(p.package_type!=='liaozhai-text-map'||!p.base||!p.revisions) throw new Error('invalid release package');"
-          else
-            for file in "${files[@]}"; do
-              node automation/merge-revisions.js "$file"
-              mkdir -p updates/processed
-              mv "$file" "updates/processed/$(basename "$file" .json)-${GITHUB_SHA}.json"
-            done
-          fi
-      - name: Verify release integrity
-        run: |
-          node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('data-package.json')); if(p.base.chapter_overview.length!==491) throw new Error('chapter count changed'); if(!fs.readFileSync('index.html','utf8').includes('published-revisions')) throw new Error('seed missing');"
-      - name: Commit generated cloud update
+          node automation/test-github-sync.js
+          for file in updates/inbox/*.json; do
+            [ -e "$file" ] || continue
+            node automation/merge-revisions.js "$file"
+            mkdir -p updates/processed
+            git mv "$file" "updates/processed/$(basename "$file" .json)-${GITHUB_SHA}.json"
+          done
+          node automation/merge-revisions.js manual-revisions.json
+          node automation/test-cloud-release.js
+          python automation/finalize-cloud-release.py
+      - name: Record regenerated release
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data-package.json index.html updates/processed
-          if git diff --cached --quiet; then echo 'No changes to publish.'; else git commit -m "自动合并人工修订并发布地图"; git push; fi
+          git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "更新人工修订资料包与发布版本"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Prepare public artifact
+        shell: bash
+        run: |
+          mkdir public
+          cp index.html data.html data-package.json manual-revisions.json research-data.zip release-manifest.json github-sync.js public/
+          cp -r assets public/assets
+          touch public/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
