@@ -43,6 +43,7 @@ jobs:
           node automation/test-github-sync.js
           node automation/test-github-login.js
           node automation/test-region-scope.js
+          node automation/test-chapter-references.js
           node --test auth-backend/test-worker.mjs
           for file in updates/inbox/*.json; do
             [ -e "$file" ] || continue
