@@ -158,11 +158,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <div class="toolbar research-controls"><label>篇目 <select id="research-chapter-select"></select></label><button id="edit-research">修改本篇路径</button><button id="research-all">查看全书范围</button></div>
 <div class="toolbar"><input id="research-search" type="search" aria-label="搜索研究篇目" placeholder="搜索篇名（繁简均可）"><label>路径状态 <select id="research-path-filter"><option value="">全部篇目</option><option value="has">已有路径</option><option value="missing">尚无路径</option><option value="ai-pending">AI待完成</option></select></label></div>
 <p id="research-scope" class="muted"></p><div id="research-network"></div>
-<details id="chapter-relations"><summary>关联篇目 · 地点、空间与主题</summary><p class="muted">共同特征用于比较，不代表人物相同或故事互有影响。地点按作用区分；AI 主题待核，常见空间词降低排序权重。</p><div id="chapter-relations-content"></div></details>
+<details id="chapter-relations"><summary>关联篇目 · 地点、空间与主题</summary><p class="muted">此处按共同地点、空间与主题列出相关篇目，以便考察相似场景在不同故事中的作用。地点依其在故事中的用途区分，常见空间词在排序中所占权重较低；AI 提出的主题尚待原文核实，跨篇人物是否相关亦须另作考证。</p><div id="chapter-relations-content"></div></details>
 <details id="research-comparison-panel"><summary>地区／全书空间词比较</summary><div id="research-comparison"></div><p id="research-list-status" class="muted"></p><div id="research-chapters" class="chapters"></div></details>
-<details class="help"><summary>阅读说明</summary><p>步骤按叙述顺序排列。人物移动与情节转换以原文标注为依据；地区比较统计含空间词的篇数，场景与地区的关系需逐篇核对。</p></details>
+<details class="help"><summary>阅读说明</summary><p>各篇步骤依原文叙述次序排列，以人物移动与情节变化观察空间如何展开。地区比较统计包含相应空间词的篇数，具体场景与地区之间的关系，仍须结合各篇记载辨析。</p></details>
 </details>
-<details hidden class="research-page" id="research-library"><summary>研究文档</summary><p class="muted">阶段性报告保留撰写时的统计；最新数据见报表与研究页面。研究文献用于建立解释框架，不会替代原文证据或人工核定。</p><div id="research-documents"></div></details>
+<details hidden class="research-page" id="research-library"><summary>研究文档</summary><p class="muted">此处收录研究文献与阶段性报告。报告中的统计反映撰写时的资料，后续修订见数据报表；文献则可与原文相互参照，用以考察空间描写及其叙事作用。</p><div id="research-documents"></div></details>
 <details hidden class="research-page" id="book-synthesis"><summary>全书空间综合分析 · 关系网络与研究线索</summary><div id="book-synthesis-content"></div></details>
 <details hidden class="research-page" id="chronology-panel"><summary>地点年表 · 展开查看</summary>
 <h2 id="chronology-heading">故事地点年表</h2>
@@ -172,26 +172,26 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <p id="chronology-note" class="muted"></p>
 <div class="table-scroll" tabindex="0" aria-label="年表，可横向滚动"><table class="chronology-table"><thead><tr><th>公元年／范围</th><th>原文纪年</th><th>篇目与地点</th><th>时间／地点关系</th><th>原文证据及 AI 审核</th></tr></thead><tbody id="chronology-list"></tbody></table></div>
 </details>
-<details hidden class="research-page" id="candidate-review"><summary>AI 审核原始记录</summary><p class="muted">保留原始候选与 AI 结果，供回查；人工处理记录见各篇编辑器。“确认”仍需原文支持。</p><div class="toolbar"><label>候选类型 <select id="candidate-kind"><option value="people">人物候选</option><option value="places">地点候选</option><option value="times">时间词候选</option></select></label><label class="sr-only" for="candidate-search">搜寻候选词</label><input id="candidate-search" type="search" placeholder="搜寻候选词、时间词或篇名"><span id="candidate-count" class="chip"></span></div><div class="toolbar"><button id="candidate-prev">上一页</button><span id="candidate-page" role="status"></span><button id="candidate-next">下一页</button></div><div id="candidate-list" class="candidate-list"></div></details>
+<details hidden class="research-page" id="candidate-review"><summary>AI 审核原始记录</summary><p class="muted">这里保留初次提取的候选词与 AI 审核结果，可据此查看词语判断的来由。人工修订见各篇编辑器；AI 标为“确认”的词语，仍须对照原文判断。</p><div class="toolbar"><label>候选类型 <select id="candidate-kind"><option value="people">人物候选</option><option value="places">地点候选</option><option value="times">时间词候选</option></select></label><label class="sr-only" for="candidate-search">搜寻候选词</label><input id="candidate-search" type="search" placeholder="搜寻候选词、时间词或篇名"><span id="candidate-count" class="chip"></span></div><div class="toolbar"><button id="candidate-prev">上一页</button><span id="candidate-page" role="status"></span><button id="candidate-next">下一页</button></div><div id="candidate-list" class="candidate-list"></div></details>
 </section>
 <section id="reports-screen" class="panel" hidden aria-label="数据报表">
-<h2>数据报表</h2><p class="muted">在表中核对、改词或排除；每次保存仅修改该行所属篇目。</p>
+<h2>数据报表</h2><p class="muted">本表按篇目整理人物、地点、空间与时间词，可据原文改正误词，或补入遗漏的词语。每行的修改分别保存于其所属篇目。</p>
 <div class="toolbar"><label>类别 <select id="report-kind"><option value="spaces">空间词</option><option value="times">时间词</option><option value="places">地点词</option><option value="people">人物词</option></select></label><label>篇目 <select id="report-chapter"><option value="">全书</option></select></label><label>状态 <select id="report-state"><option value="active">现有数据</option><option value="pending">待核候选</option><option value="reviewed">人工已处理</option><option value="all">全部</option></select></label><label>人物序列 <select id="report-type"><option value="">全部</option><option>人</option><option>鬼</option><option>妖</option><option>神</option><option value="unknown">未标注</option></select></label><input id="report-search" type="search" aria-label="搜索报表" placeholder="词语、篇名或审核说明"><label>排序 <select id="report-sort"><option value="frequency">分词词频</option><option value="mentions">原文次数</option><option value="word">词语</option><option value="chapter">篇序</option></select></label><button id="report-export">导出当前表格 CSV</button></div>
-<p id="report-status" role="status" aria-live="polite"></p><details class="help"><summary>统计口径</summary><p class="muted">分词词频计完整词项，原文次数计非重叠字符串；统计限于当前筛选范围。人物多标签分别计入，同名人物按篇修订。改词后可另行调整分词，通过全文对齐才更新词频；原文未命中的误词仍可排除。</p></details>
+<p id="report-status" role="status" aria-live="polite"></p><details class="help"><summary>统计口径</summary><p class="muted">此处分别列出分词词频与原文次数：前者按分词结果中的完整词项计数，后者在原文中查找相同字串，每次命中后从该字串末尾继续查找。人物可有多种身份，故各身份分别计入；跨篇同名人物仍按各篇处理。改正词语后，词频须待分词修订通过全文对齐后才会更新；误词即使未见于原文，亦可排除。</p></details>
 <div id="report-summary" class="chips"></div><div class="toolbar"><label>表格视图 <select id="report-view"><option value="words">按词汇总</option><option value="records">逐篇记录</option></select></label><button id="report-add">新增本篇词语</button></div><div id="report-new"></div>
 <details><summary>统计图表 · 当前筛选范围</summary><div class="report-charts"><div><h3>词频前 12 名</h3><div id="report-frequency-chart"></div></div><div><h3>人物序列 / 审核状态</h3><div id="report-category-chart"></div></div></div></details>
-<details id="path-report-panel"><summary>空间路径与跨篇共性</summary>
-<p class="muted">按上方篇目与下方路径筛选统计已保存步骤；词语筛选不影响本区。</p>
+<details id="path-report-panel"><summary>各篇空间变化的比较</summary>
+<p class="muted">以下统计以各篇已经保存的情节步骤为依据，可按篇目和路径筛选，词语表的类别与搜索条件则另行计算。</p>
 <div class="toolbar"><label>路径范围 <select id="path-scope"><option value="all">全部路径步骤</option><option value="movement">人物移动</option><option value="scene">其他情节步骤</option></select></label><label>排名依据 <select id="path-metric"><option value="chapters">涉及篇数</option><option value="count">步骤次数</option></select></label><input id="path-search" type="search" aria-label="搜索路径" placeholder="篇名、人物、空间或原文"><button id="path-export">导出路径 CSV</button></div>
 <div id="path-summary" class="chips" role="status" aria-live="polite"></div>
 <p id="path-insights"></p>
 <p id="path-audit" class="muted" role="status"></p>
-<details open><summary>统一空间类型转移（双端语境核查）</summary><p class="muted">保留原文名称，另按场所类型比较；只统计已保存双端核查且两端类型明确的移动，不用出发端词汇推测补齐。</p><div id="path-normalized"></div></details>
-<p class="muted">比例按步骤计算，受各篇标注详略影响；篇目已审核不代表每步都已分类。</p>
+<details open><summary>按场所类型比较空间转移</summary><p class="muted">同类场所在各篇中往往有不同称呼，故在保留原有名称之外，另以场所类型比较人物的移动。此表仅纳入出发处与到达处均已核定类型的记录，其余仍留待核查。</p><div id="path-normalized"></div></details>
+<p class="muted">这些比例反映已标注步骤的分布，各篇记录详略不同，会影响其在统计中所占的比重；已经审核的篇目，亦可能仍有尚未分类的步骤。</p>
 <details><summary>全部具体转移（图表仅显示前12项）</summary><p class="muted">按原有空间名称精确统计；点击查看关联原文。相似名称尚未合并，需按篇目核对。</p><div id="path-all-transitions"></div></details>
-<details class="help"><summary>如何理解共性与分类</summary><p class="muted">涉及篇数对同篇去重，步骤次数保留同篇重复。同一空间表达在每步最多计一次；未明、待核等占位词不进入空间排名。具体转移比较出发与到达名称，空间模式比较私人、公共等使用方式。分类优先采用保存的标注，缺失时沿用地图的词汇线索；“待核”保留在占比内。共同模式是比较线索，仍需核对原文；图表中的空间表达是情节标注，并非原文分词词频。地点只统计明确匹配的路径端点或地点标注。</p></details>
-<div class="report-charts path-charts"><div><h3>常见空间表达</h3><div id="path-space-chart"></div></div><div><h3>路径步骤类型占比</h3><div id="path-kind-chart"></div></div><div><h3>常见具体转移</h3><div id="path-transition-chart"></div></div><div><h3>路径关联地点</h3><div id="path-location-chart"></div></div><div><h3>空间使用方式占比</h3><div id="path-access-chart"></div></div><div><h3>人间／异境标注占比</h3><div id="path-realm-chart"></div></div></div>
-<details open><summary>跨篇共有的空间转移模式</summary><div id="path-patterns"></div></details>
+<details class="help"><summary>统计方法与分类依据</summary><p class="muted">本表以涉及篇数和步骤次数分别计数，同一篇中反复出现的空间变化，在篇数中计一次，在步骤数中则分别保留；同一空间表达在每步中最多计一次，“未明”“待核”等不列入空间排名。具体转移按原有场所名称比较，空间使用方式则按私人、公共等分类。分类优先采用已保存标注，缺失时使用词汇判断，并在占比中保留“待核”。图中的空间表达来自情节记录，因而与原文分词词频有所区别；地点统计仅纳入能够明确匹配的路径端点或地点标注。跨篇出现的相同模式，可据此回到原文，考察其与人物关系、情节变化的联系。</p></details>
+<div class="report-charts path-charts"><div><h3>常见空间表达</h3><div id="path-space-chart"></div></div><div><h3>路径步骤类型占比</h3><div id="path-kind-chart"></div></div><div><h3>常见具体转移</h3><div id="path-transition-chart"></div></div><div><h3>路径关联地点</h3><div id="path-location-chart"></div></div><div><h3>各类空间使用方式的比例</h3><div id="path-access-chart"></div></div><div><h3>人间与异境的标注比例</h3><div id="path-realm-chart"></div></div></div>
+<details open><summary>不同篇目中的相似空间转移</summary><div id="path-patterns"></div></details>
 <details><summary>路径明细与原文核对</summary><div class="toolbar"><button id="path-prev">上一页路径</button><span id="path-page" role="status"></span><button id="path-next">下一页路径</button></div><div id="path-table" class="table-scroll"></div></details>
 </details>
 <div class="toolbar"><button id="report-prev">上一页</button><span id="report-page"></span><button id="report-next">下一页</button></div>
@@ -1712,7 +1712,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const b = button('#' + (c.chapter_id + 1) + ' ' + c.chapter + '〔' + tags + '〕'+(matched.length?' · '+matched.join('、'):''), () => chooseChapter(c.chapter_id, true), c.chapter_id === state.chapter ? 'active' : '');
       list.append(b);
     }
-    out.append(element('p', {class: 'muted'}, '以下按文本篇序排列，不是事件的历史年代；每篇可多类型。'), list);
+    out.append(element('p', {class: 'muted'}, '篇目依底本次序排列，每篇可涉及多种异事类型；故事年代另见地点年表。'), list);
     if (/^https?:\/\//i.test(p.source_url)) out.append(element('a', {href: p.source_url, target: '_blank', rel: 'noopener noreferrer'}, '地理对照来源（仍需核对具体条目）'));
     if (!chapters.length) out.append(element('p', {class: 'warning'}, '所选地点已被目前筛选隐藏，请清除搜寻或异事类型条件。'));
   }
@@ -1910,14 +1910,14 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
     }
     const sorted = map => [...map].sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
-    out.append(element('p', {class:'muted'}, '每词每篇计一次，以已保存修订为准；共现关系待原文核对。'));
+    out.append(element('p', {class:'muted'}, '以下以已保存的修订为依据，每个词在同一篇中计一次，用以比较各篇的空间描写。地点与空间词同见于一篇，其具体联系仍须由原文说明。'));
     const chips = element('div', {class:'chips'});
     for (const [label, value] of [['篇目', chapters.length], ['有空间词篇目', chapters.filter(c => c.space_words?.length).length], ['地点词', places.size], ['空间词', terms.size]]) chips.append(element('span', {class:'chip'}, label + '：' + value));
     out.append(chips);
     const top = element('details'); top.open = true; top.append(element('summary', {}, '常见空间词（按涉及篇数）'));
     top.append(element('p', {}, sorted(terms).slice(0,40).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无空间词'));
     out.append(top);
-    const rel = element('details'); rel.append(element('summary', {}, '地点—空间词关系（共现，不等于事发地）'));
+    const rel = element('details'); rel.append(element('summary', {}, '同篇出现的地点与空间词'));
     for (const [name, row] of [...places].sort((a,b) => b[1].chapters-a[1].chapters || a[0].localeCompare(b[0]))) {
       const item = element('details'); item.append(element('summary', {}, name + ' · ' + row.chapters + '篇'), element('p', {}, sorted(row.words).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无空间词')); rel.append(item);
     }
@@ -1931,7 +1931,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       themes.get(motif.label).push(c);
     }
     if (analysed.length) {
-      const topics = element('details'); topics.append(element('summary', {}, '篇目之间的情节主题 · AI已分析 ' + analysed.length + '篇'), element('p', {class:'muted'}, '统计仅限有全文 AI 草稿的篇目，不是全书主题分布；主题及解读待核，可逐篇对照空间路径。'));
+      const topics = element('details'); topics.append(element('summary', {}, '篇目之间的情节主题 · AI已分析 ' + analysed.length + '篇'), element('p', {class:'muted'}, '此处依据已有全文 AI 分析草稿的篇目整理主题，尚未覆盖的篇目不在统计之内。这些主题可与各篇空间路径相互参照，其划分与解释仍待核实。'));
       for (const [topic, members] of [...themes].sort((a,b) => b[1].length-a[1].length)) {
         const group = element('details'); group.append(element('summary', {}, topic + ' · ' + members.length + '篇'));
         for (const c of members) group.append(button(c.chapter, () => { if (chooseChapter(c.chapter_id)) reveal('research-hub'); }));
@@ -2138,7 +2138,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const keys=[...new Map(moves.map(r=>[mode==='place'?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),(mode==='place' && r.route_scope==='descendant'?'下辖 · ':'')+(mode==='place'?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、'))])).entries()];
     for(const [key,label] of keys) {const chip=element('span',{class:'chip'},label);chip.style.borderColor=N.color(key);chip.style.color=N.color(key);legend.append(chip);}
     const paths=$('movement-paths');paths.replaceChildren();
-    paths.append(element('p',{class:'muted'},'空间使用方式（私人／公共等）与所属世界分开判定。词汇线索均待核，寺庙、书斋或庭院须结合谁能进入、观看及控制空间判断。未定位场景保留名称，不借用籍贯坐标。'));
+    paths.append(element('p',{class:'muted'},'空间的使用方式与其所属世界在此分别考察。寺庙、书斋或庭院是否属于私人空间，应结合人物能否进入、观看及支配此处来判断，单凭名称所得的分类仍待核查。位置未明的场景保留原有名称，人物籍贯不作为场景坐标。'));
     const counts=new Map();for(const r of movementRows) counts.set(r.classification.access,(counts.get(r.classification.access)||0)+1);
     if(movementRows.length) paths.append(element('p',{},'本范围情节步骤分类（含待核线索，非词频）：'+[...counts].map(([label,n])=>label+' '+n+'步').join('；')+'。异境线索／标注 '+movementRows.filter(r=>r.classification.realm==='异境').length+'步，可展开每一步比较人物身份与故事转折。'));
     const appendRows=(start=0)=>{
@@ -2160,7 +2160,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
       if(start+30<movementRows.length) {const more=button('继续显示后续步骤（共'+movementRows.length+'步）',()=>{more.remove();appendRows(start+30);});paths.append(more);}
     };appendRows();
-    const relations=$('movement-relations');relations.replaceChildren(element('p',{class:'muted'},'同篇同一情节步骤是人物关系的阅读线索；跨篇共同地点与纪年只表示可比较性，不证明人物相遇、亲缘或影响。相对时间如“翌日”不用于跨篇排序，籍贯也不充当事发地点。'));
+    const relations=$('movement-relations');relations.replaceChildren(element('p',{class:'muted'},'同一情节步骤中共同出现的人物，可据其言行考察彼此关系；跨篇人物若见于相同地点与纪年，则可进一步比较，但其相遇、亲缘或影响关系尚须其他材料佐证。“翌日”等相对时间仅用于本篇，籍贯亦与事发地点分别处理。'));
     for(const row of movementRows.filter(r=>r.actorsList.length>1)) {
       const item=element('details');item.append(element('summary',{},'同一情节步骤（同场待核）：《'+row.chapter+'》 '+row.actorsList.join('、')+' · '+row.space),element('blockquote',{},row.quote));relations.append(item);
     }
@@ -2233,7 +2233,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const ranked=items=>items.slice().sort((a,b)=>b[metric]-a[metric]||b.chapters-a.chapters||b.count-a.count||a.label.localeCompare(b.label,'zh'));
     for(const [id,items] of [['path-space-chart',grouped.spaces],['path-transition-chart',grouped.transitions],['path-location-chart',grouped.locations]]) reportBars($(id),ranked(items).slice(0,12).map(item=>[item.label,item[metric]]));
     reportPie($('path-kind-chart'),grouped.kinds.map(item=>[pathKinds[item.label]||'类型待核',item.count]));
-    reportPie($('path-access-chart'),grouped.access.map(item=>[item.label,item.count]),'空间使用方式占比');
+    reportPie($('path-access-chart'),grouped.access.map(item=>[item.label,item.count]),'各类空间使用方式的比例');
     reportPie($('path-realm-chart'),grouped.realms.map(item=>[item.label,item.count]),'人间与异境标注占比');
     const common=ranked(grouped.patterns.filter(item=>item.chapters>1));
     const top=ranked(grouped.spaces)[0],unknown=grouped.access.find(item=>item.label==='待核')?.count||0;
