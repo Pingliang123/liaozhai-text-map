@@ -996,6 +996,15 @@ section,details,#save-chapter{scroll-margin-top:90px}
         }
         if(best) break;
       }
+      // Search remaining canvas space before moving a caption below the map.
+      if(!best) for(let top=60;top+h<height-3 && !best;top+=h+8) {
+        for(let left=4;left+w<width-3;left+=24) {
+          const rect=[left,top,w,h];
+          if(occupied.some(r=>overlaps(rect,r))) continue;
+          const edge=[Math.max(left,Math.min(x,left+w)),Math.max(top,Math.min(y,top+h))];
+          best={...item,lines,rect,x:left+6,y:top+16,edge,distance:Math.hypot(edge[0]-x,edge[1]-y)};break;
+        }
+      }
       if(best){occupied.push(best.rect);placed.push(best);}
     }
     return placed;
@@ -2561,7 +2570,15 @@ section,details,#save-chapter{scroll-margin-top:90px}
       if(label.select){group.addEventListener('click',e=>{e.stopPropagation();label.select();});group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();label.select();}});}
       movementLayer.append(group);
     }
-    message('route-label-status',routeAnnotations.length>routeLayout.length?'标注已避让；点击路线查看详情。':'');
+    const shown=new Set(routeLayout.map(label=>label.id));
+    const overflow=routeAnnotations.filter(label=>!shown.has(label.id));
+    const captionList=$('route-label-status');captionList.replaceChildren();
+    if(overflow.length) captionList.append(element('span',{},'其余标注：'));
+    for(const label of overflow) {
+      const caption=label.lines ? label.lines.join(' · ') : label.text;
+      if(label.select) captionList.append(button(caption,label.select));
+      else captionList.append(element('span',{class:'chip'},caption));
+    }
     for (const realm of ['天界', '地界']) {
       const relevant = links.filter(e => e.realm === realm), [x, y] = anchors[realm], group = svg('g', {class: 'realm-hub', role: 'button', tabindex: 0, 'aria-label': '查看' + realm + '原文证据', transform: 'translate(' + x + ',' + y + ')'});
       const openRealm = () => $(realm === '天界' ? 'realm-sky' : 'realm-underworld').scrollIntoView({behavior: 'smooth', block: 'nearest'});

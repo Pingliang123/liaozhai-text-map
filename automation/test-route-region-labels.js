@@ -6,6 +6,8 @@ assert(start>=0&&end>start);
 assert(!source.includes('if(row===current) routeAnnotations.push('),'Route titles remain visible before selection');
 assert(!source.includes('if(row===current) addEndpoint('),'All route endpoints can be labeled');
 assert(source.includes("lines:['《'+row.chapter+'》',...actorLines]"),'Actor names are retained in full');
+assert(source.includes('routeAnnotations.filter(label=>!shown.has(label.id))'),'Unplaced captions are retained');
+assert(source.includes('captionList.append(button(caption,label.select))'),'Overflow route titles remain selectable');
 const henan={id:'henan',name:'河南'},nanyang={id:'nanyang',name:'南阳'},guazhou={id:'guazhou',name:'瓜州'};
 const context={model:{descendants:()=>[nanyang],atPlace:p=>p.id==='nanyang'?[{chapter_id:1}]:[]}};
 vm.createContext(context);vm.runInContext(source.slice(start,end),context);
