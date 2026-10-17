@@ -13,19 +13,19 @@ class Element{
   replaceChildren(...c){this.children=c;}
   addEventListener(event,callback){this.listeners[event]=callback;}
 }
-const column=new Element(),context={window:{},document:{createElement:()=>new Element(),querySelector:()=>column}};
+const column=new Element(),translated=new Element(),context={window:{},document:{createElement:()=>new Element(),querySelector:selector=>selector==='#translation-reference'?translated:column}};
 let resolve,calls=0;context.fetch=()=>{calls++;return new Promise(r=>{resolve=r;});};
 vm.createContext(context);vm.runInContext(fs.readFileSync('assets/chapter-references.js','utf8'),context);
 const panel=column.children[0],content=panel.children[1];
-context.window.GhostMapReferences.render(0);assert.equal(calls,0,'Closed reference panel loads lazily');
+context.window.GhostMapReferences.render(0);assert.equal(calls,1,'Translation loads without opening notes');
 panel.open=true;const pending=panel.listeners.toggle();context.window.GhostMapReferences.render(317);
 resolve({ok:true,json:async()=>data});
 pending.then(()=>{
   assert(content.children[0].textContent.includes(data.chapters[317].title),'Async load follows current chapter');
   context.window.GhostMapReferences.render(0);
   assert(content.children[0].textContent.includes('考城隍'));
-  assert.equal(content.children[1].children[0].textContent,'白话译文','Translation appears first');
-  assert.equal(content.children[1].children.length,data.chapters[0].translation.length+1,'Every translation paragraph is directly rendered');
+  assert.equal(translated.children.length,data.chapters[0].translation.length+1,'Every translation paragraph is directly rendered beside original');
+  assert(translated.children[1].textContent.includes('我姐夫'));
   assert(!content.style.cssText.includes('overflow'),'Reading is not trapped in a nested scroll area');
   console.log('PASS: all 491 references, distinct homonyms, complete segmented translations and chapter switching');
 }).catch(e=>{console.error(e);process.exitCode=1;});
