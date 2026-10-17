@@ -24,5 +24,8 @@ pending.then(()=>{
   assert(content.children[0].textContent.includes(data.chapters[317].title),'Async load follows current chapter');
   context.window.GhostMapReferences.render(0);
   assert(content.children[0].textContent.includes('考城隍'));
+  assert.equal(content.children[1].children[0].textContent,'白话译文','Translation appears first');
+  assert.equal(content.children[1].children.length,data.chapters[0].translation.length+1,'Every translation paragraph is directly rendered');
+  assert(!content.style.cssText.includes('overflow'),'Reading is not trapped in a nested scroll area');
   console.log('PASS: all 491 references, distinct homonyms, complete segmented translations and chapter switching');
 }).catch(e=>{console.error(e);process.exitCode=1;});
