@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync(process.argv[2]||'outputs/ghost_map_app.js','utf8');
+const start=source.indexOf('  function routeRegion('),end=source.indexOf('\n  function renderMovement()',start);
+assert(start>=0&&end>start);
+const henan={id:'henan',name:'河南'},nanyang={id:'nanyang',name:'南阳'},guazhou={id:'guazhou',name:'瓜州'};
+const context={model:{descendants:()=>[nanyang],atPlace:p=>p.id==='nanyang'?[{chapter_id:1}]:[]}};
+vm.createContext(context);vm.runInContext(source.slice(start,end),context);
+const row=(from,to)=>({chapter_id:1,from,to});
+assert.equal(context.routeRegion(row(nanyang,guazhou),henan,true).route_scope,'crossing');
+assert.equal(context.routeRegion(row(guazhou,guazhou),henan,true).route_scope,'context');
+assert.equal(context.routeRegion(row(nanyang,nanyang),henan,true).route_scope,'within');
+assert(context.routeRegion(row(nanyang,guazhou),henan,true).region_label.includes('关联：南阳'));
+assert(!context.routeRegion(row(nanyang,guazhou),henan,true).region_label.includes('下辖'));
+assert.equal(context.routeRegion(row(nanyang,nanyang),henan,false).route_scope,'context');
+console.log('PASS: route endpoints and chapter association stay distinct across region scopes');
