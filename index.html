@@ -2598,7 +2598,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   else window.addEventListener('resize', resize);
   renderChapter(); showEditor(currentEditor); renderBookSynthesis(); unmappedList(); renderCandidateList(); renderChronology(); resize(); updateResults();
   showScreen('map-section'); routeHash();
-  GhostMapSync.mount({base, empty: M.create(base).document(),
+  GhostMapSync.mount({base, initialAncestor: storageSnapshot ? M.create(base).document() : (publishedRevisions || M.create(base).document()),
     validate: doc => {const candidate=M.create(base);candidate.importDocument(doc);},
     getLocal: () => model.document(), hasDraft: () => state.dirty || locationDirty || !!reportDraft || state.unpersisted || storageInvalid,
     merge: (ancestor, local, remote) => M.mergeDocuments(base,ancestor,local,remote),

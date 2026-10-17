@@ -37,6 +37,15 @@ async function main(){
   afterPut=()=>{local.d=7;};await client.sync();assert.equal(cloud.d,7,'Save made during PUT must be queued');
   client.disconnect();local.e=8;const count=writes;await client.sync();assert.equal(writes,count);
   assert(!stored.join('').includes('test-token'));
+  // A fresh browser knows its embedded publication baseline, and must accept
+  // a newer cloud edit even when both versions contain the same chapter.
+  let freshLocal={chapter:'embedded old'},freshRemote={chapter:'cloud new'};
+  const fresh=create({ancestor:copy(freshLocal),merge,getLocal:()=>freshLocal,hasDraft:()=>false,
+    validate:()=>{},apply:doc=>{freshLocal=doc;},request:async()=>response(200,freshRemote)});
+  await fresh.sync();assert.deepEqual(freshLocal,freshRemote);
+  const uncertain=create({ancestor:{},merge,getLocal:()=>({chapter:'legacy local edit'}),hasDraft:()=>false,
+    validate:()=>{},apply:()=>{throw new Error('must not overwrite unknown local edits');},request:async()=>response(200,freshRemote)});
+  await assert.rejects(uncertain.sync(),/conflict/);
   console.log('GitHub sync: Unicode, anonymous read, authorized save, races, conflicts, offline, drafts, concurrent saves and disconnect passed.');
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

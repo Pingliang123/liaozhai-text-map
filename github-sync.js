@@ -85,7 +85,7 @@
     const key='liaozhai-cloud-ancestor-v1-'+options.base.corpus_id;
     // A legacy browser has no known cloud ancestor; absent old rows must not
     // delete corrections already saved by a different device.
-    let ancestor=options.empty;try{const saved=localStorage.getItem(key);if(saved){options.validate(JSON.parse(saved));ancestor=JSON.parse(saved);}}catch(_){}
+    let ancestor=options.initialAncestor;try{const saved=localStorage.getItem(key);if(saved){options.validate(JSON.parse(saved));ancestor=JSON.parse(saved);}}catch(_){}
     let applying=false,timer;
     const client=create({...options,ancestor,
       apply:async doc=>{applying=true;try{await options.apply(doc);}finally{applying=false;}},

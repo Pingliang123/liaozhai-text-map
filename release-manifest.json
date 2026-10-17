@@ -545,13 +545,13 @@
     },
     {
       "path": "github-sync.js",
-      "bytes": 9656,
-      "sha256": "7ec4abe4aa2aa2163a14ff3297a17447b5b985e12428893246a163f5e49477c3"
+      "bytes": 9666,
+      "sha256": "a8e17a81d2086e08dc2fe272d7a0e7eae236f856d0b8b4cd41d2dae6cd887d0b"
     },
     {
       "path": "index.html",
-      "bytes": 22455609,
-      "sha256": "5cbebbc55582d46845268d066148d487fefb892c7011ac374ffe030c271f16c5"
+      "bytes": 22455689,
+      "sha256": "1eb6447b68b63f7a2e9316264ab25c816d4c8d227c07ef34a75fdc3b20eadb4f"
     },
     {
       "path": "manual-revisions.json",
@@ -566,7 +566,7 @@
     {
       "path": "research-data.zip",
       "bytes": 22467756,
-      "sha256": "a15cba360d37f09c35452b96a2831f98039b4e65b7da0081d389f38b212df3d5"
+      "sha256": "491a261aeb05889a51326f825ea7615fb21761976b95e3f199b875b6bf05f5e2"
     }
   ]
 }

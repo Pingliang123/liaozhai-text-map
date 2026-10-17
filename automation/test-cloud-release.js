@@ -9,6 +9,7 @@ const html=fs.readFileSync('index.html','utf8');
 const seed=JSON.parse(html.match(/<script id="published-revisions" type="application\/json">([\s\S]*?)<\/script>/)[1]);
 assert.deepEqual(seed,bundle.revisions);assert(html.includes('GhostMapSync.mount('));
 assert(!html.includes('修订已下载。请在新打开的 GitHub 页面上传'));
+assert(html.includes('initialAncestor: storageSnapshot ?'),'New browsers must distinguish publication from untracked legacy edits');
 for(const match of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g))if(!/application\/json/.test(match[1]))new vm.Script(match[2]);
 new vm.Script(fs.readFileSync('github-sync.js','utf8'));
 const id=model.ids[0], local=M.create(bundle.base),remote=M.create(bundle.base);
