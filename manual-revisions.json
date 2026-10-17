@@ -657,7 +657,9 @@
     {
       "chapter_id": 2,
       "changes": {
-        "event_types": {},
+        "event_types": {
+          "鬼": 1
+        },
         "realms_present": [
           "人间"
         ],
@@ -694,6 +696,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -708,6 +712,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "mention"
           },
           {
@@ -722,6 +728,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -736,6 +744,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -750,6 +760,8 @@
             "from_space": "翁家客店",
             "to_space": "灵室",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -764,6 +776,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -778,6 +792,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -792,6 +808,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -806,6 +824,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -820,6 +840,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -834,6 +856,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -848,6 +872,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -862,6 +888,8 @@
             "from_space": "灵室",
             "to_space": "门外",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -876,6 +904,8 @@
             "from_space": "灵室门外",
             "to_space": "邑城路",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -890,6 +920,8 @@
             "from_space": "邑城路",
             "to_space": "东郊兰若山门",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -904,6 +936,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -918,6 +952,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -932,6 +968,8 @@
             "from_space": "兰若内",
             "to_space": "兰若门外",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -946,6 +984,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -960,6 +1000,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -974,6 +1016,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           },
           {
@@ -988,6 +1032,8 @@
             "from_space": "兰若",
             "to_space": "翁家",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "movement"
           },
           {
@@ -1002,6 +1048,8 @@
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
             "transition_kind": "plot"
           }
         ],
@@ -1019,6 +1067,70 @@
             "role": "",
             "ontology_status": "candidate",
             "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c2-edited-p1",
+            "word": "父子",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c2-edited-p2",
+            "word": "车伕",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c2-edited-p3",
+            "word": "翁",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c2-edited-p4",
+            "word": "子妇",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "",
             "mentions": null,
             "identity_links": []
           }
