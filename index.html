@@ -1200,7 +1200,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
   }catch(_){}
   function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'chapter'):scope;}
-  function routeAggregatePlaces(){return $('movement-place-scope')?.value === 'aggregate';}
+  function routeAggregatePlaces(){return aggregatePlaces();}
+  function changeRegionScope(value){
+    $('place-count-scope').value=value; $('movement-place-scope').value=value;
+    updateResults(); renderChronology();
+  }
 
   function checkboxes(container, values, checked) {
     container.replaceChildren();
@@ -1632,7 +1636,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function filteredChapters(place, aggregate = aggregatePlaces()) {
     const query = model.simplify($('map-search').value.trim()), type = $('event-filter').value;
     const names=[...(place.search_names || [place.name,place.modern_name])], seen=new Set([place.id]);
-    let parent=aggregatePlaces() ? place.parent_id : null;
+    let parent=aggregate ? place.parent_id : null;
     while(parent && !seen.has(parent)) {
       seen.add(parent); const node=allPlaces().find(p=>p.id===parent); if(!node) break;
       names.push(...(node.search_names || [node.name,node.modern_name])); parent=node.parent_id;
@@ -1704,18 +1708,34 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const list = element('div', {class: 'chapters'});
     for (const c of chapters) {
       const tags = M.EVENTS.filter(t => c.event_types[t] > 0).join('／') || '未标记';
-      const b = button('#' + (c.chapter_id + 1) + ' ' + c.chapter + '〔' + tags + '〕', () => chooseChapter(c.chapter_id, true), c.chapter_id === state.chapter ? 'active' : '');
+      const matched=aggregatePlaces() ? [p,...children].filter(member=>model.atPlace(member,false).some(row=>row.chapter_id===c.chapter_id)).map(member=>member.name) : [];
+      const b = button('#' + (c.chapter_id + 1) + ' ' + c.chapter + '〔' + tags + '〕'+(matched.length?' · '+matched.join('、'):''), () => chooseChapter(c.chapter_id, true), c.chapter_id === state.chapter ? 'active' : '');
       list.append(b);
     }
     out.append(element('p', {class: 'muted'}, '以下按文本篇序排列，不是事件的历史年代；每篇可多类型。'), list);
     if (/^https?:\/\//i.test(p.source_url)) out.append(element('a', {href: p.source_url, target: '_blank', rel: 'noopener noreferrer'}, '地理对照来源（仍需核对具体条目）'));
     if (!chapters.length) out.append(element('p', {class: 'warning'}, '所选地点已被目前筛选隐藏，请清除搜寻或异事类型条件。'));
   }
+  function regionalRealmLinks(place) {
+    const allowed=new Set(filteredChapters(place).map(c=>c.chapter_id));
+    const members=aggregatePlaces() ? [place,...model.descendants(place)] : [place];
+    const grouped=new Map();
+    for(const member of members) for(const e of model.links(member,allowed)){
+      const key=e.chapter_id+'|'+e.id+'|'+e.realm+'|'+e.unit+'|'+e.space;
+      const prior=grouped.get(key);
+      if(!prior)grouped.set(key,{...e,region_places:[member.name]});
+      else {
+        if(!prior.region_places.includes(member.name))prior.region_places.push(member.name);
+        if(e.review.kind==='crossing')prior.review=e.review;
+      }
+    }
+    return [...grouped.values()];
+  }
   function renderRealms() {
     const panel = $('realm-panel'); panel.replaceChildren(element('h3', {}, '三界文本空间（非地理坐标）'));
     const place = allPlaces().find(p => p.id === state.place);
-    if(place && aggregatePlaces()) panel.append(element('p',{class:'muted'},'以下三界连线与证据仍针对所选地名的直接关联，不把下级地点的跨界路线转画为省域出发。'));
-    const links = place ? model.links(place, new Set(filteredChapters(place).map(c => c.chapter_id))) : globalRealmLinks();
+    if(place && aggregatePlaces()) panel.append(element('p',{class:'muted'},'汇总所选地区及已关联下级地点的三界证据；路线仍使用原地点，不把省域当作出发点。'));
+    const links = place ? regionalRealmLinks(place) : globalRealmLinks();
     const allLinks = model.activeEvidence(new Set(model.ids));
     panel.append(element('p', {class: 'muted'}, (place ? place.name + '的篇内空间关联' : '全书三界证据，采用当前筛选及人工修订') + '；虚线＝提及／待核，实线＝人工确认本篇跨界。0 表示本次范围未检出具名证据。'));
     for (const realm of ['天界', '地界']) {
@@ -1735,6 +1755,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
         const e = evidence[0], card = element('details', {class: 'evidence-card'});
         card.append(element('summary', {}, e.space + ' · ' + e.chapter + '（' + evidence.length + ' 处）'));
         for (const occurrence of evidence) {
+          if(occurrence.region_places?.length)card.append(element('p',{class:'muted'},'关联地点：'+occurrence.region_places.join('、')));
           card.append(element('p', {class: 'muted'}, '原文单位 ' + occurrence.unit + ' · ' + (occurrence.review.kind === 'crossing' ? '人工确认本篇跨界' : '篇内提及，待核')),
             element('blockquote', {}, occurrence.excerpt));
           if (occurrence.review.note) card.append(element('p', {}, occurrence.review.note));
@@ -2155,7 +2176,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     };showPairs();
   }
   $('movement-scope').addEventListener('change',()=>{renderMovement();paintMap();});
-  $('movement-place-scope').addEventListener('change',()=>{renderMovement();paintMap();});
+  $('movement-place-scope').addEventListener('change',()=>changeRegionScope($('movement-place-scope').value));
   $('movement-step').addEventListener('change',paintMap);
   $('movement-next').addEventListener('click',()=>{const options=[...$('movement-step').children],index=options.findIndex(o=>o.value===$('movement-step').value);if(options.length)$('movement-step').value=options[(index+1)%options.length].value;paintMap();});
   $('movement-actor').addEventListener('change',()=>{renderMovement();paintMap();});
@@ -2367,7 +2388,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     updateResults();
   });
-  $('place-count-scope').addEventListener('change',()=>{updateResults();renderChronology();});
+  $('place-count-scope').addEventListener('change',()=>changeRegionScope($('place-count-scope').value));
   $('unmapped-search').addEventListener('input', unmappedList);
   $('candidate-kind').addEventListener('change', () => { state.candidatePage = 0; renderCandidateList(); });
   $('candidate-search').addEventListener('input', () => { state.candidatePage = 0; renderCandidateList(); });
@@ -2376,7 +2397,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   });
   $('clear-map-filters').addEventListener('click', () => {
     $('map-search').value = ''; $('event-filter').value = ''; state.place = null;
-    $('place-layer').value=''; $('place-count-scope').value='direct';
+    $('place-layer').value=''; $('place-count-scope').value='direct'; $('movement-place-scope').value='direct';
     $('chronology-place').value = ''; renderChronology(); updateResults();
   });
   $('show-labels').addEventListener('change', paintMap);
