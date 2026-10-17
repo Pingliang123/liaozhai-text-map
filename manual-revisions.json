@@ -525,6 +525,1299 @@
       }
     },
     {
+      "chapter_id": 47,
+      "changes": {
+        "event_types": {
+          "鬼": 1,
+          "妖": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {
+          "places:南山": {
+            "status": "corrected",
+            "word": "西南山",
+            "kind": "places",
+            "note": ""
+          },
+          "places:西南山": {
+            "status": "accepted",
+            "word": "西南山",
+            "kind": "places",
+            "note": ""
+          }
+        },
+        "years": {
+          "一岁": 1,
+          "十七岁": 1,
+          "三五日": 1,
+          "一日": 1
+        },
+        "places": [
+          {
+            "word": "莒之罗店",
+            "mentions": 0
+          },
+          {
+            "word": "西南山",
+            "mentions": 0
+          }
+        ],
+        "space_words": [
+          "郊野",
+          "野",
+          "门内",
+          "室",
+          "门外",
+          "房中"
+        ],
+        "narrative_events": [
+          {
+            "unit": 2571,
+            "actors": "王子服、吴生",
+            "location": "村外",
+            "space": "郊野",
+            "event": "上元日吴生邀王眺望，舅家仆来招吴去，王独游，见游女如云。",
+            "identity": "王子服为莒之罗店人，早孤，十四入泮，聘萧氏未嫁而夭。",
+            "interpretation": "郊野为偶遇空间，吴生离场使王独处，引出与婴宁初遇。",
+            "quote": "会上元，有舅氏子吴生，邀同眺瞩。方至村外，舅家有仆来，招吴去。",
+            "from_space": "家",
+            "to_space": "村外",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2572
+          },
+          {
+            "unit": 2574,
+            "actors": "王子服、婴宁、婢",
+            "location": "村外",
+            "space": "郊野",
+            "event": "王见婴宁携婢拈梅花，容华绝代，注目不移；婴宁顾婢笑其似贼，遗花地上而去。",
+            "identity": "婴宁为游女，携婢，拈梅花；王为求凰未就的书生。",
+            "interpretation": "遗花成为相思媒介，空间中的一瞥与遗物推动后续追寻。",
+            "quote": "有女郎携婢，拈梅花一枝，容华绝代，笑容可掬。生注目不移，竟忘顾忌。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2575
+          },
+          {
+            "unit": 2578,
+            "actors": "王子服",
+            "location": "家",
+            "space": "卧室",
+            "event": "王拾花怅然返家，藏花枕底，不语不食，病剧，肌革锐减。",
+            "identity": "王为相思成病者。",
+            "interpretation": "家内卧室成为相思病空间，花藏枕底象征执念。",
+            "quote": "生拾花怅然，神魂丧失，怏怏遂返。至家，藏花枕底，垂头而睡。",
+            "from_space": "村外",
+            "to_space": "家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2579
+          },
+          {
+            "unit": 2585,
+            "actors": "吴生、王子服、母",
+            "location": "家",
+            "space": "榻前",
+            "event": "吴生来，母嘱密诘；王具吐实情求谋，吴笑称当代访，出告母物色女子居里，访穷无绪。",
+            "identity": "吴为舅氏子，王为病者，母为忧母。",
+            "interpretation": "吴生介入使私情转为家庭寻访，但寻访无果，为诳言伏笔。",
+            "quote": "适吴生来，嘱密诘之。吴至榻前，生见之小下。吴就榻慰解，渐致研诘。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2587
+          },
+          {
+            "unit": 2601,
+            "actors": "吴生、王子服",
+            "location": "家",
+            "space": "榻前",
+            "event": "吴复来，诳王已得女，乃其姑氏子、君姨妹行，居西南山中三十余里；王喜，饮食渐加。",
+            "identity": "吴为诳言者，王为信诳者。",
+            "interpretation": "吴生虚构西南山中姨家，为后文王独行入山提供动机。",
+            "quote": "吴绐之曰：「已得之矣。我以为谁何人，乃我姑氏子，即君姨妹行，今尚待聘",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2602
+          },
+          {
+            "unit": 2616,
+            "actors": "王子服",
+            "location": "家至南山",
+            "space": "山野",
+            "event": "王怪吴不至，负气怀梅自往，望南山行约三十余里，见乱山空翠，遥望谷底小里落。",
+            "identity": "王为独行寻访者。",
+            "interpretation": "从家到山野的移动将相思转为实地探寻，空间由熟悉转入幽异。",
+            "quote": "转思三十里非遥，何必仰息他人？怀梅袖中，负气自往，而家人不知也。",
+            "from_space": "家",
+            "to_space": "南山",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2617
+          },
+          {
+            "unit": 2621,
+            "actors": "王子服、婴宁",
+            "location": "山村",
+            "space": "村舍外",
+            "event": "王入村，见北向一家丝柳桃杏修竹，坐对户巨石；闻墙内呼小荣，婴宁执杏花自簪，见生含笑拈花而入，王认出即上元所遇。",
+            "identity": "王为寻访者，婴宁为村中女郎。",
+            "interpretation": "山村空间与上元偶遇重叠，婴宁再现，确认追寻对象。",
+            "quote": "下山入村，见舍宇无多，皆茅屋，而意甚修雅。北向一家，门前皆丝柳，墙内桃杏尤繁，间以修竹；野鸟格磔其中。",
+            "from_space": "南山",
+            "to_space": "山村",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2623
+          },
+          {
+            "unit": 2636,
+            "actors": "老媪、王子服",
+            "location": "山村",
+            "space": "村舍外",
+            "event": "老媪扶杖出，问王来意，王答盼亲；媪聋聩，问贵戚何姓，王不能答，媪笑其书痴，邀入啖饭。",
+            "identity": "媪为村中老妇，后自称为王姨；王为寻亲者。",
+            "interpretation": "媪的邀请使王从门外进入内室，空间由公共转入私密。",
+            "quote": "忽一老媪扶杖出，顾生曰：「何处郎君，闻自辰刻便来，以至于今。意将何为？得勿饥耶？」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2639
+          },
+          {
+            "unit": 2650,
+            "actors": "王子服、老媪、婴宁、婢",
+            "location": "山村舍内",
+            "space": "内室",
+            "event": "王从媪入，见白石砌路、豆棚花架；媪唤小荣作黍，展宗阀，认王为甥，自云秦姓，弱息为庶产，唤婴宁来拜识。",
+            "identity": "媪自称为王姨，秦姓；婴宁为媪所养女。",
+            "interpretation": "内室认亲建立亲属关系，为婴宁随王归家提供名分。",
+            "quote": "从媪入，见门内白石砌路，夹道红花，片片堕阶上；曲折而西，又启一关，豆棚花架满庭中。",
+            "from_space": "村舍外",
+            "to_space": "内室",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2651
+          },
+          {
+            "unit": 2676,
+            "actors": "婴宁、王子服、老媪、婢",
+            "location": "山村舍内",
+            "space": "内室",
+            "event": "婴宁户外嗤嗤笑，婢推入犹掩口；媪嗔其无礼，女忍笑而立，王揖之；问年，女复笑，媪言其十六，王十七，媪议婚配。",
+            "identity": "婴宁为媪养女，善笑；王为姨兄。",
+            "interpretation": "笑声贯穿内室，成为婴宁核心特征，也令婚议在笑闹中推进。",
+            "quote": "良久，闻户外隐有笑声。媪又唤曰：「婴宁，汝姨兄在此。」户外嗤嗤笑不已。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2678
+          },
+          {
+            "unit": 2707,
+            "actors": "王子服、婴宁",
+            "location": "山村舍后园",
+            "space": "园",
+            "event": "次日王至舍后园，见婴宁在树上狂笑欲堕，堕地，王扶之阴捘其腕；王出袖中花示之，诉相思，女不解夫妻之爱，婢至，王遁去。",
+            "identity": "王为痴情者，婴宁为憨痴不解情者。",
+            "interpretation": "园中独处使情感推进，但婴宁的憨笑与误解形成张力。",
+            "quote": "次日，至舍后，果有园半亩，细草铺毡，杨花糁径；有草舍三楹，花木四合其所。",
+            "from_space": "内室",
+            "to_space": "园",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2708
+          },
+          {
+            "unit": 2736,
+            "actors": "婴宁、王子服、老媪",
+            "location": "山村舍内",
+            "space": "母所",
+            "event": "少时会母所，媪问何往，女答园中共话；女直言大哥欲共寝，王大窘，幸媪不闻，王以他词掩之。",
+            "identity": "婴宁为憨直女，王为窘迫者。",
+            "interpretation": "婴宁将私语公开，显示其不谙礼法，也制造喜剧性冲突。",
+            "quote": "少时，会母所。母问：「何往？」女答以园中共话。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2738
+          },
+          {
+            "unit": 2750,
+            "actors": "王子服、婴宁、老媪、家中人",
+            "location": "山村",
+            "space": "村舍",
+            "event": "家中人捉双卫来寻王，入告媪请偕女同归；媪喜，呼婴宁装束，送之出，二人遂发，至山坳回顾见媪倚门北望。",
+            "identity": "王为归家者，婴宁为随归者，媪为送行者。",
+            "interpretation": "离村归家完成空间转移，媪倚门北望暗示离别与后续寻墓。",
+            "quote": "食方竟，家中人捉双卫来寻生。先是，母待生久不归，始疑；村中搜觅几遍，竟无踪兆。",
+            "from_space": "山村",
+            "to_space": "家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2752
+          },
+          {
+            "unit": 2770,
+            "actors": "王子服、婴宁、母、吴生",
+            "location": "家",
+            "space": "家中",
+            "event": "抵家，母惊问，王以姨女对；母言无姊，女自云父秦氏，母审面庞志赘符合，疑亡姊复存；吴生至，言秦家姑丈祟于狐，狐生女婴宁，后携女去。",
+            "identity": "婴宁为狐产女，鬼母所养；王为携归者，母为疑者，吴为知情者。",
+            "interpretation": "家中认亲转为身份揭秘，吴生转述狐女生女，使婴宁身份异类化。",
+            "quote": "抵家，母睹姝丽，惊问为谁。生以姨女对。母曰：「前吴郎与儿言者，诈也。我未有姊，何以得甥？」",
+            "from_space": "山村",
+            "to_space": "家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2774
+          },
+          {
+            "unit": 2798,
+            "actors": "吴生、王子服",
+            "location": "山村",
+            "space": "村所",
+            "event": "吴请往觇其异，寻至村所，庐舍全无，山花零落；忆姑葬处仿佛不远，坟垅湮没，诧叹而返。",
+            "identity": "吴为探异者，王为同行者。",
+            "interpretation": "村所消失证实山村非实有，空间虚实转换，婴宁来历更显异类。",
+            "quote": "吴请往觇其异，就便执柯。寻至村所，庐舍全无，山花零落而已。",
+            "from_space": "家",
+            "to_space": "山村",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2799
+          },
+          {
+            "unit": 2802,
+            "actors": "婴宁、母、王子服",
+            "location": "家",
+            "space": "家中",
+            "event": "母疑婴宁为鬼，入告吴言，女无骇意；母令与少女同寝，女操女红精巧，善笑不止，邻女少妇争承迎；母择吉合卺，窃窥形影无异，行新妇礼因笑极而罢。",
+            "identity": "婴宁为待嫁女，后为新娘；母为婆母。",
+            "interpretation": "家中日常空间接纳婴宁，笑声与女红并置，异类身份暂被日常化。",
+            "quote": "母疑其为鬼。入告吴言，女略无骇意；又吊其无家，亦殊无悲意，孜孜憨笑而已。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2804
+          },
+          {
+            "unit": 2822,
+            "actors": "婴宁、西人子、邻父",
+            "location": "家",
+            "space": "庭后木香架、墙底",
+            "event": "婴宁爱花，庭后木香架邻西家，女攀摘；西人子见之凝注，女笑指墙底而下，西人子夜往，就而淫之，阴如锥刺，细视非女，乃枯木水淋窍，中有巨蝎，邻父碎木捉杀，负子归，半夜卒。",
+            "identity": "婴宁为爱花善笑妇，西人子为邻家子，邻父为西人子父。",
+            "interpretation": "墙底空间成为惩戒场所，婴宁的笑与枯木巨蝎构成对淫念的致命反制。",
+            "quote": "庭后有木香一架，故邻西家。女每攀登其上，摘供簪玩。母时遇见，辄诃之。女卒不改。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2825
+          },
+          {
+            "unit": 2838,
+            "actors": "邻人、王子服、邑宰、母、婴宁",
+            "location": "家、公堂",
+            "space": "司法空间",
+            "event": "邻人讼生，讦发婴宁妖异；邑宰素仰生才，谓邻翁讼诬，将杖责，生乞免释出；母责婴宁，女正色矢不复笑，由是竟不复笑。",
+            "identity": "王为被讼者，婴宁为被讦妖异者，邑宰为审案者，母为责者。",
+            "interpretation": "司法介入使婴宁妖异身份公开化，母责导致其笑性消失，人物转变。",
+            "quote": "邻人讼生，讦发婴宁妖异。邑宰素仰生才，稔知其笃行士，谓邻翁讼诬，将杖责之。生为乞免，遂释而出。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2840
+          },
+          {
+            "unit": 2848,
+            "actors": "婴宁、王子服",
+            "location": "家",
+            "space": "卧室",
+            "event": "一夕婴宁对生零涕，自陈本狐产，母去托鬼母，相依十余年，求合葬鬼母；生诺，虑坟迷荒草，女言无虑。",
+            "identity": "婴宁为狐产女，鬼母养女；王为夫。",
+            "interpretation": "卧室私语揭示身世，将笑性消失转为悲情与孝思，推动寻墓。",
+            "quote": "一夕，对生零涕。异之，女哽咽曰：「曩以相从日浅，言之恐致骇怪。今日察姑及郎，皆过爱无有异心，直告或无妨乎？妾本狐产",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2851
+          },
+          {
+            "unit": 2858,
+            "actors": "婴宁、王子服",
+            "location": "荒山",
+            "space": "墓地",
+            "event": "夫妻舆榇往荒山，婴宁指示墓处，果得媪尸，肤革犹存；女抚哭哀痛，舁归，寻秦氏墓合葬。",
+            "identity": "婴宁为寻母尸者，王为助葬者。",
+            "interpretation": "荒山墓地空间实现鬼母合葬，完成婴宁报恩与身份归宿。",
+            "quote": "刻日，夫妻舆榇而往。女于荒烟错楚中，指示墓处，果得媪尸，肤革犹存。",
+            "from_space": "家",
+            "to_space": "荒山",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2859
+          },
+          {
+            "unit": 2862,
+            "actors": "王子服、婴宁、媪",
+            "location": "家",
+            "space": "梦中、家中",
+            "event": "是夜生梦媪来称谢，寤而述之；女言夜见之，嘱勿惊郎君；生问小荣，女言亦狐，已嫁。",
+            "identity": "媪为鬼母，婴宁为养女，王为婿。",
+            "interpretation": "梦与夜见将鬼母谢意带入现实，确认合葬有效，也交代小荣去向。",
+            "quote": "是夜，生梦媪来称谢，寤而述之。女曰：「妾夜见之，嘱勿惊郎君耳。」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "回述/梦，非实历年代",
+            "transition_kind": "plot",
+            "unit_end": 2864
+          },
+          {
+            "unit": 2870,
+            "actors": "婴宁、王子服、子",
+            "location": "家",
+            "space": "家中",
+            "event": "由是岁值寒食，夫妻登秦墓拜扫无缺；女逾年生一子，在怀抱中不畏生人，见人辄笑，有母风。",
+            "identity": "婴宁为妻、母；王为夫、父；子为婴宁所生。",
+            "interpretation": "寒食扫墓与生子延续家庭空间，子见人辄笑复现母风，结局归于日常。",
+            "quote": "由是岁值寒食，夫妻登秦墓，拜扫无缺。女逾年，生一子。在怀抱中，不畏生人，见人辄笑，亦大有母风云。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2872
+          }
+        ],
+        "people": [
+          {
+            "id": "c47-edited-p0",
+            "word": "吴",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p1",
+            "word": "秦氏",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p2",
+            "word": "小荣",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "妖": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p3",
+            "word": "秦",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p4",
+            "word": "王子服",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p5",
+            "word": "吴生",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p6",
+            "word": "王郎",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c47-edited-p7",
+            "word": "吴郎",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 48,
+      "changes": {
+        "event_types": {
+          "鬼": 1,
+          "妖": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {
+          "places:北郭": {
+            "status": "corrected",
+            "word": "北郭",
+            "kind": "spaces",
+            "note": ""
+          },
+          "spaces:北郭": {
+            "status": "accepted",
+            "word": "北郭",
+            "kind": "spaces",
+            "note": ""
+          }
+        },
+        "years": {
+          "一日": 1,
+          "三日": 1
+        },
+        "places": [
+          {
+            "word": "金华",
+            "mentions": 0
+          },
+          {
+            "word": "浙",
+            "mentions": 0
+          }
+        ],
+        "space_words": [
+          "院落",
+          "寺",
+          "北郭"
+        ],
+        "narrative_events": [
+          {
+            "unit": 2873,
+            "actors": "宁采臣",
+            "location": "金华北郭兰若",
+            "space": "寺中殿塔、僧舍、南小舍、殿东修竹巨池",
+            "event": "宁采臣赴金华，至北郭，解装兰若，见寺中壮丽而荒落，独南小舍扃键如新，又见修竹巨池，意乐其幽杳，遂留止待僧归。",
+            "identity": "浙人，性慷爽，廉隅自重，赴试士人",
+            "interpretation": "兰若作为荒落而幽杳的异境入口，为后续人异相遇提供空间条件；宁主动选择留止，显示其好奇与自信。",
+            "quote": "宁采臣，浙人。性慷爽，廉隅自重，每对人言：「生平无二色。适赴金华，至北郭，解装兰若",
+            "from_space": "浙",
+            "to_space": "金华北郭兰若",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2875
+          },
+          {
+            "unit": 2882,
+            "actors": "宁采臣、燕赤霞",
+            "location": "兰若殿廊",
+            "space": "殿廊",
+            "event": "日暮，燕赤霞启南扉，宁趋为礼并告以留止之意。燕自言侨居，宁喜，藉藁代床，支板作几。月夜二人促膝殿廊，各展姓字，燕自言燕姓字赤霞，秦人，语甚朴诚，遂拱别归寝。",
+            "identity": "宁为赴试士人，燕为侨居士人",
+            "interpretation": "殿廊夜谈建立宁、燕同宿关系，为后续剑客护身埋下伏笔；燕之秦人身份与朴诚言语形成空间上的异乡人共处。",
+            "quote": "日暮，有士人来，启南扉。宁趋为礼，且告以意。士人曰：「此间无房主，仆亦侨居。能甘荒落，旦晚惠教，幸甚。」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2886
+          },
+          {
+            "unit": 2892,
+            "actors": "宁采臣、妇、媪、聂小倩",
+            "location": "兰若舍北短墙外小院落",
+            "space": "北壁石窗下、短墙外小院落",
+            "event": "宁以新居久不成寐，闻舍北喁喁，伏北壁石窗下微窥，见短墙外小院落有妇、媪偶语月下，提及小倩。俄有十七八女子来，仿佛艳绝，媪与女相谑。宁意其邻人眷口，寝不复听。",
+            "identity": "宁为借宿士人，妇、媪、小倩为北院异类",
+            "interpretation": "石窗窥视构成空间越界，宁从寺内空间窥见北院异境，小倩首次以被谈论者与现身者双重身份出现。",
+            "quote": "宁以新居，久不成寐，闻舍北喁喁，如有家口。起，伏北壁石窗下微窥之。见短墙外一小院落，有妇可四十余；又一媪衣绯，插蓬沓，鲐背龙钟，偶语月下。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2895
+          },
+          {
+            "unit": 2909,
+            "actors": "聂小倩、宁采臣",
+            "location": "宁采臣寝所",
+            "space": "寝所、户外、庭墀",
+            "event": "宁将睡，觉有人至寝所，急起审顾，则北院女子。女愿修燕好，宁正容拒之，女以夜无知者相诱，宁叱速去，女惧乃退。至户外复返，以黄金一铤置褥上，宁掇掷庭墀，女惭出拾金，自言此汉当是铁石。",
+            "identity": "宁为刚直士人，小倩为受胁迫的异类女子",
+            "interpretation": "寝所成为欲望与财货试探的空间，宁两次拒绝将女逼退至户外，空间边界强化其廉隅自重。",
+            "quote": "方将睡去，觉有人至寝所，急起审顾，则北院女子也，惊问之。女笑曰：「月夜不寐，愿修燕好。宁正容曰：「卿防物议，我畏人言；略一失足，廉耻道丧",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2912
+          },
+          {
+            "unit": 2920,
+            "actors": "兰溪生及其仆、宁采臣、燕赤霞",
+            "location": "兰若东厢",
+            "space": "东厢",
+            "event": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡，足心有小孔如锥刺，细细有血出。经宿，一仆死，症亦如之。向晚燕生归，宁质之，燕以为魅。宁素抗直，颇不在意。",
+            "identity": "兰溪生为候试士人，宁为借宿士人，燕为剑客（未明言）",
+            "interpretation": "东厢成为异类杀人的现场，死亡症状揭示小倩所述锥刺摄血机制；宁不在意，反衬其刚直。",
+            "quote": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。足心有小孔，如锥刺者，细细有血出。俱莫知故。经宿，一仆死，症亦如之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2923
+          },
+          {
+            "unit": 2926,
+            "actors": "聂小倩、宁采臣",
+            "location": "宁采臣寝所",
+            "space": "寝所",
+            "event": "宵分，女子复至，谓宁曰妾阅人多矣，未有刚肠如君者，君诚圣贤，妾不敢欺。自言小倩姓聂氏，十八夭殂，葬于寺侧，被妖物威胁，历役贱务。今寺中无可杀者，恐当以夜叉来。宁骇求计，女告与燕生同室可免，并述迷人以锥刺足摄血、以罗刹鬼骨化金截取心肝。宁感谢，问戒备之期，答以明宵。临别泣求囊妾朽骨归葬安宅，宁毅然诺之，问葬处，曰但记取白杨之上有乌巢者是也。言已出门，纷然而灭。",
+            "identity": "小倩为受胁迫的异类女子，宁为刚直士人",
+            "interpretation": "寝所转为信息交换空间，小倩自述身世与妖物机制，完成从诱惑者到求助者的身份转变；归葬请求将异境与人间葬地连接。",
+            "quote": "宵分，女子复至，谓宁曰：「妾阅人多矣，未有刚肠如君者。君诚圣贤，妾不敢欺。（妾小）倩，姓聂氏，十八夭殂，葬（于）寺侧，（辄）被妖物威胁，（历）役贱务。觍颜向人，实非所乐。今寺中无可杀者，恐当以夜叉来",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2930
+          },
+          {
+            "unit": 2943,
+            "actors": "宁采臣、燕赤霞",
+            "location": "兰若燕赤霞宿处",
+            "space": "燕生宿处、窗上、窗外",
+            "event": "明日，宁恐燕他出，早诣邀致，辰后具酒馔，留意察燕。既约同宿，燕辞以性癖耽寂，宁不听，强携卧具来。燕不得已移榻从之，嘱勿翻窥箧襆。既而各寝，燕以箱箧置窗上，齁如雷吼。近一更许，窗外有人影窥视，目光睒闪。宁惧欲呼燕，忽有物裂箧而出，耀若匹练，触折窗上石棂，飚然一射，即遽敛入。燕觉而起，宁伪睡以觇之。燕捧箧检征，取一物对月嗅视，白光晶莹，长可二寸，径韭叶许，数重包固，仍置破箧中，自语何物老魅大胆，致坏箧子，遂复卧。宁大奇之，起问，燕曰我剑客也，若非石棂妖当立毙，虽然亦伤。问所缄何物，曰剑也，适嗅之有妖气。宁欲观之，燕慨出相示，荧荧然一小剑也，于是益厚重燕。",
+            "identity": "宁为借宿士人，燕为剑客",
+            "interpretation": "同宿空间使剑客身份显露，剑光破箧击妖，石棂成为保护宁的物理屏障；燕之剑袋与剑为后续护身核心。",
+            "quote": "明日，恐燕他出，早诣邀致。辰后具酒馔，留意察燕。既约同宿，辞以性癖耽寂。宁不听，强携卧具来。燕不得已，移榻从之，嘱曰：「仆知足下丈夫，倾风良切。要有微衷，难以遽白。幸勿翻窥箧襆，违之，两俱不利。」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2950
+          },
+          {
+            "unit": 2966,
+            "actors": "宁采臣、燕赤霞",
+            "location": "兰若寺北荒坟",
+            "space": "寺北荒坟、白杨乌巢",
+            "event": "明日，视窗外有血迹，遂出寺北，见荒坟累累，果有白杨，乌巢其颠。迨营谋既就，趣装欲归，燕生设祖帐，情义殷渥，以破革囊赠宁，曰此剑袋也，宝藏可远魑魅。宁欲从授其术，燕曰如君信义刚直可以为此，然君犹富贵中人，非此道中人也。宁乃托有妹葬此，发掘女骨，敛以衣衾，赁舟而归。",
+            "identity": "宁为信义刚直士人，燕为剑客",
+            "interpretation": "寺北荒坟为小倩葬处，白杨乌巢为空间标记；掘骨赁舟归，完成从异境到人间的空间转移，剑袋成为护界之物。",
+            "quote": "明日，视窗外，有血迹，遂出寺北，见荒坟累累，果有白杨，乌巢其颠。迨营谋既就，趣装欲归，燕生设祖帐，情义殷渥。以破革囊赠宁，曰：「此剑袋也。宝藏可远魑魅",
+            "from_space": "兰若",
+            "to_space": "寺北荒坟",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2969
+          },
+          {
+            "unit": 2974,
+            "actors": "宁采臣、聂小倩",
+            "location": "宁采臣斋外",
+            "space": "斋外、斋中",
+            "event": "宁斋临野，因营坟葬诸斋外，祭而祝曰怜卿狐魂，葬近蜗居，歌哭相闻，庶不见陵于雄鬼。祝毕而返，后有人呼曰缓待同行，回顾则小倩也，欢喜谢曰君信义，十死不足以报，请从归，拜识姑嫜，媵御无悔。审谛之，肌映流霞，足翘细笋，白昼端相，娇艳尤绝。遂与俱至斋中，嘱坐少待，先入白母。",
+            "identity": "宁为归家士人，小倩为已迁葬的异类女子",
+            "interpretation": "斋外葬骨使小倩脱离荒墓，白昼现身标志其从异境进入人间日常空间；先入白母显示家庭空间的准入程序。",
+            "quote": "宁斋临野，因营坟葬诸斋外，祭而祝曰：「怜卿狐魂，葬近蜗居，歌哭相闻，庶不见陵于雄鬼。一瓯浆水饮，殊不清旨，幸不为嫌。祝毕而返，后有人呼曰：「缓待同行！」回顾则小倩也",
+            "from_space": "寺北荒坟",
+            "to_space": "宁斋外",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 2977
+          },
+          {
+            "unit": 2980,
+            "actors": "宁采臣、宁母、聂小倩",
+            "location": "宁采臣家",
+            "space": "斋中、母室、厨下",
+            "event": "宁入白母，母愕然。时宁妻久病，母戒勿言。言次女已翩然入，拜伏地下。宁曰此小倩也。母惊顾不遑。女谓母曰儿飘然一身，远父母兄弟，蒙公子露复，愿执箕帚以报高义。母见其绰约可爱，始敢与言，曰但生平止此儿，用承祧绪，不敢令有鬼偶。女请以兄事，依高堂，奉晨昏。母怜其诚，允之。女即入厨下，代母尸饔，入房穿榻，似熟居者。日暮，母畏惧之，辞使归寝，不为设床褥。女窥知母意，即竟去。过斋欲入却退，徘徊户外，似有所惧。生呼之，女曰室有剑气畏人。宁悟为革囊，取悬他室。女乃入，就烛下坐，移时殊不一语，久之问夜读否，妾少诵楞严经，今强半遗忘，浼求一卷，夜暇就兄正之。宁诺。又坐默然，二更向尽，不言去。宁促之，愀然曰异域孤魂，殊怯荒墓。宁曰斋中别无床寝，且兄妹亦宜远嫌。女起，眉颦蹙而欲啼，足㑌儴而懒步，从容出门，涉阶而没。宁窃怜之，欲留宿别榻，又惧母嗔。女朝旦朝母，捧匜沃盥，下堂操作，无不曲承母志；黄昏告退，辄过斋头，就烛诵经；觉宁将寝，始惨然去。先是宁妻病废，母劬不可堪；自得女，逸甚，心德之。日渐稔，亲爱如己出，竟忘其为鬼，不忍晚令去，留与同卧起。女初来未尝食饮，半年渐啜稀。母子皆溺爱之，讳言其鬼，人亦不之辨也。",
+            "identity": "宁为归家士人，母为宁母，小倩为以兄妹身份寄居的异类女子",
+            "interpretation": "家庭空间通过厨下操作、晨昏定省、诵经等日常实践接纳小倩；剑袋悬他室解除空间畏惧，母留同卧起标志人异共处的深化。",
+            "quote": "遂与俱至斋中，嘱坐少待，先入白母。母愕然。时宁妻久病，母戒勿言，恐所骇惊。言次女已翩然入，拜伏地下。宁曰：「此小倩也。」母惊顾不遑。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 2985
+          },
+          {
+            "unit": 3021,
+            "actors": "宁母、聂小倩、宁采臣",
+            "location": "宁采臣家",
+            "space": "家庭空间",
+            "event": "无何，宁妻亡。母阴有纳女意，然恐于子不利。女微窥之，乘间告母曰居年余，当知儿肝鬲，为不欲祸行人，故从郎君来，止以公子光明磊落，实欲依赞三数年，借博封诰以光泉壤。母亦知其无恶，但惧不能延宗嗣。女曰子女惟天所授，郎君注福籍，有亢宗子三，不以鬼妻而遂夺也。母信之，与子议，宁喜，因列筵告戚党。或请觌新妇，女慨然华妆出，一堂尽眙，反不疑其鬼，疑为仙。由是五党诸内眷，咸执贽以贺，争拜识之。女善画兰梅，辄以尺幅酬答，得者藏之什袭以为荣。",
+            "identity": "宁母为家长，小倩为将纳为妇的异类女子，宁为子",
+            "interpretation": "妻亡后家庭空间重组，小倩以华妆出见戚党，完成从鬼到仙的社会身份转换；画兰梅酬答使异类融入人间社交网络。",
+            "quote": "无何，宁妻亡。母阴有纳女意，然恐于子不利。女微窥之，乘间告（母）曰：「居年余，当知（儿）肝鬲。为不欲祸行人，故从郎君来。区区无他意，止以公子光明磊落，为天人所钦瞩，实欲依赞三数年，借博封诰，以光泉壤",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 3025
+          },
+          {
+            "unit": 3032,
+            "actors": "聂小倩、宁采臣、夜叉",
+            "location": "宁采臣家",
+            "space": "窗前、床头、户上、夹幙间",
+            "event": "一日，女俯颈窗前，怊怅若失，忽问革囊何在。宁曰以卿畏之故缄置他所。女曰妾受生气已久，当不复畏，宜取挂床头。宁诘其意，曰三日来心怔忡无停息，意金华妖物恨妾远遯，恐旦晚寻及也。宁果携革囊来。女反复审视，曰此剑仙将盛人头者也，敝败至此，不知杀人几何许，妾今日视之，肌犹粟栗。乃悬之。次日，又命移悬户上。夜对烛坐，约宁勿寝。欻有一物如飞鸟堕，女惊匿夹幙间。宁视之，物如夜叉状，电目血舌，睒闪攫拿而前，至门却步，逡巡久之，渐近革囊，以爪摘取，似将抓裂。囊忽格然一响，大可合篑，恍惚有鬼物突出半身，揪夜叉入。声遂寂然，囊亦顿缩如故。宁骇诧，女亦出，大喜曰无恙矣。共视囊中，清水数斗而已。",
+            "identity": "小倩为受生气已久的异类女子，宁为夫，夜叉为金华妖物",
+            "interpretation": "革囊从畏物转为护界法器，悬床头、户上形成空间防御；夜叉至门却步，最终被囊中鬼物揪入，囊中清水象征妖物被消解。",
+            "quote": "一日，俯颈窗前，怊怅若失。忽问：「革囊何在？」曰：「以卿畏之，故缄置他所。」曰：「妾受生气已久，当不复畏，宜取挂床头。宁诘其意，曰：「三日来，心怔忡无停息，意金华妖物恨妾远遯，恐旦晚寻及也",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 3036
+          },
+          {
+            "unit": 3053,
+            "actors": "宁采臣、聂小倩",
+            "location": "宁采臣家",
+            "space": "家庭空间",
+            "event": "后数年，宁果登进士。女举一男。纳妾后又各生一男，皆仕进有声。",
+            "identity": "宁为进士，小倩为妻，妾为后纳",
+            "interpretation": "结局以科举成功与子嗣兴旺收束，空间上家庭完全接纳异类，人异共处达成稳定秩序。",
+            "quote": "后数年，宁果登进士。（女）举一男。纳妾后又各生一男，皆仕进有声",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 3055
+          }
+        ],
+        "people": [
+          {
+            "id": "c48-edited-p0",
+            "word": "燕",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c48-edited-p1",
+            "word": "小倩",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "鬼": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c48-edited-p2",
+            "word": "宁",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c48-edited-p3",
+            "word": "宁采臣",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c48-edited-p4",
+            "word": "燕生",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 74,
+      "changes": {
+        "event_types": {
+          "鬼": 1,
+          "妖": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {
+          "places:北郭": {
+            "status": "corrected",
+            "word": "北郭",
+            "kind": "spaces",
+            "note": ""
+          },
+          "spaces:北郭": {
+            "status": "accepted",
+            "word": "北郭",
+            "kind": "spaces",
+            "note": ""
+          }
+        },
+        "years": {
+          "十七岁": 1,
+          "十八岁": 1,
+          "一日": 3,
+          "三日": 1,
+          "三月": 1
+        },
+        "places": [
+          {
+            "word": "广东",
+            "mentions": 0
+          },
+          {
+            "word": "琼州",
+            "mentions": 0
+          },
+          {
+            "word": "秦女村",
+            "mentions": 0
+          }
+        ],
+        "space_words": [
+          "门外",
+          "逆旅",
+          "庭院",
+          "北郭"
+        ],
+        "narrative_events": [
+          {
+            "unit": 4701,
+            "actors": "傅廉、傅父",
+            "location": "广东傅家",
+            "space": "家庭",
+            "event": "傅氏生一子名廉，天阉，十七岁阴裁如蚕，远近无女嫁之，傅父忧宗绪绝。",
+            "identity": "傅廉为搢绅之子、天阉少年；傅父为六十余岁搢绅",
+            "interpretation": "开篇以生理缺陷与家族焦虑建立空间内的困境，为后续异境治愈埋因。",
+            "quote": "广东有搢绅傅氏，年六十余，生一子，名廉。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot"
+          },
+          {
+            "unit": 4705,
+            "actors": "傅廉、猴戏者、师",
+            "location": "学塾门外",
+            "space": "学塾",
+            "event": "廉从师读，师偶出，门外有猴戏，廉废学观看，惧师责而逃去。",
+            "identity": "傅廉为从师读书的学生",
+            "interpretation": "逃学成为离开原生空间的触发点，空间由学塾转向路途。",
+            "quote": "廉从师读。师偶他出，适门外有猴戏者，廉视之，废学焉。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4706
+          },
+          {
+            "unit": 4708,
+            "actors": "傅廉、素衣女郎、小婢",
+            "location": "离家数里之路途",
+            "space": "路途",
+            "event": "廉离家数里，遇素衣女郎与小婢，女郎托其寄书至琼州秦女村，廉诺之。",
+            "identity": "傅廉为逃亡书生；女郎为华姓寄书人",
+            "interpretation": "路遇托书引入异境线索，空间从广东向琼州延伸。",
+            "quote": "离家数里，见一素衣女郎，偕小婢出其前。",
+            "from_space": "学塾",
+            "to_space": "路途",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement"
+          },
+          {
+            "unit": 4719,
+            "actors": "傅廉",
+            "location": "琼州北郭至秦女村途中",
+            "space": "异乡路途",
+            "event": "廉附舟至琼州北郭，日暮问秦女村无人知，北行四五里，旷野无旅舍，窘甚。",
+            "identity": "傅廉为寄书旅人",
+            "interpretation": "空间陌生化与迷路制造异境入口，为遇鬼狐铺垫。",
+            "quote": "生附舟便去。至琼州北郭，日已曛暮。",
+            "from_space": "路途",
+            "to_space": "琼州北郭",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4720
+          },
+          {
+            "unit": 4723,
+            "actors": "傅廉",
+            "location": "道侧墓旁树上",
+            "space": "荒冢",
+            "event": "廉见道侧一墓，惧虎狼，攀树蹲踞其上，闻人声俯瞰，见庭院丽人。",
+            "identity": "傅廉为寄书旅人、窥视者",
+            "interpretation": "树上与墓下形成垂直空间，现实荒冢与异境庭院叠合。",
+            "quote": "见道侧一墓，思欲傍坟栖止，大惧虎狼。因攀树猱升，蹲踞其上。",
+            "from_space": "琼州北郭",
+            "to_space": "道侧墓旁树上",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4724
+          },
+          {
+            "unit": 4731,
+            "actors": "傅廉、丽人、婢",
+            "location": "墓下庭院",
+            "space": "异境庭院",
+            "event": "婢仰视发现树上有人，丽人惊起，廉下树伏地乞宥，丽人曳与并坐，邀入室共榻。",
+            "identity": "傅廉为窥视者、借宿客；丽人为庭院女主人（后知为巧娘）",
+            "interpretation": "从树上到庭院再到室内，空间层层深入，人物关系由惊惧转为接纳。",
+            "quote": "忽婢子仰视曰：「树上有人！」女惊起曰：「何处大胆儿，暗来窥人！」",
+            "from_space": "道侧墓旁树上",
+            "to_space": "墓下庭院",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4733
+          },
+          {
+            "unit": 4746,
+            "actors": "傅廉、巧娘、婢",
+            "location": "室内一榻",
+            "space": "寝室",
+            "event": "巧娘暗中探廉隐处，发现其天阉，停手怅然，出衾而哭，命婢唤郎醒遣去。",
+            "identity": "傅廉为天阉借宿客；巧娘为鬼女、庭院主人",
+            "interpretation": "私密空间暴露生理缺陷，导致巧娘悲叹命运，情节转折。",
+            "quote": "女暗中以纤手探入，轻捻胫股。生伪寐，若不觉知。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4747
+          },
+          {
+            "unit": 4760,
+            "actors": "华姑、巧娘、傅廉、婢",
+            "location": "室内",
+            "space": "寝室",
+            "event": "华姑排闼入，见巧娘啼泪，又见榻上卧者，取书视之，识为己女三姐家报，知吴郎已死。",
+            "identity": "华姑为三姐之母（后知为狐）；巧娘为鬼女；傅廉为寄书人",
+            "interpretation": "书信成为连接华姑与傅廉的关键物，空间内人物关系重组。",
+            "quote": "一妇人排闼入。婢白：「华姑来。」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4762
+          },
+          {
+            "unit": 4786,
+            "actors": "华姑、傅廉",
+            "location": "东厢",
+            "space": "东厢",
+            "event": "华姑引廉入东厢，验其隐处，得黑丸令吞下，嘱勿哗。",
+            "identity": "华姑为狐母、施药者；傅廉为受药者",
+            "interpretation": "东厢成为治愈空间，黑丸为异境药物，使天阉可复。",
+            "quote": "遂异生入东厢，探手 于裤夸而验之",
+            "from_space": "室内",
+            "to_space": "东厢",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement"
+          },
+          {
+            "unit": 4791,
+            "actors": "傅廉",
+            "location": "东厢",
+            "space": "东厢",
+            "event": "廉独卧，五更觉脐下热气冲隐处，自探身已伟男，惊喜。",
+            "identity": "傅廉为服药后恢复男身者",
+            "interpretation": "身体变化在封闭空间内完成，标志天阉困境解除。",
+            "quote": "将比五更，初醒，觉脐下热气一缕，直冲隐处，蠕蠕然似有物垂股际；自探之，身已伟男。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4792
+          },
+          {
+            "unit": 4800,
+            "actors": "华姑、三娘、傅廉、巧娘",
+            "location": "堂中",
+            "space": "堂屋",
+            "event": "华姑携三娘归，命三娘拜谢，相呼兄妹，巧娘戏问，后华姑私嘱廉阴为婿阳为子，三娘与廉同寝。",
+            "identity": "三娘为狐女、华姑之女；傅廉为恢复男身者；巧娘为鬼女",
+            "interpretation": "堂中宴饮与寝室结合，确立三娘与廉的婚配关系。",
+            "quote": "延及夜分，妇始携女归。发扉曰：「闷煞郎君矣！三娘可来拜谢。」",
+            "from_space": "东厢",
+            "to_space": "堂中",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4803
+          },
+          {
+            "unit": 4817,
+            "actors": "傅廉、三娘",
+            "location": "寝室",
+            "space": "寝室",
+            "event": "廉与三娘枕上问答，三娘自承为狐，告巧娘为鬼，因毛家小郎病阉而赍恨如冥。",
+            "identity": "三娘为狐女；傅廉为恢复男身者；巧娘为鬼女",
+            "interpretation": "枕上对话揭示鬼狐身份与巧娘悲剧根源，空间私密性促成真相显露。",
+            "quote": "既于枕上问女：「巧娘何为？」曰：「鬼也",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4818
+          },
+          {
+            "unit": 4829,
+            "actors": "傅廉、巧娘、华姑、三娘",
+            "location": "室内",
+            "space": "寝室",
+            "event": "华姑母子外出，闭廉室中；廉呼巧娘，婢启扉，廉与巧娘绸缪，巧娘怨华姑妒忌，华姑掩入怒责，三娘调停。",
+            "identity": "傅廉为恢复男身者；巧娘为鬼女；华姑为狐母；三娘为狐女",
+            "interpretation": "闭室与启扉构成空间冲突，巧娘与华姑矛盾激化，三娘居中调停。",
+            "quote": "一日，华氏母子将他往，复闭生室中。生闷气，绕室隔扉呼巧娘。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4830
+          },
+          {
+            "unit": 4857,
+            "actors": "华姑、傅廉、巧娘、三娘",
+            "location": "门外、舟上",
+            "space": "门外与舟",
+            "event": "华姑促廉归告父母订永约，治装送行；出门见院宇无存，但见荒冢；华姑送至舟上，嘱李氏废园待亲迎。",
+            "identity": "华姑为狐母；傅廉为归家订约者；巧娘、三娘为送别者",
+            "interpretation": "异境庭院消失，荒冢显现，空间由幻转实，廉返回人间。",
+            "quote": "华姑谓生曰：「吾儿姊妹皆已奉事君。念居此非计，君宜归告父母，早订永约。」",
+            "from_space": "室内",
+            "to_space": "门外",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4859
+          },
+          {
+            "unit": 4866,
+            "actors": "傅廉、傅父、傅母",
+            "location": "广东傅家",
+            "space": "家庭",
+            "event": "廉归家，父喜出望外；廉述崖末及华氏之订，父嗤为妖言；廉私婢，母验知子不阉，喜极宣暴，欲论婚世族。",
+            "identity": "傅廉为归家之子、已愈者；傅父为父；傅母为母",
+            "interpretation": "家庭空间内验证身体恢复，父母态度转变，为迎娶三娘铺路。",
+            "quote": "生乃归。时傅父觅子不得，正切焦虑，见子归，喜出非望。",
+            "from_space": "舟上",
+            "to_space": "广东傅家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4867
+          },
+          {
+            "unit": 4884,
+            "actors": "傅廉、傅父、仆、妪",
+            "location": "李氏废园",
+            "space": "废园",
+            "event": "傅父从廉意，遣仆妪往觇；出东郭四五里寻李氏园，见败垣竹树中炊烟，妪入见华姑母子，知三娘在，巧娘已死。",
+            "identity": "傅廉为求婚者；仆妪为使者；华姑为狐母；三娘为待嫁狐女",
+            "interpretation": "废园作为人间与异境交界，使者探访确认婚约与巧娘死讯。",
+            "quote": "傅父从之，遣一仆一妪往觇之。出东郭四五里，寻李氏园，见败垣竹树中，缕缕有炊烟。",
+            "from_space": "广东傅家",
+            "to_space": "李氏废园",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4885
+          },
+          {
+            "unit": 4895,
+            "actors": "傅廉、三娘、华姑",
+            "location": "傅家",
+            "space": "家庭",
+            "event": "廉迎三娘归，问华姑巧娘，答已投生北地；廉终不能忘情巧娘，凡有自琼来者必召问。",
+            "identity": "傅廉为迎亲者；三娘为狐妻；华姑为狐母",
+            "interpretation": "迎亲完成婚配，但巧娘缺席成为情感空间中的空缺。",
+            "quote": "至亲迎之夜，见华姑亲问之，答云：「已投生北地矣。」",
+            "from_space": "李氏废园",
+            "to_space": "傅家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4896
+          },
+          {
+            "unit": 4898,
+            "actors": "傅廉、三娘",
+            "location": "傅家",
+            "space": "家庭",
+            "event": "或言秦女墓夜闻鬼哭，廉告三娘，三娘泣下自承负姊，言母子来时未使闻，怨啼或为巧娘。",
+            "identity": "傅廉为夫；三娘为狐妻",
+            "interpretation": "鬼哭传闻将空间引回秦女墓，三娘坦白推动情节再转折。",
+            "quote": "或言秦女墓夜闻鬼哭。生诧其异，入告三娘。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4899
+          },
+          {
+            "unit": 4904,
+            "actors": "傅廉、巧娘、婴儿",
+            "location": "秦女墓",
+            "space": "墓穴",
+            "event": "廉命舆宵昼兼程驰诣秦女墓，叩墓木呼巧娘，巧娘捧婴儿自穴中出，言是廉遗孽，生三月。",
+            "identity": "傅廉为寻巧娘者；巧娘为鬼女、婴儿之母；婴儿为廉之子",
+            "interpretation": "墓穴成为生死复归的空间节点，巧娘携子出墓，完成复归。",
+            "quote": "生闻之，悲已而喜，即命舆，宵昼兼程，驰诣其墓。",
+            "from_space": "傅家",
+            "to_space": "秦女墓",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement"
+          },
+          {
+            "unit": 4912,
+            "actors": "傅廉、巧娘、婴儿、傅母",
+            "location": "傅家",
+            "space": "家庭",
+            "event": "廉与巧娘同舆航海而归，抱子告母，母视子体貌丰伟，益喜；二女谐和，事姑孝。",
+            "identity": "傅廉为夫、父；巧娘为鬼妻、母；三娘为狐妻；傅母为姑",
+            "interpretation": "巧娘回归家庭空间，鬼狐共处，家庭秩序重建。",
+            "quote": "乃与同舆，航海而归。抱子告母，母视之，体貌丰伟，不类鬼物，益喜。",
+            "from_space": "秦女墓",
+            "to_space": "傅家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "unit_end": 4913
+          },
+          {
+            "unit": 4915,
+            "actors": "傅父、巧娘、傅廉、儿",
+            "location": "傅家",
+            "space": "家庭",
+            "event": "傅父病，巧娘言疾不可为，督治冥具，既竣而卒；儿长绝肖父，尤慧，十四游泮。",
+            "identity": "傅父为父；巧娘为鬼妻、预言者；儿为廉之子",
+            "interpretation": "傅父卒与儿游泮形成生死交替，家庭空间延续至下一代。",
+            "quote": "后傅父病，延医来。巧娘曰：「疾不可为，魂已离舍。」",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "unit_end": 4917
+          }
+        ],
+        "people": [
+          {
+            "id": "c74-edited-p0",
+            "word": "巧娘",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "鬼": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c74-edited-p1",
+            "word": "李氏",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c74-edited-p2",
+            "word": "傅氏",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c74-edited-p3",
+            "word": "吴郎",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c74-edited-p4",
+            "word": "华氏",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
       "chapter_id": 87,
       "changes": {
         "event_types": {
@@ -1253,1577 +2546,6 @@
       }
     },
     {
-      "chapter_id": 411,
-      "changes": {
-        "event_types": {
-          "妖": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "马子才 / ， / 顺天人 / 。\n世 / 好 / 菊 / ， / 至才尤甚 / ， / 闻 / 有 / 佳种 / ， / 必 / 购 / 之 / ， / 千 / 里 / 不 / 惮 / 。\n一 / 日 / ， / 有 / 金陵 / 客寓 / 其 / 家 / ， / 自 / 言 / 其中 / 表亲 / 有 / 一二 / 种 / ， / 为 / 北方 / 所 / 无 / 。\n马欣动 / ， / 即刻 / 治装 / ， / 从 / 客 / 至 / 金陵 / 。\n客 / 多方 / 为 / 之 / 营求 / ， / 得 / 两 / 芽 / ， / 裹藏 / 如 / 宝 / 。\n归 / 至 / 中途 / ， / 遇 / 一 / 少年 / ， / 跨 / 蹇 / 从 / 油碧车 / ， / 丰姿 / 洒 / 落 / 。\n渐近 / 与 / 语 / 。\n少年自言 / ：「 / 陶姓 / 。\n」 / 谈言骚雅 / 。\n因 / 问 / 马 / 所 / 自 / 来 / ， / 实 / 告 / 之 / 。\n少年 / 曰 / ：「 / 种 / 无 / 不 / 佳 / ， / 培溉 / 在 / 人 / 。\n」 / 因 / 与 / 论艺菊 / 之 / 法 / 。\n马大悦 / ， / 问 / ：「 / 将 / 何 / 往 / ？\n」 / 答 / 云 / ：「 / 姊 / 厌 / 金陵 / ， / 欲 / 卜居 / 于 / 河朔耳 / 。\n」 / 马 / 欣然 / 曰 / ：「 / 仆 / 虽 / 固贫 / ， / 茅庐 / 可以 / 寄榻 / 。\n不 / 嫌 / 荒陋 / ， / 无 / 烦 / 他 / 适 / 。\n」 / 陶 / 趋车 / 前 / ， / 向 / 姊咨禀 / 。\n车中人 / 推帘语 / ， / 乃 / 二十 / 许 / 绝世美人 / 也 / 。\n顾弟 / 言 / ：「 / 屋 / 不 / 厌卑 / ， / 而 / 院 / 宜 / 得 / 广 / 。\n」 / 马代诺之 / ， / 遂 / 与 / 俱 / 归 / 。\n第南 / 有 / 荒圃 / ， / 仅 / 小室 / 三四 / 椽 / ， / 陶喜 / ， / 居 / 之 / 。\n日 / 过 / 北院 / ， / 为 / 马 / 治 / 菊 / 。\n菊 / 已 / 枯 / ， / 拔根 / 再 / 植 / 之 / ， / 无 / 不 / 活 / 。\n然 / 家 / 清贫 / ， / 陶日 / 与 / 马 / 共 / 食 / 饮 / ， / 而 / 察 / 其 / 家 / 似 / 不 / 举 / 火 / 。\n马妻吕 / ， / 亦 / 爱 / 陶姊 / ， / 不 / 时 / 以 / 升斗 / 餽恤 / 之 / 。\n陶姊 / 小字 / 黄英 / ， / 雅 / 善 / 谈 / ， / 辄 / 过 / 吕 / 所 / ， / 与 / 共纫绩 / 。\n陶 / 一 / 日 / 谓 / 马 / 曰 / ：「 / 君 / 家 / 固 / 不 / 丰 / ， / 仆日 / 以 / 口腹累知交 / ， / 胡可 / 为 / 常 / 。\n为 / 今计 / ， / 卖 / 菊 / 亦 / 足 / 谋生 / 。\n」 / 马素 / 介 / ， / 闻陶言 / ， / 甚鄙之 / ， / 曰 / ：「 / 仆 / 以 / 君 / 风流 / 高士 / ， / 当能 / 安贫 / ；\n今 / 作 / 是 / 论 / ， / 则 / 以 / 东篱 / 为 / 市井 / ， / 有 / 辱 / 黄花 / 矣 / 。\n」 / 陶笑曰 / ：「 / 自食其力 / 不 / 为 / 贪 / ， / 贩 / 花 / 为 / 业 / 不 / 为 / 俗 / 。\n人 / 固 / 不 / 可 / 苟 / 求 / 富 / ， / 然 / 亦 / 不 / 必务 / 求贫 / 也 / 。\n」 / 马 / 不 / 语 / ， / 陶 / 起 / 而 / 出 / 。\n自 / 是 / ， / 马 / 所 / 弃 / 残 / 枝 / 劣种 / ， / 陶悉 / 掇 / 拾 / 而 / 去 / 。\n由此 / 不 / 复 / 就 / 马寝食 / ， / 招之始一至 / 。\n未 / 几 / ， / 菊 / 将 / 开 / ， / 闻 / 其 / 门嚣 / 喧 / 如 / 市 / 。\n怪 / 之 / ， / 过而窥焉 / ， / 见市人 / 买 / 花 / 者 / ， / 车 / 载 / 肩负 / ， / 道 / 相 / 属 / 也 / 。\n其 / 花皆 / 异种 / ， / 目所未睹 / 。\n心厌其贪 / ， / 欲 / 与 / 绝 / ；\n而 / 又 / 恨 / 其 / 私秘 / 佳本 / ， / 遂款其扉 / ， / 将 / 就 / 消让 / 。\n陶出 / ， / 握手 / 曳入 / 。\n见 / 荒庭 / 半 / 亩 / 皆 / 菊 / 畦 / ， / 数椽 / 之外 / 无 / 旷土 / 。\n\ud84c / \udcc1去 / 者 / ， / 则折别枝插补 / 之；\n其 / 蓓蕾 / 在 / 畦者 / ， / 罔 / 不 / 佳 / 妙 / ： / 而 / 细 / 认 / 之 / ， / 皆 / 向 / 所 / 拔弃 / 也 / 。\n陶入 / 屋 / ， / 出 / 酒馔 / ， / 设 / 席畦 / 侧 / ， / 曰 / ：「 / 仆 / 贫 / 不 / 能 / 守 / 清 / 戒 / ， / 连 / 朝幸 / 得 / 微赀 / ， / 颇 / 足 / 供 / 醉 / 。\n」 / 少 / 间 / ， / 房 / 中 / 呼 / 「 / 三郎 / 」， / 陶诺 / 而 / 去 / 。\n俄 / 献 / 佳肴 / ， / 烹饪 / 良精 / 。\n因 / 问 / ：「 / 贵 / 姊胡 / 以 / 不 / 字 / ？\n」 / 答 / 云 / ：「 / 时 / 未 / 至 / 。\n」 / 问 / ：「 / 何时 / ？\n」 / 曰 / ：「 / 四十三月 / 。\n」 / 又诘 / ：「 / 何 / 说 / ？\n」 / 但 / 笑 / 不 / 言 / ， / 尽 / 欢始 / 散 / 。\n过 / 宿 / ， / 又 / 诣 / 之 / ， / 新插者 / 已 / 盈 / 尺 / 矣 / 。\n大 / 奇 / 之 / ， / 苦求 / 其 / 术 / 。\n陶 / 曰 / ：「 / 此 / 固 / 非 / 可 / 言传 / ；\n且君 / 不 / 以 / 谋生 / ， / 焉 / 用 / 此 / ？\n」 / 又 / 数 / 日 / ， / 门庭略寂 / ， / 陶乃 / 以 / 蒲席 / 包 / 菊 / ， / 捆载 / 数 / 车 / 而 / 去 / 。\n逾岁 / ， / 春 / 将 / 半 / ， / 始 / 载 / 南 / 中 / 异卉 / 而 / 归 / ， / 于都 / 中 / 设 / 花肆 / ， / 十日 / 尽 / 售 / ， / 复归 / 艺菊 / 。\n问 / 之 / 去年 / 买 / 花 / 者 / ， / 留 / 其 / 根 / ， / 次年 / 尽 / 变 / 而 / 劣 / ， / 乃 / 复 / 购 / 于 / 陶 / 。\n陶由 / 此日 / 富 / ： / 一 / 年 / 增舍 / ， / 二 / 年 / 起 / 夏屋 / 。\n兴作 / 从 / 心 / ， / 更 / 不 / 谋 / 诸 / 主人 / 。\n渐 / 而 / 旧日 / 花畦 / ， / 尽 / 为 / 廊舍 / 。\n更 / 于 / 墙 / 外 / 买 / 田 / 一 / 区 / ， / 筑墉 / 四周 / ， / 悉 / 种 / 菊 / 。\n至 / 秋 / ， / 载 / 花 / 去 / ， / 春 / 尽 / 不 / 归 / 。\n而 / 马妻病 / 卒 / 。\n意属 / 黄英 / ， / 微 / 使 / 人 / 风示之 / 。\n黄英 / 微笑 / ， / 意 / 似 / 允许 / ， / 惟 / 专候 / 陶归 / 而已 / 。\n年余 / ， / 陶 / 竟 / 不 / 至 / 。\n黄英 / 课仆 / 种 / 菊 / ， / 一 / 如 / 陶 / 。\n得 / 金益合 / 商贾 / ， / 村 / 外 / 治 / 膏田 / 二十 / 顷 / ， / 甲 / 第益 / 壮 / 。\n忽 / 有 / 客 / 自 / 东粤 / 来 / ， / 寄 / 陶生函信 / ， / 发 / 之 / ， / 则 / 嘱姊归马 / 。\n考 / 其 / 寄 / 书 / 之 / 日 / ， / 即 / 妻 / 死 / 之 / 日 / ；\n回忆 / 园中之饮 / ， / 适四十三月 / 也 / ， / 大奇之 / 。\n以 / 书 / 示英 / ， / 请问 / 「 / 致 / 聘 / 何 / 所 / 」。\n英辞 / 不 / 受 / 采 / 。\n又 / 以 / 故居 / 陋 / ， / 欲 / 使 / 就 / 南 / 第居 / ， / 若 / 赘焉 / 。\n马 / 不 / 可 / ， / 择日行亲 / 迎 / 礼 / 。\n黄英 / 既 / 适 / 马 / ， / 于间壁 / 开扉 / 通南第 / ， / 日过课其仆 / 。\n马耻 / 以 / 妻 / 富 / ， / 恒 / 嘱 / 黄英 / 作 / 南北籍 / ， / 以防 / 淆乱 / 。\n而 / 家 / 所 / 须 / ， / 黄英辄 / 取 / 诸 / 南 / 第 / 。\n不 / 半 / 岁 / ， / 家 / 中触类 / 皆 / 陶 / 家 / 物 / 。\n马 / 立遣人 / 一一 / 赍还 / 之 / ， / 戒勿 / 复取 / 。\n未 / 浃 / 旬 / ， / 又 / 杂 / 之 / 。\n凡数 / 更 / ， / 马 / 不 / 胜 / 烦 / 。\n黄英 / 笑 / 曰 / ：「 / 陈仲子 / 毋乃劳 / 乎 / ？\n」 / 马慙 / ， / 不 / 复稽 / ， / 一切 / 听 / 诸 / 黄 / 英 / 。\n鸠工 / 庀料 / ， / 土木 / 大作 / ， / 马 / 不 / 能 / 禁 / 。\n经 / 数 / 月 / ， / 楼舍 / 连 / 互 / ， / 两 / 第 / 竟合 / 为 / 一 / ， / 不 / 分 / 疆界 / 矣 / 。\n然遵马教 / ， / 闭 / 门 / 不 / 复 / 业 / 菊 / ， / 而 / 享用 / 过于 / 世 / 家 / 。\n马 / 不 / 自安 / ， / 曰 / ：「 / 仆 / 三十 / 年 / 清德 / ， / 为 / 卿 / 所 / 累 / 。\n今 / 视息 / 人间 / ， / 徒 / 依 / 裙 / 带 / 而 / 食 / ， / 真 / 无 / 一 / 毫丈 / 夫气 / 矣 / 。\n人 / 皆 / 祝 / 富 / ， / 我 / 但 / 祝 / 穷 / 耳 / ！\n」 / 黄英 / 曰 / ：「 / 妾 / 非贪鄙 / ；\n但 / 不 / 少 / 致 / 丰盈 / ， / 遂 / 令 / 千 / 载 / 下 / 人 / ， / 谓 / 渊 / 明贫贱骨 / ， / 百 / 世 / 不 / 能 / 发迹 / ， / 故 / 聊 / 为 / 我 / 家 / 彭泽 / 解嘲 / 耳 / 。\n然贫者 / 愿 / 富 / ， / 为难 / ；\n富者 / 求贫 / ， / 固 / 亦 / 甚 / 易 / 。\n床头金 / 任 / 君 / 挥 / 去 / 之 / ， / 妾 / 不 / 靳 / 也 / 。\n」 / 马 / 曰 / ：「 / 捐 / 他人 / 之 / 金 / ， / 抑亦 / 良 / 丑 / 。\n」 / 英曰 / ：「 / 君 / 不 / 愿 / 富 / ， / 妾 / 亦 / 不 / 能 / 贫 / 也 / 。\n无已 / ， / 析 / 君 / 居 / ： / 清者 / 自清 / ， / 浊者 / 自浊 / ， / 何害 / ？\n」 / 乃 / 于 / 园中 / 筑 / 茅茨 / ， / 择美婢往侍马 / 。\n马安之 / 。\n然过 / 数日 / ， / 苦念 / 黄英 / 。\n招 / 之 / ， / 不 / 肯 / 至 / ；\n不 / 得已 / ， / 反就之 / 。\n隔宿辄至 / ， / 以为常 / 。\n黄英 / 笑 / 曰 / ：「 / 东食 / 西 / 宿 / ， / 廉者 / 当 / 不 / 如 / 是 / 。\n」 / 马 / 亦 / 自笑 / ， / 无 / 以 / 对 / ， / 遂 / 复合 / 居如 / 初 / 。\n会 / 马 / 以 / 事 / 客 / 金陵 / ， / 适逢 / 菊 / 秋 / 。\n早 / 过 / 花肆 / ， / 见 / 肆中 / 盆列甚烦 / ， / 款朵 / 佳 / 胜 / ， / 心 / 动 / ， / 疑类 / 陶制 / 。\n少 / 间 / ， / 主人 / 出 / ， / 果陶 / 也 / 。\n喜极 / ， / 具道 / 契阔 / ， / 遂 / 止宿 / 焉 / 。\n要 / 之 / 归 / ， / 陶 / 曰 / ：「 / 金陵 / ， / 吾 / 故土 / ， / 将婚 / 于是 / 。\n积 / 有 / 薄赀 / ， / 烦 / 寄 / 吾 / 姊 / 。\n我 / 岁杪当 / 暂 / 去 / 。\n」 / 马 / 不 / 听 / ， / 请 / 之 / 益 / 苦 / 。\n且 / 曰 / ：「 / 家 / 幸 / 充盈 / ， / 但 / 可 / 坐 / 享 / ， / 无须 / 复贾 / 。\n」 / 坐肆 / 中 / ， / 使 / 仆代 / 论 / 价 / ， / 廉 / 其 / 直 / ， / 数日 / 尽 / 售 / 。\n逼促 / 囊装 / ， / 赁舟遂北 / 。\n入门 / ， / 则 / 姊已除舍 / ， / 床榻 / 裀褥 / 皆 / 设 / ， / 若 / 预知 / 弟 / 也 / 归 / 者 / 。\n陶自归 / ， / 解装 / 课役 / ， / 大修 / 亭园 / ， / 惟日 / 与 / 马共 / 棋酒 / ， / 更 / 不 / 复结一客 / 。\n为 / 之 / 择婚 / ， / 辞 / 不 / 愿 / 。\n姊遣 / 两 / 婢 / 侍 / 其 / 寝处 / ， / 居 / 三四 / 年 / ， / 生 / 一 / 女 / 。\n陶饮素豪 / ， / 从 / 不 / 见 / 其 / 沉醉 / 。\n有 / 友人 / 曾 / 生 / ， / 量 / 亦 / 无 / 对 / 。\n适过马 / ， / 马 / 使 / 与 / 陶相 / 较 / 饮 / 。\n二 / 人 / 纵饮 / 甚 / 欢 / ， / 相得恨晚 / 。\n自辰以迄四漏 / ， / 计 / 各 / 尽 / 百 / 壶 / 。\n曾 / 烂醉如泥 / ， / 沉睡 / 座间 / 。\n陶起归寝 / ， / 出门 / 践 / 菊 / 畦 / ， / 玉山倾倒 / ， / 委衣于侧 / ， / 即地化 / 为 / 菊 / ， / 高 / 如 / 人 / ；\n花 / 十 / 余 / 朵 / ， / 皆 / 大于 / 拳 / 。\n马骇绝 / ， / 告 / 黄英 / 。\n英急往 / ， / 拔置 / 地上 / ， / 曰 / ：「 / 胡 / 醉 / 至 / 此 / ！\n」 / 覆 / 以 / 衣 / ， / 要 / 马 / 俱 / 去 / ， / 戒勿 / 视 / 。\n既 / 明而往 / ， / 则 / 陶卧 / 畦边 / 。\n马乃悟 / 姊弟菊 / 精 / 也 / ， / 益 / 爱 / 敬 / 之 / 。\n而 / 陶自 / 露 / 迹 / ， / 饮益放 / ， / 恒自折柬 / 招曾 / ， / 因 / 与 / 莫逆 / 。\n值 / 花 / 朝 / ， / 曾 / 来 / 造访 / ， / 以 / 两 / 仆 / 舁药 / 浸 / 白酒 / 一 / 坛 / ， / 约与共尽 / 。\n坛将竭 / ， / 二 / 人 / 犹 / 未 / 甚 / 醉 / 。\n马潜 / 以 / 一 / 瓻 / 续 / 入 / 之 / ， / 二 / 人 / 又 / 尽 / 之 / 。\n曾 / 醉 / 已 / 惫 / ， / 诸仆 / 负 / 之 / 以 / 去 / 。\n陶卧地 / ， / 又 / 化为 / 菊 / 。\n马见惯 / 不 / 惊 / ， / 如法 / 拔 / 之 / ， / 守 / 其 / 旁 / 以 / 观 / 其 / 变 / 。\n久 / 之 / ， / 叶益 / 憔悴 / 。\n大惧 / ， / 始 / 告 / 黄英 / 。\n英闻骇曰 / ：「 / 杀 / 吾 / 弟 / 矣 / ！\n」 / 奔视 / 之 / ， / 根株 / 已 / 枯 / 。\n痛绝 / ， / 掐 / 其 / 梗 / ， / 埋 / 盆 / 中 / ， / 携入 / 闺中 / ， / 日 / 灌溉 / 之 / 。\n马悔恨欲绝 / ， / 甚怨 / 曾 / 。\n越 / 数 / 日 / ， / 闻 / 曾 / 已 / 醉 / 死 / 矣 / 。\n盆 / 中 / 花渐萌 / ， / 九月 / 既 / 开 / ， / 短干 / 粉朵 / ， / 嗅 / 之 / 有 / 酒 / 香 / ， / 名 / 之 / 「 / 醉 / 陶 / 」， / 浇 / 以 / 酒 / 则 / 茂 / 。\n后 / 女 / 长成 / ， / 嫁 / 于 / 世 / 家 / 。\n黄英 / 终 / 老 / 、 / 亦 / 无 / 他 / 异 / 。",
-        "lexical_reviews": {},
-        "years": {
-          "一日": 2,
-          "四十三月": 2,
-          "十日": 1,
-          "一年": 1,
-          "二年": 1,
-          "三十年": 1,
-          "千载": 1,
-          "三四年": 1,
-          "九月": 1
-        },
-        "places": [
-          {
-            "word": "金陵",
-            "mentions": 0
-          },
-          {
-            "word": "顺天",
-            "mentions": 0
-          },
-          {
-            "word": "南中",
-            "mentions": 0
-          }
-        ],
-        "space_words": [
-          "荒圃",
-          "菊畦",
-          "房中",
-          "门庭",
-          "楼舍",
-          "茅茨",
-          "亭园",
-          "闺中"
-        ],
-        "narrative_events": [
-          {
-            "unit": 26599,
-            "actors": "马子才、金陵客",
-            "location": "顺天：马籍贯；金陵：求菊目的地",
-            "space": "家 → 旅途",
-            "event": "听客介绍佳种，随客赴金陵",
-            "identity": "马子才：人",
-            "interpretation": "求菊使人物离家并进入跨地域交往；籍贯不能自动确定后来宅第的精确地址。",
-            "quote": "马欣动，即刻治装，从客至金陵。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26616,
-            "actors": "陶生、黄英、马子才",
-            "location": "马第南侧；陶称姊欲居河朔，但确切城市未明",
-            "space": "荒圃／小室",
-            "event": "马与陶姊弟俱归，陶选择南侧荒圃小室居住",
-            "identity": "以人形出场；菊精身份尚未向马揭露",
-            "interpretation": "黄英先要求宽院（单位26614），可与荒圃选择合读，研究居住需求与种菊的关联。",
-            "quote": "第南有荒圃，仅小室三四椽，陶喜，居之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26637,
-            "actors": "陶生、马子才",
-            "location": "陶生居所庭中",
-            "space": "荒庭／菊畦",
-            "event": "马因售花而来，看到弃种已变为佳菊",
-            "identity": "陶生：菊精，仍以人形活动；马尚未确认其本体",
-            "interpretation": "庭院同时是种植与经营空间；“市井”也是马的价值判断，不能直接当作一处地名。",
-            "quote": "见荒庭半亩皆菊畦，数椽之外无旷土。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26674,
-            "actors": "黄英、马子才",
-            "location": "南第与马家之间",
-            "space": "间壁／扉",
-            "event": "婚后开门连通南第，黄英往返管理仆役",
-            "identity": "人形婚姻生活；菊精身份尚未向马明确揭露",
-            "interpretation": "门把分隔的居所变为可往返空间；与单位26675的南北籍合读，可探究财富边界。",
-            "quote": "于间壁开扉通南第，日过课其仆。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26684,
-            "actors": "黄英、马子才",
-            "location": "南北两第",
-            "space": "楼舍／两第",
-            "event": "营建之后两第合一，不再分疆界",
-            "identity": "婚姻关系持续，马对自身清德与妻富仍有焦虑",
-            "interpretation": "空间合并并不等于观念冲突立即结束；后续仍有求贫与分居情节。",
-            "quote": "楼舍连互，两第竟合为一，不分疆界矣。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26697,
-            "actors": "马子才、黄英",
-            "location": "园中",
-            "space": "茅茨",
-            "event": "黄英为马另筑简陋居所，以回应其求贫",
-            "identity": "人形相处；此处是居住安排改变，不是跨界",
-            "interpretation": "贫与富被安排成可分居的空间实验；单位26704的复合居显示分隔未能持续。",
-            "quote": "乃于园中筑茅茨，择美婢往侍马。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26726,
-            "actors": "陶生、马子才、黄英",
-            "location": "宅第菊畦；确切地名未明",
-            "space": "门外／菊畦",
-            "event": "陶醉后出门倒于菊畦，化为菊",
-            "identity": "人形 → 菊形；马后于单位26732悟其为菊精",
-            "interpretation": "门与菊畦连接室内交饮和本体显露，但不能据此推断每次出门都会变形。",
-            "quote": "出门践菊畦，玉山倾倒，委衣于侧，即地化为菊",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26744,
-            "actors": "黄英、陶生",
-            "location": "黄英居所内部",
-            "space": "盆／闺中",
-            "event": "陶再次化菊被拔而枯，黄英取梗埋盆并携入闺中灌溉",
-            "identity": "陶的菊体死亡、花梗续养；不能标为已经恢复人形",
-            "interpretation": "公共交饮场景转为内部照护空间；后续花名“醉陶”保存人物痕迹，但没有明说陶复为人。",
-            "quote": "掐其梗，埋盆中，携入闺中，日灌溉之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          }
-        ],
-        "people": [
-          {
-            "id": "c411-edited-p0",
-            "word": "黄英",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "妖": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p1",
-            "word": "陶",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p2",
-            "word": "马子才",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p3",
-            "word": "马妻吕",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p4",
-            "word": "陈仲子",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p5",
-            "word": "马",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p6",
-            "word": "胡",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "妖": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 47,
-      "changes": {
-        "event_types": {
-          "鬼": 1,
-          "妖": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {
-          "places:南山": {
-            "status": "corrected",
-            "word": "西南山",
-            "kind": "places",
-            "note": ""
-          },
-          "places:西南山": {
-            "status": "accepted",
-            "word": "西南山",
-            "kind": "places",
-            "note": ""
-          }
-        },
-        "years": {
-          "一岁": 1,
-          "十七岁": 1,
-          "三五日": 1,
-          "一日": 1
-        },
-        "places": [
-          {
-            "word": "莒之罗店",
-            "mentions": 0
-          },
-          {
-            "word": "西南山",
-            "mentions": 0
-          }
-        ],
-        "space_words": [
-          "郊野",
-          "野",
-          "门内",
-          "室",
-          "门外",
-          "房中"
-        ],
-        "narrative_events": [
-          {
-            "unit": 2571,
-            "actors": "王子服、吴生",
-            "location": "村外",
-            "space": "郊野",
-            "event": "上元日吴生邀王眺望，舅家仆来招吴去，王独游，见游女如云。",
-            "identity": "王子服为莒之罗店人，早孤，十四入泮，聘萧氏未嫁而夭。",
-            "interpretation": "郊野为偶遇空间，吴生离场使王独处，引出与婴宁初遇。",
-            "quote": "会上元，有舅氏子吴生，邀同眺瞩。方至村外，舅家有仆来，招吴去。",
-            "from_space": "家",
-            "to_space": "村外",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2572
-          },
-          {
-            "unit": 2574,
-            "actors": "王子服、婴宁、婢",
-            "location": "村外",
-            "space": "郊野",
-            "event": "王见婴宁携婢拈梅花，容华绝代，注目不移；婴宁顾婢笑其似贼，遗花地上而去。",
-            "identity": "婴宁为游女，携婢，拈梅花；王为求凰未就的书生。",
-            "interpretation": "遗花成为相思媒介，空间中的一瞥与遗物推动后续追寻。",
-            "quote": "有女郎携婢，拈梅花一枝，容华绝代，笑容可掬。生注目不移，竟忘顾忌。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2575
-          },
-          {
-            "unit": 2578,
-            "actors": "王子服",
-            "location": "家",
-            "space": "卧室",
-            "event": "王拾花怅然返家，藏花枕底，不语不食，病剧，肌革锐减。",
-            "identity": "王为相思成病者。",
-            "interpretation": "家内卧室成为相思病空间，花藏枕底象征执念。",
-            "quote": "生拾花怅然，神魂丧失，怏怏遂返。至家，藏花枕底，垂头而睡。",
-            "from_space": "村外",
-            "to_space": "家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2579
-          },
-          {
-            "unit": 2585,
-            "actors": "吴生、王子服、母",
-            "location": "家",
-            "space": "榻前",
-            "event": "吴生来，母嘱密诘；王具吐实情求谋，吴笑称当代访，出告母物色女子居里，访穷无绪。",
-            "identity": "吴为舅氏子，王为病者，母为忧母。",
-            "interpretation": "吴生介入使私情转为家庭寻访，但寻访无果，为诳言伏笔。",
-            "quote": "适吴生来，嘱密诘之。吴至榻前，生见之小下。吴就榻慰解，渐致研诘。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2587
-          },
-          {
-            "unit": 2601,
-            "actors": "吴生、王子服",
-            "location": "家",
-            "space": "榻前",
-            "event": "吴复来，诳王已得女，乃其姑氏子、君姨妹行，居西南山中三十余里；王喜，饮食渐加。",
-            "identity": "吴为诳言者，王为信诳者。",
-            "interpretation": "吴生虚构西南山中姨家，为后文王独行入山提供动机。",
-            "quote": "吴绐之曰：「已得之矣。我以为谁何人，乃我姑氏子，即君姨妹行，今尚待聘",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2602
-          },
-          {
-            "unit": 2616,
-            "actors": "王子服",
-            "location": "家至南山",
-            "space": "山野",
-            "event": "王怪吴不至，负气怀梅自往，望南山行约三十余里，见乱山空翠，遥望谷底小里落。",
-            "identity": "王为独行寻访者。",
-            "interpretation": "从家到山野的移动将相思转为实地探寻，空间由熟悉转入幽异。",
-            "quote": "转思三十里非遥，何必仰息他人？怀梅袖中，负气自往，而家人不知也。",
-            "from_space": "家",
-            "to_space": "南山",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2617
-          },
-          {
-            "unit": 2621,
-            "actors": "王子服、婴宁",
-            "location": "山村",
-            "space": "村舍外",
-            "event": "王入村，见北向一家丝柳桃杏修竹，坐对户巨石；闻墙内呼小荣，婴宁执杏花自簪，见生含笑拈花而入，王认出即上元所遇。",
-            "identity": "王为寻访者，婴宁为村中女郎。",
-            "interpretation": "山村空间与上元偶遇重叠，婴宁再现，确认追寻对象。",
-            "quote": "下山入村，见舍宇无多，皆茅屋，而意甚修雅。北向一家，门前皆丝柳，墙内桃杏尤繁，间以修竹；野鸟格磔其中。",
-            "from_space": "南山",
-            "to_space": "山村",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2623
-          },
-          {
-            "unit": 2636,
-            "actors": "老媪、王子服",
-            "location": "山村",
-            "space": "村舍外",
-            "event": "老媪扶杖出，问王来意，王答盼亲；媪聋聩，问贵戚何姓，王不能答，媪笑其书痴，邀入啖饭。",
-            "identity": "媪为村中老妇，后自称为王姨；王为寻亲者。",
-            "interpretation": "媪的邀请使王从门外进入内室，空间由公共转入私密。",
-            "quote": "忽一老媪扶杖出，顾生曰：「何处郎君，闻自辰刻便来，以至于今。意将何为？得勿饥耶？」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2639
-          },
-          {
-            "unit": 2650,
-            "actors": "王子服、老媪、婴宁、婢",
-            "location": "山村舍内",
-            "space": "内室",
-            "event": "王从媪入，见白石砌路、豆棚花架；媪唤小荣作黍，展宗阀，认王为甥，自云秦姓，弱息为庶产，唤婴宁来拜识。",
-            "identity": "媪自称为王姨，秦姓；婴宁为媪所养女。",
-            "interpretation": "内室认亲建立亲属关系，为婴宁随王归家提供名分。",
-            "quote": "从媪入，见门内白石砌路，夹道红花，片片堕阶上；曲折而西，又启一关，豆棚花架满庭中。",
-            "from_space": "村舍外",
-            "to_space": "内室",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2651
-          },
-          {
-            "unit": 2676,
-            "actors": "婴宁、王子服、老媪、婢",
-            "location": "山村舍内",
-            "space": "内室",
-            "event": "婴宁户外嗤嗤笑，婢推入犹掩口；媪嗔其无礼，女忍笑而立，王揖之；问年，女复笑，媪言其十六，王十七，媪议婚配。",
-            "identity": "婴宁为媪养女，善笑；王为姨兄。",
-            "interpretation": "笑声贯穿内室，成为婴宁核心特征，也令婚议在笑闹中推进。",
-            "quote": "良久，闻户外隐有笑声。媪又唤曰：「婴宁，汝姨兄在此。」户外嗤嗤笑不已。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2678
-          },
-          {
-            "unit": 2707,
-            "actors": "王子服、婴宁",
-            "location": "山村舍后园",
-            "space": "园",
-            "event": "次日王至舍后园，见婴宁在树上狂笑欲堕，堕地，王扶之阴捘其腕；王出袖中花示之，诉相思，女不解夫妻之爱，婢至，王遁去。",
-            "identity": "王为痴情者，婴宁为憨痴不解情者。",
-            "interpretation": "园中独处使情感推进，但婴宁的憨笑与误解形成张力。",
-            "quote": "次日，至舍后，果有园半亩，细草铺毡，杨花糁径；有草舍三楹，花木四合其所。",
-            "from_space": "内室",
-            "to_space": "园",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2708
-          },
-          {
-            "unit": 2736,
-            "actors": "婴宁、王子服、老媪",
-            "location": "山村舍内",
-            "space": "母所",
-            "event": "少时会母所，媪问何往，女答园中共话；女直言大哥欲共寝，王大窘，幸媪不闻，王以他词掩之。",
-            "identity": "婴宁为憨直女，王为窘迫者。",
-            "interpretation": "婴宁将私语公开，显示其不谙礼法，也制造喜剧性冲突。",
-            "quote": "少时，会母所。母问：「何往？」女答以园中共话。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2738
-          },
-          {
-            "unit": 2750,
-            "actors": "王子服、婴宁、老媪、家中人",
-            "location": "山村",
-            "space": "村舍",
-            "event": "家中人捉双卫来寻王，入告媪请偕女同归；媪喜，呼婴宁装束，送之出，二人遂发，至山坳回顾见媪倚门北望。",
-            "identity": "王为归家者，婴宁为随归者，媪为送行者。",
-            "interpretation": "离村归家完成空间转移，媪倚门北望暗示离别与后续寻墓。",
-            "quote": "食方竟，家中人捉双卫来寻生。先是，母待生久不归，始疑；村中搜觅几遍，竟无踪兆。",
-            "from_space": "山村",
-            "to_space": "家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2752
-          },
-          {
-            "unit": 2770,
-            "actors": "王子服、婴宁、母、吴生",
-            "location": "家",
-            "space": "家中",
-            "event": "抵家，母惊问，王以姨女对；母言无姊，女自云父秦氏，母审面庞志赘符合，疑亡姊复存；吴生至，言秦家姑丈祟于狐，狐生女婴宁，后携女去。",
-            "identity": "婴宁为狐产女，鬼母所养；王为携归者，母为疑者，吴为知情者。",
-            "interpretation": "家中认亲转为身份揭秘，吴生转述狐女生女，使婴宁身份异类化。",
-            "quote": "抵家，母睹姝丽，惊问为谁。生以姨女对。母曰：「前吴郎与儿言者，诈也。我未有姊，何以得甥？」",
-            "from_space": "山村",
-            "to_space": "家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2774
-          },
-          {
-            "unit": 2798,
-            "actors": "吴生、王子服",
-            "location": "山村",
-            "space": "村所",
-            "event": "吴请往觇其异，寻至村所，庐舍全无，山花零落；忆姑葬处仿佛不远，坟垅湮没，诧叹而返。",
-            "identity": "吴为探异者，王为同行者。",
-            "interpretation": "村所消失证实山村非实有，空间虚实转换，婴宁来历更显异类。",
-            "quote": "吴请往觇其异，就便执柯。寻至村所，庐舍全无，山花零落而已。",
-            "from_space": "家",
-            "to_space": "山村",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2799
-          },
-          {
-            "unit": 2802,
-            "actors": "婴宁、母、王子服",
-            "location": "家",
-            "space": "家中",
-            "event": "母疑婴宁为鬼，入告吴言，女无骇意；母令与少女同寝，女操女红精巧，善笑不止，邻女少妇争承迎；母择吉合卺，窃窥形影无异，行新妇礼因笑极而罢。",
-            "identity": "婴宁为待嫁女，后为新娘；母为婆母。",
-            "interpretation": "家中日常空间接纳婴宁，笑声与女红并置，异类身份暂被日常化。",
-            "quote": "母疑其为鬼。入告吴言，女略无骇意；又吊其无家，亦殊无悲意，孜孜憨笑而已。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2804
-          },
-          {
-            "unit": 2822,
-            "actors": "婴宁、西人子、邻父",
-            "location": "家",
-            "space": "庭后木香架、墙底",
-            "event": "婴宁爱花，庭后木香架邻西家，女攀摘；西人子见之凝注，女笑指墙底而下，西人子夜往，就而淫之，阴如锥刺，细视非女，乃枯木水淋窍，中有巨蝎，邻父碎木捉杀，负子归，半夜卒。",
-            "identity": "婴宁为爱花善笑妇，西人子为邻家子，邻父为西人子父。",
-            "interpretation": "墙底空间成为惩戒场所，婴宁的笑与枯木巨蝎构成对淫念的致命反制。",
-            "quote": "庭后有木香一架，故邻西家。女每攀登其上，摘供簪玩。母时遇见，辄诃之。女卒不改。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2825
-          },
-          {
-            "unit": 2838,
-            "actors": "邻人、王子服、邑宰、母、婴宁",
-            "location": "家、公堂",
-            "space": "司法空间",
-            "event": "邻人讼生，讦发婴宁妖异；邑宰素仰生才，谓邻翁讼诬，将杖责，生乞免释出；母责婴宁，女正色矢不复笑，由是竟不复笑。",
-            "identity": "王为被讼者，婴宁为被讦妖异者，邑宰为审案者，母为责者。",
-            "interpretation": "司法介入使婴宁妖异身份公开化，母责导致其笑性消失，人物转变。",
-            "quote": "邻人讼生，讦发婴宁妖异。邑宰素仰生才，稔知其笃行士，谓邻翁讼诬，将杖责之。生为乞免，遂释而出。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2840
-          },
-          {
-            "unit": 2848,
-            "actors": "婴宁、王子服",
-            "location": "家",
-            "space": "卧室",
-            "event": "一夕婴宁对生零涕，自陈本狐产，母去托鬼母，相依十余年，求合葬鬼母；生诺，虑坟迷荒草，女言无虑。",
-            "identity": "婴宁为狐产女，鬼母养女；王为夫。",
-            "interpretation": "卧室私语揭示身世，将笑性消失转为悲情与孝思，推动寻墓。",
-            "quote": "一夕，对生零涕。异之，女哽咽曰：「曩以相从日浅，言之恐致骇怪。今日察姑及郎，皆过爱无有异心，直告或无妨乎？妾本狐产",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2851
-          },
-          {
-            "unit": 2858,
-            "actors": "婴宁、王子服",
-            "location": "荒山",
-            "space": "墓地",
-            "event": "夫妻舆榇往荒山，婴宁指示墓处，果得媪尸，肤革犹存；女抚哭哀痛，舁归，寻秦氏墓合葬。",
-            "identity": "婴宁为寻母尸者，王为助葬者。",
-            "interpretation": "荒山墓地空间实现鬼母合葬，完成婴宁报恩与身份归宿。",
-            "quote": "刻日，夫妻舆榇而往。女于荒烟错楚中，指示墓处，果得媪尸，肤革犹存。",
-            "from_space": "家",
-            "to_space": "荒山",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2859
-          },
-          {
-            "unit": 2862,
-            "actors": "王子服、婴宁、媪",
-            "location": "家",
-            "space": "梦中、家中",
-            "event": "是夜生梦媪来称谢，寤而述之；女言夜见之，嘱勿惊郎君；生问小荣，女言亦狐，已嫁。",
-            "identity": "媪为鬼母，婴宁为养女，王为婿。",
-            "interpretation": "梦与夜见将鬼母谢意带入现实，确认合葬有效，也交代小荣去向。",
-            "quote": "是夜，生梦媪来称谢，寤而述之。女曰：「妾夜见之，嘱勿惊郎君耳。」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "回述/梦，非实历年代",
-            "transition_kind": "plot",
-            "unit_end": 2864
-          },
-          {
-            "unit": 2870,
-            "actors": "婴宁、王子服、子",
-            "location": "家",
-            "space": "家中",
-            "event": "由是岁值寒食，夫妻登秦墓拜扫无缺；女逾年生一子，在怀抱中不畏生人，见人辄笑，有母风。",
-            "identity": "婴宁为妻、母；王为夫、父；子为婴宁所生。",
-            "interpretation": "寒食扫墓与生子延续家庭空间，子见人辄笑复现母风，结局归于日常。",
-            "quote": "由是岁值寒食，夫妻登秦墓，拜扫无缺。女逾年，生一子。在怀抱中，不畏生人，见人辄笑，亦大有母风云。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2872
-          }
-        ],
-        "people": [
-          {
-            "id": "c47-edited-p0",
-            "word": "吴",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p1",
-            "word": "秦氏",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p2",
-            "word": "小荣",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "妖": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p3",
-            "word": "秦",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p4",
-            "word": "王子服",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p5",
-            "word": "吴生",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p6",
-            "word": "王郎",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c47-edited-p7",
-            "word": "吴郎",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 74,
-      "changes": {
-        "event_types": {
-          "鬼": 1,
-          "妖": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {
-          "places:北郭": {
-            "status": "corrected",
-            "word": "北郭",
-            "kind": "spaces",
-            "note": ""
-          },
-          "spaces:北郭": {
-            "status": "accepted",
-            "word": "北郭",
-            "kind": "spaces",
-            "note": ""
-          }
-        },
-        "years": {
-          "十七岁": 1,
-          "十八岁": 1,
-          "一日": 3,
-          "三日": 1,
-          "三月": 1
-        },
-        "places": [
-          {
-            "word": "广东",
-            "mentions": 0
-          },
-          {
-            "word": "琼州",
-            "mentions": 0
-          },
-          {
-            "word": "秦女村",
-            "mentions": 0
-          }
-        ],
-        "space_words": [
-          "门外",
-          "逆旅",
-          "庭院",
-          "北郭"
-        ],
-        "narrative_events": [
-          {
-            "unit": 4701,
-            "actors": "傅廉、傅父",
-            "location": "广东傅家",
-            "space": "家庭",
-            "event": "傅氏生一子名廉，天阉，十七岁阴裁如蚕，远近无女嫁之，傅父忧宗绪绝。",
-            "identity": "傅廉为搢绅之子、天阉少年；傅父为六十余岁搢绅",
-            "interpretation": "开篇以生理缺陷与家族焦虑建立空间内的困境，为后续异境治愈埋因。",
-            "quote": "广东有搢绅傅氏，年六十余，生一子，名廉。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot"
-          },
-          {
-            "unit": 4705,
-            "actors": "傅廉、猴戏者、师",
-            "location": "学塾门外",
-            "space": "学塾",
-            "event": "廉从师读，师偶出，门外有猴戏，廉废学观看，惧师责而逃去。",
-            "identity": "傅廉为从师读书的学生",
-            "interpretation": "逃学成为离开原生空间的触发点，空间由学塾转向路途。",
-            "quote": "廉从师读。师偶他出，适门外有猴戏者，廉视之，废学焉。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4706
-          },
-          {
-            "unit": 4708,
-            "actors": "傅廉、素衣女郎、小婢",
-            "location": "离家数里之路途",
-            "space": "路途",
-            "event": "廉离家数里，遇素衣女郎与小婢，女郎托其寄书至琼州秦女村，廉诺之。",
-            "identity": "傅廉为逃亡书生；女郎为华姓寄书人",
-            "interpretation": "路遇托书引入异境线索，空间从广东向琼州延伸。",
-            "quote": "离家数里，见一素衣女郎，偕小婢出其前。",
-            "from_space": "学塾",
-            "to_space": "路途",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement"
-          },
-          {
-            "unit": 4719,
-            "actors": "傅廉",
-            "location": "琼州北郭至秦女村途中",
-            "space": "异乡路途",
-            "event": "廉附舟至琼州北郭，日暮问秦女村无人知，北行四五里，旷野无旅舍，窘甚。",
-            "identity": "傅廉为寄书旅人",
-            "interpretation": "空间陌生化与迷路制造异境入口，为遇鬼狐铺垫。",
-            "quote": "生附舟便去。至琼州北郭，日已曛暮。",
-            "from_space": "路途",
-            "to_space": "琼州北郭",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4720
-          },
-          {
-            "unit": 4723,
-            "actors": "傅廉",
-            "location": "道侧墓旁树上",
-            "space": "荒冢",
-            "event": "廉见道侧一墓，惧虎狼，攀树蹲踞其上，闻人声俯瞰，见庭院丽人。",
-            "identity": "傅廉为寄书旅人、窥视者",
-            "interpretation": "树上与墓下形成垂直空间，现实荒冢与异境庭院叠合。",
-            "quote": "见道侧一墓，思欲傍坟栖止，大惧虎狼。因攀树猱升，蹲踞其上。",
-            "from_space": "琼州北郭",
-            "to_space": "道侧墓旁树上",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4724
-          },
-          {
-            "unit": 4731,
-            "actors": "傅廉、丽人、婢",
-            "location": "墓下庭院",
-            "space": "异境庭院",
-            "event": "婢仰视发现树上有人，丽人惊起，廉下树伏地乞宥，丽人曳与并坐，邀入室共榻。",
-            "identity": "傅廉为窥视者、借宿客；丽人为庭院女主人（后知为巧娘）",
-            "interpretation": "从树上到庭院再到室内，空间层层深入，人物关系由惊惧转为接纳。",
-            "quote": "忽婢子仰视曰：「树上有人！」女惊起曰：「何处大胆儿，暗来窥人！」",
-            "from_space": "道侧墓旁树上",
-            "to_space": "墓下庭院",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4733
-          },
-          {
-            "unit": 4746,
-            "actors": "傅廉、巧娘、婢",
-            "location": "室内一榻",
-            "space": "寝室",
-            "event": "巧娘暗中探廉隐处，发现其天阉，停手怅然，出衾而哭，命婢唤郎醒遣去。",
-            "identity": "傅廉为天阉借宿客；巧娘为鬼女、庭院主人",
-            "interpretation": "私密空间暴露生理缺陷，导致巧娘悲叹命运，情节转折。",
-            "quote": "女暗中以纤手探入，轻捻胫股。生伪寐，若不觉知。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4747
-          },
-          {
-            "unit": 4760,
-            "actors": "华姑、巧娘、傅廉、婢",
-            "location": "室内",
-            "space": "寝室",
-            "event": "华姑排闼入，见巧娘啼泪，又见榻上卧者，取书视之，识为己女三姐家报，知吴郎已死。",
-            "identity": "华姑为三姐之母（后知为狐）；巧娘为鬼女；傅廉为寄书人",
-            "interpretation": "书信成为连接华姑与傅廉的关键物，空间内人物关系重组。",
-            "quote": "一妇人排闼入。婢白：「华姑来。」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4762
-          },
-          {
-            "unit": 4786,
-            "actors": "华姑、傅廉",
-            "location": "东厢",
-            "space": "东厢",
-            "event": "华姑引廉入东厢，验其隐处，得黑丸令吞下，嘱勿哗。",
-            "identity": "华姑为狐母、施药者；傅廉为受药者",
-            "interpretation": "东厢成为治愈空间，黑丸为异境药物，使天阉可复。",
-            "quote": "遂异生入东厢，探手 于裤夸而验之",
-            "from_space": "室内",
-            "to_space": "东厢",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement"
-          },
-          {
-            "unit": 4791,
-            "actors": "傅廉",
-            "location": "东厢",
-            "space": "东厢",
-            "event": "廉独卧，五更觉脐下热气冲隐处，自探身已伟男，惊喜。",
-            "identity": "傅廉为服药后恢复男身者",
-            "interpretation": "身体变化在封闭空间内完成，标志天阉困境解除。",
-            "quote": "将比五更，初醒，觉脐下热气一缕，直冲隐处，蠕蠕然似有物垂股际；自探之，身已伟男。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4792
-          },
-          {
-            "unit": 4800,
-            "actors": "华姑、三娘、傅廉、巧娘",
-            "location": "堂中",
-            "space": "堂屋",
-            "event": "华姑携三娘归，命三娘拜谢，相呼兄妹，巧娘戏问，后华姑私嘱廉阴为婿阳为子，三娘与廉同寝。",
-            "identity": "三娘为狐女、华姑之女；傅廉为恢复男身者；巧娘为鬼女",
-            "interpretation": "堂中宴饮与寝室结合，确立三娘与廉的婚配关系。",
-            "quote": "延及夜分，妇始携女归。发扉曰：「闷煞郎君矣！三娘可来拜谢。」",
-            "from_space": "东厢",
-            "to_space": "堂中",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4803
-          },
-          {
-            "unit": 4817,
-            "actors": "傅廉、三娘",
-            "location": "寝室",
-            "space": "寝室",
-            "event": "廉与三娘枕上问答，三娘自承为狐，告巧娘为鬼，因毛家小郎病阉而赍恨如冥。",
-            "identity": "三娘为狐女；傅廉为恢复男身者；巧娘为鬼女",
-            "interpretation": "枕上对话揭示鬼狐身份与巧娘悲剧根源，空间私密性促成真相显露。",
-            "quote": "既于枕上问女：「巧娘何为？」曰：「鬼也",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4818
-          },
-          {
-            "unit": 4829,
-            "actors": "傅廉、巧娘、华姑、三娘",
-            "location": "室内",
-            "space": "寝室",
-            "event": "华姑母子外出，闭廉室中；廉呼巧娘，婢启扉，廉与巧娘绸缪，巧娘怨华姑妒忌，华姑掩入怒责，三娘调停。",
-            "identity": "傅廉为恢复男身者；巧娘为鬼女；华姑为狐母；三娘为狐女",
-            "interpretation": "闭室与启扉构成空间冲突，巧娘与华姑矛盾激化，三娘居中调停。",
-            "quote": "一日，华氏母子将他往，复闭生室中。生闷气，绕室隔扉呼巧娘。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4830
-          },
-          {
-            "unit": 4857,
-            "actors": "华姑、傅廉、巧娘、三娘",
-            "location": "门外、舟上",
-            "space": "门外与舟",
-            "event": "华姑促廉归告父母订永约，治装送行；出门见院宇无存，但见荒冢；华姑送至舟上，嘱李氏废园待亲迎。",
-            "identity": "华姑为狐母；傅廉为归家订约者；巧娘、三娘为送别者",
-            "interpretation": "异境庭院消失，荒冢显现，空间由幻转实，廉返回人间。",
-            "quote": "华姑谓生曰：「吾儿姊妹皆已奉事君。念居此非计，君宜归告父母，早订永约。」",
-            "from_space": "室内",
-            "to_space": "门外",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4859
-          },
-          {
-            "unit": 4866,
-            "actors": "傅廉、傅父、傅母",
-            "location": "广东傅家",
-            "space": "家庭",
-            "event": "廉归家，父喜出望外；廉述崖末及华氏之订，父嗤为妖言；廉私婢，母验知子不阉，喜极宣暴，欲论婚世族。",
-            "identity": "傅廉为归家之子、已愈者；傅父为父；傅母为母",
-            "interpretation": "家庭空间内验证身体恢复，父母态度转变，为迎娶三娘铺路。",
-            "quote": "生乃归。时傅父觅子不得，正切焦虑，见子归，喜出非望。",
-            "from_space": "舟上",
-            "to_space": "广东傅家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4867
-          },
-          {
-            "unit": 4884,
-            "actors": "傅廉、傅父、仆、妪",
-            "location": "李氏废园",
-            "space": "废园",
-            "event": "傅父从廉意，遣仆妪往觇；出东郭四五里寻李氏园，见败垣竹树中炊烟，妪入见华姑母子，知三娘在，巧娘已死。",
-            "identity": "傅廉为求婚者；仆妪为使者；华姑为狐母；三娘为待嫁狐女",
-            "interpretation": "废园作为人间与异境交界，使者探访确认婚约与巧娘死讯。",
-            "quote": "傅父从之，遣一仆一妪往觇之。出东郭四五里，寻李氏园，见败垣竹树中，缕缕有炊烟。",
-            "from_space": "广东傅家",
-            "to_space": "李氏废园",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4885
-          },
-          {
-            "unit": 4895,
-            "actors": "傅廉、三娘、华姑",
-            "location": "傅家",
-            "space": "家庭",
-            "event": "廉迎三娘归，问华姑巧娘，答已投生北地；廉终不能忘情巧娘，凡有自琼来者必召问。",
-            "identity": "傅廉为迎亲者；三娘为狐妻；华姑为狐母",
-            "interpretation": "迎亲完成婚配，但巧娘缺席成为情感空间中的空缺。",
-            "quote": "至亲迎之夜，见华姑亲问之，答云：「已投生北地矣。」",
-            "from_space": "李氏废园",
-            "to_space": "傅家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4896
-          },
-          {
-            "unit": 4898,
-            "actors": "傅廉、三娘",
-            "location": "傅家",
-            "space": "家庭",
-            "event": "或言秦女墓夜闻鬼哭，廉告三娘，三娘泣下自承负姊，言母子来时未使闻，怨啼或为巧娘。",
-            "identity": "傅廉为夫；三娘为狐妻",
-            "interpretation": "鬼哭传闻将空间引回秦女墓，三娘坦白推动情节再转折。",
-            "quote": "或言秦女墓夜闻鬼哭。生诧其异，入告三娘。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4899
-          },
-          {
-            "unit": 4904,
-            "actors": "傅廉、巧娘、婴儿",
-            "location": "秦女墓",
-            "space": "墓穴",
-            "event": "廉命舆宵昼兼程驰诣秦女墓，叩墓木呼巧娘，巧娘捧婴儿自穴中出，言是廉遗孽，生三月。",
-            "identity": "傅廉为寻巧娘者；巧娘为鬼女、婴儿之母；婴儿为廉之子",
-            "interpretation": "墓穴成为生死复归的空间节点，巧娘携子出墓，完成复归。",
-            "quote": "生闻之，悲已而喜，即命舆，宵昼兼程，驰诣其墓。",
-            "from_space": "傅家",
-            "to_space": "秦女墓",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement"
-          },
-          {
-            "unit": 4912,
-            "actors": "傅廉、巧娘、婴儿、傅母",
-            "location": "傅家",
-            "space": "家庭",
-            "event": "廉与巧娘同舆航海而归，抱子告母，母视子体貌丰伟，益喜；二女谐和，事姑孝。",
-            "identity": "傅廉为夫、父；巧娘为鬼妻、母；三娘为狐妻；傅母为姑",
-            "interpretation": "巧娘回归家庭空间，鬼狐共处，家庭秩序重建。",
-            "quote": "乃与同舆，航海而归。抱子告母，母视之，体貌丰伟，不类鬼物，益喜。",
-            "from_space": "秦女墓",
-            "to_space": "傅家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 4913
-          },
-          {
-            "unit": 4915,
-            "actors": "傅父、巧娘、傅廉、儿",
-            "location": "傅家",
-            "space": "家庭",
-            "event": "傅父病，巧娘言疾不可为，督治冥具，既竣而卒；儿长绝肖父，尤慧，十四游泮。",
-            "identity": "傅父为父；巧娘为鬼妻、预言者；儿为廉之子",
-            "interpretation": "傅父卒与儿游泮形成生死交替，家庭空间延续至下一代。",
-            "quote": "后傅父病，延医来。巧娘曰：「疾不可为，魂已离舍。」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 4917
-          }
-        ],
-        "people": [
-          {
-            "id": "c74-edited-p0",
-            "word": "巧娘",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "鬼": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c74-edited-p1",
-            "word": "李氏",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c74-edited-p2",
-            "word": "傅氏",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c74-edited-p3",
-            "word": "吴郎",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c74-edited-p4",
-            "word": "华氏",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 48,
-      "changes": {
-        "event_types": {
-          "鬼": 1,
-          "妖": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {
-          "places:北郭": {
-            "status": "corrected",
-            "word": "北郭",
-            "kind": "spaces",
-            "note": ""
-          },
-          "spaces:北郭": {
-            "status": "accepted",
-            "word": "北郭",
-            "kind": "spaces",
-            "note": ""
-          }
-        },
-        "years": {
-          "一日": 1,
-          "三日": 1
-        },
-        "places": [
-          {
-            "word": "金华",
-            "mentions": 0
-          },
-          {
-            "word": "浙",
-            "mentions": 0
-          }
-        ],
-        "space_words": [
-          "院落",
-          "寺",
-          "北郭"
-        ],
-        "narrative_events": [
-          {
-            "unit": 2873,
-            "actors": "宁采臣",
-            "location": "金华北郭兰若",
-            "space": "寺中殿塔、僧舍、南小舍、殿东修竹巨池",
-            "event": "宁采臣赴金华，至北郭，解装兰若，见寺中壮丽而荒落，独南小舍扃键如新，又见修竹巨池，意乐其幽杳，遂留止待僧归。",
-            "identity": "浙人，性慷爽，廉隅自重，赴试士人",
-            "interpretation": "兰若作为荒落而幽杳的异境入口，为后续人异相遇提供空间条件；宁主动选择留止，显示其好奇与自信。",
-            "quote": "宁采臣，浙人。性慷爽，廉隅自重，每对人言：「生平无二色。适赴金华，至北郭，解装兰若",
-            "from_space": "浙",
-            "to_space": "金华北郭兰若",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2875
-          },
-          {
-            "unit": 2882,
-            "actors": "宁采臣、燕赤霞",
-            "location": "兰若殿廊",
-            "space": "殿廊",
-            "event": "日暮，燕赤霞启南扉，宁趋为礼并告以留止之意。燕自言侨居，宁喜，藉藁代床，支板作几。月夜二人促膝殿廊，各展姓字，燕自言燕姓字赤霞，秦人，语甚朴诚，遂拱别归寝。",
-            "identity": "宁为赴试士人，燕为侨居士人",
-            "interpretation": "殿廊夜谈建立宁、燕同宿关系，为后续剑客护身埋下伏笔；燕之秦人身份与朴诚言语形成空间上的异乡人共处。",
-            "quote": "日暮，有士人来，启南扉。宁趋为礼，且告以意。士人曰：「此间无房主，仆亦侨居。能甘荒落，旦晚惠教，幸甚。」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2886
-          },
-          {
-            "unit": 2892,
-            "actors": "宁采臣、妇、媪、聂小倩",
-            "location": "兰若舍北短墙外小院落",
-            "space": "北壁石窗下、短墙外小院落",
-            "event": "宁以新居久不成寐，闻舍北喁喁，伏北壁石窗下微窥，见短墙外小院落有妇、媪偶语月下，提及小倩。俄有十七八女子来，仿佛艳绝，媪与女相谑。宁意其邻人眷口，寝不复听。",
-            "identity": "宁为借宿士人，妇、媪、小倩为北院异类",
-            "interpretation": "石窗窥视构成空间越界，宁从寺内空间窥见北院异境，小倩首次以被谈论者与现身者双重身份出现。",
-            "quote": "宁以新居，久不成寐，闻舍北喁喁，如有家口。起，伏北壁石窗下微窥之。见短墙外一小院落，有妇可四十余；又一媪衣绯，插蓬沓，鲐背龙钟，偶语月下。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2895
-          },
-          {
-            "unit": 2909,
-            "actors": "聂小倩、宁采臣",
-            "location": "宁采臣寝所",
-            "space": "寝所、户外、庭墀",
-            "event": "宁将睡，觉有人至寝所，急起审顾，则北院女子。女愿修燕好，宁正容拒之，女以夜无知者相诱，宁叱速去，女惧乃退。至户外复返，以黄金一铤置褥上，宁掇掷庭墀，女惭出拾金，自言此汉当是铁石。",
-            "identity": "宁为刚直士人，小倩为受胁迫的异类女子",
-            "interpretation": "寝所成为欲望与财货试探的空间，宁两次拒绝将女逼退至户外，空间边界强化其廉隅自重。",
-            "quote": "方将睡去，觉有人至寝所，急起审顾，则北院女子也，惊问之。女笑曰：「月夜不寐，愿修燕好。宁正容曰：「卿防物议，我畏人言；略一失足，廉耻道丧",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2912
-          },
-          {
-            "unit": 2920,
-            "actors": "兰溪生及其仆、宁采臣、燕赤霞",
-            "location": "兰若东厢",
-            "space": "东厢",
-            "event": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡，足心有小孔如锥刺，细细有血出。经宿，一仆死，症亦如之。向晚燕生归，宁质之，燕以为魅。宁素抗直，颇不在意。",
-            "identity": "兰溪生为候试士人，宁为借宿士人，燕为剑客（未明言）",
-            "interpretation": "东厢成为异类杀人的现场，死亡症状揭示小倩所述锥刺摄血机制；宁不在意，反衬其刚直。",
-            "quote": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。足心有小孔，如锥刺者，细细有血出。俱莫知故。经宿，一仆死，症亦如之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2923
-          },
-          {
-            "unit": 2926,
-            "actors": "聂小倩、宁采臣",
-            "location": "宁采臣寝所",
-            "space": "寝所",
-            "event": "宵分，女子复至，谓宁曰妾阅人多矣，未有刚肠如君者，君诚圣贤，妾不敢欺。自言小倩姓聂氏，十八夭殂，葬于寺侧，被妖物威胁，历役贱务。今寺中无可杀者，恐当以夜叉来。宁骇求计，女告与燕生同室可免，并述迷人以锥刺足摄血、以罗刹鬼骨化金截取心肝。宁感谢，问戒备之期，答以明宵。临别泣求囊妾朽骨归葬安宅，宁毅然诺之，问葬处，曰但记取白杨之上有乌巢者是也。言已出门，纷然而灭。",
-            "identity": "小倩为受胁迫的异类女子，宁为刚直士人",
-            "interpretation": "寝所转为信息交换空间，小倩自述身世与妖物机制，完成从诱惑者到求助者的身份转变；归葬请求将异境与人间葬地连接。",
-            "quote": "宵分，女子复至，谓宁曰：「妾阅人多矣，未有刚肠如君者。君诚圣贤，妾不敢欺。（妾小）倩，姓聂氏，十八夭殂，葬（于）寺侧，（辄）被妖物威胁，（历）役贱务。觍颜向人，实非所乐。今寺中无可杀者，恐当以夜叉来",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2930
-          },
-          {
-            "unit": 2943,
-            "actors": "宁采臣、燕赤霞",
-            "location": "兰若燕赤霞宿处",
-            "space": "燕生宿处、窗上、窗外",
-            "event": "明日，宁恐燕他出，早诣邀致，辰后具酒馔，留意察燕。既约同宿，燕辞以性癖耽寂，宁不听，强携卧具来。燕不得已移榻从之，嘱勿翻窥箧襆。既而各寝，燕以箱箧置窗上，齁如雷吼。近一更许，窗外有人影窥视，目光睒闪。宁惧欲呼燕，忽有物裂箧而出，耀若匹练，触折窗上石棂，飚然一射，即遽敛入。燕觉而起，宁伪睡以觇之。燕捧箧检征，取一物对月嗅视，白光晶莹，长可二寸，径韭叶许，数重包固，仍置破箧中，自语何物老魅大胆，致坏箧子，遂复卧。宁大奇之，起问，燕曰我剑客也，若非石棂妖当立毙，虽然亦伤。问所缄何物，曰剑也，适嗅之有妖气。宁欲观之，燕慨出相示，荧荧然一小剑也，于是益厚重燕。",
-            "identity": "宁为借宿士人，燕为剑客",
-            "interpretation": "同宿空间使剑客身份显露，剑光破箧击妖，石棂成为保护宁的物理屏障；燕之剑袋与剑为后续护身核心。",
-            "quote": "明日，恐燕他出，早诣邀致。辰后具酒馔，留意察燕。既约同宿，辞以性癖耽寂。宁不听，强携卧具来。燕不得已，移榻从之，嘱曰：「仆知足下丈夫，倾风良切。要有微衷，难以遽白。幸勿翻窥箧襆，违之，两俱不利。」",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2950
-          },
-          {
-            "unit": 2966,
-            "actors": "宁采臣、燕赤霞",
-            "location": "兰若寺北荒坟",
-            "space": "寺北荒坟、白杨乌巢",
-            "event": "明日，视窗外有血迹，遂出寺北，见荒坟累累，果有白杨，乌巢其颠。迨营谋既就，趣装欲归，燕生设祖帐，情义殷渥，以破革囊赠宁，曰此剑袋也，宝藏可远魑魅。宁欲从授其术，燕曰如君信义刚直可以为此，然君犹富贵中人，非此道中人也。宁乃托有妹葬此，发掘女骨，敛以衣衾，赁舟而归。",
-            "identity": "宁为信义刚直士人，燕为剑客",
-            "interpretation": "寺北荒坟为小倩葬处，白杨乌巢为空间标记；掘骨赁舟归，完成从异境到人间的空间转移，剑袋成为护界之物。",
-            "quote": "明日，视窗外，有血迹，遂出寺北，见荒坟累累，果有白杨，乌巢其颠。迨营谋既就，趣装欲归，燕生设祖帐，情义殷渥。以破革囊赠宁，曰：「此剑袋也。宝藏可远魑魅",
-            "from_space": "兰若",
-            "to_space": "寺北荒坟",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2969
-          },
-          {
-            "unit": 2974,
-            "actors": "宁采臣、聂小倩",
-            "location": "宁采臣斋外",
-            "space": "斋外、斋中",
-            "event": "宁斋临野，因营坟葬诸斋外，祭而祝曰怜卿狐魂，葬近蜗居，歌哭相闻，庶不见陵于雄鬼。祝毕而返，后有人呼曰缓待同行，回顾则小倩也，欢喜谢曰君信义，十死不足以报，请从归，拜识姑嫜，媵御无悔。审谛之，肌映流霞，足翘细笋，白昼端相，娇艳尤绝。遂与俱至斋中，嘱坐少待，先入白母。",
-            "identity": "宁为归家士人，小倩为已迁葬的异类女子",
-            "interpretation": "斋外葬骨使小倩脱离荒墓，白昼现身标志其从异境进入人间日常空间；先入白母显示家庭空间的准入程序。",
-            "quote": "宁斋临野，因营坟葬诸斋外，祭而祝曰：「怜卿狐魂，葬近蜗居，歌哭相闻，庶不见陵于雄鬼。一瓯浆水饮，殊不清旨，幸不为嫌。祝毕而返，后有人呼曰：「缓待同行！」回顾则小倩也",
-            "from_space": "寺北荒坟",
-            "to_space": "宁斋外",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "unit_end": 2977
-          },
-          {
-            "unit": 2980,
-            "actors": "宁采臣、宁母、聂小倩",
-            "location": "宁采臣家",
-            "space": "斋中、母室、厨下",
-            "event": "宁入白母，母愕然。时宁妻久病，母戒勿言。言次女已翩然入，拜伏地下。宁曰此小倩也。母惊顾不遑。女谓母曰儿飘然一身，远父母兄弟，蒙公子露复，愿执箕帚以报高义。母见其绰约可爱，始敢与言，曰但生平止此儿，用承祧绪，不敢令有鬼偶。女请以兄事，依高堂，奉晨昏。母怜其诚，允之。女即入厨下，代母尸饔，入房穿榻，似熟居者。日暮，母畏惧之，辞使归寝，不为设床褥。女窥知母意，即竟去。过斋欲入却退，徘徊户外，似有所惧。生呼之，女曰室有剑气畏人。宁悟为革囊，取悬他室。女乃入，就烛下坐，移时殊不一语，久之问夜读否，妾少诵楞严经，今强半遗忘，浼求一卷，夜暇就兄正之。宁诺。又坐默然，二更向尽，不言去。宁促之，愀然曰异域孤魂，殊怯荒墓。宁曰斋中别无床寝，且兄妹亦宜远嫌。女起，眉颦蹙而欲啼，足㑌儴而懒步，从容出门，涉阶而没。宁窃怜之，欲留宿别榻，又惧母嗔。女朝旦朝母，捧匜沃盥，下堂操作，无不曲承母志；黄昏告退，辄过斋头，就烛诵经；觉宁将寝，始惨然去。先是宁妻病废，母劬不可堪；自得女，逸甚，心德之。日渐稔，亲爱如己出，竟忘其为鬼，不忍晚令去，留与同卧起。女初来未尝食饮，半年渐啜稀。母子皆溺爱之，讳言其鬼，人亦不之辨也。",
-            "identity": "宁为归家士人，母为宁母，小倩为以兄妹身份寄居的异类女子",
-            "interpretation": "家庭空间通过厨下操作、晨昏定省、诵经等日常实践接纳小倩；剑袋悬他室解除空间畏惧，母留同卧起标志人异共处的深化。",
-            "quote": "遂与俱至斋中，嘱坐少待，先入白母。母愕然。时宁妻久病，母戒勿言，恐所骇惊。言次女已翩然入，拜伏地下。宁曰：「此小倩也。」母惊顾不遑。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 2985
-          },
-          {
-            "unit": 3021,
-            "actors": "宁母、聂小倩、宁采臣",
-            "location": "宁采臣家",
-            "space": "家庭空间",
-            "event": "无何，宁妻亡。母阴有纳女意，然恐于子不利。女微窥之，乘间告母曰居年余，当知儿肝鬲，为不欲祸行人，故从郎君来，止以公子光明磊落，实欲依赞三数年，借博封诰以光泉壤。母亦知其无恶，但惧不能延宗嗣。女曰子女惟天所授，郎君注福籍，有亢宗子三，不以鬼妻而遂夺也。母信之，与子议，宁喜，因列筵告戚党。或请觌新妇，女慨然华妆出，一堂尽眙，反不疑其鬼，疑为仙。由是五党诸内眷，咸执贽以贺，争拜识之。女善画兰梅，辄以尺幅酬答，得者藏之什袭以为荣。",
-            "identity": "宁母为家长，小倩为将纳为妇的异类女子，宁为子",
-            "interpretation": "妻亡后家庭空间重组，小倩以华妆出见戚党，完成从鬼到仙的社会身份转换；画兰梅酬答使异类融入人间社交网络。",
-            "quote": "无何，宁妻亡。母阴有纳女意，然恐于子不利。女微窥之，乘间告（母）曰：「居年余，当知（儿）肝鬲。为不欲祸行人，故从郎君来。区区无他意，止以公子光明磊落，为天人所钦瞩，实欲依赞三数年，借博封诰，以光泉壤",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 3025
-          },
-          {
-            "unit": 3032,
-            "actors": "聂小倩、宁采臣、夜叉",
-            "location": "宁采臣家",
-            "space": "窗前、床头、户上、夹幙间",
-            "event": "一日，女俯颈窗前，怊怅若失，忽问革囊何在。宁曰以卿畏之故缄置他所。女曰妾受生气已久，当不复畏，宜取挂床头。宁诘其意，曰三日来心怔忡无停息，意金华妖物恨妾远遯，恐旦晚寻及也。宁果携革囊来。女反复审视，曰此剑仙将盛人头者也，敝败至此，不知杀人几何许，妾今日视之，肌犹粟栗。乃悬之。次日，又命移悬户上。夜对烛坐，约宁勿寝。欻有一物如飞鸟堕，女惊匿夹幙间。宁视之，物如夜叉状，电目血舌，睒闪攫拿而前，至门却步，逡巡久之，渐近革囊，以爪摘取，似将抓裂。囊忽格然一响，大可合篑，恍惚有鬼物突出半身，揪夜叉入。声遂寂然，囊亦顿缩如故。宁骇诧，女亦出，大喜曰无恙矣。共视囊中，清水数斗而已。",
-            "identity": "小倩为受生气已久的异类女子，宁为夫，夜叉为金华妖物",
-            "interpretation": "革囊从畏物转为护界法器，悬床头、户上形成空间防御；夜叉至门却步，最终被囊中鬼物揪入，囊中清水象征妖物被消解。",
-            "quote": "一日，俯颈窗前，怊怅若失。忽问：「革囊何在？」曰：「以卿畏之，故缄置他所。」曰：「妾受生气已久，当不复畏，宜取挂床头。宁诘其意，曰：「三日来，心怔忡无停息，意金华妖物恨妾远遯，恐旦晚寻及也",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 3036
-          },
-          {
-            "unit": 3053,
-            "actors": "宁采臣、聂小倩",
-            "location": "宁采臣家",
-            "space": "家庭空间",
-            "event": "后数年，宁果登进士。女举一男。纳妾后又各生一男，皆仕进有声。",
-            "identity": "宁为进士，小倩为妻，妾为后纳",
-            "interpretation": "结局以科举成功与子嗣兴旺收束，空间上家庭完全接纳异类，人异共处达成稳定秩序。",
-            "quote": "后数年，宁果登进士。（女）举一男。纳妾后又各生一男，皆仕进有声",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "unit_end": 3055
-          }
-        ],
-        "people": [
-          {
-            "id": "c48-edited-p0",
-            "word": "燕",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c48-edited-p1",
-            "word": "小倩",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "鬼": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c48-edited-p2",
-            "word": "宁",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c48-edited-p3",
-            "word": "宁采臣",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c48-edited-p4",
-            "word": "燕生",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
       "chapter_id": 221,
       "changes": {
         "event_types": {
@@ -3263,6 +2985,284 @@
             "review_status": "candidate",
             "person_types": {
               "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 411,
+      "changes": {
+        "event_types": {
+          "妖": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "马子才 / ， / 顺天人 / 。\n世 / 好 / 菊 / ， / 至才尤甚 / ， / 闻 / 有 / 佳种 / ， / 必 / 购 / 之 / ， / 千 / 里 / 不 / 惮 / 。\n一 / 日 / ， / 有 / 金陵 / 客寓 / 其 / 家 / ， / 自 / 言 / 其中 / 表亲 / 有 / 一二 / 种 / ， / 为 / 北方 / 所 / 无 / 。\n马欣动 / ， / 即刻 / 治装 / ， / 从 / 客 / 至 / 金陵 / 。\n客 / 多方 / 为 / 之 / 营求 / ， / 得 / 两 / 芽 / ， / 裹藏 / 如 / 宝 / 。\n归 / 至 / 中途 / ， / 遇 / 一 / 少年 / ， / 跨 / 蹇 / 从 / 油碧车 / ， / 丰姿 / 洒 / 落 / 。\n渐近 / 与 / 语 / 。\n少年自言 / ：「 / 陶姓 / 。\n」 / 谈言骚雅 / 。\n因 / 问 / 马 / 所 / 自 / 来 / ， / 实 / 告 / 之 / 。\n少年 / 曰 / ：「 / 种 / 无 / 不 / 佳 / ， / 培溉 / 在 / 人 / 。\n」 / 因 / 与 / 论艺菊 / 之 / 法 / 。\n马大悦 / ， / 问 / ：「 / 将 / 何 / 往 / ？\n」 / 答 / 云 / ：「 / 姊 / 厌 / 金陵 / ， / 欲 / 卜居 / 于 / 河朔耳 / 。\n」 / 马 / 欣然 / 曰 / ：「 / 仆 / 虽 / 固贫 / ， / 茅庐 / 可以 / 寄榻 / 。\n不 / 嫌 / 荒陋 / ， / 无 / 烦 / 他 / 适 / 。\n」 / 陶 / 趋车 / 前 / ， / 向 / 姊咨禀 / 。\n车中人 / 推帘语 / ， / 乃 / 二十 / 许 / 绝世美人 / 也 / 。\n顾弟 / 言 / ：「 / 屋 / 不 / 厌卑 / ， / 而 / 院 / 宜 / 得 / 广 / 。\n」 / 马代诺之 / ， / 遂 / 与 / 俱 / 归 / 。\n第南 / 有 / 荒圃 / ， / 仅 / 小室 / 三四 / 椽 / ， / 陶喜 / ， / 居 / 之 / 。\n日 / 过 / 北院 / ， / 为 / 马 / 治 / 菊 / 。\n菊 / 已 / 枯 / ， / 拔根 / 再 / 植 / 之 / ， / 无 / 不 / 活 / 。\n然 / 家 / 清贫 / ， / 陶日 / 与 / 马 / 共 / 食 / 饮 / ， / 而 / 察 / 其 / 家 / 似 / 不 / 举 / 火 / 。\n马妻吕 / ， / 亦 / 爱 / 陶姊 / ， / 不 / 时 / 以 / 升斗 / 餽恤 / 之 / 。\n陶姊 / 小字 / 黄英 / ， / 雅 / 善 / 谈 / ， / 辄 / 过 / 吕 / 所 / ， / 与 / 共纫绩 / 。\n陶 / 一 / 日 / 谓 / 马 / 曰 / ：「 / 君 / 家 / 固 / 不 / 丰 / ， / 仆日 / 以 / 口腹累知交 / ， / 胡可 / 为 / 常 / 。\n为 / 今计 / ， / 卖 / 菊 / 亦 / 足 / 谋生 / 。\n」 / 马素 / 介 / ， / 闻陶言 / ， / 甚鄙之 / ， / 曰 / ：「 / 仆 / 以 / 君 / 风流 / 高士 / ， / 当能 / 安贫 / ；\n今 / 作 / 是 / 论 / ， / 则 / 以 / 东篱 / 为 / 市井 / ， / 有 / 辱 / 黄花 / 矣 / 。\n」 / 陶笑曰 / ：「 / 自食其力 / 不 / 为 / 贪 / ， / 贩 / 花 / 为 / 业 / 不 / 为 / 俗 / 。\n人 / 固 / 不 / 可 / 苟 / 求 / 富 / ， / 然 / 亦 / 不 / 必务 / 求贫 / 也 / 。\n」 / 马 / 不 / 语 / ， / 陶 / 起 / 而 / 出 / 。\n自 / 是 / ， / 马 / 所 / 弃 / 残 / 枝 / 劣种 / ， / 陶悉 / 掇 / 拾 / 而 / 去 / 。\n由此 / 不 / 复 / 就 / 马寝食 / ， / 招之始一至 / 。\n未 / 几 / ， / 菊 / 将 / 开 / ， / 闻 / 其 / 门嚣 / 喧 / 如 / 市 / 。\n怪 / 之 / ， / 过而窥焉 / ， / 见市人 / 买 / 花 / 者 / ， / 车 / 载 / 肩负 / ， / 道 / 相 / 属 / 也 / 。\n其 / 花皆 / 异种 / ， / 目所未睹 / 。\n心厌其贪 / ， / 欲 / 与 / 绝 / ；\n而 / 又 / 恨 / 其 / 私秘 / 佳本 / ， / 遂款其扉 / ， / 将 / 就 / 消让 / 。\n陶出 / ， / 握手 / 曳入 / 。\n见 / 荒庭 / 半 / 亩 / 皆 / 菊 / 畦 / ， / 数椽 / 之外 / 无 / 旷土 / 。\n\ud84c / \udcc1去 / 者 / ， / 则折别枝插补 / 之；\n其 / 蓓蕾 / 在 / 畦者 / ， / 罔 / 不 / 佳 / 妙 / ： / 而 / 细 / 认 / 之 / ， / 皆 / 向 / 所 / 拔弃 / 也 / 。\n陶入 / 屋 / ， / 出 / 酒馔 / ， / 设 / 席畦 / 侧 / ， / 曰 / ：「 / 仆 / 贫 / 不 / 能 / 守 / 清 / 戒 / ， / 连 / 朝幸 / 得 / 微赀 / ， / 颇 / 足 / 供 / 醉 / 。\n」 / 少 / 间 / ， / 房 / 中 / 呼 / 「 / 三郎 / 」， / 陶诺 / 而 / 去 / 。\n俄 / 献 / 佳肴 / ， / 烹饪 / 良精 / 。\n因 / 问 / ：「 / 贵 / 姊胡 / 以 / 不 / 字 / ？\n」 / 答 / 云 / ：「 / 时 / 未 / 至 / 。\n」 / 问 / ：「 / 何时 / ？\n」 / 曰 / ：「 / 四十三月 / 。\n」 / 又诘 / ：「 / 何 / 说 / ？\n」 / 但 / 笑 / 不 / 言 / ， / 尽 / 欢始 / 散 / 。\n过 / 宿 / ， / 又 / 诣 / 之 / ， / 新插者 / 已 / 盈 / 尺 / 矣 / 。\n大 / 奇 / 之 / ， / 苦求 / 其 / 术 / 。\n陶 / 曰 / ：「 / 此 / 固 / 非 / 可 / 言传 / ；\n且君 / 不 / 以 / 谋生 / ， / 焉 / 用 / 此 / ？\n」 / 又 / 数 / 日 / ， / 门庭略寂 / ， / 陶乃 / 以 / 蒲席 / 包 / 菊 / ， / 捆载 / 数 / 车 / 而 / 去 / 。\n逾岁 / ， / 春 / 将 / 半 / ， / 始 / 载 / 南 / 中 / 异卉 / 而 / 归 / ， / 于都 / 中 / 设 / 花肆 / ， / 十日 / 尽 / 售 / ， / 复归 / 艺菊 / 。\n问 / 之 / 去年 / 买 / 花 / 者 / ， / 留 / 其 / 根 / ， / 次年 / 尽 / 变 / 而 / 劣 / ， / 乃 / 复 / 购 / 于 / 陶 / 。\n陶由 / 此日 / 富 / ： / 一 / 年 / 增舍 / ， / 二 / 年 / 起 / 夏屋 / 。\n兴作 / 从 / 心 / ， / 更 / 不 / 谋 / 诸 / 主人 / 。\n渐 / 而 / 旧日 / 花畦 / ， / 尽 / 为 / 廊舍 / 。\n更 / 于 / 墙 / 外 / 买 / 田 / 一 / 区 / ， / 筑墉 / 四周 / ， / 悉 / 种 / 菊 / 。\n至 / 秋 / ， / 载 / 花 / 去 / ， / 春 / 尽 / 不 / 归 / 。\n而 / 马妻病 / 卒 / 。\n意属 / 黄英 / ， / 微 / 使 / 人 / 风示之 / 。\n黄英 / 微笑 / ， / 意 / 似 / 允许 / ， / 惟 / 专候 / 陶归 / 而已 / 。\n年余 / ， / 陶 / 竟 / 不 / 至 / 。\n黄英 / 课仆 / 种 / 菊 / ， / 一 / 如 / 陶 / 。\n得 / 金益合 / 商贾 / ， / 村 / 外 / 治 / 膏田 / 二十 / 顷 / ， / 甲 / 第益 / 壮 / 。\n忽 / 有 / 客 / 自 / 东粤 / 来 / ， / 寄 / 陶生函信 / ， / 发 / 之 / ， / 则 / 嘱姊归马 / 。\n考 / 其 / 寄 / 书 / 之 / 日 / ， / 即 / 妻 / 死 / 之 / 日 / ；\n回忆 / 园中之饮 / ， / 适四十三月 / 也 / ， / 大奇之 / 。\n以 / 书 / 示英 / ， / 请问 / 「 / 致 / 聘 / 何 / 所 / 」。\n英辞 / 不 / 受 / 采 / 。\n又 / 以 / 故居 / 陋 / ， / 欲 / 使 / 就 / 南 / 第居 / ， / 若 / 赘焉 / 。\n马 / 不 / 可 / ， / 择日行亲 / 迎 / 礼 / 。\n黄英 / 既 / 适 / 马 / ， / 于间壁 / 开扉 / 通南第 / ， / 日过课其仆 / 。\n马耻 / 以 / 妻 / 富 / ， / 恒 / 嘱 / 黄英 / 作 / 南北籍 / ， / 以防 / 淆乱 / 。\n而 / 家 / 所 / 须 / ， / 黄英辄 / 取 / 诸 / 南 / 第 / 。\n不 / 半 / 岁 / ， / 家 / 中触类 / 皆 / 陶 / 家 / 物 / 。\n马 / 立遣人 / 一一 / 赍还 / 之 / ， / 戒勿 / 复取 / 。\n未 / 浃 / 旬 / ， / 又 / 杂 / 之 / 。\n凡数 / 更 / ， / 马 / 不 / 胜 / 烦 / 。\n黄英 / 笑 / 曰 / ：「 / 陈仲子 / 毋乃劳 / 乎 / ？\n」 / 马慙 / ， / 不 / 复稽 / ， / 一切 / 听 / 诸 / 黄 / 英 / 。\n鸠工 / 庀料 / ， / 土木 / 大作 / ， / 马 / 不 / 能 / 禁 / 。\n经 / 数 / 月 / ， / 楼舍 / 连 / 互 / ， / 两 / 第 / 竟合 / 为 / 一 / ， / 不 / 分 / 疆界 / 矣 / 。\n然遵马教 / ， / 闭 / 门 / 不 / 复 / 业 / 菊 / ， / 而 / 享用 / 过于 / 世 / 家 / 。\n马 / 不 / 自安 / ， / 曰 / ：「 / 仆 / 三十 / 年 / 清德 / ， / 为 / 卿 / 所 / 累 / 。\n今 / 视息 / 人间 / ， / 徒 / 依 / 裙 / 带 / 而 / 食 / ， / 真 / 无 / 一 / 毫丈 / 夫气 / 矣 / 。\n人 / 皆 / 祝 / 富 / ， / 我 / 但 / 祝 / 穷 / 耳 / ！\n」 / 黄英 / 曰 / ：「 / 妾 / 非贪鄙 / ；\n但 / 不 / 少 / 致 / 丰盈 / ， / 遂 / 令 / 千 / 载 / 下 / 人 / ， / 谓 / 渊 / 明贫贱骨 / ， / 百 / 世 / 不 / 能 / 发迹 / ， / 故 / 聊 / 为 / 我 / 家 / 彭泽 / 解嘲 / 耳 / 。\n然贫者 / 愿 / 富 / ， / 为难 / ；\n富者 / 求贫 / ， / 固 / 亦 / 甚 / 易 / 。\n床头金 / 任 / 君 / 挥 / 去 / 之 / ， / 妾 / 不 / 靳 / 也 / 。\n」 / 马 / 曰 / ：「 / 捐 / 他人 / 之 / 金 / ， / 抑亦 / 良 / 丑 / 。\n」 / 英曰 / ：「 / 君 / 不 / 愿 / 富 / ， / 妾 / 亦 / 不 / 能 / 贫 / 也 / 。\n无已 / ， / 析 / 君 / 居 / ： / 清者 / 自清 / ， / 浊者 / 自浊 / ， / 何害 / ？\n」 / 乃 / 于 / 园中 / 筑 / 茅茨 / ， / 择美婢往侍马 / 。\n马安之 / 。\n然过 / 数日 / ， / 苦念 / 黄英 / 。\n招 / 之 / ， / 不 / 肯 / 至 / ；\n不 / 得已 / ， / 反就之 / 。\n隔宿辄至 / ， / 以为常 / 。\n黄英 / 笑 / 曰 / ：「 / 东食 / 西 / 宿 / ， / 廉者 / 当 / 不 / 如 / 是 / 。\n」 / 马 / 亦 / 自笑 / ， / 无 / 以 / 对 / ， / 遂 / 复合 / 居如 / 初 / 。\n会 / 马 / 以 / 事 / 客 / 金陵 / ， / 适逢 / 菊 / 秋 / 。\n早 / 过 / 花肆 / ， / 见 / 肆中 / 盆列甚烦 / ， / 款朵 / 佳 / 胜 / ， / 心 / 动 / ， / 疑类 / 陶制 / 。\n少 / 间 / ， / 主人 / 出 / ， / 果陶 / 也 / 。\n喜极 / ， / 具道 / 契阔 / ， / 遂 / 止宿 / 焉 / 。\n要 / 之 / 归 / ， / 陶 / 曰 / ：「 / 金陵 / ， / 吾 / 故土 / ， / 将婚 / 于是 / 。\n积 / 有 / 薄赀 / ， / 烦 / 寄 / 吾 / 姊 / 。\n我 / 岁杪当 / 暂 / 去 / 。\n」 / 马 / 不 / 听 / ， / 请 / 之 / 益 / 苦 / 。\n且 / 曰 / ：「 / 家 / 幸 / 充盈 / ， / 但 / 可 / 坐 / 享 / ， / 无须 / 复贾 / 。\n」 / 坐肆 / 中 / ， / 使 / 仆代 / 论 / 价 / ， / 廉 / 其 / 直 / ， / 数日 / 尽 / 售 / 。\n逼促 / 囊装 / ， / 赁舟遂北 / 。\n入门 / ， / 则 / 姊已除舍 / ， / 床榻 / 裀褥 / 皆 / 设 / ， / 若 / 预知 / 弟 / 也 / 归 / 者 / 。\n陶自归 / ， / 解装 / 课役 / ， / 大修 / 亭园 / ， / 惟日 / 与 / 马共 / 棋酒 / ， / 更 / 不 / 复结一客 / 。\n为 / 之 / 择婚 / ， / 辞 / 不 / 愿 / 。\n姊遣 / 两 / 婢 / 侍 / 其 / 寝处 / ， / 居 / 三四 / 年 / ， / 生 / 一 / 女 / 。\n陶饮素豪 / ， / 从 / 不 / 见 / 其 / 沉醉 / 。\n有 / 友人 / 曾 / 生 / ， / 量 / 亦 / 无 / 对 / 。\n适过马 / ， / 马 / 使 / 与 / 陶相 / 较 / 饮 / 。\n二 / 人 / 纵饮 / 甚 / 欢 / ， / 相得恨晚 / 。\n自辰以迄四漏 / ， / 计 / 各 / 尽 / 百 / 壶 / 。\n曾 / 烂醉如泥 / ， / 沉睡 / 座间 / 。\n陶起归寝 / ， / 出门 / 践 / 菊 / 畦 / ， / 玉山倾倒 / ， / 委衣于侧 / ， / 即地化 / 为 / 菊 / ， / 高 / 如 / 人 / ；\n花 / 十 / 余 / 朵 / ， / 皆 / 大于 / 拳 / 。\n马骇绝 / ， / 告 / 黄英 / 。\n英急往 / ， / 拔置 / 地上 / ， / 曰 / ：「 / 胡 / 醉 / 至 / 此 / ！\n」 / 覆 / 以 / 衣 / ， / 要 / 马 / 俱 / 去 / ， / 戒勿 / 视 / 。\n既 / 明而往 / ， / 则 / 陶卧 / 畦边 / 。\n马乃悟 / 姊弟菊 / 精 / 也 / ， / 益 / 爱 / 敬 / 之 / 。\n而 / 陶自 / 露 / 迹 / ， / 饮益放 / ， / 恒自折柬 / 招曾 / ， / 因 / 与 / 莫逆 / 。\n值 / 花 / 朝 / ， / 曾 / 来 / 造访 / ， / 以 / 两 / 仆 / 舁药 / 浸 / 白酒 / 一 / 坛 / ， / 约与共尽 / 。\n坛将竭 / ， / 二 / 人 / 犹 / 未 / 甚 / 醉 / 。\n马潜 / 以 / 一 / 瓻 / 续 / 入 / 之 / ， / 二 / 人 / 又 / 尽 / 之 / 。\n曾 / 醉 / 已 / 惫 / ， / 诸仆 / 负 / 之 / 以 / 去 / 。\n陶卧地 / ， / 又 / 化为 / 菊 / 。\n马见惯 / 不 / 惊 / ， / 如法 / 拔 / 之 / ， / 守 / 其 / 旁 / 以 / 观 / 其 / 变 / 。\n久 / 之 / ， / 叶益 / 憔悴 / 。\n大惧 / ， / 始 / 告 / 黄英 / 。\n英闻骇曰 / ：「 / 杀 / 吾 / 弟 / 矣 / ！\n」 / 奔视 / 之 / ， / 根株 / 已 / 枯 / 。\n痛绝 / ， / 掐 / 其 / 梗 / ， / 埋 / 盆 / 中 / ， / 携入 / 闺中 / ， / 日 / 灌溉 / 之 / 。\n马悔恨欲绝 / ， / 甚怨 / 曾 / 。\n越 / 数 / 日 / ， / 闻 / 曾 / 已 / 醉 / 死 / 矣 / 。\n盆 / 中 / 花渐萌 / ， / 九月 / 既 / 开 / ， / 短干 / 粉朵 / ， / 嗅 / 之 / 有 / 酒 / 香 / ， / 名 / 之 / 「 / 醉 / 陶 / 」， / 浇 / 以 / 酒 / 则 / 茂 / 。\n后 / 女 / 长成 / ， / 嫁 / 于 / 世 / 家 / 。\n黄英 / 终 / 老 / 、 / 亦 / 无 / 他 / 异 / 。",
+        "lexical_reviews": {},
+        "years": {
+          "一日": 2,
+          "四十三月": 2,
+          "十日": 1,
+          "一年": 1,
+          "二年": 1,
+          "三十年": 1,
+          "千载": 1,
+          "三四年": 1,
+          "九月": 1
+        },
+        "places": [
+          {
+            "word": "金陵",
+            "mentions": 0
+          },
+          {
+            "word": "顺天",
+            "mentions": 0
+          },
+          {
+            "word": "南中",
+            "mentions": 0
+          }
+        ],
+        "space_words": [
+          "荒圃",
+          "菊畦",
+          "房中",
+          "门庭",
+          "楼舍",
+          "茅茨",
+          "亭园",
+          "闺中"
+        ],
+        "narrative_events": [
+          {
+            "unit": 26599,
+            "actors": "马子才、金陵客",
+            "location": "顺天：马籍贯；金陵：求菊目的地",
+            "space": "家 → 旅途",
+            "event": "听客介绍佳种，随客赴金陵",
+            "identity": "马子才：人",
+            "interpretation": "求菊使人物离家并进入跨地域交往；籍贯不能自动确定后来宅第的精确地址。",
+            "quote": "马欣动，即刻治装，从客至金陵。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26616,
+            "actors": "陶生、黄英、马子才",
+            "location": "马第南侧；陶称姊欲居河朔，但确切城市未明",
+            "space": "荒圃／小室",
+            "event": "马与陶姊弟俱归，陶选择南侧荒圃小室居住",
+            "identity": "以人形出场；菊精身份尚未向马揭露",
+            "interpretation": "黄英先要求宽院（单位26614），可与荒圃选择合读，研究居住需求与种菊的关联。",
+            "quote": "第南有荒圃，仅小室三四椽，陶喜，居之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26637,
+            "actors": "陶生、马子才",
+            "location": "陶生居所庭中",
+            "space": "荒庭／菊畦",
+            "event": "马因售花而来，看到弃种已变为佳菊",
+            "identity": "陶生：菊精，仍以人形活动；马尚未确认其本体",
+            "interpretation": "庭院同时是种植与经营空间；“市井”也是马的价值判断，不能直接当作一处地名。",
+            "quote": "见荒庭半亩皆菊畦，数椽之外无旷土。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26674,
+            "actors": "黄英、马子才",
+            "location": "南第与马家之间",
+            "space": "间壁／扉",
+            "event": "婚后开门连通南第，黄英往返管理仆役",
+            "identity": "人形婚姻生活；菊精身份尚未向马明确揭露",
+            "interpretation": "门把分隔的居所变为可往返空间；与单位26675的南北籍合读，可探究财富边界。",
+            "quote": "于间壁开扉通南第，日过课其仆。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26684,
+            "actors": "黄英、马子才",
+            "location": "南北两第",
+            "space": "楼舍／两第",
+            "event": "营建之后两第合一，不再分疆界",
+            "identity": "婚姻关系持续，马对自身清德与妻富仍有焦虑",
+            "interpretation": "空间合并并不等于观念冲突立即结束；后续仍有求贫与分居情节。",
+            "quote": "楼舍连互，两第竟合为一，不分疆界矣。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26697,
+            "actors": "马子才、黄英",
+            "location": "园中",
+            "space": "茅茨",
+            "event": "黄英为马另筑简陋居所，以回应其求贫",
+            "identity": "人形相处；此处是居住安排改变，不是跨界",
+            "interpretation": "贫与富被安排成可分居的空间实验；单位26704的复合居显示分隔未能持续。",
+            "quote": "乃于园中筑茅茨，择美婢往侍马。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26726,
+            "actors": "陶生、马子才、黄英",
+            "location": "宅第菊畦；确切地名未明",
+            "space": "门外／菊畦",
+            "event": "陶醉后出门倒于菊畦，化为菊",
+            "identity": "人形 → 菊形；马后于单位26732悟其为菊精",
+            "interpretation": "门与菊畦连接室内交饮和本体显露，但不能据此推断每次出门都会变形。",
+            "quote": "出门践菊畦，玉山倾倒，委衣于侧，即地化为菊",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26744,
+            "actors": "黄英、陶生",
+            "location": "黄英居所内部",
+            "space": "盆／闺中",
+            "event": "陶再次化菊被拔而枯，黄英取梗埋盆并携入闺中灌溉",
+            "identity": "陶的菊体死亡、花梗续养；不能标为已经恢复人形",
+            "interpretation": "公共交饮场景转为内部照护空间；后续花名“醉陶”保存人物痕迹，但没有明说陶复为人。",
+            "quote": "掐其梗，埋盆中，携入闺中，日灌溉之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          }
+        ],
+        "people": [
+          {
+            "id": "c411-edited-p0",
+            "word": "黄英",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "妖": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p1",
+            "word": "陶",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p2",
+            "word": "马子才",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p3",
+            "word": "马妻吕",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p4",
+            "word": "陈仲子",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p5",
+            "word": "马",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p6",
+            "word": "胡",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "妖": 1
             },
             "evidence": "",
             "role": "",
