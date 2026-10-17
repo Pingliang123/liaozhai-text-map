@@ -534,11 +534,6 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "README.md",
-      "bytes": 1052,
-      "sha256": "c6d596b78ea880b8d3dcfb0558e10226bbac246d85a4405298bbf7d3fc22c0b4"
-    },
-    {
       "path": "data-package.json",
       "bytes": 21614519,
       "sha256": "e65b4563d4248a8d113f1cb4ec9f81f496fc0410e5f7eb03e28291f1e7c97549"
@@ -549,14 +544,24 @@
       "sha256": "e7447e7513a5db2c18a225af4012a88caeef5ffbfdcf5f888315370f817f8534"
     },
     {
+      "path": "github-login.js",
+      "bytes": 4025,
+      "sha256": "f1f8ac29d90edb032222bfb938deb03faf945551caa2dc03dc8ea17c3227e339"
+    },
+    {
+      "path": "github-sync-config.json",
+      "bytes": 80,
+      "sha256": "838eb6ab4db2c2e0011d300203e70cd1408d83ca15613af7b7c77b2a7f0a284b"
+    },
+    {
       "path": "github-sync.js",
-      "bytes": 9666,
-      "sha256": "a8e17a81d2086e08dc2fe272d7a0e7eae236f856d0b8b4cd41d2dae6cd887d0b"
+      "bytes": 12557,
+      "sha256": "487212555a549f356840b71e609536b4f371b5a00f0648db5d1e0c3a3177bf6c"
     },
     {
       "path": "index.html",
-      "bytes": 22455704,
-      "sha256": "98b89baa941ee7193fd332cd32f4199dae336aaafeb84a66c81810ae85801208"
+      "bytes": 22455758,
+      "sha256": "e2a029f20ed49f0609b63ab59f038178497faf8133460a93f3b34b56ba9ea52a"
     },
     {
       "path": "manual-revisions.json",
@@ -564,9 +569,14 @@
       "sha256": "d6f2d037d35ae0879f8a29417881cbff04f70e135858e3a889dc0423e8eccead"
     },
     {
+      "path": "README.md",
+      "bytes": 1151,
+      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
+    },
+    {
       "path": "research-data.zip",
       "bytes": 22467756,
-      "sha256": "62484e7b7db0d2f542d72ae487c6a8ec07fa0644d626f2b944e2efd78085e455"
+      "sha256": "27eee55fa2e6dcd854569425f7335f206616ef5b88f2a466eb5f1a1eda9957e1"
     }
   ]
 }

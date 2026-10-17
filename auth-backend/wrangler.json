@@ -1,0 +1,9 @@
+{
+  "name": "liaozhai-cloud-sync",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-17",
+  "workers_dev": true,
+  "vars": {"SITE_ORIGIN": "https://pingliang123.github.io", "ALLOWED_LOGIN": "Pingliang123", "OWNER": "Pingliang123", "REPO": "liaozhai-text-map", "GITHUB_CLIENT_ID": "", "SETUP_KEY_HASH": "240db11e3a768af33dc28ed4262d7dc443ac704c22faccbb7a0ec5be2d40ed43"},
+  "durable_objects": {"bindings": [{"name": "SESSIONS", "class_name": "SyncSession"}, {"name": "CONTROL", "class_name": "SyncControl"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["SyncSession"]}, {"tag": "v2", "new_sqlite_classes": ["SyncControl"]}]
+}

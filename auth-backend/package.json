@@ -1,0 +1,7 @@
+{
+  "name": "liaozhai-sync-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test test-worker.mjs", "deploy": "wrangler deploy"},
+  "devDependencies": {"wrangler": "^4.102.0"}
+}
