@@ -2482,7 +2482,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       symbol.setAttribute('d',category==='province'?'M0,-5.5 L5.5,0 L0,5.5 L-5.5,0 Z':category==='natural'?'M0,-5.5 L5,3.5 L-5,3.5 Z':'M-4,-4 H4 V4 H-4 Z');
       symbol.setAttribute('fill',state.place===p.id?'#152d29':'#82998c');symbol.style.display=category==='settlement'?'none':'';
       node.querySelector('.core').style.display=category==='settlement'?'':'none';
-      for (const type of M.EVENTS) node.querySelector('[data-type="' + type + '"]').style.display = types.includes(type) ? '' : 'none';
+      for (const type of M.EVENTS) { const ring=node.querySelector('[data-type="' + type + '"]'); ring.style.display = types.includes(type) ? '' : 'none'; ring.style.opacity=state.place===p.id ? '1' : '.25'; }
       if (Math.hypot(p.anchor[0] - p.display[0], p.anchor[1] - p.display[1]) > 1) leaders.append(svg('line', {x1: p.anchor[0], y1: p.anchor[1], x2: p.display[0], y2: p.display[1], stroke: '#789485', 'stroke-width': 1}));
     }
     const placeLabels=$('show-labels').checked ? G.labels(visible,drawWidth(),state.height,state.place):[];
@@ -2516,10 +2516,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
       const w=drawWidth()-20,y=state.height-108;
       movementDiagram.append(svg('rect',{x:10,y,width:w,height:100,rx:8,fill:'#fff',stroke:'#94aaa0',opacity:.96}));
-      movementDiagram.append(svg('text',{x:20,y:y+18,'font-size':12},'篇内空间示意（非坐标） · 《'+current.chapter+'》第'+(current.index+1)+'步'));
+      movementDiagram.append(svg('text',{x:20,y:y+18,'font-size':12},'空间示意 · 《'+current.chapter+'》第'+(current.index+1)+'步'));
       const summary=current.from_space+' → '+current.to_space;
       movementDiagram.append(svg('text',{x:20,y:y+43,'font-size':14},summary.slice(0,Math.max(15,Math.floor(w/14)))));
-      const caption=current.actorsList.join('、')+' · '+current.classification.access+' / '+current.classification.realm+'（未人工标注者待核）';
+      const caption=current.actorsList.join('、')+' · '+current.classification.access+' / '+current.classification.realm+'（待核）';
       movementDiagram.append(svg('text',{x:20,y:y+65,'font-size':12},caption.slice(0,Math.max(15,Math.floor(w/12)))));
       const view=svg('g',{role:'button',tabindex:0,'aria-label':'查看此步原文与空间解读','pointer-events':'all'});
       view.append(svg('rect',{x:18,y:y+72,width:170,height:23,rx:3,fill:'#e6eee8'}),svg('text',{x:24,y:y+88,'font-size':12},'查看此步原文与空间解读'));
@@ -2535,17 +2535,17 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const color=N.color(mode==='place'?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
       const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];
-      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row.route_scope==='context' ? .76 : 1,'marker-end':'url(#movement-arrow)'});
+      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : .3,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});
       line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+'；'+row.quote));movementLayer.append(line);
       for(const [point,place] of [[a,row.from],[b,row.to]]) {
         movementLayer.append(svg('circle',{cx:point[0],cy:point[1],r:4,fill:color}));
-        addEndpoint(place,point,color);
+        if(row===current) addEndpoint(place,point,color);
       }
       const actorText=row.actorsList.join('、')||'人物待核',actorChars=[...actorText],actorLines=[];
       for(let i=0;i<actorChars.length;i+=16) actorLines.push(actorChars.slice(i,i+16).join(''));
-      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:[(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》',...actorLines],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
+      if(row===current) routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',actorChars.slice(0,16).join('')+(actorChars.length>16?'…':'')],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
     }
     const obstacles=[...placeLabels.map(l=>l.rect),...visible.map(p=>[p.display[0]-9,p.display[1]-9,18,18]),[0,0,240,54]];
     for(const row of movementRows.filter(r=>r.transition_kind==='movement')) for(const place of [row.from,row.to].filter(Boolean)){const xy=G.screen(projection([place.lon,place.lat]),state.transform);obstacles.push([xy[0]-9,xy[1]-9,18,18]);}
@@ -2561,7 +2561,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       if(label.select){group.addEventListener('click',e=>{e.stopPropagation();label.select();});group.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();label.select();}});}
       movementLayer.append(group);
     }
-    message('route-label-status',routeAnnotations.length>routeLayout.length?'拥挤或视野外的部分标注已暂时隐藏；放大地图可展开，悬停或点选路线仍可查看篇目与步骤。':'');
+    message('route-label-status',routeAnnotations.length>routeLayout.length?'标注已避让；点击路线查看详情。':'');
     for (const realm of ['天界', '地界']) {
       const relevant = links.filter(e => e.realm === realm), [x, y] = anchors[realm], group = svg('g', {class: 'realm-hub', role: 'button', tabindex: 0, 'aria-label': '查看' + realm + '原文证据', transform: 'translate(' + x + ',' + y + ')'});
       const openRealm = () => $(realm === '天界' ? 'realm-sky' : 'realm-underworld').scrollIntoView({behavior: 'smooth', block: 'nearest'});
