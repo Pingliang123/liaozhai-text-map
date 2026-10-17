@@ -2535,17 +2535,17 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const color=N.color(mode==='place'?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
       const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];
-      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : .3,'marker-end':'url(#movement-arrow)'});
+      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : .75,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});
       line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+'；'+row.quote));movementLayer.append(line);
       for(const [point,place] of [[a,row.from],[b,row.to]]) {
         movementLayer.append(svg('circle',{cx:point[0],cy:point[1],r:4,fill:color}));
-        if(row===current) addEndpoint(place,point,color);
+        addEndpoint(place,point,color);
       }
       const actorText=row.actorsList.join('、')||'人物待核',actorChars=[...actorText],actorLines=[];
       for(let i=0;i<actorChars.length;i+=16) actorLines.push(actorChars.slice(i,i+16).join(''));
-      if(row===current) routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',actorChars.slice(0,16).join('')+(actorChars.length>16?'…':'')],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
+      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',...actorLines],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
     }
     const obstacles=[...placeLabels.map(l=>l.rect),...visible.map(p=>[p.display[0]-9,p.display[1]-9,18,18]),[0,0,240,54]];
     for(const row of movementRows.filter(r=>r.transition_kind==='movement')) for(const place of [row.from,row.to].filter(Boolean)){const xy=G.screen(projection([place.lon,place.lat]),state.transform);obstacles.push([xy[0]-9,xy[1]-9,18,18]);}
