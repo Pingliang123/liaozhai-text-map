@@ -4,3 +4,9 @@ assert.deepEqual(A.components(graph),[3,1]);assert.deepEqual(A.components(graph,
 const cs=[{id:1,title:'甲',places:['济南'],spaces:['寺','室']},{id:2,title:'乙',places:['济南'],spaces:['寺','室']},{id:3,title:'丙',places:['青州'],spaces:['寺']}];
 assert.equal(A.compare(cs,1)[0].score,1);assert.equal(A.compare(cs,1)[0].id,2);assert.equal(A.compare(cs,1,'place').length,1);assert.equal(A.compare(cs,1,'space').length,2);assert.deepEqual(A.compare(cs,'missing'),[]);
 console.log('PASS components, removed bridge, weighted similarity and category filtering');
+assert.deepEqual(A.layout({nodes:[],edges:[]}),[]);
+const star={nodes:Array.from({length:40},(_,i)=>({id:String(i)})),edges:Array.from({length:39},(_,i)=>({source:'0',target:String(i+1)}))};
+const arranged=A.layout(star);assert.deepEqual(arranged,A.layout(star));assert(star.nodes.every(n=>n.x===undefined));assert(arranged.every(n=>Number.isFinite(n.x)&&Number.isFinite(n.y)&&n.x>=40&&n.x<=780&&n.y>=60&&n.y<=640));
+assert(new Set(arranged.map(n=>Math.round(n.x))).size>20);assert(new Set(arranged.map(n=>Math.round(n.y))).size>20);
+const xs=arranged.map(n=>n.x),ys=arranged.map(n=>n.y);assert(Math.max(...xs)-Math.min(...xs)>200);assert(Math.max(...ys)-Math.min(...ys)>200);
+console.log('PASS deterministic free layout, no source mutation, fitted bounds and distributed node positions');
