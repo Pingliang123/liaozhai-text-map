@@ -80,6 +80,27 @@ function confidence(kind, word) {
   return 'review';
 }
 
+function findCandidates(chapter, minimumLength = 1, includeExact = false) {
+  const source = sourceOf(chapter);
+  const tokens = effectiveTokens(chapter);
+  const result = [];
+  for (const place of chapter.places || []) {
+    const word = String(place.word || '').trim();
+    if (!word || word.length < minimumLength) continue;
+    let start = 0;
+    while ((start = source.indexOf(word, start)) !== -1) {
+      const end = start + word.length;
+      const classified = classify(tokens, start, end);
+      if (includeExact || classified.kind !== 'exact') result.push({
+        word, start, end, kind: classified.kind,
+        confidence: confidence(classified.kind, word),
+      });
+      start = end;
+    }
+  }
+  return result;
+}
+
 function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), options = {}) {
   const pack = typeof packageFile === 'string' ? readJson(packageFile) : packageFile;
   const base = pack.base;
@@ -93,12 +114,8 @@ function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), op
     const chapter = { ...original, ...(overrides.get(original.chapter_id) || {}) };
     const source = sourceOf(chapter);
     const tokens = effectiveTokens(chapter);
-    for (const place of chapter.places || []) {
-      const word = String(place.word || '').trim();
-      if (!word) continue;
-      let start = 0;
-      while ((start = source.indexOf(word, start)) !== -1) {
-        const end = start + word.length;
+    for (const candidate of findCandidates(chapter, 1, true)) {
+        const { word, start, end } = candidate;
         const result = classify(tokens, start, end);
         counts[result.kind] += 1;
         if (result.kind !== 'exact') {
@@ -110,7 +127,7 @@ function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), op
             chapter: chapter.chapter,
             place: word,
             kind: result.kind,
-            confidence: confidence(result.kind, word),
+            confidence: candidate.confidence,
             context: source.slice(contextStart, contextEnd),
             tokens: result.covering.map(token => token.text),
             suggested_split: result.kind === 'embedded'
@@ -120,8 +137,6 @@ function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), op
             source: result.covering.some(token => token.source === 'revision') ? 'revision' : 'base',
           });
         }
-        start = end;
-      }
     }
   }
 
@@ -147,4 +162,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { audit, effectiveTokens, classify, sourceOf };
+module.exports = { audit, effectiveTokens, classify, sourceOf, findCandidates };

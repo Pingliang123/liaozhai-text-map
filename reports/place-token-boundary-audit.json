@@ -3,12 +3,12 @@
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "occurrence_count": 1647,
   "counts": {
-    "exact": 1152,
-    "embedded": 335,
-    "fragmented": 95,
-    "unreconciled": 65
+    "exact": 1299,
+    "embedded": 165,
+    "fragmented": 119,
+    "unreconciled": 64
   },
-  "non_exact_chapters": 228,
+  "non_exact_chapters": 178,
   "rows": [
     {
       "chapter_id": 0,
@@ -171,22 +171,6 @@
     {
       "chapter_id": 35,
       "chapter": "王兰",
-      "place": "山西",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "」张又唯唯。于是即日趣装，至山西界。富室有女，得暴疾，眩然瞀",
-      "tokens": [
-        "山西界"
-      ],
-      "suggested_split": [
-        "山西",
-        "界"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 35,
-      "chapter": "王兰",
       "place": "邑",
       "kind": "embedded",
       "confidence": "review",
@@ -249,54 +233,6 @@
       "source": "base"
     },
     {
-      "chapter_id": 40,
-      "chapter": "贾儿",
-      "place": "东村",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "兄弟也。一私北郭王氏妇，一宿东村某翁家。翁家儿大恶，被断尾，",
-      "tokens": [
-        "宿东村"
-      ],
-      "suggested_split": [
-        "宿",
-        "东村"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 40,
-      "chapter": "贾儿",
-      "place": "何氏园",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "明，视血迹逾垣而去。迹之，入何氏园中。至夜果绝，儿窃喜。但母痴",
-      "tokens": [
-        "入何氏园"
-      ],
-      "suggested_split": [
-        "入",
-        "何氏园"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 42,
-      "chapter": "金世成",
-      "place": "长山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "金世成，长山人。素人检。忽出家作头陀。类",
-      "tokens": [
-        "长山人"
-      ],
-      "suggested_split": [
-        "长山",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 45,
       "chapter": "庙鬼",
       "place": "新城",
@@ -348,66 +284,16 @@
     {
       "chapter_id": 47,
       "chapter": "婴宁",
-      "place": "西南山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，问：「居何里？」吴诡曰：「西南山中，去此可三十余里。」生又付",
-      "tokens": [
-        "西南山中"
-      ],
-      "suggested_split": [
-        "西南山",
-        "中"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 47,
-      "chapter": "婴宁",
-      "place": "西南山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。因往询吴。吴忆曩言，因教于西南山村行觅。凡历数村，始至于此。",
-      "tokens": [
-        "于西南山村行觅"
-      ],
-      "suggested_split": [
-        "于",
-        "西南山",
-        "村行觅"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 47,
-      "chapter": "婴宁",
       "place": "村",
       "kind": "embedded",
       "confidence": "review",
       "context": "询吴。吴忆曩言，因教于西南山村行觅。凡历数村，始至于此。生",
       "tokens": [
-        "于西南山村行觅"
+        "村行觅"
       ],
       "suggested_split": [
-        "于西南山",
         "村",
         "行觅"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 47,
-      "chapter": "婴宁",
-      "place": "里落",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "望谷底，丛花乱树中，隐隐有小里落。下山入村，见舍宇无多，皆茅",
-      "tokens": [
-        "隐隐有小里落"
-      ],
-      "suggested_split": [
-        "隐隐有小",
-        "里落"
       ],
       "source": "revision"
     },
@@ -504,22 +390,6 @@
       "suggested_split": [
         "诸",
         "城"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 54,
-      "chapter": "张老相公",
-      "place": "金山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "皆没。张回棹，悼恨欲死。因登金山，谒寺僧，询鼋之异，将以仇鼋",
-      "tokens": [
-        "登金山"
-      ],
-      "suggested_split": [
-        "登",
-        "金山"
       ],
       "source": "revision"
     },
@@ -632,22 +502,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 61,
-      "chapter": "胡四姐",
-      "place": "太山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "尚生，太山人。独居清斋。会值秋夜，银河",
-      "tokens": [
-        "太山人"
-      ],
-      "suggested_split": [
-        "太山",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
       "chapter_id": 62,
       "chapter": "祝翁",
       "place": "济阳祝村",
@@ -677,23 +531,7 @@
       "suggested_split": [
         "江右"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 63,
-      "chapter": "猪婆龙",
-      "place": "钱墉",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，得一头，絷舟中。一日，泊舟钱墉，缚稍懈，忽跃入江。俄顷，波",
-      "tokens": [
-        "泊舟钱墉"
-      ],
-      "suggested_split": [
-        "泊舟",
-        "钱墉"
-      ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 66,
@@ -779,16 +617,32 @@
     {
       "chapter_id": 71,
       "chapter": "遵化署狐",
-      "place": "遵化",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "诸城邱公为遵化道。署中故多狐，最后一楼，绥",
+      "place": "遵化道",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "诸城邱公为遵化道。署中故多狐，最后一楼，绥绥",
       "tokens": [
-        "遵化道"
-      ],
-      "suggested_split": [
         "遵化",
         "道"
+      ],
+      "suggested_split": [
+        "遵化道"
+      ],
+      "source": "revision"
+    },
+    {
+      "chapter_id": 72,
+      "chapter": "张诚",
+      "place": "达金陵",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "途中资斧断绝，丐而行。逾年，达金陵，悬鹑百结，伛偻道上。偶见十",
+      "tokens": [
+        "达",
+        "金陵"
+      ],
+      "suggested_split": [
+        "达金陵"
       ],
       "source": "revision"
     },
@@ -807,7 +661,7 @@
         "齐",
         "人"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -824,7 +678,7 @@
         "齐",
         "大乱"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -841,7 +695,7 @@
         "齐",
         "诵慈悲救苦"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -857,7 +711,7 @@
         "屡遣人至",
         "齐"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -874,7 +728,7 @@
         "齐",
         "人"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -890,7 +744,7 @@
         "豫",
         "人"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -906,7 +760,7 @@
         "张常客",
         "豫"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -922,7 +776,7 @@
         "娶于",
         "豫"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 72,
@@ -938,23 +792,7 @@
         "流寓于",
         "豫"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 72,
-      "chapter": "张诚",
-      "place": "金陵",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "中资斧断绝，丐而行。逾年，达金陵，悬鹑百结，伛偻道上。偶见十",
-      "tokens": [
-        "达金陵"
-      ],
-      "suggested_split": [
-        "达",
-        "金陵"
-      ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 74,
@@ -1054,38 +892,6 @@
     {
       "chapter_id": 83,
       "chapter": "鲁公女",
-      "place": "招远",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "招远张于旦，性疏狂不羁。读书萧寺",
-      "tokens": [
-        "招远张于旦"
-      ],
-      "suggested_split": [
-        "招远",
-        "张于旦"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 83,
-      "chapter": "鲁公女",
-      "place": "三韩",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "不羁。读书萧寺。时邑令鲁公，三韩人。有女好猎。生适遇诸野，见",
-      "tokens": [
-        "三韩人"
-      ],
-      "suggested_split": [
-        "三韩",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 83,
-      "chapter": "鲁公女",
       "place": "土地祠",
       "kind": "unreconciled",
       "confidence": "review",
@@ -1095,7 +901,7 @@
         "祠速"
       ],
       "suggested_split": null,
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 86,
@@ -1143,38 +949,6 @@
         "郡"
       ],
       "source": "revision"
-    },
-    {
-      "chapter_id": 91,
-      "chapter": "李伯言",
-      "place": "沂水",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "李生伯言，沂水人。抗直有肝胆。忽暴病，家人",
-      "tokens": [
-        "沂水人"
-      ],
-      "suggested_split": [
-        "沂水",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 91,
-      "chapter": "李伯言",
-      "place": "冥司",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "问所欲为。王曰：「烦作见证于冥司耳。」惊问：「何事？」曰：「",
-      "tokens": [
-        "冥司耳"
-      ],
-      "suggested_split": [
-        "冥司",
-        "耳"
-      ],
-      "source": "base"
     },
     {
       "chapter_id": 92,
@@ -1267,22 +1041,6 @@
         "众"
       ],
       "source": "base"
-    },
-    {
-      "chapter_id": 101,
-      "chapter": "西僧",
-      "place": "西土",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "僧言：「途中历十八寒暑矣。离西土者十有二人，至中国仅存其二。",
-      "tokens": [
-        "西土者"
-      ],
-      "suggested_split": [
-        "西土",
-        "者"
-      ],
-      "source": "revision"
     },
     {
       "chapter_id": 101,
@@ -1409,22 +1167,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 107,
-      "chapter": "小二",
-      "place": "太山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "自内出，言：『我地府司隶也。太山帝君会诸冥曹，造暴客恶箓，须",
-      "tokens": [
-        "太山帝君"
-      ],
-      "suggested_split": [
-        "太山",
-        "帝君"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 108,
       "chapter": "庚娘",
       "place": "淮",
@@ -1452,54 +1194,6 @@
       ],
       "suggested_split": [
         "陕",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 110,
-      "chapter": "鸲鹆",
-      "place": "秦中",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。急觅其人，则已渺矣。后有往秦中者，见其人携鸟在西安市上。毕",
-      "tokens": [
-        "秦中者"
-      ],
-      "suggested_split": [
-        "秦中",
-        "者"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 111,
-      "chapter": "刘海石",
-      "place": "滨州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "人，避乱于滨州。时十四岁，与滨州生刘沧客同函丈，因相善，订为",
-      "tokens": [
-        "滨州生"
-      ],
-      "suggested_split": [
-        "滨州",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 111,
-      "chapter": "刘海石",
-      "place": "蒲台",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "刘海石，蒲台人，避乱于滨州。时十四岁，与",
-      "tokens": [
-        "蒲台人"
-      ],
-      "suggested_split": [
-        "蒲台",
         "人"
       ],
       "source": "revision"
@@ -1537,6 +1231,22 @@
     {
       "chapter_id": 117,
       "chapter": "狐妾",
+      "place": "官汾州",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "莱芜刘洞九，官汾州。独坐署中，闻亭外笑语渐近，",
+      "tokens": [
+        "官",
+        "汾州"
+      ],
+      "suggested_split": [
+        "官汾州"
+      ],
+      "source": "revision"
+    },
+    {
+      "chapter_id": 117,
+      "chapter": "狐妾",
       "place": "云贵",
       "kind": "fragmented",
       "confidence": "medium",
@@ -1547,55 +1257,6 @@
       ],
       "suggested_split": [
         "云贵"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 117,
-      "chapter": "狐妾",
-      "place": "汾州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "莱芜刘洞九，官汾州。独坐署中，闻亭外笑语渐近，",
-      "tokens": [
-        "官汾州"
-      ],
-      "suggested_split": [
-        "官",
-        "汾州"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 118,
-      "chapter": "雷曹",
-      "place": "金陵",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "操业半年，家赀小泰。一日，客金陵，休于旅舍。见一人颀然而长，",
-      "tokens": [
-        "客金陵"
-      ],
-      "suggested_split": [
-        "客",
-        "金陵"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 118,
-      "chapter": "雷曹",
-      "place": "乐里",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "时久旱，十里外，雨仅盈指，独乐里沟浍皆满。归探袖中，摘星仍在",
-      "tokens": [
-        "独乐里沟"
-      ],
-      "suggested_split": [
-        "独",
-        "乐里",
-        "沟"
       ],
       "source": "revision"
     },
@@ -1629,23 +1290,7 @@
         "于",
         "齐"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 120,
-      "chapter": "阿霞",
-      "place": "夏侯里",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "复于景，景不纳；遂适夏侯氏。夏侯里居，与景接壤，以田畔之故，世",
-      "tokens": [
-        "夏侯里居"
-      ],
-      "suggested_split": [
-        "夏侯里",
-        "居"
-      ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 124,
@@ -1661,7 +1306,7 @@
         "邠",
         "人"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 124,
@@ -1677,53 +1322,21 @@
         "邠",
         "界"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 124,
-      "chapter": "翩翩",
-      "place": "金陵",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "岁，为匪人诱去作狭邪游。会有金陵娼，侨寓郡中，生悦而惑之。娼",
-      "tokens": [
-        "金陵娼"
-      ],
-      "suggested_split": [
-        "金陵",
-        "娼"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 130,
-      "chapter": "罗刹海市",
-      "place": "海市",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "：「吾侪小人受大夫赐，明日赴海市，当求珍玩以报」，问：「海市",
-      "tokens": [
-        "赴海市"
-      ],
-      "suggested_split": [
-        "赴",
-        "海市"
-      ],
       "source": "revision"
     },
     {
       "chapter_id": 130,
       "chapter": "罗刹海市",
-      "place": "罗刹国",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "」问：「此名何国？」曰：「大罗刹国。都城在北去三十里。」马请导",
+      "place": "赴海市",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "曰：「吾侪小人受大夫赐，明日赴海市，当求珍玩以报」，问：「海市",
       "tokens": [
-        "大罗刹国"
+        "赴",
+        "海市"
       ],
       "suggested_split": [
-        "大",
-        "罗刹国"
+        "赴海市"
       ],
       "source": "revision"
     },
@@ -1740,6 +1353,22 @@
       ],
       "suggested_split": [
         "罗刹国"
+      ],
+      "source": "revision"
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "place": "大罗刹国",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "。」问：「此名何国？」曰：「大罗刹国。都城在北去三十里。」马请导",
+      "tokens": [
+        "大",
+        "罗刹国"
+      ],
+      "suggested_split": [
+        "大罗刹国"
       ],
       "source": "revision"
     },
@@ -1874,16 +1503,16 @@
     {
       "chapter_id": 131,
       "chapter": "田七郎",
-      "place": "辽阳",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "武承休，辽阳人。喜交游，所与皆知名士。夜",
+      "place": "辽阳人",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "武承休，辽阳人。喜交游，所与皆知名士。夜梦",
       "tokens": [
-        "辽阳人"
-      ],
-      "suggested_split": [
         "辽阳",
         "人"
+      ],
+      "suggested_split": [
+        "辽阳人"
       ],
       "source": "revision"
     },
@@ -1928,11 +1557,11 @@
       "confidence": "review",
       "context": "武承休，辽阳人。喜交游，所与皆知名士。",
       "tokens": [
-        "辽阳人"
+        "辽阳"
       ],
       "suggested_split": [
         "辽",
-        "阳人"
+        "阳"
       ],
       "source": "revision"
     },
@@ -1949,38 +1578,6 @@
       "suggested_split": [
         "归",
         "辽"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 134,
-      "chapter": "公孙九娘",
-      "place": "莱阳",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "刑东鬼，多葬南郊。甲寅间，有莱阳生至稷下，有亲友二三人亦在诛",
-      "tokens": [
-        "莱阳生"
-      ],
-      "suggested_split": [
-        "莱阳",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 134,
-      "chapter": "公孙九娘",
-      "place": "栖霞",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。女郎亦敛衽。甥曰：「九娘，栖霞公孙氏。阿爹故家子，今亦『穷",
-      "tokens": [
-        "栖霞公"
-      ],
-      "suggested_split": [
-        "栖霞",
-        "公"
       ],
       "source": "revision"
     },
@@ -2111,64 +1708,32 @@
     {
       "chapter_id": 146,
       "chapter": "姊妹易嫁",
-      "place": "王舍",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "毛郎补博士弟子，往应乡试。经王舍人庄，店主先一夕梦神曰：「旦",
+      "place": "王舍人庄",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "毛郎补博士弟子，往应乡试。经王舍人庄，店主先一夕梦神曰：「旦夕有",
       "tokens": [
-        "王舍人庄"
-      ],
-      "suggested_split": [
         "王舍",
         "人庄"
       ],
-      "source": "base"
+      "suggested_split": [
+        "王舍人庄"
+      ],
+      "source": "revision"
     },
     {
       "chapter_id": 146,
       "chapter": "姊妹易嫁",
-      "place": "王舍",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "偃蹇丧志，赧见主人，不敢复由王舍，迂道归家。逾三年再赴试，店",
+      "place": "王舍店",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "倒，美恶避就，繄岂由人耶？后王舍店主人以人命逮系囹圄，公乃为力",
       "tokens": [
-        "复由王舍"
-      ],
-      "suggested_split": [
-        "复由",
-        "王舍"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 146,
-      "chapter": "姊妹易嫁",
-      "place": "王舍",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "倒，美恶避就，繄岂由人耶？后王舍店主人以人命逮系囹圄，公乃为",
-      "tokens": [
-        "王舍店"
-      ],
-      "suggested_split": [
         "王舍",
         "店"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 147,
-      "chapter": "续黄粱",
-      "place": "平阳",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "向。奉旨籍家，充云南军。子任平阳太守，已差员前往提问。曾方闻",
-      "tokens": [
-        "平阳太守"
-      ],
       "suggested_split": [
-        "平阳",
-        "太守"
+        "王舍店"
       ],
       "source": "revision"
     },
@@ -2216,22 +1781,6 @@
         "平"
       ],
       "suggested_split": [
-        "广平"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 151,
-      "chapter": "辛十四娘",
-      "place": "广平",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "冤苦？」婢对曰：「妾原籍直隶广平，生员冯某之女。父以冤狱将死",
-      "tokens": [
-        "直隶广平"
-      ],
-      "suggested_split": [
-        "直隶",
         "广平"
       ],
       "source": "revision"
@@ -2301,6 +1850,22 @@
       "source": "revision"
     },
     {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "place": "直隶广平",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "有何冤苦？」婢对曰：「妾原籍直隶广平，生员冯某之女。父以冤狱将死",
+      "tokens": [
+        "直隶",
+        "广平"
+      ],
+      "suggested_split": [
+        "直隶广平"
+      ],
+      "source": "revision"
+    },
+    {
       "chapter_id": 152,
       "chapter": "白莲教",
       "place": "都",
@@ -2328,22 +1893,6 @@
         "盆泉人"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 154,
-      "chapter": "捉鬼射狐",
-      "place": "睢宁",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "李公著明，睢宁令襟卓先生公子也，为人豪爽无",
-      "tokens": [
-        "睢宁令"
-      ],
-      "suggested_split": [
-        "睢宁",
-        "令"
-      ],
       "source": "revision"
     },
     {
@@ -2381,16 +1930,16 @@
     {
       "chapter_id": 166,
       "chapter": "赵城虎",
-      "place": "郭岳庙",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，受杖数百，冤苦罔控。遂诣东郭岳庙，跪而祝之，哭失声。无何，一",
+      "place": "东郭岳庙",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "余，受杖数百，冤苦罔控。遂诣东郭岳庙，跪而祝之，哭失声。无何，一",
       "tokens": [
-        "东郭岳庙"
-      ],
-      "suggested_split": [
         "东",
         "郭岳庙"
+      ],
+      "suggested_split": [
+        "东郭岳庙"
       ],
       "source": "revision"
     },
@@ -2469,38 +2018,6 @@
         "宰索榼入署"
       ],
       "source": "base"
-    },
-    {
-      "chapter_id": 171,
-      "chapter": "鸦头",
-      "place": "东昌",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "诸生王文，东昌人。少诚笃。薄游于楚，过六河",
-      "tokens": [
-        "东昌人"
-      ],
-      "suggested_split": [
-        "东昌",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 171,
-      "chapter": "鸦头",
-      "place": "汉江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "容启，耳后但闻风鸣；平明，至汉江口，税屋而止。王惊其异。女曰",
-      "tokens": [
-        "汉江口"
-      ],
-      "suggested_split": [
-        "汉江",
-        "口"
-      ],
-      "source": "revision"
     },
     {
       "chapter_id": 171,
@@ -2644,22 +2161,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 175,
-      "chapter": "狐梦",
-      "place": "绰然堂",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "一年腊月十九日，毕子与余抵足绰然堂，细述其异。余曰：「有狐若此",
-      "tokens": [
-        "与余抵足绰然堂"
-      ],
-      "suggested_split": [
-        "与余抵足",
-        "绰然堂"
-      ],
-      "source": "base"
-    },
-    {
       "chapter_id": 176,
       "chapter": "布客",
       "place": "乃蒿里",
@@ -2685,87 +2186,6 @@
         "清某"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 176,
-      "chapter": "布客",
-      "place": "冥司",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "「我已以建桥事上报城隍，转达冥司矣，谓此一节可延寿命。今牒名",
-      "tokens": [
-        "冥司矣"
-      ],
-      "suggested_split": [
-        "冥司",
-        "矣"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 181,
-      "chapter": "花姑子",
-      "place": "华山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "之，恐致惊怪。君五年前，曾于华山道上买猎獐而放之否？」曰：「",
-      "tokens": [
-        "华山道"
-      ],
-      "suggested_split": [
-        "华山",
-        "道"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 182,
-      "chapter": "武孝廉",
-      "place": "德州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "室。心中悚怯，恐妇闻知，遂避德州道，迂途履任。年余，不通音耗",
-      "tokens": [
-        "德州道"
-      ],
-      "suggested_split": [
-        "德州",
-        "道"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 183,
-      "chapter": "西湖主",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "「婢子何以相识？」曰：「尔日洞庭舟上，曾有小鱼啣尾，即此婢也",
-      "tokens": [
-        "洞庭舟"
-      ],
-      "suggested_split": [
-        "洞庭",
-        "舟"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 183,
-      "chapter": "西湖主",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，乃先以平安书遣仆归。家中闻洞庭舟覆，妻子缞绖已年余矣。仆归",
-      "tokens": [
-        "闻洞庭舟覆"
-      ],
-      "suggested_split": [
-        "闻",
-        "洞庭",
-        "舟覆"
-      ],
       "source": "revision"
     },
     {
@@ -2820,70 +2240,6 @@
       "source": "base"
     },
     {
-      "chapter_id": 191,
-      "chapter": "伍秋月",
-      "place": "金山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "因税居于逆旅阁上。江水澄波，金山在目，心甚快之。次日，友人来",
-      "tokens": [
-        "金山在目"
-      ],
-      "suggested_split": [
-        "金山",
-        "在目"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 194,
-      "chapter": "黎氏",
-      "place": "龙门",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "龙门谢中条者，佻达无行。三十余丧",
-      "tokens": [
-        "龙门谢"
-      ],
-      "suggested_split": [
-        "龙门",
-        "谢"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 195,
-      "chapter": "荷花三娘子",
-      "place": "南湖",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "：「非君所知。明日辰刻，早越南湖，如见有采菱女，著冰縠帔者，",
-      "tokens": [
-        "越南湖"
-      ],
-      "suggested_split": [
-        "越",
-        "南湖"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 195,
-      "chapter": "荷花三娘子",
-      "place": "村寺",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "月日，密无知者。会一番僧卓锡村寺，见宗，惊曰：「君身有邪气，",
-      "tokens": [
-        "僧卓锡村寺"
-      ],
-      "suggested_split": [
-        "僧卓锡",
-        "村寺"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 197,
       "chapter": "柳氏子",
       "place": "岱",
@@ -2900,70 +2256,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 203,
-      "chapter": "彭海秋",
-      "place": "西湖",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "榜人罢棹，任其自流。细视，真西湖也。客于舱后，取异肴佳酿，懽",
-      "tokens": [
-        "真西湖"
-      ],
-      "suggested_split": [
-        "真",
-        "西湖"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 203,
-      "chapter": "彭海秋",
-      "place": "西湖",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "践耶？」娟娘曰：「昔日从人泛西湖，饮不数巵，忽若醉。蒙眬间，",
-      "tokens": [
-        "泛西湖"
-      ],
-      "suggested_split": [
-        "泛",
-        "西湖"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 203,
-      "chapter": "彭海秋",
-      "place": "广陵",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "环坐，便询族居。客曰：「小生广陵人，与君同姓，字海秋。值此良",
-      "tokens": [
-        "广陵人"
-      ],
-      "suggested_split": [
-        "广陵",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 205,
-      "chapter": "窦氏",
-      "place": "晋阳",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "南三复，晋阳世家也。有别墅，去所居十里余",
-      "tokens": [
-        "晋阳世"
-      ],
-      "suggested_split": [
-        "晋阳",
-        "世"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 205,
       "chapter": "窦氏",
       "place": "村",
@@ -2976,22 +2268,6 @@
       "suggested_split": [
         "近",
         "村",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 208,
-      "chapter": "潞令",
-      "place": "东平",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "宋国英，东平人，以教习授潞城令。贪暴不仁",
-      "tokens": [
-        "东平人"
-      ],
-      "suggested_split": [
-        "东平",
         "人"
       ],
       "source": "revision"
@@ -3141,22 +2417,6 @@
       "source": "base"
     },
     {
-      "chapter_id": 218,
-      "chapter": "白莲教",
-      "place": "长山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "靡。后大兵进剿，有彭都司者，长山人，艺勇绝伦。寇出二垂髫女与",
-      "tokens": [
-        "长山人"
-      ],
-      "suggested_split": [
-        "长山",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 219,
       "chapter": "颜氏",
       "place": "洛",
@@ -3164,28 +2424,11 @@
       "confidence": "review",
       "context": "父母继殁，孑然一身，授童蒙于洛汭。时村中颜氏有孤女，名士裔",
       "tokens": [
-        "童蒙于洛汭"
+        "洛汭"
       ],
       "suggested_split": [
-        "童蒙于",
         "洛",
         "汭"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 219,
-      "chapter": "颜氏",
-      "place": "洛汭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "父母继殁，孑然一身，授童蒙于洛汭。时村中颜氏有孤女，名士裔也",
-      "tokens": [
-        "童蒙于洛汭"
-      ],
-      "suggested_split": [
-        "童蒙于",
-        "洛汭"
       ],
       "source": "revision"
     },
@@ -3203,38 +2446,6 @@
         "君尝言",
         "燕",
         "有故庐"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 219,
-      "chapter": "颜氏",
-      "place": "顺天",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "出。兄又落。弟以冠军应试，中顺天第四；明年成进士；授桐城令，",
-      "tokens": [
-        "中顺天"
-      ],
-      "suggested_split": [
-        "中",
-        "顺天"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 220,
-      "chapter": "杜翁",
-      "place": "沂水",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "杜翁，沂水人。偶自市中出，坐墙下，以候",
-      "tokens": [
-        "沂水人"
-      ],
-      "suggested_split": [
-        "沂水",
-        "人"
       ],
       "source": "revision"
     },
@@ -3266,22 +2477,6 @@
         "梦"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 232,
-      "chapter": "萧七",
-      "place": "临淄",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "徐继长，临淄人，居城东之磨房庄。业儒未成",
-      "tokens": [
-        "临淄人"
-      ],
-      "suggested_split": [
-        "临淄",
-        "人"
-      ],
       "source": "revision"
     },
     {
@@ -3347,23 +2542,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 234,
-      "chapter": "豢蛇",
-      "place": "中州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，使送出谷口，乃归。余乡有客中州者，寄宿蛇佛寺。寺僧具晚餐，",
-      "tokens": [
-        "客中州者"
-      ],
-      "suggested_split": [
-        "客",
-        "中州",
-        "者"
-      ],
-      "source": "base"
-    },
-    {
       "chapter_id": 237,
       "chapter": "饿鬼",
       "place": "齐",
@@ -3409,55 +2587,6 @@
       ],
       "suggested_split": [
         "五都之市"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 238,
-      "chapter": "考弊司",
-      "place": "河南",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "闻人生，河南人。抱病经日，见一秀才入，伏",
-      "tokens": [
-        "河南人"
-      ],
-      "suggested_split": [
-        "河南",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 241,
-      "chapter": "向杲",
-      "place": "太原",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "向杲字初旦，太原人。与庶兄晟，友于最敦。晟狎",
-      "tokens": [
-        "太原人"
-      ],
-      "suggested_split": [
-        "太原",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 243,
-      "chapter": "周三",
-      "place": "东村",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "其异。尹为吏策，使往问叟。时东村人有作隶者，吏访之，果不诬，",
-      "tokens": [
-        "时东村人"
-      ],
-      "suggested_split": [
-        "时",
-        "东村",
-        "人"
       ],
       "source": "revision"
     },
@@ -3576,22 +2705,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 255,
-      "chapter": "邵女",
-      "place": "太平",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "柴廷宾，太平人。妻金氏，不育，又奇妒。柴",
-      "tokens": [
-        "太平人"
-      ],
-      "suggested_split": [
-        "太平",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
       "chapter_id": 257,
       "chapter": "二商",
       "place": "莒",
@@ -3603,22 +2716,6 @@
       ],
       "suggested_split": [
         "莒",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 259,
-      "chapter": "梅女",
-      "place": "太行",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "封云亭，太行人。偶至郡，昼卧寓屋。时年少",
-      "tokens": [
-        "太行人"
-      ],
-      "suggested_split": [
-        "太行",
         "人"
       ],
       "source": "revision"
@@ -3686,54 +2783,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 262,
-      "chapter": "阿英",
-      "place": "函谷",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "英何不来？」下座者曰：「昨自函谷来，被恶人伤右臂，不能同游，",
-      "tokens": [
-        "自函谷"
-      ],
-      "suggested_split": [
-        "自",
-        "函谷"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 263,
-      "chapter": "橘树",
-      "place": "兴化",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "陕西刘公，为兴化令。有道士来献盆树；视之，则",
-      "tokens": [
-        "兴化令"
-      ],
-      "suggested_split": [
-        "兴化",
-        "令"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 263,
-      "chapter": "橘树",
-      "place": "兴化",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "庄氏聘。庄丙戌登进士，释褐为兴化令。夫人大喜。窃意十余年橘不",
-      "tokens": [
-        "兴化令"
-      ],
-      "suggested_split": [
-        "兴化",
-        "令"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 266,
       "chapter": "青娥",
       "place": "秦中",
@@ -3780,38 +2829,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 268,
-      "chapter": "牛癀",
-      "place": "蒙山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "陈华封，蒙山人。以盛暑烦热，枕藉野树下。",
-      "tokens": [
-        "蒙山人"
-      ],
-      "suggested_split": [
-        "蒙山",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 269,
-      "chapter": "金姑夫",
-      "place": "上虞",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。族人祠之，谓之梅姑。丙申，上虞金生，赴试经此，入庙徘徊，颇",
-      "tokens": [
-        "上虞金生"
-      ],
-      "suggested_split": [
-        "上虞",
-        "金生"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 269,
       "chapter": "金姑夫",
       "place": "上虞",
@@ -3840,70 +2857,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 270,
-      "chapter": "梓潼令",
-      "place": "太原",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "常进士大忠，太原人。候选在都。前一夜，梦文昌",
-      "tokens": [
-        "太原人"
-      ],
-      "suggested_split": [
-        "太原",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 270,
-      "chapter": "梓潼令",
-      "place": "梓潼",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "前一夜，梦文昌投刺。拔签，得梓潼令，奇之。后丁艰归，服阕候补",
-      "tokens": [
-        "梓潼令"
-      ],
-      "suggested_split": [
-        "梓潼",
-        "令"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 272,
-      "chapter": "仙人岛",
-      "place": "西村",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "纵可携取，与空花何异。驱马至西村，见父衣服滓敝，衰老堪怜。相",
-      "tokens": [
-        "至西村"
-      ],
-      "suggested_split": [
-        "至",
-        "西村"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 272,
-      "chapter": "仙人岛",
-      "place": "灵山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "王勉，字黾斋，灵山人。有才思，屡冠文场，心气颇",
-      "tokens": [
-        "灵山人"
-      ],
-      "suggested_split": [
-        "灵山",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 272,
       "chapter": "仙人岛",
       "place": "火云洞",
@@ -3920,32 +2873,16 @@
     {
       "chapter_id": 274,
       "chapter": "颠道人",
-      "place": "蒙山寺",
-      "kind": "embedded",
-      "confidence": "high",
+      "place": "寓蒙山寺",
+      "kind": "fragmented",
+      "confidence": "medium",
       "context": "颠道人，不知姓名，寓蒙山寺。歌哭不常，人莫之测，或见其",
       "tokens": [
-        "寓蒙山寺"
-      ],
-      "suggested_split": [
         "寓",
         "蒙山寺"
       ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 275,
-      "chapter": "胡四娘",
-      "place": "剑南",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "程孝思，剑南人。少惠能文。父母俱早丧，家",
-      "tokens": [
-        "剑南人"
-      ],
       "suggested_split": [
-        "剑南",
-        "人"
+        "寓蒙山寺"
       ],
       "source": "revision"
     },
@@ -3964,22 +2901,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 278,
-      "chapter": "柳生",
-      "place": "直隶",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "瘗翁尸；又引拜母冢，始行。至直隶界，厚赐骑者而去。周久不归，",
-      "tokens": [
-        "直隶界"
-      ],
-      "suggested_split": [
-        "直隶",
-        "界"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 282,
       "chapter": "宦娘",
       "place": "晋",
@@ -3992,38 +2913,6 @@
       "suggested_split": [
         "客",
         "晋"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 283,
-      "chapter": "阿绣",
-      "place": "广宁",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "之，阖如故。问诸邻，始知姚原广宁人，以贸易无重息，故暂归去；",
-      "tokens": [
-        "广宁人"
-      ],
-      "suggested_split": [
-        "广宁",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 283,
-      "chapter": "阿绣",
-      "place": "广宁",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "谓刘曰：「事不谐矣！阿绣已字广宁人。」刘低头丧气，心灰绝望。",
-      "tokens": [
-        "广宁人"
-      ],
-      "suggested_split": [
-        "广宁",
-        "人"
       ],
       "source": "revision"
     },
@@ -4088,22 +2977,6 @@
         "云南军"
       ],
       "source": "revision"
-    },
-    {
-      "chapter_id": 287,
-      "chapter": "龙戏蛛",
-      "place": "齐东",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "徐公为齐东令。署中有楼，用藏肴饵，往往",
-      "tokens": [
-        "齐东令"
-      ],
-      "suggested_split": [
-        "齐东",
-        "令"
-      ],
-      "source": "base"
     },
     {
       "chapter_id": 291,
@@ -4200,22 +3073,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 296,
-      "chapter": "钟生",
-      "place": "济南",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "钟庆余，辽东名士。应济南乡试。闻藩邸有道士，知人休咎",
-      "tokens": [
-        "济南乡"
-      ],
-      "suggested_split": [
-        "济南",
-        "乡"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 300,
       "chapter": "医术",
       "place": "沂",
@@ -4228,38 +3085,6 @@
       "suggested_split": [
         "沂",
         "故"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 302,
-      "chapter": "梦狼",
-      "place": "直隶",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "白翁，直隶人。长子甲，筮仕南服，三年无",
-      "tokens": [
-        "直隶人"
-      ],
-      "suggested_split": [
-        "直隶",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 302,
-      "chapter": "梦狼",
-      "place": "南服",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "白翁，直隶人。长子甲，筮仕南服，三年无耗。适有瓜葛丁姓造谒",
-      "tokens": [
-        "仕南服"
-      ],
-      "suggested_split": [
-        "仕",
-        "南服"
       ],
       "source": "revision"
     },
@@ -4326,22 +3151,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 313,
-      "chapter": "鞠乐如",
-      "place": "青州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "鞠乐如，青州人。妻死，弃家而去。后数年，",
-      "tokens": [
-        "青州人"
-      ],
-      "suggested_split": [
-        "青州",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 314,
       "chapter": "褚生",
       "place": "都",
@@ -4354,22 +3163,6 @@
       "suggested_split": [
         "廷试入",
         "都"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 314,
-      "chapter": "褚生",
-      "place": "勾栏",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "否？」僮去少时，与姬俱至，盖勾栏李遏云也。李，都中名妓，工诗",
-      "tokens": [
-        "盖勾栏"
-      ],
-      "suggested_split": [
-        "盖",
-        "勾栏"
       ],
       "source": "revision"
     },
@@ -4450,54 +3243,6 @@
     {
       "chapter_id": 317,
       "chapter": "霍女",
-      "place": "镇江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "后之舛？」曰：「曩漫言之。妾镇江人。昔从荡子，流落江湖，遂至",
-      "tokens": [
-        "镇江人"
-      ],
-      "suggested_split": [
-        "镇江",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 317,
-      "chapter": "霍女",
-      "place": "彰德",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "朱大兴，彰德人。家富有而吝啬已甚，非儿女",
-      "tokens": [
-        "彰德人"
-      ],
-      "suggested_split": [
-        "彰德",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 317,
-      "chapter": "霍女",
-      "place": "南海",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "生其猜度。黄曰：「实告卿：即南海人还，折证已定，仆亦不能家此",
-      "tokens": [
-        "南海人"
-      ],
-      "suggested_split": [
-        "南海",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 317,
-      "chapter": "霍女",
       "place": "扬州界",
       "kind": "fragmented",
       "confidence": "medium",
@@ -4508,104 +3253,6 @@
       ],
       "suggested_split": [
         "扬州界"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "赴试北闱，赁居报国寺。寺中有余杭生先在，王以比屋居，投刺焉。",
-      "tokens": [
-        "余杭生"
-      ],
-      "suggested_split": [
-        "余杭",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。」因命苍头设座，相对噱谈。余杭生适过，共起逊坐。生居然上座",
-      "tokens": [
-        "余杭生"
-      ],
-      "suggested_split": [
-        "余杭",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "日辄一至，王必为之设水角焉。余杭生时一遇之，虽不甚倾谈，而傲",
-      "tokens": [
-        "余杭生"
-      ],
-      "suggested_split": [
-        "余杭",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "不一请教。」因命归寓取文。遇余杭生，遂与俱来。王呼师而参之。",
-      "tokens": [
-        "遇余杭生"
-      ],
-      "suggested_split": [
-        "遇",
-        "余杭",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "「可中否？」曰：「亦中得。」余杭生未深信，先以古大家文烧试之",
-      "tokens": [
-        "余杭生"
-      ],
-      "suggested_split": [
-        "余杭",
-        "生"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "余杭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "盲于鼻；帘中人并鼻盲矣。」俄余杭生至，意气发舒，曰：「盲和尚",
-      "tokens": [
-        "俄余杭生至"
-      ],
-      "suggested_split": [
-        "俄",
-        "余杭",
-        "生至"
       ],
       "source": "revision"
     },
@@ -4640,38 +3287,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 318,
-      "chapter": "司文郎",
-      "place": "九天",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "可能达否？」曰：「此都无益。九天甚远，但洁身力行，自有地司牒",
-      "tokens": [
-        "九天甚远"
-      ],
-      "suggested_split": [
-        "九天",
-        "甚远"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 319,
-      "chapter": "丑狐",
-      "place": "长沙",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "穆生，长沙人。家清贫，冬无絮衣。一夕枯",
-      "tokens": [
-        "长沙人"
-      ],
-      "suggested_split": [
-        "长沙",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 320,
       "chapter": "吕无病",
       "place": "都",
@@ -4690,32 +3305,16 @@
     {
       "chapter_id": 321,
       "chapter": "钱卜巫",
-      "place": "河间",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "夏商，河间人。其父东陵，豪富侈汰，每食",
+      "place": "河间人",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "夏商，河间人。其父东陵，豪富侈汰，每食包",
       "tokens": [
-        "河间人"
-      ],
-      "suggested_split": [
         "河间",
         "人"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 322,
-      "chapter": "姚安",
-      "place": "临洮",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "姚安，临洮人，美丰标。同里宫姓，有女子",
-      "tokens": [
-        "临洮人"
-      ],
       "suggested_split": [
-        "临洮",
-        "人"
+        "河间人"
       ],
       "source": "revision"
     },
@@ -4732,22 +3331,6 @@
       ],
       "suggested_split": [
         "建昌"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 325,
-      "chapter": "诗谳",
-      "place": "益都",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "吴蜚卿者。晟，不知何人；吴，益都之素封，与范同里，平日颇有佻",
-      "tokens": [
-        "益都之素封"
-      ],
-      "suggested_split": [
-        "益都",
-        "之素封"
       ],
       "source": "revision"
     },
@@ -4786,22 +3369,6 @@
       "chapter_id": 331,
       "chapter": "蒋太史",
       "place": "峨嵋",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "蒋太史超，记前世为峨嵋僧，数梦至故居庵前潭边濯足。",
-      "tokens": [
-        "峨嵋僧"
-      ],
-      "suggested_split": [
-        "峨嵋",
-        "僧"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 331,
-      "chapter": "蒋太史",
-      "place": "峨嵋",
       "kind": "fragmented",
       "confidence": "medium",
       "context": "蜀，居成都金沙寺；久之，又之峨嵋，居伏虎寺，示疾怛化。自书偈",
@@ -4811,22 +3378,6 @@
       ],
       "suggested_split": [
         "峨嵋"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 332,
-      "chapter": "邵士梅",
-      "place": "济宁",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "邵进士，名士梅，济宁人。初授登州教授，有二老秀才",
-      "tokens": [
-        "济宁人"
-      ],
-      "suggested_split": [
-        "济宁",
-        "人"
       ],
       "source": "revision"
     },
@@ -4865,38 +3416,6 @@
     {
       "chapter_id": 339,
       "chapter": "凤仙",
-      "place": "平乐",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "刘赤水，平乐人，少颖秀。十五入郡庠。父母",
-      "tokens": [
-        "平乐人"
-      ],
-      "suggested_split": [
-        "平乐",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 339,
-      "chapter": "凤仙",
-      "place": "平乐",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "已被缚。凝视之，崖并非崖，乃平乐城门也；舆中则李进士母，自乡",
-      "tokens": [
-        "乃平乐"
-      ],
-      "suggested_split": [
-        "乃",
-        "平乐"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 339,
-      "chapter": "凤仙",
       "place": "富川",
       "kind": "unreconciled",
       "confidence": "review",
@@ -4906,54 +3425,6 @@
         "川丁官人"
       ],
       "suggested_split": null,
-      "source": "base"
-    },
-    {
-      "chapter_id": 339,
-      "chapter": "凤仙",
-      "place": "富川",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "年先在，靴袍炫美。翁曰：「此富川丁婿。」并揖就坐。少时，酒灸",
-      "tokens": [
-        "此富川"
-      ],
-      "suggested_split": [
-        "此",
-        "富川"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 339,
-      "chapter": "凤仙",
-      "place": "富川",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "皆惊其美，而不知其狐也。刘属富川令门人，往谒之。遇丁，殷殷邀",
-      "tokens": [
-        "刘属富川"
-      ],
-      "suggested_split": [
-        "刘属",
-        "富川"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 340,
-      "chapter": "佟客",
-      "place": "徐州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "董生，徐州人。好击剑，每慷慨自负。偶于",
-      "tokens": [
-        "徐州人"
-      ],
-      "suggested_split": [
-        "徐州",
-        "人"
-      ],
       "source": "revision"
     },
     {
@@ -4975,22 +3446,6 @@
     {
       "chapter_id": 343,
       "chapter": "爱奴",
-      "place": "稷门",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "托某至东疃聘吕子廉，渠已受贽稷门。君如苟就，束仪请倍于恩。」",
-      "tokens": [
-        "贽稷门"
-      ],
-      "suggested_split": [
-        "贽",
-        "稷门"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 343,
-      "chapter": "爱奴",
       "place": "敝里",
       "kind": "fragmented",
       "confidence": "medium",
@@ -5001,38 +3456,6 @@
       ],
       "suggested_split": [
         "敝里"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 347,
-      "chapter": "元宝",
-      "place": "临江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "广东临江山崖巉岩，常有元宝嵌石上。崖",
-      "tokens": [
-        "广东临江"
-      ],
-      "suggested_split": [
-        "广东",
-        "临江"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 347,
-      "chapter": "元宝",
-      "place": "广东",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "广东临江山崖巉岩，常有元宝嵌石上",
-      "tokens": [
-        "广东临江"
-      ],
-      "suggested_split": [
-        "广东",
-        "临江"
       ],
       "source": "revision"
     },
@@ -5065,22 +3488,6 @@
       "suggested_split": [
         "边",
         "外"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 356,
-      "chapter": "小梅",
-      "place": "沂水",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "主秦晋之盟，则惟命是听。」时沂水黄太仆，致仕闲居，于王为父执",
-      "tokens": [
-        "时沂水"
-      ],
-      "suggested_split": [
-        "时",
-        "沂水"
       ],
       "source": "revision"
     },
@@ -5128,23 +3535,7 @@
       "suggested_split": [
         "永平"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 363,
-      "chapter": "张鸿渐",
-      "place": "卢龙",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "永平人。年十八，为郡名士。时卢龙令赵某贪暴，人民共苦之。有范",
-      "tokens": [
-        "卢龙令"
-      ],
-      "suggested_split": [
-        "卢龙",
-        "令"
-      ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 368,
@@ -5165,16 +3556,16 @@
     {
       "chapter_id": 371,
       "chapter": "折狱",
-      "place": "西崖",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "邑之西崖庄，有贾某被人杀于途；隔夜，",
+      "place": "西崖庄",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "邑之西崖庄，有贾某被人杀于途；隔夜，其",
       "tokens": [
-        "西崖庄"
-      ],
-      "suggested_split": [
         "西崖",
         "庄"
+      ],
+      "suggested_split": [
+        "西崖庄"
       ],
       "source": "revision"
     },
@@ -5240,38 +3631,6 @@
       ],
       "suggested_split": [
         "闻安期岛"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 377,
-      "chapter": "云萝公主",
-      "place": "卢龙",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "安大业，卢龙人。生而能言，母饮以犬血，始",
-      "tokens": [
-        "卢龙人"
-      ],
-      "suggested_split": [
-        "卢龙",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 379,
-      "chapter": "天宫",
-      "place": "京都",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "郭生，京都人。年二十余，仪容修美。一日",
-      "tokens": [
-        "京都人"
-      ],
-      "suggested_split": [
-        "京都",
-        "人"
       ],
       "source": "revision"
     },
@@ -5342,38 +3701,6 @@
     {
       "chapter_id": 382,
       "chapter": "刘夫人",
-      "place": "彰德",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "廉生者，彰德人。少笃学；然早孤，家綦贫。",
-      "tokens": [
-        "彰德人"
-      ],
-      "suggested_split": [
-        "彰德",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 382,
-      "chapter": "刘夫人",
-      "place": "彰德",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "行沽，略尽款洽。慕言：『先世彰德人；母族亦世家，今陵夷矣。闻",
-      "tokens": [
-        "彰德人"
-      ],
-      "suggested_split": [
-        "彰德",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 382,
-      "chapter": "刘夫人",
       "place": "江右",
       "kind": "unreconciled",
       "confidence": "review",
@@ -5383,22 +3710,6 @@
         "右"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 382,
-      "chapter": "刘夫人",
-      "place": "荆襄",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "戆拙不苟，赀财悉倚付之。往涉荆襄，岁杪始得归，计利三倍。生以",
-      "tokens": [
-        "涉荆襄"
-      ],
-      "suggested_split": [
-        "涉",
-        "荆襄"
-      ],
       "source": "revision"
     },
     {
@@ -5446,38 +3757,6 @@
         "淮"
       ],
       "source": "revision"
-    },
-    {
-      "chapter_id": 382,
-      "chapter": "刘夫人",
-      "place": "郡城",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "闻在郡北三十里。」生曰：「仆郡城东南人，去北里颇远；年又最少",
-      "tokens": [
-        "仆郡城"
-      ],
-      "suggested_split": [
-        "仆",
-        "郡城"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 384,
-      "chapter": "王货郎",
-      "place": "齐河",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "济南业酒人某翁，遣子小二如齐河索贳价。出西门，见兄阿大。─",
-      "tokens": [
-        "齐河索"
-      ],
-      "suggested_split": [
-        "齐河",
-        "索"
-      ],
-      "source": "base"
     },
     {
       "chapter_id": 386,
@@ -5624,7 +3903,7 @@
       "confidence": "review",
       "context": "判为大犬，兴为小犬。某生于北顺天府市肆中。一日，卧街头，有客自南",
       "tokens": [
-        "北顺天府",
+        "顺天府",
         "市肆"
       ],
       "suggested_split": null,
@@ -5633,34 +3912,34 @@
     {
       "chapter_id": 393,
       "chapter": "三生",
-      "place": "顺天府",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "判为大犬，兴为小犬。某生于北顺天府市肆中。一日，卧街头，有客自",
+      "place": "北顺天府",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "罗判为大犬，兴为小犬。某生于北顺天府市肆中。一日，卧街头，有客自",
       "tokens": [
-        "北顺天府"
-      ],
-      "suggested_split": [
         "北",
         "顺天府"
+      ],
+      "suggested_split": [
+        "北顺天府"
       ],
       "source": "revision"
     },
     {
       "chapter_id": 394,
       "chapter": "长亭",
-      "place": "泰山",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "石太璞，泰山人，好厌禳之术。有道士遇之，",
+      "place": "泰山人",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "石太璞，泰山人，好厌禳之术。有道士遇之，赏",
       "tokens": [
-        "泰山人"
-      ],
-      "suggested_split": [
         "泰山",
         "人"
       ],
-      "source": "base"
+      "suggested_split": [
+        "泰山人"
+      ],
+      "source": "revision"
     },
     {
       "chapter_id": 394,
@@ -5676,7 +3955,7 @@
         "汴",
         "曾相戏"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 394,
@@ -5690,7 +3969,7 @@
         "城北村"
       ],
       "suggested_split": null,
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 394,
@@ -5706,7 +3985,7 @@
       "suggested_split": [
         "汴城"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 394,
@@ -5722,38 +4001,6 @@
         "居",
         "晋",
         "界"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 395,
-      "chapter": "席方平",
-      "place": "东安",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "席方平，东安人。其父名廉，性戆拙。因与里",
-      "tokens": [
-        "东安人"
-      ],
-      "suggested_split": [
-        "东安",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 395,
-      "chapter": "席方平",
-      "place": "灌口",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "于阳间，奈无路可达帝听。世传灌口二郎为帝勋戚，其神聪明正直，",
-      "tokens": [
-        "世传灌口"
-      ],
-      "suggested_split": [
-        "世传",
-        "灌口"
       ],
       "source": "revision"
     },
@@ -5950,22 +4197,6 @@
     {
       "chapter_id": 397,
       "chapter": "贾奉雉",
-      "place": "平凉",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "贾奉雉，平凉人。才名冠一时，而试辄不售。",
-      "tokens": [
-        "平凉人"
-      ],
-      "suggested_split": [
-        "平凉",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 397,
-      "chapter": "贾奉雉",
       "place": "辽阳",
       "kind": "unreconciled",
       "confidence": "review",
@@ -5996,22 +4227,6 @@
     {
       "chapter_id": 397,
       "chapter": "贾奉雉",
-      "place": "天台",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "者，心始骇异。忽念刘、阮返自天台，情景真似。不敢入门，于对户",
-      "tokens": [
-        "自天台"
-      ],
-      "suggested_split": [
-        "自",
-        "天台"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 397,
-      "chapter": "贾奉雉",
       "place": "东里",
       "kind": "unreconciled",
       "confidence": "review",
@@ -6026,16 +4241,16 @@
     {
       "chapter_id": 398,
       "chapter": "臙脂",
-      "place": "济南",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "往来覆讯，经数官无异词。后委济南府复案。时吴公南岱守济南，一",
+      "place": "济南府",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "往来覆讯，经数官无异词。后委济南府复案。时吴公南岱守济南，一见",
       "tokens": [
-        "济南府"
-      ],
-      "suggested_split": [
         "济南",
         "府"
+      ],
+      "suggested_split": [
+        "济南府"
       ],
       "source": "revision"
     },
@@ -6178,22 +4393,6 @@
     {
       "chapter_id": 409,
       "chapter": "葛巾",
-      "place": "洛下",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，莫能识其名。自此牡丹之盛，洛下无双焉。",
-      "tokens": [
-        "洛下无双"
-      ],
-      "suggested_split": [
-        "洛下",
-        "无双"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 409,
-      "chapter": "葛巾",
       "place": "曹",
       "kind": "embedded",
       "confidence": "review",
@@ -6274,22 +4473,6 @@
     {
       "chapter_id": 411,
       "chapter": "黄英",
-      "place": "顺天",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "马子才，顺天人。世好菊，至才尤甚，闻有佳",
-      "tokens": [
-        "顺天人"
-      ],
-      "suggested_split": [
-        "顺天",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 411,
-      "chapter": "黄英",
       "place": "南中",
       "kind": "fragmented",
       "confidence": "medium",
@@ -6300,22 +4483,6 @@
       ],
       "suggested_split": [
         "南中"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 411,
-      "chapter": "黄英",
-      "place": "河朔",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "」答云：「姊厌金陵，欲卜居于河朔耳。」马欣然曰：「仆虽固贫，",
-      "tokens": [
-        "河朔耳"
-      ],
-      "suggested_split": [
-        "河朔",
-        "耳"
       ],
       "source": "revision"
     },
@@ -6354,22 +4521,6 @@
     {
       "chapter_id": 415,
       "chapter": "任秀",
-      "place": "京师",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "幅，咸诮薄之。有表叔张某，贾京师，劝使赴都，愿携与俱，不耗其",
-      "tokens": [
-        "贾京师"
-      ],
-      "suggested_split": [
-        "贾",
-        "京师"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 415,
-      "chapter": "任秀",
       "place": "临清",
       "kind": "fragmented",
       "confidence": "medium",
@@ -6400,194 +4551,48 @@
     {
       "chapter_id": 416,
       "chapter": "晚霞",
-      "place": "江水",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "金珠而出，意欲相从俱死。但见江水若壁，以首力触不得入。念欲复",
+      "place": "吴江府",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "耗，端怅惘若失。惟解姥日往来吴江府；端托晚霞为外妹，求携去，冀",
       "tokens": [
-        "见江水若壁"
-      ],
-      "suggested_split": [
-        "见",
-        "江水",
-        "若壁"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，见一人兜牟坐。两人曰：「此龙窝君也。」便使拜伏。龙窝君颜色",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "：「此龙窝君也。」便使拜伏。龙窝君颜色和霁，曰：「阿端伎巧可",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，时堕一点星光，及著地消灭。龙窝君急止之，命进乳莺部，皆二八",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，即晚霞也。无何，唤柳条部。龙窝君特试阿端。端作前舞，喜怒随",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "作前舞，喜怒随腔，俛仰中节。龙窝君嘉其惠悟，赐五文袴褶，鱼须",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "龙窝",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "两人日一会于莲亩。过数日，随龙窝君往寿吴江王。称寿已，诸部悉",
-      "tokens": [
-        "龙窝君"
-      ],
-      "suggested_split": [
-        "龙窝",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "吴江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "于莲亩。过数日，随龙窝君往寿吴江王。称寿已，诸部悉归，独留晚",
-      "tokens": [
-        "吴江王"
-      ],
-      "suggested_split": [
-        "吴江",
-        "王"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "吴江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "耗，端怅惘若失。惟解姥日往来吴江府；端托晚霞为外妹，求携去，",
-      "tokens": [
-        "吴江府"
-      ],
-      "suggested_split": [
         "吴江",
         "府"
       ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 416,
-      "chapter": "晚霞",
-      "place": "吴江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "为外妹，求携去，冀一见之。留吴江门下数日，宫禁森严，晚霞苦不",
-      "tokens": [
-        "留吴江门"
-      ],
       "suggested_split": [
-        "留",
-        "吴江",
-        "门"
+        "吴江府"
       ],
       "source": "revision"
     },
     {
       "chapter_id": 420,
       "chapter": "衢州三怪",
-      "place": "衢州",
-      "kind": "embedded",
-      "confidence": "high",
+      "place": "戎衢州",
+      "kind": "fragmented",
+      "confidence": "medium",
       "context": "张握仲从戎衢州，言：「衢州夜静时，人莫敢独",
       "tokens": [
-        "戎衢州"
-      ],
-      "suggested_split": [
         "戎",
         "衢州"
+      ],
+      "suggested_split": [
+        "戎衢州"
       ],
       "source": "revision"
     },
     {
       "chapter_id": 421,
       "chapter": "拆楼人",
-      "place": "平阴",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "何冏卿，平阴人。初令秦中，一卖油者有薄罪",
+      "place": "平阴人",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "何冏卿，平阴人。初令秦中，一卖油者有薄罪，",
       "tokens": [
-        "平阴人"
-      ],
-      "suggested_split": [
         "平阴",
         "人"
+      ],
+      "suggested_split": [
+        "平阴人"
       ],
       "source": "revision"
     },
@@ -6610,49 +4615,16 @@
     {
       "chapter_id": 423,
       "chapter": "陈云栖",
-      "place": "楚夷陵",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "真毓生，楚夷陵人，孝廉之子。能文，美丰姿，",
-      "tokens": [
-        "楚夷陵人"
-      ],
-      "suggested_split": [
-        "楚夷陵",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 423,
-      "chapter": "陈云栖",
       "place": "夷陵",
       "kind": "embedded",
       "confidence": "high",
       "context": "真毓生，楚夷陵人，孝廉之子。能文，美丰姿，",
       "tokens": [
-        "楚夷陵人"
+        "楚夷陵"
       ],
       "suggested_split": [
         "楚",
-        "夷陵",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 423,
-      "chapter": "陈云栖",
-      "place": "莲峰",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "出，莫从稽其妄。夫人以香愿登莲峰，斋宿山下。既卧，逆旅主人扣",
-      "tokens": [
-        "登莲峰"
-      ],
-      "suggested_split": [
-        "登",
-        "莲峰"
+        "夷陵"
       ],
       "source": "revision"
     },
@@ -6701,103 +4673,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 428,
-      "chapter": "织成",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "洞庭湖中，往往有水神借舟。遇有空",
-      "tokens": [
-        "洞庭湖"
-      ],
-      "suggested_split": [
-        "洞庭",
-        "湖"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 428,
-      "chapter": "织成",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "冠类王者，因行且语，曰：「闻洞庭君为柳氏，臣亦柳氏；昔洞庭落",
-      "tokens": [
-        "洞庭君"
-      ],
-      "suggested_split": [
-        "洞庭",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 428,
-      "chapter": "织成",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "闻洞庭君为柳氏，臣亦柳氏；昔洞庭落第，今臣亦落第；洞庭得遇龙",
-      "tokens": [
-        "昔洞庭落第"
-      ],
-      "suggested_split": [
-        "昔",
-        "洞庭",
-        "落第"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 428,
-      "chapter": "织成",
-      "place": "洞庭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "曰：「实告君：前舟中所遇，即洞庭君也。仰慕鸿才，便欲以妾相赠",
-      "tokens": [
-        "洞庭君"
-      ],
-      "suggested_split": [
-        "洞庭",
-        "君"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 428,
-      "chapter": "织成",
-      "place": "武昌",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "手焚香，望湖朝拜，乃归。后诣武昌，女求同去，将便归宁。既至洞",
-      "tokens": [
-        "诣武昌"
-      ],
-      "suggested_split": [
-        "诣",
-        "武昌"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 429,
-      "chapter": "竹青",
-      "place": "湖南",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "鱼容，湖南人，忘其郡邑。家贫，下第归，",
-      "tokens": [
-        "湖南人"
-      ],
-      "suggested_split": [
-        "湖南",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
       "chapter_id": 429,
       "chapter": "竹青",
       "place": "吴王庙",
@@ -6811,7 +4686,7 @@
       "suggested_split": [
         "吴王庙"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 430,
@@ -6825,22 +4700,6 @@
         "名富翁"
       ],
       "suggested_split": null,
-      "source": "base"
-    },
-    {
-      "chapter_id": 431,
-      "chapter": "狐女",
-      "place": "九江",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "伊衮，九江人。夜有女来，相与寝处。心知",
-      "tokens": [
-        "九江人"
-      ],
-      "suggested_split": [
-        "九江",
-        "人"
-      ],
       "source": "base"
     },
     {
@@ -6894,38 +4753,6 @@
     {
       "chapter_id": 438,
       "chapter": "乐仲",
-      "place": "南海",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "，渺无一人，病瘥。既起，思朝南海。会邻村有结香社者，即卖田十",
-      "tokens": [
-        "朝南海"
-      ],
-      "suggested_split": [
-        "朝",
-        "南海"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 438,
-      "chapter": "乐仲",
-      "place": "西安",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "乐仲，西安人。父早丧，遗腹生仲。母好佛",
-      "tokens": [
-        "西安人"
-      ],
-      "suggested_split": [
-        "西安",
-        "人"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 438,
-      "chapter": "乐仲",
       "place": "闽",
       "kind": "embedded",
       "confidence": "review",
@@ -6937,7 +4764,7 @@
         "至",
         "闽"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 438,
@@ -6953,7 +4780,7 @@
         "雍流寓于",
         "闽"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 440,
@@ -6975,22 +4802,6 @@
       "chapter_id": 442,
       "chapter": "王十",
       "place": "奈河",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "？」曰：「冥中新阎王到任，见奈河淤平，十八狱坑厕俱满，故捉三",
-      "tokens": [
-        "见奈河"
-      ],
-      "suggested_split": [
-        "见",
-        "奈河"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 442,
-      "chapter": "王十",
-      "place": "奈河",
       "kind": "unreconciled",
       "confidence": "review",
       "context": "令随诸鬼督河工。鬼引十去，至奈河边，见河内人夫，𫄶续如蚁。",
@@ -6999,7 +4810,7 @@
         "河边"
       ],
       "suggested_split": null,
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 442,
@@ -7015,23 +4826,7 @@
       "suggested_split": [
         "博兴"
       ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 442,
-      "chapter": "王十",
-      "place": "高苑",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "高苑民王十，负盐于博兴。夜为二人",
-      "tokens": [
-        "高苑民"
-      ],
-      "suggested_split": [
-        "高苑",
-        "民"
-      ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 442,
@@ -7047,7 +4842,7 @@
       "suggested_split": [
         "高苑"
       ],
-      "source": "base"
+      "source": "revision"
     },
     {
       "chapter_id": 442,
@@ -7062,22 +4857,6 @@
       ],
       "suggested_split": [
         "十八狱"
-      ],
-      "source": "base"
-    },
-    {
-      "chapter_id": 443,
-      "chapter": "大男",
-      "place": "盐亭",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "。贾不敢逼，俟创瘥，又转鬻于盐亭贾。至盐亭，自刺心头，洞见脏",
-      "tokens": [
-        "盐亭贾"
-      ],
-      "suggested_split": [
-        "盐亭",
-        "贾"
       ],
       "source": "revision"
     },
@@ -7095,22 +4874,6 @@
         "言",
         "闽",
         "商"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 446,
-      "chapter": "石清虚",
-      "place": "顺天",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "邢云飞，顺天人。好石，见佳石，不惜重直。",
-      "tokens": [
-        "顺天人"
-      ],
-      "suggested_split": [
-        "顺天",
-        "人"
       ],
       "source": "revision"
     },
@@ -7161,22 +4924,6 @@
         "云南人"
       ],
       "source": "revision"
-    },
-    {
-      "chapter_id": 452,
-      "chapter": "苗生",
-      "place": "岷州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "龚生，岷州人。赴试西安，憩于旅舍，沽酒",
-      "tokens": [
-        "岷州人"
-      ],
-      "suggested_split": [
-        "岷州",
-        "人"
-      ],
-      "source": "base"
     },
     {
       "chapter_id": 456,
@@ -7307,22 +5054,6 @@
     {
       "chapter_id": 458,
       "chapter": "老龙舡户",
-      "place": "龙津",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此",
-      "tokens": [
-        "老龙津"
-      ],
-      "suggested_split": [
-        "老",
-        "龙津"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 458,
-      "chapter": "老龙舡户",
       "place": "小岭",
       "kind": "fragmented",
       "confidence": "medium",
@@ -7333,6 +5064,22 @@
       ],
       "suggested_split": [
         "小岭"
+      ],
+      "source": "revision"
+    },
+    {
+      "chapter_id": 458,
+      "chapter": "老龙舡户",
+      "place": "老龙津",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "之东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此",
+      "tokens": [
+        "老",
+        "龙津"
+      ],
+      "suggested_split": [
+        "老龙津"
       ],
       "source": "revision"
     },
@@ -7415,46 +5162,32 @@
     {
       "chapter_id": 464,
       "chapter": "田子成",
-      "place": "竹桥",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "流寓江西。又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。但不知叟",
+      "place": "葬竹桥",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "父流寓江西。又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。但不知叟",
       "tokens": [
-        "葬竹桥"
-      ],
-      "suggested_split": [
         "葬",
         "竹桥"
       ],
-      "source": "base"
+      "suggested_split": [
+        "葬竹桥"
+      ],
+      "source": "revision"
     },
     {
       "chapter_id": 464,
       "chapter": "田子成",
       "place": "竹桥之西",
-      "kind": "unreconciled",
-      "confidence": "review",
+      "kind": "fragmented",
+      "confidence": "medium",
       "context": "流寓江西。又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。但不知叟何人",
       "tokens": [
-        "葬竹桥",
+        "竹桥",
         "之西"
       ],
-      "suggested_split": null,
-      "source": "base"
-    },
-    {
-      "chapter_id": 465,
-      "chapter": "王桂庵",
-      "place": "南海",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "第主莫翁，六旬无子，携媪往朝南海。归途泊江际，芸娘随波下，适",
-      "tokens": [
-        "朝南海"
-      ],
       "suggested_split": [
-        "朝",
-        "南海"
+        "竹桥之西"
       ],
       "source": "revision"
     },
@@ -7541,22 +5274,6 @@
     {
       "chapter_id": 476,
       "chapter": "纫针",
-      "place": "东昌",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "虞小思，东昌人。居积为业。妻夏，归宁返，",
-      "tokens": [
-        "东昌人"
-      ],
-      "suggested_split": [
-        "东昌",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 476,
-      "chapter": "纫针",
       "place": "闽",
       "kind": "embedded",
       "confidence": "review",
@@ -7603,22 +5320,6 @@
       "source": "revision"
     },
     {
-      "chapter_id": 482,
-      "chapter": "新郑讼",
-      "place": "新郑",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "长山石进士宗玉，为新郑令。适有远客张某，经商于外，",
-      "tokens": [
-        "新郑令"
-      ],
-      "suggested_split": [
-        "新郑",
-        "令"
-      ],
-      "source": "revision"
-    },
-    {
       "chapter_id": 484,
       "chapter": "房文淑",
       "place": "寺",
@@ -7653,48 +5354,32 @@
     {
       "chapter_id": 485,
       "chapter": "秦桧",
-      "place": "青州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "桧所害，故生平最敬岳武穆。于青州城北通衢傍建岳王殿，秦桧、卨",
+      "place": "青州城",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "桧所害，故生平最敬岳武穆。于青州城北通衢傍建岳王殿，秦桧、卨伏",
       "tokens": [
-        "青州城"
-      ],
-      "suggested_split": [
         "青州",
         "城"
+      ],
+      "suggested_split": [
+        "青州城"
       ],
       "source": "revision"
     },
     {
       "chapter_id": 485,
       "chapter": "秦桧",
-      "place": "青州",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "姨、伍髭须之悮，甚可笑也。又青州城内，旧有澹台子羽祠。当魏珰",
+      "place": "青州城",
+      "kind": "fragmented",
+      "confidence": "medium",
+      "context": "姨、伍髭须之悮，甚可笑也。又青州城内，旧有澹台子羽祠。当魏珰烜",
       "tokens": [
-        "青州城"
-      ],
-      "suggested_split": [
         "青州",
         "城"
       ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 486,
-      "chapter": "浙东生",
-      "place": "浙东",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "浙东生房某，客于陕，教授生徒。尝",
-      "tokens": [
-        "浙东生"
-      ],
       "suggested_split": [
-        "浙东",
-        "生"
+        "青州城"
       ],
       "source": "revision"
     },
@@ -7710,22 +5395,6 @@
         "园中"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 488,
-      "chapter": "一员官",
-      "place": "泰安",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "官者，吴同知一人而已。」是时泰安知州张公，人以其木强，号之「",
-      "tokens": [
-        "泰安知州"
-      ],
-      "suggested_split": [
-        "泰安",
-        "知州"
-      ],
       "source": "revision"
     },
     {
@@ -7804,38 +5473,6 @@
         "中"
       ],
       "suggested_split": null,
-      "source": "revision"
-    },
-    {
-      "chapter_id": 490,
-      "chapter": "人妖",
-      "place": "东昌",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "马生万宝者，东昌人，疏狂不羁。妻田氏，亦放诞",
-      "tokens": [
-        "东昌人"
-      ],
-      "suggested_split": [
-        "东昌",
-        "人"
-      ],
-      "source": "revision"
-    },
-    {
-      "chapter_id": 490,
-      "chapter": "人妖",
-      "place": "谷城",
-      "kind": "embedded",
-      "confidence": "high",
-      "context": "命。羞惧，趋出。生诘之，云是谷城人王二喜。以兄大喜为桑冲门人",
-      "tokens": [
-        "谷城人"
-      ],
-      "suggested_split": [
-        "谷城",
-        "人"
-      ],
       "source": "revision"
     }
   ]
