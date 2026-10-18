@@ -1,6 +1,7 @@
 const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),N=require('../assets/research-lab/network');
 const c={id:3,title:'甲',steps:[{from:'室',to:'庭',actors:'张生',quote:'张生出室至庭。',unit:1},{from:'庭',to:'庭',actors:'张生',quote:'张生坐庭中。',unit:2},{from:'未知',to:'庙',actors:'张生、李生',quote:'二人至庙。',unit:3},{from:'室',to:'未明',actors:'',quote:'',unit:4}]};
 const g=N.build(c);assert.equal(g.nodes.length,4);assert.equal(g.edges.length,3);assert.equal(g.relations.find(r=>r.actor==='张生'&&r.space==='庭').steps.length,2);assert(!g.relations.some(r=>r.space==='未知'||r.space==='未明'));assert(g.relations.some(r=>r.actor==='张生、李生'));assert.equal(g.nodes[3].quote,'');assert.deepEqual(g.edges[0].evidence[0].unit,2);
+const net=N.connected(N.build({...c,steps:c.steps.map((s,i)=>({...s,kind:i===0?'movement':'scene'}))}));assert.equal(net.nodes.filter(n=>n.label==='庭').length,1);assert(net.edges.some(e=>e.kind==='movement'));assert(net.edges.every(e=>net.nodes.some(n=>n.id===e.source)&&net.nodes.some(n=>n.id===e.target)));
 assert.equal(N.build({...c,steps:[]}).edges.length,0);
 const data=JSON.parse(fs.readFileSync('assets/research-lab/data.json'));let nodes=0,edges=0,relations=0;for(const c of data.chapters){const g=N.build(c);assert.equal(g.nodes.length,c.steps.length);assert.equal(g.edges.length,Math.max(0,c.steps.length-1));assert(g.edges.every((e,i)=>e.source==='step:'+i&&e.target==='step:'+(i+1)));nodes+=g.nodes.length;edges+=g.edges.length;relations+=g.relations.length;}
 new vm.Script(fs.readFileSync('assets/research-lab/network.js','utf8'));
