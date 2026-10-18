@@ -14646,6 +14646,152 @@
       }
     },
     {
+      "chapter_id": 127,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 8292,
+            "actors": "毕民部公、千总杨花麟",
+            "location": "赴任途中（未明具体地点）",
+            "space": "道路",
+            "event": "毕民部公即家起备兵洮岷，千总杨花麟来迎。",
+            "identity": "毕民部公：备兵洮岷的官员；杨花麟：千总",
+            "interpretation": "开篇以官员赴任与下属迎候建立人物关系，道路成为后续异事发生的空间。",
+            "quote": "毕民部公即家起备兵洮岷时，有千总杨花麟来迎。",
+            "from_space": "家",
+            "to_space": "赴任途中",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "从家出发赴任途中，途中属道路街市，人间场景。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "f3c51943a6506eaf6fa2c03baf8e0746ec56f7233c8ef80c225baf52be4b50ec",
+              "from_access": "私人",
+              "to_access": "开放自然",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "家宅",
+              "to_type": "道路街市",
+              "quote": "毕民部公即家起备兵洮岷时，有千总杨花麟来迎。冠盖在途，偶见一人遗便路侧。",
+              "reason": "从家出发赴任途中，途中属道路街市，人间场景。",
+              "source_hash": "72565fd448e0fb6270204c58a968806fef3a8f87b431cb24658213dfea2664cf",
+              "chapter_id": 127,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "f3c51943a6506eaf6fa2c03baf8e0746ec56f7233c8ef80c225baf52be4b50ec"
+          },
+          {
+            "unit": 8293,
+            "actors": "杨花麟、毕民部公、遗便者",
+            "location": "路侧",
+            "space": "道路旁",
+            "event": "途中见一人遗便于路侧，杨花麟关弓欲射，毕公急呵止。",
+            "identity": "杨花麟：千总；毕民部公：备兵洮岷的官员；遗便者：路人",
+            "interpretation": "路侧便溺者成为冲突触发点，杨花麟的射箭意图与毕公的呵止形成权力与礼法的短暂对峙。",
+            "quote": "冠盖在途，偶见一人遗便路侧。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "路侧遗便，道路旁公共处",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 8294,
+            "actors": "杨花麟、毕民部公",
+            "location": "途中",
+            "space": "道路",
+            "event": "杨花麟解释欲射是为小怖无礼者，毕公呵止。",
+            "identity": "杨花麟：千总；毕民部公：备兵洮岷的官员",
+            "interpretation": "对话揭示杨花麟以戏惩维护礼法的逻辑，毕公的呵止体现官员对下属行为的约束。",
+            "quote": "杨关弓欲射之，公急呵止。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "在途关弓，道路公共空间",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 8296,
+            "actors": "杨花麟、遗便者",
+            "location": "途中路侧",
+            "space": "道路",
+            "event": "杨花麟遥呼戏言，称赠遗便者会稽藤簪绾髻，随即飞矢射中其髻，其人急奔，便液污地。",
+            "identity": "杨花麟：千总；遗便者：路人",
+            "interpretation": "戏言与飞矢结合，将惩戒转化为滑稽异事；箭中发髻的精准与便液污地的狼狈形成空间上的戏剧反差。",
+            "quote": "乃遥呼曰：「遗屙者，奉赠一股会稽藤簪绾髻子。」即飞矢去，正中其髻，其人急奔，便液污地。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "飞矢去，道路公共空间",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 8297
+          }
+        ],
+        "people": [
+          {
+            "id": "c127-edited-p0",
+            "word": "杨花麟",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c127-edited-p1",
+            "word": "杨",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
       "chapter_id": 134,
       "changes": {
         "event_types": {
@@ -15168,6 +15314,561 @@
       }
     },
     {
+      "chapter_id": 159,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 10276,
+            "actors": "王子巽、作剧者",
+            "location": "都城街市（事件地点）",
+            "space": "市井表演场",
+            "event": "王子巽称在都城时，曾见一人在市上作剧，携木盒作格，共十二孔，每孔伏一蛙。",
+            "identity": "王子巽为转述者；作剧者为市井艺人",
+            "interpretation": "以'言'字起，全文被框定为转述；空间从都城街市进入木盒的十二孔格，蛙被安置为可操控的声源。",
+            "quote": "王子巽言：在都时，曾见一人作剧于市，携木盒作格，凡十有二孔，每孔伏蛙。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "回述，王子巽追述在都所见，非叙述当下",
+            "transition_kind": "mention",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "作剧于市，市井公共表演场",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 10277,
+            "actors": "作剧者、蛙",
+            "location": "木盒格孔（表演空间）",
+            "space": "木盒十二孔",
+            "event": "作剧者用细杖敲蛙首，蛙便哇然鸣叫。",
+            "identity": "作剧者仍为艺人；蛙为表演工具",
+            "interpretation": "敲击动作把木盒格孔变成发声机关，蛙首与细杖构成人与异类的直接接触点。",
+            "quote": "以细杖敲其首，辄哇然作鸣。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙，承前描述表演方式",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "木盒十二孔，作剧者控制",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 10278,
+            "actors": "作剧者、观者（含王子巽）、蛙",
+            "location": "都城街市表演处（事件地点）",
+            "space": "市井观演场",
+            "event": "有人给钱，作剧者便乱击蛙顶，声如拊云锣之乐，宫商词曲清晰可辨。",
+            "identity": "作剧者为受钱奏技的艺人；观者为付钱听曲者",
+            "interpretation": "金钱交换触发从单声到成曲的转变，蛙声被组织为可辨词曲的音乐空间，异事在交易关系中完成。",
+            "quote": "或与金钱，则乱击蛙顶，如拊云锣之乐，宫商词曲，了了可辨。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙，述给钱后的表演结果",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "市井观演场，观者与金钱",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 160,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [
+          {
+            "word": "长安市",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 10279,
+            "actors": "一人（卖鼠戏者）",
+            "location": "长安市上",
+            "space": "市集",
+            "event": "一人在长安市上卖鼠戏，背负一囊，囊中蓄小鼠十余头。",
+            "identity": "卖鼠戏的艺人",
+            "interpretation": "开篇以'长安市上'确立公共表演空间，'背负一囊'将全部演出资源收束于艺人身体，形成以人为舞台核心的空间格局。",
+            "quote": "一人在长安市上卖鼠戏，背负一囊，中蓄小鼠十余头。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "长安市上卖鼠戏",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 10280,
+            "actors": "卖鼠戏者",
+            "location": "稠人之中",
+            "space": "人群中的表演场",
+            "event": "每于稠人中，出小木架置肩上，俨如戏楼状。",
+            "identity": "卖鼠戏的艺人",
+            "interpretation": "'稠人中'点明观演空间，'置肩上'把戏楼从地面移到艺人肩头，空间由市集收缩为身体上的微型剧场。",
+            "quote": "每于稠人中，出小木架置肩上，俨如戏楼状。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "稠人中，出小木架置肩上",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 10281,
+            "actors": "卖鼠戏者",
+            "location": "肩上戏楼前",
+            "space": "表演场",
+            "event": "乃拍鼓板，唱古杂剧。",
+            "identity": "卖鼠戏的艺人",
+            "interpretation": "鼓板与唱腔构成声音空间，为鼠的出场作铺垫，使肩头戏楼由静物转为演出场所。",
+            "quote": "乃拍鼓板，唱古杂剧。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "拍鼓板，唱古杂剧",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 10282,
+            "actors": "小鼠、卖鼠戏者",
+            "location": "自囊中至肩上戏楼",
+            "space": "囊与肩楼之间",
+            "event": "歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
+            "identity": "小鼠（表演者）；卖鼠戏者（班主）",
+            "interpretation": "鼠从囊中经主人背部登上肩头戏楼，完成从容器到舞台的空间移动；'蒙假面，被小装服'使鼠获得剧中角色身份，'人立而舞'则实现动物向人的形态模拟。",
+            "quote": "歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
+            "from_space": "囊中",
+            "to_space": "肩上戏楼",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "混合",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "鼠从背负私囊出至街头卖艺肩楼，均在人间",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "ac7b788ae8cd119f2b181b7a1aba9c4e55b0e5626a1602740ccec280f4fe1a35",
+              "from_access": "私人",
+              "to_access": "混合",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "待核",
+              "to_type": "其他",
+              "quote": "一人在长安市上卖鼠戏，背负一囊，中蓄小鼠十余头。每于稠人中，出小木架置肩上，俨如戏楼状。乃拍鼓板，唱古杂剧。歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
+              "reason": "鼠从背负私囊出至街头卖艺肩楼，均在人间",
+              "source_hash": "ed9c5a60575039f184a77fd7e61d12bf8cb34057f70a4f4e338e2f9dcffa0ef7",
+              "chapter_id": 160,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "ac7b788ae8cd119f2b181b7a1aba9c4e55b0e5626a1602740ccec280f4fe1a35"
+          },
+          {
+            "unit": 10283,
+            "actors": "小鼠",
+            "location": "肩上戏楼",
+            "space": "微型戏台",
+            "event": "男女悲欢，悉合剧中关目。",
+            "identity": "剧中角色的扮演者",
+            "interpretation": "鼠的舞蹈与唱词内容完全契合，说明微型戏楼虽小，却能完整承载'男女悲欢'的戏剧世界，空间虽缩而叙事不缩。",
+            "quote": "男女悲欢，悉合剧中关目。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "悉合剧中关目",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 180,
+      "changes": {
+        "event_types": {
+          "神": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {
+          "八十二岁": 1,
+          "七十八岁": 1,
+          "十月": 1
+        },
+        "places": [],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 11423,
+            "actors": "金永年、媪",
+            "location": "利津（籍贯及家庭所在）",
+            "space": "家庭",
+            "event": "金永年八十二岁无子，老妻七十八岁，自认绝望",
+            "identity": "年迈夫妻，无子",
+            "interpretation": "以高龄无子、自分绝望开篇，建立绝嗣困境，为后文神赐一子作反衬",
+            "quote": "利津金永年，八十二岁无子，媪亦七十八岁，自分绝望。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "金永年家事，私宅内部",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11424,
+            "actors": "金永年、神",
+            "location": "梦中（未明具体空间）",
+            "space": "梦境",
+            "event": "金永年梦见神告知：本应绝嗣，念其经商公平，赐予一子",
+            "identity": "贸贩平准的商人；神为梦中告谕者",
+            "interpretation": "神谕在梦中出现，将现实绝嗣困境转为可被赐予的转机，梦成为异事发生的起点",
+            "quote": "忽梦神告曰：「本应绝嗣，念汝贸贩平准，赐予一子。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "回述/梦中告谕，非实历年代",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "异境",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "梦神告曰，梦中神谕",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11425,
+            "actors": "金永年、媪",
+            "location": "家中（未明具体室名）",
+            "space": "家庭",
+            "event": "金永年醒后把梦告诉老妻",
+            "identity": "夫妻",
+            "interpretation": "梦由私人经验转为夫妻间转述，使神谕进入家庭对话空间",
+            "quote": "」醒以告媪。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "醒以告媪，家中对话",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11426,
+            "actors": "媪",
+            "location": "家中（未明具体室名）",
+            "space": "家庭",
+            "event": "老妻说这是妄想，认为两人都将就木，不可能生子",
+            "identity": "年迈妻子",
+            "interpretation": "老妻以现实生理与年岁否定梦兆，形成对神谕的质疑，强化后文应验的异事性",
+            "quote": "媪曰：「此真妄想。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "媪曰，家中对话",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11427,
+            "actors": "媪",
+            "location": "家中（未明具体室名）",
+            "space": "家庭",
+            "event": "老妻进一步说两人皆将就木，何由生子",
+            "identity": "年迈妻子",
+            "interpretation": "以将死之身质疑生育可能，突出常理与异事之间的张力",
+            "quote": "两人皆将就木，何由生子？",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "媪言，家中对话",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11428,
+            "actors": "媪",
+            "location": "家中（未明具体室名）",
+            "space": "家庭",
+            "event": "不久老妻腹中震动",
+            "identity": "年迈妻子",
+            "interpretation": "身体异动在现实家庭空间出现，梦兆开始向实历转化",
+            "quote": "」无何，媪腹震动；",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "媪腹震动，家中",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 11429,
+            "actors": "媪",
+            "location": "家中（未明具体室名）",
+            "space": "家庭",
+            "event": "十月后，老妻竟生下一男",
+            "identity": "年迈妻子，得子之母",
+            "interpretation": "高龄生子应验梦中神谕，异事在家庭空间完成，绝嗣困境被解除",
+            "quote": "十月，竟举一男。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "竟举一男，家中",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [
+          {
+            "id": "c180-edited-p0",
+            "word": "金永年",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 216,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 13789,
+            "actors": "沙回子",
+            "location": "未明",
+            "space": "叙述背景",
+            "event": "沙回子获得铁布衫大力法，为全文总起。",
+            "identity": "得法者",
+            "interpretation": "开篇以“得法”确立异术来源，空间未明，人物能力先于场景出现。",
+            "quote": "沙回子，得铁布衫大力法。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "仅述得法，未涉空间边界",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 13790,
+            "actors": "沙回子",
+            "location": "未明",
+            "space": "叙述背景",
+            "event": "沙回子并指力斫可断牛项，横搠可洞牛腹，展示指力异术。",
+            "identity": "得法者",
+            "interpretation": "以牛体为参照，将身体能力夸张化，空间仍为抽象叙述，未进入具体场所。",
+            "quote": "骈其指，力斫之，可断牛项；横搠之，可洞牛腹。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "叙述功法，无具体空间",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 13791
+          },
+          {
+            "unit": 13792,
+            "actors": "沙回子、仇公子彭三、两健仆",
+            "location": "仇公子彭三家",
+            "space": "仇彭三家宅院",
+            "event": "在仇彭三家悬木于空，两健仆极力撑去后猛反，沙裸腹受木，木被弹远。",
+            "identity": "得法者、主人、仆役",
+            "interpretation": "空间转入具体宅院，通过多人协作与木击身体，将异术置于可观察的演示场景中。",
+            "quote": "曾在仇公子彭三家，悬木于空，遣两健仆极力撑去，猛反之；沙裸腹受木，砰然一声，木去远矣。",
+            "from_space": "未明",
+            "to_space": "仇公子彭三家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "从不明处移动至仇彭三家宅院，属私人人文空间。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "bff296f1ccce5a098822cea766e694dd672453eea5e75329f173ef9cf6978c95",
+              "from_access": "待核",
+              "to_access": "私人",
+              "from_realm": "待核",
+              "to_realm": "人间",
+              "from_type": "待核",
+              "to_type": "家宅",
+              "quote": "曾在仇公子彭三家，悬木于空，遣两健仆极力撑去，猛反之；沙裸腹受木，砰然一声，木去远矣。",
+              "reason": "从不明处移动至仇彭三家宅院，属私人人文空间。",
+              "source_hash": "f204c67efa4d794986cd02112213f6e0d08941d41dfb3a9a642e8d78a246dddc",
+              "chapter_id": 216,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "bff296f1ccce5a098822cea766e694dd672453eea5e75329f173ef9cf6978c95",
+            "unit_end": 13793
+          },
+          {
+            "unit": 13794,
+            "actors": "沙回子",
+            "location": "仇公子彭三家",
+            "space": "仇彭三家宅院",
+            "event": "沙回子又出势置于石上，以木椎力击，无少损。",
+            "identity": "得法者",
+            "interpretation": "同一场所内继续身体演示，从腹部受木转为以势击石，异术强度递进。",
+            "quote": "又出其势，即石上，以木椎力击之，无少损；",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "仍在仇彭三家宅院",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 13795,
+            "actors": "沙回子",
+            "location": "仇公子彭三家",
+            "space": "仇彭三家宅院",
+            "event": "文末点明沙回子但畏刀，异术存在致命弱点。",
+            "identity": "得法者",
+            "interpretation": "以“畏刀”收束，空间未变，却在能力展示后揭示局限，形成反转式结局。",
+            "quote": "但畏刀耳。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "仍在仇彭三家宅院",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [
+          {
+            "id": "c216-edited-p0",
+            "word": "沙回子",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c216-edited-p1",
+            "word": "彭三",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
       "chapter_id": 221,
       "changes": {
         "event_types": {
@@ -15602,6 +16303,426 @@
           {
             "id": "c221-edited-p5",
             "word": "郝",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 239,
+      "changes": {
+        "event_types": {
+          "神": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [
+          {
+            "word": "沂州",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 15115,
+            "actors": "徐公星",
+            "location": "沂州（籍贯）",
+            "space": "自述语境",
+            "event": "沂州徐公星自称夜里充任阎罗王，掌管冥间事务。",
+            "identity": "自称夜作阎罗王者",
+            "interpretation": "以籍贯起笔，把冥职安放在人间士人身上，暗示冥界权力可借凡人身体在夜间运行。",
+            "quote": "沂州徐公星，自言夜作阎罗王。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "待核",
+            "space_realm": "待核",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "自言夜作阎罗王，未明空间",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 15116,
+            "actors": "马生",
+            "location": "州中（籍贯）",
+            "space": "自述语境",
+            "event": "州中马生也自称夜里作阎罗王，与徐公星情形相同。",
+            "identity": "自称夜作阎罗王者",
+            "interpretation": "同一州内出现第二个夜任阎罗者，使冥职不再是孤例，空间上形成并置的两个人间据点。",
+            "quote": "州有马生亦然。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "待核",
+            "space_realm": "待核",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "州有马生亦然，未明空间",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 15117,
+            "actors": "徐公星、马生",
+            "location": "马生家",
+            "space": "私宅",
+            "event": "徐公星听说后，亲自到马生家拜访，询问马生昨夜在冥中处理了什么事。",
+            "identity": "徐公星为访者，马生为被访者",
+            "interpretation": "徐公从自家移步马家，把两个冥职者置于同一现实空间，以当面问答验证冥中经历。",
+            "quote": "徐公闻之，访诸其家，问马昨夕冥中处分何事。",
+            "from_space": "徐公家（未明）",
+            "to_space": "马生家",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "徐公至马生家拜访，马生家为私人宅邸，属人间家宅。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "9ddfcfec28a77ed6b19c4893c46fc2ebb84e0a8442a6d6351451a28c5f0ba87a",
+              "from_access": "待核",
+              "to_access": "私人",
+              "from_realm": "待核",
+              "to_realm": "人间",
+              "from_type": "待核",
+              "to_type": "家宅",
+              "quote": "徐公闻之，访诸其家",
+              "reason": "徐公至马生家拜访，马生家为私人宅邸，属人间家宅。",
+              "source_hash": "3347602cdb3ba0b84a5d05ea2a12d5b22d5251ff8f8d3646432c58df60cafe5b",
+              "chapter_id": 239,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "9ddfcfec28a77ed6b19c4893c46fc2ebb84e0a8442a6d6351451a28c5f0ba87a"
+          },
+          {
+            "unit": 15118,
+            "actors": "马生",
+            "location": "马生家",
+            "space": "私宅问答",
+            "event": "马生回答没有别的事，只是送左萝石升天，并说天上落下莲花，花朵大如房屋。",
+            "identity": "夜作阎罗王者",
+            "interpretation": "冥中公务被压缩为“送人升天”，天界以巨莲堕落的异象向冥职者显现，人间私宅成为冥、天消息的交汇点。",
+            "quote": "马言：「无他事，但送左萝石升天。天上堕莲花，朵大如屋」云。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "回述（马生转述昨夜冥中见闻）",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "马言送左萝石升天，问答在私宅",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 15119
+          },
+          {
+            "unit": 15118,
+            "actors": "马生、左萝石",
+            "location": "",
+            "space": "冥中送左萝石升天至天上",
+            "event": "马生自述在冥中送左萝石升天，天上堕下大如屋的莲花。",
+            "identity": "",
+            "interpretation": "送左萝石升天。天上堕莲花",
+            "quote": "但送左萝石升天。天上堕莲花，朵大如屋",
+            "from_space": "冥中",
+            "to_space": "天上",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "异境",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "马生自述在冥中送人升天，冥中与天上均属异境，无法判断具体场所类型。",
+            "classification_binding": "source_hash_and_step_id",
+            "ai_path_review": "deepseek",
+            "endpoint_review": {
+              "id": "12dc52846cd0ff7a0b237215c5cc8c9d896c2e54f2dbb3c0c933f51a4a819ad9",
+              "from_access": "待核",
+              "to_access": "待核",
+              "from_realm": "异境",
+              "to_realm": "异境",
+              "from_type": "异境场所",
+              "to_type": "异境场所",
+              "quote": "但送左萝石升天。天上堕莲花，朵大如屋",
+              "reason": "马生自述在冥中送人升天，冥中与天上均属异境，无法判断具体场所类型。",
+              "source_hash": "3347602cdb3ba0b84a5d05ea2a12d5b22d5251ff8f8d3646432c58df60cafe5b",
+              "chapter_id": 239,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "12dc52846cd0ff7a0b237215c5cc8c9d896c2e54f2dbb3c0c933f51a4a819ad9",
+            "unit_end": 15119
+          }
+        ],
+        "people": [
+          {
+            "id": "c239-edited-p0",
+            "word": "徐公星",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c239-edited-p1",
+            "word": "徐公",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 264,
+      "changes": {
+        "event_types": {},
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {
+          "顺治乙未冬夜": 1
+        },
+        "places": [],
+        "space_words": [
+          "天上"
+        ],
+        "narrative_events": [
+          {
+            "unit": 16939,
+            "actors": "无具体人物",
+            "location": "天上",
+            "space": "冬夜天空",
+            "event": "顺治乙未年冬夜，天上出现如火般赤红的文字，其文为“白苕代靖否复议朝冶驰”。",
+            "identity": "无",
+            "interpretation": "异象以夜空为呈现空间，文字如火悬于天上，形成天降谶语式场景；因无人物介入，空间机制仅是天与人间观察者的潜在对照。",
+            "quote": "顺治乙未冬夜，天上赤字如火。其文云：「白苕代靖否复议朝冶驰。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "冬夜天空，无人物进入或控制",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 16940
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 270,
+      "changes": {
+        "event_types": {
+          "神": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [
+          {
+            "word": "太原",
+            "mentions": 0
+          },
+          {
+            "word": "梓潼",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 17301,
+            "actors": "常大忠",
+            "location": "太原（籍贯）",
+            "space": "籍贯背景",
+            "event": "常大忠为太原人，进士出身，在京城候选官职。",
+            "identity": "进士、候选官员",
+            "interpretation": "以籍贯与候选身份开篇，为后文异地任职与梦兆埋下人物基础。",
+            "quote": "常进士大忠，太原人。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "太原人，籍贯背景",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 17302,
+            "actors": "常大忠",
+            "location": "",
+            "space": "赴京候选",
+            "event": "常大忠从太原到都城候选官职",
+            "identity": "",
+            "interpretation": "候选在都",
+            "quote": "候选在都",
+            "from_space": "太原",
+            "to_space": "都",
+            "transition_kind": "movement",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "太原为籍贯城邑，都城为候选官署所在，皆人间公共城郭",
+            "classification_binding": "source_hash_and_step_id",
+            "ai_path_review": "deepseek",
+            "endpoint_review": {
+              "id": "ece92b3b767a3e54d652f4b94f6f302e29972ffc06e84938c4d7d60b843e8a94",
+              "from_access": "开放自然",
+              "to_access": "公共",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "城郭聚落",
+              "to_type": "城郭聚落",
+              "quote": "常进士大忠，太原人。候选在都。",
+              "reason": "太原为籍贯城邑，都城为候选官署所在，皆人间公共城郭",
+              "source_hash": "04ca41f0c1119e4b910319b01ca0b89adba243f134bdd23aa51d538951e9f060",
+              "chapter_id": 270,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "ece92b3b767a3e54d652f4b94f6f302e29972ffc06e84938c4d7d60b843e8a94"
+          },
+          {
+            "unit": 17303,
+            "actors": "常大忠",
+            "location": "京城候选处",
+            "space": "候选居所",
+            "event": "候选京城的前一夜，梦见文昌帝君投递名帖。",
+            "identity": "候选官员",
+            "interpretation": "梦发生在候选地，预示任命，梦与即将发生的抽签形成空间上的先后呼应。",
+            "quote": "前一夜，梦文昌投刺。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙（梦为回述性插入）",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "候选在都，梦文昌投刺",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 17304,
+            "actors": "常大忠",
+            "location": "京城候选处",
+            "space": "抽签场所",
+            "event": "抽签得梓潼县令，常大忠觉得此事奇异。",
+            "identity": "新任梓潼令",
+            "interpretation": "抽签结果与梦境吻合，梦兆在候选空间内首次应验，人物由候选转为实任。",
+            "quote": "拔签，得梓潼令，奇之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "拔签得梓潼令",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 17305,
+            "actors": "常大忠",
+            "location": "太原（归乡）",
+            "space": "丁艰归乡",
+            "event": "后因父母丧事归乡，服丧期满后再次候补，又梦见与先前相同的情景。",
+            "identity": "服丧期满的候补官员",
+            "interpretation": "空间由任所转回故乡，再入候补，梦兆在另一时空重复，强化预兆的循环性。",
+            "quote": "后丁艰归，服阕候补，又梦如前。",
+            "from_space": "梓潼任所",
+            "to_space": "太原",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "梓潼任所到太原归乡，皆人间，任所为官署太原为城邑",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "3fe62a3ed77e79bd0a0e578b1e39ef904e925573136de6d6f174aec69a00b861",
+              "from_access": "公共",
+              "to_access": "开放自然",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "官署考场",
+              "to_type": "城郭聚落",
+              "quote": "后丁艰归，服阕候补，又梦如前。",
+              "reason": "梓潼任所到太原归乡，皆人间，任所为官署太原为城邑",
+              "source_hash": "04ca41f0c1119e4b910319b01ca0b89adba243f134bdd23aa51d538951e9f060",
+              "chapter_id": 270,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "3fe62a3ed77e79bd0a0e578b1e39ef904e925573136de6d6f174aec69a00b861"
+          },
+          {
+            "unit": 17306,
+            "actors": "常大忠",
+            "location": "候补处",
+            "space": "候补居所",
+            "event": "常大忠默想，难道又要任梓潼县令吗？不久果然如此。",
+            "identity": "再任梓潼令",
+            "interpretation": "默思与结果形成闭环，梦兆第二次应验，空间上重回梓潼，完成预兆与实任的重复印证。",
+            "quote": "默思岂复任梓潼乎？",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "默思复任梓潼",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [
+          {
+            "id": "c270-edited-p0",
+            "word": "常进士大忠",
             "canonical": "",
             "aliases": [],
             "review_status": "candidate",
@@ -16202,6 +17323,365 @@
             "identity_links": []
           }
         ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 295,
+      "changes": {
+        "event_types": {
+          "神": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {
+          "十月": 1
+        },
+        "places": [
+          {
+            "word": "福建",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 18988,
+            "actors": "杨辅、娈童",
+            "location": "福建总兵杨辅处",
+            "space": "杨辅居所",
+            "event": "福建总兵杨辅有一娈童，其腹中震动，显示怀孕之兆。",
+            "identity": "杨辅为福建总兵，娈童为其所宠侍从",
+            "interpretation": "开篇以'腹震动'在男性侍从体内制造异常空间，将生育功能移入非女性身体，为后文剖胁生子埋下伏笔。",
+            "quote": "福建总兵杨辅，有娈童，腹震动。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "杨辅居所，娈童所居",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 18989,
+            "actors": "娈童",
+            "location": "梦中",
+            "space": "梦境",
+            "event": "十月期满，娈童梦见神人剖开其两胁，将胎儿取出。",
+            "identity": "怀孕的娈童",
+            "interpretation": "梦境成为生育的过渡空间，神人剖胁既解释生产机制，又使身体成为神异操作的场所，梦与醒的界限被生育事件打破。",
+            "quote": "十月既满，梦神人剖其两胁去之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "梦境，非实历",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "异境",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "梦神人剖胁，梦境神人属异境",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 18990,
+            "actors": "娈童、两男婴",
+            "location": "杨辅处",
+            "space": "醒后卧处",
+            "event": "娈童醒来，发现两个男婴夹在其左右啼哭。",
+            "identity": "刚生产完的娈童与新生二子",
+            "interpretation": "梦中的剖胁在醒后落实为双婴夹身，梦境空间与身体空间叠合，生育结果直接出现在卧处，形成人异共处的奇异场景。",
+            "quote": "及醒，两男夹左右啼。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "醒后卧处，人间居所",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 18991,
+            "actors": "娈童",
+            "location": "杨辅处",
+            "space": "醒后卧处",
+            "event": "起身查看胁下，剖开的痕迹清晰可见。",
+            "identity": "刚生产完的娈童",
+            "interpretation": "剖痕将梦境操作铭刻于身体，使神异事件获得物质证据，身体成为梦与醒、神异与现实的交界空间。",
+            "quote": "起视胁下，剖痕俨然。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "醒后卧处，人间居所",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 18992,
+            "actors": "二子",
+            "location": "杨辅处",
+            "space": "命名场景",
+            "event": "两个儿子被命名为天舍、地舍。",
+            "identity": "杨辅之娈童所生二子",
+            "interpretation": "以'天舍''地舍'命名，将双生空间扩展为天地对应，暗示二子来历非凡，也收束全篇的奇异生育叙事。",
+            "quote": "儿名之天舍、地舍云。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "命名场景，人间居所",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 298,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 19155,
+            "actors": "黄靖南得功、二孝廉、响寇",
+            "location": "赴都途中（未明具体地名）",
+            "space": "路途险境",
+            "event": "黄得功微时与二孝廉赴都，途中遭遇响寇；孝廉恐惧，长跪献出财物。",
+            "identity": "黄得功为微时武人，二孝廉为同行举子",
+            "interpretation": "赴都之路本为求仕通道，却先成遇寇险境；孝廉跪献与黄得功未动形成对照，空间中的强弱关系由此确立。",
+            "quote": "黄靖南得功微时，与二孝廉赴都，途遇响寇。孝廉惧，长跪献资。",
+            "from_space": "未明出发地",
+            "to_space": "赴都途中",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "无明示出发地；赴都途中属开放道路，遇寇仍人间事。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "8e29a757c4f4912078ce8fdc280c1377fa2012f943cc346f5f2dacaaaa104bef",
+              "from_access": "待核",
+              "to_access": "开放自然",
+              "from_realm": "待核",
+              "to_realm": "人间",
+              "from_type": "待核",
+              "to_type": "道路街市",
+              "quote": "黄靖南得功微时，与二孝廉赴都，途遇响寇。",
+              "reason": "无明示出发地；赴都途中属开放道路，遇寇仍人间事。",
+              "source_hash": "f1eb024b68ef0f1a502f6b444ed02aefd960135a6e8c573059fcd8347073d295",
+              "chapter_id": 298,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "8e29a757c4f4912078ce8fdc280c1377fa2012f943cc346f5f2dacaaaa104bef",
+            "unit_end": 19156
+          },
+          {
+            "unit": 19157,
+            "actors": "黄得功、响寇",
+            "location": "赴都途中（未明具体地名）",
+            "space": "路途搏斗现场",
+            "event": "黄得功大怒，手无寸铁，两手握住骡足举起投击；响寇不及防备，马倒人堕。",
+            "identity": "黄得功为微时武人，响寇为劫路者",
+            "interpretation": "以骡足为武器，把交通工具转为搏斗器械，空间中的随手之物成为扭转危局的关键。",
+            "quote": "黄怒甚，手无寸铁，即以两手握骡足，举而投之。寇不及防，马倒人堕。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "路途搏斗，手无寸铁",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 19158
+          },
+          {
+            "unit": 19159,
+            "actors": "黄得功、响寇、二孝廉",
+            "location": "赴都途中（未明具体地名）",
+            "space": "路途搏斗现场",
+            "event": "黄得功拳击响寇致其臂断，搜其囊橐，将财物归还二孝廉。",
+            "identity": "黄得功为微时武人，响寇为被制服者，二孝廉为受助者",
+            "interpretation": "财物由孝廉献出到被夺回归还，完成空间内财物的逆转；黄得功的勇力直接恢复同行者的利益。",
+            "quote": "黄拳之臂断，搜橐而归孝廉。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "拳之臂断，搜橐而归",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 19160,
+            "actors": "二孝廉、黄得功",
+            "location": "赴都途中（未明具体地名）",
+            "space": "路途搏斗后现场",
+            "event": "二孝廉佩服黄得功的勇力，资助并劝他参军。",
+            "identity": "二孝廉为同行举子，黄得功为被劝从军者",
+            "interpretation": "孝廉由受助者转为资助者，空间中的救命之恩转化为从军契机，人物关系由同行变为举荐。",
+            "quote": "孝廉服其勇，资劝从军。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "孝廉服其勇，资劝从军",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 19161,
+            "actors": "黄得功",
+            "location": "未明（从军后战场等）",
+            "space": "军旅功业空间",
+            "event": "黄得功后来屡次建立奇勋，于是腰悬蟒玉，显贵加身。",
+            "identity": "黄得功为屡建奇勋的显贵将领",
+            "interpretation": "从途遇响寇的微时武人到腰蟒玉的显贵，空间由险途转向军功场域，勇力最终兑换为身份地位。",
+            "quote": "后屡建奇勋，遂腰蟒玉。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "待核",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "屡建奇勋，遂腰蟒玉",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 304,
+      "changes": {
+        "event_types": {
+          "神": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {
+          "七月": 1,
+          "六日": 1
+        },
+        "places": [
+          {
+            "word": "苏州",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 19321,
+            "actors": "百姓、大王",
+            "location": "苏州、大王之庙",
+            "space": "大雪突降的苏州与祈祷的庙宇",
+            "event": "丁亥年七月初六苏州大雪，百姓惊骇，共同到大王庙祈祷。",
+            "identity": "百姓为受灾祈祷者，大王为庙中神祇",
+            "interpretation": "反常天候把百姓从日常空间驱入庙宇，庙成为人神交涉的场所，恐慌促成集体行动。",
+            "quote": "丁亥年七月初六日，苏州大雪。百姓皇骇，共祷诸大王之庙。",
+            "from_space": "苏州",
+            "to_space": "大王之庙",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "苏州为城郭聚落属开放自然和人间；大王庙为公共且仍在人间。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "bab67fecc3779f8f3a7f3a06f90e18eb3888770a2dc1f87ecbc13c018dbd7dea",
+              "from_access": "开放自然",
+              "to_access": "公共",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "城郭聚落",
+              "to_type": "寺观",
+              "quote": "丁亥年七月初六日，苏州大雪。百姓皇骇，共祷诸大王之庙。",
+              "reason": "苏州为城郭聚落属开放自然和人间；大王庙为公共且仍在人间。",
+              "source_hash": "b1df750326f3bc8cf1723e9feef8142645a50322ff679b4d6fd9c26f7dc5ec5c",
+              "chapter_id": 304,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "bab67fecc3779f8f3a7f3a06f90e18eb3888770a2dc1f87ecbc13c018dbd7dea",
+            "unit_end": 19322
+          },
+          {
+            "unit": 19323,
+            "actors": "大王、百姓",
+            "location": "大王之庙",
+            "space": "庙中附身发言的现场",
+            "event": "大王忽然附人发言，质问如今称老爷者都加“大”字，难道以其神为小，消不得一个大字。",
+            "identity": "大王为附身发言的神，百姓为听者",
+            "interpretation": "神借附身直接介入人间称呼秩序，把降雪与称谓尊卑联系起来，庙内空间成为质问与回应的现场。",
+            "quote": "大王忽附人而言曰：「如今称老爷者，皆增一大字；其以我神为小，消不得一大字耶？",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "大王附人而言，仍在庙中公共现场",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 19324
+          },
+          {
+            "unit": 19325,
+            "actors": "百姓、大王",
+            "location": "大王之庙",
+            "space": "齐呼改称的庙中现场",
+            "event": "众人悚然，齐呼“大老爷”，雪立刻停止。",
+            "identity": "百姓为改称者，大王为受称者",
+            "interpretation": "称呼升级即刻换来天候恢复，显示庙中神人关系以谄媚性称谓为交换媒介，空间秩序随称呼改变而恢复。",
+            "quote": "众悚然，齐呼「大老爷」，雪立止。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "众齐呼大老爷，仍在庙中公共现场",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
         "evidence_review": {}
       }
     },
@@ -16856,2133 +18336,6 @@
       }
     },
     {
-      "chapter_id": 411,
-      "changes": {
-        "event_types": {
-          "妖": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "马子才 / ， / 顺天人 / 。\n世 / 好 / 菊 / ， / 至才尤甚 / ， / 闻 / 有 / 佳种 / ， / 必 / 购 / 之 / ， / 千 / 里 / 不 / 惮 / 。\n一 / 日 / ， / 有 / 金陵 / 客寓 / 其 / 家 / ， / 自 / 言 / 其中 / 表亲 / 有 / 一二 / 种 / ， / 为 / 北方 / 所 / 无 / 。\n马欣动 / ， / 即刻 / 治装 / ， / 从 / 客 / 至 / 金陵 / 。\n客 / 多方 / 为 / 之 / 营求 / ， / 得 / 两 / 芽 / ， / 裹藏 / 如 / 宝 / 。\n归 / 至 / 中途 / ， / 遇 / 一 / 少年 / ， / 跨 / 蹇 / 从 / 油碧车 / ， / 丰姿 / 洒 / 落 / 。\n渐近 / 与 / 语 / 。\n少年自言 / ：「 / 陶姓 / 。\n」 / 谈言骚雅 / 。\n因 / 问 / 马 / 所 / 自 / 来 / ， / 实 / 告 / 之 / 。\n少年 / 曰 / ：「 / 种 / 无 / 不 / 佳 / ， / 培溉 / 在 / 人 / 。\n」 / 因 / 与 / 论艺菊 / 之 / 法 / 。\n马大悦 / ， / 问 / ：「 / 将 / 何 / 往 / ？\n」 / 答 / 云 / ：「 / 姊 / 厌 / 金陵 / ， / 欲 / 卜居 / 于 / 河朔耳 / 。\n」 / 马 / 欣然 / 曰 / ：「 / 仆 / 虽 / 固贫 / ， / 茅庐 / 可以 / 寄榻 / 。\n不 / 嫌 / 荒陋 / ， / 无 / 烦 / 他 / 适 / 。\n」 / 陶 / 趋车 / 前 / ， / 向 / 姊咨禀 / 。\n车中人 / 推帘语 / ， / 乃 / 二十 / 许 / 绝世美人 / 也 / 。\n顾弟 / 言 / ：「 / 屋 / 不 / 厌卑 / ， / 而 / 院 / 宜 / 得 / 广 / 。\n」 / 马代诺之 / ， / 遂 / 与 / 俱 / 归 / 。\n第南 / 有 / 荒圃 / ， / 仅 / 小室 / 三四 / 椽 / ， / 陶喜 / ， / 居 / 之 / 。\n日 / 过 / 北院 / ， / 为 / 马 / 治 / 菊 / 。\n菊 / 已 / 枯 / ， / 拔根 / 再 / 植 / 之 / ， / 无 / 不 / 活 / 。\n然 / 家 / 清贫 / ， / 陶日 / 与 / 马 / 共 / 食 / 饮 / ， / 而 / 察 / 其 / 家 / 似 / 不 / 举 / 火 / 。\n马妻吕 / ， / 亦 / 爱 / 陶姊 / ， / 不 / 时 / 以 / 升斗 / 餽恤 / 之 / 。\n陶姊 / 小字 / 黄英 / ， / 雅 / 善 / 谈 / ， / 辄 / 过 / 吕 / 所 / ， / 与 / 共纫绩 / 。\n陶 / 一 / 日 / 谓 / 马 / 曰 / ：「 / 君 / 家 / 固 / 不 / 丰 / ， / 仆日 / 以 / 口腹累知交 / ， / 胡可 / 为 / 常 / 。\n为 / 今计 / ， / 卖 / 菊 / 亦 / 足 / 谋生 / 。\n」 / 马素 / 介 / ， / 闻陶言 / ， / 甚鄙之 / ， / 曰 / ：「 / 仆 / 以 / 君 / 风流 / 高士 / ， / 当能 / 安贫 / ；\n今 / 作 / 是 / 论 / ， / 则 / 以 / 东篱 / 为 / 市井 / ， / 有 / 辱 / 黄花 / 矣 / 。\n」 / 陶笑曰 / ：「 / 自食其力 / 不 / 为 / 贪 / ， / 贩 / 花 / 为 / 业 / 不 / 为 / 俗 / 。\n人 / 固 / 不 / 可 / 苟 / 求 / 富 / ， / 然 / 亦 / 不 / 必务 / 求贫 / 也 / 。\n」 / 马 / 不 / 语 / ， / 陶 / 起 / 而 / 出 / 。\n自 / 是 / ， / 马 / 所 / 弃 / 残 / 枝 / 劣种 / ， / 陶悉 / 掇 / 拾 / 而 / 去 / 。\n由此 / 不 / 复 / 就 / 马寝食 / ， / 招之始一至 / 。\n未 / 几 / ， / 菊 / 将 / 开 / ， / 闻 / 其 / 门嚣 / 喧 / 如 / 市 / 。\n怪 / 之 / ， / 过而窥焉 / ， / 见市人 / 买 / 花 / 者 / ， / 车 / 载 / 肩负 / ， / 道 / 相 / 属 / 也 / 。\n其 / 花皆 / 异种 / ， / 目所未睹 / 。\n心厌其贪 / ， / 欲 / 与 / 绝 / ；\n而 / 又 / 恨 / 其 / 私秘 / 佳本 / ， / 遂款其扉 / ， / 将 / 就 / 消让 / 。\n陶出 / ， / 握手 / 曳入 / 。\n见 / 荒庭 / 半 / 亩 / 皆 / 菊 / 畦 / ， / 数椽 / 之外 / 无 / 旷土 / 。\n\ud84c / \udcc1去 / 者 / ， / 则折别枝插补 / 之；\n其 / 蓓蕾 / 在 / 畦者 / ， / 罔 / 不 / 佳 / 妙 / ： / 而 / 细 / 认 / 之 / ， / 皆 / 向 / 所 / 拔弃 / 也 / 。\n陶入 / 屋 / ， / 出 / 酒馔 / ， / 设 / 席畦 / 侧 / ， / 曰 / ：「 / 仆 / 贫 / 不 / 能 / 守 / 清 / 戒 / ， / 连 / 朝幸 / 得 / 微赀 / ， / 颇 / 足 / 供 / 醉 / 。\n」 / 少 / 间 / ， / 房 / 中 / 呼 / 「 / 三郎 / 」， / 陶诺 / 而 / 去 / 。\n俄 / 献 / 佳肴 / ， / 烹饪 / 良精 / 。\n因 / 问 / ：「 / 贵 / 姊胡 / 以 / 不 / 字 / ？\n」 / 答 / 云 / ：「 / 时 / 未 / 至 / 。\n」 / 问 / ：「 / 何时 / ？\n」 / 曰 / ：「 / 四十三月 / 。\n」 / 又诘 / ：「 / 何 / 说 / ？\n」 / 但 / 笑 / 不 / 言 / ， / 尽 / 欢始 / 散 / 。\n过 / 宿 / ， / 又 / 诣 / 之 / ， / 新插者 / 已 / 盈 / 尺 / 矣 / 。\n大 / 奇 / 之 / ， / 苦求 / 其 / 术 / 。\n陶 / 曰 / ：「 / 此 / 固 / 非 / 可 / 言传 / ；\n且君 / 不 / 以 / 谋生 / ， / 焉 / 用 / 此 / ？\n」 / 又 / 数 / 日 / ， / 门庭略寂 / ， / 陶乃 / 以 / 蒲席 / 包 / 菊 / ， / 捆载 / 数 / 车 / 而 / 去 / 。\n逾岁 / ， / 春 / 将 / 半 / ， / 始 / 载 / 南 / 中 / 异卉 / 而 / 归 / ， / 于都 / 中 / 设 / 花肆 / ， / 十日 / 尽 / 售 / ， / 复归 / 艺菊 / 。\n问 / 之 / 去年 / 买 / 花 / 者 / ， / 留 / 其 / 根 / ， / 次年 / 尽 / 变 / 而 / 劣 / ， / 乃 / 复 / 购 / 于 / 陶 / 。\n陶由 / 此日 / 富 / ： / 一 / 年 / 增舍 / ， / 二 / 年 / 起 / 夏屋 / 。\n兴作 / 从 / 心 / ， / 更 / 不 / 谋 / 诸 / 主人 / 。\n渐 / 而 / 旧日 / 花畦 / ， / 尽 / 为 / 廊舍 / 。\n更 / 于 / 墙 / 外 / 买 / 田 / 一 / 区 / ， / 筑墉 / 四周 / ， / 悉 / 种 / 菊 / 。\n至 / 秋 / ， / 载 / 花 / 去 / ， / 春 / 尽 / 不 / 归 / 。\n而 / 马妻病 / 卒 / 。\n意属 / 黄英 / ， / 微 / 使 / 人 / 风示之 / 。\n黄英 / 微笑 / ， / 意 / 似 / 允许 / ， / 惟 / 专候 / 陶归 / 而已 / 。\n年余 / ， / 陶 / 竟 / 不 / 至 / 。\n黄英 / 课仆 / 种 / 菊 / ， / 一 / 如 / 陶 / 。\n得 / 金益合 / 商贾 / ， / 村 / 外 / 治 / 膏田 / 二十 / 顷 / ， / 甲 / 第益 / 壮 / 。\n忽 / 有 / 客 / 自 / 东粤 / 来 / ， / 寄 / 陶生函信 / ， / 发 / 之 / ， / 则 / 嘱姊归马 / 。\n考 / 其 / 寄 / 书 / 之 / 日 / ， / 即 / 妻 / 死 / 之 / 日 / ；\n回忆 / 园中之饮 / ， / 适四十三月 / 也 / ， / 大奇之 / 。\n以 / 书 / 示英 / ， / 请问 / 「 / 致 / 聘 / 何 / 所 / 」。\n英辞 / 不 / 受 / 采 / 。\n又 / 以 / 故居 / 陋 / ， / 欲 / 使 / 就 / 南 / 第居 / ， / 若 / 赘焉 / 。\n马 / 不 / 可 / ， / 择日行亲 / 迎 / 礼 / 。\n黄英 / 既 / 适 / 马 / ， / 于间壁 / 开扉 / 通南第 / ， / 日过课其仆 / 。\n马耻 / 以 / 妻 / 富 / ， / 恒 / 嘱 / 黄英 / 作 / 南北籍 / ， / 以防 / 淆乱 / 。\n而 / 家 / 所 / 须 / ， / 黄英辄 / 取 / 诸 / 南 / 第 / 。\n不 / 半 / 岁 / ， / 家 / 中触类 / 皆 / 陶 / 家 / 物 / 。\n马 / 立遣人 / 一一 / 赍还 / 之 / ， / 戒勿 / 复取 / 。\n未 / 浃 / 旬 / ， / 又 / 杂 / 之 / 。\n凡数 / 更 / ， / 马 / 不 / 胜 / 烦 / 。\n黄英 / 笑 / 曰 / ：「 / 陈仲子 / 毋乃劳 / 乎 / ？\n」 / 马慙 / ， / 不 / 复稽 / ， / 一切 / 听 / 诸 / 黄 / 英 / 。\n鸠工 / 庀料 / ， / 土木 / 大作 / ， / 马 / 不 / 能 / 禁 / 。\n经 / 数 / 月 / ， / 楼舍 / 连 / 互 / ， / 两 / 第 / 竟合 / 为 / 一 / ， / 不 / 分 / 疆界 / 矣 / 。\n然遵马教 / ， / 闭 / 门 / 不 / 复 / 业 / 菊 / ， / 而 / 享用 / 过于 / 世 / 家 / 。\n马 / 不 / 自安 / ， / 曰 / ：「 / 仆 / 三十 / 年 / 清德 / ， / 为 / 卿 / 所 / 累 / 。\n今 / 视息 / 人间 / ， / 徒 / 依 / 裙 / 带 / 而 / 食 / ， / 真 / 无 / 一 / 毫丈 / 夫气 / 矣 / 。\n人 / 皆 / 祝 / 富 / ， / 我 / 但 / 祝 / 穷 / 耳 / ！\n」 / 黄英 / 曰 / ：「 / 妾 / 非贪鄙 / ；\n但 / 不 / 少 / 致 / 丰盈 / ， / 遂 / 令 / 千 / 载 / 下 / 人 / ， / 谓 / 渊 / 明贫贱骨 / ， / 百 / 世 / 不 / 能 / 发迹 / ， / 故 / 聊 / 为 / 我 / 家 / 彭泽 / 解嘲 / 耳 / 。\n然贫者 / 愿 / 富 / ， / 为难 / ；\n富者 / 求贫 / ， / 固 / 亦 / 甚 / 易 / 。\n床头金 / 任 / 君 / 挥 / 去 / 之 / ， / 妾 / 不 / 靳 / 也 / 。\n」 / 马 / 曰 / ：「 / 捐 / 他人 / 之 / 金 / ， / 抑亦 / 良 / 丑 / 。\n」 / 英曰 / ：「 / 君 / 不 / 愿 / 富 / ， / 妾 / 亦 / 不 / 能 / 贫 / 也 / 。\n无已 / ， / 析 / 君 / 居 / ： / 清者 / 自清 / ， / 浊者 / 自浊 / ， / 何害 / ？\n」 / 乃 / 于 / 园中 / 筑 / 茅茨 / ， / 择美婢往侍马 / 。\n马安之 / 。\n然过 / 数日 / ， / 苦念 / 黄英 / 。\n招 / 之 / ， / 不 / 肯 / 至 / ；\n不 / 得已 / ， / 反就之 / 。\n隔宿辄至 / ， / 以为常 / 。\n黄英 / 笑 / 曰 / ：「 / 东食 / 西 / 宿 / ， / 廉者 / 当 / 不 / 如 / 是 / 。\n」 / 马 / 亦 / 自笑 / ， / 无 / 以 / 对 / ， / 遂 / 复合 / 居如 / 初 / 。\n会 / 马 / 以 / 事 / 客 / 金陵 / ， / 适逢 / 菊 / 秋 / 。\n早 / 过 / 花肆 / ， / 见 / 肆中 / 盆列甚烦 / ， / 款朵 / 佳 / 胜 / ， / 心 / 动 / ， / 疑类 / 陶制 / 。\n少 / 间 / ， / 主人 / 出 / ， / 果陶 / 也 / 。\n喜极 / ， / 具道 / 契阔 / ， / 遂 / 止宿 / 焉 / 。\n要 / 之 / 归 / ， / 陶 / 曰 / ：「 / 金陵 / ， / 吾 / 故土 / ， / 将婚 / 于是 / 。\n积 / 有 / 薄赀 / ， / 烦 / 寄 / 吾 / 姊 / 。\n我 / 岁杪当 / 暂 / 去 / 。\n」 / 马 / 不 / 听 / ， / 请 / 之 / 益 / 苦 / 。\n且 / 曰 / ：「 / 家 / 幸 / 充盈 / ， / 但 / 可 / 坐 / 享 / ， / 无须 / 复贾 / 。\n」 / 坐肆 / 中 / ， / 使 / 仆代 / 论 / 价 / ， / 廉 / 其 / 直 / ， / 数日 / 尽 / 售 / 。\n逼促 / 囊装 / ， / 赁舟遂北 / 。\n入门 / ， / 则 / 姊已除舍 / ， / 床榻 / 裀褥 / 皆 / 设 / ， / 若 / 预知 / 弟 / 也 / 归 / 者 / 。\n陶自归 / ， / 解装 / 课役 / ， / 大修 / 亭园 / ， / 惟日 / 与 / 马共 / 棋酒 / ， / 更 / 不 / 复结一客 / 。\n为 / 之 / 择婚 / ， / 辞 / 不 / 愿 / 。\n姊遣 / 两 / 婢 / 侍 / 其 / 寝处 / ， / 居 / 三四 / 年 / ， / 生 / 一 / 女 / 。\n陶饮素豪 / ， / 从 / 不 / 见 / 其 / 沉醉 / 。\n有 / 友人 / 曾 / 生 / ， / 量 / 亦 / 无 / 对 / 。\n适过马 / ， / 马 / 使 / 与 / 陶相 / 较 / 饮 / 。\n二 / 人 / 纵饮 / 甚 / 欢 / ， / 相得恨晚 / 。\n自辰以迄四漏 / ， / 计 / 各 / 尽 / 百 / 壶 / 。\n曾 / 烂醉如泥 / ， / 沉睡 / 座间 / 。\n陶起归寝 / ， / 出门 / 践 / 菊 / 畦 / ， / 玉山倾倒 / ， / 委衣于侧 / ， / 即地化 / 为 / 菊 / ， / 高 / 如 / 人 / ；\n花 / 十 / 余 / 朵 / ， / 皆 / 大于 / 拳 / 。\n马骇绝 / ， / 告 / 黄英 / 。\n英急往 / ， / 拔置 / 地上 / ， / 曰 / ：「 / 胡 / 醉 / 至 / 此 / ！\n」 / 覆 / 以 / 衣 / ， / 要 / 马 / 俱 / 去 / ， / 戒勿 / 视 / 。\n既 / 明而往 / ， / 则 / 陶卧 / 畦边 / 。\n马乃悟 / 姊弟菊 / 精 / 也 / ， / 益 / 爱 / 敬 / 之 / 。\n而 / 陶自 / 露 / 迹 / ， / 饮益放 / ， / 恒自折柬 / 招曾 / ， / 因 / 与 / 莫逆 / 。\n值 / 花 / 朝 / ， / 曾 / 来 / 造访 / ， / 以 / 两 / 仆 / 舁药 / 浸 / 白酒 / 一 / 坛 / ， / 约与共尽 / 。\n坛将竭 / ， / 二 / 人 / 犹 / 未 / 甚 / 醉 / 。\n马潜 / 以 / 一 / 瓻 / 续 / 入 / 之 / ， / 二 / 人 / 又 / 尽 / 之 / 。\n曾 / 醉 / 已 / 惫 / ， / 诸仆 / 负 / 之 / 以 / 去 / 。\n陶卧地 / ， / 又 / 化为 / 菊 / 。\n马见惯 / 不 / 惊 / ， / 如法 / 拔 / 之 / ， / 守 / 其 / 旁 / 以 / 观 / 其 / 变 / 。\n久 / 之 / ， / 叶益 / 憔悴 / 。\n大惧 / ， / 始 / 告 / 黄英 / 。\n英闻骇曰 / ：「 / 杀 / 吾 / 弟 / 矣 / ！\n」 / 奔视 / 之 / ， / 根株 / 已 / 枯 / 。\n痛绝 / ， / 掐 / 其 / 梗 / ， / 埋 / 盆 / 中 / ， / 携入 / 闺中 / ， / 日 / 灌溉 / 之 / 。\n马悔恨欲绝 / ， / 甚怨 / 曾 / 。\n越 / 数 / 日 / ， / 闻 / 曾 / 已 / 醉 / 死 / 矣 / 。\n盆 / 中 / 花渐萌 / ， / 九月 / 既 / 开 / ， / 短干 / 粉朵 / ， / 嗅 / 之 / 有 / 酒 / 香 / ， / 名 / 之 / 「 / 醉 / 陶 / 」， / 浇 / 以 / 酒 / 则 / 茂 / 。\n后 / 女 / 长成 / ， / 嫁 / 于 / 世 / 家 / 。\n黄英 / 终 / 老 / 、 / 亦 / 无 / 他 / 异 / 。",
-        "lexical_reviews": {},
-        "years": {
-          "一日": 2,
-          "四十三月": 2,
-          "十日": 1,
-          "一年": 1,
-          "二年": 1,
-          "三十年": 1,
-          "千载": 1,
-          "三四年": 1,
-          "九月": 1
-        },
-        "places": [
-          {
-            "word": "金陵",
-            "mentions": 0
-          },
-          {
-            "word": "顺天",
-            "mentions": 0
-          },
-          {
-            "word": "南中",
-            "mentions": 0
-          }
-        ],
-        "space_words": [
-          "荒圃",
-          "菊畦",
-          "房中",
-          "门庭",
-          "楼舍",
-          "茅茨",
-          "亭园",
-          "闺中"
-        ],
-        "narrative_events": [
-          {
-            "unit": 26599,
-            "actors": "马子才、金陵客",
-            "location": "顺天：马籍贯；金陵：求菊目的地",
-            "space": "家 → 旅途",
-            "event": "听客介绍佳种，随客赴金陵",
-            "identity": "马子才：人",
-            "interpretation": "求菊使人物离家并进入跨地域交往；籍贯不能自动确定后来宅第的精确地址。",
-            "quote": "马欣动，即刻治装，从客至金陵。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26616,
-            "actors": "陶生、黄英、马子才",
-            "location": "马第南侧；陶称姊欲居河朔，但确切城市未明",
-            "space": "荒圃／小室",
-            "event": "马与陶姊弟俱归，陶选择南侧荒圃小室居住",
-            "identity": "以人形出场；菊精身份尚未向马揭露",
-            "interpretation": "黄英先要求宽院（单位26614），可与荒圃选择合读，研究居住需求与种菊的关联。",
-            "quote": "第南有荒圃，仅小室三四椽，陶喜，居之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26637,
-            "actors": "陶生、马子才",
-            "location": "陶生居所庭中",
-            "space": "荒庭／菊畦",
-            "event": "马因售花而来，看到弃种已变为佳菊",
-            "identity": "陶生：菊精，仍以人形活动；马尚未确认其本体",
-            "interpretation": "庭院同时是种植与经营空间；“市井”也是马的价值判断，不能直接当作一处地名。",
-            "quote": "见荒庭半亩皆菊畦，数椽之外无旷土。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26674,
-            "actors": "黄英、马子才",
-            "location": "南第与马家之间",
-            "space": "间壁／扉",
-            "event": "婚后开门连通南第，黄英往返管理仆役",
-            "identity": "人形婚姻生活；菊精身份尚未向马明确揭露",
-            "interpretation": "门把分隔的居所变为可往返空间；与单位26675的南北籍合读，可探究财富边界。",
-            "quote": "于间壁开扉通南第，日过课其仆。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26684,
-            "actors": "黄英、马子才",
-            "location": "南北两第",
-            "space": "楼舍／两第",
-            "event": "营建之后两第合一，不再分疆界",
-            "identity": "婚姻关系持续，马对自身清德与妻富仍有焦虑",
-            "interpretation": "空间合并并不等于观念冲突立即结束；后续仍有求贫与分居情节。",
-            "quote": "楼舍连互，两第竟合为一，不分疆界矣。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26697,
-            "actors": "马子才、黄英",
-            "location": "园中",
-            "space": "茅茨",
-            "event": "黄英为马另筑简陋居所，以回应其求贫",
-            "identity": "人形相处；此处是居住安排改变，不是跨界",
-            "interpretation": "贫与富被安排成可分居的空间实验；单位26704的复合居显示分隔未能持续。",
-            "quote": "乃于园中筑茅茨，择美婢往侍马。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26726,
-            "actors": "陶生、马子才、黄英",
-            "location": "宅第菊畦；确切地名未明",
-            "space": "门外／菊畦",
-            "event": "陶醉后出门倒于菊畦，化为菊",
-            "identity": "人形 → 菊形；马后于单位26732悟其为菊精",
-            "interpretation": "门与菊畦连接室内交饮和本体显露，但不能据此推断每次出门都会变形。",
-            "quote": "出门践菊畦，玉山倾倒，委衣于侧，即地化为菊",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          },
-          {
-            "unit": 26744,
-            "actors": "黄英、陶生",
-            "location": "黄英居所内部",
-            "space": "盆／闺中",
-            "event": "陶再次化菊被拔而枯，黄英取梗埋盆并携入闺中灌溉",
-            "identity": "陶的菊体死亡、花梗续养；不能标为已经恢复人形",
-            "interpretation": "公共交饮场景转为内部照护空间；后续花名“醉陶”保存人物痕迹，但没有明说陶复为人。",
-            "quote": "掐其梗，埋盆中，携入闺中，日灌溉之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "",
-            "transition_kind": "mention"
-          }
-        ],
-        "people": [
-          {
-            "id": "c411-edited-p0",
-            "word": "黄英",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "妖": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p1",
-            "word": "陶",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p2",
-            "word": "马子才",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p3",
-            "word": "马妻吕",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p4",
-            "word": "陈仲子",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p5",
-            "word": "马",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c411-edited-p6",
-            "word": "胡",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "妖": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 461,
-      "changes": {
-        "event_types": {},
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "淄邑/北村 / 井涸 / ， / 村人 / 甲 / 、 / 乙缒入淘之 / 。\n掘尺 / 余 / ， / 得 / 髑髅 / 。\n误 / 破 / 之 / ， / 口 / 含 / 黄金 / ， / 喜纳 / 腰橐 / 。\n复掘 / ， / 又 / 得 / 髑 / 髅 / 六七 / 枚 / 。\n悉破之 / ， / 无 / 金 / 。\n其 / 旁 / 有 / 磁瓶 / 二 / 、 / 铜器 / 一 / 。\n器 / 大 / 可 / 合抱 / ， / 重 / 数十 / 斤 / ， / 侧 / 有 / 双环 / ， / 不 / 知 / 何用 / ， / 斑驳陆离 / 。\n瓶 / 亦 / 古 / ， / 非近款 / 。\n既 / 出 / 井 / ， / 甲 / 、 / 乙 / 皆 / 死 / 。\n移 / 时 / 乙苏 / ， / 曰 / ：「 / 我 / 乃 / 汉人 / 。\n遭 / 新莽 / 之 / 乱 / ， / 全 / 家 / 投 / 井 / 中 / 。\n适有少金 / ， / 因 / 内口 / 中 / ， / 实非 / 含 / 敛 / 之 / 物 / ， / 人人 / 都 / 有 / 也 / 。\n奈何 / 遍碎头颅 / ？\n情 / 殊 / 可 / 恨 / ！\n」 / 众 / 香楮 / 共 / 祝 / 之 / ， / 许 / 为 / 殡葬 / ， / 乙 / 乃愈 / ；\n甲 / 则 / 不能 / 复生 / 矣 / 。\n颜镇 / 孙生闻其异 / ， / 购铜器 / 而 / 去 / 。\n袁孝廉 / 宣四 / 得 / 一 / 瓶 / ， / 可 / 验 / 阴 / 晴 / ： / 见 / 有 / 一点 / 润处 / ， / 初 / 如 / 粟米 / ， / 渐 / 阔渐 / 满 / ， / 未 / 几 / 雨 / 至 / ；\n润退 / ， / 则 / 云开天霁 / 。\n其一 / 入 / 张秀才 / 家 / ， / 可 / 志 / 朔望 / ： / 朔 / 则 / 黑 / 点 / 起 / 如 / 豆 / ， / 与日俱长 / ；\n望 / 则 / 一 / 瓶 / 遍 / 满 / ；\n既 / 望 / ， / 又 / 以次而退 / ， / 至晦 / 则 / 复 / 其 / 初 / 。\n以 / 埋 / 土 / 中 / 久 / ， / 瓶口 / 有 / 小石 / 黏口 / 上 / ， / 刷剔 / 不 / 可 / 下 / 。\n敲 / 去 / 之 / ， / 石落 / 而 / 口微缺 / ， / 亦 / 一 / 憾 / 事 / 。\n浸花 / 其中 / ， / 落花结实 / ， / 与 / 在 / 树者 / 无异 / 云 / 。",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [
-          {
-            "word": "淄邑北村",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 29698,
-            "actors": "村人甲、乙",
-            "location": "淄邑北村井",
-            "space": "涸井",
-            "event": "淄邑北村井涸，村人甲乙缒入淘井，掘尺余得髑髅，误破之，口含黄金，喜纳腰橐。",
-            "identity": "淘井村人",
-            "interpretation": "井作为地下空间被打开，掘井行为触发与亡者遗骸的接触，黄金成为后续冲突的诱因。",
-            "quote": "淄邑北村井涸，村人甲、乙缒入淘之。掘尺余，得髑髅。误破之，口含黄金，喜纳腰橐。",
-            "from_space": "井外",
-            "to_space": "井中",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "movement",
-            "unit_end": 29700
-          },
-          {
-            "unit": 29701,
-            "actors": "村人甲、乙",
-            "location": "淄邑北村井",
-            "space": "涸井",
-            "event": "复掘又得髑髅六七枚，悉破之无金；旁有磁瓶二、铜器一，器大可合抱，重数十斤，侧有双环，斑驳陆离，瓶亦古。",
-            "identity": "淘井村人",
-            "interpretation": "连续破颅求金而不得，显示贪念驱动下的空间破坏；古瓶铜器作为井中异物的核心被带出。",
-            "quote": "复掘，又得髑髅六七枚。悉破之，无金。其旁有磁瓶二、铜器一。器大可合抱，重数十斤，侧有双环，不知何用，斑驳陆离。瓶亦古，非近款。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "plot",
-            "unit_end": 29705
-          },
-          {
-            "unit": 29706,
-            "actors": "甲、乙",
-            "location": "淄邑北村井外",
-            "space": "井外",
-            "event": "既出井，甲、乙皆死；移时乙苏，自称汉人，遭新莽之乱全家投井，口含少金非含敛之物，怒众人遍碎头颅。",
-            "identity": "出井后死者/借尸还魂者",
-            "interpretation": "出井即死将空间越界与惩戒相连；乙复苏并借亡者口吻控诉，使井中遗骸获得叙事主体位置。",
-            "quote": "既出井，甲、乙皆死。移时乙苏，曰：「我乃汉人。遭新莽之乱，全家投井中。适有少金，因内口中，实非含敛之物，人人都有也。奈何遍碎头颅？情殊可恨！」",
-            "from_space": "井中",
-            "to_space": "井外",
-            "temporal_order": "顺叙；乙所述新莽之乱为回述",
-            "space_function": "",
-            "transition_kind": "movement",
-            "unit_end": 29712
-          },
-          {
-            "unit": 29712,
-            "actors": "众、乙、甲",
-            "location": "淄邑北村",
-            "space": "井外村中",
-            "event": "众香楮共祝之，许为殡葬，乙乃愈；甲则不能复生。",
-            "identity": "村众/亡魂附体者/死者",
-            "interpretation": "祭祀与许诺殡葬使亡魂息怒，乙得愈而甲不复活，显示同一空间行为对不同人物产生分化结果。",
-            "quote": "众香楮共祝之，许为殡葬，乙乃愈；甲则不能复生矣。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "plot",
-            "unit_end": 29713
-          },
-          {
-            "unit": 29714,
-            "actors": "颜镇孙生",
-            "location": "颜镇",
-            "space": "颜镇",
-            "event": "颜镇孙生闻其异，购铜器而去。",
-            "identity": "购异物者",
-            "interpretation": "铜器从井中异物流入外部购买者之手，空间转移使事件影响扩展至村外。",
-            "quote": "颜镇孙生闻其异，购铜器而去。",
-            "from_space": "淄邑北村",
-            "to_space": "颜镇",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "movement"
-          },
-          {
-            "unit": 29715,
-            "actors": "袁孝廉宣四",
-            "location": "未明",
-            "space": "袁孝廉处",
-            "event": "袁孝廉宣四得一瓶，可验阴晴：见一点润处，初如粟米，渐阔渐满，未几雨至；润退则云开天霁。",
-            "identity": "得瓶者/孝廉",
-            "interpretation": "古瓶脱离井中后成为预测天气的异器，空间归属改变带来功能显现。",
-            "quote": "袁孝廉宣四得一瓶，可验阴晴：见有一点润处，初如粟米，渐阔渐满，未几雨至；润退，则云开天霁。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "plot",
-            "unit_end": 29716
-          },
-          {
-            "unit": 29717,
-            "actors": "张秀才",
-            "location": "未明",
-            "space": "张秀才家",
-            "event": "其一入张秀才家，可志朔望：朔则黑点起如豆，与日俱长；望则一瓶遍满；既望又以次而退，至晦复初。",
-            "identity": "得瓶者/秀才",
-            "interpretation": "另一瓶进入张秀才家，功能转为标记月相，与袁家瓶形成异器功能分化。",
-            "quote": "其一入张秀才家，可志朔望：朔则黑点起如豆，与日俱长；望则一瓶遍满；既望，又以次而退，至晦则复其初。",
-            "from_space": "未明",
-            "to_space": "张秀才家",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "movement",
-            "unit_end": 29719
-          },
-          {
-            "unit": 29720,
-            "actors": "张秀才",
-            "location": "张秀才家",
-            "space": "张秀才家",
-            "event": "瓶因埋土久，口有小石黏口上，刷剔不可下；敲去之，石落而口微缺，亦一憾事。浸花其中，落花结实，与在树者无异。",
-            "identity": "得瓶者/秀才",
-            "interpretation": "瓶口微缺是异器进入人间后的损伤，但浸花结实仍显其异，空间功能从测候延伸至生物保存。",
-            "quote": "以埋土中久，瓶口有小石黏口上，刷剔不可下。敲去之，石落而口微缺，亦一憾事。浸花其中，落花结实，与在树者无异云。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "transition_kind": "plot",
-            "unit_end": 29722
-          }
-        ],
-        "people": [
-          {
-            "id": "c461-edited-p0",
-            "word": "张秀才",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 473,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "安丘 / 某 / 生 / ， / 通卜筮 / 之 / 术 / 。\n其 / 为 / 人邪 / 荡 / 不 / 检 / ， / 每 / 有 / 钻穴逾隙 / 之 / 行 / ， / 则 / 卜 / 之 / 。\n一 / 日 / ， / 忽病 / ， / 药 / 之 / ， / 不 / 愈 / 。\n曰 / ：「 / 吾实 / 有所见 / 。\n冥中怒 / 我 / 狎亵 / 天数 / ， / 将 / 重 / 谴 / 矣 / ， / 药 / 何 / 能 / 为 / ！\n」 / 亡 / 何 / ， / 目暴瞽 / ， / 两手无故自折 / 。\n某 / 甲者 / ， / 伯无嗣 / 。\n甲利其有 / ， / 愿 / 为 / 之后 / 。\n伯 / 既 / 死 / ， / 田 / 产悉 / 为 / 所有 / ， / 遂 / 背 / 前盟 / 。\n又 / 有 / 叔 / ， / 家 / 颇裕 / ， / 亦 / 无 / 子 / 。\n甲 / 又 / 父 / 之 / 。\n死 / ， / 又 / 背 / 之 / 。\n于是 / 并 / 三 / 家 / 之 / 产 / ， / 富 / 甲 / 一 / 乡 / 。\n一 / 日 / ， / 暴病若狂 / ， / 自 / 言 / 曰 / ：「 / 汝欲享 / 富厚 / 而 / 生 / 耶 / ！\n」 / 遂 / 以 / 利刃 / 自割肉 / ， / 片片 / 掷地 / 。\n又 / 曰 / ：「 / 汝绝人 / 后 / ， / 尚 / 欲 / 有 / 后 / 耶 / ！\n」 / 剖腹流肠 / ， / 遂 / 毙 / 。\n未 / 几 / ， / 子 / 亦 / 死 / ， / 产业 / 归人 / 矣 / 。\n果报 / 如此 / ， / 可 / 畏 / 也 / 夫 / ！",
-        "lexical_reviews": {},
-        "years": {
-          "一日": 2
-        },
-        "places": [
-          {
-            "word": "安丘",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 30461,
-            "actors": "安丘某生",
-            "location": "未明（某生居处）",
-            "space": "日常居处",
-            "event": "安丘某生通卜筮之术，为人邪荡不检，每有钻穴逾隙之行便先占卜。",
-            "identity": "通卜筮之术的士人",
-            "interpretation": "卜筮本为通神之术，却被用于邪行，空间上把私密越礼行为与占卜活动并置，为后文冥谴埋因。",
-            "quote": "安丘某生，通卜筮之术。其为人邪荡不检，每有钻穴逾隙之行，则卜之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "某生日常居处行卜筮",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30462
-          },
-          {
-            "unit": 30463,
-            "actors": "安丘某生",
-            "location": "未明（某生病处）",
-            "space": "病榻",
-            "event": "某生忽病，用药不愈，自言冥中怒其狎亵天数，将重谴，药不能治。",
-            "identity": "患病者",
-            "interpretation": "病榻成为冥谴显现的场所，人物以言语把疾病解释为天罚，空间由日常居处转入受罚状态。",
-            "quote": "一日，忽病，药之，不愈。曰：「吾实有所见。冥中怒我狎亵天数，将重谴矣，药何能为！",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "病卧药之不愈",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30465
-          },
-          {
-            "unit": 30466,
-            "actors": "安丘某生",
-            "location": "未明（某生病处）",
-            "space": "病榻",
-            "event": "不久，某生双目突然失明，两手无故自行折断。",
-            "identity": "受冥谴者",
-            "interpretation": "身体器官在病榻空间内接连毁损，使抽象的冥谴落实为可见的肉身惩罚，完成第一则果报。",
-            "quote": "亡何，目暴瞽，两手无故自折。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "目瞽手折仍在病榻",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30467,
-            "actors": "某甲、伯",
-            "location": "未明（伯家）",
-            "space": "伯家",
-            "event": "某甲因伯无子，贪图其财产，愿做伯的后嗣；伯死后，甲尽得田产，却背弃前盟。",
-            "identity": "伯之嗣子（后为背盟者）",
-            "interpretation": "承嗣关系本应连接家庭与财产，甲却把伯家空间转化为牟利对象，伯死即背盟，显示财产继承中的伦理断裂。",
-            "quote": "某甲者，伯无嗣。甲利其有，愿为之后。伯既死，田产悉为所有，遂背前盟。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "伯家田产归甲",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30469
-          },
-          {
-            "unit": 30470,
-            "actors": "某甲、叔",
-            "location": "未明（叔家）",
-            "space": "叔家",
-            "event": "某甲又有叔家颇裕而无子，甲又认叔为父；叔死后，甲再次背弃承诺。",
-            "identity": "叔之嗣子（再次背盟者）",
-            "interpretation": "甲把承嗣行为重复施于叔家，空间上由伯家扩展到叔家，形成连续吞并，强化其唯利是图。",
-            "quote": "又有叔，家颇裕，亦无子。甲又父之。死，又背之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "叔家产亦归甲",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30472
-          },
-          {
-            "unit": 30473,
-            "actors": "某甲",
-            "location": "未明（某甲家）",
-            "space": "某甲家",
-            "event": "某甲于是合并伯、叔及自家三家产业，财富冠绝一乡。",
-            "identity": "富甲一乡的产业兼并者",
-            "interpretation": "三家产业汇入甲家，空间上完成财富集中；富甲一乡既是果报前的高点，也预示其将因绝人后而受罚。",
-            "quote": "于是并三家之产，富甲一乡。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "并三家之产富甲一乡",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30474,
-            "actors": "某甲",
-            "location": "未明（某甲家）",
-            "space": "某甲家",
-            "event": "某甲一日暴病若狂，自言是否想享富厚而生，随即用利刃自割其肉，片片掷地。",
-            "identity": "暴病若狂者",
-            "interpretation": "财富空间转为自残场所，甲在狂态中自割，身体成为果报直接承受对象，与某生目盲手折形成呼应。",
-            "quote": "一日，暴病若狂，自言曰：「汝欲享富厚而生耶！」遂以利刃自割肉，片片掷地。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "暴病若狂自割肉",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30475
-          },
-          {
-            "unit": 30476,
-            "actors": "某甲",
-            "location": "未明（某甲家）",
-            "space": "某甲家",
-            "event": "某甲又自言绝人之后还想有后，随即剖腹流肠而死。",
-            "identity": "受果报而死者",
-            "interpretation": "剖腹流肠对应其绝人后、背弃承嗣之罪，死亡在自家空间内完成，果报由财富剥夺转为生命终结。",
-            "quote": "又曰：「汝绝人后，尚欲有后耶！」剖腹流肠，遂毙。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "剖腹流肠遂毙",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 30477
-          },
-          {
-            "unit": 30478,
-            "actors": "某甲之子",
-            "location": "未明（某甲家）",
-            "space": "某甲家",
-            "event": "不久，某甲之子也死去，其产业归于他人。",
-            "identity": "某甲之子、产业继承者",
-            "interpretation": "子死与产业归人使甲家空间彻底易主，果报从甲一身延伸到后代与财产，完成第二则结局。",
-            "quote": "未几，子亦死，产业归人矣。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "子死产业归人",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30479,
-            "actors": "叙述者",
-            "location": "未明",
-            "space": "叙述层",
-            "event": "叙述者感叹果报如此，实在可畏。",
-            "identity": "叙述者",
-            "interpretation": "结尾以议论收束两则故事，把身体受罚与财产易主提升为果报主题，空间叙事转为道德警示。",
-            "quote": "果报如此，可畏也夫！",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "space_function": "",
-            "boundary_medium": "",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "待核",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "叙述者评论果报",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 127,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 8292,
-            "actors": "毕民部公、千总杨花麟",
-            "location": "赴任途中（未明具体地点）",
-            "space": "道路",
-            "event": "毕民部公即家起备兵洮岷，千总杨花麟来迎。",
-            "identity": "毕民部公：备兵洮岷的官员；杨花麟：千总",
-            "interpretation": "开篇以官员赴任与下属迎候建立人物关系，道路成为后续异事发生的空间。",
-            "quote": "毕民部公即家起备兵洮岷时，有千总杨花麟来迎。",
-            "from_space": "家",
-            "to_space": "赴任途中",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "从家出发赴任途中，途中属道路街市，人间场景。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "f3c51943a6506eaf6fa2c03baf8e0746ec56f7233c8ef80c225baf52be4b50ec",
-              "from_access": "私人",
-              "to_access": "开放自然",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "家宅",
-              "to_type": "道路街市",
-              "quote": "毕民部公即家起备兵洮岷时，有千总杨花麟来迎。冠盖在途，偶见一人遗便路侧。",
-              "reason": "从家出发赴任途中，途中属道路街市，人间场景。",
-              "source_hash": "72565fd448e0fb6270204c58a968806fef3a8f87b431cb24658213dfea2664cf",
-              "chapter_id": 127,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "f3c51943a6506eaf6fa2c03baf8e0746ec56f7233c8ef80c225baf52be4b50ec"
-          },
-          {
-            "unit": 8293,
-            "actors": "杨花麟、毕民部公、遗便者",
-            "location": "路侧",
-            "space": "道路旁",
-            "event": "途中见一人遗便于路侧，杨花麟关弓欲射，毕公急呵止。",
-            "identity": "杨花麟：千总；毕民部公：备兵洮岷的官员；遗便者：路人",
-            "interpretation": "路侧便溺者成为冲突触发点，杨花麟的射箭意图与毕公的呵止形成权力与礼法的短暂对峙。",
-            "quote": "冠盖在途，偶见一人遗便路侧。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "路侧遗便，道路旁公共处",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 8294,
-            "actors": "杨花麟、毕民部公",
-            "location": "途中",
-            "space": "道路",
-            "event": "杨花麟解释欲射是为小怖无礼者，毕公呵止。",
-            "identity": "杨花麟：千总；毕民部公：备兵洮岷的官员",
-            "interpretation": "对话揭示杨花麟以戏惩维护礼法的逻辑，毕公的呵止体现官员对下属行为的约束。",
-            "quote": "杨关弓欲射之，公急呵止。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "在途关弓，道路公共空间",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 8296,
-            "actors": "杨花麟、遗便者",
-            "location": "途中路侧",
-            "space": "道路",
-            "event": "杨花麟遥呼戏言，称赠遗便者会稽藤簪绾髻，随即飞矢射中其髻，其人急奔，便液污地。",
-            "identity": "杨花麟：千总；遗便者：路人",
-            "interpretation": "戏言与飞矢结合，将惩戒转化为滑稽异事；箭中发髻的精准与便液污地的狼狈形成空间上的戏剧反差。",
-            "quote": "乃遥呼曰：「遗屙者，奉赠一股会稽藤簪绾髻子。」即飞矢去，正中其髻，其人急奔，便液污地。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "飞矢去，道路公共空间",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 8297
-          }
-        ],
-        "people": [
-          {
-            "id": "c127-edited-p0",
-            "word": "杨花麟",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c127-edited-p1",
-            "word": "杨",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 159,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 10276,
-            "actors": "王子巽、作剧者",
-            "location": "都城街市（事件地点）",
-            "space": "市井表演场",
-            "event": "王子巽称在都城时，曾见一人在市上作剧，携木盒作格，共十二孔，每孔伏一蛙。",
-            "identity": "王子巽为转述者；作剧者为市井艺人",
-            "interpretation": "以'言'字起，全文被框定为转述；空间从都城街市进入木盒的十二孔格，蛙被安置为可操控的声源。",
-            "quote": "王子巽言：在都时，曾见一人作剧于市，携木盒作格，凡十有二孔，每孔伏蛙。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "回述，王子巽追述在都所见，非叙述当下",
-            "transition_kind": "mention",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "作剧于市，市井公共表演场",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 10277,
-            "actors": "作剧者、蛙",
-            "location": "木盒格孔（表演空间）",
-            "space": "木盒十二孔",
-            "event": "作剧者用细杖敲蛙首，蛙便哇然鸣叫。",
-            "identity": "作剧者仍为艺人；蛙为表演工具",
-            "interpretation": "敲击动作把木盒格孔变成发声机关，蛙首与细杖构成人与异类的直接接触点。",
-            "quote": "以细杖敲其首，辄哇然作鸣。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙，承前描述表演方式",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "木盒十二孔，作剧者控制",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 10278,
-            "actors": "作剧者、观者（含王子巽）、蛙",
-            "location": "都城街市表演处（事件地点）",
-            "space": "市井观演场",
-            "event": "有人给钱，作剧者便乱击蛙顶，声如拊云锣之乐，宫商词曲清晰可辨。",
-            "identity": "作剧者为受钱奏技的艺人；观者为付钱听曲者",
-            "interpretation": "金钱交换触发从单声到成曲的转变，蛙声被组织为可辨词曲的音乐空间，异事在交易关系中完成。",
-            "quote": "或与金钱，则乱击蛙顶，如拊云锣之乐，宫商词曲，了了可辨。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙，述给钱后的表演结果",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "市井观演场，观者与金钱",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 160,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [
-          {
-            "word": "长安市",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 10279,
-            "actors": "一人（卖鼠戏者）",
-            "location": "长安市上",
-            "space": "市集",
-            "event": "一人在长安市上卖鼠戏，背负一囊，囊中蓄小鼠十余头。",
-            "identity": "卖鼠戏的艺人",
-            "interpretation": "开篇以'长安市上'确立公共表演空间，'背负一囊'将全部演出资源收束于艺人身体，形成以人为舞台核心的空间格局。",
-            "quote": "一人在长安市上卖鼠戏，背负一囊，中蓄小鼠十余头。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "长安市上卖鼠戏",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 10280,
-            "actors": "卖鼠戏者",
-            "location": "稠人之中",
-            "space": "人群中的表演场",
-            "event": "每于稠人中，出小木架置肩上，俨如戏楼状。",
-            "identity": "卖鼠戏的艺人",
-            "interpretation": "'稠人中'点明观演空间，'置肩上'把戏楼从地面移到艺人肩头，空间由市集收缩为身体上的微型剧场。",
-            "quote": "每于稠人中，出小木架置肩上，俨如戏楼状。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "稠人中，出小木架置肩上",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 10281,
-            "actors": "卖鼠戏者",
-            "location": "肩上戏楼前",
-            "space": "表演场",
-            "event": "乃拍鼓板，唱古杂剧。",
-            "identity": "卖鼠戏的艺人",
-            "interpretation": "鼓板与唱腔构成声音空间，为鼠的出场作铺垫，使肩头戏楼由静物转为演出场所。",
-            "quote": "乃拍鼓板，唱古杂剧。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "拍鼓板，唱古杂剧",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 10282,
-            "actors": "小鼠、卖鼠戏者",
-            "location": "自囊中至肩上戏楼",
-            "space": "囊与肩楼之间",
-            "event": "歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
-            "identity": "小鼠（表演者）；卖鼠戏者（班主）",
-            "interpretation": "鼠从囊中经主人背部登上肩头戏楼，完成从容器到舞台的空间移动；'蒙假面，被小装服'使鼠获得剧中角色身份，'人立而舞'则实现动物向人的形态模拟。",
-            "quote": "歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
-            "from_space": "囊中",
-            "to_space": "肩上戏楼",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "混合",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "鼠从背负私囊出至街头卖艺肩楼，均在人间",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "ac7b788ae8cd119f2b181b7a1aba9c4e55b0e5626a1602740ccec280f4fe1a35",
-              "from_access": "私人",
-              "to_access": "混合",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "待核",
-              "to_type": "其他",
-              "quote": "一人在长安市上卖鼠戏，背负一囊，中蓄小鼠十余头。每于稠人中，出小木架置肩上，俨如戏楼状。乃拍鼓板，唱古杂剧。歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。",
-              "reason": "鼠从背负私囊出至街头卖艺肩楼，均在人间",
-              "source_hash": "ed9c5a60575039f184a77fd7e61d12bf8cb34057f70a4f4e338e2f9dcffa0ef7",
-              "chapter_id": 160,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "ac7b788ae8cd119f2b181b7a1aba9c4e55b0e5626a1602740ccec280f4fe1a35"
-          },
-          {
-            "unit": 10283,
-            "actors": "小鼠",
-            "location": "肩上戏楼",
-            "space": "微型戏台",
-            "event": "男女悲欢，悉合剧中关目。",
-            "identity": "剧中角色的扮演者",
-            "interpretation": "鼠的舞蹈与唱词内容完全契合，说明微型戏楼虽小，却能完整承载'男女悲欢'的戏剧世界，空间虽缩而叙事不缩。",
-            "quote": "男女悲欢，悉合剧中关目。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "悉合剧中关目",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 180,
-      "changes": {
-        "event_types": {
-          "神": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {
-          "八十二岁": 1,
-          "七十八岁": 1,
-          "十月": 1
-        },
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 11423,
-            "actors": "金永年、媪",
-            "location": "利津（籍贯及家庭所在）",
-            "space": "家庭",
-            "event": "金永年八十二岁无子，老妻七十八岁，自认绝望",
-            "identity": "年迈夫妻，无子",
-            "interpretation": "以高龄无子、自分绝望开篇，建立绝嗣困境，为后文神赐一子作反衬",
-            "quote": "利津金永年，八十二岁无子，媪亦七十八岁，自分绝望。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "金永年家事，私宅内部",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11424,
-            "actors": "金永年、神",
-            "location": "梦中（未明具体空间）",
-            "space": "梦境",
-            "event": "金永年梦见神告知：本应绝嗣，念其经商公平，赐予一子",
-            "identity": "贸贩平准的商人；神为梦中告谕者",
-            "interpretation": "神谕在梦中出现，将现实绝嗣困境转为可被赐予的转机，梦成为异事发生的起点",
-            "quote": "忽梦神告曰：「本应绝嗣，念汝贸贩平准，赐予一子。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "回述/梦中告谕，非实历年代",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "异境",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "梦神告曰，梦中神谕",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11425,
-            "actors": "金永年、媪",
-            "location": "家中（未明具体室名）",
-            "space": "家庭",
-            "event": "金永年醒后把梦告诉老妻",
-            "identity": "夫妻",
-            "interpretation": "梦由私人经验转为夫妻间转述，使神谕进入家庭对话空间",
-            "quote": "」醒以告媪。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "醒以告媪，家中对话",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11426,
-            "actors": "媪",
-            "location": "家中（未明具体室名）",
-            "space": "家庭",
-            "event": "老妻说这是妄想，认为两人都将就木，不可能生子",
-            "identity": "年迈妻子",
-            "interpretation": "老妻以现实生理与年岁否定梦兆，形成对神谕的质疑，强化后文应验的异事性",
-            "quote": "媪曰：「此真妄想。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "媪曰，家中对话",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11427,
-            "actors": "媪",
-            "location": "家中（未明具体室名）",
-            "space": "家庭",
-            "event": "老妻进一步说两人皆将就木，何由生子",
-            "identity": "年迈妻子",
-            "interpretation": "以将死之身质疑生育可能，突出常理与异事之间的张力",
-            "quote": "两人皆将就木，何由生子？",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "媪言，家中对话",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11428,
-            "actors": "媪",
-            "location": "家中（未明具体室名）",
-            "space": "家庭",
-            "event": "不久老妻腹中震动",
-            "identity": "年迈妻子",
-            "interpretation": "身体异动在现实家庭空间出现，梦兆开始向实历转化",
-            "quote": "」无何，媪腹震动；",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "媪腹震动，家中",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 11429,
-            "actors": "媪",
-            "location": "家中（未明具体室名）",
-            "space": "家庭",
-            "event": "十月后，老妻竟生下一男",
-            "identity": "年迈妻子，得子之母",
-            "interpretation": "高龄生子应验梦中神谕，异事在家庭空间完成，绝嗣困境被解除",
-            "quote": "十月，竟举一男。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "竟举一男，家中",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [
-          {
-            "id": "c180-edited-p0",
-            "word": "金永年",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 216,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 13789,
-            "actors": "沙回子",
-            "location": "未明",
-            "space": "叙述背景",
-            "event": "沙回子获得铁布衫大力法，为全文总起。",
-            "identity": "得法者",
-            "interpretation": "开篇以“得法”确立异术来源，空间未明，人物能力先于场景出现。",
-            "quote": "沙回子，得铁布衫大力法。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "仅述得法，未涉空间边界",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 13790,
-            "actors": "沙回子",
-            "location": "未明",
-            "space": "叙述背景",
-            "event": "沙回子并指力斫可断牛项，横搠可洞牛腹，展示指力异术。",
-            "identity": "得法者",
-            "interpretation": "以牛体为参照，将身体能力夸张化，空间仍为抽象叙述，未进入具体场所。",
-            "quote": "骈其指，力斫之，可断牛项；横搠之，可洞牛腹。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "叙述功法，无具体空间",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 13791
-          },
-          {
-            "unit": 13792,
-            "actors": "沙回子、仇公子彭三、两健仆",
-            "location": "仇公子彭三家",
-            "space": "仇彭三家宅院",
-            "event": "在仇彭三家悬木于空，两健仆极力撑去后猛反，沙裸腹受木，木被弹远。",
-            "identity": "得法者、主人、仆役",
-            "interpretation": "空间转入具体宅院，通过多人协作与木击身体，将异术置于可观察的演示场景中。",
-            "quote": "曾在仇公子彭三家，悬木于空，遣两健仆极力撑去，猛反之；沙裸腹受木，砰然一声，木去远矣。",
-            "from_space": "未明",
-            "to_space": "仇公子彭三家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "从不明处移动至仇彭三家宅院，属私人人文空间。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "bff296f1ccce5a098822cea766e694dd672453eea5e75329f173ef9cf6978c95",
-              "from_access": "待核",
-              "to_access": "私人",
-              "from_realm": "待核",
-              "to_realm": "人间",
-              "from_type": "待核",
-              "to_type": "家宅",
-              "quote": "曾在仇公子彭三家，悬木于空，遣两健仆极力撑去，猛反之；沙裸腹受木，砰然一声，木去远矣。",
-              "reason": "从不明处移动至仇彭三家宅院，属私人人文空间。",
-              "source_hash": "f204c67efa4d794986cd02112213f6e0d08941d41dfb3a9a642e8d78a246dddc",
-              "chapter_id": 216,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "bff296f1ccce5a098822cea766e694dd672453eea5e75329f173ef9cf6978c95",
-            "unit_end": 13793
-          },
-          {
-            "unit": 13794,
-            "actors": "沙回子",
-            "location": "仇公子彭三家",
-            "space": "仇彭三家宅院",
-            "event": "沙回子又出势置于石上，以木椎力击，无少损。",
-            "identity": "得法者",
-            "interpretation": "同一场所内继续身体演示，从腹部受木转为以势击石，异术强度递进。",
-            "quote": "又出其势，即石上，以木椎力击之，无少损；",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "仍在仇彭三家宅院",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 13795,
-            "actors": "沙回子",
-            "location": "仇公子彭三家",
-            "space": "仇彭三家宅院",
-            "event": "文末点明沙回子但畏刀，异术存在致命弱点。",
-            "identity": "得法者",
-            "interpretation": "以“畏刀”收束，空间未变，却在能力展示后揭示局限，形成反转式结局。",
-            "quote": "但畏刀耳。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "仍在仇彭三家宅院",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [
-          {
-            "id": "c216-edited-p0",
-            "word": "沙回子",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c216-edited-p1",
-            "word": "彭三",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 239,
-      "changes": {
-        "event_types": {
-          "神": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [
-          {
-            "word": "沂州",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 15115,
-            "actors": "徐公星",
-            "location": "沂州（籍贯）",
-            "space": "自述语境",
-            "event": "沂州徐公星自称夜里充任阎罗王，掌管冥间事务。",
-            "identity": "自称夜作阎罗王者",
-            "interpretation": "以籍贯起笔，把冥职安放在人间士人身上，暗示冥界权力可借凡人身体在夜间运行。",
-            "quote": "沂州徐公星，自言夜作阎罗王。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "待核",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "自言夜作阎罗王，未明空间",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 15116,
-            "actors": "马生",
-            "location": "州中（籍贯）",
-            "space": "自述语境",
-            "event": "州中马生也自称夜里作阎罗王，与徐公星情形相同。",
-            "identity": "自称夜作阎罗王者",
-            "interpretation": "同一州内出现第二个夜任阎罗者，使冥职不再是孤例，空间上形成并置的两个人间据点。",
-            "quote": "州有马生亦然。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "待核",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "州有马生亦然，未明空间",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 15117,
-            "actors": "徐公星、马生",
-            "location": "马生家",
-            "space": "私宅",
-            "event": "徐公星听说后，亲自到马生家拜访，询问马生昨夜在冥中处理了什么事。",
-            "identity": "徐公星为访者，马生为被访者",
-            "interpretation": "徐公从自家移步马家，把两个冥职者置于同一现实空间，以当面问答验证冥中经历。",
-            "quote": "徐公闻之，访诸其家，问马昨夕冥中处分何事。",
-            "from_space": "徐公家（未明）",
-            "to_space": "马生家",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "徐公至马生家拜访，马生家为私人宅邸，属人间家宅。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "9ddfcfec28a77ed6b19c4893c46fc2ebb84e0a8442a6d6351451a28c5f0ba87a",
-              "from_access": "待核",
-              "to_access": "私人",
-              "from_realm": "待核",
-              "to_realm": "人间",
-              "from_type": "待核",
-              "to_type": "家宅",
-              "quote": "徐公闻之，访诸其家",
-              "reason": "徐公至马生家拜访，马生家为私人宅邸，属人间家宅。",
-              "source_hash": "3347602cdb3ba0b84a5d05ea2a12d5b22d5251ff8f8d3646432c58df60cafe5b",
-              "chapter_id": 239,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "9ddfcfec28a77ed6b19c4893c46fc2ebb84e0a8442a6d6351451a28c5f0ba87a"
-          },
-          {
-            "unit": 15118,
-            "actors": "马生",
-            "location": "马生家",
-            "space": "私宅问答",
-            "event": "马生回答没有别的事，只是送左萝石升天，并说天上落下莲花，花朵大如房屋。",
-            "identity": "夜作阎罗王者",
-            "interpretation": "冥中公务被压缩为“送人升天”，天界以巨莲堕落的异象向冥职者显现，人间私宅成为冥、天消息的交汇点。",
-            "quote": "马言：「无他事，但送左萝石升天。天上堕莲花，朵大如屋」云。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "回述（马生转述昨夜冥中见闻）",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "马言送左萝石升天，问答在私宅",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 15119
-          },
-          {
-            "unit": 15118,
-            "actors": "马生、左萝石",
-            "location": "",
-            "space": "冥中送左萝石升天至天上",
-            "event": "马生自述在冥中送左萝石升天，天上堕下大如屋的莲花。",
-            "identity": "",
-            "interpretation": "送左萝石升天。天上堕莲花",
-            "quote": "但送左萝石升天。天上堕莲花，朵大如屋",
-            "from_space": "冥中",
-            "to_space": "天上",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "异境",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "马生自述在冥中送人升天，冥中与天上均属异境，无法判断具体场所类型。",
-            "classification_binding": "source_hash_and_step_id",
-            "ai_path_review": "deepseek",
-            "endpoint_review": {
-              "id": "12dc52846cd0ff7a0b237215c5cc8c9d896c2e54f2dbb3c0c933f51a4a819ad9",
-              "from_access": "待核",
-              "to_access": "待核",
-              "from_realm": "异境",
-              "to_realm": "异境",
-              "from_type": "异境场所",
-              "to_type": "异境场所",
-              "quote": "但送左萝石升天。天上堕莲花，朵大如屋",
-              "reason": "马生自述在冥中送人升天，冥中与天上均属异境，无法判断具体场所类型。",
-              "source_hash": "3347602cdb3ba0b84a5d05ea2a12d5b22d5251ff8f8d3646432c58df60cafe5b",
-              "chapter_id": 239,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "12dc52846cd0ff7a0b237215c5cc8c9d896c2e54f2dbb3c0c933f51a4a819ad9",
-            "unit_end": 15119
-          }
-        ],
-        "people": [
-          {
-            "id": "c239-edited-p0",
-            "word": "徐公星",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          },
-          {
-            "id": "c239-edited-p1",
-            "word": "徐公",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 270,
-      "changes": {
-        "event_types": {
-          "神": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [
-          {
-            "word": "太原",
-            "mentions": 0
-          },
-          {
-            "word": "梓潼",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 17301,
-            "actors": "常大忠",
-            "location": "太原（籍贯）",
-            "space": "籍贯背景",
-            "event": "常大忠为太原人，进士出身，在京城候选官职。",
-            "identity": "进士、候选官员",
-            "interpretation": "以籍贯与候选身份开篇，为后文异地任职与梦兆埋下人物基础。",
-            "quote": "常进士大忠，太原人。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "太原人，籍贯背景",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 17302,
-            "actors": "常大忠",
-            "location": "",
-            "space": "赴京候选",
-            "event": "常大忠从太原到都城候选官职",
-            "identity": "",
-            "interpretation": "候选在都",
-            "quote": "候选在都",
-            "from_space": "太原",
-            "to_space": "都",
-            "transition_kind": "movement",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "太原为籍贯城邑，都城为候选官署所在，皆人间公共城郭",
-            "classification_binding": "source_hash_and_step_id",
-            "ai_path_review": "deepseek",
-            "endpoint_review": {
-              "id": "ece92b3b767a3e54d652f4b94f6f302e29972ffc06e84938c4d7d60b843e8a94",
-              "from_access": "开放自然",
-              "to_access": "公共",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "城郭聚落",
-              "to_type": "城郭聚落",
-              "quote": "常进士大忠，太原人。候选在都。",
-              "reason": "太原为籍贯城邑，都城为候选官署所在，皆人间公共城郭",
-              "source_hash": "04ca41f0c1119e4b910319b01ca0b89adba243f134bdd23aa51d538951e9f060",
-              "chapter_id": 270,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "ece92b3b767a3e54d652f4b94f6f302e29972ffc06e84938c4d7d60b843e8a94"
-          },
-          {
-            "unit": 17303,
-            "actors": "常大忠",
-            "location": "京城候选处",
-            "space": "候选居所",
-            "event": "候选京城的前一夜，梦见文昌帝君投递名帖。",
-            "identity": "候选官员",
-            "interpretation": "梦发生在候选地，预示任命，梦与即将发生的抽签形成空间上的先后呼应。",
-            "quote": "前一夜，梦文昌投刺。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙（梦为回述性插入）",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "候选在都，梦文昌投刺",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 17304,
-            "actors": "常大忠",
-            "location": "京城候选处",
-            "space": "抽签场所",
-            "event": "抽签得梓潼县令，常大忠觉得此事奇异。",
-            "identity": "新任梓潼令",
-            "interpretation": "抽签结果与梦境吻合，梦兆在候选空间内首次应验，人物由候选转为实任。",
-            "quote": "拔签，得梓潼令，奇之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "拔签得梓潼令",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 17305,
-            "actors": "常大忠",
-            "location": "太原（归乡）",
-            "space": "丁艰归乡",
-            "event": "后因父母丧事归乡，服丧期满后再次候补，又梦见与先前相同的情景。",
-            "identity": "服丧期满的候补官员",
-            "interpretation": "空间由任所转回故乡，再入候补，梦兆在另一时空重复，强化预兆的循环性。",
-            "quote": "后丁艰归，服阕候补，又梦如前。",
-            "from_space": "梓潼任所",
-            "to_space": "太原",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "梓潼任所到太原归乡，皆人间，任所为官署太原为城邑",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "3fe62a3ed77e79bd0a0e578b1e39ef904e925573136de6d6f174aec69a00b861",
-              "from_access": "公共",
-              "to_access": "开放自然",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "官署考场",
-              "to_type": "城郭聚落",
-              "quote": "后丁艰归，服阕候补，又梦如前。",
-              "reason": "梓潼任所到太原归乡，皆人间，任所为官署太原为城邑",
-              "source_hash": "04ca41f0c1119e4b910319b01ca0b89adba243f134bdd23aa51d538951e9f060",
-              "chapter_id": 270,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "3fe62a3ed77e79bd0a0e578b1e39ef904e925573136de6d6f174aec69a00b861"
-          },
-          {
-            "unit": 17306,
-            "actors": "常大忠",
-            "location": "候补处",
-            "space": "候补居所",
-            "event": "常大忠默想，难道又要任梓潼县令吗？不久果然如此。",
-            "identity": "再任梓潼令",
-            "interpretation": "默思与结果形成闭环，梦兆第二次应验，空间上重回梓潼，完成预兆与实任的重复印证。",
-            "quote": "默思岂复任梓潼乎？",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "默思复任梓潼",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [
-          {
-            "id": "c270-edited-p0",
-            "word": "常进士大忠",
-            "canonical": "",
-            "aliases": [],
-            "review_status": "candidate",
-            "person_types": {
-              "人": 1
-            },
-            "evidence": "",
-            "role": "",
-            "ontology_status": "candidate",
-            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
-            "mentions": null,
-            "identity_links": []
-          }
-        ],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 295,
-      "changes": {
-        "event_types": {
-          "神": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {
-          "十月": 1
-        },
-        "places": [
-          {
-            "word": "福建",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 18988,
-            "actors": "杨辅、娈童",
-            "location": "福建总兵杨辅处",
-            "space": "杨辅居所",
-            "event": "福建总兵杨辅有一娈童，其腹中震动，显示怀孕之兆。",
-            "identity": "杨辅为福建总兵，娈童为其所宠侍从",
-            "interpretation": "开篇以'腹震动'在男性侍从体内制造异常空间，将生育功能移入非女性身体，为后文剖胁生子埋下伏笔。",
-            "quote": "福建总兵杨辅，有娈童，腹震动。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "杨辅居所，娈童所居",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 18989,
-            "actors": "娈童",
-            "location": "梦中",
-            "space": "梦境",
-            "event": "十月期满，娈童梦见神人剖开其两胁，将胎儿取出。",
-            "identity": "怀孕的娈童",
-            "interpretation": "梦境成为生育的过渡空间，神人剖胁既解释生产机制，又使身体成为神异操作的场所，梦与醒的界限被生育事件打破。",
-            "quote": "十月既满，梦神人剖其两胁去之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "梦境，非实历",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "异境",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "梦神人剖胁，梦境神人属异境",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 18990,
-            "actors": "娈童、两男婴",
-            "location": "杨辅处",
-            "space": "醒后卧处",
-            "event": "娈童醒来，发现两个男婴夹在其左右啼哭。",
-            "identity": "刚生产完的娈童与新生二子",
-            "interpretation": "梦中的剖胁在醒后落实为双婴夹身，梦境空间与身体空间叠合，生育结果直接出现在卧处，形成人异共处的奇异场景。",
-            "quote": "及醒，两男夹左右啼。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "醒后卧处，人间居所",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 18991,
-            "actors": "娈童",
-            "location": "杨辅处",
-            "space": "醒后卧处",
-            "event": "起身查看胁下，剖开的痕迹清晰可见。",
-            "identity": "刚生产完的娈童",
-            "interpretation": "剖痕将梦境操作铭刻于身体，使神异事件获得物质证据，身体成为梦与醒、神异与现实的交界空间。",
-            "quote": "起视胁下，剖痕俨然。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "醒后卧处，人间居所",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 18992,
-            "actors": "二子",
-            "location": "杨辅处",
-            "space": "命名场景",
-            "event": "两个儿子被命名为天舍、地舍。",
-            "identity": "杨辅之娈童所生二子",
-            "interpretation": "以'天舍''地舍'命名，将双生空间扩展为天地对应，暗示二子来历非凡，也收束全篇的奇异生育叙事。",
-            "quote": "儿名之天舍、地舍云。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "命名场景，人间居所",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 298,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 19155,
-            "actors": "黄靖南得功、二孝廉、响寇",
-            "location": "赴都途中（未明具体地名）",
-            "space": "路途险境",
-            "event": "黄得功微时与二孝廉赴都，途中遭遇响寇；孝廉恐惧，长跪献出财物。",
-            "identity": "黄得功为微时武人，二孝廉为同行举子",
-            "interpretation": "赴都之路本为求仕通道，却先成遇寇险境；孝廉跪献与黄得功未动形成对照，空间中的强弱关系由此确立。",
-            "quote": "黄靖南得功微时，与二孝廉赴都，途遇响寇。孝廉惧，长跪献资。",
-            "from_space": "未明出发地",
-            "to_space": "赴都途中",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "无明示出发地；赴都途中属开放道路，遇寇仍人间事。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "8e29a757c4f4912078ce8fdc280c1377fa2012f943cc346f5f2dacaaaa104bef",
-              "from_access": "待核",
-              "to_access": "开放自然",
-              "from_realm": "待核",
-              "to_realm": "人间",
-              "from_type": "待核",
-              "to_type": "道路街市",
-              "quote": "黄靖南得功微时，与二孝廉赴都，途遇响寇。",
-              "reason": "无明示出发地；赴都途中属开放道路，遇寇仍人间事。",
-              "source_hash": "f1eb024b68ef0f1a502f6b444ed02aefd960135a6e8c573059fcd8347073d295",
-              "chapter_id": 298,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "8e29a757c4f4912078ce8fdc280c1377fa2012f943cc346f5f2dacaaaa104bef",
-            "unit_end": 19156
-          },
-          {
-            "unit": 19157,
-            "actors": "黄得功、响寇",
-            "location": "赴都途中（未明具体地名）",
-            "space": "路途搏斗现场",
-            "event": "黄得功大怒，手无寸铁，两手握住骡足举起投击；响寇不及防备，马倒人堕。",
-            "identity": "黄得功为微时武人，响寇为劫路者",
-            "interpretation": "以骡足为武器，把交通工具转为搏斗器械，空间中的随手之物成为扭转危局的关键。",
-            "quote": "黄怒甚，手无寸铁，即以两手握骡足，举而投之。寇不及防，马倒人堕。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "路途搏斗，手无寸铁",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 19158
-          },
-          {
-            "unit": 19159,
-            "actors": "黄得功、响寇、二孝廉",
-            "location": "赴都途中（未明具体地名）",
-            "space": "路途搏斗现场",
-            "event": "黄得功拳击响寇致其臂断，搜其囊橐，将财物归还二孝廉。",
-            "identity": "黄得功为微时武人，响寇为被制服者，二孝廉为受助者",
-            "interpretation": "财物由孝廉献出到被夺回归还，完成空间内财物的逆转；黄得功的勇力直接恢复同行者的利益。",
-            "quote": "黄拳之臂断，搜橐而归孝廉。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "拳之臂断，搜橐而归",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 19160,
-            "actors": "二孝廉、黄得功",
-            "location": "赴都途中（未明具体地名）",
-            "space": "路途搏斗后现场",
-            "event": "二孝廉佩服黄得功的勇力，资助并劝他参军。",
-            "identity": "二孝廉为同行举子，黄得功为被劝从军者",
-            "interpretation": "孝廉由受助者转为资助者，空间中的救命之恩转化为从军契机，人物关系由同行变为举荐。",
-            "quote": "孝廉服其勇，资劝从军。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "孝廉服其勇，资劝从军",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 19161,
-            "actors": "黄得功",
-            "location": "未明（从军后战场等）",
-            "space": "军旅功业空间",
-            "event": "黄得功后来屡次建立奇勋，于是腰悬蟒玉，显贵加身。",
-            "identity": "黄得功为屡建奇勋的显贵将领",
-            "interpretation": "从途遇响寇的微时武人到腰蟒玉的显贵，空间由险途转向军功场域，勇力最终兑换为身份地位。",
-            "quote": "后屡建奇勋，遂腰蟒玉。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "屡建奇勋，遂腰蟒玉",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 304,
-      "changes": {
-        "event_types": {
-          "神": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {
-          "七月": 1,
-          "六日": 1
-        },
-        "places": [
-          {
-            "word": "苏州",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 19321,
-            "actors": "百姓、大王",
-            "location": "苏州、大王之庙",
-            "space": "大雪突降的苏州与祈祷的庙宇",
-            "event": "丁亥年七月初六苏州大雪，百姓惊骇，共同到大王庙祈祷。",
-            "identity": "百姓为受灾祈祷者，大王为庙中神祇",
-            "interpretation": "反常天候把百姓从日常空间驱入庙宇，庙成为人神交涉的场所，恐慌促成集体行动。",
-            "quote": "丁亥年七月初六日，苏州大雪。百姓皇骇，共祷诸大王之庙。",
-            "from_space": "苏州",
-            "to_space": "大王之庙",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "苏州为城郭聚落属开放自然和人间；大王庙为公共且仍在人间。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "bab67fecc3779f8f3a7f3a06f90e18eb3888770a2dc1f87ecbc13c018dbd7dea",
-              "from_access": "开放自然",
-              "to_access": "公共",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "城郭聚落",
-              "to_type": "寺观",
-              "quote": "丁亥年七月初六日，苏州大雪。百姓皇骇，共祷诸大王之庙。",
-              "reason": "苏州为城郭聚落属开放自然和人间；大王庙为公共且仍在人间。",
-              "source_hash": "b1df750326f3bc8cf1723e9feef8142645a50322ff679b4d6fd9c26f7dc5ec5c",
-              "chapter_id": 304,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "bab67fecc3779f8f3a7f3a06f90e18eb3888770a2dc1f87ecbc13c018dbd7dea",
-            "unit_end": 19322
-          },
-          {
-            "unit": 19323,
-            "actors": "大王、百姓",
-            "location": "大王之庙",
-            "space": "庙中附身发言的现场",
-            "event": "大王忽然附人发言，质问如今称老爷者都加“大”字，难道以其神为小，消不得一个大字。",
-            "identity": "大王为附身发言的神，百姓为听者",
-            "interpretation": "神借附身直接介入人间称呼秩序，把降雪与称谓尊卑联系起来，庙内空间成为质问与回应的现场。",
-            "quote": "大王忽附人而言曰：「如今称老爷者，皆增一大字；其以我神为小，消不得一大字耶？",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "大王附人而言，仍在庙中公共现场",
-            "classification_binding": "legacy_step_index",
-            "unit_end": 19324
-          },
-          {
-            "unit": 19325,
-            "actors": "百姓、大王",
-            "location": "大王之庙",
-            "space": "齐呼改称的庙中现场",
-            "event": "众人悚然，齐呼“大老爷”，雪立刻停止。",
-            "identity": "百姓为改称者，大王为受称者",
-            "interpretation": "称呼升级即刻换来天候恢复，显示庙中神人关系以谄媚性称谓为交换媒介，空间秩序随称呼改变而恢复。",
-            "quote": "众悚然，齐呼「大老爷」，雪立止。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "众齐呼大老爷，仍在庙中公共现场",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
       "chapter_id": 345,
       "changes": {
         "event_types": {
@@ -19291,254 +18644,6 @@
             "space_review_source": "deepseek",
             "space_review_evidence": "访之果然",
             "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 450,
-      "changes": {
-        "event_types": {
-          "人": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 29411,
-            "actors": "车夫、狼",
-            "location": "坡道（事发地）",
-            "space": "载重登坡途中",
-            "event": "车夫载重物推车上坡，正拼力时，一狼从后方咬其臀部。",
-            "identity": "车夫为推车运货者；狼为突袭的野兽",
-            "interpretation": "坡道与重货把车夫固定在车后，使其无法转身防备，狼得以从背后接近，空间位置直接造成受袭。",
-            "quote": "有车夫载重登坡，方极力时，一狼来啮其臀。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "载重登坡，途中野外",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 29412,
-            "actors": "车夫",
-            "location": "坡道（事发地）",
-            "space": "载重登坡途中",
-            "event": "车夫想松手，但货物会毁坏、身体会被压，只得忍痛继续推车。",
-            "identity": "车夫为推车运货者",
-            "interpretation": "车与货既是负担也是束缚，使车夫在受袭时仍不能脱离原位，人物行动被空间与重物共同限制。",
-            "quote": "欲释手，则货敝身压，忍痛推之。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "忍痛推之，仍在坡途",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 29413,
-            "actors": "车夫、狼",
-            "location": "坡上（事发地）",
-            "space": "车推上坡后",
-            "event": "车推上坡后，狼已咬走一片肉离去。",
-            "identity": "车夫为推车运货者；狼为得手后离开的野兽",
-            "interpretation": "狼不与人正面相争，只利用车夫无法脱身的时间差取肉即走，空间上的前后位置转化为一次短暂而有效的偷袭。",
-            "quote": "既上，则狼已龁片肉而去。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "开放自然",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "既上，坡顶野外",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 29414,
-            "actors": "叙述者",
-            "location": "未明",
-            "space": "评述语境",
-            "event": "叙述者评论狼趁车夫不能出力时偷尝一块肉，既狡黠又可笑。",
-            "identity": "叙述者为篇末评论者",
-            "interpretation": "评语把狼的偷袭解释为利用人受制于重货的时机，使前文的空间困境获得道德与趣味上的收束。",
-            "quote": "乘其不能为力之际，窃尝一脔，亦黠而可笑也。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "待核",
-            "space_realm": "待核",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "叙述者评述，非具体空间",
-            "classification_binding": "legacy_step_index"
-          }
-        ],
-        "people": [],
-        "evidence_review": {}
-      }
-    },
-    {
-      "chapter_id": 479,
-      "changes": {
-        "event_types": {
-          "鬼": 1
-        },
-        "realms_present": [
-          "人间"
-        ],
-        "review_note": "",
-        "segmentation_note": "",
-        "lexical_reviews": {},
-        "years": {},
-        "places": [
-          {
-            "word": "长山",
-            "mentions": 0
-          }
-        ],
-        "space_words": [],
-        "narrative_events": [
-          {
-            "unit": 30941,
-            "actors": "李檀斯、媪",
-            "location": "村中（日常空间）",
-            "space": "村中",
-            "event": "村中走无常的媪对人说，今夜要与人抬李檀斯投生到淄川柏家庄一户新门中，身躯重赘几乎被压死。",
-            "identity": "李檀斯为国学生；媪为走无常者",
-            "interpretation": "媪以阴间差役身份预告李的转生去向，将村中日常空间与淄川柏家庄的投生空间预先连接，为后文死亡与生女埋下伏笔。",
-            "quote": "其村中有媪走无常，谓人曰：「今夜与一人舁檀老投生淄川柏家庄一新门中，身躯重赘，几被压死。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "mention",
-            "space_access": "公共",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "村中媪走无常，谓人曰",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30941,
-            "actors": "媪、李檀斯",
-            "location": "",
-            "space": "村中→淄川柏家庄新门",
-            "event": "媪称当夜舁李檀斯投生至淄川柏家庄一新门中",
-            "identity": "",
-            "interpretation": "舁檀老投生淄川柏家庄一新门中",
-            "quote": "今夜与一人舁檀老投生淄川柏家庄一新门中",
-            "from_space": "村中",
-            "to_space": "淄川柏家庄新门",
-            "transition_kind": "mention",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "村中为开放聚落环境，投生新门为家庭居所，均属人间。",
-            "classification_binding": "source_hash_and_step_id",
-            "ai_path_review": "deepseek",
-            "endpoint_review": {
-              "id": "7aa90db4a82be37cfce9421ae81d93c839b07e79c250d945eddb90956cf80d75",
-              "from_access": "开放自然",
-              "to_access": "私人",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "自然山野",
-              "to_type": "家宅",
-              "quote": "其村中有媪走无常，谓人曰：「今夜与一人舁檀老投生淄川柏家庄一新门中，身躯重赘，几被压死。」",
-              "reason": "村中为开放聚落环境，投生新门为家庭居所，均属人间。",
-              "source_hash": "27679edad2f06e64755abdd45913cf49db94a1c0d15981038eca926917dfcbb2",
-              "chapter_id": 479,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "7aa90db4a82be37cfce9421ae81d93c839b07e79c250d945eddb90956cf80d75"
-          },
-          {
-            "unit": 30942,
-            "actors": "李檀斯、客",
-            "location": "饮酒处（同场）",
-            "space": "饮酒处",
-            "event": "当时李檀斯正与客人欢饮，众人把媪的话都当作虚妄之言。",
-            "identity": "李檀斯为国学生，正与客宴饮",
-            "interpretation": "宴饮场景显示李尚在生，众人不信媪言，形成日常现实与阴间预告的对照，强化后文突转。",
-            "quote": "时李方与客欢饮，悉以媪言为妄。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "李方与客欢饮",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30943,
-            "actors": "李檀斯",
-            "location": "未明（当夜居处）",
-            "space": "未明",
-            "event": "到了夜里，李檀斯没有生病就死了。",
-            "identity": "李檀斯为国学生，当夜卒",
-            "interpretation": "无疾而卒与媪预告的投生时间吻合，使前文被视为妄言的话获得验证，空间上由村中酒席转入死亡。",
-            "quote": "至夜，无疾而卒。",
-            "from_space": "",
-            "to_space": "",
-            "temporal_order": "顺叙",
-            "transition_kind": "plot",
-            "space_access": "待核",
-            "space_realm": "待核",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "至夜，无疾而卒",
-            "classification_binding": "legacy_step_index"
-          },
-          {
-            "unit": 30944,
-            "actors": "问者、柏家庄其家",
-            "location": "淄川柏家庄（投生地点）",
-            "space": "柏家庄新门",
-            "event": "天亮后，有人按媪所说前往柏家庄询问，那户人家果然在夜里生了一个女儿。",
-            "identity": "问者为村中往问之人；其家为柏家庄新生女之家",
-            "interpretation": "天明往问将长山与淄川柏家庄两地空间并置，生女与李卒同时发生，完成投生叙事的空间印证。",
-            "quote": "天明，如所言往问之，则其家夜生女矣。",
-            "from_space": "长山",
-            "to_space": "淄川柏家庄",
-            "temporal_order": "顺叙",
-            "transition_kind": "movement",
-            "space_access": "私人",
-            "space_realm": "人间",
-            "space_review_source": "deepseek",
-            "space_review_evidence": "长山至柏家庄为陆路移动，那户人家为私人住宅，均人间。",
-            "classification_binding": "source_hash_and_step_id",
-            "endpoint_review": {
-              "id": "dea0026ecbd4a5c561c02c9344b3cffd8e1b8f9f5582e36f871d48dc940150b2",
-              "from_access": "开放自然",
-              "to_access": "私人",
-              "from_realm": "人间",
-              "to_realm": "人间",
-              "from_type": "自然山野",
-              "to_type": "家宅",
-              "quote": "天明，如所言往问之，则其家夜生女矣。",
-              "reason": "长山至柏家庄为陆路移动，那户人家为私人住宅，均人间。",
-              "source_hash": "27679edad2f06e64755abdd45913cf49db94a1c0d15981038eca926917dfcbb2",
-              "chapter_id": 479,
-              "reviewer": "deepseek-flash"
-            },
-            "step_id": "dea0026ecbd4a5c561c02c9344b3cffd8e1b8f9f5582e36f871d48dc940150b2"
           }
         ],
         "people": [],
@@ -20151,42 +19256,937 @@
       }
     },
     {
-      "chapter_id": 264,
+      "chapter_id": 411,
       "changes": {
-        "event_types": {},
+        "event_types": {
+          "妖": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "马子才 / ， / 顺天人 / 。\n世 / 好 / 菊 / ， / 至才尤甚 / ， / 闻 / 有 / 佳种 / ， / 必 / 购 / 之 / ， / 千 / 里 / 不 / 惮 / 。\n一 / 日 / ， / 有 / 金陵 / 客寓 / 其 / 家 / ， / 自 / 言 / 其中 / 表亲 / 有 / 一二 / 种 / ， / 为 / 北方 / 所 / 无 / 。\n马欣动 / ， / 即刻 / 治装 / ， / 从 / 客 / 至 / 金陵 / 。\n客 / 多方 / 为 / 之 / 营求 / ， / 得 / 两 / 芽 / ， / 裹藏 / 如 / 宝 / 。\n归 / 至 / 中途 / ， / 遇 / 一 / 少年 / ， / 跨 / 蹇 / 从 / 油碧车 / ， / 丰姿 / 洒 / 落 / 。\n渐近 / 与 / 语 / 。\n少年自言 / ：「 / 陶姓 / 。\n」 / 谈言骚雅 / 。\n因 / 问 / 马 / 所 / 自 / 来 / ， / 实 / 告 / 之 / 。\n少年 / 曰 / ：「 / 种 / 无 / 不 / 佳 / ， / 培溉 / 在 / 人 / 。\n」 / 因 / 与 / 论艺菊 / 之 / 法 / 。\n马大悦 / ， / 问 / ：「 / 将 / 何 / 往 / ？\n」 / 答 / 云 / ：「 / 姊 / 厌 / 金陵 / ， / 欲 / 卜居 / 于 / 河朔耳 / 。\n」 / 马 / 欣然 / 曰 / ：「 / 仆 / 虽 / 固贫 / ， / 茅庐 / 可以 / 寄榻 / 。\n不 / 嫌 / 荒陋 / ， / 无 / 烦 / 他 / 适 / 。\n」 / 陶 / 趋车 / 前 / ， / 向 / 姊咨禀 / 。\n车中人 / 推帘语 / ， / 乃 / 二十 / 许 / 绝世美人 / 也 / 。\n顾弟 / 言 / ：「 / 屋 / 不 / 厌卑 / ， / 而 / 院 / 宜 / 得 / 广 / 。\n」 / 马代诺之 / ， / 遂 / 与 / 俱 / 归 / 。\n第南 / 有 / 荒圃 / ， / 仅 / 小室 / 三四 / 椽 / ， / 陶喜 / ， / 居 / 之 / 。\n日 / 过 / 北院 / ， / 为 / 马 / 治 / 菊 / 。\n菊 / 已 / 枯 / ， / 拔根 / 再 / 植 / 之 / ， / 无 / 不 / 活 / 。\n然 / 家 / 清贫 / ， / 陶日 / 与 / 马 / 共 / 食 / 饮 / ， / 而 / 察 / 其 / 家 / 似 / 不 / 举 / 火 / 。\n马妻吕 / ， / 亦 / 爱 / 陶姊 / ， / 不 / 时 / 以 / 升斗 / 餽恤 / 之 / 。\n陶姊 / 小字 / 黄英 / ， / 雅 / 善 / 谈 / ， / 辄 / 过 / 吕 / 所 / ， / 与 / 共纫绩 / 。\n陶 / 一 / 日 / 谓 / 马 / 曰 / ：「 / 君 / 家 / 固 / 不 / 丰 / ， / 仆日 / 以 / 口腹累知交 / ， / 胡可 / 为 / 常 / 。\n为 / 今计 / ， / 卖 / 菊 / 亦 / 足 / 谋生 / 。\n」 / 马素 / 介 / ， / 闻陶言 / ， / 甚鄙之 / ， / 曰 / ：「 / 仆 / 以 / 君 / 风流 / 高士 / ， / 当能 / 安贫 / ；\n今 / 作 / 是 / 论 / ， / 则 / 以 / 东篱 / 为 / 市井 / ， / 有 / 辱 / 黄花 / 矣 / 。\n」 / 陶笑曰 / ：「 / 自食其力 / 不 / 为 / 贪 / ， / 贩 / 花 / 为 / 业 / 不 / 为 / 俗 / 。\n人 / 固 / 不 / 可 / 苟 / 求 / 富 / ， / 然 / 亦 / 不 / 必务 / 求贫 / 也 / 。\n」 / 马 / 不 / 语 / ， / 陶 / 起 / 而 / 出 / 。\n自 / 是 / ， / 马 / 所 / 弃 / 残 / 枝 / 劣种 / ， / 陶悉 / 掇 / 拾 / 而 / 去 / 。\n由此 / 不 / 复 / 就 / 马寝食 / ， / 招之始一至 / 。\n未 / 几 / ， / 菊 / 将 / 开 / ， / 闻 / 其 / 门嚣 / 喧 / 如 / 市 / 。\n怪 / 之 / ， / 过而窥焉 / ， / 见市人 / 买 / 花 / 者 / ， / 车 / 载 / 肩负 / ， / 道 / 相 / 属 / 也 / 。\n其 / 花皆 / 异种 / ， / 目所未睹 / 。\n心厌其贪 / ， / 欲 / 与 / 绝 / ；\n而 / 又 / 恨 / 其 / 私秘 / 佳本 / ， / 遂款其扉 / ， / 将 / 就 / 消让 / 。\n陶出 / ， / 握手 / 曳入 / 。\n见 / 荒庭 / 半 / 亩 / 皆 / 菊 / 畦 / ， / 数椽 / 之外 / 无 / 旷土 / 。\n\ud84c / \udcc1去 / 者 / ， / 则折别枝插补 / 之；\n其 / 蓓蕾 / 在 / 畦者 / ， / 罔 / 不 / 佳 / 妙 / ： / 而 / 细 / 认 / 之 / ， / 皆 / 向 / 所 / 拔弃 / 也 / 。\n陶入 / 屋 / ， / 出 / 酒馔 / ， / 设 / 席畦 / 侧 / ， / 曰 / ：「 / 仆 / 贫 / 不 / 能 / 守 / 清 / 戒 / ， / 连 / 朝幸 / 得 / 微赀 / ， / 颇 / 足 / 供 / 醉 / 。\n」 / 少 / 间 / ， / 房 / 中 / 呼 / 「 / 三郎 / 」， / 陶诺 / 而 / 去 / 。\n俄 / 献 / 佳肴 / ， / 烹饪 / 良精 / 。\n因 / 问 / ：「 / 贵 / 姊胡 / 以 / 不 / 字 / ？\n」 / 答 / 云 / ：「 / 时 / 未 / 至 / 。\n」 / 问 / ：「 / 何时 / ？\n」 / 曰 / ：「 / 四十三月 / 。\n」 / 又诘 / ：「 / 何 / 说 / ？\n」 / 但 / 笑 / 不 / 言 / ， / 尽 / 欢始 / 散 / 。\n过 / 宿 / ， / 又 / 诣 / 之 / ， / 新插者 / 已 / 盈 / 尺 / 矣 / 。\n大 / 奇 / 之 / ， / 苦求 / 其 / 术 / 。\n陶 / 曰 / ：「 / 此 / 固 / 非 / 可 / 言传 / ；\n且君 / 不 / 以 / 谋生 / ， / 焉 / 用 / 此 / ？\n」 / 又 / 数 / 日 / ， / 门庭略寂 / ， / 陶乃 / 以 / 蒲席 / 包 / 菊 / ， / 捆载 / 数 / 车 / 而 / 去 / 。\n逾岁 / ， / 春 / 将 / 半 / ， / 始 / 载 / 南 / 中 / 异卉 / 而 / 归 / ， / 于都 / 中 / 设 / 花肆 / ， / 十日 / 尽 / 售 / ， / 复归 / 艺菊 / 。\n问 / 之 / 去年 / 买 / 花 / 者 / ， / 留 / 其 / 根 / ， / 次年 / 尽 / 变 / 而 / 劣 / ， / 乃 / 复 / 购 / 于 / 陶 / 。\n陶由 / 此日 / 富 / ： / 一 / 年 / 增舍 / ， / 二 / 年 / 起 / 夏屋 / 。\n兴作 / 从 / 心 / ， / 更 / 不 / 谋 / 诸 / 主人 / 。\n渐 / 而 / 旧日 / 花畦 / ， / 尽 / 为 / 廊舍 / 。\n更 / 于 / 墙 / 外 / 买 / 田 / 一 / 区 / ， / 筑墉 / 四周 / ， / 悉 / 种 / 菊 / 。\n至 / 秋 / ， / 载 / 花 / 去 / ， / 春 / 尽 / 不 / 归 / 。\n而 / 马妻病 / 卒 / 。\n意属 / 黄英 / ， / 微 / 使 / 人 / 风示之 / 。\n黄英 / 微笑 / ， / 意 / 似 / 允许 / ， / 惟 / 专候 / 陶归 / 而已 / 。\n年余 / ， / 陶 / 竟 / 不 / 至 / 。\n黄英 / 课仆 / 种 / 菊 / ， / 一 / 如 / 陶 / 。\n得 / 金益合 / 商贾 / ， / 村 / 外 / 治 / 膏田 / 二十 / 顷 / ， / 甲 / 第益 / 壮 / 。\n忽 / 有 / 客 / 自 / 东粤 / 来 / ， / 寄 / 陶生函信 / ， / 发 / 之 / ， / 则 / 嘱姊归马 / 。\n考 / 其 / 寄 / 书 / 之 / 日 / ， / 即 / 妻 / 死 / 之 / 日 / ；\n回忆 / 园中之饮 / ， / 适四十三月 / 也 / ， / 大奇之 / 。\n以 / 书 / 示英 / ， / 请问 / 「 / 致 / 聘 / 何 / 所 / 」。\n英辞 / 不 / 受 / 采 / 。\n又 / 以 / 故居 / 陋 / ， / 欲 / 使 / 就 / 南 / 第居 / ， / 若 / 赘焉 / 。\n马 / 不 / 可 / ， / 择日行亲 / 迎 / 礼 / 。\n黄英 / 既 / 适 / 马 / ， / 于间壁 / 开扉 / 通南第 / ， / 日过课其仆 / 。\n马耻 / 以 / 妻 / 富 / ， / 恒 / 嘱 / 黄英 / 作 / 南北籍 / ， / 以防 / 淆乱 / 。\n而 / 家 / 所 / 须 / ， / 黄英辄 / 取 / 诸 / 南 / 第 / 。\n不 / 半 / 岁 / ， / 家 / 中触类 / 皆 / 陶 / 家 / 物 / 。\n马 / 立遣人 / 一一 / 赍还 / 之 / ， / 戒勿 / 复取 / 。\n未 / 浃 / 旬 / ， / 又 / 杂 / 之 / 。\n凡数 / 更 / ， / 马 / 不 / 胜 / 烦 / 。\n黄英 / 笑 / 曰 / ：「 / 陈仲子 / 毋乃劳 / 乎 / ？\n」 / 马慙 / ， / 不 / 复稽 / ， / 一切 / 听 / 诸 / 黄 / 英 / 。\n鸠工 / 庀料 / ， / 土木 / 大作 / ， / 马 / 不 / 能 / 禁 / 。\n经 / 数 / 月 / ， / 楼舍 / 连 / 互 / ， / 两 / 第 / 竟合 / 为 / 一 / ， / 不 / 分 / 疆界 / 矣 / 。\n然遵马教 / ， / 闭 / 门 / 不 / 复 / 业 / 菊 / ， / 而 / 享用 / 过于 / 世 / 家 / 。\n马 / 不 / 自安 / ， / 曰 / ：「 / 仆 / 三十 / 年 / 清德 / ， / 为 / 卿 / 所 / 累 / 。\n今 / 视息 / 人间 / ， / 徒 / 依 / 裙 / 带 / 而 / 食 / ， / 真 / 无 / 一 / 毫丈 / 夫气 / 矣 / 。\n人 / 皆 / 祝 / 富 / ， / 我 / 但 / 祝 / 穷 / 耳 / ！\n」 / 黄英 / 曰 / ：「 / 妾 / 非贪鄙 / ；\n但 / 不 / 少 / 致 / 丰盈 / ， / 遂 / 令 / 千 / 载 / 下 / 人 / ， / 谓 / 渊 / 明贫贱骨 / ， / 百 / 世 / 不 / 能 / 发迹 / ， / 故 / 聊 / 为 / 我 / 家 / 彭泽 / 解嘲 / 耳 / 。\n然贫者 / 愿 / 富 / ， / 为难 / ；\n富者 / 求贫 / ， / 固 / 亦 / 甚 / 易 / 。\n床头金 / 任 / 君 / 挥 / 去 / 之 / ， / 妾 / 不 / 靳 / 也 / 。\n」 / 马 / 曰 / ：「 / 捐 / 他人 / 之 / 金 / ， / 抑亦 / 良 / 丑 / 。\n」 / 英曰 / ：「 / 君 / 不 / 愿 / 富 / ， / 妾 / 亦 / 不 / 能 / 贫 / 也 / 。\n无已 / ， / 析 / 君 / 居 / ： / 清者 / 自清 / ， / 浊者 / 自浊 / ， / 何害 / ？\n」 / 乃 / 于 / 园中 / 筑 / 茅茨 / ， / 择美婢往侍马 / 。\n马安之 / 。\n然过 / 数日 / ， / 苦念 / 黄英 / 。\n招 / 之 / ， / 不 / 肯 / 至 / ；\n不 / 得已 / ， / 反就之 / 。\n隔宿辄至 / ， / 以为常 / 。\n黄英 / 笑 / 曰 / ：「 / 东食 / 西 / 宿 / ， / 廉者 / 当 / 不 / 如 / 是 / 。\n」 / 马 / 亦 / 自笑 / ， / 无 / 以 / 对 / ， / 遂 / 复合 / 居如 / 初 / 。\n会 / 马 / 以 / 事 / 客 / 金陵 / ， / 适逢 / 菊 / 秋 / 。\n早 / 过 / 花肆 / ， / 见 / 肆中 / 盆列甚烦 / ， / 款朵 / 佳 / 胜 / ， / 心 / 动 / ， / 疑类 / 陶制 / 。\n少 / 间 / ， / 主人 / 出 / ， / 果陶 / 也 / 。\n喜极 / ， / 具道 / 契阔 / ， / 遂 / 止宿 / 焉 / 。\n要 / 之 / 归 / ， / 陶 / 曰 / ：「 / 金陵 / ， / 吾 / 故土 / ， / 将婚 / 于是 / 。\n积 / 有 / 薄赀 / ， / 烦 / 寄 / 吾 / 姊 / 。\n我 / 岁杪当 / 暂 / 去 / 。\n」 / 马 / 不 / 听 / ， / 请 / 之 / 益 / 苦 / 。\n且 / 曰 / ：「 / 家 / 幸 / 充盈 / ， / 但 / 可 / 坐 / 享 / ， / 无须 / 复贾 / 。\n」 / 坐肆 / 中 / ， / 使 / 仆代 / 论 / 价 / ， / 廉 / 其 / 直 / ， / 数日 / 尽 / 售 / 。\n逼促 / 囊装 / ， / 赁舟遂北 / 。\n入门 / ， / 则 / 姊已除舍 / ， / 床榻 / 裀褥 / 皆 / 设 / ， / 若 / 预知 / 弟 / 也 / 归 / 者 / 。\n陶自归 / ， / 解装 / 课役 / ， / 大修 / 亭园 / ， / 惟日 / 与 / 马共 / 棋酒 / ， / 更 / 不 / 复结一客 / 。\n为 / 之 / 择婚 / ， / 辞 / 不 / 愿 / 。\n姊遣 / 两 / 婢 / 侍 / 其 / 寝处 / ， / 居 / 三四 / 年 / ， / 生 / 一 / 女 / 。\n陶饮素豪 / ， / 从 / 不 / 见 / 其 / 沉醉 / 。\n有 / 友人 / 曾 / 生 / ， / 量 / 亦 / 无 / 对 / 。\n适过马 / ， / 马 / 使 / 与 / 陶相 / 较 / 饮 / 。\n二 / 人 / 纵饮 / 甚 / 欢 / ， / 相得恨晚 / 。\n自辰以迄四漏 / ， / 计 / 各 / 尽 / 百 / 壶 / 。\n曾 / 烂醉如泥 / ， / 沉睡 / 座间 / 。\n陶起归寝 / ， / 出门 / 践 / 菊 / 畦 / ， / 玉山倾倒 / ， / 委衣于侧 / ， / 即地化 / 为 / 菊 / ， / 高 / 如 / 人 / ；\n花 / 十 / 余 / 朵 / ， / 皆 / 大于 / 拳 / 。\n马骇绝 / ， / 告 / 黄英 / 。\n英急往 / ， / 拔置 / 地上 / ， / 曰 / ：「 / 胡 / 醉 / 至 / 此 / ！\n」 / 覆 / 以 / 衣 / ， / 要 / 马 / 俱 / 去 / ， / 戒勿 / 视 / 。\n既 / 明而往 / ， / 则 / 陶卧 / 畦边 / 。\n马乃悟 / 姊弟菊 / 精 / 也 / ， / 益 / 爱 / 敬 / 之 / 。\n而 / 陶自 / 露 / 迹 / ， / 饮益放 / ， / 恒自折柬 / 招曾 / ， / 因 / 与 / 莫逆 / 。\n值 / 花 / 朝 / ， / 曾 / 来 / 造访 / ， / 以 / 两 / 仆 / 舁药 / 浸 / 白酒 / 一 / 坛 / ， / 约与共尽 / 。\n坛将竭 / ， / 二 / 人 / 犹 / 未 / 甚 / 醉 / 。\n马潜 / 以 / 一 / 瓻 / 续 / 入 / 之 / ， / 二 / 人 / 又 / 尽 / 之 / 。\n曾 / 醉 / 已 / 惫 / ， / 诸仆 / 负 / 之 / 以 / 去 / 。\n陶卧地 / ， / 又 / 化为 / 菊 / 。\n马见惯 / 不 / 惊 / ， / 如法 / 拔 / 之 / ， / 守 / 其 / 旁 / 以 / 观 / 其 / 变 / 。\n久 / 之 / ， / 叶益 / 憔悴 / 。\n大惧 / ， / 始 / 告 / 黄英 / 。\n英闻骇曰 / ：「 / 杀 / 吾 / 弟 / 矣 / ！\n」 / 奔视 / 之 / ， / 根株 / 已 / 枯 / 。\n痛绝 / ， / 掐 / 其 / 梗 / ， / 埋 / 盆 / 中 / ， / 携入 / 闺中 / ， / 日 / 灌溉 / 之 / 。\n马悔恨欲绝 / ， / 甚怨 / 曾 / 。\n越 / 数 / 日 / ， / 闻 / 曾 / 已 / 醉 / 死 / 矣 / 。\n盆 / 中 / 花渐萌 / ， / 九月 / 既 / 开 / ， / 短干 / 粉朵 / ， / 嗅 / 之 / 有 / 酒 / 香 / ， / 名 / 之 / 「 / 醉 / 陶 / 」， / 浇 / 以 / 酒 / 则 / 茂 / 。\n后 / 女 / 长成 / ， / 嫁 / 于 / 世 / 家 / 。\n黄英 / 终 / 老 / 、 / 亦 / 无 / 他 / 异 / 。",
+        "lexical_reviews": {},
+        "years": {
+          "一日": 2,
+          "四十三月": 2,
+          "十日": 1,
+          "一年": 1,
+          "二年": 1,
+          "三十年": 1,
+          "千载": 1,
+          "三四年": 1,
+          "九月": 1
+        },
+        "places": [
+          {
+            "word": "金陵",
+            "mentions": 0
+          },
+          {
+            "word": "顺天",
+            "mentions": 0
+          },
+          {
+            "word": "南中",
+            "mentions": 0
+          }
+        ],
+        "space_words": [
+          "荒圃",
+          "菊畦",
+          "房中",
+          "门庭",
+          "楼舍",
+          "茅茨",
+          "亭园",
+          "闺中"
+        ],
+        "narrative_events": [
+          {
+            "unit": 26599,
+            "actors": "马子才、金陵客",
+            "location": "顺天：马籍贯；金陵：求菊目的地",
+            "space": "家 → 旅途",
+            "event": "听客介绍佳种，随客赴金陵",
+            "identity": "马子才：人",
+            "interpretation": "求菊使人物离家并进入跨地域交往；籍贯不能自动确定后来宅第的精确地址。",
+            "quote": "马欣动，即刻治装，从客至金陵。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26616,
+            "actors": "陶生、黄英、马子才",
+            "location": "马第南侧；陶称姊欲居河朔，但确切城市未明",
+            "space": "荒圃／小室",
+            "event": "马与陶姊弟俱归，陶选择南侧荒圃小室居住",
+            "identity": "以人形出场；菊精身份尚未向马揭露",
+            "interpretation": "黄英先要求宽院（单位26614），可与荒圃选择合读，研究居住需求与种菊的关联。",
+            "quote": "第南有荒圃，仅小室三四椽，陶喜，居之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26637,
+            "actors": "陶生、马子才",
+            "location": "陶生居所庭中",
+            "space": "荒庭／菊畦",
+            "event": "马因售花而来，看到弃种已变为佳菊",
+            "identity": "陶生：菊精，仍以人形活动；马尚未确认其本体",
+            "interpretation": "庭院同时是种植与经营空间；“市井”也是马的价值判断，不能直接当作一处地名。",
+            "quote": "见荒庭半亩皆菊畦，数椽之外无旷土。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26674,
+            "actors": "黄英、马子才",
+            "location": "南第与马家之间",
+            "space": "间壁／扉",
+            "event": "婚后开门连通南第，黄英往返管理仆役",
+            "identity": "人形婚姻生活；菊精身份尚未向马明确揭露",
+            "interpretation": "门把分隔的居所变为可往返空间；与单位26675的南北籍合读，可探究财富边界。",
+            "quote": "于间壁开扉通南第，日过课其仆。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26684,
+            "actors": "黄英、马子才",
+            "location": "南北两第",
+            "space": "楼舍／两第",
+            "event": "营建之后两第合一，不再分疆界",
+            "identity": "婚姻关系持续，马对自身清德与妻富仍有焦虑",
+            "interpretation": "空间合并并不等于观念冲突立即结束；后续仍有求贫与分居情节。",
+            "quote": "楼舍连互，两第竟合为一，不分疆界矣。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26697,
+            "actors": "马子才、黄英",
+            "location": "园中",
+            "space": "茅茨",
+            "event": "黄英为马另筑简陋居所，以回应其求贫",
+            "identity": "人形相处；此处是居住安排改变，不是跨界",
+            "interpretation": "贫与富被安排成可分居的空间实验；单位26704的复合居显示分隔未能持续。",
+            "quote": "乃于园中筑茅茨，择美婢往侍马。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26726,
+            "actors": "陶生、马子才、黄英",
+            "location": "宅第菊畦；确切地名未明",
+            "space": "门外／菊畦",
+            "event": "陶醉后出门倒于菊畦，化为菊",
+            "identity": "人形 → 菊形；马后于单位26732悟其为菊精",
+            "interpretation": "门与菊畦连接室内交饮和本体显露，但不能据此推断每次出门都会变形。",
+            "quote": "出门践菊畦，玉山倾倒，委衣于侧，即地化为菊",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          },
+          {
+            "unit": 26744,
+            "actors": "黄英、陶生",
+            "location": "黄英居所内部",
+            "space": "盆／闺中",
+            "event": "陶再次化菊被拔而枯，黄英取梗埋盆并携入闺中灌溉",
+            "identity": "陶的菊体死亡、花梗续养；不能标为已经恢复人形",
+            "interpretation": "公共交饮场景转为内部照护空间；后续花名“醉陶”保存人物痕迹，但没有明说陶复为人。",
+            "quote": "掐其梗，埋盆中，携入闺中，日灌溉之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "",
+            "transition_kind": "mention"
+          }
+        ],
+        "people": [
+          {
+            "id": "c411-edited-p0",
+            "word": "黄英",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "妖": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p1",
+            "word": "陶",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p2",
+            "word": "马子才",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p3",
+            "word": "马妻吕",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p4",
+            "word": "陈仲子",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p5",
+            "word": "马",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          },
+          {
+            "id": "c411-edited-p6",
+            "word": "胡",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "妖": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 450,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
         "realms_present": [
           "人间"
         ],
         "review_note": "",
         "segmentation_note": "",
         "lexical_reviews": {},
-        "years": {
-          "顺治乙未冬夜": 1
-        },
+        "years": {},
         "places": [],
-        "space_words": [
-          "天上"
-        ],
+        "space_words": [],
         "narrative_events": [
           {
-            "unit": 16939,
-            "actors": "无具体人物",
-            "location": "天上",
-            "space": "冬夜天空",
-            "event": "顺治乙未年冬夜，天上出现如火般赤红的文字，其文为“白苕代靖否复议朝冶驰”。",
-            "identity": "无",
-            "interpretation": "异象以夜空为呈现空间，文字如火悬于天上，形成天降谶语式场景；因无人物介入，空间机制仅是天与人间观察者的潜在对照。",
-            "quote": "顺治乙未冬夜，天上赤字如火。其文云：「白苕代靖否复议朝冶驰。",
+            "unit": 29411,
+            "actors": "车夫、狼",
+            "location": "坡道（事发地）",
+            "space": "载重登坡途中",
+            "event": "车夫载重物推车上坡，正拼力时，一狼从后方咬其臀部。",
+            "identity": "车夫为推车运货者；狼为突袭的野兽",
+            "interpretation": "坡道与重货把车夫固定在车后，使其无法转身防备，狼得以从背后接近，空间位置直接造成受袭。",
+            "quote": "有车夫载重登坡，方极力时，一狼来啮其臀。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "载重登坡，途中野外",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 29412,
+            "actors": "车夫",
+            "location": "坡道（事发地）",
+            "space": "载重登坡途中",
+            "event": "车夫想松手，但货物会毁坏、身体会被压，只得忍痛继续推车。",
+            "identity": "车夫为推车运货者",
+            "interpretation": "车与货既是负担也是束缚，使车夫在受袭时仍不能脱离原位，人物行动被空间与重物共同限制。",
+            "quote": "欲释手，则货敝身压，忍痛推之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "忍痛推之，仍在坡途",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 29413,
+            "actors": "车夫、狼",
+            "location": "坡上（事发地）",
+            "space": "车推上坡后",
+            "event": "车推上坡后，狼已咬走一片肉离去。",
+            "identity": "车夫为推车运货者；狼为得手后离开的野兽",
+            "interpretation": "狼不与人正面相争，只利用车夫无法脱身的时间差取肉即走，空间上的前后位置转化为一次短暂而有效的偷袭。",
+            "quote": "既上，则狼已龁片肉而去。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "开放自然",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "既上，坡顶野外",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 29414,
+            "actors": "叙述者",
+            "location": "未明",
+            "space": "评述语境",
+            "event": "叙述者评论狼趁车夫不能出力时偷尝一块肉，既狡黠又可笑。",
+            "identity": "叙述者为篇末评论者",
+            "interpretation": "评语把狼的偷袭解释为利用人受制于重货的时机，使前文的空间困境获得道德与趣味上的收束。",
+            "quote": "乘其不能为力之际，窃尝一脔，亦黠而可笑也。",
             "from_space": "",
             "to_space": "",
             "temporal_order": "顺叙",
             "transition_kind": "mention",
-            "space_access": "开放自然",
+            "space_access": "待核",
+            "space_realm": "待核",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "叙述者评述，非具体空间",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 461,
+      "changes": {
+        "event_types": {},
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "淄邑/北村 / 井涸 / ， / 村人 / 甲 / 、 / 乙缒入淘之 / 。\n掘尺 / 余 / ， / 得 / 髑髅 / 。\n误 / 破 / 之 / ， / 口 / 含 / 黄金 / ， / 喜纳 / 腰橐 / 。\n复掘 / ， / 又 / 得 / 髑 / 髅 / 六七 / 枚 / 。\n悉破之 / ， / 无 / 金 / 。\n其 / 旁 / 有 / 磁瓶 / 二 / 、 / 铜器 / 一 / 。\n器 / 大 / 可 / 合抱 / ， / 重 / 数十 / 斤 / ， / 侧 / 有 / 双环 / ， / 不 / 知 / 何用 / ， / 斑驳陆离 / 。\n瓶 / 亦 / 古 / ， / 非近款 / 。\n既 / 出 / 井 / ， / 甲 / 、 / 乙 / 皆 / 死 / 。\n移 / 时 / 乙苏 / ， / 曰 / ：「 / 我 / 乃 / 汉人 / 。\n遭 / 新莽 / 之 / 乱 / ， / 全 / 家 / 投 / 井 / 中 / 。\n适有少金 / ， / 因 / 内口 / 中 / ， / 实非 / 含 / 敛 / 之 / 物 / ， / 人人 / 都 / 有 / 也 / 。\n奈何 / 遍碎头颅 / ？\n情 / 殊 / 可 / 恨 / ！\n」 / 众 / 香楮 / 共 / 祝 / 之 / ， / 许 / 为 / 殡葬 / ， / 乙 / 乃愈 / ；\n甲 / 则 / 不能 / 复生 / 矣 / 。\n颜镇 / 孙生闻其异 / ， / 购铜器 / 而 / 去 / 。\n袁孝廉 / 宣四 / 得 / 一 / 瓶 / ， / 可 / 验 / 阴 / 晴 / ： / 见 / 有 / 一点 / 润处 / ， / 初 / 如 / 粟米 / ， / 渐 / 阔渐 / 满 / ， / 未 / 几 / 雨 / 至 / ；\n润退 / ， / 则 / 云开天霁 / 。\n其一 / 入 / 张秀才 / 家 / ， / 可 / 志 / 朔望 / ： / 朔 / 则 / 黑 / 点 / 起 / 如 / 豆 / ， / 与日俱长 / ；\n望 / 则 / 一 / 瓶 / 遍 / 满 / ；\n既 / 望 / ， / 又 / 以次而退 / ， / 至晦 / 则 / 复 / 其 / 初 / 。\n以 / 埋 / 土 / 中 / 久 / ， / 瓶口 / 有 / 小石 / 黏口 / 上 / ， / 刷剔 / 不 / 可 / 下 / 。\n敲 / 去 / 之 / ， / 石落 / 而 / 口微缺 / ， / 亦 / 一 / 憾 / 事 / 。\n浸花 / 其中 / ， / 落花结实 / ， / 与 / 在 / 树者 / 无异 / 云 / 。",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [
+          {
+            "word": "淄邑北村",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 29698,
+            "actors": "村人甲、乙",
+            "location": "淄邑北村井",
+            "space": "涸井",
+            "event": "淄邑北村井涸，村人甲乙缒入淘井，掘尺余得髑髅，误破之，口含黄金，喜纳腰橐。",
+            "identity": "淘井村人",
+            "interpretation": "井作为地下空间被打开，掘井行为触发与亡者遗骸的接触，黄金成为后续冲突的诱因。",
+            "quote": "淄邑北村井涸，村人甲、乙缒入淘之。掘尺余，得髑髅。误破之，口含黄金，喜纳腰橐。",
+            "from_space": "井外",
+            "to_space": "井中",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "movement",
+            "unit_end": 29700
+          },
+          {
+            "unit": 29701,
+            "actors": "村人甲、乙",
+            "location": "淄邑北村井",
+            "space": "涸井",
+            "event": "复掘又得髑髅六七枚，悉破之无金；旁有磁瓶二、铜器一，器大可合抱，重数十斤，侧有双环，斑驳陆离，瓶亦古。",
+            "identity": "淘井村人",
+            "interpretation": "连续破颅求金而不得，显示贪念驱动下的空间破坏；古瓶铜器作为井中异物的核心被带出。",
+            "quote": "复掘，又得髑髅六七枚。悉破之，无金。其旁有磁瓶二、铜器一。器大可合抱，重数十斤，侧有双环，不知何用，斑驳陆离。瓶亦古，非近款。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "plot",
+            "unit_end": 29705
+          },
+          {
+            "unit": 29706,
+            "actors": "甲、乙",
+            "location": "淄邑北村井外",
+            "space": "井外",
+            "event": "既出井，甲、乙皆死；移时乙苏，自称汉人，遭新莽之乱全家投井，口含少金非含敛之物，怒众人遍碎头颅。",
+            "identity": "出井后死者/借尸还魂者",
+            "interpretation": "出井即死将空间越界与惩戒相连；乙复苏并借亡者口吻控诉，使井中遗骸获得叙事主体位置。",
+            "quote": "既出井，甲、乙皆死。移时乙苏，曰：「我乃汉人。遭新莽之乱，全家投井中。适有少金，因内口中，实非含敛之物，人人都有也。奈何遍碎头颅？情殊可恨！」",
+            "from_space": "井中",
+            "to_space": "井外",
+            "temporal_order": "顺叙；乙所述新莽之乱为回述",
+            "space_function": "",
+            "transition_kind": "movement",
+            "unit_end": 29712
+          },
+          {
+            "unit": 29712,
+            "actors": "众、乙、甲",
+            "location": "淄邑北村",
+            "space": "井外村中",
+            "event": "众香楮共祝之，许为殡葬，乙乃愈；甲则不能复生。",
+            "identity": "村众/亡魂附体者/死者",
+            "interpretation": "祭祀与许诺殡葬使亡魂息怒，乙得愈而甲不复活，显示同一空间行为对不同人物产生分化结果。",
+            "quote": "众香楮共祝之，许为殡葬，乙乃愈；甲则不能复生矣。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "plot",
+            "unit_end": 29713
+          },
+          {
+            "unit": 29714,
+            "actors": "颜镇孙生",
+            "location": "颜镇",
+            "space": "颜镇",
+            "event": "颜镇孙生闻其异，购铜器而去。",
+            "identity": "购异物者",
+            "interpretation": "铜器从井中异物流入外部购买者之手，空间转移使事件影响扩展至村外。",
+            "quote": "颜镇孙生闻其异，购铜器而去。",
+            "from_space": "淄邑北村",
+            "to_space": "颜镇",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "movement"
+          },
+          {
+            "unit": 29715,
+            "actors": "袁孝廉宣四",
+            "location": "未明",
+            "space": "袁孝廉处",
+            "event": "袁孝廉宣四得一瓶，可验阴晴：见一点润处，初如粟米，渐阔渐满，未几雨至；润退则云开天霁。",
+            "identity": "得瓶者/孝廉",
+            "interpretation": "古瓶脱离井中后成为预测天气的异器，空间归属改变带来功能显现。",
+            "quote": "袁孝廉宣四得一瓶，可验阴晴：见有一点润处，初如粟米，渐阔渐满，未几雨至；润退，则云开天霁。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "plot",
+            "unit_end": 29716
+          },
+          {
+            "unit": 29717,
+            "actors": "张秀才",
+            "location": "未明",
+            "space": "张秀才家",
+            "event": "其一入张秀才家，可志朔望：朔则黑点起如豆，与日俱长；望则一瓶遍满；既望又以次而退，至晦复初。",
+            "identity": "得瓶者/秀才",
+            "interpretation": "另一瓶进入张秀才家，功能转为标记月相，与袁家瓶形成异器功能分化。",
+            "quote": "其一入张秀才家，可志朔望：朔则黑点起如豆，与日俱长；望则一瓶遍满；既望，又以次而退，至晦则复其初。",
+            "from_space": "未明",
+            "to_space": "张秀才家",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "movement",
+            "unit_end": 29719
+          },
+          {
+            "unit": 29720,
+            "actors": "张秀才",
+            "location": "张秀才家",
+            "space": "张秀才家",
+            "event": "瓶因埋土久，口有小石黏口上，刷剔不可下；敲去之，石落而口微缺，亦一憾事。浸花其中，落花结实，与在树者无异。",
+            "identity": "得瓶者/秀才",
+            "interpretation": "瓶口微缺是异器进入人间后的损伤，但浸花结实仍显其异，空间功能从测候延伸至生物保存。",
+            "quote": "以埋土中久，瓶口有小石黏口上，刷剔不可下。敲去之，石落而口微缺，亦一憾事。浸花其中，落花结实，与在树者无异云。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "transition_kind": "plot",
+            "unit_end": 29722
+          }
+        ],
+        "people": [
+          {
+            "id": "c461-edited-p0",
+            "word": "张秀才",
+            "canonical": "",
+            "aliases": [],
+            "review_status": "candidate",
+            "person_types": {
+              "人": 1
+            },
+            "evidence": "",
+            "role": "",
+            "ontology_status": "candidate",
+            "ontology_evidence": "按人物词形邻近语境的规则候选；未完成人工／AI身份核定。",
+            "mentions": null,
+            "identity_links": []
+          }
+        ],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 473,
+      "changes": {
+        "event_types": {
+          "人": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "安丘 / 某 / 生 / ， / 通卜筮 / 之 / 术 / 。\n其 / 为 / 人邪 / 荡 / 不 / 检 / ， / 每 / 有 / 钻穴逾隙 / 之 / 行 / ， / 则 / 卜 / 之 / 。\n一 / 日 / ， / 忽病 / ， / 药 / 之 / ， / 不 / 愈 / 。\n曰 / ：「 / 吾实 / 有所见 / 。\n冥中怒 / 我 / 狎亵 / 天数 / ， / 将 / 重 / 谴 / 矣 / ， / 药 / 何 / 能 / 为 / ！\n」 / 亡 / 何 / ， / 目暴瞽 / ， / 两手无故自折 / 。\n某 / 甲者 / ， / 伯无嗣 / 。\n甲利其有 / ， / 愿 / 为 / 之后 / 。\n伯 / 既 / 死 / ， / 田 / 产悉 / 为 / 所有 / ， / 遂 / 背 / 前盟 / 。\n又 / 有 / 叔 / ， / 家 / 颇裕 / ， / 亦 / 无 / 子 / 。\n甲 / 又 / 父 / 之 / 。\n死 / ， / 又 / 背 / 之 / 。\n于是 / 并 / 三 / 家 / 之 / 产 / ， / 富 / 甲 / 一 / 乡 / 。\n一 / 日 / ， / 暴病若狂 / ， / 自 / 言 / 曰 / ：「 / 汝欲享 / 富厚 / 而 / 生 / 耶 / ！\n」 / 遂 / 以 / 利刃 / 自割肉 / ， / 片片 / 掷地 / 。\n又 / 曰 / ：「 / 汝绝人 / 后 / ， / 尚 / 欲 / 有 / 后 / 耶 / ！\n」 / 剖腹流肠 / ， / 遂 / 毙 / 。\n未 / 几 / ， / 子 / 亦 / 死 / ， / 产业 / 归人 / 矣 / 。\n果报 / 如此 / ， / 可 / 畏 / 也 / 夫 / ！",
+        "lexical_reviews": {},
+        "years": {
+          "一日": 2
+        },
+        "places": [
+          {
+            "word": "安丘",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 30461,
+            "actors": "安丘某生",
+            "location": "未明（某生居处）",
+            "space": "日常居处",
+            "event": "安丘某生通卜筮之术，为人邪荡不检，每有钻穴逾隙之行便先占卜。",
+            "identity": "通卜筮之术的士人",
+            "interpretation": "卜筮本为通神之术，却被用于邪行，空间上把私密越礼行为与占卜活动并置，为后文冥谴埋因。",
+            "quote": "安丘某生，通卜筮之术。其为人邪荡不检，每有钻穴逾隙之行，则卜之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
             "space_realm": "人间",
             "space_review_source": "deepseek",
-            "space_review_evidence": "冬夜天空，无人物进入或控制",
+            "space_review_evidence": "某生日常居处行卜筮",
             "classification_binding": "legacy_step_index",
-            "unit_end": 16940
+            "unit_end": 30462
+          },
+          {
+            "unit": 30463,
+            "actors": "安丘某生",
+            "location": "未明（某生病处）",
+            "space": "病榻",
+            "event": "某生忽病，用药不愈，自言冥中怒其狎亵天数，将重谴，药不能治。",
+            "identity": "患病者",
+            "interpretation": "病榻成为冥谴显现的场所，人物以言语把疾病解释为天罚，空间由日常居处转入受罚状态。",
+            "quote": "一日，忽病，药之，不愈。曰：「吾实有所见。冥中怒我狎亵天数，将重谴矣，药何能为！",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "病卧药之不愈",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 30465
+          },
+          {
+            "unit": 30466,
+            "actors": "安丘某生",
+            "location": "未明（某生病处）",
+            "space": "病榻",
+            "event": "不久，某生双目突然失明，两手无故自行折断。",
+            "identity": "受冥谴者",
+            "interpretation": "身体器官在病榻空间内接连毁损，使抽象的冥谴落实为可见的肉身惩罚，完成第一则果报。",
+            "quote": "亡何，目暴瞽，两手无故自折。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "目瞽手折仍在病榻",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30467,
+            "actors": "某甲、伯",
+            "location": "未明（伯家）",
+            "space": "伯家",
+            "event": "某甲因伯无子，贪图其财产，愿做伯的后嗣；伯死后，甲尽得田产，却背弃前盟。",
+            "identity": "伯之嗣子（后为背盟者）",
+            "interpretation": "承嗣关系本应连接家庭与财产，甲却把伯家空间转化为牟利对象，伯死即背盟，显示财产继承中的伦理断裂。",
+            "quote": "某甲者，伯无嗣。甲利其有，愿为之后。伯既死，田产悉为所有，遂背前盟。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "伯家田产归甲",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 30469
+          },
+          {
+            "unit": 30470,
+            "actors": "某甲、叔",
+            "location": "未明（叔家）",
+            "space": "叔家",
+            "event": "某甲又有叔家颇裕而无子，甲又认叔为父；叔死后，甲再次背弃承诺。",
+            "identity": "叔之嗣子（再次背盟者）",
+            "interpretation": "甲把承嗣行为重复施于叔家，空间上由伯家扩展到叔家，形成连续吞并，强化其唯利是图。",
+            "quote": "又有叔，家颇裕，亦无子。甲又父之。死，又背之。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "叔家产亦归甲",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 30472
+          },
+          {
+            "unit": 30473,
+            "actors": "某甲",
+            "location": "未明（某甲家）",
+            "space": "某甲家",
+            "event": "某甲于是合并伯、叔及自家三家产业，财富冠绝一乡。",
+            "identity": "富甲一乡的产业兼并者",
+            "interpretation": "三家产业汇入甲家，空间上完成财富集中；富甲一乡既是果报前的高点，也预示其将因绝人后而受罚。",
+            "quote": "于是并三家之产，富甲一乡。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "并三家之产富甲一乡",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30474,
+            "actors": "某甲",
+            "location": "未明（某甲家）",
+            "space": "某甲家",
+            "event": "某甲一日暴病若狂，自言是否想享富厚而生，随即用利刃自割其肉，片片掷地。",
+            "identity": "暴病若狂者",
+            "interpretation": "财富空间转为自残场所，甲在狂态中自割，身体成为果报直接承受对象，与某生目盲手折形成呼应。",
+            "quote": "一日，暴病若狂，自言曰：「汝欲享富厚而生耶！」遂以利刃自割肉，片片掷地。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "暴病若狂自割肉",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 30475
+          },
+          {
+            "unit": 30476,
+            "actors": "某甲",
+            "location": "未明（某甲家）",
+            "space": "某甲家",
+            "event": "某甲又自言绝人之后还想有后，随即剖腹流肠而死。",
+            "identity": "受果报而死者",
+            "interpretation": "剖腹流肠对应其绝人后、背弃承嗣之罪，死亡在自家空间内完成，果报由财富剥夺转为生命终结。",
+            "quote": "又曰：「汝绝人后，尚欲有后耶！」剖腹流肠，遂毙。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "剖腹流肠遂毙",
+            "classification_binding": "legacy_step_index",
+            "unit_end": 30477
+          },
+          {
+            "unit": 30478,
+            "actors": "某甲之子",
+            "location": "未明（某甲家）",
+            "space": "某甲家",
+            "event": "不久，某甲之子也死去，其产业归于他人。",
+            "identity": "某甲之子、产业继承者",
+            "interpretation": "子死与产业归人使甲家空间彻底易主，果报从甲一身延伸到后代与财产，完成第二则结局。",
+            "quote": "未几，子亦死，产业归人矣。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "子死产业归人",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30479,
+            "actors": "叙述者",
+            "location": "未明",
+            "space": "叙述层",
+            "event": "叙述者感叹果报如此，实在可畏。",
+            "identity": "叙述者",
+            "interpretation": "结尾以议论收束两则故事，把身体受罚与财产易主提升为果报主题，空间叙事转为道德警示。",
+            "quote": "果报如此，可畏也夫！",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "space_function": "",
+            "boundary_medium": "",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "待核",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "叙述者评论果报",
+            "classification_binding": "legacy_step_index"
+          }
+        ],
+        "people": [],
+        "evidence_review": {}
+      }
+    },
+    {
+      "chapter_id": 479,
+      "changes": {
+        "event_types": {
+          "鬼": 1
+        },
+        "realms_present": [
+          "人间"
+        ],
+        "review_note": "",
+        "segmentation_note": "",
+        "lexical_reviews": {},
+        "years": {},
+        "places": [
+          {
+            "word": "长山",
+            "mentions": 0
+          }
+        ],
+        "space_words": [],
+        "narrative_events": [
+          {
+            "unit": 30941,
+            "actors": "李檀斯、媪",
+            "location": "村中（日常空间）",
+            "space": "村中",
+            "event": "村中走无常的媪对人说，今夜要与人抬李檀斯投生到淄川柏家庄一户新门中，身躯重赘几乎被压死。",
+            "identity": "李檀斯为国学生；媪为走无常者",
+            "interpretation": "媪以阴间差役身份预告李的转生去向，将村中日常空间与淄川柏家庄的投生空间预先连接，为后文死亡与生女埋下伏笔。",
+            "quote": "其村中有媪走无常，谓人曰：「今夜与一人舁檀老投生淄川柏家庄一新门中，身躯重赘，几被压死。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "mention",
+            "space_access": "公共",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "村中媪走无常，谓人曰",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30941,
+            "actors": "媪、李檀斯",
+            "location": "",
+            "space": "村中→淄川柏家庄新门",
+            "event": "媪称当夜舁李檀斯投生至淄川柏家庄一新门中",
+            "identity": "",
+            "interpretation": "舁檀老投生淄川柏家庄一新门中",
+            "quote": "今夜与一人舁檀老投生淄川柏家庄一新门中",
+            "from_space": "村中",
+            "to_space": "淄川柏家庄新门",
+            "transition_kind": "mention",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "村中为开放聚落环境，投生新门为家庭居所，均属人间。",
+            "classification_binding": "source_hash_and_step_id",
+            "ai_path_review": "deepseek",
+            "endpoint_review": {
+              "id": "7aa90db4a82be37cfce9421ae81d93c839b07e79c250d945eddb90956cf80d75",
+              "from_access": "开放自然",
+              "to_access": "私人",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "自然山野",
+              "to_type": "家宅",
+              "quote": "其村中有媪走无常，谓人曰：「今夜与一人舁檀老投生淄川柏家庄一新门中，身躯重赘，几被压死。」",
+              "reason": "村中为开放聚落环境，投生新门为家庭居所，均属人间。",
+              "source_hash": "27679edad2f06e64755abdd45913cf49db94a1c0d15981038eca926917dfcbb2",
+              "chapter_id": 479,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "7aa90db4a82be37cfce9421ae81d93c839b07e79c250d945eddb90956cf80d75"
+          },
+          {
+            "unit": 30942,
+            "actors": "李檀斯、客",
+            "location": "饮酒处（同场）",
+            "space": "饮酒处",
+            "event": "当时李檀斯正与客人欢饮，众人把媪的话都当作虚妄之言。",
+            "identity": "李檀斯为国学生，正与客宴饮",
+            "interpretation": "宴饮场景显示李尚在生，众人不信媪言，形成日常现实与阴间预告的对照，强化后文突转。",
+            "quote": "时李方与客欢饮，悉以媪言为妄。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "李方与客欢饮",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30943,
+            "actors": "李檀斯",
+            "location": "未明（当夜居处）",
+            "space": "未明",
+            "event": "到了夜里，李檀斯没有生病就死了。",
+            "identity": "李檀斯为国学生，当夜卒",
+            "interpretation": "无疾而卒与媪预告的投生时间吻合，使前文被视为妄言的话获得验证，空间上由村中酒席转入死亡。",
+            "quote": "至夜，无疾而卒。",
+            "from_space": "",
+            "to_space": "",
+            "temporal_order": "顺叙",
+            "transition_kind": "plot",
+            "space_access": "待核",
+            "space_realm": "待核",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "至夜，无疾而卒",
+            "classification_binding": "legacy_step_index"
+          },
+          {
+            "unit": 30944,
+            "actors": "问者、柏家庄其家",
+            "location": "淄川柏家庄（投生地点）",
+            "space": "柏家庄新门",
+            "event": "天亮后，有人按媪所说前往柏家庄询问，那户人家果然在夜里生了一个女儿。",
+            "identity": "问者为村中往问之人；其家为柏家庄新生女之家",
+            "interpretation": "天明往问将长山与淄川柏家庄两地空间并置，生女与李卒同时发生，完成投生叙事的空间印证。",
+            "quote": "天明，如所言往问之，则其家夜生女矣。",
+            "from_space": "长山",
+            "to_space": "淄川柏家庄",
+            "temporal_order": "顺叙",
+            "transition_kind": "movement",
+            "space_access": "私人",
+            "space_realm": "人间",
+            "space_review_source": "deepseek",
+            "space_review_evidence": "长山至柏家庄为陆路移动，那户人家为私人住宅，均人间。",
+            "classification_binding": "source_hash_and_step_id",
+            "endpoint_review": {
+              "id": "dea0026ecbd4a5c561c02c9344b3cffd8e1b8f9f5582e36f871d48dc940150b2",
+              "from_access": "开放自然",
+              "to_access": "私人",
+              "from_realm": "人间",
+              "to_realm": "人间",
+              "from_type": "自然山野",
+              "to_type": "家宅",
+              "quote": "天明，如所言往问之，则其家夜生女矣。",
+              "reason": "长山至柏家庄为陆路移动，那户人家为私人住宅，均人间。",
+              "source_hash": "27679edad2f06e64755abdd45913cf49db94a1c0d15981038eca926917dfcbb2",
+              "chapter_id": 479,
+              "reviewer": "deepseek-flash"
+            },
+            "step_id": "dea0026ecbd4a5c561c02c9344b3cffd8e1b8f9f5582e36f871d48dc940150b2"
           }
         ],
         "people": [],
