@@ -2,7 +2,7 @@
   "format": "liaozhai-public-release-v1",
   "counts": {
     "chapters": 491,
-    "manual_chapters": 38,
+    "manual_chapters": 54,
     "manual_locations": 1
   },
   "research_files": [
@@ -518,8 +518,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 970103,
-      "sha256": "b6a5e6e829bd82edbcafc6e9ad43d82c518641f67a8e4c48620cd7539b7fe3ec"
+      "bytes": 1092573,
+      "sha256": "0e3dbacf1185410fb4da05ee97f7621234137af0f1ac344cbfe6edcaa5c46cf2"
     }
   ],
   "artifacts": [
@@ -534,14 +534,9 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "README.md",
-      "bytes": 1151,
-      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
-    },
-    {
       "path": "data-package.json",
-      "bytes": 22193376,
-      "sha256": "285269336e16bcbfcf90c2462bc69a05fae092090147c13e4c3f34d953d1f140"
+      "bytes": 22280714,
+      "sha256": "a37fd970edb99de71bdb26836ed61844cd5b8aec5baa70a4eff4fd2ac88234b3"
     },
     {
       "path": "data.html",
@@ -565,18 +560,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 23037315,
-      "sha256": "eebf9a05d7f61943f0750c4f2ee8cbefdab258044b45f3eba3c10c1afbfac82a"
+      "bytes": 23124653,
+      "sha256": "1f9e468f3adcaa59a5df248d096547cb304d2bbbd320d572e8a368d2c1ed451e"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 970103,
-      "sha256": "b6a5e6e829bd82edbcafc6e9ad43d82c518641f67a8e4c48620cd7539b7fe3ec"
+      "bytes": 1092573,
+      "sha256": "0e3dbacf1185410fb4da05ee97f7621234137af0f1ac344cbfe6edcaa5c46cf2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1151,
+      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
     },
     {
       "path": "research-data.zip",
-      "bytes": 22614218,
-      "sha256": "29c5e780c964012d8be086152b181365d5755801b52c6ddb24c584dba73d9425"
+      "bytes": 22635900,
+      "sha256": "d563dabdd0e4ff743ebcc700ed26fe8de34153e89ba5e09efc9b0cd879d1beb7"
     }
   ]
 }
