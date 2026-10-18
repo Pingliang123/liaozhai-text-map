@@ -7,7 +7,7 @@ function build(chapters,mode='unit'){
   terms.sort((a,b)=>b.label.length-a.label.length);const units=c.units.map(u=>{const hits=[],occupied=[];for(const t of terms){let at=-1,found=false;while((at=u.text.indexOf(t.label,at+1))!==-1){const end=at+t.label.length;if(occupied.some(([a,b])=>at<b&&end>a))continue;occupied.push([at,end]);found=true;}if(found)hits.push(t);}return {u,hits};});
   const present=new Map();for(const {hits}of units)for(const t of hits){present.set(t.id,t);if(!nodes.has(t.id))nodes.set(t.id,{...t,degree:0});}
   const scopes=mode==='chapter'?[{hits:[...present.values()],u:null}]:units;
-  for(const {hits,u}of scopes)for(let i=0;i<hits.length;i++)for(let j=i+1;j<hits.length;j++){const pair=[hits[i].id,hits[j].id].sort();if(pair[0]===pair[1])continue;const key=JSON.stringify(pair);if(!edges.has(key))edges.set(key,{source:pair[0],target:pair[1],weight:0,evidence:[],chapter:'词汇共现'});const e=edges.get(key);e.weight++;e.evidence.push({chapter:c.title,unit:u?.id,text:u?u.text:units.filter(r=>r.hits.some(t=>t.id===pair[0]||t.id===pair[1])).map(r=>r.u.text).join('\n')});}
+  for(const {hits,u}of scopes)for(let i=0;i<hits.length;i++)for(let j=i+1;j<hits.length;j++){const pair=[hits[i].id,hits[j].id].sort();if(pair[0]===pair[1])continue;const key=JSON.stringify(pair);if(!edges.has(key))edges.set(key,{source:pair[0],target:pair[1],weight:0,evidence:[],chapter:'词汇共现'});const e=edges.get(key);e.weight++;e.evidence.push({chapter:c.title,chapterId:c.id,unit:u?.id,text:u?u.text:units.filter(r=>r.hits.some(t=>t.id===pair[0]||t.id===pair[1])).map(r=>r.u.text).join('\n')});}
  }
  for(const e of edges.values()){nodes.get(e.source).degree++;nodes.get(e.target).degree++;}return {nodes:[...nodes.values()],edges:[...edges.values()],mode};
 }
