@@ -205,7 +205,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <details open><summary>不同篇目中的相似空间转移</summary><div id="path-patterns"></div></details>
 <details><summary>路径明细与原文核对</summary><div class="toolbar"><button id="path-prev">上一页路径</button><span id="path-page" role="status"></span><button id="path-next">下一页路径</button></div><div id="path-table" class="table-scroll"></div></details>
 </details>
-<div class="toolbar"><button id="report-prev">上一页</button><span id="report-page"></span><button id="report-next">下一页</button></div>
+<div class="toolbar"><button id="report-prev">上一页</button><span id="report-page"></span><button id="report-next">下一页</button><label>跳至 <input id="report-jump" type="number" min="1" value="1" style="width:5em" aria-label="报表页码"></label><label>每页 <select id="report-size"><option>30</option><option>100</option><option>300</option></select></label></div>
 <div class="table-scroll" tabindex="0" aria-label="词语数据，可横向滚动"><table><thead><tr><th>词语</th><th>篇目</th><th>分词词频</th><th>原文次数</th><th>类别 / 状态</th><th>核对与修改</th></tr></thead><tbody id="report-list"></tbody></table></div>
 <details><summary>地点定位与纪年列表</summary><p class="muted">地点表可补充定位；纪年表可回查原文，公元年换算仍须依据纪年资料。</p><div class="toolbar"><button id="report-locations">查看地点定位表</button><button id="report-dates">查看纪年表</button></div><div id="report-reference" class="table-scroll"></div></details>
 </section>
@@ -213,7 +213,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <style>#report-reference{max-height:520px}#report-reference th{position:sticky;top:0;background:#f4f6f1}#report-list summary{padding:4px 0}#report-list td{padding:7px 9px}</style>
 </main>
 <footer><a href="data.html">资料下载</a> · <a href="https://pingliang123.github.io/digital-humanities-lab/">研究主页</a><p>修订先保存到本机；登入 GitHub 后自动同步。</p></footer>
-<script id="published-revisions" type="application/json">{"external":"manual-revisions.json?v=c8986b5c65c7","sha256":"c8986b5c65c75f050db0c21757fa2b495efe8cda050d4c29cb019eef8ce014e5"}</script>
+<script id="published-revisions" type="application/json">{"external":"manual-revisions.json?v=1f8b6a982678","sha256":"1f8b6a982678228676d6a7a31a2875711c6ecdc3ef4673cb34690f37d10158f4"}</script>
 <script id="map-data" type="application/json">{"external":"assets/map-base.json?v=d3652f57fde1","sha256":"d3652f57fde168a69a4930cb4ed57de2116bdd0470bad4e7b0b1e6c2b96b4584","corpus_id":"5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea"}</script>
 <script src="assets/data-loader.js?v=20261018a"></script>
 <script src="audit-reports.js?v=20261018c"></script>
@@ -2316,7 +2316,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const note=field('note','审核依据 / 修订说明',row.review?.note||row.person?.evidence||'');
     const toggle=()=>{canonical.parentNode.hidden=kind.value!=='people';types.hidden=kind.value!=='people';};toggle();kind.addEventListener('change',toggle);
     const context=element('blockquote',{},row.context||'请核对本篇原文后新增。');box.append(context);
-    const controls=['report-kind','report-chapter','report-state','report-type','report-search','report-sort','report-view','report-prev','report-next','report-add'];
+    const controls=['report-kind','report-chapter','report-state','report-type','report-search','report-sort','report-view','report-prev','report-next','report-add','report-jump','report-size'];
     const lock=value=>{reportDraft=value;reportActive=value?box:null;syncSaveStatus();for(const id of controls) $(id).disabled=value;for(const n of $('reports-screen').querySelectorAll('[data-report-picker]')) n.disabled=value;for(const other of $('reports-screen').querySelectorAll('[data-report-editor]')) if(other!==box) for(const tag of ['input','textarea','select','button']) for(const n of other.querySelectorAll(tag)) n.disabled=value;};
     box.addEventListener('input',()=>lock(true));box.addEventListener('change',()=>lock(true));
     const close=()=>{lock(false);$('report-new').replaceChildren();renderReports();};
@@ -2346,8 +2346,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('report-chapter').replaceChildren(element('option',{value:''},'全书'),...ids.map(id=>element('option',{value:String(id)},'#'+(id+1)+' '+model.view(id).chapter)));$('report-chapter').value=old||'';
     const kind=$('report-kind').value||'spaces',chapter=$('report-chapter').value,q=model.simplify($('report-search').value||'').trim(),status=$('report-state').value||'active',type=$('report-type').value;
     $('report-type').disabled=kind!=='people';
+    $('report-add').disabled=kind==='all';
     if($('report-type').parentNode) $('report-type').parentNode.hidden=kind!=='people';
-    reportMatches=reportData().filter(r=>r.kind===kind && (!chapter||r.chapter_id===Number(chapter)) && (!q||[r.word,r.chapter,r.review?.note||''].some(s=>s.includes(q))) &&
+    reportMatches=reportData().filter(r=>(kind==='all'||r.kind===kind) && (!chapter||r.chapter_id===Number(chapter)) && (!q||[r.word,r.chapter,r.review?.note||''].some(s=>s.includes(q))) &&
       (status==='all'||status==='active'&&r.present||status==='pending'&&r.status==='pending'||status==='reviewed'&&(['accepted','rejected','corrected','removed'].includes(r.status))) &&
       (kind!=='people'||!type||(type==='unknown'?!Object.keys(r.person?.person_types||{}).length:r.person?.person_types?.[type]>0)));
     const sort=$('report-sort').value||'frequency';
@@ -2355,16 +2356,17 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const grouped=R.aggregate(reportMatches), wordView=$('report-view').value==='words';
     if(sort==='word') grouped.sort((a,b)=>a.word.localeCompare(b.word,'zh'));
     if(sort==='mentions') grouped.sort((a,b)=>b.mentions-a.mentions);
-    const displayed=wordView?grouped:reportMatches,pages=Math.max(1,Math.ceil(displayed.length/30));reportPage=Math.max(0,Math.min(reportPage,pages-1));
+    const pageSize=Number($('report-size').value)||30;
+    const displayed=wordView?grouped:reportMatches,pages=Math.max(1,Math.ceil(displayed.length/pageSize));reportPage=Math.max(0,Math.min(reportPage,pages-1));
     $('report-summary').replaceChildren(...[reportMatches.length+' 条篇内记录',grouped.length+' 个不同词语',new Set(reportMatches.map(r=>r.chapter_id)).size+' 篇',grouped.reduce((s,r)=>s+r.frequency,0)+' 次完整分词命中'].map(t=>element('span',{class:'chip'},t)));
     reportBars($('report-frequency-chart'),[...grouped].sort((a,b)=>b.frequency-a.frequency).slice(0,12).map(g=>[g.word,g.frequency]));
     const categories=kind==='people'?['人','鬼','妖','神','未标注'].map(t=>[t,reportMatches.filter(r=>t==='未标注'?!Object.keys(r.person?.person_types||{}).length:r.person?.person_types?.[t]>0).length]):Object.entries(reportStatuses).map(([k,v])=>[v,reportMatches.filter(r=>r.status===k).length]);
-    reportBars($('report-category-chart'),categories);renderPathReport();message('report-page','第 '+(reportPage+1)+' / '+pages+' 页 · 每页30条');$('report-prev').disabled=reportPage===0;$('report-next').disabled=reportPage>=pages-1;
+    reportBars($('report-category-chart'),categories);renderPathReport();message('report-page','第 '+(reportPage+1)+' / '+pages+' 页 · 共 '+displayed.length+' 条');$('report-jump').value=String(reportPage+1);$('report-jump').max=String(pages);$('report-prev').disabled=reportPage===0;$('report-next').disabled=reportPage>=pages-1;
     const body=$('report-list');body.replaceChildren();
-    for(const row of displayed.slice(reportPage*30,reportPage*30+30)){
+    for(const row of displayed.slice(reportPage*pageSize,(reportPage+1)*pageSize)){
       const tr=element('tr',{'data-report-row':row.chapter_id+':'+row.key});
       if(wordView){
-        const members=reportMatches.filter(r=>r.word===row.word),cell=element('td'),details=element('details'),summary=element('summary',{},'选择篇目并修改'),picker=element('select',{'aria-label':'选择'+row.word+'的篇目','data-report-picker':''}),editor=element('div');
+        const members=reportMatches.filter(r=>r.word===row.word&&r.kind===row.kind),cell=element('td'),details=element('details'),summary=element('summary',{},'选择篇目并修改'),picker=element('select',{'aria-label':'选择'+row.word+'的篇目','data-report-picker':''}),editor=element('div');
         picker.append(...members.map((r,i)=>element('option',{value:String(i)},'#'+(r.chapter_id+1)+' '+r.chapter+' · '+reportStatuses[r.status])));picker.value='0';
         const load=()=>{if(reportDraft){message('report-status','请先保存或取消正在编辑的行。',true);return;}editor.replaceChildren(reportEditor(members[Number(picker.value)||0]));};
         picker.addEventListener('change',load);summary.addEventListener('click',()=>{if(!editor.children.length) load();});
@@ -2381,7 +2383,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     if(!reportMatches.length){const tr=element('tr');tr.append(element('td',{colspan:6},'当前条件没有数据；可切换「待核候选」或选择其他篇目。'));body.append(tr);}
   }
-  for(const id of ['report-kind','report-chapter','report-state','report-type','report-sort','report-view']) $(id).addEventListener('change',()=>{reportPage=0;renderReports();});
+  $('report-kind').prepend(element('option',{value:'all'},'四类全部'));
+  $('report-kind').value='all';
+  $('report-jump').addEventListener('change',()=>{if(reportDraft)return;reportPage=Math.max(0,(Number($('report-jump').value)||1)-1);renderReports();});
+  for(const id of ['report-kind','report-chapter','report-state','report-type','report-sort','report-view','report-size']) $(id).addEventListener('change',()=>{reportPage=0;renderReports();});
   $('report-search').addEventListener('input',GhostMapAuditReports.debounce(()=>{reportPage=0;renderReports();}));
   $('path-report-panel').addEventListener('toggle',()=>{if($('path-report-panel').open)renderPathReport();});
   $('path-scope').addEventListener('change',renderPathReport);

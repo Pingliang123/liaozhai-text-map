@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('assert/strict'),fs=require('fs'),{inspect}=require('./audit-spaces-places');
+const c={source_units:[{text:'至金陵，宿寺，出村。'}],places:[{word:'金陵'},{word:'寺'},{word:'村'}],space_words:['室']};
+const issues=inspect(c);
+assert(!issues.some(x=>x.word==='金陵'));
+assert.equal(issues.filter(x=>x.action==='move-space').length,2);
+assert(issues.some(x=>x.word==='室'&&x.reason==='原文未命中'));
+const html=fs.readFileSync('index.html','utf8');
+assert(html.includes("kind==='all'||r.kind===kind"));
+assert(html.includes("r.word===row.word&&r.kind===row.kind"));
+assert(html.includes('id="report-jump"'));assert(html.includes('id="report-size"'));
+assert(html.includes('displayed.slice(reportPage*pageSize,(reportPage+1)*pageSize)'));
+console.log('PASS spatial audit: generic scenes vs named places, missing evidence, four-category paging and category-safe editing');
