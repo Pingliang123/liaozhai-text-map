@@ -3,11 +3,13 @@
   const OWNER='Pingliang123', REPO='liaozhai-text-map', FILE='manual-revisions.json';
   const API=`https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
   const RAW=`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${FILE}`;
+  const MAX_BYTES=25000000;
   const clone=x=>JSON.parse(JSON.stringify(x));
   const stable=x=>Array.isArray(x)?x.map(stable):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(key=>[key,stable(x[key])])):x;
   const equal=(a,b)=>JSON.stringify(stable(a))===JSON.stringify(stable(b));
   function encode(doc) {
-    const bytes=new TextEncoder().encode(JSON.stringify(doc,null,2));
+    const bytes=new TextEncoder().encode(JSON.stringify(doc));
+    if(bytes.length>MAX_BYTES)throw new Error('修订文件超过 25 MB，本机修改已保留。');
     let value=''; for(let i=0;i<bytes.length;i+=8192) value+=String.fromCharCode(...bytes.subarray(i,i+8192));
     return btoa(value);
   }
@@ -26,7 +28,7 @@
         headers:authenticated?{Accept:'application/vnd.github+json',Authorization:'Bearer '+token}:{}});
       if(!response.ok) throw new Error(response.status===401||response.status===403?'GitHub 授权失效或没有仓库写入权限，请重新连接。':`读取云端失败（HTTP ${response.status}），本机修订已保留。`);
       const data=await response.json();
-      if(authenticated&&data.size>10000000)throw new Error('云端修订超过 10 MB，请先下载备份并分批整理。');
+      if(authenticated&&data.size>MAX_BYTES)throw new Error('云端修订超过 25 MB，本机修改已保留。');
       if(authenticated&&!data.content&&data.encoding==='none') {
         if(!/^[a-f0-9]{40}$/.test(data.sha))throw new Error('云端文件标识无效。');
         const blob=await request(`https://api.github.com/repos/${OWNER}/${REPO}/git/blobs/${data.sha}`,{

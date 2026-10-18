@@ -23,6 +23,22 @@ test('credentials encrypted, tickets authenticated, tampering refused',async()=>
   const encrypted=await seal({access_token:'sensitive'},secret);assert(!JSON.stringify(encrypted).includes('sensitive'));assert.deepEqual(await open(encrypted,secret),{access_token:'sensitive'});
   const signed=await ticket(sid,secret);assert.equal(await verify(signed,secret),sid);await assert.rejects(verify(signed,secret+'wrong'));await assert.rejects(verify('garbage',secret));
 });
+test('large cloud files use blob fallback; uploads stay compact; 25 MB guard retains protection',async()=>{
+  let blobReads=0,uploaded;
+  const state=setup({FETCH:async(url,options)=>{
+    if(options.method==='PUT'){uploaded=JSON.parse(options.body);return r({commit:{sha:'commit'}});}
+    if(url.includes('/git/blobs/')){blobReads++;return r({content:pack(doc)});}
+    return r({sha,size:14369878,encoding:'none',content:''});
+  }});await login(state);
+  const auth={Authorization:'Bearer '+await ticket(sid,secret),'Content-Type':'application/json'};
+  const read=await request(state.env,'/api/revisions',{headers:auth});assert.equal(read.status,200);assert.deepEqual((await read.json()).doc,doc);assert.equal(blobReads,1);
+  const saved=await request(state.env,'/api/revisions',{method:'PUT',headers:auth,body:JSON.stringify({doc,sha})});assert.equal(saved.status,200);
+  assert.equal(Buffer.from(uploaded.content,'base64').toString(),JSON.stringify(doc));
+  const tooBig=await request(state.env,'/api/revisions',{method:'PUT',headers:auth,body:' '.repeat(25000001)});assert.equal(tooBig.status,413);
+  const limit=setup({FETCH:async()=>r({sha,size:25000001,encoding:'none',content:''})});await login(limit);
+  const blocked=await request(limit.env,'/api/revisions',{headers:auth});assert.equal(blocked.status,413);assert.match((await blocked.json()).message,/25 MB/);
+  const health=await request(state.env,'/health');assert.equal((await health.json()).max_revision_bytes,25000000);
+});
 test('health fails closed when unconfigured and never exposes secrets',async()=>{
   const {env}=setup({GITHUB_CLIENT_SECRET:''});const health=await request(env,'/health');assert.equal((await health.json()).configured,false);
   assert.equal((await request(env,'/auth/start')).status,503);

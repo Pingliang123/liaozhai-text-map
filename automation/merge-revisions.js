@@ -19,6 +19,6 @@ if(!pattern.test(html))throw new Error('网页缺少人工修订数据');
 const seed=JSON.stringify(merged.revisions).replaceAll('<','\\u003c');
 html=html.replace(pattern,()=>'<script id="published-revisions" type="application/json">'+seed+'</script>');
 fs.writeFileSync('data-package.json',JSON.stringify(merged));
-fs.writeFileSync(canonical,JSON.stringify(merged.revisions,null,2));
+fs.writeFileSync(canonical,JSON.stringify(merged.revisions));
 fs.writeFileSync('index.html',html);
 console.log(`Validated ${merged.revisions.overrides.length} chapter edits and ${merged.revisions.place_locations.length} place edits`);

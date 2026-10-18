@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const {encode,decode}=require('../github-sync.js');
+const raw=fs.readFileSync('manual-revisions.json'),doc=JSON.parse(raw),compact=Buffer.from(JSON.stringify(doc));
+assert.deepEqual(decode(encode(doc)),doc,'Full current corpus revisions must round-trip, not a truncated subset');
+assert(compact.length<=25000000,'Current revision data exceeds supported sync limit');
+assert.equal(fs.readFileSync('github-sync.js','utf8'),fs.readFileSync('automation/github_sync.js','utf8'));
+const backend=fs.readFileSync('auth-backend/worker.mjs','utf8');assert(backend.includes('MAX_BYTES=25000000'));assert(!backend.includes('10 MB'));
+const merge=fs.readFileSync('automation/merge-revisions.js','utf8');assert(merge.includes('fs.writeFileSync(canonical,JSON.stringify(merged.revisions))'));
+console.log(`PASS: all ${doc.overrides.length} chapter revisions survive full UTF-8 sync; compact size ${compact.length} bytes; client/backend limits match`);

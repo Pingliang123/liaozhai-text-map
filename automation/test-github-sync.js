@@ -11,6 +11,16 @@ const merge=(before,mine,theirs)=>{
 };
 const response=(status,data)=>({ok:status>=200&&status<300,status,json:async()=>copy(data)});
 async function main(){
+  assert.equal(Buffer.from(encode({a:1}),'base64').toString(),'{"a":1}','Uploads must not add indentation');
+  const large={note:'字'.repeat(3500000)},blobSHA='b'.repeat(40);let largeApplied=null,blobReads=0;
+  const largeClient=create({ancestor:{},getLocal:()=>({}),hasDraft:()=>false,merge:(_a,_l,r)=>r,validate:()=>{},apply:d=>{largeApplied=d;},
+    request:async url=>url.includes('/git/blobs/')?(blobReads++,response(200,{content:encode(large)})):response(200,{size:14369878,encoding:'none',content:'',sha:blobSHA})});
+  largeClient.connect('test-token');await largeClient.sync();assert.equal(largeApplied.note.length,large.note.length);assert.equal(blobReads,1);
+  let oversizedApplied=false;
+  const oversized=create({ancestor:{},getLocal:()=>({keep:'local'}),hasDraft:()=>false,merge,validate:()=>{},apply:()=>{oversizedApplied=true;},
+    request:async()=>response(200,{size:25000001,encoding:'none',sha:blobSHA})});
+  oversized.connect('test-token');await assert.rejects(oversized.sync(),/25 MB/);assert.equal(oversizedApplied,false);
+  assert.throws(()=>encode({text:'字'.repeat(8333334)}),/25 MB/,'Limits use UTF-8 bytes, not character count');
   assert.deepEqual(decode(encode({text:'聊斋🌏',long:'字'.repeat(30000)})),{text:'聊斋🌏',long:'字'.repeat(30000)});
   let local={a:1},cloud={b:2},sha=1,writes=0,ancestor={},draft=false,mode='',afterPut=null;
   const stored=[];

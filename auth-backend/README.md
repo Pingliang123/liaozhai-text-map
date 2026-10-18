@@ -22,6 +22,8 @@ Cloudflare 运行环境会自动创建 SQLite Durable Object，不需要额外�
 
 ## 验证与更新
 
+同步接口与浏览器均以UTF-8字节数限制修订文件，当前上限25 MB。仓库保存、后台写入和浏览器上传使用紧凑JSON，不删减词表、分词、原文或修订记录。超过GitHub Contents内联大小的文件改由同一版本SHA的Blob接口完整读取；超过25 MB明确拒绝，保留本机修改，不能静默截断。`/health`的`max_revision_bytes`可核对已部署上限。
+
 `node --test test-worker.mjs` 验证 CSRF/PKCE、允许账号、加密、刷新并发、CORS、权限错误、数据与版本冲突。服务器使用完整原文的精简基线与地图同一套验证模型；本文本基线是从公开地图库生成的，不含分词缓存。若更换原文、章节或模型，应重新运行工作区 `outputs/prepare_auth_backend.js`，更新模型与 validation-base 后再部署。
 
 后台仅支持固定的 `manual-revisions.json` 和 `main`，不接收任意仓库、路径或分支。GitHub Actions 在收到修订提交后执行完整测试、生成数据包和发布网站。Cloudflare 负责临时授权会话，不作为研究资料库。

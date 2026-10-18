@@ -42,6 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           node automation/test-github-sync.js
+          node automation/test-sync-size.js
           node automation/test-github-login.js
           node automation/test-region-scope.js
           node automation/test-chapter-references.js

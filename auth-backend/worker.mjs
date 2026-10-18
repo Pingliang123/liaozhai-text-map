@@ -2,7 +2,7 @@ import Model from './model.cjs';
 import validationBase from './validation-base.json' with {type:'json'};
 
 const encoder=new TextEncoder(), decoder=new TextDecoder();
-const FILE='manual-revisions.json', MAX_BYTES=10000000, SESSION_DAYS=30;
+const FILE='manual-revisions.json', MAX_BYTES=25000000, SESSION_DAYS=30;
 const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'};
 class Failure extends Error {constructor(status,message){super(message);this.status=status;}}
 const json=(data,status=200)=>new Response(JSON.stringify(data),{status,headers:{...headers,'Content-Type':'application/json'}});
@@ -22,10 +22,10 @@ async function verify(value,secret){
   return sid;
 }
 async function readJSON(request){
-  if(Number(request.headers.get('Content-Length'))>MAX_BYTES)throw new Failure(413,'修订文件超过 10 MB。');
+  if(Number(request.headers.get('Content-Length'))>MAX_BYTES)throw new Failure(413,'修订文件超过 25 MB，本机修改已保留。');
   const reader=request.body?.getReader();if(!reader)throw new Failure(400,'缺少修订数据。');
   const chunks=[];let length=0;
-  while(true){const {value,done}=await reader.read();if(done)break;length+=value.length;if(length>MAX_BYTES){await reader.cancel();throw new Failure(413,'修订文件超过 10 MB。');}chunks.push(value);}
+  while(true){const {value,done}=await reader.read();if(done)break;length+=value.length;if(length>MAX_BYTES){await reader.cancel();throw new Failure(413,'修订文件超过 25 MB，本机修改已保留。');}chunks.push(value);}
   const bytes=new Uint8Array(length);let offset=0;for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.length;}
   try{return JSON.parse(decoder.decode(bytes));}catch(_){throw new Failure(400,'修订数据不是有效 JSON。');}
 }
@@ -50,11 +50,12 @@ async function exchange(body,env){
 const repoPath=env=>'/repos/'+encodeURIComponent(env.OWNER)+'/'+encodeURIComponent(env.REPO);
 async function readRevisions(token,env){
   const data=await github(repoPath(env)+'/contents/'+FILE+'?ref=main',token,env);
-  if(data.size>MAX_BYTES)throw new Failure(413,'云端修订超过 10 MB。');
+  if(data.size>MAX_BYTES)throw new Failure(413,'云端修订超过 25 MB，本机修改已保留。');
   let content=data.content;
   if(!content&&data.encoding==='none')content=(await github(repoPath(env)+'/git/blobs/'+data.sha,token,env)).content;
   if(!content||!/^[a-f0-9]{40}$/.test(data.sha))throw new Failure(502,'云端修订文件不完整。');
-  return {doc:JSON.parse(decoder.decode(unbase64(content.replace(/\s/g,'')))),sha:data.sha};
+  const bytes=unbase64(content.replace(/\s/g,''));if(bytes.length>MAX_BYTES)throw new Failure(413,'云端修订超过 25 MB，本机修改已保留。');
+  return {doc:JSON.parse(decoder.decode(bytes)),sha:data.sha};
 }
 function validate(doc){try{const model=Model.create(validationBase);model.importDocument(doc);}catch(error){throw new Failure(400,'修订未通过验证：'+error.message);}}
 
@@ -142,7 +143,7 @@ export class SyncSession {
       if(latest.sha!==input.sha)throw new Failure(409,'其他设备已保存新修订，请重新合并。');
       // Path, branch and commit message are fixed here; client input cannot
       // update code, workflow files, another repository or another branch.
-      const result=await github(repoPath(env)+'/contents/'+FILE,credentials.access_token,env,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'保存地图人工修订',branch:'main',sha:input.sha,content:base64(encoder.encode(JSON.stringify(input.doc,null,2)))})});
+      const result=await github(repoPath(env)+'/contents/'+FILE,credentials.access_token,env,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'保存地图人工修订',branch:'main',sha:input.sha,content:base64(encoder.encode(JSON.stringify(input.doc)))})});
       return json({ok:true,commit:result.commit?.sha});
     }
     throw new Failure(404,'接口不存在。');
@@ -157,7 +158,7 @@ function configured(env){return !!(env.GITHUB_CLIENT_ID&&env.GITHUB_CLIENT_SECRE
 async function route(request,env){
   const url=new URL(request.url),origin=request.headers.get('Origin');
   env=await configuration(env);
-  if(url.pathname==='/health')return json({ok:true,configured:configured(env),owner:env.ALLOWED_LOGIN});
+  if(url.pathname==='/health')return json({ok:true,configured:configured(env),owner:env.ALLOWED_LOGIN,max_revision_bytes:MAX_BYTES});
   if(url.pathname==='/setup/installed')return failurePage('安装完成。请回到地图点击「登入 GitHub」，即可自动同步保存的修订。',200);
   if(url.pathname==='/setup'){
     if(configured(env))return failurePage('GitHub App 已配置，请回到地图登入。',200);
