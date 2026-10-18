@@ -82,10 +82,11 @@ function apply(revisionsFile, packageFile, receiptFile, options = {}) {
   const chapters = new Map(pack.base.chapter_overview.map(chapter => [chapter.chapter_id, chapter]));
   const before = digest(revisions);
   const mode = options.mode || 'high';
+  const protectBefore = options.protectBefore ?? PROTECTED_CHAPTERS;
   const changes = [];
   const overrides = new Map((revisions.overrides || []).map(row => [row.chapter_id, { ...row, changes: { ...(row.changes || {}) } }]));
   for (const [id, original] of chapters) {
-    if (id < PROTECTED_CHAPTERS) continue;
+    if (id < protectBefore) continue;
     const current = { ...original, ...(overrides.get(id)?.changes || {}) };
     const result = reviseChapter(current, mode);
     if (!result) continue;
@@ -97,7 +98,7 @@ function apply(revisionsFile, packageFile, receiptFile, options = {}) {
   }
   const next = { ...revisions, overrides: [...overrides.values()].sort((a, b) => a.chapter_id - b.chapter_id) };
   if (changes.length) writeJson(revisionsFile, next);
-  writeJson(receiptFile, { schema_version: 1, protected_chapters: PROTECTED_CHAPTERS, mode, before_sha256: before, after_sha256: digest(next), changed_chapters: changes });
+  writeJson(receiptFile, { schema_version: 1, protected_chapters: protectBefore, mode, before_sha256: before, after_sha256: digest(next), changed_chapters: changes });
   return { changed_chapters: changes.length, candidates: changes.reduce((sum, row) => sum + row.candidates.length, 0), receipt: receiptFile };
 }
 
@@ -107,7 +108,10 @@ if (require.main === module) {
     path.join(root, 'manual-revisions.json'),
     path.join(root, 'data-package.json'),
     path.join(root, 'reports', 'place-token-boundary-application.json'),
-    { mode: process.argv.includes('--include-fragmented') ? 'high-and-medium' : 'high' },
+    {
+      mode: process.argv.includes('--include-fragmented') ? 'high-and-medium' : 'high',
+      protectBefore: process.argv.includes('--all-chapters') ? 0 : PROTECTED_CHAPTERS,
+    },
   );
   console.log(JSON.stringify(result));
 }
