@@ -12,6 +12,9 @@ assert.throws(()=>A.validateTypes(['人','鬼']));assert.deepEqual(A.validateTyp
 assert(A.csv([['=SUM(A1)','a"b']]).includes("'=SUM"));
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert(html.includes('id="event-audit-reports"'));assert(html.includes('auditReports.render()'));assert(html.includes('audit-reports.js?v='));
+const workflow=fs.readFileSync(path.join(root,'.github/workflows/publish-updates.yml'),'utf8');
+assert(workflow.includes('- audit-reports.js'),'New script updates must trigger publication');
+assert(/cp [^\n]*audit-reports\.js[^\n]*public\//.test(workflow),'Public artifact must include the new report module');
 const data=JSON.parse(fs.readFileSync(path.join(root,'assets/deepseek-review.json'),'utf8'));
 assert.equal(data.protected_ids.length,33);assert(data.entries.length>8000);assert(data.entries.every(e=>!data.protected_ids.includes(e.chapter_id)));
 assert(data.entries.some(e=>e.kind==='event'));assert(data.entries.some(e=>e.kind==='segmentation'));assert(data.entries.some(e=>e.state==='held'));

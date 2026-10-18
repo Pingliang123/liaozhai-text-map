@@ -9,6 +9,7 @@ on:
       - github-sync.js
       - github-login.js
       - github-sync-config.json
+      - audit-reports.js
       - auth-backend/**
       - index.html
       - data-package.json
@@ -71,7 +72,7 @@ jobs:
         shell: bash
         run: |
           mkdir public
-          cp index.html data.html data-package.json manual-revisions.json research-data.zip release-manifest.json github-sync.js github-login.js github-sync-config.json public/
+          cp index.html data.html data-package.json manual-revisions.json research-data.zip release-manifest.json github-sync.js github-login.js github-sync-config.json audit-reports.js public/
           cp -r assets public/assets
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
