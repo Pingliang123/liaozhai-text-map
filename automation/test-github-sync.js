@@ -11,6 +11,10 @@ const merge=(before,mine,theirs)=>{
 };
 const response=(status,data)=>({ok:status>=200&&status<300,status,json:async()=>copy(data)});
 async function main(){
+  let noOpChecks=0;
+  const noOp=create({ancestor:{a:1},getLocal:()=>({a:1}),hasDraft:()=>false,validate:()=>noOpChecks++,
+    request:async()=>response(200,{a:1}),merge:()=>{throw Error('no-op must not merge');},apply:()=>{throw Error('no-op must not redraw');},onAncestor:()=>{throw Error('no-op must not rewrite ancestor');}});
+  await noOp.sync();await noOp.sync();assert.equal(noOpChecks,1,'Identical remote validation is cached');
   assert.equal(Buffer.from(encode({a:1}),'base64').toString(),'{"a":1}','Uploads must not add indentation');
   const large={note:'字'.repeat(3500000)},blobSHA='b'.repeat(40);let largeApplied=null,blobReads=0;
   const largeClient=create({ancestor:{},getLocal:()=>({}),hasDraft:()=>false,merge:(_a,_l,r)=>r,validate:()=>{},apply:d=>{largeApplied=d;},

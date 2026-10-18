@@ -14,7 +14,8 @@ assert(!html.includes("id==='nav-candidates' ? 'reports-screen'"),'Original AI r
 const downloadPage=fs.readFileSync('data.html','utf8');
 assert(!downloadPage.includes('/upload/main/updates/inbox'),'Download page must use the current login sync workflow');
 assert(!downloadPage.includes('令牌只在当前页面内存'),'Download page must not describe obsolete token sessions');
-const seed=JSON.parse(html.match(/<script id="published-revisions" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+const reference=JSON.parse(html.match(/<script id="published-revisions" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+const seed=reference.external?JSON.parse(fs.readFileSync(reference.external.split('?')[0],'utf8')):reference;
 assert.deepEqual(seed,bundle.revisions);assert(html.includes('GhostMapSync.mount('));
 assert(!html.includes('修订已下载。请在新打开的 GitHub 页面上传'));
 assert(html.includes('initialAncestor: storageSnapshot ?'),'New browsers must distinguish publication from untracked legacy edits');

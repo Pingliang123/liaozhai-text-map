@@ -21,4 +21,5 @@ html=html.replace(pattern,()=>'<script id="published-revisions" type="applicatio
 fs.writeFileSync('data-package.json',JSON.stringify(merged));
 fs.writeFileSync(canonical,JSON.stringify(merged.revisions));
 fs.writeFileSync('index.html',html);
+require('./externalize-data.js').externalize();
 console.log(`Validated ${merged.revisions.overrides.length} chapter edits and ${merged.revisions.place_locations.length} place edits`);

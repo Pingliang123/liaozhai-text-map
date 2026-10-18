@@ -1,6 +1,14 @@
 (function(root){
   'use strict';
   const TYPES=['人','鬼','妖','神'];
+  function chapterChoices(model,query='',status='all'){
+    query=model.simplify(query).trim();
+    return model.ids.filter(id=>{const c=model.view(id),known=TYPES.some(t=>c.event_types?.[t]>0);
+      return (status==='all'||status==='pending'&&!known||status==='known'&&known)&&(!query||c.chapter.includes(query)||(c.search_title||'').includes(query));});
+  }
+  function debounce(fn,delay=180,timers=globalThis){
+    let handle;return function(...args){timers.clearTimeout(handle);handle=timers.setTimeout(()=>fn.apply(this,args),delay);};
+  }
   function eventRows(model,chapter='',query='',type=''){
     return model.ids.map(id=>{const c=model.view(id);return {chapter_id:id,chapter:c.chapter,types:TYPES.filter(t=>c.event_types?.[t]>0),places:(c.places||[]).map(p=>p.word)};})
       .filter(r=>(chapter===''||r.chapter_id===Number(chapter))&&(!query||r.chapter.includes(query)||r.places.some(p=>p.includes(query)))&&(!type||(type==='未定'?!r.types.length:r.types.includes(type))));
@@ -74,5 +82,5 @@
     });
     return {render(){renderEvents();renderRecords();}};
   }
-  const api={eventRows,eventStats,validateTypes,csv,mount};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapAuditReports=api;
+  const api={eventRows,eventStats,validateTypes,csv,mount,chapterChoices,debounce};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapAuditReports=api;
 })(globalThis);

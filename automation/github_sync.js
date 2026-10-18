@@ -6,7 +6,7 @@
   const MAX_BYTES=25000000;
   const clone=x=>JSON.parse(JSON.stringify(x));
   const stable=x=>Array.isArray(x)?x.map(stable):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(key=>[key,stable(x[key])])):x;
-  const equal=(a,b)=>JSON.stringify(stable(a))===JSON.stringify(stable(b));
+  const equal=(a,b)=>a===b||JSON.stringify(a)===JSON.stringify(b)||JSON.stringify(stable(a))===JSON.stringify(stable(b));
   function encode(doc) {
     const bytes=new TextEncoder().encode(JSON.stringify(doc));
     if(bytes.length>MAX_BYTES)throw new Error('修订文件超过 25 MB，本机修改已保留。');
@@ -20,7 +20,16 @@
     let ancestor=clone(options.ancestor), token='', running=null, wanted=false;
     const connected=()=>!!token||!!options.cloud?.connected();
     const status=options.status||(()=>{}), request=options.request||fetch;
-    const validate=doc=>{options.validate(doc);return doc;};
+    let validatedJSON=null;
+    const validate=doc=>{
+      const encoded=JSON.stringify(doc);
+      if(encoded!==validatedJSON){
+        if(!options.localIsValidated||!equal(doc,options.getLocal()))options.validate(doc);
+        validatedJSON=encoded;
+      }
+      return doc;
+    };
+    function acknowledge(doc){if(!equal(ancestor,doc)){ancestor=clone(doc);options.onAncestor?.(clone(ancestor));}}
     async function remote(authenticated) {
       if(authenticated&&options.cloud?.connected())return validateRemote(await options.cloud.read());
       const response=await request(authenticated?API+'?ref=main':RAW+'?t='+Date.now(),{
@@ -45,10 +54,14 @@
         const incoming=await remote(connected());
         if(options.hasDraft()) {status('请先保存当前输入；云端尚未覆盖本机。');return;}
         const mine=clone(options.getLocal());
-        const merged=options.merge(ancestor,mine,incoming.doc);
+        if(equal(mine,incoming.doc)){
+          acknowledge(incoming.doc);status(connected()?'本机与云端一致。':'已载入云端修订；连接 GitHub 后可自动提交修改。');return;
+        }
+        const merged=equal(ancestor,mine)?incoming.doc:equal(ancestor,incoming.doc)?validate(mine):options.merge(ancestor,mine,incoming.doc);
         if(!connected()) {
           // Never acknowledge unsent local edits as part of the cloud ancestor.
-          await options.apply(merged); ancestor=clone(incoming.doc); options.onAncestor?.(clone(ancestor));
+          if(!equal(merged,options.getLocal()))await options.apply(merged);
+          acknowledge(incoming.doc);
           status(equal(merged,incoming.doc)?'已载入云端修订；连接 GitHub 后可自动提交修改。':'本机有待上传修订；连接 GitHub 后自动提交。');return;
         }
         if(!equal(merged,incoming.doc)) {
@@ -64,9 +77,10 @@
           }
         }
         // Include edits saved while the network request was in flight.
-        const latest=options.merge(mine,options.getLocal(),merged);
+        const current=options.getLocal(),latest=equal(mine,current)?merged:options.merge(mine,current,merged);
         if(options.hasDraft()) {status('已提交云端；当前输入保留，保存后继续同步。');return;}
-        await options.apply(latest);ancestor=clone(merged);options.onAncestor?.(clone(ancestor));
+        if(!equal(latest,options.getLocal()))await options.apply(latest);
+        acknowledge(merged);
         if(!equal(latest,merged)) wanted=true;
         status('已保存到 GitHub；发布版将在自动测试后更新。');return;
       }
