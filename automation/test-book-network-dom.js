@@ -5,6 +5,8 @@ const document={createElement:t=>new Element(t),createElementNS:(_,t)=>new Eleme
 window.GhostNetworkAnalysis=require('../assets/research-lab/network-analysis');
 const root=new Element('main'),c=id=>({id,title:'篇'+id,places:['济南'],spaces:['寺'],people:[{word:'王生'}],units:[{id:1,text:'济南王生宿寺。'}]});let rows;window.GhostBookNetwork.mount(root,[c(0),c(1)],r=>rows=r);
 assert(all(root,'h2').some(n=>n.textContent==='哪些篇目共享空间？'));
+assert(all(root,'h2').some(n=>n.textContent==='Louvain 群组'));
+const color=all(root,'select').find(n=>n.attrs['aria-label']==='网络配色');assert(color);color.value='kind';color.onchange();assert(all(root,'circle').every(n=>n.attrs.fill.startsWith('#')));color.value='community';color.onchange();assert(all(root,'circle').every(n=>n.attrs.fill.startsWith('hsl')));
 assert(all(root,'summary').some(n=>n.textContent==='移除这个节点会怎样？'));
 assert(all(root,'td').some(n=>n.textContent==='100.0%'));
 const comparison=all(root,'select').find(n=>n.attrs['aria-label']==='比较词类');comparison.value='place';comparison.onchange();assert(all(root,'td').some(n=>n.textContent==='地点：济南'));

@@ -10,3 +10,6 @@ const arranged=A.layout(star);assert.deepEqual(arranged,A.layout(star));assert(s
 assert(new Set(arranged.map(n=>Math.round(n.x))).size>20);assert(new Set(arranged.map(n=>Math.round(n.y))).size>20);
 const xs=arranged.map(n=>n.x),ys=arranged.map(n=>n.y);assert(Math.max(...xs)-Math.min(...xs)>200);assert(Math.max(...ys)-Math.min(...ys)>200);
 console.log('PASS deterministic free layout, no source mutation, fitted bounds and distributed node positions');
+const clusters={nodes:['a','b','c','d','e','f'].map(id=>({id})),edges:[['a','b',10],['b','c',10],['c','a',10],['d','e',10],['e','f',10],['f','d',10],['c','d',.01]].map(([source,target,weight])=>({source,target,weight}))};
+const partition=A.communities(clusters);assert.equal(partition.a,partition.b);assert.equal(partition.b,partition.c);assert.equal(partition.d,partition.e);assert.notEqual(partition.a,partition.d);assert.deepEqual(partition,A.communities(clusters));assert.deepEqual(A.communities({nodes:[],edges:[]}),{});
+console.log('PASS multilevel weighted Louvain on two dense groups with weak bridge and deterministic results');
