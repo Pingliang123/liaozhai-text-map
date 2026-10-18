@@ -534,6 +534,11 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "README.md",
+      "bytes": 1151,
+      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
+    },
+    {
       "path": "audit-reports.js",
       "bytes": 10140,
       "sha256": "cda9c273b7f83146f9987807429e3f1c5175242577d7659c727a484aa1d70c53"
@@ -541,7 +546,7 @@
     {
       "path": "data-package.json",
       "bytes": 32187551,
-      "sha256": "feb1504f88dbba40e3440a37b5005507c669ad8a9d78312baa47099ddf73d8e7"
+      "sha256": "e67c02faed96b7da618f643854e66afd6d701eb5656a4c65a8bd1db4c052c6d7"
     },
     {
       "path": "data.html",
@@ -574,14 +579,9 @@
       "sha256": "12e5d80968b0820e9651f476fcd25fd6739afa6f7991122611dc683d79bc7182"
     },
     {
-      "path": "README.md",
-      "bytes": 1151,
-      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
-    },
-    {
       "path": "research-data.zip",
       "bytes": 25035909,
-      "sha256": "f48098af51cf34303c0ff992884a6fd25d56a985ac93acda17545a075fd842e0"
+      "sha256": "ebd246ce3d5852c55cc4e4cba9b1252224b4acc935b36c51d153512c7ef1f19d"
     }
   ]
 }
