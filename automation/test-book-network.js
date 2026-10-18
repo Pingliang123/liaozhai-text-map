@@ -1,0 +1,6 @@
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),B=require('../assets/research-lab/book-network');
+const chapter=(id,title)=>({id,title,places:['济南'],spaces:['寺'],people:[{word:'王生'}],units:[{id:1,text:'济南王生宿寺。'}]});
+const g=B.build([chapter(0,'甲'),chapter(1,'乙')]);assert.equal(g.nodes.filter(n=>n.kind==='place').length,1);assert.equal(g.nodes.filter(n=>n.kind==='space').length,1);assert.equal(g.nodes.filter(n=>n.kind==='person').length,2);assert.equal(g.edges.length,6);assert(g.edges.every(e=>e.evidence[0].text.includes('济南')));
+const local=B.neighborhood(g,'place:济南',3);assert.equal(local.nodes.length,3);assert.equal(local.edges.length,2);assert.equal(local.neighbors.length,2);assert.equal(B.neighborhood(g,'missing').nodes.length,0);
+const full=B.build(JSON.parse(fs.readFileSync('assets/research-lab/data.json')).chapters);assert.equal(full.nodes.filter(n=>n.kind==='chapter').length,491);const shown=B.neighborhood(full,'place:济南',40);assert(shown.nodes.length<=40);assert(shown.edges.every(e=>shown.nodes.some(n=>n.id===e.source)&&shown.nodes.some(n=>n.id===e.target)));new vm.Script(fs.readFileSync('assets/research-lab/book-network.js','utf8'));
+console.log('PASS full-book graph: '+full.nodes.length+' nodes, '+full.edges.length+' edges; chapter-scoped people, shared terms, evidence and bounded neighborhood');
