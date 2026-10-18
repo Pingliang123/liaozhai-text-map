@@ -31,5 +31,8 @@ const report = audit({
 });
 assert.deepStrictEqual(report.counts, { exact: 0, embedded: 1, fragmented: 1, unreconciled: 0 });
 assert.strictEqual(report.rows[0].suggested_split.join('/'), '赴/金陵');
+assert.strictEqual(report.rows[0].confidence, 'high');
+assert.strictEqual(report.rows[1].suggested_split[0], '长山');
+assert.strictEqual(report.rows[1].confidence, 'medium');
 
 console.log('place-token boundary audit tests passed');

@@ -74,6 +74,12 @@ function classify(tokens, start, end) {
   };
 }
 
+function confidence(kind, word) {
+  if (kind === 'embedded') return word.length >= 2 ? 'high' : 'review';
+  if (kind === 'fragmented') return word.length >= 2 ? 'medium' : 'review';
+  return 'review';
+}
+
 function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), options = {}) {
   const pack = typeof packageFile === 'string' ? readJson(packageFile) : packageFile;
   const base = pack.base;
@@ -104,12 +110,13 @@ function audit(packageFile = path.join(__dirname, '..', 'data-package.json'), op
             chapter: chapter.chapter,
             place: word,
             kind: result.kind,
+            confidence: confidence(result.kind, word),
             context: source.slice(contextStart, contextEnd),
             tokens: result.covering.map(token => token.text),
             suggested_split: result.kind === 'embedded'
               ? [result.covering[0].text.slice(0, start - result.covering[0].start), word,
                 result.covering[0].text.slice(end - result.covering[0].start)].filter(Boolean)
-              : null,
+              : result.kind === 'fragmented' ? [word] : null,
             source: result.covering.some(token => token.source === 'revision') ? 'revision' : 'base',
           });
         }
