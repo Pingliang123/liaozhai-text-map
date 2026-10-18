@@ -2,7 +2,7 @@
   "format": "liaozhai-public-release-v1",
   "counts": {
     "chapters": 491,
-    "manual_chapters": 54,
+    "manual_chapters": 469,
     "manual_locations": 1
   },
   "research_files": [
@@ -518,8 +518,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 1092573,
-      "sha256": "56873053b048ccb587c393f52aeff8e8cd915ebfd79086fccb40d0b4fcc50621"
+      "bytes": 14369878,
+      "sha256": "cd9ba1696b0a5d2fcf79eee9535c50096ccda19fa19266db30dc84270034b53b"
     }
   ],
   "artifacts": [
@@ -534,14 +534,14 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "README.md",
-      "bytes": 1151,
-      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
+      "path": "audit-reports.js",
+      "bytes": 10140,
+      "sha256": "cda9c273b7f83146f9987807429e3f1c5175242577d7659c727a484aa1d70c53"
     },
     {
       "path": "data-package.json",
-      "bytes": 22280714,
-      "sha256": "4ce4dbda2a24a38174730c61ee46676159040a6f6b4915602df023e88b4f1b6d"
+      "bytes": 32187551,
+      "sha256": "0727b02e8f10bff89d87288336c3bb54f7358bd1ea3be97cdc86bbfb937bb88a"
     },
     {
       "path": "data.html",
@@ -565,18 +565,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 23124653,
-      "sha256": "bd2ee150bf4fa1634cbdfbc960d09eb831bce5f927c8782b2087920aff989080"
+      "bytes": 33032286,
+      "sha256": "ad91fc76ceabab12f5bda540b832bf59319b1752e4606a6b93955a889fd2fff8"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 1092573,
-      "sha256": "56873053b048ccb587c393f52aeff8e8cd915ebfd79086fccb40d0b4fcc50621"
+      "bytes": 14369878,
+      "sha256": "cd9ba1696b0a5d2fcf79eee9535c50096ccda19fa19266db30dc84270034b53b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1151,
+      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
     },
     {
       "path": "research-data.zip",
-      "bytes": 22636179,
-      "sha256": "4e887313baf9b99cde667a563f4c6451132e9cd6bdd5ee84a164097b1701cc35"
+      "bytes": 25199143,
+      "sha256": "af17a83c7b5239c7739d7c14106f5b5758e42e7362dfa0dde0417a8830fa833e"
     }
   ]
 }
