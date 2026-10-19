@@ -73,6 +73,8 @@ jobs:
           node automation/test-topic-places-dom.js
           node automation/test-network-analysis.js
           node automation/test-book-network-dom.js
+          node automation/test-network-explorer.js
+          node automation/test-network-explorer-dom.js
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
           node automation/test-performance.js
