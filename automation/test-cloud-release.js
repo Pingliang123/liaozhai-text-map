@@ -9,6 +9,7 @@ const html=fs.readFileSync('index.html','utf8');
 assert(html.includes('<details id="path-report-panel">'),'Path charts should not push the editable word table offscreen by default');
 assert(html.includes('<details id="route-legend-panel">'),'Long route legends should be collapsed initially');
 assert.equal((html.match(/<nav class="section-nav main-nav"[^>]*>([\s\S]*?)<\/nav>/)||[])[1]?.match(/<a\b/g)?.length,4,'Primary navigation keeps four research screens');
+assert(html.includes('id="nav-lab" href="assets/research-lab/?v=linkedspaces-5eb1830"'),'Research screen keeps the space-network lab entrance');
 assert(/<footer>[\s\S]*href="data.html"/.test(html),'Downloads remain accessible from footer');
 assert(!html.includes("id==='nav-candidates' ? 'reports-screen'"),'Original AI records must not redirect to a different screen');
 const downloadPage=fs.readFileSync('data.html','utf8');
