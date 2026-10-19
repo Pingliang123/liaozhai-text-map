@@ -29,3 +29,5 @@ console.log('PASS cached unmapped scan and single source-row read per list rende
 const preview=new E('main');P.mount(preview,{rows:()=>[{...row,word:'赴金陵',key:'places:赴金陵'}],chapter:()=>({...c,places:[{word:'赴金陵'}]}),unitStream:()=> '赴金陵 / 。',save(){}});
 const previewWord=preview.querySelectorAll('input').find(n=>n['aria-label']==='赴金陵修订词语');previewWord.value='金陵';previewWord.listeners.change();assert.equal(preview.querySelectorAll('textarea')[0].value,'赴 / 金陵 / 。');
 console.log('PASS word correction immediately updates visible sentence-token preview');
+const cross=new E('main');P.mount(cross,{rows:()=>[row,{...row,word:'赴金陵',present:false,status:'pending'}, {...row,present:false,status:'pending',chapter:'乙'}],chapter:()=>c,unitStream:()=> '赴金陵 / 。',save(){}});const crossScope=cross.querySelectorAll('select')[0];crossScope.value='crosscheck';crossScope.onchange();assert.deepEqual(cross.querySelectorAll('strong').map(n=>n.textContent),['赴金陵','金陵']);assert(cross.querySelectorAll('small').some(n=>n.textContent==='对照地名：金陵'));
+console.log('PASS known-place matching includes exact unclassified names and embedded malformed phrases');

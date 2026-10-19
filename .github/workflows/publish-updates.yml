@@ -73,6 +73,9 @@ jobs:
           done
           node automation/audit-unmapped-place-equivalences.js
           node automation/merge-revisions.js manual-revisions.json
+          node automation/build-spatial-lab.js
+          node automation/build-lab-times.js
+          node automation/test-network-freshness.js
           node automation/export-lab-place-levels.js
           node automation/test-place-level-colors.js
           node automation/export-topic-input.js
@@ -108,7 +111,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json assets/research-lab/topics.json assets/research-lab/networkx-analysis.json assets/research-lab/place-levels.json reports/unmapped-place-equivalence-audit-20261019.json reports/unmapped-place-equivalence-audit-20261019.md
+          git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json assets/research-lab/data.json assets/research-lab/time-terms.json assets/research-lab/topics.json assets/research-lab/networkx-analysis.json assets/research-lab/place-levels.json reports/unmapped-place-equivalence-audit-20261019.json reports/unmapped-place-equivalence-audit-20261019.md
           if ! git diff --cached --quiet; then
             git commit -m "更新人工修订资料包与发布版本"
             git push
