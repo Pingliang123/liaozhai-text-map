@@ -89,7 +89,11 @@ jobs:
         run: |
           python -m pip install -r automation/requirements-network.txt
           node automation/export-network-input.js
-          python automation/build-networkx.py
+          if node automation/test-tutorial-network.js; then
+            echo "Existing network analysis matches all current graph signatures."
+          else
+            python automation/build-networkx.py
+          fi
           node automation/test-tutorial-network.js
           node automation/test-tutorial-network-dom.js
           python automation/test-networkx.py
