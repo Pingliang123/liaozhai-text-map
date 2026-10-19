@@ -20,6 +20,8 @@ on:
       - auth-backend/**
       - index.html
       - data-package.json
+      - data.html
+      - assets/*.png
       - .github/workflows/publish-updates.yml
   workflow_dispatch:
   schedule:
@@ -86,6 +88,7 @@ jobs:
           node automation/test-chapter-filter.js
           node automation/test-performance.js
           node automation/test-cloud-release.js
+          python automation/test-release-cleanup.py
           python automation/finalize-cloud-release.py
       - name: Build tutorial NetworkX analysis
         shell: bash

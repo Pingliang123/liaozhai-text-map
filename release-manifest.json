@@ -352,11 +352,6 @@
       "sha256": "1ffb6a4c704abd9844bb0dfbd1d6e6394afc8f1ddd6f4a88112f6b89d1a916d4"
     },
     {
-      "path": "outputs/ghost_map/全書詞雲.png",
-      "bytes": 1004863,
-      "sha256": "f1926a87be3d82ccb337371f995bffea8b459401443444a842802cce0870a622"
-    },
-    {
       "path": "outputs/ghost_map/全書鬼怪地圖分析.ipynb",
       "bytes": 81293,
       "sha256": "74e030b65a87ad84481a846bfb95663e9a42456c5a985c59f3693592326357bf"
@@ -457,11 +452,6 @@
       "sha256": "60c89e8e62501dccf57a259bc1b7174a7c051fedc47efe37d16eb7cd784066d8"
     },
     {
-      "path": "outputs/ghost_map/聊齋鬼怪歷史地理互動地圖.html",
-      "bytes": 22305418,
-      "sha256": "789eb716c9f4aa814289f8ec032539569e9c1284211ade09e4f7fa970926bcb3"
-    },
-    {
       "path": "outputs/ghost_map/鬼怪地圖事件序列.json",
       "bytes": 13568769,
       "sha256": "142f5f6a3f451faf03a10c234ed62e1a13683ceac1d5dd29d889b0fca35efc51"
@@ -524,26 +514,6 @@
   ],
   "artifacts": [
     {
-      "path": ".gitattributes",
-      "bytes": 9,
-      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
-    },
-    {
-      "path": ".gitignore",
-      "bytes": 151,
-      "sha256": "05aa55cacbd425b41bd1f56a06ce3087d58df5acbdb4e2e545b4de3b38ee0fa1"
-    },
-    {
-      "path": ".nojekyll",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "README.md",
-      "bytes": 1151,
-      "sha256": "e0dcba7673c93e23a2c38ad7a3af373bb79b7933274a69e20de15b698ab78dea"
-    },
-    {
       "path": "audit-reports.js",
       "bytes": 10709,
       "sha256": "2a140ca70ef6c161348d56a3d8dd4fba13a39c39a89dddd6546cc37042a5fe2d"
@@ -575,8 +545,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 277133,
-      "sha256": "bf36ec7d3d74f47f144e38c62d2f9b12589a2ec712742d3129d5220a380b6652"
+      "bytes": 276963,
+      "sha256": "8b98f0735b9b08c2f286a0f9ce55e2aba93a8c234fd16558beaf8740319f9a1e"
     },
     {
       "path": "manual-revisions.json",
@@ -585,13 +555,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 25303731,
-      "sha256": "04584a3fa103a90851a3721101dce4eac904564b4e0919cc99ff6de9cb05a713"
-    },
-    {
-      "path": "topic-input.json",
-      "bytes": 3285084,
-      "sha256": "6737df14f4af3918f7e78912b587eeef01611ec873df23852b976cc93f5e4f42"
+      "bytes": 19235814,
+      "sha256": "8ec0cf84252620cadfc05456666aaa1d39ba4b1ced8272c20dd8c39afd79415f"
     }
   ]
 }
