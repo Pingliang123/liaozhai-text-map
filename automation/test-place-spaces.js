@@ -6,4 +6,6 @@ assert.equal(edge('济南','寺').weight,2);assert.equal(edge('济南','室').ev
 assert(!edge('青州','寺'),'Origin does not establish scene location');assert(!edge('济南','院'),'Do not connect every space in the chapter to every place');assert(g.pending.some(r=>r.unit===4));
 assert.deepEqual(edge('济南','寺').evidence[0].actors,[],'Do not assign all chapter characters to every connection');assert.equal(JSON.stringify(c),original);
 assert.deepEqual(P.hits('济南府', ['济南','济南府']).map(x=>x.word),['济南府']);
+assert.deepEqual(P.hits('北京城',['京城','北京']),P.hits('北京城',['北京','京城']),'Overlapping equal-length terms must use a locale-independent tie break');
+const savedCompare=String.prototype.localeCompare;try{String.prototype.localeCompare=function(){throw Error('Locale collation must not affect extraction');};assert(P.hits('北京城',['京城','北京']).length);}finally{String.prototype.localeCompare=savedCompare;}
 const real=P.build(require('../assets/research-lab/data.json').chapters);assert(real.places.nodes.length>600);assert(real.places.nodes.every(n=>n.kind==='place'&&n.degree>0));assert(real.spaces.edges.every(e=>e.source.startsWith('place:')&&e.target.startsWith('space:')));console.log('PASS one global place graph, isolates, chapter weights, contextual attribution, origin/scene boundary and traceable evidence');

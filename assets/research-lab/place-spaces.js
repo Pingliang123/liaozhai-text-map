@@ -1,6 +1,6 @@
 (function(root){'use strict';
 const R=typeof module!=='undefined'?require('./relation-network'):root.GhostRelationNetwork;
-function hits(text,words){const found=[],occupied=[];for(const word of [...new Set(words)].filter(Boolean).sort((a,b)=>b.length-a.length||a.localeCompare(b))){let at=-1;while((at=text.indexOf(word,at+1))>=0){const end=at+word.length;if(occupied.some(([a,b])=>at<b&&end>a))continue;occupied.push([at,end]);found.push({word,at,end});}}return found.sort((a,b)=>a.at-b.at);}
+function hits(text,words){const found=[],occupied=[];for(const word of [...new Set(words)].filter(Boolean).sort((a,b)=>b.length-a.length||(a<b?-1:a>b?1:0))){let at=-1;while((at=text.indexOf(word,at+1))>=0){const end=at+word.length;if(occupied.some(([a,b])=>at<b&&end>a))continue;occupied.push([at,end]);found.push({word,at,end});}}return found.sort((a,b)=>a.at-b.at);}
 function build(chapters){
  const places=new Map(),pairs=new Map(),spaces=new Map(),pending=[];
  const node=word=>{const id='place:'+word;if(!places.has(id))places.set(id,{id,label:word,kind:'place',degree:0});return id;};
