@@ -1,0 +1,5 @@
+const assert=require('assert/strict'),C=require('../assets/research-lab/place-level-colors'),records=require('../assets/research-lab/place-levels.json').places;
+for(const [word,level]of [['山东','province'],['济南','prefecture'],['淄川','county'],['泰山','natural']])assert.equal(C.style({label:word,kind:'place'},records).level,level);
+assert.equal(C.style({label:'不存在的地名',kind:'place'},records).level,'unknown');assert.equal(C.style({label:'冥府',kind:'place',realm:'otherworld'},{冥府:{level:'county'}}).level,'otherworld');assert.equal(C.style({label:'寺',kind:'space'},records).level,'space');assert.equal(new Set(Object.values(C.palette).map(p=>p.color)).size,Object.keys(C.palette).length);
+const fs=require('fs'),M=require('./ghost_map_model'),m=M.create(require('../data-package.json').base);m.importDocument(require('../manual-revisions.json'));for(const p of m.places())assert.equal(records[p.name].level,p.admin_level||'unknown');
+console.log('PASS main-map levels, exact-name matching, unknown fallback, otherworld override and distinct palette');
