@@ -1,0 +1,10 @@
+const assert=require('assert/strict'),P=require('../assets/place-review');
+const units=[{text:'赴金陵。'},{text:'宿寺。'}];
+assert.equal(P.replaceUnit('赴金陵 / 。 / 宿 / 寺 / 。',units,0,'赴 / 金陵 / 。'),'赴 / 金陵 / 。 / 宿 / 寺 / 。');
+assert.equal(P.replaceUnit('赴 / 金陵 / 。 / 宿寺 / 。',units,1,'宿 / 寺 / 。'),'赴 / 金陵 / 。 / 宿 / 寺 / 。');
+assert.throws(()=>P.replaceUnit('赴金陵。宿寺。',units,0,'往金陵。'),/不能增删/);
+assert.throws(()=>P.replaceUnit('金陵。宿寺。',units,0,'赴金陵。'),/不一致/);
+assert.equal(P.unitTokens({text:'赴金陵。',tokens:[[0,1],[1,3],[3,4]]}),'赴 / 金陵 / 。');
+const fs=require('fs'),vm=require('vm');new vm.Script(fs.readFileSync('assets/place-review.js','utf8'));
+assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
+console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');

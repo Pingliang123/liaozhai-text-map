@@ -11,6 +11,7 @@ on:
       - github-sync-config.json
       - audit-reports.js
       - assets/data-loader.js
+      - assets/place-review.js
       - assets/research-lab/*.js
       - assets/research-lab/*.css
       - assets/research-lab/index.html
@@ -59,6 +60,8 @@ jobs:
           node automation/test-chapter-references.js
           node automation/test-audit-reports.js
           node automation/test-audit-reports-dom.js
+          node automation/test-place-review.js
+          node automation/test-place-review-dom.js
           node --test auth-backend/test-worker.mjs
           for file in updates/inbox/*.json; do
             [ -e "$file" ] || continue
