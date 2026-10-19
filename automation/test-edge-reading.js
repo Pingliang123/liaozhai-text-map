@@ -32,3 +32,12 @@ assert(S.curve(a,a,10,10).d.includes(' C'));assert(!S.curve(a,{...b,x:0},10,20).
 const undirected=new E('main');window.GhostBookNetwork.mount(undirected,[{title:'篇甲'}],()=>{},{graph:{nodes:graph.nodes,edges:graph.edges.map(e=>({...e,directed:false}))},simple:true,lexical:true});
 assert.equal(all(undirected,'marker').length,0);assert.equal(all(undirected,'path').filter(n=>n.attrs['data-direction']==='true').length,0);assert(all(undirected,'p').some(n=>n.textContent.includes('无移动方向')));
 console.log('PASS visible direction arrows, source/target evidence, opposite curves, radius clearance and undirected semantics');
+const B=require('../assets/research-lab/book-network'),source=JSON.stringify(graph),limited=B.direct(graph,'济南',2);assert.equal(limited.nodes.length,2);assert(limited.edges.every(e=>e.source==='济南'||e.target==='济南'));assert.equal(JSON.stringify(graph),source);
+const reading=new E('main'),readingGraph={nodes:[...graph.nodes.map(n=>({...n,kind:'place'})),{id:'远处',label:'远处',kind:'place',degree:1}],edges:[...graph.edges,{source:'寺',target:'远处',weight:1,evidence:[]}]};
+window.GhostBookNetwork.mount(reading,[{title:'篇甲'}],()=>{},{graph:readingGraph,simple:true,readable:true,lexical:true,weightedDirected:true});
+assert.equal(all(reading,'circle').length,3,'Only direct connections are initially visible');
+assert.equal(all(reading,'blockquote').length,0,'Do not flood sidebar with excerpts on load');
+assert(all(reading,'summary').some(n=>n.textContent==='显示设置与下载'));assert(all(reading,'summary').some(n=>n.textContent.includes('全部关联原文')));
+const readPicker=all(reading,'select').find(n=>n.attrs['aria-label']==='网络中心节点');assert(!readPicker.children.some(n=>n.textContent.includes('加权度')));
+all(reading,'button').find(n=>n.textContent==='济南 → 室 · 10次').onclick();assert.equal(all(reading,'blockquote').length,20);
+console.log('PASS focused direct network, compact labels, collapsed settings/evidence and click-to-read');
