@@ -23,7 +23,7 @@ function render(){if(!data)return;document.querySelectorAll('[data-tab]').forEac
  }else if(tab==='topics'){
  GhostTopicPlaces.mount(out,cs,rows=>{exportRows=rows;});
  }else if(tab==='relations'){
- GhostRelationNetwork.mount(out,cs,rows=>{exportRows=rows;});
+ GhostPlaceSpaces.mount(out,cs,rows=>{exportRows=rows;});
  }else if(tab==='book'){
  GhostBookNetwork.mount(out,cs,rows=>{exportRows=rows;});
  }else if(tab==='network'){
