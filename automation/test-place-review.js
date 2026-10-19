@@ -17,5 +17,9 @@ edit=m.editable(id);edit.segmentation_note=edit.segmentation_note.replaceAll('�
 assert(m.view(id).places.some(p=>p.word==='金陵'),'恢复已知地名完整分词后应回填');
 edit=m.editable(id);edit.segmentation_note+='错字';assert.throws(()=>m.save(id,edit),/原文/);
 console.log('PASS bidirectional place/token sync and original-text protection');
+const fixture={places:[{word:'金陵'},{word:'长清县'}],source_units:[{text:'赴金陵，长清县。',tokens:[[0,3],[3,4],[4,5],[5,6],[6,7],[7,8]]}]};
+const repair=P.alignPlaces(fixture);assert.equal(repair.changed,2);assert.equal(repair.note,'赴 / 金陵 / ， / 长清县 / 。');assert.equal(P.alignPlaces({...fixture,segmentation_note:repair.note}).changed,0);
+const {align}=require('./align-current-place-tokens');assert.equal(align(fixture).note,repair.note);assert.equal(repair.note.replace(/[\s/|]/gu,''),fixture.source_units[0].text);
+console.log('PASS published/local repairs agree, preserve source and are idempotent');
 assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
 console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');
