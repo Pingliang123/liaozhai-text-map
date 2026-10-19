@@ -10,3 +10,10 @@ assert.equal(all(first,'circle').length,2,'First network hides isolates on load'
 const search=all(first,'input')[0];search.value='青州';search.oninput();assert.equal(all(first,'circle').length,2,'Searching highlights a location without replacing global network by separate local graphs');
 select.value='place:孤名';select.onchange();assert.equal(all(second,'circle').length,1);assert(all(second,'p').some(n=>n.textContent.includes('尚未关联')));assert.equal(all(first,'circle').length,2);
 console.log('PASS two separate networks, whole-book initial display, selected-place spaces, empty attribution and independent interaction');
+const category=all(second,'select').find(n=>n.attrs['aria-label']==='选择查询词类'),spaceSelect=all(second,'select').find(n=>n.attrs['aria-label']==='选择空间查看关联地点');
+assert.deepEqual(select.children.map(n=>n.value).sort(),['place:孤名','place:济南','place:青州']);assert.deepEqual(spaceSelect.children.map(n=>n.value).sort(),['space:寺','space:院']);
+category.value='space';spaceSelect.value='space:寺';category.onchange();assert.equal(all(second,'circle').length,2);assert(all(second,'text').some(n=>n.textContent==='济南'));assert(!all(second,'text').some(n=>n.textContent==='青州'));assert.equal(all(first,'circle').length,2);
+spaceSelect.value='space:院';spaceSelect.onchange();assert(all(second,'text').some(n=>n.textContent==='青州'));assert(!all(second,'text').some(n=>n.textContent==='济南'));
+category.value='place';category.onchange();assert.equal(select.value,'place:孤名');assert.equal(all(second,'circle').length,1,'Place selection survives switching term classes');
+assert(all(second,'label').find(n=>n.textContent==='空间词').hidden);assert(!all(second,'label').find(n=>n.textContent==='地点词').hidden);
+console.log('PASS distinct place/space selectors, reverse lookup, preserved selections and independent global network');
