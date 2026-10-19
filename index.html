@@ -1058,6 +1058,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   else root.GhostMapGeometry = api;
 })(globalThis);
 </script>
+<script src="assets/research-lab/topic-places.js?v=topicplaces20261019"></script>
 <script>(async function () {
   'use strict';
   const $ = id => document.getElementById(id);
@@ -1700,6 +1701,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const p = allPlaces().find(p => p.id === state.place);
     if (!p) { out.append(element('p', {}, '点击地点或使用地点选单，查看篇目及三界原文。')); return; }
     const chapters = filteredChapters(p), counts = Object.fromEntries(M.EVENTS.map(t => [t, chapters.filter(c => c.event_types[t] > 0).length]));
+    globalThis.GhostTopicPlaces.attachMap(out,p.name,chapters.map(c=>c.chapter_id));
     out.append(element('h3', {}, p.name + ' → ' + p.modern_name), element('p', {class: 'muted'},
       '目前条件下涉及 ' + chapters.length + ' 篇；' + p.mapping_review_status + '。' + p.note));
     out.append(element('p', {class: 'muted'}, '现代参考座标：北纬 ' + p.lat.toFixed(4) + '°、东经 ' + p.lon.toFixed(4) + '°。'));

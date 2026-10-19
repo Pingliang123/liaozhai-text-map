@@ -57,6 +57,12 @@ jobs:
             git mv "$file" "updates/processed/$(basename "$file" .json)-${GITHUB_SHA}.json"
           done
           node automation/merge-revisions.js manual-revisions.json
+          node automation/export-topic-input.js
+          node automation/build-topic-model.js
+          node automation/test-topic-places.js
+          node automation/test-topic-places-dom.js
+          node automation/test-network-analysis.js
+          node automation/test-book-network-dom.js
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
           node automation/test-performance.js
@@ -67,7 +73,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json
+          git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json assets/research-lab/topics.json
           if ! git diff --cached --quiet; then
             git commit -m "更新人工修订资料包与发布版本"
             git push
