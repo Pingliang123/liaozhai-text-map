@@ -1,0 +1,2593 @@
+{
+  "generated_at": "2026-10-19",
+  "total_checked": 287,
+  "merged": 10,
+  "covered_by_existing": 18,
+  "alias_conflicts": [
+    {
+      "word": "卓锡泰山",
+      "chapters": [
+        101
+      ],
+      "category": "equivalent",
+      "target": "泰山",
+      "reason": "“卓锡”是行迹动词，核心地名为泰山。"
+    },
+    {
+      "word": "吴江府",
+      "chapters": [
+        416
+      ],
+      "category": "equivalent",
+      "target": "吴江",
+      "reason": "府级行政后缀，核心地名为吴江。"
+    },
+    {
+      "word": "官汾州",
+      "chapters": [
+        117
+      ],
+      "category": "equivalent",
+      "target": "汾州",
+      "reason": "“官”是叙事动词，核心地名为汾州。"
+    },
+    {
+      "word": "客金陵",
+      "chapters": [
+        118
+      ],
+      "category": "equivalent",
+      "target": "金陵",
+      "reason": "“客”是人物状态，核心地名为金陵。"
+    },
+    {
+      "word": "山东长清县",
+      "chapters": [
+        15
+      ],
+      "category": "equivalent",
+      "target": "长清县",
+      "reason": "省域前缀与县名合写，核心地名为长清县。"
+    },
+    {
+      "word": "平阴人",
+      "chapters": [
+        421
+      ],
+      "category": "equivalent",
+      "target": "平阴",
+      "reason": "“人”是籍贯后缀，核心地名为平阴。"
+    },
+    {
+      "word": "德州道",
+      "chapters": [
+        182
+      ],
+      "category": "equivalent",
+      "target": "德州",
+      "reason": "道路／辖区表达，归入德州区域而非独立点。"
+    },
+    {
+      "word": "戎衢州",
+      "chapters": [
+        420
+      ],
+      "category": "equivalent",
+      "target": "衢州",
+      "reason": "“戎”是人物姓氏，核心地名为衢州。"
+    },
+    {
+      "word": "河南界",
+      "chapters": [
+        15,
+        209
+      ],
+      "category": "equivalent",
+      "target": "河南",
+      "reason": "“界”表示边界，不另造河南的子点。"
+    },
+    {
+      "word": "河间人",
+      "chapters": [
+        321
+      ],
+      "category": "equivalent",
+      "target": "河间",
+      "reason": "“人”是籍贯后缀，核心地名为河间。"
+    },
+    {
+      "word": "泰山人",
+      "chapters": [
+        394
+      ],
+      "category": "equivalent",
+      "target": "泰山",
+      "reason": "“人”是籍贯后缀，核心地名为泰山。"
+    },
+    {
+      "word": "洛下",
+      "chapters": [
+        409
+      ],
+      "category": "equivalent",
+      "target": "洛",
+      "reason": "方位后缀，归入洛的区域表达。"
+    },
+    {
+      "word": "海州界",
+      "chapters": [
+        283
+      ],
+      "category": "equivalent",
+      "target": "海州",
+      "reason": "“界”表示边界，不另造海州的子点。"
+    },
+    {
+      "word": "盖陵阳",
+      "chapters": [
+        46
+      ],
+      "category": "equivalent",
+      "target": "陵阳",
+      "reason": "“盖”是叙述副词，核心地名为陵阳。"
+    },
+    {
+      "word": "试金陵",
+      "chapters": [
+        440
+      ],
+      "category": "equivalent",
+      "target": "金陵",
+      "reason": "“试”是赴试动词，核心地名为金陵。"
+    },
+    {
+      "word": "辽阳人",
+      "chapters": [
+        131
+      ],
+      "category": "equivalent",
+      "target": "辽阳",
+      "reason": "“人”是籍贯后缀，核心地名为辽阳。"
+    },
+    {
+      "word": "达金陵",
+      "chapters": [
+        72
+      ],
+      "category": "equivalent",
+      "target": "金陵",
+      "reason": "“达”是到达动词，核心地名为金陵。"
+    },
+    {
+      "word": "都中",
+      "chapters": [
+        408
+      ],
+      "category": "equivalent",
+      "target": "都",
+      "reason": "“都中”表示首都之中，不另造新地点。"
+    },
+    {
+      "word": "青州城",
+      "chapters": [
+        485
+      ],
+      "category": "equivalent",
+      "target": "青州",
+      "reason": "城郭表达归入青州行政区域。"
+    },
+    {
+      "word": "顺天府",
+      "chapters": [
+        393
+      ],
+      "category": "equivalent",
+      "target": "顺天",
+      "reason": "府级行政后缀，核心地名为顺天。"
+    },
+    {
+      "word": "顺天府市",
+      "chapters": [
+        393
+      ],
+      "category": "equivalent",
+      "target": "顺天",
+      "reason": "府市合写，归入顺天区域。"
+    }
+  ],
+  "remaining": 259,
+  "counts": {
+    "space-or-building": 66,
+    "unresolved": 62,
+    "context-needed": 128,
+    "equivalent": 31
+  },
+  "merged_rows": [
+    {
+      "word": "京都",
+      "chapters": [
+        233,
+        286,
+        363,
+        379,
+        466
+      ],
+      "category": "equivalent",
+      "target": "都",
+      "reason": "首都的同义表达；“都”按当时首都保留为语义地点。"
+    },
+    {
+      "word": "太行山",
+      "chapters": [
+        152
+      ],
+      "category": "equivalent",
+      "target": "太行",
+      "reason": "山名后缀，核心地名为太行。"
+    },
+    {
+      "word": "故晋",
+      "chapters": [
+        214
+      ],
+      "category": "equivalent",
+      "target": "晋",
+      "reason": "历史区域前缀，核心地名为晋。"
+    },
+    {
+      "word": "梓潼府",
+      "chapters": [
+        318
+      ],
+      "category": "equivalent",
+      "target": "梓潼",
+      "reason": "府级行政后缀，核心地名为梓潼。"
+    },
+    {
+      "word": "洛城",
+      "chapters": [
+        281
+      ],
+      "category": "equivalent",
+      "target": "洛",
+      "reason": "城郭后缀，归入洛的区域表达。"
+    },
+    {
+      "word": "陕西延安",
+      "chapters": [
+        392
+      ],
+      "category": "equivalent",
+      "target": "延安",
+      "reason": "省域前缀与府名合写，核心地名为延安。"
+    },
+    {
+      "word": "青州市",
+      "chapters": [
+        97
+      ],
+      "category": "equivalent",
+      "target": "青州",
+      "reason": "市级表达归入青州行政区域。"
+    },
+    {
+      "word": "青州道",
+      "chapters": [
+        81
+      ],
+      "category": "equivalent",
+      "target": "青州",
+      "reason": "道路／辖区表达归入青州行政区域。"
+    },
+    {
+      "word": "都城",
+      "chapters": [
+        98
+      ],
+      "category": "equivalent",
+      "target": "都",
+      "reason": "“都城”表示首都，不另造新地点。"
+    },
+    {
+      "word": "长安市",
+      "chapters": [
+        160
+      ],
+      "category": "equivalent",
+      "target": "长安",
+      "reason": "城市后缀，核心地名为长安。"
+    }
+  ],
+  "remaining_rows": [
+    {
+      "word": "一洞府",
+      "chapters": [
+        330
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "上苑",
+      "chapters": [
+        183
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "东山望村",
+      "chapters": [
+        262
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东岳",
+      "chapters": [
+        395,
+        441
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东村",
+      "chapters": [
+        40,
+        131,
+        174,
+        243,
+        249
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东疃",
+      "chapters": [
+        343
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东粤",
+      "chapters": [
+        262
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东郡",
+      "chapters": [
+        16
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东香山",
+      "chapters": [
+        184
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "中华",
+      "chapters": [
+        130
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "中原",
+      "chapters": [
+        272
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "中国",
+      "chapters": [
+        99,
+        101,
+        130,
+        142,
+        361
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "中州",
+      "chapters": [
+        108,
+        296
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "临酆都",
+      "chapters": [
+        140
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "乃蒿里",
+      "chapters": [
+        176
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "义虎祠",
+      "chapters": [
+        166
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "于湖村",
+      "chapters": [
+        429
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "于远郡",
+      "chapters": [
+        401
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "云贵",
+      "chapters": [
+        117
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "五祖山",
+      "chapters": [
+        423
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "五莲山寺",
+      "chapters": [
+        286
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "交州",
+      "chapters": [
+        99
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "仙人岛",
+      "chapters": [
+        272
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "伏虎寺",
+      "chapters": [
+        331
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "余杭",
+      "chapters": [
+        226,
+        318
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "停柩寺",
+      "chapters": [
+        129
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "关东",
+      "chapters": [
+        29,
+        30
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "关帝庙",
+      "chapters": [
+        443
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "兴福寺",
+      "chapters": [
+        22
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "内城",
+      "chapters": [
+        72
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "冥府",
+      "chapters": [
+        384
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "凤翔界",
+      "chapters": [
+        363
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "刀山",
+      "chapters": [
+        22
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "剑南",
+      "chapters": [
+        275
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "北平",
+      "chapters": [
+        336
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "北村",
+      "chapters": [
+        40,
+        202,
+        463
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "北里",
+      "chapters": [
+        382
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "匡山僧寺",
+      "chapters": [
+        262
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "十王殿",
+      "chapters": [
+        46
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "千佛山",
+      "chapters": [
+        36
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "华岳",
+      "chapters": [
+        181
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "南中",
+      "chapters": [
+        411
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "南岳",
+      "chapters": [
+        98,
+        139,
+        391
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "南服",
+      "chapters": [
+        273,
+        302
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "南都",
+      "chapters": [
+        251
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "厦间",
+      "chapters": [
+        115
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "后宰门",
+      "chapters": [
+        256
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "吴王庙",
+      "chapters": [
+        429
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "吴门",
+      "chapters": [
+        223,
+        416
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "圣后府",
+      "chapters": [
+        377
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "圣庙",
+      "chapters": [
+        94
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "城北村",
+      "chapters": [
+        394
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "城隍庙",
+      "chapters": [
+        121,
+        398
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "城隍祠",
+      "chapters": [
+        75,
+        221
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "墓内外",
+      "chapters": [
+        382
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "大佛阁",
+      "chapters": [
+        135
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "大圣祠",
+      "chapters": [
+        413
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "大士祠",
+      "chapters": [
+        129
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "大岛",
+      "chapters": [
+        444
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "天宁寺",
+      "chapters": [
+        314
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "天宫",
+      "chapters": [
+        283,
+        379
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "太华",
+      "chapters": [
+        151
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "太山",
+      "chapters": [
+        61,
+        107,
+        384
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "夷陵",
+      "chapters": [
+        423
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "奂山山市",
+      "chapters": [
+        248
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "奈河",
+      "chapters": [
+        442
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "安乐乡",
+      "chapters": [
+        181
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "寓蒙山寺",
+      "chapters": [
+        274
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "山神祠",
+      "chapters": [
+        241
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "岳州",
+      "chapters": [
+        423
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "岳庙",
+      "chapters": [
+        243
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "左车祠",
+      "chapters": [
+        456
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "平康巷",
+      "chapters": [
+        439
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "广寒宫",
+      "chapters": [
+        460
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "徐州",
+      "chapters": [
+        206,
+        340
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "御沟",
+      "chapters": [
+        151
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "恒河",
+      "chapters": [
+        251
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "扬州界",
+      "chapters": [
+        317
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "报国寺",
+      "chapters": [
+        318,
+        446
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "攒瘗阁",
+      "chapters": [
+        191
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "故吴",
+      "chapters": [
+        416
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "斋门",
+      "chapters": [
+        39
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "旧寺",
+      "chapters": [
+        15
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "时肃府",
+      "chapters": [
+        251
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "时颜镇",
+      "chapters": [
+        225
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "昆仑山",
+      "chapters": [
+        431
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "明湖",
+      "chapters": [
+        87
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "晋中",
+      "chapters": [
+        266
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "望乡",
+      "chapters": [
+        58
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "朝鲜",
+      "chapters": [
+        375
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "某村",
+      "chapters": [
+        371
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "查牙山",
+      "chapters": [
+        374
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "柳沟寺",
+      "chapters": [
+        6
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "桃花江",
+      "chapters": [
+        55
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "梅姑祠",
+      "chapters": [
+        269
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "梓潼祠",
+      "chapters": [
+        318
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "梨花岛",
+      "chapters": [
+        104
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "楚夷陵",
+      "chapters": [
+        423
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "横溪",
+      "chapters": [
+        124
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "武夷",
+      "chapters": [
+        334
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "武夷山",
+      "chapters": [
+        349
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "殡宫",
+      "chapters": [
+        130
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "毛公佳城",
+      "chapters": [
+        146
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "水月寺",
+      "chapters": [
+        174
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "汉水",
+      "chapters": [
+        429
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "汉江",
+      "chapters": [
+        171,
+        429
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江水",
+      "chapters": [
+        416
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江汉",
+      "chapters": [
+        414
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江浙",
+      "chapters": [
+        356
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江淮",
+      "chapters": [
+        391
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江淮间",
+      "chapters": [
+        139
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "江滨",
+      "chapters": [
+        191
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "汴梁",
+      "chapters": [
+        117
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "河北",
+      "chapters": [
+        83,
+        406
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "河干",
+      "chapters": [
+        11
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "河滨",
+      "chapters": [
+        446
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "泗上",
+      "chapters": [
+        328
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "泗水山",
+      "chapters": [
+        234
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "泺口河",
+      "chapters": [
+        173
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "泾河",
+      "chapters": [
+        407
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "流沙河",
+      "chapters": [
+        101
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "济东",
+      "chapters": [
+        163
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "济城",
+      "chapters": [
+        134
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "济阳祝村",
+      "chapters": [
+        62
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "浙东",
+      "chapters": [
+        486
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "海东",
+      "chapters": [
+        394
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "海中市",
+      "chapters": [
+        130
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "海南",
+      "chapters": [
+        272
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "海岱门",
+      "chapters": [
+        446
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "海市",
+      "chapters": [
+        130
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "淄邑",
+      "chapters": [
+        16,
+        467,
+        481
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "淄邑北村",
+      "chapters": [
+        461
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "淮上",
+      "chapters": [
+        311
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "淮南",
+      "chapters": [
+        463
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "淮阳",
+      "chapters": [
+        30
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "淮阳界",
+      "chapters": [
+        30
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "清水潭",
+      "chapters": [
+        385
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "湖广",
+      "chapters": [
+        435
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "湖广武陵",
+      "chapters": [
+        330
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "滕邑",
+      "chapters": [
+        107
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "满洲",
+      "chapters": [
+        215
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "潍邑",
+      "chapters": [
+        78
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "潞之长治",
+      "chapters": [
+        188
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "澹台子羽祠",
+      "chapters": [
+        485
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "灵寝",
+      "chapters": [
+        102
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "燕子谷",
+      "chapters": [
+        437
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "燕都",
+      "chapters": [
+        37,
+        151,
+        171
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "牛头岭",
+      "chapters": [
+        188
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "牛山",
+      "chapters": [
+        424
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "牛首山",
+      "chapters": [
+        424
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "独乐里沟",
+      "chapters": [
+        118
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "玉笥山",
+      "chapters": [
+        249
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "王母宫",
+      "chapters": [
+        98
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "王舍人庄",
+      "chapters": [
+        146
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "琉璃厂",
+      "chapters": [
+        107
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "瑶池",
+      "chapters": [
+        281
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "登金山",
+      "chapters": [
+        54
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "益都盆泉",
+      "chapters": [
+        153
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "相公庄",
+      "chapters": [
+        80
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "相公祠",
+      "chapters": [
+        54
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "石匣营",
+      "chapters": [
+        253
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "石坑庄",
+      "chapters": [
+        11
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "石门庄",
+      "chapters": [
+        137
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "神仙岛",
+      "chapters": [
+        478
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "离宫",
+      "chapters": [
+        130
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "秦中",
+      "chapters": [
+        110
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "秦女村",
+      "chapters": [
+        74
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "秦邮",
+      "chapters": [
+        331
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "粤",
+      "chapters": [
+        96,
+        262,
+        308
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "粤东",
+      "chapters": [
+        458
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "绰然堂",
+      "chapters": [
+        175
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "胡田村",
+      "chapters": [
+        17
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "胶莱",
+      "chapters": [
+        396
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "臧氏村",
+      "chapters": [
+        423
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "至江村",
+      "chapters": [
+        465
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "芙蓉",
+      "chapters": [
+        87
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "芙蓉城",
+      "chapters": [
+        4
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "芜界",
+      "chapters": [
+        107
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "苍龙岭",
+      "chapters": [
+        452
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "苕溪",
+      "chapters": [
+        92
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "茂陵",
+      "chapters": [
+        212
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "莒之罗店",
+      "chapters": [
+        47
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "莱城",
+      "chapters": [
+        203
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "菩陀寺",
+      "chapters": [
+        21
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "萦回村",
+      "chapters": [
+        236
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "萧寺",
+      "chapters": [
+        83,
+        155
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "葬竹桥",
+      "chapters": [
+        464
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "蒙沂",
+      "chapters": [
+        399
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "蛇佛寺",
+      "chapters": [
+        234
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "衡府",
+      "chapters": [
+        37,
+        81,
+        155
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "西土",
+      "chapters": [
+        94,
+        101
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西塞",
+      "chapters": [
+        460
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西岳",
+      "chapters": [
+        46
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西崖",
+      "chapters": [
+        371
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西崖庄",
+      "chapters": [
+        371
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西州",
+      "chapters": [
+        158
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西村",
+      "chapters": [
+        272,
+        490
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西疆",
+      "chapters": [
+        120
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "西邑",
+      "chapters": [
+        370
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "诣岳庙",
+      "chapters": [
+        355
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "诣庙",
+      "chapters": [
+        119
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "诣西河",
+      "chapters": [
+        356
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "诸冯村",
+      "chapters": [
+        447
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "贝勒府",
+      "chapters": [
+        37
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "费邑",
+      "chapters": [
+        459
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "赴海市",
+      "chapters": [
+        130
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "辽东",
+      "chapters": [
+        139,
+        296
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "近村",
+      "chapters": [
+        209,
+        297
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "适城隍庙",
+      "chapters": [
+        469
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "邑之蔡店",
+      "chapters": [
+        2
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "邑城",
+      "chapters": [
+        437
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "邑西村",
+      "chapters": [
+        128
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "邑邢村",
+      "chapters": [
+        132
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "邬镇",
+      "chapters": [
+        11
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "郡城",
+      "chapters": [
+        36,
+        55,
+        417
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "郭岳庙",
+      "chapters": [
+        166
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "都中",
+      "chapters": [
+        408
+      ],
+      "category": "equivalent",
+      "target": "都",
+      "reason": "“都中”表示首都之中，不另造新地点。"
+    },
+    {
+      "word": "鄱阳湖",
+      "chapters": [
+        190
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "醴泉寺",
+      "chapters": [
+        193
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "采霞宫",
+      "chapters": [
+        130
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "里门",
+      "chapters": [
+        32
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "金沙寺",
+      "chapters": [
+        331
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "铁围山",
+      "chapters": [
+        35
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "长溪",
+      "chapters": [
+        33,
+        164
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "闻安期岛",
+      "chapters": [
+        375
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "阜城门",
+      "chapters": [
+        314
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "阴世",
+      "chapters": [
+        392
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "阴曹",
+      "chapters": [
+        91
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "陕中",
+      "chapters": [
+        480
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "陕右",
+      "chapters": [
+        64
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "青城山",
+      "chapters": [
+        459
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "青帝庙",
+      "chapters": [
+        39
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "顺天府",
+      "chapters": [
+        393
+      ],
+      "category": "equivalent",
+      "target": "顺天",
+      "reason": "府级行政后缀，核心地名为顺天。"
+    },
+    {
+      "word": "顺天府市",
+      "chapters": [
+        393
+      ],
+      "category": "equivalent",
+      "target": "顺天",
+      "reason": "府市合写，归入顺天区域。"
+    },
+    {
+      "word": "颜山",
+      "chapters": [
+        368
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "香普陀寺",
+      "chapters": [
+        209
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "香水月寺",
+      "chapters": [
+        69
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "香黑帝祠",
+      "chapters": [
+        249
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "鲍庄",
+      "chapters": [
+        391
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "黄龙府",
+      "chapters": [
+        92
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "黑暗狱",
+      "chapters": [
+        403
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "龙虎山",
+      "chapters": [
+        19
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "东安",
+      "chapters": [
+        395
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "保定",
+      "chapters": [
+        109,
+        474
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "兰陵",
+      "chapters": [
+        464
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "南村",
+      "chapters": [
+        55,
+        91,
+        120,
+        356,
+        399
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "南湖",
+      "chapters": [
+        195
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "大佛寺",
+      "chapters": [
+        119
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "安村",
+      "chapters": [
+        456
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "寺",
+      "chapters": [
+        484
+      ],
+      "category": "space-or-building",
+      "reason": "专名建筑或篇内空间，不能仅凭检索结果当作行政地点。"
+    },
+    {
+      "word": "平城",
+      "chapters": [
+        246
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "桃源",
+      "chapters": [
+        382,
+        398
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "灵山",
+      "chapters": [
+        460
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "苏溪",
+      "chapters": [
+        46
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "蒙山",
+      "chapters": [
+        268
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "辽城",
+      "chapters": [
+        341
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "金山",
+      "chapters": [
+        416
+      ],
+      "category": "context-needed",
+      "reason": "可能是下级地点、自然地貌或方位区域，需按篇目上下文决定，不能统一定位。"
+    },
+    {
+      "word": "龙津",
+      "chapters": [
+        458
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    },
+    {
+      "word": "龙窝",
+      "chapters": [
+        416
+      ],
+      "category": "unresolved",
+      "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
+    }
+  ],
+  "covered_rows": [
+    {
+      "word": "卓锡泰山",
+      "chapters": [
+        101
+      ],
+      "category": "covered-by-existing",
+      "target": "泰山",
+      "reason": "本篇已有“泰山”，不另建地点节点。"
+    },
+    {
+      "word": "吴江府",
+      "chapters": [
+        416
+      ],
+      "category": "covered-by-existing",
+      "target": "吴江",
+      "reason": "本篇已有“吴江”，不另建地点节点。"
+    },
+    {
+      "word": "官汾州",
+      "chapters": [
+        117
+      ],
+      "category": "covered-by-existing",
+      "target": "汾州",
+      "reason": "本篇已有“汾州”，不另建地点节点。"
+    },
+    {
+      "word": "客金陵",
+      "chapters": [
+        118
+      ],
+      "category": "covered-by-existing",
+      "target": "金陵",
+      "reason": "本篇已有“金陵”，不另建地点节点。"
+    },
+    {
+      "word": "山东长清县",
+      "chapters": [
+        15
+      ],
+      "category": "covered-by-existing",
+      "target": "长清县",
+      "reason": "本篇已有“长清县”，不另建地点节点。"
+    },
+    {
+      "word": "平阴人",
+      "chapters": [
+        421
+      ],
+      "category": "covered-by-existing",
+      "target": "平阴",
+      "reason": "本篇已有“平阴”，不另建地点节点。"
+    },
+    {
+      "word": "德州道",
+      "chapters": [
+        182
+      ],
+      "category": "covered-by-existing",
+      "target": "德州",
+      "reason": "本篇已有“德州”，不另建地点节点。"
+    },
+    {
+      "word": "戎衢州",
+      "chapters": [
+        420
+      ],
+      "category": "covered-by-existing",
+      "target": "衢州",
+      "reason": "本篇已有“衢州”，不另建地点节点。"
+    },
+    {
+      "word": "河南界",
+      "chapters": [
+        15,
+        209
+      ],
+      "category": "covered-by-existing",
+      "target": "河南",
+      "reason": "本篇已有“河南”，不另建地点节点。"
+    },
+    {
+      "word": "河间人",
+      "chapters": [
+        321
+      ],
+      "category": "covered-by-existing",
+      "target": "河间",
+      "reason": "本篇已有“河间”，不另建地点节点。"
+    },
+    {
+      "word": "泰山人",
+      "chapters": [
+        394
+      ],
+      "category": "covered-by-existing",
+      "target": "泰山",
+      "reason": "本篇已有“泰山”，不另建地点节点。"
+    },
+    {
+      "word": "洛下",
+      "chapters": [
+        409
+      ],
+      "category": "covered-by-existing",
+      "target": "洛",
+      "reason": "本篇已有“洛”，不另建地点节点。"
+    },
+    {
+      "word": "海州界",
+      "chapters": [
+        283
+      ],
+      "category": "covered-by-existing",
+      "target": "海州",
+      "reason": "本篇已有“海州”，不另建地点节点。"
+    },
+    {
+      "word": "盖陵阳",
+      "chapters": [
+        46
+      ],
+      "category": "covered-by-existing",
+      "target": "陵阳",
+      "reason": "本篇已有“陵阳”，不另建地点节点。"
+    },
+    {
+      "word": "试金陵",
+      "chapters": [
+        440
+      ],
+      "category": "covered-by-existing",
+      "target": "金陵",
+      "reason": "本篇已有“金陵”，不另建地点节点。"
+    },
+    {
+      "word": "辽阳人",
+      "chapters": [
+        131
+      ],
+      "category": "covered-by-existing",
+      "target": "辽阳",
+      "reason": "本篇已有“辽阳”，不另建地点节点。"
+    },
+    {
+      "word": "达金陵",
+      "chapters": [
+        72
+      ],
+      "category": "covered-by-existing",
+      "target": "金陵",
+      "reason": "本篇已有“金陵”，不另建地点节点。"
+    },
+    {
+      "word": "青州城",
+      "chapters": [
+        485
+      ],
+      "category": "covered-by-existing",
+      "target": "青州",
+      "reason": "本篇已有“青州”，不另建地点节点。"
+    }
+  ],
+  "policy": "只合并有明确词法边界的同区表达；建筑、方位、村落、自然地貌、异境和多义历史区域保留逐篇核查。"
+}
