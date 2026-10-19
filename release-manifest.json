@@ -529,6 +529,11 @@
       "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
     },
     {
+      "path": ".gitignore",
+      "bytes": 101,
+      "sha256": "7c43f9c0d35d322df48bd6269b8a5cb87253d15f7c735ee2f9db78ffb4a75d95"
+    },
+    {
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -546,7 +551,7 @@
     {
       "path": "data-package.json",
       "bytes": 33056201,
-      "sha256": "95e00308ff61b228c8fa7f89c672b2c7f171d2467f224e5a0c87d238cc3213d3"
+      "sha256": "15615f71e95d74b9869d5962ec591f82b4a86db01227dbc5b20ad96ded217245"
     },
     {
       "path": "data.html",
@@ -570,8 +575,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 265981,
-      "sha256": "8e4e4e8859da81cb6e42fbdcb94ad47c619a672e87cf6963c2971d20de20c1bd"
+      "bytes": 266148,
+      "sha256": "f248d56dfd0e6376e0238336beaa1900ae818ab5072edabb64cb77771529b53d"
     },
     {
       "path": "manual-revisions.json",
@@ -581,7 +586,12 @@
     {
       "path": "research-data.zip",
       "bytes": 25301223,
-      "sha256": "1c5c445f5185a5fef66bbf211f465a92702615a977e04fd136af28a5815a6430"
+      "sha256": "ad12f621eb4699d8f138c527d5fed0380b1b5edbc8de53a434b2dd5a53d2004f"
+    },
+    {
+      "path": "topic-input.json",
+      "bytes": 3284909,
+      "sha256": "bbc1276bab346030544e20422cf44c6bfd93fcf2d4e952bf9ed25e2d0ed69949"
     }
   ]
 }
