@@ -1,0 +1,8 @@
+(function(){'use strict';
+const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;},pick=document.getElementById('case'),out=document.getElementById('case-view'),status=document.getElementById('case-status');
+let records=[];
+function render(){const c=records.find(c=>c.title===pick.value);out.replaceChildren();if(!c)return;status.textContent=c.events.length+'条场景记录 · 叙述顺序';const heading=el('section');heading.className='card';heading.append(el('h2','《'+c.title+'》'),el('p',c.question),el('p',c.note));out.append(heading);const list=el('ol');for(const e of c.events){const li=el('li'),card=el('article');card.className='card';card.append(el('h3',e.from+(e.kind==='movement'?' → ':'：')+e.to),el('p',e.actors.join('、')+' · '+e.realm+' · '+e.access),el('p',e.reading));const evidence=el('details');evidence.append(el('summary','原文 · '+e.units.length+'个单位'));for(const u of e.units)evidence.append(el('blockquote',u.text));card.append(evidence);li.append(card);list.append(li);}out.append(list);}
+pick.onchange=render;
+document.getElementById('download').onclick=()=>{if(!records.length)return;const url=URL.createObjectURL(new Blob([JSON.stringify(records,null,2)],{type:'application/json;charset=utf-8'})),a=el('a');a.href=url;a.download='聊斋-六篇空间细读.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+fetch('data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json();}).then(d=>{records=GhostReviewedCases.resolve(d.chapters);for(const c of records){const o=el('option',c.title);o.value=c.title;pick.append(o);}pick.value=records[0].title;render();}).catch(e=>{status.textContent='读取失败：'+e.message;});
+})();
