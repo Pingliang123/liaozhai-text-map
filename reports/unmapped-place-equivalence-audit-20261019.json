@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-10-19",
-  "total_checked": 269,
+  "total_checked": 268,
   "merged": 9,
-  "covered_by_existing": 1,
+  "covered_by_existing": 0,
   "alias_conflicts": [
     {
       "word": "都中",
@@ -30,15 +30,6 @@
       "category": "equivalent",
       "target": "顺天",
       "reason": "府市合写，归入顺天区域。"
-    },
-    {
-      "word": "陕西延安",
-      "chapters": [
-        392
-      ],
-      "category": "equivalent",
-      "target": "延安",
-      "reason": "省域前缀与府名合写，核心地名为延安。"
     }
   ],
   "remaining": 259,
@@ -46,7 +37,7 @@
     "space-or-building": 66,
     "unresolved": 62,
     "context-needed": 128,
-    "equivalent": 13
+    "equivalent": 12
   },
   "merged_rows": [
     {
@@ -2261,16 +2252,6 @@
       "reason": "当前没有足够的原文边界或历史地理证据，保留待人工核查。"
     }
   ],
-  "covered_rows": [
-    {
-      "word": "陕西延安",
-      "chapters": [
-        392
-      ],
-      "category": "covered-by-existing",
-      "target": "延安",
-      "reason": "本篇已有“延安”，不另建地点节点。"
-    }
-  ],
+  "covered_rows": [],
   "policy": "只合并有明确词法边界的同区表达；建筑、方位、村落、自然地貌、异境和多义历史区域保留逐篇核查。"
 }
