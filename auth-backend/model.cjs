@@ -129,6 +129,13 @@
     function validate(id, input) {
       const originalNarrative = input?.narrative_events;
       input = convert(input);
+      // 《尸变》“邑之蔡店人”：邑之为修饰成分，人为籍贯后缀。
+      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')) {
+        input.places=[...new Map(input.places.map(p=>{const row={...p,word:p.word==='邑之蔡店'?'蔡店':p.word};return [row.word,row];})).values()];
+        if(input.segmentation_note)input.segmentation_note=input.segmentation_note.replaceAll('邑之蔡店','邑 / 之 / 蔡店').replaceAll('蔡店人','蔡店 / 人');
+        input.lexical_reviews={...input.lexical_reviews,'places:邑之蔡店':{status:'corrected',word:'蔡店',kind:'places',note:'《尸变》原文“邑之蔡店人”：地名为蔡店，邑之与人不属于地名。'}};
+      }
+
       assert(chapters.has(id), '修订包含不存在的篇目');
       assert(input && typeof input === 'object', '修订格式错误');
       const result = {

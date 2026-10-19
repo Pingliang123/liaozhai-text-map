@@ -21,5 +21,14 @@ const fixture={places:[{word:'金陵'},{word:'长清县'}],source_units:[{text:'
 const repair=P.alignPlaces(fixture);assert.equal(repair.changed,2);assert.equal(repair.note,'赴 / 金陵 / ， / 长清县 / 。');assert.equal(P.alignPlaces({...fixture,segmentation_note:repair.note}).changed,0);
 const {align}=require('./align-current-place-tokens');assert.equal(align(fixture).note,repair.note);assert.equal(repair.note.replace(/[\s/|]/gu,''),fixture.source_units[0].text);
 console.log('PASS published/local repairs agree, preserve source and are idempotent');
+const corpse=bundle.base.chapter_overview.find(c=>c.chapter==='尸变'),legacy=M.create(bundle.base),draft=legacy.editable(corpse.chapter_id);
+draft.places=[{word:'邑之蔡店',mentions:0},{word:'阳信',mentions:0}];
+for(const stream of ['阳信 / 某 / 翁者 / ， / 邑 / 之 / 蔡店人 / 。','阳信 / 某翁者 / ， / 邑之蔡店 / 人 / 。']){
+ const rest=P.alignPlaces({...corpse,places:[]}).note.split(/[\s/|]+/u).filter(Boolean).join('');const opening=corpse.source_units[0].text;
+ draft.segmentation_note=stream+' / '+rest.slice(opening.length);
+ legacy.importDocument({schema_version:2,corpus_id:bundle.base.corpus_id,source_sha256:bundle.base.source_sha256,overrides:[{chapter_id:corpse.chapter_id,changes:draft}],place_locations:[]});
+ const fixed=legacy.view(corpse.chapter_id);assert.deepEqual(fixed.places.map(p=>p.word),['蔡店','阳信']);assert(fixed.segmentation_note.split(/[\s/|]+/u).includes('蔡店'));assert(!fixed.segmentation_note.includes('蔡店人'));
+}
+console.log('PASS legacy local and published 尸变 records migrate to 蔡店 without changing original text');
 assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
 console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');

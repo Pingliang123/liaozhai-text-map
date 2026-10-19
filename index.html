@@ -213,7 +213,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <style>#report-reference{max-height:520px}#report-reference th{position:sticky;top:0;background:#f4f6f1}#report-list summary{padding:4px 0}#report-list td{padding:7px 9px}</style>
 </main>
 <footer><a href="data.html">资料下载</a> · <a href="https://pingliang123.github.io/digital-humanities-lab/">研究主页</a><p>修订先保存到本机；登入 GitHub 后自动同步。</p></footer>
-<script id="published-revisions" type="application/json">{"external":"manual-revisions.json?v=0657ac81641f","sha256":"0657ac81641f95152b63c00c6dace2b3df11e3b4aa9bbdc452d177e4f6cc661b"}</script>
+<script id="published-revisions" type="application/json">{"external":"manual-revisions.json?v=1b6c639d09c6","sha256":"1b6c639d09c6855686773e87be8afcb6df2ad373e2d13f98c17c9d3698f60996"}</script>
 <script id="map-data" type="application/json">{"external":"assets/map-base.json?v=0c835c959040","sha256":"0c835c959040888350fc6aef59dc34bd7c1551a3871116a26e54e0310fcca079","corpus_id":"5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea"}</script>
 <script src="assets/data-loader.js?v=20261018a"></script>
 <script src="audit-reports.js?v=20261018c"></script><script src="assets/place-review.js?v=align20261019"></script>
@@ -350,6 +350,13 @@ section,details,#save-chapter{scroll-margin-top:90px}
     function validate(id, input) {
       const originalNarrative = input?.narrative_events;
       input = convert(input);
+      // 《尸变》“邑之蔡店人”：邑之为修饰成分，人为籍贯后缀。
+      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')) {
+        input.places=[...new Map(input.places.map(p=>{const row={...p,word:p.word==='邑之蔡店'?'蔡店':p.word};return [row.word,row];})).values()];
+        if(input.segmentation_note)input.segmentation_note=input.segmentation_note.replaceAll('邑之蔡店','邑 / 之 / 蔡店').replaceAll('蔡店人','蔡店 / 人');
+        input.lexical_reviews={...input.lexical_reviews,'places:邑之蔡店':{status:'corrected',word:'蔡店',kind:'places',note:'《尸变》原文“邑之蔡店人”：地名为蔡店，邑之与人不属于地名。'}};
+      }
+
       assert(chapters.has(id), '修订包含不存在的篇目');
       assert(input && typeof input === 'object', '修订格式错误');
       const result = {
