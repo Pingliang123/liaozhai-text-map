@@ -1,5 +1,5 @@
 const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),S=require('../assets/research-lab/edge-style');
-assert.deepEqual([1,2,3,4,5,9,10,50].map(w=>S.style(w).width),[1.1,2.1,3.5,3.5,5.5,5.5,8.5,8.5]);
+assert.deepEqual([1,2,3,4,5,9,10,50].map(w=>S.style(w).width),[1.8,3,4.5,4.5,6.5,6.5,9.5,9.5]);
 assert(S.style(10,true).opacity>S.style(2,true).opacity);assert(S.style(2,true).width/S.style(1,true).width>1.5);
 class E{constructor(tag){this.tag=tag;this.children=[];this.style={};this.attrs={};this.listeners={};this.value='';this.textContent='';}append(...nodes){this.children.push(...nodes);if(this.tag==='select'&&!this.value&&nodes[0])this.value=String(nodes[0].value);}replaceChildren(...nodes){this.children=[];this.append(...nodes);}setAttribute(k,v){this.attrs[k]=String(v);}addEventListener(k,fn){this.listeners[k]=fn;}}
 const all=(n,t)=>[...(n.tag===t?[n]:[]),...n.children.flatMap(x=>typeof x==='object'?all(x,t):[])];
@@ -10,7 +10,7 @@ const root=new E('main');window.GhostBookNetwork.mount(root,[{title:'篇甲'}],(
 let paths=all(root,'path'),hits=paths.filter(n=>n.attrs['data-edge-hit']==='true'),visible=paths.filter(n=>n.attrs.role==='button');
 assert.equal(hits.length,3);assert(hits.every(n=>n.attrs['stroke-width']==='18'&&n.attrs['vector-effect']==='non-scaling-stroke'));
 for(let i=0;i<hits.length;i++)assert.equal(hits[i].attrs.d,visible[i].attrs.d,'Hit areas must match directed curves');
-assert.deepEqual(visible.map(n=>Number(n.attrs['stroke-width'])),[1.1,2.1,8.5]);
+assert.deepEqual(visible.map(n=>Number(n.attrs['stroke-width'])),[1.8,3,9.5]);
 assert(all(root,'div').some(n=>n.attrs['aria-label']==='关系次数与线宽'));
 hits[0].listeners.click();assert(all(root,'h3').some(n=>n.textContent==='济南 → 寺 · 1 次移动'));assert.equal(visible[0].attrs.stroke,'#b04b25');assert.equal(visible[0].attrs.opacity,'1');assert.equal(all(root,'blockquote').length,20);
 all(root,'button').find(n=>n.textContent==='再读20条').onclick();assert.equal(all(root,'blockquote').length,25);
@@ -41,3 +41,12 @@ assert(all(reading,'summary').some(n=>n.textContent==='显示设置与下载'));
 const readPicker=all(reading,'select').find(n=>n.attrs['aria-label']==='网络中心节点');assert(!readPicker.children.some(n=>n.textContent.includes('加权度')));
 all(reading,'button').find(n=>n.textContent==='济南 → 室 · 10次').onclick();assert.equal(all(reading,'blockquote').length,20);
 console.log('PASS focused direct network, compact labels, collapsed settings/evidence and click-to-read');
+const clickRoot=new E('main');window.GhostBookNetwork.mount(clickRoot,[{title:'篇甲'}],()=>{},{graph:readingGraph,simple:true,readable:true,lexical:true,allowAll:true,initialView:'all',edgeLabel:()=> '篇甲 · 王生'});
+const node=all(clickRoot,'g').find(n=>n.attrs.role==='button'&&n.attrs['aria-label'].endsWith('济南'));
+let nodeStopped=false,nodeCaptured=false;node.setPointerCapture=()=>{nodeCaptured=true;};node.listeners.pointerdown({stopPropagation(){nodeStopped=true;}});assert(nodeStopped,'Node selection must not start background capture');assert(nodeCaptured,'Dragging keeps capture on the selected node so click reaches it');node.listeners.click();
+const edges=all(clickRoot,'path').concat(all(clickRoot,'line')).filter(n=>n.attrs.role==='button'),related=edges.filter(n=>n.attrs.stroke==='#b04b25');
+assert.equal(related.length,3);assert(related.every(n=>Number(n.attrs['stroke-width'])>=4&&n.attrs['vector-effect']==='non-scaling-stroke'));assert(edges.some(n=>n.attrs.opacity==='0.06'));
+const captions=all(clickRoot,'text').filter(n=>n.textContent.includes('篇甲'));assert.equal(captions.filter(n=>n.attrs.visibility==='visible').length,3);
+const firstHit=all(clickRoot,'path').find(n=>n.attrs['data-edge-hit']==='true');firstHit.listeners.pointerleave();assert.equal(captions.filter(n=>n.attrs.visibility==='visible').length,3,'Selected-node captions persist without hover');
+all(clickRoot,'button').find(n=>n.textContent==='取消高亮').onclick();assert(edges.every(n=>n.attrs.stroke==='#688479'));assert(captions.every(n=>n.attrs.visibility==='hidden'));
+console.log('PASS node pointer isolation, stronger incident routes, persistent route labels and reset');
