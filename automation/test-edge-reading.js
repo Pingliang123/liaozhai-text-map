@@ -1,6 +1,6 @@
 const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),S=require('../assets/research-lab/edge-style');
-assert.deepEqual([1,2,3,4,5,9,10,50].map(w=>S.style(w).width),[.65,1.6,3,3,5,5,8,8]);
-assert(S.style(10,true).opacity>S.style(2,true).opacity);assert(S.style(2,true).width/S.style(1,true).width>2);
+assert.deepEqual([1,2,3,4,5,9,10,50].map(w=>S.style(w).width),[1.1,2.1,3.5,3.5,5.5,5.5,8.5,8.5]);
+assert(S.style(10,true).opacity>S.style(2,true).opacity);assert(S.style(2,true).width/S.style(1,true).width>1.5);
 class E{constructor(tag){this.tag=tag;this.children=[];this.style={};this.attrs={};this.listeners={};this.value='';this.textContent='';}append(...nodes){this.children.push(...nodes);if(this.tag==='select'&&!this.value&&nodes[0])this.value=String(nodes[0].value);}replaceChildren(...nodes){this.children=[];this.append(...nodes);}setAttribute(k,v){this.attrs[k]=String(v);}addEventListener(k,fn){this.listeners[k]=fn;}}
 const all=(n,t)=>[...(n.tag===t?[n]:[]),...n.children.flatMap(x=>typeof x==='object'?all(x,t):[])];
 const document={createElement:t=>new E(t),createElementNS:(_,t)=>new E(t)},window={GhostEdgeStyle:S,GhostNetworkAnalysis:require('../assets/research-lab/network-analysis')};
@@ -10,7 +10,7 @@ const root=new E('main');window.GhostBookNetwork.mount(root,[{title:'篇甲'}],(
 let paths=all(root,'path'),hits=paths.filter(n=>n.attrs['data-edge-hit']==='true'),visible=paths.filter(n=>n.attrs.role==='button');
 assert.equal(hits.length,3);assert(hits.every(n=>n.attrs['stroke-width']==='18'&&n.attrs['vector-effect']==='non-scaling-stroke'));
 for(let i=0;i<hits.length;i++)assert.equal(hits[i].attrs.d,visible[i].attrs.d,'Hit areas must match directed curves');
-assert.deepEqual(visible.map(n=>Number(n.attrs['stroke-width'])),[.65,1.6,8]);
+assert.deepEqual(visible.map(n=>Number(n.attrs['stroke-width'])),[1.1,2.1,8.5]);
 assert(all(root,'div').some(n=>n.attrs['aria-label']==='关系次数与线宽'));
 hits[0].listeners.click();assert(all(root,'h3').some(n=>n.textContent==='济南 → 寺 · 1 次移动'));assert.equal(visible[0].attrs.stroke,'#b04b25');assert.equal(visible[0].attrs.opacity,'1');assert.equal(all(root,'blockquote').length,20);
 all(root,'button').find(n=>n.textContent==='再读20条').onclick();assert.equal(all(root,'blockquote').length,25);
