@@ -26,6 +26,8 @@ const loginDigest=require('node:crypto').createHash('sha256').update(fs.readFile
 assert(html.includes('src="github-login.js?v='+loginDigest+'"'),'GitHub login must load before sync');
 const config=JSON.parse(fs.readFileSync('github-sync-config.json','utf8'));
 assert(!config.backend_url||new URL(config.backend_url).protocol==='https:');
+const workflow=fs.readFileSync('.github/workflows/publish-updates.yml','utf8');
+assert(workflow.includes('cancel-in-progress: true'),'Newer publishes should cancel stale queued releases');
 for(const match of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g))if(!/application\/json/.test(match[1]))new vm.Script(match[2]);
 new vm.Script(fs.readFileSync('github-sync.js','utf8'));
 const id=model.ids[0], local=M.create(bundle.base),remote=M.create(bundle.base);
