@@ -10,3 +10,16 @@ console.log('PASS visible sentence, three classifications, synonym choice, token
 const other=new E('main'),candidate={...row,word:'俄',key:'places:俄',present:false,status:'pending'};let writes=0;P.mount(other,{rows:()=>[candidate],chapter:()=>c,unitStream:()=>'',save:()=>writes++});assert.equal(other.querySelectorAll('blockquote').length,0,'Candidates are not presented as existing locations');const scope=other.querySelectorAll('select')[0];scope.value='pending';scope.onchange();const category=other.querySelectorAll('select')[2];assert.equal(category.value,'','Unreviewed candidate must not default to a place');assert.equal(other.querySelectorAll('blockquote')[0].textContent,'原文未找到此词');other.querySelectorAll('button').find(n=>n.textContent==='保存').onclick();assert.equal(writes,0);category.value='none';other.querySelectorAll('button').find(n=>n.textContent==='保存').onclick();assert.equal(writes,0,'Missing source must not silently edit the first unit');
 assert.equal(P.classification(row,{...c,places:[],space_words:['金陵']}),'spaces');assert.equal(P.classification(row,{...c,space_words:['金陵']}),'');
 console.log('PASS candidate separation, real current categories, conflicting annotations and missing-source save guard');
+const filtered=new E('main'),missing={...row,word:'未定位处'},alias={...row,word:'金陵别称'},pending={...row,word:'俄',present:false,status:'pending'},chapter={...c,places:[{word:'金陵'},{word:'未定位处'},{word:'金陵别称'}]},unmapped=new Set(['未定位处']);P.mount(filtered,{rows:()=>[row,missing,alias,pending],chapter:()=>chapter,unmapped:()=>unmapped,normalize:w=>w==='金陵别称'?'金陵':w,unitStream:()=>'',save(){}});const scopeSelect=filtered.querySelectorAll('select')[0];assert(scopeSelect.children.some(o=>o.value==='unmapped'));scopeSelect.value='unmapped';scopeSelect.onchange();assert.deepEqual(filtered.querySelectorAll('strong').map(n=>n.textContent),['未定位处'],'Only current unmapped places, excluding mapped aliases and pending candidates');unmapped.clear();scopeSelect.onchange();assert.equal(filtered.querySelectorAll('strong').length,0,'Saved coordinates must be reflected on rerender');
+console.log('PASS unmapped filter, canonical aliases, candidate exclusion and refreshed location data');
+
+const page = require('fs').readFileSync('index.html', 'utf8');
+for (const [fragment, message] of [
+  ["const fallbackDBName = 'liaozhai-map-local-backup-v1'", 'missing IndexedDB backup database'],
+  ["indexedDB.open(fallbackDBName, 1)", 'missing IndexedDB opener'],
+  ['queueFallbackWrite(storageKey, storageSnapshot)', 'missing queued fallback write'],
+  ['await fallbackRead(storageKey)', 'missing fallback restore'],
+  ['storagePending || storageInvalid', 'missing pending-save guard'],
+  ['本机保存失败（主储存与备用储存均不可用）：请立即下载 JSON 备份。', 'missing final backup warning']
+]) if (!page.includes(fragment)) throw new Error(message);
+console.log('PASS IndexedDB fallback, queued writes, restore and backup warning');
