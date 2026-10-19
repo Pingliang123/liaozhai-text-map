@@ -30,5 +30,9 @@ for(const stream of ['阳信 / 某 / 翁者 / ， / 邑 / 之 / 蔡店人 / 。'
  const fixed=legacy.view(corpse.chapter_id);assert.deepEqual(fixed.places.map(p=>p.word),['蔡店','阳信']);assert(fixed.segmentation_note.split(/[\s/|]+/u).includes('蔡店'));assert(!fixed.segmentation_note.includes('蔡店人'));
 }
 console.log('PASS legacy local and published 尸变 records migrate to 蔡店 without changing original text');
+for(const [title,wrong,expected,space] of [['婴宁','莒之罗店','罗店',false],['阿宝','香水月寺','水月寺',false],['马介甫','香普陀寺','普陀寺',false],['江城','香黑帝祠','黑帝祠',false],['戏术','镇之南山','南山',true],['田子成','竹桥之西','竹桥之西',true]]){
+ const c=bundle.base.chapter_overview.find(c=>c.chapter===title),v=M.create(bundle.base),edit=v.editable(c.chapter_id);edit.places=[{word:wrong,mentions:0}];v.importDocument({schema_version:2,corpus_id:bundle.base.corpus_id,source_sha256:bundle.base.source_sha256,overrides:[{chapter_id:c.chapter_id,changes:edit}],place_locations:[]});const fixed=v.view(c.chapter_id);assert(!fixed.places.some(p=>p.word===wrong));assert(space?fixed.space_words.includes(expected):fixed.places.some(p=>p.word===expected));const snapshot=v.document();v.importDocument(snapshot);assert.deepEqual(v.document(),snapshot,'Migration must be idempotent');
+}
+console.log('PASS context-reviewed phrase corrections, space reclassification and idempotent legacy migration');
 assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
 console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');

@@ -129,6 +129,32 @@
     function validate(id, input) {
       const originalNarrative = input?.narrative_events;
       input = convert(input);
+      const placeCorrections={
+        '长清僧':{'山东长清县':[['山东','长清县'],[],'山东 / 长清县']},
+        '婴宁':{'莒之罗店':[['莒','罗店'],[],'莒 / 之 / 罗店'],'西南山':[[],['西南山'],'西南山'],'里落':[[],['里落'],'里落']},
+        '祝翁':{'济阳祝村':[['济阳','祝村'],[],'济阳 / 祝村']},
+        '阿宝':{'香水月寺':[['水月寺'],[],'香 / 水月寺']},
+        '戏术':{'镇之南山':[[],['南山'],'镇 / 之 / 南山']},
+        '辛十四娘':{'直隶广平':[['直隶','广平'],[],'直隶 / 广平']},
+        '双灯':{'益都盆泉':[['益都','盆泉'],[],'益都 / 盆泉']},
+        '长治女子':{'潞之长治':[['潞','长治'],[],'潞 / 之 / 长治']},
+        '马介甫':{'香普陀寺':[['普陀寺'],[],'香 / 普陀寺'],'河南界':[['河南'],['界'],'河南 / 界']},
+        '江城':{'香黑帝祠':[['黑帝祠'],[],'香 / 黑帝祠']},
+        '大人':{'大山':[[],['大山'],'大山'],'绝壑巉岩':[[],['绝壑','巉岩'],'绝壑 / 巉岩']},
+        '陆押官':{'湖广武陵':[['湖广','武陵'],[],'湖广 / 武陵']},
+        '湘裙':{'陕西延安':[['陕西','延安'],[],'陕西 / 延安']},
+        '三生':{'顺天府市':[['顺天府'],['市肆'],'顺天府 / 市'],'北顺天府':[['顺天府'],[],'北 / 顺天府']},
+        '田子成':{'竹桥之西':[['竹桥'],['竹桥之西'],'竹桥 / 之 / 西']}
+      };
+      for(const [wrong,[places,spaces,tokens]] of Object.entries(placeCorrections[chapters.get(id)?.chapter]||{})){
+        if(!input?.places?.some(p=>p.word===wrong))continue;
+        input.places=input.places.filter(p=>p.word!==wrong);
+        for(const word of places)if(!input.places.some(p=>p.word===word))input.places.push({word,mentions:0});
+        input.space_words=[...new Set([...(input.space_words||view(id).space_words||[]),...spaces])];
+        if(input.segmentation_note)input.segmentation_note=input.segmentation_note.replaceAll(wrong,tokens);
+        input.lexical_reviews={...input.lexical_reviews,['places:'+wrong]:{status:'corrected',word:(places[0]||spaces[0]),kind:places.length?'places':'spaces',note:'逐篇原文核查：拆除修饰／动作成分，区分地理专名与篇内相对空间。原词：'+wrong}};
+      }
+
       // 《尸变》“邑之蔡店人”：邑之为修饰成分，人为籍贯后缀。
       if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')) {
         input.places=[...new Map(input.places.map(p=>{const row={...p,word:p.word==='邑之蔡店'?'蔡店':p.word};return [row.word,row];})).values()];
