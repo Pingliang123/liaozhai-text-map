@@ -1,6 +1,7 @@
 const assert=require('assert/strict'),fs=require('fs'),vm=require('vm');
 class E{constructor(tag){this.tag=tag;this.children=[];this.style={};this.attrs={};this.listeners={};this.textContent='';this.value='';}append(...ns){this.children.push(...ns);if(this.tag==='select'&&!this.value&&ns[0])this.value=String(ns[0].value);}replaceChildren(...ns){this.children=[];this.append(...ns);}setAttribute(k,v){this.attrs[k]=String(v);}addEventListener(k,f){this.listeners[k]=f;}}
 const all=(n,t)=>[...(n.tag===t?[n]:[]),...n.children.flatMap(x=>typeof x==='object'?all(x,t):[])];
+// Exercise asynchronous coordinate loading, aliases and complete lazy evidence.
 const window={GhostRelationNetwork:require('../assets/research-lab/relation-network'),GhostNetworkAnalysis:require('../assets/research-lab/network-analysis'),GhostTutorialNetwork:require('../assets/research-lab/tutorial-network'),GhostEdgeStyle:require('../assets/research-lab/edge-style')},document={createElement:t=>new E(t),createElementNS:(_,t)=>new E(t)};
 const context={window,document,Blob,URL,setTimeout:fn=>{fn();return 1;},clearTimeout(){},fetch:()=>new Promise(()=>{})};vm.createContext(context);for(const file of ['book-network.js','place-taxonomy.js','place-spaces.js'])vm.runInContext(fs.readFileSync('assets/research-lab/'+file,'utf8'),context);
 const c={id:0,title:'甲',places:['济南','青州','孤名'],spaces:['寺','院'],people:[],units:[{id:0,text:'如济南，宿寺。'},{id:1,text:'至青州，游院。'}],steps:[]},root=new E('main');window.GhostPlaceSpaces.mount(root,[c],()=>{});
@@ -25,3 +26,23 @@ console.log('PASS otherworld color, darker base edges, incident-edge highlight, 
 const audit=all(root,'details').find(n=>n.children.some(x=>x.tag==='summary'&&x.textContent==='地点分类核查清单'));audit.open=true;audit.ontoggle();const auditPick=all(audit,'select')[0];assert.equal(auditPick.value,'space');auditPick.value='place';auditPick.onchange();assert(all(audit,'summary').some(n=>n.textContent.startsWith('济南 ·')));assert(all(audit,'blockquote').some(n=>n.textContent.includes('济南')));
 console.log('PASS classification list filters and original-text evidence');
 window.GhostPlaceLevelColors=require('../assets/research-lab/place-level-colors');const levelRoot=new E('main');window.GhostBookNetwork.mount(levelRoot,[c],()=>{},{graph,realmColors:true,levelColors:true,levelRecords:{济南:{level:'prefecture'},青州:{level:'county'}},simple:true,readable:true,allowAll:true,initialView:'all'});const levelPick=all(levelRoot,'select').find(n=>n.attrs['aria-label']==='网络配色');assert.equal(levelPick.value,'level');assert(all(levelRoot,'div').some(n=>n.attrs['aria-label']==='地图层级颜色图例'));for(const key of ['prefecture','county','otherworld'])assert(all(levelRoot,'circle').some(n=>n.attrs.fill===window.GhostPlaceLevelColors.palette[key].color));levelPick.value='kind';levelPick.onchange();assert(all(levelRoot,'circle').some(n=>n.attrs.fill==='#b54736'));console.log('PASS default hierarchy coloring, displayed level legend and alternate coloring');
+(async()=>{
+ const chapters=[...Array(6)].map((_,i)=>({...c,id:i,title:'证据'+i,places:['济南','青州市','未知地'],units:[...Array(4)].map((_,j)=>({id:j,text:'至济南，经青州市，到未知地。'}))}));
+ context.fetch=url=>Promise.resolve({ok:true,json:()=>Promise.resolve(url==='place-levels.json'?{places:{济南:{located:true},青州市:{located:true,canonical:'青州'}}}:{graphs:{}})});
+ const auditRoot=new E('main');window.GhostPlaceSpaces.mount(auditRoot,chapters,()=>{});
+ const scope=all(auditRoot,'select').find(n=>n.attrs['aria-label']==='地点网络范围');
+ scope.value='located';scope.onchange();
+ assert(all(auditRoot,'p').some(n=>n.textContent.includes('定位资料尚未载入')));
+ await new Promise(resolve=>setImmediate(resolve));
+ const firstSection=all(auditRoot,'section').find(n=>n.children.some(x=>x.textContent==='一、全书地点网络'));
+ assert.equal(all(firstSection,'circle').length,2);
+ const pending=all(firstSection,'details').find(n=>n.children.some(x=>x.textContent==='未定位地点核查（1项）'));
+ assert(pending);
+ const row=all(pending,'details').find(n=>n.children.some(x=>x.textContent.startsWith('未知地 ·')));
+ assert.equal(all(row,'blockquote').length,0);
+ row.open=true;row.ontoggle();assert.equal(all(row,'blockquote').length,24);
+ assert(all(row,'a').some(a=>a.href==='../../index.html#location-panel'));
+ row.ontoggle();assert.equal(all(row,'blockquote').length,24);
+ scope.value='all';scope.onchange();assert.equal(all(firstSection,'circle').length,3);
+ console.log('PASS loading guard, mapped alias, lazy full evidence and revision link');
+})().catch(e=>{console.error(e);process.exitCode=1;});
