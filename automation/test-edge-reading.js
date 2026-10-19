@@ -15,7 +15,7 @@ assert(all(root,'div').some(n=>n.attrs['aria-label']==='关系次数与线宽'))
 hits[0].listeners.click();assert(all(root,'h3').some(n=>n.textContent==='济南 → 寺 · 1 次移动'));assert.equal(visible[0].attrs.stroke,'#b04b25');assert.equal(visible[0].attrs.opacity,'1');assert.equal(all(root,'blockquote').length,20);
 all(root,'button').find(n=>n.textContent==='再读20条').onclick();assert.equal(all(root,'blockquote').length,25);
 hits[0].listeners.pointerleave();assert(all(root,'text').some(n=>n.textContent==='济南 → 寺 · 篇甲 · 王生'&&n.attrs.visibility==='visible'),'Selected label persists after pointer leaves');
-all(root,'button').find(n=>n.textContent==='返回节点关联').onclick();assert(visible.every(n=>n.attrs.stroke==='#9baca6'));
+all(root,'button').find(n=>n.textContent==='返回节点关联').onclick();assert(visible.every(n=>n.attrs.stroke==='#688479'));
 all(root,'button').find(n=>n.textContent==='济南 → 室 · 10次').onclick();assert(all(root,'h3').some(n=>n.textContent.includes('10 次移动')));
 visible[1].listeners.keydown({key:'Enter',preventDefault(){}});assert(all(root,'h3').some(n=>n.textContent==='寺 → 济南 · 2 次移动'));
 let stopped=false;hits[0].listeners.pointerdown({stopPropagation(){stopped=true;}});assert(stopped,'Selecting an edge must not start background panning');

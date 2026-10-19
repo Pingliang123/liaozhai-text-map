@@ -1,6 +1,6 @@
 (function(root){'use strict';
 // Discrete visual classes make counts readable; analytical weights stay unchanged.
-const bins=[{max:1,label:'1次',width:.65,opacity:.06},{max:2,label:'2次',width:1.6,opacity:.14},{max:4,label:'3–4次',width:3,opacity:.25},{max:9,label:'5–9次',width:5,opacity:.45},{max:Infinity,label:'10次以上',width:8,opacity:.7}];
+const bins=[{max:1,label:'1次',width:.65,opacity:.2},{max:2,label:'2次',width:1.6,opacity:.3},{max:4,label:'3–4次',width:3,opacity:.42},{max:9,label:'5–9次',width:5,opacity:.58},{max:Infinity,label:'10次以上',width:8,opacity:.78}];
 function style(weight,overview=false){const b=bins.find(b=>weight<=b.max)||bins[bins.length-1];return {width:b.width,opacity:overview?b.opacity:Math.max(.3,b.opacity)};}
 function curve(a,b,ra,rb){
  if(a.id===b.id){const r=ra+4,h=r+65;return {d:`M${a.x+r} ${a.y} C${a.x+h} ${a.y-h} ${a.x-h} ${a.y-h} ${a.x-r} ${a.y}`,x:a.x,y:a.y-h*.75,angle:180};}
