@@ -1,0 +1,23 @@
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),S=require('../assets/research-lab/edge-style');
+assert.deepEqual([1,2,3,4,5,9,10,50].map(w=>S.style(w).width),[.65,1.6,3,3,5,5,8,8]);
+assert(S.style(10,true).opacity>S.style(2,true).opacity);assert(S.style(2,true).width/S.style(1,true).width>2);
+class E{constructor(tag){this.tag=tag;this.children=[];this.style={};this.attrs={};this.listeners={};this.value='';this.textContent='';}append(...nodes){this.children.push(...nodes);if(this.tag==='select'&&!this.value&&nodes[0])this.value=String(nodes[0].value);}replaceChildren(...nodes){this.children=[];this.append(...nodes);}setAttribute(k,v){this.attrs[k]=String(v);}addEventListener(k,fn){this.listeners[k]=fn;}}
+const all=(n,t)=>[...(n.tag===t?[n]:[]),...n.children.flatMap(x=>typeof x==='object'?all(x,t):[])];
+const document={createElement:t=>new E(t),createElementNS:(_,t)=>new E(t)},window={GhostEdgeStyle:S,GhostNetworkAnalysis:require('../assets/research-lab/network-analysis')};
+vm.runInNewContext(fs.readFileSync('assets/research-lab/book-network.js','utf8'),{window,document,Blob,URL,setTimeout:fn=>{fn();return 1;},clearTimeout(){}});
+const graph={nodes:['济南','寺','室'].map(id=>({id,label:id,kind:'space',degree:2})),edges:[['济南','寺',1],['寺','济南',2],['济南','室',10]].map(([source,target,weight])=>({source,target,weight,directed:true,chapter:'移动',evidence:Array.from({length:25},(_,i)=>({chapter:'篇甲',actors:['王生'],text:'原文'+i}))}))};
+const root=new E('main');window.GhostBookNetwork.mount(root,[{title:'篇甲'}],()=>{},{graph,simple:true,lexical:true,weightedDirected:true,edgeLabel:()=> '篇甲 · 王生'});
+let paths=all(root,'path'),hits=paths.filter(n=>n.attrs['data-edge-hit']==='true'),visible=paths.filter(n=>n.attrs.role==='button');
+assert.equal(hits.length,3);assert(hits.every(n=>n.attrs['stroke-width']==='18'&&n.attrs['vector-effect']==='non-scaling-stroke'));
+for(let i=0;i<hits.length;i++)assert.equal(hits[i].attrs.d,visible[i].attrs.d,'Hit areas must match directed curves');
+assert.deepEqual(visible.map(n=>Number(n.attrs['stroke-width'])),[.65,1.6,8]);
+assert(all(root,'div').some(n=>n.attrs['aria-label']==='关系次数与线宽'));
+hits[0].listeners.click();assert(all(root,'h3').some(n=>n.textContent==='济南 → 寺 · 1 次移动'));assert.equal(visible[0].attrs.stroke,'#b04b25');assert.equal(visible[0].attrs.opacity,'1');assert.equal(all(root,'blockquote').length,20);
+all(root,'button').find(n=>n.textContent==='再读20条').onclick();assert.equal(all(root,'blockquote').length,25);
+hits[0].listeners.pointerleave();assert(all(root,'text').some(n=>n.textContent==='篇甲 · 王生'&&n.attrs.visibility==='visible'),'Selected label persists after pointer leaves');
+all(root,'button').find(n=>n.textContent==='返回节点关联').onclick();assert(visible.every(n=>n.attrs.stroke==='#9baca6'));
+all(root,'button').find(n=>n.textContent==='济南 → 室 · 10次').onclick();assert(all(root,'h3').some(n=>n.textContent.includes('10 次移动')));
+visible[1].listeners.keydown({key:'Enter',preventDefault(){}});assert(all(root,'h3').some(n=>n.textContent==='寺 → 济南 · 2 次移动'));
+let stopped=false;hits[0].listeners.pointerdown({stopPropagation(){stopped=true;}});assert(stopped,'Selecting an edge must not start background panning');
+const snapshot=JSON.stringify(graph);hits[0].listeners.click();assert.equal(JSON.stringify(graph),snapshot,'Reading evidence must preserve graph weights');
+console.log('PASS distinct width classes, scale-independent hit areas, reverse paths, persistent selection, paged evidence, sidebar and keyboard access');
