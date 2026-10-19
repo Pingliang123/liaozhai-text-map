@@ -374,7 +374,29 @@
     return {view, editable, atPlace, descendants, links, activeEvidence, document, importDocument, related, places, placeInfo,
       saveLocation: input => {const r=validateLocation(input), next=new Map(locations); next.set(r.name,r); checkLocationGraph(next); locations.set(r.name,r); placeViews.clear(); geographicCache=null;},
       resetLocation: word => {const next=new Map(locations); next.delete(name(word)); checkLocationGraph(next); locations.delete(name(word)); placeViews.clear(); geographicCache=null;},
-      save: (id, changes) => { const valid = validate(id, changes); overrides.set(id, valid); views.delete(id); placeViews.clear(); geographicCache=null; },
+      save: (id, changes) => {
+        const before = editable(id), valid = validate(id, changes), chapter = view(id);
+        const stream = c => c.segmentation_note || chapter.source_units.map(u => {
+          const s=u.text || u.original, parts=[];let at=0;
+          for(const t of u.tokens || []) {const a=Array.isArray(t)?t[0]:t.start,b=Array.isArray(t)?t[1]:t.end;if(a>at)parts.push(s.slice(at,a));parts.push(s.slice(a,b));at=b;}if(at<s.length)parts.push(s.slice(at));return parts.join(' / ');
+        }).join('\n');
+        const previous=stream(before).split(/[\s/|]+/u).filter(Boolean), tokens=stream(valid).split(/[\s/|]+/u).filter(Boolean);
+        const raw=chapter.source_units.map(u=>u.text || u.original).join('').replace(/\s/gu,'');
+        if(tokens.join('')!==raw) throw new Error('分词必须与原文一致，只能调整边界');
+        const placesChanged=JSON.stringify(before.places.map(p=>p.word))!==JSON.stringify(valid.places.map(p=>p.word));
+        if(placesChanged) {
+          const boundaries=new Set([0]);let at=0;for(const t of tokens){at+=t.length;boundaries.add(at);}
+          const spans=[];for(const p of valid.places){if(!raw.includes(p.word))throw new Error('地点词必须出现在原文：'+p.word);let start=0;while((start=raw.indexOf(p.word,start))!==-1){spans.push([start,start+p.word.length]);start+=p.word.length;}}
+          spans.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);const chosen=[];for(const span of spans)if(!chosen.length||span[0]>=chosen[chosen.length-1][1])chosen.push(span);
+          for(const [a,b] of chosen){for(const n of [...boundaries])if(n>a&&n<b)boundaries.delete(n);boundaries.add(a);boundaries.add(b);}
+          const cuts=[...boundaries].sort((a,b)=>a-b);valid.segmentation_note=cuts.slice(1).map((b,i)=>raw.slice(cuts[i],b)).join(' / ');
+        } else if(tokens.join('\0')!==previous.join('\0')) {
+          const complete=new Set(tokens), old=new Set(previous), known=new Set([...base.places.map(p=>p.name),...chapter.places.map(p=>p.word)]);
+          valid.places=valid.places.filter(p=>!old.has(p.word)||complete.has(p.word));
+          for(const word of complete)if(!old.has(word)&&known.has(word)&&!valid.space_words.includes(word)&&!valid.places.some(p=>p.word===word)&&!placeWordReason(word,chapter.chapter))valid.places.push({word,mentions:0});
+        }
+        overrides.set(id, valid); views.delete(id); placeViews.clear(); geographicCache=null;
+      },
       reset: id => { overrides.delete(id); views.delete(id); placeViews.clear(); geographicCache=null; }, hasEdit: id => overrides.has(id),
       ids: [...chapters.keys()], name, simplify};
   }

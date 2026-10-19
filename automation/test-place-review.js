@@ -6,5 +6,16 @@ assert.throws(()=>P.replaceUnit('赴金陵。宿寺。',units,0,'往金陵。'),
 assert.throws(()=>P.replaceUnit('金陵。宿寺。',units,0,'赴金陵。'),/不一致/);
 assert.equal(P.unitTokens({text:'赴金陵。',tokens:[[0,1],[1,3],[3,4]]}),'赴 / 金陵 / 。');
 const fs=require('fs'),vm=require('vm');new vm.Script(fs.readFileSync('assets/place-review.js','utf8'));
+const M=require('./ghost_map_model'),bundle=JSON.parse(fs.readFileSync('data-package.json')),m=M.create(bundle.base);
+const chapter=bundle.base.chapter_overview.find(c=>c.places.some(p=>p.word==='金陵'));
+const id=chapter.chapter_id,d=m.editable(id);d.places=d.places.filter(p=>p.word!=='金陵');m.save(id,d);
+let edit=m.editable(id);edit.places.push({word:'金陵',mentions:0});m.save(id,edit);
+assert(m.view(id).segmentation_note.split(/[\s/|]+/u).includes('金陵'),'地点修订必须同步形成完整分词');
+edit=m.editable(id);edit.segmentation_note=edit.segmentation_note.replaceAll('金陵','金 / 陵');m.save(id,edit);
+assert(!m.view(id).places.some(p=>p.word==='金陵'),'拆分后地点清单应随之更新');
+edit=m.editable(id);edit.segmentation_note=edit.segmentation_note.replaceAll('金 / 陵','金陵');m.save(id,edit);
+assert(m.view(id).places.some(p=>p.word==='金陵'),'恢复已知地名完整分词后应回填');
+edit=m.editable(id);edit.segmentation_note+='错字';assert.throws(()=>m.save(id,edit),/原文/);
+console.log('PASS bidirectional place/token sync and original-text protection');
 assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
 console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');
