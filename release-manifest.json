@@ -530,8 +530,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 101,
-      "sha256": "7c43f9c0d35d322df48bd6269b8a5cb87253d15f7c735ee2f9db78ffb4a75d95"
+      "bytes": 151,
+      "sha256": "05aa55cacbd425b41bd1f56a06ce3087d58df5acbdb4e2e545b4de3b38ee0fa1"
     },
     {
       "path": ".nojekyll",
@@ -551,7 +551,7 @@
     {
       "path": "data-package.json",
       "bytes": 33056201,
-      "sha256": "15615f71e95d74b9869d5962ec591f82b4a86db01227dbc5b20ad96ded217245"
+      "sha256": "8476a715389cb9c162f6abcb3e4509af641ebcf1dc46e3ed31ce5088b2482f39"
     },
     {
       "path": "data.html",
@@ -586,7 +586,7 @@
     {
       "path": "research-data.zip",
       "bytes": 25301223,
-      "sha256": "ad12f621eb4699d8f138c527d5fed0380b1b5edbc8de53a434b2dd5a53d2004f"
+      "sha256": "90dfbfa918b5dc2f936c3a46713cb2a4a6fec321e521b732b182d2aef674f4e3"
     },
     {
       "path": "topic-input.json",
