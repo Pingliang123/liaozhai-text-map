@@ -34,5 +34,15 @@ for(const [title,wrong,expected,space] of [['婴宁','莒之罗店','罗店',fal
  const c=bundle.base.chapter_overview.find(c=>c.chapter===title),v=M.create(bundle.base),edit=v.editable(c.chapter_id);edit.places=[{word:wrong,mentions:0}];v.importDocument({schema_version:2,corpus_id:bundle.base.corpus_id,source_sha256:bundle.base.source_sha256,overrides:[{chapter_id:c.chapter_id,changes:edit}],place_locations:[]});const fixed=v.view(c.chapter_id);assert(!fixed.places.some(p=>p.word===wrong));assert(space?fixed.space_words.includes(expected):fixed.places.some(p=>p.word===expected));const snapshot=v.document();v.importDocument(snapshot);assert.deepEqual(v.document(),snapshot,'Migration must be idempotent');
 }
 console.log('PASS context-reviewed phrase corrections, space reclassification and idempotent legacy migration');
+const ma=bundle.base.chapter_overview.find(c=>c.chapter==='马介甫'),maModel=M.create(bundle.base);maModel.importDocument(bundle.revisions);
+let maEdit=maModel.editable(ma.chapter_id),maSource=ma.source_units.map(u=>u.text||u.original).join('').replace(/\s/gu,'');
+assert.equal(maEdit.segmentation_note.replace(/[\s/|]+/gu,''),maSource,'Old variant-converted tokens must recover original 乾纲');
+maEdit.segmentation_note=maEdit.segmentation_note.replaceAll('河南 / 界','河南界');
+let localDoc=maModel.document();localDoc.overrides=localDoc.overrides.map(r=>r.chapter_id===ma.chapter_id?{...r,changes:maEdit}:r);maModel.importDocument(localDoc);
+maEdit=maModel.editable(ma.chapter_id);maEdit.lexical_reviews['places:河南界']={status:'corrected',word:'河南',kind:'places',note:'河南界修订为河南'};maModel.save(ma.chapter_id,maEdit);
+assert(maModel.view(ma.chapter_id).segmentation_note.includes('河南 / 界'));assert.equal(maModel.view(ma.chapter_id).segmentation_note.replace(/[\s/|]+/gu,''),maSource);
+maEdit=maModel.editable(ma.chapter_id);maEdit.segmentation_note+='额外字';assert.throws(()=>maModel.save(ma.chapter_id,maEdit),/原文/);
+console.log('PASS 河南界 review realigns existing 河南 and preserves 乾纲 original characters; true text changes rejected');
+assert.equal(P.alignPlaces({source_units:[{text:'至河南界，资斧已绝。'}],segmentation_note:'至 / 河南界 / ， / 资斧 / 已 / 绝 / 。',places:[{word:'河南'}]}).note,'至 / 河南 / 界 / ， / 资斧 / 已 / 绝 / 。');
 assert(fs.readFileSync('index.html','utf8').includes("note:'统一名称：'+edit.canonical"));
 console.log('PASS sentence token replacement, text alignment, unchanged surrounding tokens and canonical schema across client/server');

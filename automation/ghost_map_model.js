@@ -128,7 +128,17 @@
     };
     function validate(id, input) {
       const originalNarrative = input?.narrative_events;
+      const originalSegmentation = input?.segmentation_note;
       input = convert(input);
+      if(typeof originalSegmentation==='string') {
+        const source=chapters.get(id)?.source_units.map(u=>u.text||u.original||'').join('').replace(/\s/gu,'')||'';
+        const tokens=originalSegmentation.split(/[\s/|]+/u).filter(Boolean),raw=tokens.join('');
+        // 分词保存原文用字；恢复早期全字段繁简转换造成的异体差异。
+        if(raw===source) input.segmentation_note=originalSegmentation;
+        else if(raw.length===source.length && simplify(raw)===simplify(source)) {
+          let at=0;input.segmentation_note=tokens.map(t=>{const word=source.slice(at,at+t.length);at+=t.length;return word;}).join(' / ');
+        } else input.segmentation_note=originalSegmentation;
+      }
       const placeCorrections={
         '长清僧':{'山东长清县':[['山东','长清县'],[],'山东 / 长清县']},
         '婴宁':{'莒之罗店':[['莒','罗店'],[],'莒 / 之 / 罗店'],'西南山':[[],['西南山'],'西南山'],'里落':[[],['里落'],'里落']},
@@ -415,7 +425,8 @@
         const raw=chapter.source_units.map(u=>u.text || u.original).join('').replace(/\s/gu,'');
         if(tokens.join('')!==raw) throw new Error('分词必须与原文一致，只能调整边界');
         const placesChanged=JSON.stringify(before.places.map(p=>p.word))!==JSON.stringify(valid.places.map(p=>p.word));
-        if(placesChanged) {
+        const placeReviewChanged=Object.entries(valid.lexical_reviews||{}).some(([key,row])=>key.startsWith('places:')&&JSON.stringify(row)!==JSON.stringify(before.lexical_reviews?.[key]));
+        if(placesChanged || placeReviewChanged) {
           const boundaries=new Set([0]);let at=0;for(const t of tokens){at+=t.length;boundaries.add(at);}
           const spans=[];for(const p of valid.places){if(!raw.includes(p.word))throw new Error('地点词必须出现在原文：'+p.word);let start=0;while((start=raw.indexOf(p.word,start))!==-1){spans.push([start,start+p.word.length]);start+=p.word.length;}}
           spans.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);const chosen=[];for(const span of spans)if(!chosen.length||span[0]>=chosen[chosen.length-1][1])chosen.push(span);
