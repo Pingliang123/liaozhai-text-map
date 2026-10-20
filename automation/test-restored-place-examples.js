@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('assert/strict'),fs=require('fs'),M=require('./ghost_map_model'),P=require('../assets/place-crosscheck');
 const base=JSON.parse(fs.readFileSync('data-package.json')).base;
-for(const [title,wrong,place,space]of [['西僧','卓锡泰山','泰山',null],['山市','奂山山市','奂山','山市']]){
+for(const [title,wrong,place,space]of [['西僧','卓锡泰山','泰山',null],['山市','奂山山市','奂山','山市'],['长清僧','河南界','河南','界'],['叶生','淮阳界','淮阳','界']]){
  const id=base.chapter_overview.find(c=>c.chapter===title).chapter_id,m=M.create(base),d=m.editable(id);
  d.segmentation_note=m.view(id).source_units.map(require('../assets/place-review').unitTokens).join(' / ');
  delete d.lexical_reviews['places:'+wrong];d.places=[{word:wrong,mentions:0},{word:place,mentions:0}];
@@ -14,3 +14,8 @@ for(const [title,wrong,place,space]of [['西僧','卓锡泰山','泰山',null],[
  const round=M.create(base);round.importDocument(m.document());assert(round.view(id).places.some(p=>p.word===place));
 }
 console.log('PASS 西僧/山市 legacy restore, final decisions, duplicate removal, source-aligned tokens and no pending reappearance');
+const actual=M.create(base);actual.importDocument(require('../manual-revisions.json'));
+for(const [id,wrong,place]of [[101,'卓锡泰山','泰山'],[248,'奂山山市','奂山'],[15,'河南界','河南'],[30,'淮阳界','淮阳']]){assert(!actual.view(id).places.some(p=>p.word===wrong));assert(actual.view(id).places.some(p=>p.word===place));}
+const full=actual.document(),partial={...full,overrides:full.overrides.slice(0,54)};const merged=M.mergeDocuments(base,full,partial,full);assert.equal(merged.overrides.length,full.overrides.length,'An old partial document cannot erase hundreds of unrelated chapters');
+const single={...full,overrides:full.overrides.slice(1)};assert.equal(M.mergeDocuments(base,full,single,full).overrides.length,full.overrides.length-1,'Intentional individual reset remains possible');
+console.log('PASS canonical examples and partial-document omission protection without blocking individual reset');

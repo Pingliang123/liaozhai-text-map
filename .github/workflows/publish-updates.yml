@@ -13,6 +13,7 @@ on:
       - assets/data-loader.js
       - assets/place-review.js
       - assets/place-crosscheck.js
+      - assets/corpus-store.js
       - assets/research-lab/*.js
       - assets/research-lab/*.css
       - assets/research-lab/index.html
@@ -78,6 +79,7 @@ jobs:
           node automation/build-lab-times.js
           node automation/audit-place-space-sync.js
           node automation/test-current-lab-data.js
+          node automation/test-corpus-store.js
           node automation/test-manual-spatial-priority.js
           node automation/test-restored-place-examples.js
           node automation/test-network-freshness.js
@@ -131,6 +133,7 @@ jobs:
           cp -r assets public/assets
           mkdir -p public/reports
           cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md public/reports/
+          cp reports/unified-migration-verification-20261020.json public/reports/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

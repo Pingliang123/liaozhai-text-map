@@ -1,4 +1,5 @@
 import Model from './model.cjs';
+import CorpusStore from '../assets/corpus-store.js';
 import validationBase from './validation-base.json' with {type:'json'};
 
 const encoder=new TextEncoder(), decoder=new TextDecoder();
@@ -141,6 +142,8 @@ export class SyncSession {
       validate(input.doc);
       const latest=await readRevisions(credentials.access_token,env);
       if(latest.sha!==input.sha)throw new Failure(409,'其他设备已保存新修订，请重新合并。');
+      input.doc=CorpusStore.retainMissing(input.doc,latest.doc);
+      validate(input.doc);
       // Path, branch and commit message are fixed here; client input cannot
       // update code, workflow files, another repository or another branch.
       const result=await github(repoPath(env)+'/contents/'+FILE,credentials.access_token,env,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message:'保存地图人工修订',branch:'main',sha:input.sha,content:base64(encoder.encode(JSON.stringify(input.doc)))})});

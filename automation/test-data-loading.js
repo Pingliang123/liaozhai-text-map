@@ -12,7 +12,7 @@ async function main(){
   await assert.rejects(load({external:'https://evil.example/data',sha256:'a'.repeat(64)}),/索引无效/);
   const inline={legacy:true};assert.equal(await load(inline),inline);
   const workflow=fs.readFileSync('.github/workflows/publish-updates.yml','utf8');assert(workflow.includes('cp -r assets public/assets'));
-  assert(html.includes('GhostMapData.load('));assert(html.includes('本机修订未删除。'));
+  assert(html.includes('GhostCorpusStore.load('));assert(html.includes('本机修订未删除。'));
   console.log(`PASS: ${Buffer.byteLength(html)} byte HTML, full corpus and revisions preserved, fingerprints checked, errors recoverable, assets published`);
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

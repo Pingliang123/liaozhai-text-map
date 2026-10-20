@@ -350,7 +350,8 @@ globalThis.GhostMapPlaceReview={
       const placeCorrections={
         '山市':{'奂山山市':[['奂山'],['山市'],'奂山 / 山市']},
         '西僧':{'卓锡泰山':[['泰山'],[],'卓锡 / 泰山']},
-        '长清僧':{'山东长清县':[['山东','长清县'],[],'山东 / 长清县']},
+        '长清僧':{'山东长清县':[['山东','长清县'],[],'山东 / 长清县'],'河南界':[['河南'],['界'],'河南 / 界']},
+        '叶生':{'淮阳界':[['淮阳'],['界'],'淮阳 / 界']},
         '婴宁':{'莒之罗店':[['莒','罗店'],[],'莒 / 之 / 罗店'],'西南山':[[],['西南山'],'西南山'],'里落':[[],['里落'],'里落']},
         '祝翁':{'济阳祝村':[['济阳','祝村'],[],'济阳 / 祝村']},
         '阿宝':{'香水月寺':[['水月寺'],[],'香 / 水月寺']},
@@ -658,6 +659,9 @@ globalThis.GhostMapPlaceReview={
     const normalized = doc => { const m = create(base); if (doc) m.importDocument(doc); return m.document(); };
     const previous = normalized(ancestor), proposed = normalized(local), incoming = normalized(remote);
     const maps = [previous,proposed,incoming].map(d => new Map(d.overrides.map(row => [row.chapter_id,row.changes])));
+    // Old browsers can carry only a small subset of the published chapters.
+    // Treat a sudden majority omission as a partial document, not mass deletion.
+    if(maps[0].size>=20&&maps[1].size<maps[0].size/2)for(const [id,changes]of maps[2])if(!maps[1].has(id))maps[1].set(id,changes);
     const ids = new Set(maps.flatMap(m => [...m.keys()])), result = [];
     for (const id of ids) {
       const [before,mine,theirs] = maps.map(m => m.get(id));

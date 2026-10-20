@@ -18,6 +18,12 @@ function setup(overrides={}){
 }
 async function login(state,expires=Date.now()+300000){await state.storage.put('credentials',await seal({access_token:'github-access-secret',refresh_token:'refresh-secret',accessExpires:expires,expires:Date.now()+86400000,login:'Pingliang123'},secret));}
 const request=async(env,path,options={})=>Worker.fetch(new Request('https://sync.example'+path,{...options,headers:{Origin:env.SITE_ORIGIN,...options.headers}}),env);
+test('old partial browser uploads preserve omitted cloud chapters',async()=>{
+ const model=Model.create(base),complete={...doc,overrides:model.ids.slice(0,30).map(id=>({chapter_id:id,changes:model.editable(id)}))},partial=structuredClone({...complete,overrides:complete.overrides.slice(0,1)});partial.overrides[0].changes.review_note='latest manual edit';
+ let written;const state=setup({FETCH:async(url,options)=>{if(options.method==='PUT'){written=JSON.parse(Buffer.from(JSON.parse(options.body).content,'base64'));return r({commit:{sha:'commit'}});}return r({sha,content:pack(complete)});}});await login(state);
+ const response=await request(state.env,'/api/revisions',{method:'PUT',headers:{Authorization:'Bearer '+await ticket(sid,secret),'Content-Type':'application/json'},body:JSON.stringify({doc:partial,sha})});
+ assert.equal(response.status,200);assert.equal(written.overrides.length,30);assert.equal(written.overrides.find(o=>o.chapter_id===partial.overrides[0].chapter_id).changes.review_note,'latest manual edit');
+});
 
 test('credentials encrypted, tickets authenticated, tampering refused',async()=>{
   const encrypted=await seal({access_token:'sensitive'},secret);assert(!JSON.stringify(encrypted).includes('sensitive'));assert.deepEqual(await open(encrypted,secret),{access_token:'sensitive'});

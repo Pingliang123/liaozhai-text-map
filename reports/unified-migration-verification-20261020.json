@@ -1,0 +1,42 @@
+{
+  "latest_source": "49a3296",
+  "prior_source": "e3e2ad5",
+  "latest_chapters": 54,
+  "unchanged_latest_chapters": 52,
+  "authorized_corrections": [
+    {
+      "id": 15,
+      "field": "segmentation_note"
+    },
+    {
+      "id": 15,
+      "field": "lexical_reviews"
+    },
+    {
+      "id": 15,
+      "field": "places"
+    },
+    {
+      "id": 15,
+      "field": "space_words"
+    },
+    {
+      "id": 30,
+      "field": "segmentation_note"
+    },
+    {
+      "id": 30,
+      "field": "lexical_reviews"
+    },
+    {
+      "id": 30,
+      "field": "places"
+    },
+    {
+      "id": 30,
+      "field": "space_words"
+    }
+  ],
+  "restored_missing_chapters": 429,
+  "total_saved_chapters": 483
+}
