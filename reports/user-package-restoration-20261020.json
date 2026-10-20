@@ -1,0 +1,5154 @@
+{
+  "source_file": "聊斋文本地图整合资料包 (4).json",
+  "source_sha256": "352190e67e98c99005832f6a6df111c9603afaab395122615cd2d732585beed8",
+  "exported_at": "2026-10-20T08:29:05.773Z",
+  "policy": "包内篇目修订优先；包外篇目及包外定位保留；不从 CSV 或自动分类覆盖包内值。",
+  "imported_chapters": 326,
+  "preserved_chapters": 158,
+  "total_chapters": 484,
+  "locations": 2,
+  "changed_fields": {
+    "segmentation_note": 290,
+    "lexical_reviews": 276,
+    "places": 171,
+    "space_words": 200,
+    "event_types": 101,
+    "narrative_events": 201,
+    "people": 197,
+    "years": 80,
+    "realms_present": 4,
+    "review_note": 1,
+    "evidence_review": 1
+  },
+  "changes": [
+    {
+      "chapter_id": 2,
+      "chapter": "尸变",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 4,
+      "chapter": "瞳人语",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 5,
+      "chapter": "画壁",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 11,
+      "chapter": "王六郎",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 14,
+      "chapter": "劳山道士",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "人": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 15,
+      "chapter": "长清僧",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 16,
+      "chapter": "蛇人",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 17,
+      "chapter": "斫蟒",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 18,
+      "chapter": "犬奸",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 19,
+      "chapter": "雹神",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 21,
+      "chapter": "娇娜",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 22,
+      "chapter": "僧孽",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 30,
+      "chapter": "叶生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 32,
+      "chapter": "成仙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 33,
+      "chapter": "新郎",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 264,
+      "chapter": "赤字",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 270,
+      "chapter": "梓潼令",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 286,
+      "chapter": "金和尚",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 411,
+      "chapter": "黄英",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 461,
+      "chapter": "古瓶",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 36,
+      "chapter": "鹰虎神",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 41,
+      "chapter": "蛇癖",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 42,
+      "chapter": "金世成",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 44,
+      "chapter": "龁石",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 49,
+      "chapter": "义鼠",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 50,
+      "chapter": "地震",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 53,
+      "chapter": "海大鱼",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 56,
+      "chapter": "造畜",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 60,
+      "chapter": "小官人",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 62,
+      "chapter": "祝翁",
+      "fields": [
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 63,
+      "chapter": "猪婆龙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 65,
+      "chapter": "快刀",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 76,
+      "chapter": "口技",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 80,
+      "chapter": "龙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 83,
+      "chapter": "鲁公女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 84,
+      "chapter": "道士",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 86,
+      "chapter": "戏术",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 89,
+      "chapter": "蛰龙",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 90,
+      "chapter": "苏仙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 93,
+      "chapter": "金陵女子",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 94,
+      "chapter": "汤公",
+      "fields": [
+        "realms_present",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 97,
+      "chapter": "单道士",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 101,
+      "chapter": "西僧",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 105,
+      "chapter": "商三官",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 106,
+      "chapter": "于江",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 110,
+      "chapter": "鸲鹆",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 114,
+      "chapter": "梦别",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 116,
+      "chapter": "番僧",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 118,
+      "chapter": "雷曹",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 119,
+      "chapter": "赌符",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 120,
+      "chapter": "阿霞",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 122,
+      "chapter": "五羖大夫",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 125,
+      "chapter": "黑兽",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 131,
+      "chapter": "田七郎",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 132,
+      "chapter": "产龙",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 133,
+      "chapter": "保住",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 135,
+      "chapter": "促织",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 136,
+      "chapter": "柳秀才",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 139,
+      "chapter": "库官",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 141,
+      "chapter": "龙无目",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 145,
+      "chapter": "秀才驱怪",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 148,
+      "chapter": "龙取水",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 155,
+      "chapter": "蹇偿债",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 164,
+      "chapter": "酒狂",
+      "fields": [
+        "realms_present",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 165,
+      "chapter": "阳武侯",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 167,
+      "chapter": "螳蜋捕蛇",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 149,
+      "chapter": "小猎犬",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 128,
+      "chapter": "瓜异",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 137,
+      "chapter": "水灾",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 156,
+      "chapter": "头滚",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 168,
+      "chapter": "武技",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 169,
+      "chapter": "小人",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 172,
+      "chapter": "酒虫",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 173,
+      "chapter": "木雕美人",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 179,
+      "chapter": "馎饦媪",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 184,
+      "chapter": "孝子",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 185,
+      "chapter": "狮子",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 189,
+      "chapter": "义犬",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 190,
+      "chapter": "鄱阳神",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 194,
+      "chapter": "黎氏",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 196,
+      "chapter": "骂鸭",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 200,
+      "chapter": "钱流",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 202,
+      "chapter": "金生色",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 204,
+      "chapter": "堪舆",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 205,
+      "chapter": "窦氏",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 206,
+      "chapter": "梁彦",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 207,
+      "chapter": "龙肉",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 208,
+      "chapter": "潞令",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 215,
+      "chapter": "跳神",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 217,
+      "chapter": "大力将军",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 219,
+      "chapter": "颜氏",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 220,
+      "chapter": "杜翁",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 223,
+      "chapter": "吴门画工",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 227,
+      "chapter": "狼三则",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 230,
+      "chapter": "蕙芳",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 231,
+      "chapter": "山神",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 234,
+      "chapter": "豢蛇",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 235,
+      "chapter": "雷公",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 236,
+      "chapter": "菱角",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 240,
+      "chapter": "大人",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 242,
+      "chapter": "董公子",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 244,
+      "chapter": "鸽异",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 245,
+      "chapter": "聂政",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 249,
+      "chapter": "江城",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 250,
+      "chapter": "孙生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 252,
+      "chapter": "戏缢",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 253,
+      "chapter": "罗祖",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 254,
+      "chapter": "刘姓",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 257,
+      "chapter": "二商",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 260,
+      "chapter": "郭秀才",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 263,
+      "chapter": "橘树",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 267,
+      "chapter": "镜听",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 268,
+      "chapter": "牛癀",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 269,
+      "chapter": "金姑夫",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 271,
+      "chapter": "鬼津",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 274,
+      "chapter": "颠道人",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 275,
+      "chapter": "胡四娘",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 276,
+      "chapter": "僧术",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 277,
+      "chapter": "禄数",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 278,
+      "chapter": "柳生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 287,
+      "chapter": "龙戏蛛",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 289,
+      "chapter": "阎罗宴",
+      "fields": [
+        "realms_present",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 293,
+      "chapter": "局诈",
+      "fields": [
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 294,
+      "chapter": "放蝶",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 299,
+      "chapter": "三朝元老",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 300,
+      "chapter": "医术",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 301,
+      "chapter": "藏虱",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 303,
+      "chapter": "夜明",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 306,
+      "chapter": "禽侠",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 307,
+      "chapter": "鸿",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 308,
+      "chapter": "象",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 309,
+      "chapter": "负尸",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 313,
+      "chapter": "鞠乐如",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 316,
+      "chapter": "某乙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 317,
+      "chapter": "霍女",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 322,
+      "chapter": "姚安",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1,
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 324,
+      "chapter": "崔猛",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 325,
+      "chapter": "诗谳",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 326,
+      "chapter": "鹿啣草",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 327,
+      "chapter": "小棺",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 329,
+      "chapter": "李生",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 330,
+      "chapter": "陆押官",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 331,
+      "chapter": "蒋太史",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 332,
+      "chapter": "邵士梅",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 333,
+      "chapter": "顾生",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 335,
+      "chapter": "邵临淄",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 337,
+      "chapter": "狂生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 340,
+      "chapter": "佟客",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 338,
+      "chapter": "澂俗",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 344,
+      "chapter": "单父宰",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 346,
+      "chapter": "邑人",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 490,
+      "chapter": "人妖",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 350,
+      "chapter": "大鼠",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 351,
+      "chapter": "张不量",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 352,
+      "chapter": "牧竖",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 354,
+      "chapter": "王司马",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 355,
+      "chapter": "岳神",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 357,
+      "chapter": "药僧",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 358,
+      "chapter": "于中丞",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 361,
+      "chapter": "红毛毡",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 362,
+      "chapter": "抽肠",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 364,
+      "chapter": "太医",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 347,
+      "chapter": "元宝",
+      "fields": [
+        "event_types",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 348,
+      "chapter": "研石",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 349,
+      "chapter": "武夷",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 365,
+      "chapter": "牛飞",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 367,
+      "chapter": "刁姓",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 368,
+      "chapter": "农妇",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 371,
+      "chapter": "折狱",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 372,
+      "chapter": "义犬",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 376,
+      "chapter": "沅俗",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 380,
+      "chapter": "乔女",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 381,
+      "chapter": "蛤",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 385,
+      "chapter": "疲龙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 391,
+      "chapter": "神女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 401,
+      "chapter": "仇大娘",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 407,
+      "chapter": "申氏",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 410,
+      "chapter": "冯木匠",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 414,
+      "chapter": "青蛙神",
+      "fields": [
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 418,
+      "chapter": "王者",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 419,
+      "chapter": "某甲",
+      "fields": [
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 421,
+      "chapter": "拆楼人",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 425,
+      "chapter": "蚰蜓",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 429,
+      "chapter": "竹青",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 430,
+      "chapter": "段氏",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 402,
+      "chapter": "曹操冢",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {},
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 434,
+      "chapter": "男妾",
+      "fields": [
+        "segmentation_note",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 435,
+      "chapter": "汪可受",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1,
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 432,
+      "chapter": "张氏妇",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 436,
+      "chapter": "牛犊",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 438,
+      "chapter": "乐仲",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 440,
+      "chapter": "三仙",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 443,
+      "chapter": "大男",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 444,
+      "chapter": "外国人",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "narrative_events"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 445,
+      "chapter": "韦公子",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 447,
+      "chapter": "曾友于",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 449,
+      "chapter": "二班",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 451,
+      "chapter": "乩仙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 454,
+      "chapter": "杜小雷",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 455,
+      "chapter": "毛大福",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 457,
+      "chapter": "李八缸",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1,
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 459,
+      "chapter": "青城妇",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 460,
+      "chapter": "鸮鸟",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "人": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 465,
+      "chapter": "王桂庵",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 467,
+      "chapter": "周生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 470,
+      "chapter": "土化兔",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {},
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 471,
+      "chapter": "鸟使",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 477,
+      "chapter": "桓侯",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 481,
+      "chapter": "太原狱",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 482,
+      "chapter": "新郑讼",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "人": 1
+      }
+    },
+    {
+      "chapter_id": 483,
+      "chapter": "李象先",
+      "fields": [
+        "event_types",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "人": 1,
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 485,
+      "chapter": "秦桧",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people"
+      ],
+      "event_before": {
+        "人": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 487,
+      "chapter": "博兴女",
+      "fields": [
+        "event_types",
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "narrative_events"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "人": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 6,
+      "chapter": "山魈",
+      "fields": [
+        "event_types",
+        "realms_present",
+        "review_note",
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "narrative_events",
+        "people",
+        "evidence_review"
+      ],
+      "event_before": {},
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 39,
+      "chapter": "画皮",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 46,
+      "chapter": "陆判",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 72,
+      "chapter": "张诚",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 117,
+      "chapter": "狐妾",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 102,
+      "chapter": "连城",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 40,
+      "chapter": "贾儿",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 61,
+      "chapter": "胡四姐",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 66,
+      "chapter": "侠女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 91,
+      "chapter": "李伯言",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 104,
+      "chapter": "汪士秀",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 107,
+      "chapter": "小二",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 111,
+      "chapter": "刘海石",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 124,
+      "chapter": "翩翩",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 142,
+      "chapter": "狐谐",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 152,
+      "chapter": "白莲教",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 171,
+      "chapter": "鸦头",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 175,
+      "chapter": "狐梦",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 186,
+      "chapter": "阎王",
+      "fields": [
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 188,
+      "chapter": "长治女子",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 214,
+      "chapter": "云翠仙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 232,
+      "chapter": "萧七",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 233,
+      "chapter": "乱离二则",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 237,
+      "chapter": "饿鬼",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 238,
+      "chapter": "考弊司",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 241,
+      "chapter": "向杲",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 243,
+      "chapter": "周三",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 255,
+      "chapter": "邵女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 259,
+      "chapter": "梅女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 296,
+      "chapter": "钟生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 302,
+      "chapter": "梦狼",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 319,
+      "chapter": "丑狐",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 320,
+      "chapter": "吕无病",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 334,
+      "chapter": "陈锡九",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 339,
+      "chapter": "凤仙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 377,
+      "chapter": "云萝公主",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 395,
+      "chapter": "席方平",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 397,
+      "chapter": "贾奉雉",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 399,
+      "chapter": "阿纤",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 403,
+      "chapter": "龙飞相公",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 408,
+      "chapter": "恒娘",
+      "fields": [
+        "segmentation_note"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 409,
+      "chapter": "葛巾",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 413,
+      "chapter": "齐天大圣",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 431,
+      "chapter": "狐女",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 446,
+      "chapter": "石清虚",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 452,
+      "chapter": "苗生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 75,
+      "chapter": "吴令",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 140,
+      "chapter": "酆都御史",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 129,
+      "chapter": "青梅",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 176,
+      "chapter": "布客",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 153,
+      "chapter": "双灯",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 182,
+      "chapter": "武孝廉",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 225,
+      "chapter": "胡大姑",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 209,
+      "chapter": "马介甫",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 248,
+      "chapter": "山市",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 262,
+      "chapter": "阿英",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 283,
+      "chapter": "阿绣",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 321,
+      "chapter": "钱卜巫",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 363,
+      "chapter": "张鸿渐",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 392,
+      "chapter": "湘裙",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 393,
+      "chapter": "三生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 416,
+      "chapter": "晚霞",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 420,
+      "chapter": "衢州三怪",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 469,
+      "chapter": "刘全",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "神": 1
+      },
+      "event_after": {
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 464,
+      "chapter": "田子成",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 29,
+      "chapter": "焦螟",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words"
+      ],
+      "event_before": {
+        "妖": 1
+      },
+      "event_after": {
+        "妖": 1
+      }
+    },
+    {
+      "chapter_id": 27,
+      "chapter": "鬼哭",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "space_words"
+      ],
+      "event_before": {
+        "鬼": 1
+      },
+      "event_after": {
+        "鬼": 1
+      }
+    },
+    {
+      "chapter_id": 43,
+      "chapter": "董生",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "years",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "妖": 1,
+        "神": 1
+      }
+    },
+    {
+      "chapter_id": 45,
+      "chapter": "庙鬼",
+      "fields": [
+        "segmentation_note",
+        "lexical_reviews",
+        "places",
+        "space_words",
+        "people"
+      ],
+      "event_before": {
+        "鬼": 1,
+        "神": 1
+      },
+      "event_after": {
+        "鬼": 1,
+        "神": 1
+      }
+    }
+  ]
+}

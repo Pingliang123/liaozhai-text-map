@@ -1,9 +1,9 @@
 {
-  "revision_hash": "a7c0b938fe34635dcca58231bd774c1ea170add8a9507eee360ed106b9c66e32",
+  "revision_hash": "9c948c23f845077a1d3dc6ceee03e23824df788c65ad0a938687d2b4451a3611",
   "chapters": 491,
-  "place_nodes": 548,
-  "space_relations": 148,
-  "pending_space_occurrences": 2261,
+  "place_nodes": 450,
+  "space_relations": 89,
+  "pending_space_occurrences": 1366,
   "crosscheck": [
     {
       "word": "兰若",
@@ -21,25 +21,6 @@
         {
           "unit": 74,
           "text": "至东郊，瞥见兰若，闻木鱼声，乃急挝山门。"
-        }
-      ]
-    },
-    {
-      "word": "长安士",
-      "chapter": "瞳人语",
-      "chapter_id": 4,
-      "kind": "places",
-      "key": "places:长安士",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "长安"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 118,
-          "text": "长安士方栋，颇有才名，而佻脱不持仪节。"
         }
       ]
     },
@@ -63,25 +44,6 @@
       ]
     },
     {
-      "word": "兰若",
-      "chapter": "画壁",
-      "chapter_id": 5,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 149,
-          "text": "江西孟龙潭与朱孝廉客都中，偶涉一兰若，殿宇禅舍，俱不甚弘敞，惟一老僧挂褡其中。"
-        }
-      ]
-    },
-    {
       "word": "都中",
       "chapter": "画壁",
       "chapter_id": 5,
@@ -101,21 +63,21 @@
       ]
     },
     {
-      "word": "斋门",
-      "chapter": "山魈",
-      "chapter_id": 6,
+      "word": "兰若",
+      "chapter": "画壁",
+      "chapter_id": 5,
       "kind": "places",
-      "key": "places:斋门",
+      "key": "places:兰若",
       "status": "pending",
       "present": false,
       "matches": [
-        "斋门"
+        "兰若"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 189,
-          "text": "启斋门，则案上尘生，窗间丝满。"
+          "unit": 149,
+          "text": "江西孟龙潭与朱孝廉客都中，偶涉一兰若，殿宇禅舍，俱不甚弘敞，惟一老僧挂褡其中。"
         }
       ]
     },
@@ -185,25 +147,6 @@
       ]
     },
     {
-      "word": "劳山",
-      "chapter": "劳山道士",
-      "chapter_id": 14,
-      "kind": "places",
-      "key": "places:劳山",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "劳山"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 496,
-          "text": "少慕道，闻劳山多仙人，负笈往游，登一顶，有观宇，甚幽。"
-        }
-      ]
-    },
-    {
       "word": "广寒",
       "chapter": "劳山道士",
       "chapter_id": 14,
@@ -261,48 +204,6 @@
       ]
     },
     {
-      "word": "阴曹",
-      "chapter": "犬奸",
-      "chapter_id": 18,
-      "kind": "places",
-      "key": "places:阴曹",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "阴曹"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 703,
-          "text": "至于犬不良，阴曹应穷于法。"
-        }
-      ]
-    },
-    {
-      "word": "章丘",
-      "chapter": "雹神",
-      "chapter_id": 19,
-      "kind": "places",
-      "key": "places:章丘",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "章丘"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 721,
-          "text": "」曰：「章丘。"
-        },
-        {
-          "unit": 734,
-          "text": "」公别归，志其月日，遣人问章丘。"
-        }
-      ]
-    },
-    {
       "word": "楚中",
       "chapter": "雹神",
       "chapter_id": 19,
@@ -318,25 +219,6 @@
         {
           "unit": 705,
           "text": "王公筠苍，莅任楚中。"
-        }
-      ]
-    },
-    {
-      "word": "天台",
-      "chapter": "娇娜",
-      "chapter_id": 21,
-      "kind": "places",
-      "key": "places:天台",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "天台"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 825,
-          "text": "有执友令天台，寄函招之。"
         }
       ]
     },
@@ -456,25 +338,6 @@
       ]
     },
     {
-      "word": "西域",
-      "chapter": "焦螟",
-      "chapter_id": 29,
-      "kind": "places",
-      "key": "places:西域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "西域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 1210,
-          "text": "婢作狐言：「我西域产，入都者一十八辈。"
-        }
-      ]
-    },
-    {
       "word": "新城",
       "chapter": "四十千",
       "chapter_id": 31,
@@ -513,48 +376,6 @@
       ]
     },
     {
-      "word": "黄吏部",
-      "chapter": "成仙",
-      "chapter_id": 32,
-      "kind": "places",
-      "key": "places:黄吏部",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 1325,
-          "text": "先是，黄吏部家牧佣，牛蹊周田，以是相诟。"
-        }
-      ]
-    },
-    {
-      "word": "劳山",
-      "chapter": "成仙",
-      "chapter_id": 32,
-      "kind": "places",
-      "key": "places:劳山",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "劳山"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 1388,
-          "text": "」问所栖止，答在劳山之上清宫。"
-        },
-        {
-          "unit": 1402,
-          "text": "数日，入劳山。"
-        }
-      ]
-    },
-    {
       "word": "游戏人间",
       "chapter": "成仙",
       "chapter_id": 32,
@@ -574,25 +395,6 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "成仙",
-      "chapter_id": 32,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 1429,
-          "text": "地下有蒲团二，曳与并坐。"
-        }
-      ]
-    },
-    {
       "word": "人间",
       "chapter": "成仙",
       "chapter_id": 32,
@@ -608,25 +410,6 @@
         {
           "unit": 1410,
           "text": "见周，愕曰：「数年不晤，人以君学道名山，今尚游戏人间耶？"
-        }
-      ]
-    },
-    {
-      "word": "吏部",
-      "chapter": "成仙",
-      "chapter_id": 32,
-      "kind": "places",
-      "key": "places:吏部",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 1325,
-          "text": "先是，黄吏部家牧佣，牛蹊周田，以是相诟。"
         }
       ]
     },
@@ -707,21 +490,40 @@
       ]
     },
     {
-      "word": "斋门",
-      "chapter": "董生",
-      "chapter_id": 43,
+      "word": "新城",
+      "chapter": "龁石",
+      "chapter_id": 44,
       "kind": "places",
-      "key": "places:斋门",
+      "key": "places:新城",
       "status": "pending",
       "present": false,
       "matches": [
-        "斋门"
+        "新城"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 2265,
-          "text": "半夜，董归，见斋门虚掩，大疑。"
+          "unit": 2357,
+          "text": "新城王钦文太翁家，有圉人王姓，幼入劳山学道。"
+        }
+      ]
+    },
+    {
+      "word": "新城",
+      "chapter": "庙鬼",
+      "chapter_id": 45,
+      "kind": "places",
+      "key": "places:新城",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "新城"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 2363,
+          "text": "新城诸生王启后者，方伯中宇公象坤曾孙。"
         }
       ]
     },
@@ -787,63 +589,6 @@
       ]
     },
     {
-      "word": "九泉",
-      "chapter": "婴宁",
-      "chapter_id": 47,
-      "kind": "places",
-      "key": "places:九泉",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "九泉"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 2854,
-          "text": "老母岑寂山阿，无人怜而合厝之，九泉辄为悼恨。"
-        }
-      ]
-    },
-    {
-      "word": "地下人",
-      "chapter": "婴宁",
-      "chapter_id": 47,
-      "kind": "places",
-      "key": "places:地下人",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 2855,
-          "text": "君倘不惜烦费，使地下人消此怨恫，庶养女者不妨溺弃。"
-        }
-      ]
-    },
-    {
-      "word": "地下",
-      "chapter": "婴宁",
-      "chapter_id": 47,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 2855,
-          "text": "君倘不惜烦费，使地下人消此怨恫，庶养女者不妨溺弃。"
-        }
-      ]
-    },
-    {
       "word": "楚中",
       "chapter": "婴宁",
       "chapter_id": 47,
@@ -882,25 +627,6 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "聂小倩",
-      "chapter_id": 48,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 2983,
-          "text": "言次女已翩然入，拜伏地下。"
-        }
-      ]
-    },
-    {
       "word": "异域",
       "chapter": "聂小倩",
       "chapter_id": 48,
@@ -920,59 +646,59 @@
       ]
     },
     {
-      "word": "群奔集灵寝",
-      "chapter": "祝翁",
-      "chapter_id": 62,
+      "word": "栖霞",
+      "chapter": "地震",
+      "chapter_id": 50,
       "kind": "places",
-      "key": "places:群奔集灵寝",
+      "key": "places:栖霞",
       "status": "pending",
       "present": false,
       "matches": [
-        "灵寝"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 3710,
-          "text": "群奔集灵寝，则见翁已复活。"
-        }
-      ]
-    },
-    {
-      "word": "灵寝",
-      "chapter": "祝翁",
-      "chapter_id": 62,
-      "kind": "places",
-      "key": "places:灵寝",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "灵寝"
+        "栖霞"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 3710,
-          "text": "群奔集灵寝，则见翁已复活。"
+          "unit": 3084,
+          "text": "栖霞山裂；"
         }
       ]
     },
     {
-      "word": "地下",
-      "chapter": "莲香",
-      "chapter_id": 68,
+      "word": "稷下",
+      "chapter": "地震",
+      "chapter_id": 50,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:稷下",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "稷下"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 4130,
-          "text": "」李敛衽曰：「如有医国手，使妾得无负郎君，便当埋首地下，敢复面见然于人世耶！"
+          "unit": 3069,
+          "text": "余适客稷下，方与表兄李笃之对烛饮。"
+        }
+      ]
+    },
+    {
+      "word": "章丘",
+      "chapter": "快刀",
+      "chapter_id": 65,
+      "kind": "places",
+      "key": "places:章丘",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "章丘"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 3765,
+          "text": "章丘盗尤多。"
         }
       ]
     },
@@ -988,25 +714,6 @@
         "冥司"
       ],
       "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 4589,
-          "text": "菩萨几十年一入冥司，拔诸苦恼，今适值之。"
-        }
-      ]
-    },
-    {
-      "word": "冥司",
-      "chapter": "张诚",
-      "chapter_id": 72,
-      "kind": "places",
-      "key": "places:冥司",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "冥司"
-      ],
-      "issue": "同名漏标",
       "evidence": [
         {
           "unit": 4589,
@@ -1034,40 +741,21 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "巧娘",
-      "chapter_id": 74,
+      "word": "冥司",
+      "chapter": "张诚",
+      "chapter_id": 72,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:冥司",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "冥司"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 4911,
-          "text": "」生叹曰：「误听华姑言，使母子埋懮地下，罪将安辞！"
-        }
-      ]
-    },
-    {
-      "word": "高邮",
-      "chapter": "巧娘",
-      "chapter_id": 74,
-      "kind": "places",
-      "key": "places:高邮",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "高邮"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 4920,
-          "text": "高邮翁紫霞，客于广而闻之。"
+          "unit": 4589,
+          "text": "菩萨几十年一入冥司，拔诸苦恼，今适值之。"
         }
       ]
     },
@@ -1148,6 +836,63 @@
       ]
     },
     {
+      "word": "于陵",
+      "chapter": "蛰龙",
+      "chapter_id": 89,
+      "kind": "places",
+      "key": "places:于陵",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "于陵"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 5673,
+          "text": "于陵曲银台公，读书楼上。"
+        }
+      ]
+    },
+    {
+      "word": "阴司",
+      "chapter": "李伯言",
+      "chapter_id": 91,
+      "kind": "places",
+      "key": "places:阴司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "阴司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 5730,
+          "text": "阴司阎罗缺，欲吾暂摄其篆耳。"
+        }
+      ]
+    },
+    {
+      "word": "冥司耳",
+      "chapter": "李伯言",
+      "chapter_id": 91,
+      "kind": "places",
+      "key": "places:冥司耳",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 5753,
+          "text": "王曰：「烦作见证于冥司耳。"
+        }
+      ]
+    },
+    {
       "word": "幽冥",
       "chapter": "李伯言",
       "chapter_id": 91,
@@ -1163,6 +908,25 @@
         {
           "unit": 5783,
           "text": "胡叹曰：「闺房一语，遂播幽冥，可惧哉！"
+        }
+      ]
+    },
+    {
+      "word": "冥司",
+      "chapter": "李伯言",
+      "chapter_id": 91,
+      "kind": "places",
+      "key": "places:冥司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 5753,
+          "text": "王曰：「烦作见证于冥司耳。"
         }
       ]
     },
@@ -1224,6 +988,25 @@
       ]
     },
     {
+      "word": "桐凤翔",
+      "chapter": "白于玉",
+      "chapter_id": 98,
+      "kind": "places",
+      "key": "places:桐凤翔",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "凤翔"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 6343,
+          "text": "俄有桐凤翔集，童捉谓生曰：「黑径难行，可乘此代步。"
+        }
+      ]
+    },
+    {
       "word": "人间",
       "chapter": "白于玉",
       "chapter_id": 98,
@@ -1243,25 +1026,6 @@
       ]
     },
     {
-      "word": "广寒",
-      "chapter": "白于玉",
-      "chapter_id": 98,
-      "kind": "places",
-      "key": "places:广寒",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "广寒"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 6355,
-          "text": "童导入广寒宫，内以水晶为阶，行人如在镜中。"
-        }
-      ]
-    },
-    {
       "word": "都中",
       "chapter": "白于玉",
       "chapter_id": 98,
@@ -1277,6 +1041,44 @@
         {
           "unit": 6483,
           "text": "都中延烧民舍数万间，左右前后，并为灰烬，独吴第无恙，惟东南一小阁，化为乌有，即钏口漏覆处也。"
+        }
+      ]
+    },
+    {
+      "word": "凤翔",
+      "chapter": "白于玉",
+      "chapter_id": 98,
+      "kind": "places",
+      "key": "places:凤翔",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "凤翔"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 6343,
+          "text": "俄有桐凤翔集，童捉谓生曰：「黑径难行，可乘此代步。"
+        }
+      ]
+    },
+    {
+      "word": "广寒",
+      "chapter": "白于玉",
+      "chapter_id": 98,
+      "kind": "places",
+      "key": "places:广寒",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "广寒"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 6355,
+          "text": "童导入广寒宫，内以水晶为阶，行人如在镜中。"
         }
       ]
     },
@@ -1399,21 +1201,78 @@
       ]
     },
     {
-      "word": "地下",
+      "word": "地府",
       "chapter": "小二",
       "chapter_id": 107,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:地府",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "地府"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 7077,
-          "text": "」乃剪纸作判官状，置地下，覆以鸡笼。"
+          "unit": 7091,
+          "text": "地忽暴裂，深不可底，一判官自内出，言：『我地府司隶也。"
+        }
+      ]
+    },
+    {
+      "word": "益都",
+      "chapter": "小二",
+      "chapter_id": 107,
+      "kind": "places",
+      "key": "places:益都",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 7121,
+          "text": "」因贱售其业而去之，止于益都之西鄙。"
+        }
+      ]
+    },
+    {
+      "word": "自言广陵",
+      "chapter": "庚娘",
+      "chapter_id": 108,
+      "kind": "places",
+      "key": "places:自言广陵",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "广陵"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 7148,
+          "text": "途遇少年，亦偕妻以逃者，自言广陵王十八，愿为前驱。"
+        }
+      ]
+    },
+    {
+      "word": "广陵者",
+      "chapter": "庚娘",
+      "chapter_id": 108,
+      "kind": "places",
+      "key": "places:广陵者",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "广陵"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 7236,
+          "text": "前言广陵者，诈也。"
         }
       ]
     },
@@ -1437,78 +1296,44 @@
       ]
     },
     {
-      "word": "景庆云",
-      "chapter": "阿霞",
-      "chapter_id": 120,
+      "word": "金山",
+      "chapter": "庚娘",
+      "chapter_id": 108,
       "kind": "places",
-      "key": "places:景庆云",
+      "key": "places:金山",
       "status": "pending",
       "present": false,
       "matches": [
-        "庆云"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 8018,
-          "text": "问郑曰：「堂上客，非景庆云耶？"
-        }
-      ]
-    },
-    {
-      "word": "吏部郎",
-      "chapter": "阿霞",
-      "chapter_id": 120,
-      "kind": "places",
-      "key": "places:吏部郎",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 8030,
-          "text": "郑官至吏部郎。"
-        }
-      ]
-    },
-    {
-      "word": "吏部",
-      "chapter": "阿霞",
-      "chapter_id": 120,
-      "kind": "places",
-      "key": "places:吏部",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
+        "金山"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 8030,
-          "text": "郑官至吏部郎。"
+          "unit": 7250,
+          "text": "暂过镇江，欲登金山。"
+        },
+        {
+          "unit": 7285,
+          "text": "适母子自金山归也。"
         }
       ]
     },
     {
-      "word": "庆云",
-      "chapter": "阿霞",
-      "chapter_id": 120,
+      "word": "滨州生",
+      "chapter": "刘海石",
+      "chapter_id": 111,
       "kind": "places",
-      "key": "places:庆云",
+      "key": "places:滨州生",
       "status": "pending",
       "present": false,
       "matches": [
-        "庆云"
+        "滨州"
       ],
-      "issue": "同名漏标",
+      "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 8018,
-          "text": "问郑曰：「堂上客，非景庆云耶？"
+          "unit": 7494,
+          "text": "时十四岁，与滨州生刘沧客同函丈，因相善，订为昆季。"
         }
       ]
     },
@@ -1528,25 +1353,6 @@
         {
           "unit": 8137,
           "text": "自恐死异域，乞食西行；"
-        }
-      ]
-    },
-    {
-      "word": "龙宫",
-      "chapter": "余德",
-      "chapter_id": 126,
-      "kind": "places",
-      "key": "places:龙宫",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "龙宫"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 8286,
-          "text": "忽有道士踵门求之，尹出以示，道士曰：「此龙宫蓄水器也。"
         }
       ]
     },
@@ -1585,48 +1391,6 @@
         {
           "unit": 8296,
           "text": "」乃遥呼曰：「遗屙者，奉赠一股会稽藤簪绾髻子。"
-        }
-      ]
-    },
-    {
-      "word": "求吏部",
-      "chapter": "青梅",
-      "chapter_id": 129,
-      "kind": "places",
-      "key": "places:求吏部",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 8433,
-          "text": "尼往求吏部某公揭示严禁，恶少始稍敛迹。"
-        }
-      ]
-    },
-    {
-      "word": "吏部",
-      "chapter": "青梅",
-      "chapter_id": 129,
-      "kind": "places",
-      "key": "places:吏部",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吏部"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 8433,
-          "text": "尼往求吏部某公揭示严禁，恶少始稍敛迹。"
-        },
-        {
-          "unit": 8435,
-          "text": "因复告吏部，捉得首恶者，送郡笞责，始渐安。"
         }
       ]
     },
@@ -1802,25 +1566,6 @@
       ]
     },
     {
-      "word": "兰若",
-      "chapter": "促织",
-      "chapter_id": 135,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 9105,
-          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
-        }
-      ]
-    },
-    {
       "word": "华阴",
       "chapter": "促织",
       "chapter_id": 135,
@@ -1840,40 +1585,59 @@
       ]
     },
     {
-      "word": "邹平",
-      "chapter": "库官",
-      "chapter_id": 139,
+      "word": "兰若",
+      "chapter": "促织",
+      "chapter_id": 135,
       "kind": "places",
-      "key": "places:邹平",
+      "key": "places:兰若",
       "status": "pending",
       "present": false,
       "matches": [
-        "邹平"
+        "兰若"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 9234,
-          "text": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。"
+          "unit": 9105,
+          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
         }
       ]
     },
     {
-      "word": "江淮",
+      "word": "南中",
       "chapter": "库官",
       "chapter_id": 139,
       "kind": "places",
-      "key": "places:江淮",
+      "key": "places:南中",
       "status": "pending",
       "present": false,
       "matches": [
-        "江淮"
+        "南中"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 9234,
-          "text": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。"
+          "unit": 9243,
+          "text": "张至南中，馈遗颇丰。"
+        }
+      ]
+    },
+    {
+      "word": "冥府",
+      "chapter": "酆都御史",
+      "chapter_id": 140,
+      "kind": "places",
+      "key": "places:冥府",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥府"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 9264,
+          "text": "」尊官曰：「此冥府也。"
         }
       ]
     },
@@ -1893,6 +1657,25 @@
         {
           "unit": 9272,
           "text": "曰：「适接帝诏，大赦幽冥，可为君委折原例耳。"
+        }
+      ]
+    },
+    {
+      "word": "沂水",
+      "chapter": "龙无目",
+      "chapter_id": 141,
+      "kind": "places",
+      "key": "places:沂水",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "沂水"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 9281,
+          "text": "沂水大雨，忽堕一龙，双睛俱无，奄有气息。"
         }
       ]
     },
@@ -1954,25 +1737,6 @@
       ]
     },
     {
-      "word": "刀山狱",
-      "chapter": "续黄粱",
-      "chapter_id": 147,
-      "kind": "places",
-      "key": "places:刀山狱",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "刀山"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 9653,
-          "text": "王又检册籍，怒曰：「倚势凌人，合受刀山狱！"
-        }
-      ]
-    },
-    {
       "word": "十八狱",
       "chapter": "续黄粱",
       "chapter_id": 147,
@@ -2012,25 +1776,6 @@
       ]
     },
     {
-      "word": "刀山",
-      "chapter": "续黄粱",
-      "chapter_id": 147,
-      "kind": "places",
-      "key": "places:刀山",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "刀山"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 9653,
-          "text": "王又检册籍，怒曰：「倚势凌人，合受刀山狱！"
-        }
-      ]
-    },
-    {
       "word": "江水",
       "chapter": "龙取水",
       "chapter_id": 148,
@@ -2046,6 +1791,25 @@
         {
           "unit": 9702,
           "text": "徐东痴夜南游，泊舟江岸，见一苍龙自空垂下，以尾揽江水，波浪涌起，随龙身而上。"
+        }
+      ]
+    },
+    {
+      "word": "山右卫",
+      "chapter": "小猎犬",
+      "chapter_id": 149,
+      "kind": "places",
+      "key": "places:山右卫",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "山右"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 9706,
+          "text": "山右卫中堂为诸生时，假斋僧院。"
         }
       ]
     },
@@ -2126,15 +1890,15 @@
       ]
     },
     {
-      "word": "淄川",
+      "word": "益都",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:淄川",
+      "key": "places:益都",
       "status": "pending",
       "present": false,
       "matches": [
-        "淄川"
+        "益都"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -2145,15 +1909,15 @@
       ]
     },
     {
-      "word": "益都",
+      "word": "淄川",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:益都",
+      "key": "places:淄川",
       "status": "pending",
       "present": false,
       "matches": [
-        "益都"
+        "淄川"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -2179,25 +1943,6 @@
         {
           "unit": 10163,
           "text": "」杜曰：「幽冥殊途，安能代庖？"
-        }
-      ]
-    },
-    {
-      "word": "陜中",
-      "chapter": "胡四相公",
-      "chapter_id": 158,
-      "kind": "places",
-      "key": "places:陜中",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "陜中"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 10249,
-          "text": "」曰：「弟陜中产，将归去矣。"
         }
       ]
     },
@@ -2259,21 +2004,21 @@
       ]
     },
     {
-      "word": "灵寝",
-      "chapter": "秦生",
-      "chapter_id": 170,
+      "word": "小勾栏",
+      "chapter": "鸦头",
+      "chapter_id": 171,
       "kind": "places",
-      "key": "places:灵寝",
+      "key": "places:小勾栏",
       "status": "pending",
       "present": false,
       "matches": [
-        "灵寝"
+        "勾栏"
       ],
-      "issue": "同名漏标",
+      "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 10646,
-          "text": "次夜，忽有美人入，身长不满三尺，迳就灵寝，以瓯水灌之，豁然顿苏。"
+          "unit": 10671,
+          "text": "」答云：「此是小勾栏。"
         }
       ]
     },
@@ -2377,6 +2122,44 @@
       ]
     },
     {
+      "word": "冥司矣",
+      "chapter": "布客",
+      "chapter_id": 176,
+      "kind": "places",
+      "key": "places:冥司矣",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 11227,
+          "text": "一日，鬼忽来曰：「我已以建桥事上报城隍，转达冥司矣，谓此一节可延寿命。"
+        }
+      ]
+    },
+    {
+      "word": "冥司",
+      "chapter": "布客",
+      "chapter_id": 176,
+      "kind": "places",
+      "key": "places:冥司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 11227,
+          "text": "一日，鬼忽来曰：「我已以建桥事上报城隍，转达冥司矣，谓此一节可延寿命。"
+        }
+      ]
+    },
+    {
       "word": "山东",
       "chapter": "布客",
       "chapter_id": 176,
@@ -2392,6 +2175,29 @@
         {
           "unit": 11212,
           "text": "」短衣人曰：「我非生人，乃蒿里山东四司隶役。"
+        }
+      ]
+    },
+    {
+      "word": "长清",
+      "chapter": "布客",
+      "chapter_id": 176,
+      "kind": "places",
+      "key": "places:长清",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "长清"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 11199,
+          "text": "长清某，贩布为业，客于泰安。"
+        },
+        {
+          "unit": 11207,
+          "text": "某问所干营，答言：「将适长清，有所勾致。"
         }
       ]
     },
@@ -2510,25 +2316,6 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "长治女子",
-      "chapter_id": 188,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 12085,
-          "text": "三举，翻坠地下。"
-        }
-      ]
-    },
-    {
       "word": "江水",
       "chapter": "伍秋月",
       "chapter_id": 191,
@@ -2624,44 +2411,6 @@
       ]
     },
     {
-      "word": "大名诸生",
-      "chapter": "马介甫",
-      "chapter_id": 209,
-      "kind": "places",
-      "key": "places:大名诸生",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "大名"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 13215,
-          "text": "杨万石，大名诸生也。"
-        }
-      ]
-    },
-    {
-      "word": "大名",
-      "chapter": "马介甫",
-      "chapter_id": 209,
-      "kind": "places",
-      "key": "places:大名",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "大名"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 13215,
-          "text": "杨万石，大名诸生也。"
-        }
-      ]
-    },
-    {
       "word": "江汉女",
       "chapter": "绛妃",
       "chapter_id": 212,
@@ -2696,6 +2445,105 @@
         {
           "unit": 13567,
           "text": "翩跹江汉女，弓鞋漫踏春园；"
+        }
+      ]
+    },
+    {
+      "word": "都中",
+      "chapter": "跳神",
+      "chapter_id": 215,
+      "kind": "places",
+      "key": "places:都中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "都中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 13758,
+          "text": "而此俗都中尤盛。"
+        }
+      ]
+    },
+    {
+      "word": "饮野寺",
+      "chapter": "大力将军",
+      "chapter_id": 217,
+      "kind": "places",
+      "key": "places:饮野寺",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "野寺"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 13797,
+          "text": "清明饮野寺中，见殿前有古钟，大于两石瓮；"
+        }
+      ]
+    },
+    {
+      "word": "野寺",
+      "chapter": "大力将军",
+      "chapter_id": 217,
+      "kind": "places",
+      "key": "places:野寺",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "野寺"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 13797,
+          "text": "清明饮野寺中，见殿前有古钟，大于两石瓮；"
+        }
+      ]
+    },
+    {
+      "word": "顺天",
+      "chapter": "颜氏",
+      "chapter_id": 219,
+      "kind": "places",
+      "key": "places:顺天",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "顺天"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 13883,
+          "text": "顺天某生，家贫，值岁饥，从父之洛。"
+        },
+        {
+          "unit": 13944,
+          "text": "弟以冠军应试，中顺天第四；"
+        }
+      ]
+    },
+    {
+      "word": "中顺天",
+      "chapter": "颜氏",
+      "chapter_id": 219,
+      "kind": "places",
+      "key": "places:中顺天",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "顺天"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 13944,
+          "text": "弟以冠军应试，中顺天第四；"
         }
       ]
     },
@@ -2735,6 +2583,25 @@
         {
           "unit": 14136,
           "text": "惨然曰：「三郎在部院，被廨神押赴冥司；"
+        }
+      ]
+    },
+    {
+      "word": "益都",
+      "chapter": "胡大姑",
+      "chapter_id": 225,
+      "kind": "places",
+      "key": "places:益都",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14372,
+          "text": "益都岳于九，家有狐祟，布帛器具，辄被抛掷邻堵。"
         }
       ]
     },
@@ -2796,6 +2663,44 @@
       ]
     },
     {
+      "word": "益都李",
+      "chapter": "山神",
+      "chapter_id": 231,
+      "kind": "places",
+      "key": "places:益都李",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 14669,
+          "text": "益都李会斗，偶山行，值数人籍地饮。"
+        }
+      ]
+    },
+    {
+      "word": "益都",
+      "chapter": "山神",
+      "chapter_id": 231,
+      "kind": "places",
+      "key": "places:益都",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14669,
+          "text": "益都李会斗，偶山行，值数人籍地饮。"
+        }
+      ]
+    },
+    {
       "word": "氏殡宫",
       "chapter": "萧七",
       "chapter_id": 232,
@@ -2842,6 +2747,82 @@
       ]
     },
     {
+      "word": "秦中",
+      "chapter": "乱离二则",
+      "chapter_id": 233,
+      "kind": "places",
+      "key": "places:秦中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "秦中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14845,
+          "text": "惜言者忘其姓字，秦中或有能道之者。"
+        }
+      ]
+    },
+    {
+      "word": "遥见兰若",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:遥见兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 14850,
+          "text": "遥见兰若，趋投之。"
+        }
+      ]
+    },
+    {
+      "word": "客中州者",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:客中州者",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "中州"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 14872,
+          "text": "余乡有客中州者，寄宿蛇佛寺。"
+        }
+      ]
+    },
+    {
+      "word": "兰若",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14850,
+          "text": "遥见兰若，趋投之。"
+        }
+      ]
+    },
+    {
       "word": "泗水",
       "chapter": "豢蛇",
       "chapter_id": 234,
@@ -2857,6 +2838,25 @@
         {
           "unit": 14846,
           "text": "泗水山中，旧有禅院，四无村落，人迹罕及，有道士栖止其中。"
+        }
+      ]
+    },
+    {
+      "word": "中州",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:中州",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "中州"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14872,
+          "text": "余乡有客中州者，寄宿蛇佛寺。"
         }
       ]
     },
@@ -2937,6 +2937,25 @@
       ]
     },
     {
+      "word": "广陵",
+      "chapter": "鸽异",
+      "chapter_id": 244,
+      "kind": "places",
+      "key": "places:广陵",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "广陵"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 15276,
+          "text": "张在广陵，以十金购一鸽，体最小，善走，置地上，盘旋无已时，不至于死不休也，故常须人把握之；"
+        }
+      ]
+    },
+    {
       "word": "惟勾栏",
       "chapter": "江城",
       "chapter_id": 249,
@@ -2971,105 +2990,6 @@
         {
           "unit": 15525,
           "text": "」媪战而告曰：「半月来，惟勾栏李云娘过此两度耳。"
-        }
-      ]
-    },
-    {
-      "word": "故宅者",
-      "chapter": "八大王",
-      "chapter_id": 251,
-      "kind": "places",
-      "key": "places:故宅者",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "故宅"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 15810,
-          "text": "后有货故宅者，生视其中有藏镪无算，遂以重金购居之。"
-        }
-      ]
-    },
-    {
-      "word": "故宅",
-      "chapter": "八大王",
-      "chapter_id": 251,
-      "kind": "places",
-      "key": "places:故宅",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "故宅"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 15810,
-          "text": "后有货故宅者，生视其中有藏镪无算，遂以重金购居之。"
-        }
-      ]
-    },
-    {
-      "word": "即墨",
-      "chapter": "罗祖",
-      "chapter_id": 253,
-      "kind": "places",
-      "key": "places:即墨",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "即墨"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 15861,
-          "text": "罗祖，即墨人也。"
-        },
-        {
-          "unit": 15890,
-          "text": "乃驿送其子归即墨。"
-        }
-      ]
-    },
-    {
-      "word": "李诣周村",
-      "chapter": "刘姓",
-      "chapter_id": 254,
-      "kind": "places",
-      "key": "places:李诣周村",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "周村"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 15986,
-          "text": "去年，李诣周村，遇刘与人争，众围劝不能解。"
-        }
-      ]
-    },
-    {
-      "word": "周村",
-      "chapter": "刘姓",
-      "chapter_id": 254,
-      "kind": "places",
-      "key": "places:周村",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "周村"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 15986,
-          "text": "去年，李诣周村，遇刘与人争，众围劝不能解。"
         }
       ]
     },
@@ -3169,25 +3089,6 @@
       ]
     },
     {
-      "word": "故宅",
-      "chapter": "梅女",
-      "chapter_id": 259,
-      "kind": "places",
-      "key": "places:故宅",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "故宅"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 16524,
-          "text": "主人言：「此十年前梅氏故宅，夜有小偷入室，为梅所执，送诣典史。"
-        }
-      ]
-    },
-    {
       "word": "哀冥司",
       "chapter": "梅女",
       "chapter_id": 259,
@@ -3226,6 +3127,25 @@
       ]
     },
     {
+      "word": "东粤",
+      "chapter": "郭秀才",
+      "chapter_id": 260,
+      "kind": "places",
+      "key": "places:东粤",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "东粤"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 16681,
+          "text": "东粤士人郭某，暮自友人归，入山迷路，窜榛莽中。"
+        }
+      ]
+    },
+    {
       "word": "人间",
       "chapter": "青娥",
       "chapter_id": 266,
@@ -3245,21 +3165,21 @@
       ]
     },
     {
-      "word": "太原人",
-      "chapter": "梓潼令",
-      "chapter_id": 270,
+      "word": "会稽",
+      "chapter": "金姑夫",
+      "chapter_id": 269,
       "kind": "places",
-      "key": "places:太原人",
+      "key": "places:会稽",
       "status": "pending",
       "present": false,
       "matches": [
-        "太原"
+        "会稽"
       ],
-      "issue": "包含已知地名的分词",
+      "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 17301,
-          "text": "常进士大忠，太原人。"
+          "unit": 17279,
+          "text": "会稽有梅姑祠。"
         }
       ]
     },
@@ -3302,6 +3222,25 @@
       ]
     },
     {
+      "word": "剑南人",
+      "chapter": "胡四娘",
+      "chapter_id": 275,
+      "kind": "places",
+      "key": "places:剑南人",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "剑南"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 17611,
+          "text": "程孝思，剑南人。"
+        }
+      ]
+    },
+    {
       "word": "顺天举",
       "chapter": "胡四娘",
       "chapter_id": 275,
@@ -3317,25 +3256,6 @@
         {
           "unit": 17659,
           "text": "东海李兰台见而器之，收诸幕中，资以膏火，为之纳贡，使应顺天举；"
-        }
-      ]
-    },
-    {
-      "word": "灵寝",
-      "chapter": "胡四娘",
-      "chapter_id": 275,
-      "kind": "places",
-      "key": "places:灵寝",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "灵寝"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 17694,
-          "text": "数年，灵寝漏败，渐将以华屋作山丘矣。"
         }
       ]
     },
@@ -3359,6 +3279,25 @@
       ]
     },
     {
+      "word": "兰若",
+      "chapter": "僧术",
+      "chapter_id": 276,
+      "kind": "places",
+      "key": "places:兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 17725,
+          "text": "村外兰若，有居僧某，素与分深。"
+        }
+      ]
+    },
+    {
       "word": "直隶界",
       "chapter": "柳生",
       "chapter_id": 278,
@@ -3367,7 +3306,44 @@
       "status": "pending",
       "present": false,
       "matches": [
-        "直隶界",
+        "直隶"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 17849,
+          "text": "至直隶界，厚赐骑者而去。"
+        }
+      ]
+    },
+    {
+      "word": "顺天",
+      "chapter": "柳生",
+      "chapter_id": 278,
+      "kind": "places",
+      "key": "places:顺天",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "顺天"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 17766,
+          "text": "周生，顺天宦裔也。"
+        }
+      ]
+    },
+    {
+      "word": "直隶",
+      "chapter": "柳生",
+      "chapter_id": 278,
+      "kind": "places",
+      "key": "places:直隶",
+      "status": "pending",
+      "present": false,
+      "matches": [
         "直隶"
       ],
       "issue": "同名漏标",
@@ -3379,40 +3355,40 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "甄后",
-      "chapter_id": 281,
+      "word": "齐东令",
+      "chapter": "龙戏蛛",
+      "chapter_id": 287,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:齐东令",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "齐东"
       ],
-      "issue": "同名漏标",
+      "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 17939,
-          "text": "刘惊伏地下。"
+          "unit": 18589,
+          "text": "徐公为齐东令。"
         }
       ]
     },
     {
-      "word": "尘世",
-      "chapter": "宦娘",
-      "chapter_id": 282,
+      "word": "齐东",
+      "chapter": "龙戏蛛",
+      "chapter_id": 287,
       "kind": "places",
-      "key": "places:尘世",
+      "key": "places:齐东",
       "status": "pending",
       "present": false,
       "matches": [
-        "尘世"
+        "齐东"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 18135,
-          "text": "宦娘不辞，其调其谱，并非尘世所能。"
+          "unit": 18589,
+          "text": "徐公为齐东令。"
         }
       ]
     },
@@ -3455,21 +3431,59 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "鬼妻",
-      "chapter_id": 297,
+      "word": "长山",
+      "chapter": "放蝶",
+      "chapter_id": 294,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:长山",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "长山"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 19130,
-          "text": "感君悼念，哀白地下主者，聊与作幽会。"
+          "unit": 18967,
+          "text": "长山王进士㞳生为令时，每听讼，按律之轻重，罚令纳蝶自赎；"
+        }
+      ]
+    },
+    {
+      "word": "阴司",
+      "chapter": "钟生",
+      "chapter_id": 296,
+      "kind": "places",
+      "key": "places:阴司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "阴司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 19023,
+          "text": "母摇首止之，执手喜曰：「适梦之阴司，见王者颜色和霁。"
+        }
+      ]
+    },
+    {
+      "word": "兰若",
+      "chapter": "钟生",
+      "chapter_id": 296,
+      "kind": "places",
+      "key": "places:兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 19102,
+          "text": "」困少苏，相将入兰若，礼佛而进。"
         }
       ]
     },
@@ -3508,6 +3522,25 @@
         {
           "unit": 19137,
           "text": "未几，吉期逼迩，鬼知其情，责之曰：「我以君义，故冒幽冥之谴；"
+        }
+      ]
+    },
+    {
+      "word": "益都",
+      "chapter": "医术",
+      "chapter_id": 300,
+      "kind": "places",
+      "key": "places:益都",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 19210,
+          "text": "益都韩翁，名医也。"
         }
       ]
     },
@@ -3577,25 +3610,6 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "丑狐",
-      "chapter_id": 319,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 20283,
-          "text": "术士作坛，陈设未已，忽颠地下，血流满颊；"
-        }
-      ]
-    },
-    {
       "word": "云南军",
       "chapter": "崔猛",
       "chapter_id": 324,
@@ -3612,6 +3626,67 @@
         {
           "unit": 20784,
           "text": "寻以自首减等，充云南军，申为服役而去；"
+        }
+      ]
+    },
+    {
+      "word": "益都之素封",
+      "chapter": "诗谳",
+      "chapter_id": 325,
+      "kind": "places",
+      "key": "places:益都之素封",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 20881,
+          "text": "吴，益都之素封，与范同里，平日颇有佻达之行，故里党共信之。"
+        }
+      ]
+    },
+    {
+      "word": "益都",
+      "chapter": "诗谳",
+      "chapter_id": 325,
+      "kind": "places",
+      "key": "places:益都",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 20881,
+          "text": "吴，益都之素封，与范同里，平日颇有佻达之行，故里党共信之。"
+        },
+        {
+          "unit": 20916,
+          "text": "佐供：「此益都铁商张成索某书者，云晟其表兄也。"
+        }
+      ]
+    },
+    {
+      "word": "兰若",
+      "chapter": "李生",
+      "chapter_id": 329,
+      "kind": "places",
+      "key": "places:兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21033,
+          "text": "村外里余，有兰若，筑精舍三楹，趺坐其中。"
         }
       ]
     },
@@ -3635,25 +3710,40 @@
       ]
     },
     {
-      "word": "高东海",
+      "word": "济宁人",
       "chapter": "邵士梅",
       "chapter_id": 332,
       "kind": "places",
-      "key": "places:高东海",
+      "key": "places:济宁人",
       "status": "pending",
       "present": false,
       "matches": [
-        "东海"
+        "济宁"
       ],
       "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 21141,
-          "text": "谈次，问高东海况。"
-        },
+          "unit": 21135,
+          "text": "邵进士，名士梅，济宁人。"
+        }
+      ]
+    },
+    {
+      "word": "登州",
+      "chapter": "邵士梅",
+      "chapter_id": 332,
+      "kind": "places",
+      "key": "places:登州",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "登州"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
         {
-          "unit": 21145,
-          "text": "」先是，高东海素无赖；"
+          "unit": 21136,
+          "text": "初授登州教授，有二老秀才投剌，睹其名，似甚熟识；"
         }
       ]
     },
@@ -3681,6 +3771,63 @@
       ]
     },
     {
+      "word": "济宁",
+      "chapter": "邵士梅",
+      "chapter_id": 332,
+      "kind": "places",
+      "key": "places:济宁",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "济宁"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21135,
+          "text": "邵进士，名士梅，济宁人。"
+        }
+      ]
+    },
+    {
+      "word": "稷下",
+      "chapter": "顾生",
+      "chapter_id": 333,
+      "kind": "places",
+      "key": "places:稷下",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "稷下"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21153,
+          "text": "江南顾生，客稷下，眼暴肿，昼夜呻吟，罔所医药。"
+        }
+      ]
+    },
+    {
+      "word": "宿野寺",
+      "chapter": "陈锡九",
+      "chapter_id": 334,
+      "kind": "places",
+      "key": "places:宿野寺",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "野寺"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 21229,
+          "text": "锡九无策，惟朝丐市廛，暮宿野寺，冀有知者。"
+        }
+      ]
+    },
+    {
       "word": "人间",
       "chapter": "陈锡九",
       "chapter_id": 334,
@@ -3700,21 +3847,40 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "于去恶",
-      "chapter_id": 336,
+      "word": "野寺",
+      "chapter": "陈锡九",
+      "chapter_id": 334,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:野寺",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "野寺"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 21419,
-          "text": "不谓迍邅先生相从地下！"
+          "unit": 21229,
+          "text": "锡九无策，惟朝丐市廛，暮宿野寺，冀有知者。"
+        }
+      ]
+    },
+    {
+      "word": "临淄",
+      "chapter": "邵临淄",
+      "chapter_id": 335,
+      "kind": "places",
+      "key": "places:临淄",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "临淄"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21369,
+          "text": "临淄某翁之女，太学李生妻也。"
         }
       ]
     },
@@ -3734,6 +3900,82 @@
         {
           "unit": 21450,
           "text": "策问：『自古邪僻固多，而世风至今日，奸情丑态，愈不可名，不惟十八狱所不得尽，抑非十八狱所能容。"
+        }
+      ]
+    },
+    {
+      "word": "济宁",
+      "chapter": "狂生",
+      "chapter_id": 337,
+      "kind": "places",
+      "key": "places:济宁",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "济宁"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21550,
+          "text": "刘学师言：「济宁有狂生某，善饮；"
+        }
+      ]
+    },
+    {
+      "word": "郡庠",
+      "chapter": "凤仙",
+      "chapter_id": 339,
+      "kind": "places",
+      "key": "places:郡庠",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "郡庠"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 21579,
+          "text": "十五入郡庠。"
+        }
+      ]
+    },
+    {
+      "word": "此富川",
+      "chapter": "凤仙",
+      "chapter_id": 339,
+      "kind": "places",
+      "key": "places:此富川",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "富川"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 21651,
+          "text": "翁曰：「此富川丁婿。"
+        }
+      ]
+    },
+    {
+      "word": "刘属富川",
+      "chapter": "凤仙",
+      "chapter_id": 339,
+      "kind": "places",
+      "key": "places:刘属富川",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "富川"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 21724,
+          "text": "刘属富川令门人，往谒之。"
         }
       ]
     },
@@ -3795,6 +4037,25 @@
       ]
     },
     {
+      "word": "直隶界",
+      "chapter": "张不量",
+      "chapter_id": 351,
+      "kind": "places",
+      "key": "places:直隶界",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "直隶"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 22048,
+          "text": "贾人某，至直隶界，忽大雨雹，伏禾中。"
+        }
+      ]
+    },
+    {
       "word": "直隶",
       "chapter": "张不量",
       "chapter_id": 351,
@@ -3814,21 +4075,21 @@
       ]
     },
     {
-      "word": "东岳天子",
-      "chapter": "岳神",
-      "chapter_id": 355,
+      "word": "新城",
+      "chapter": "王司马",
+      "chapter_id": 354,
       "kind": "places",
-      "key": "places:东岳天子",
+      "key": "places:新城",
       "status": "pending",
       "present": false,
       "matches": [
-        "东岳"
+        "新城"
       ],
-      "issue": "包含已知地名的分词",
+      "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 22105,
-          "text": "或言：阎罗王与东岳天子，日遣侍者男女十万八千众，分布天下作巫医，名「勾魂使者」。"
+          "unit": 22078,
+          "text": "新城王大司马霁宇镇北边时，常使匠人铸一大杆刀，阔盈尺，重百钧。"
         }
       ]
     },
@@ -3871,40 +4132,59 @@
       ]
     },
     {
-      "word": "尘世者",
+      "word": "时沂水",
       "chapter": "小梅",
       "chapter_id": 356,
       "kind": "places",
-      "key": "places:尘世者",
+      "key": "places:时沂水",
       "status": "pending",
       "present": false,
       "matches": [
-        "尘世"
+        "沂水"
       ],
       "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 22173,
-          "text": "女笑曰：「君亦太愚，焉有正直之神，而下婚尘世者？"
+          "unit": 22165,
+          "text": "」时沂水黄太仆，致仕闲居，于王为父执，往来最善。"
         }
       ]
     },
     {
-      "word": "尘世",
+      "word": "沂水",
       "chapter": "小梅",
       "chapter_id": 356,
       "kind": "places",
-      "key": "places:尘世",
+      "key": "places:沂水",
       "status": "pending",
       "present": false,
       "matches": [
-        "尘世"
+        "沂水"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 22173,
-          "text": "女笑曰：「君亦太愚，焉有正直之神，而下婚尘世者？"
+          "unit": 22165,
+          "text": "」时沂水黄太仆，致仕闲居，于王为父执，往来最善。"
+        }
+      ]
+    },
+    {
+      "word": "野寺",
+      "chapter": "药僧",
+      "chapter_id": 357,
+      "kind": "places",
+      "key": "places:野寺",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "野寺"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 22258,
+          "text": "济宁某，偶于野寺外，见一游僧，向阳扪虱；"
         }
       ]
     },
@@ -3928,6 +4208,63 @@
       ]
     },
     {
+      "word": "莱阳民",
+      "chapter": "抽肠",
+      "chapter_id": 362,
+      "kind": "places",
+      "key": "places:莱阳民",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "莱阳"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 22415,
+          "text": "莱阳民某昼卧，见一男子与妇人握手入。"
+        }
+      ]
+    },
+    {
+      "word": "莱阳",
+      "chapter": "抽肠",
+      "chapter_id": 362,
+      "kind": "places",
+      "key": "places:莱阳",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "莱阳"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 22415,
+          "text": "莱阳民某昼卧，见一男子与妇人握手入。"
+        }
+      ]
+    },
+    {
+      "word": "卢龙令",
+      "chapter": "张鸿渐",
+      "chapter_id": 363,
+      "kind": "places",
+      "key": "places:卢龙令",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "卢龙"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 22440,
+          "text": "时卢龙令赵某贪暴，人民共苦之。"
+        }
+      ]
+    },
+    {
       "word": "都中",
       "chapter": "张鸿渐",
       "chapter_id": 363,
@@ -3947,21 +4284,40 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "太医",
-      "chapter_id": 364,
+      "word": "卢龙",
+      "chapter": "张鸿渐",
+      "chapter_id": 363,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:卢龙",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "卢龙"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 22641,
-          "text": "张目曰：「生不能扬名显亲，何以见老母地下乎！"
+          "unit": 22440,
+          "text": "时卢龙令赵某贪暴，人民共苦之。"
+        }
+      ]
+    },
+    {
+      "word": "高苑",
+      "chapter": "农妇",
+      "chapter_id": 368,
+      "kind": "places",
+      "key": "places:高苑",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "高苑"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 22721,
+          "text": "夫家高苑，距淄百余里；"
         }
       ]
     },
@@ -4080,25 +4436,6 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "天宫",
-      "chapter_id": 379,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 23317,
-          "text": "地下皆设短烛，裙底皆照：诚天人也。"
-        }
-      ]
-    },
-    {
       "word": "人间",
       "chapter": "天宫",
       "chapter_id": 379,
@@ -4118,21 +4455,40 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "神女",
-      "chapter_id": 391,
+      "word": "平原",
+      "chapter": "乔女",
+      "chapter_id": 380,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:平原",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "平原"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 23932,
-          "text": "」婢不顾，委地下而去。"
+          "unit": 23382,
+          "text": "平原乔生，有女黑丑：壑一鼻，跛一足。"
+        }
+      ]
+    },
+    {
+      "word": "淮上",
+      "chapter": "刘夫人",
+      "chapter_id": 382,
+      "kind": "places",
+      "key": "places:淮上",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "淮上"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 23525,
+          "text": "往客淮上，进身为鹾贾，逾年，利又数倍。"
         }
       ]
     },
@@ -4175,6 +4531,86 @@
       ]
     },
     {
+      "word": "阴司",
+      "chapter": "三生",
+      "chapter_id": 393,
+      "kind": "places",
+      "key": "places:阴司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "阴司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 24254,
+          "text": "有名士兴于唐被黜落，愤懑而卒，至阴司执卷讼之。"
+        },
+        {
+          "unit": 24282,
+          "text": "某至阴司投状讼兴。"
+        }
+      ]
+    },
+    {
+      "word": "南中",
+      "chapter": "三生",
+      "chapter_id": 393,
+      "kind": "places",
+      "key": "places:南中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "南中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 24289,
+          "text": "一日，卧街头，有客自南中来，携金毛犬，大如狸。"
+        }
+      ]
+    },
+    {
+      "word": "至冥司",
+      "chapter": "三生",
+      "chapter_id": 393,
+      "kind": "places",
+      "key": "places:至冥司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 24295,
+          "text": "并至冥司，互有争论。"
+        }
+      ]
+    },
+    {
+      "word": "冥司",
+      "chapter": "三生",
+      "chapter_id": 393,
+      "kind": "places",
+      "key": "places:冥司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 24295,
+          "text": "并至冥司，互有争论。"
+        }
+      ]
+    },
+    {
       "word": "顺天",
       "chapter": "三生",
       "chapter_id": 393,
@@ -4194,40 +4630,21 @@
       ]
     },
     {
-      "word": "吊庆云",
-      "chapter": "长亭",
-      "chapter_id": 394,
+      "word": "冥府",
+      "chapter": "席方平",
+      "chapter_id": 395,
       "kind": "places",
-      "key": "places:吊庆云",
+      "key": "places:冥府",
       "status": "pending",
       "present": false,
       "matches": [
-        "庆云"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 24497,
-          "text": "」自此闺中之往来无间，而翁婿间尚不通吊庆云。"
-        }
-      ]
-    },
-    {
-      "word": "庆云",
-      "chapter": "长亭",
-      "chapter_id": 394,
-      "kind": "places",
-      "key": "places:庆云",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "庆云"
+        "冥府"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 24497,
-          "text": "」自此闺中之往来无间，而翁婿间尚不通吊庆云。"
+          "unit": 24522,
+          "text": "席不肯入，遁赴冥府，诉郡邑之酷贪。"
         }
       ]
     },
@@ -4251,6 +4668,25 @@
       ]
     },
     {
+      "word": "辽阳",
+      "chapter": "贾奉雉",
+      "chapter_id": 397,
+      "kind": "places",
+      "key": "places:辽阳",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "辽阳"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 25013,
+          "text": "贾奉旨充辽阳军。"
+        }
+      ]
+    },
+    {
       "word": "广寒",
       "chapter": "臙脂",
       "chapter_id": 398,
@@ -4266,25 +4702,6 @@
         {
           "unit": 25227,
           "text": "浪乘槎木，直入广寒之宫；"
-        }
-      ]
-    },
-    {
-      "word": "市头",
-      "chapter": "阿纤",
-      "chapter_id": 399,
-      "kind": "places",
-      "key": "places:市头",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "市头"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 25326,
-          "text": "至一市，市头赁骑，谈仆乃返。"
         }
       ]
     },
@@ -4361,63 +4778,6 @@
         {
           "unit": 25429,
           "text": "余杭贺生，才名夙著，而家仅中赀。"
-        }
-      ]
-    },
-    {
-      "word": "地下",
-      "chapter": "珊瑚",
-      "chapter_id": 404,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 25958,
-          "text": "瑚瑚含涕而出，伏地下。"
-        }
-      ]
-    },
-    {
-      "word": "尘世",
-      "chapter": "葛巾",
-      "chapter_id": 409,
-      "kind": "places",
-      "key": "places:尘世",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "尘世"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 26543,
-          "text": "炫妆而下，阶未尽者三级，谓寇曰：「我姊妹皆仙媛，暂时一履尘世，何畏寇盗！"
-        }
-      ]
-    },
-    {
-      "word": "顺天人",
-      "chapter": "黄英",
-      "chapter_id": 411,
-      "kind": "places",
-      "key": "places:顺天人",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "顺天"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 26596,
-          "text": "马子才，顺天人。"
         }
       ]
     },
@@ -4536,91 +4896,6 @@
       ]
     },
     {
-      "word": "关外",
-      "chapter": "任秀",
-      "chapter_id": 415,
-      "kind": "places",
-      "key": "places:关外",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "关外"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27172,
-          "text": "至临清，泊舟关外。"
-        }
-      ]
-    },
-    {
-      "word": "龙窝君",
-      "chapter": "晚霞",
-      "chapter_id": 416,
-      "kind": "places",
-      "key": "places:龙窝君",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "龙窝"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 27224,
-          "text": "两人曰：「此龙窝君也。"
-        },
-        {
-          "unit": 27226,
-          "text": "龙窝君颜色和霁，曰：「阿端伎巧可入柳条部。"
-        },
-        {
-          "unit": 27237,
-          "text": "」明日，龙窝君按部，诸部毕集。"
-        },
-        {
-          "unit": 27241,
-          "text": "龙窝君急止之，命进乳莺部，皆二八姝丽，笙乐细作，一时清风习习，波声俱静，水渐凝如水晶世界，上下通明。"
-        },
-        {
-          "unit": 27250,
-          "text": "龙窝君特试阿端。"
-        },
-        {
-          "unit": 27252,
-          "text": "龙窝君嘉其惠悟，赐五文袴褶，鱼须金束发，上嵌夜光珠。"
-        },
-        {
-          "unit": 27284,
-          "text": "过数日，随龙窝君往寿吴江王。"
-        }
-      ]
-    },
-    {
-      "word": "吴江王",
-      "chapter": "晚霞",
-      "chapter_id": 416,
-      "kind": "places",
-      "key": "places:吴江王",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "吴江"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 27263,
-          "text": "姥忧之，罔所为计，曰：「吴江王寿期已促，且为奈何！"
-        },
-        {
-          "unit": 27284,
-          "text": "过数日，随龙窝君往寿吴江王。"
-        }
-      ]
-    },
-    {
       "word": "直隶",
       "chapter": "白秋练",
       "chapter_id": 417,
@@ -4640,25 +4915,6 @@
       ]
     },
     {
-      "word": "龙宫",
-      "chapter": "白秋练",
-      "chapter_id": 417,
-      "kind": "places",
-      "key": "places:龙宫",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "龙宫"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27506,
-          "text": "妾去，龙宫之奉，未必不百倍君家也。"
-        }
-      ]
-    },
-    {
       "word": "异域",
       "chapter": "王者",
       "chapter_id": 418,
@@ -4674,6 +4930,25 @@
         {
           "unit": 27563,
           "text": "自分留鞹异域，已无生望，因念进退一死，亦姑听之。"
+        }
+      ]
+    },
+    {
+      "word": "秦中",
+      "chapter": "拆楼人",
+      "chapter_id": 421,
+      "kind": "places",
+      "key": "places:秦中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "秦中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 27620,
+          "text": "初令秦中，一卖油者有薄罪，其言戆，何怒，杖杀之。"
         }
       ]
     },
@@ -4781,6 +5056,63 @@
       ]
     },
     {
+      "word": "楚中",
+      "chapter": "牛犊",
+      "chapter_id": 436,
+      "kind": "places",
+      "key": "places:楚中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "楚中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 28300,
+          "text": "楚中一农人赴市归，暂休于途。"
+        }
+      ]
+    },
+    {
+      "word": "西安人",
+      "chapter": "乐仲",
+      "chapter_id": 438,
+      "kind": "places",
+      "key": "places:西安人",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "西安"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 28412,
+          "text": "乐仲，西安人。"
+        }
+      ]
+    },
+    {
+      "word": "朝南海",
+      "chapter": "乐仲",
+      "chapter_id": 438,
+      "kind": "places",
+      "key": "places:朝南海",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "南海"
+      ],
+      "issue": "包含已知地名的分词",
+      "evidence": [
+        {
+          "unit": 28449,
+          "text": "既起，思朝南海。"
+        }
+      ]
+    },
+    {
       "word": "人间",
       "chapter": "乐仲",
       "chapter_id": 438,
@@ -4800,21 +5132,21 @@
       ]
     },
     {
-      "word": "九泉",
-      "chapter": "香玉",
-      "chapter_id": 439,
+      "word": "试金陵",
+      "chapter": "三仙",
+      "chapter_id": 440,
       "kind": "places",
-      "key": "places:九泉",
+      "key": "places:试金陵",
       "status": "pending",
       "present": false,
       "matches": [
-        "九泉"
+        "金陵"
       ],
-      "issue": "同名漏标",
+      "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 28631,
-          "text": "泪堕九泉，或当感诚再作；"
+          "unit": 28752,
+          "text": "一士人赴试金陵，经宿迁，遇三秀才，谈论超旷，遂与沽酒款洽。"
         }
       ]
     },
@@ -4834,25 +5166,6 @@
         {
           "unit": 28777,
           "text": "历城县二隶，奉邑令韩承宣命，营干他郡，岁暮方归。"
-        }
-      ]
-    },
-    {
-      "word": "盐亭贾",
-      "chapter": "大男",
-      "chapter_id": 443,
-      "kind": "places",
-      "key": "places:盐亭贾",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "盐亭"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 28893,
-          "text": "贾不敢逼，俟创瘥，又转鬻于盐亭贾。"
         }
       ]
     },
@@ -4914,21 +5227,21 @@
       ]
     },
     {
-      "word": "太行毛大福",
-      "chapter": "毛大福",
-      "chapter_id": 455,
+      "word": "益都",
+      "chapter": "杜小雷",
+      "chapter_id": 454,
       "kind": "places",
-      "key": "places:太行毛大福",
+      "key": "places:益都",
       "status": "pending",
       "present": false,
       "matches": [
-        "太行"
+        "益都"
       ],
-      "issue": "包含已知地名的分词",
+      "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 29520,
-          "text": "太行毛大福，疡医也。"
+          "unit": 29502,
+          "text": "杜小雷，益都之西山人。"
         }
       ]
     },
@@ -4975,25 +5288,6 @@
       ]
     },
     {
-      "word": "周村",
-      "chapter": "鸮鸟",
-      "chapter_id": 460,
-      "kind": "places",
-      "key": "places:周村",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "周村"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29661,
-          "text": "周村为商贾所集，趁墟者车马辐辏。"
-        }
-      ]
-    },
-    {
       "word": "莱芜令范",
       "chapter": "鸮鸟",
       "chapter_id": 460,
@@ -5009,45 +5303,6 @@
         {
           "unit": 29665,
           "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
-        }
-      ]
-    },
-    {
-      "word": "地下",
-      "chapter": "鸮鸟",
-      "chapter_id": 460,
-      "kind": "places",
-      "key": "places:地下",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "地下"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29674,
-          "text": "须一天上、一地下、一古人，左右问所执何物，口道何词，随问答之。"
-        },
-        {
-          "unit": 29675,
-          "text": "」便倡云：「天上有月轮，地下有昆仑，有一古人刘伯伦。"
-        },
-        {
-          "unit": 29678,
-          "text": "』」范公云：「天上有广寒宫，地下有乾清宫，有一古人姜太公。"
-        },
-        {
-          "unit": 29680,
-          "text": "」孙云：「天上有天河，地下有黄河，有一古人是萧何。"
-        },
-        {
-          "unit": 29683,
-          "text": "天上有灵山，地下有泰山，有一古人是寒山。"
-        },
-        {
-          "unit": 29691,
-          "text": "少年曰：「天上有玉帝，地下有皇帝，有一古人洪武朱皇帝。"
         }
       ]
     },
@@ -5090,6 +5345,25 @@
       ]
     },
     {
+      "word": "莱芜",
+      "chapter": "鸮鸟",
+      "chapter_id": 460,
+      "kind": "places",
+      "key": "places:莱芜",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "莱芜"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 29665,
+          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
+        }
+      ]
+    },
+    {
       "word": "新城",
       "chapter": "鸮鸟",
       "chapter_id": 460,
@@ -5128,44 +5402,6 @@
       ]
     },
     {
-      "word": "莱芜",
-      "chapter": "鸮鸟",
-      "chapter_id": 460,
-      "kind": "places",
-      "key": "places:莱芜",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "莱芜"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29665,
-          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
-        }
-      ]
-    },
-    {
-      "word": "淄邑",
-      "chapter": "古瓶",
-      "chapter_id": 461,
-      "kind": "places",
-      "key": "places:淄邑",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "淄邑"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29698,
-          "text": "淄邑北村井涸，村人甲、乙缒入淘之。"
-        }
-      ]
-    },
-    {
       "word": "颜镇",
       "chapter": "古瓶",
       "chapter_id": 461,
@@ -5185,59 +5421,21 @@
       ]
     },
     {
-      "word": "刀山",
-      "chapter": "元少先生",
-      "chapter_id": 462,
-      "kind": "places",
-      "key": "places:刀山",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "刀山"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29741,
-          "text": "自门隟目注之，见一王者坐殿上，阶下剑树刀山，皆冥中事。"
-        }
-      ]
-    },
-    {
-      "word": "江岸",
-      "chapter": "田子成",
-      "chapter_id": 464,
-      "kind": "places",
-      "key": "places:江岸",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "江岸"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29898,
-          "text": "一夕，舣舟江岸，闻洞箫声，抑扬可听。"
-        }
-      ]
-    },
-    {
-      "word": "江岸",
+      "word": "江北",
       "chapter": "王桂庵",
       "chapter_id": 465,
       "kind": "places",
-      "key": "places:江岸",
+      "key": "places:江北",
       "status": "pending",
       "present": false,
       "matches": [
-        "江岸"
+        "江北"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 29966,
-          "text": "泊舟江岸。"
+          "unit": 30051,
+          "text": "」答云：「妾叔家江北，偶借扁舟一省视耳。"
         }
       ]
     },
@@ -5299,40 +5497,21 @@
       ]
     },
     {
-      "word": "斋门",
-      "chapter": "姬生",
-      "chapter_id": 472,
+      "word": "秦中",
+      "chapter": "土化兔",
+      "chapter_id": 470,
       "kind": "places",
-      "key": "places:斋门",
+      "key": "places:秦中",
       "status": "pending",
       "present": false,
       "matches": [
-        "斋门"
+        "秦中"
       ],
       "issue": "同名漏标",
       "evidence": [
         {
-          "unit": 30430,
-          "text": "生一日晚归，启斋门，见案上酒一壶，燂鸡盈盘，钱四百，以赤绳贯之，即前日所失物也。"
-        }
-      ]
-    },
-    {
-      "word": "尘世",
-      "chapter": "桓侯",
-      "chapter_id": 477,
-      "kind": "places",
-      "key": "places:尘世",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "尘世"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 30757,
-          "text": "」曰：「尊乘已有仙骨，非尘世所能驱策。"
+          "unit": 30387,
+          "text": "一时秦中争传土能化兔。"
         }
       ]
     },
@@ -5375,21 +5554,21 @@
       ]
     },
     {
-      "word": "地下",
-      "chapter": "秦桧",
-      "chapter_id": 485,
+      "word": "新郑令",
+      "chapter": "新郑讼",
+      "chapter_id": 482,
       "kind": "places",
-      "key": "places:地下",
+      "key": "places:新郑令",
       "status": "pending",
       "present": false,
       "matches": [
-        "地下"
+        "新郑"
       ],
-      "issue": "同名漏标",
+      "issue": "包含已知地名的分词",
       "evidence": [
         {
-          "unit": 31359,
-          "text": "于青州城北通衢傍建岳王殿，秦桧、卨伏跪地下。"
+          "unit": 31210,
+          "text": "长山石进士宗玉，为新郑令。"
         }
       ]
     },
@@ -5484,18 +5663,18 @@
       ]
     },
     {
-      "word": "西南山",
-      "chapter": "婴宁",
-      "chapter_id": 47,
+      "word": "都",
+      "chapter": "叶生",
+      "chapter_id": 30,
       "suggestion": "篇内相对空间；须按本篇确认所指",
       "evidence": [
         {
-          "id": 2605,
-          "text": "」吴诡曰：「西南山中，去此可三十余里。"
+          "id": 1235,
+          "text": "公怜之，相期攷满入都，携与俱北。"
         },
         {
-          "id": 2754,
-          "text": "吴忆曩言，因教于西南山村行觅。"
+          "id": 1268,
+          "text": "公不忍强，嘱公子至都，为之纳粟。"
         }
       ]
     },
@@ -5512,14 +5691,14 @@
       ]
     },
     {
-      "word": "都中",
-      "chapter": "跳神",
-      "chapter_id": 215,
+      "word": "西村",
+      "chapter": "瓜异",
+      "chapter_id": 128,
       "suggestion": "篇内相对空间；须按本篇确认所指",
       "evidence": [
         {
-          "id": 13758,
-          "text": "而此俗都中尤盛。"
+          "id": 8298,
+          "text": "康熙二十六年六月，邑西村民圃中，黄瓜上复生蔓，结西瓜一枚，大如碗。"
         }
       ]
     },

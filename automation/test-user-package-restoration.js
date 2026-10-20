@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('node:assert/strict'),{merge}=require('./restore-user-package');
+const current={overrides:[{chapter_id:1,changes:{event_types:{妖:1},places:['旧词']}},{chapter_id:2,changes:{event_types:{鬼:1}}}],place_locations:[{name:'济南',note:'保留'},{name:'阳信',note:'旧'}]};
+const incoming={overrides:[{chapter_id:1,changes:{event_types:{人:1},places:['包内词']}},{chapter_id:3,changes:{event_types:{神:1}}}],place_locations:[{name:'阳信',note:'包内'}]};
+const before=JSON.stringify(current),result=merge(current,incoming);
+assert.equal(JSON.stringify(current),before);
+assert.deepEqual(result.overrides.map(r=>r.chapter_id),[1,2,3]);
+assert.deepEqual(result.overrides[0].changes,incoming.overrides[0].changes);
+assert.deepEqual(result.overrides[1],current.overrides[1]);
+assert.deepEqual(result.place_locations,[{name:'济南',note:'保留'},{name:'阳信',note:'包内'}]);
+console.log('PASS authoritative package rows, retained absent chapters/locations, and unchanged input');
