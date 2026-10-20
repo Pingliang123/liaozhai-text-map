@@ -15,7 +15,7 @@
     let chosen=all.find(n=>n.key===container.dataset.selected)||all[0];
     const select=n=>{container.dataset.selected=n.key;chosen=n;for(const b of grid.children)b.setAttribute('aria-pressed',String(b.dataset.key===n.key));detail.replaceChildren(el('h3',(place?place+' → ':'')+n.name+' · '+n.realm));
       detail.append(el('p',place?'实线表示已核对的跨界；虚线表示同篇提及，不能视为实际行程。':'选择人间地点后，可查看它与异境的关系。'));
-      for(const e of n.evidence){const card=el('div');card.className='evidence-card';const crossing=e.review?.kind==='crossing';const edge=el('p',(place?place+' '+(crossing?'→':'┄')+' ':'')+n.name+' · 《'+e.chapter+'》 · '+(crossing?'跨界':'提及'));edge.className=crossing?'otherworld-crossing':'otherworld-mention';card.append(edge,el('blockquote',e.quote||e.excerpt||e.text||e.context||e.review?.note||'请查看篇目原文'));const b=el('button','阅读《'+e.chapter+'》');b.onclick=()=>read(e.chapter_id);card.append(b);detail.append(card);}
+      for(const e of n.evidence){const card=el('div');card.className='evidence-card';const crossing=e.review?.kind==='crossing';const origin=crossing?(e.review.origin_place||(e.region_places||[]).join('、')||place):place;const edge=el('p',(origin?origin+' '+(crossing?'→':'┄')+' ':'')+n.name+' · 《'+e.chapter+'》 · '+(crossing?'跨界':'提及'));edge.className=crossing?'otherworld-crossing':'otherworld-mention';card.append(edge,el('blockquote',e.quote||e.excerpt||e.text||e.context||e.review?.note||'请查看篇目原文'));const b=el('button','阅读《'+e.chapter+'》');b.onclick=()=>read(e.chapter_id);card.append(b);detail.append(card);}
     };
     for(const n of all){const b=el('button',n.name+' · '+new Set(n.evidence.map(e=>e.chapter_id)).size+'篇');b.dataset.key=n.key;b.dataset.realm=n.realm;b.onclick=()=>select(n);grid.append(b);}select(chosen);
   }

@@ -34,7 +34,8 @@
       for(const row of [...(extra?[extra]:[]),...matches.slice(page*20,(page+1)*20)]){
         const c=api.chapter(row.chapter_id),units=c.source_units||[],review=c.lexical_reviews?.[row.key],tr=el('tr');
         const cells=Array.from({length:6},()=>el('td'));tr.append(...cells);tbody.append(tr);
-        const word=field('修订词语');word.value=row.word;cells[0].append(word,el('p','《'+row.chapter+'》'),el('small',row.present?'现有':row.status||'新增'));
+        const word=field('修订词语');word.value=row.word;cells[0].append(word,el('p','《'+row.chapter+'》'),el('small',row.present?'现有':({pending:'待定',corrected:'已修正',rejected:'已排除',excluded:'已排除',removed:'已移除',accepted:'已保留'}[row.status]||'新增')));
+        if(review?.status==='corrected'&&review.word!==row.word)cells[0].append(el('p','已改为：'+review.word));
         const position=field('原文位置','select');units.forEach((u,i)=>{if(!row.word||(u.text||u.original||'').includes(row.word))option(position,String(i),'第 '+(i+1)+' 单位');});
         const quote=el('blockquote');cells[1].append(position,quote);
         const kind=field('修订类别','select');for(const [v,t]of Object.entries(kinds))option(kind,v,t);kind.value=row.present?row.kind:review?.status==='rejected'?'none':row.kind;cells[2].append(kind);

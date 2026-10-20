@@ -2383,7 +2383,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const c=proposed.view(row.chapter_id),stream=GhostPlaceReview.replaceUnit(c.segmentation_note||segmented(c),c.source_units,edit.unitIndex,edit.tokens);
       const types=edit.kind==='people'?edit.types:[];
       R.revise(proposed,row,{word:edit.word,kind:edit.kind==='none'?row.kind:edit.kind,status:edit.kind==='none'?'rejected':'accepted',canonical:edit.canonical,types,note:'统一名称：'+edit.canonical+'\n'+(row.review?.note||'').replace(/^统一名称：[^\n]*\n/u,'')});
-      const d=proposed.editable(row.chapter_id);d.segmentation_note=stream;proposed.save(row.chapter_id,d);
+      const d=proposed.editable(row.chapter_id);
+      d.segmentation_note=edit.kind==='none'?stream:GhostPlaceReview.alignPlaces({...c,segmentation_note:stream,places:[{word:edit.word}]}).note;
+      proposed.save(row.chapter_id,d);
       persist(proposed.document());reportRows=null;renderChapter();updateResults();
     }
   });
@@ -2697,7 +2699,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     hubs.replaceChildren(svg('text', {x: drawWidth() + 9, y: 82}, '文本三界'));
     const anchors = {天界: [state.width - 48, state.height * .28], 地界: [state.width - 48, state.height * .75]};
     const place = allPlaces().find(p => p.id === state.place), source = visible.find(p => p.id === state.place);
-    const links = place ? model.links(place, new Set(filteredChapters(place).map(c => c.chapter_id))) : globalRealmLinks();
+    const links = place ? regionalRealmLinks(place) : globalRealmLinks();
     const signature=JSON.stringify([place?.name,links]);
     if(signature!==otherworldSignature){
       otherworldSignature=signature;
