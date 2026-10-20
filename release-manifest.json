@@ -2,8 +2,8 @@
   "format": "liaozhai-public-release-v1",
   "counts": {
     "chapters": 491,
-    "manual_chapters": 483,
-    "manual_locations": 2
+    "manual_chapters": 54,
+    "manual_locations": 1
   },
   "research_files": [
     {
@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11596634,
-      "sha256": "08330caf2a3d2cfe39eabb72a104573507dbb7fbfb2a90bb4a79e9d785e34a1e"
+      "bytes": 818381,
+      "sha256": "daa24417be62329ddaa9e33c7f3fed0459e2b45e4a470f7ea4b0a9403d8a227d"
     }
   ],
   "artifacts": [
@@ -520,8 +520,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32924054,
-      "sha256": "17785c14d565d6d631119cd13f99195b9bad77869be9eff2972f1bc646ceffac"
+      "bytes": 22145801,
+      "sha256": "4a154a305a1ca7e91f618e1517ec951dccaf47a0f110c8a009726ad464e0db05"
     },
     {
       "path": "data.html",
@@ -545,18 +545,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 280411,
-      "sha256": "a635c5ffdd7a332b1ee9c460bb60d2c90a6bc9cd4a340ea345d47c368017c136"
+      "bytes": 280842,
+      "sha256": "4f63aa1039c876ef30eb03d6c3ff80534caeda0f552bb1b032fb01d56951ab89"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11596634,
-      "sha256": "08330caf2a3d2cfe39eabb72a104573507dbb7fbfb2a90bb4a79e9d785e34a1e"
+      "bytes": 818381,
+      "sha256": "daa24417be62329ddaa9e33c7f3fed0459e2b45e4a470f7ea4b0a9403d8a227d"
     },
     {
       "path": "research-data.zip",
-      "bytes": 19235587,
-      "sha256": "ab4f4cd65def4bd00ce3da075483d8aee2d8337e748697a878b922c874999ea0"
+      "bytes": 16557041,
+      "sha256": "f95cc29311b3eae19d54e5a91ca853d389af6a91a4fb7ca79e8cff667f340c76"
     }
   ]
 }

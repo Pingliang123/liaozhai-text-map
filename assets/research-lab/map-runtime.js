@@ -324,7 +324,7 @@ globalThis.GhostMapPlaceReview={
         const spaces=new Set(c.space_words || []), words=new Map();
         for(const p of c.places) {
           const manual=decision(c,p.word);
-          if(manual){if(explicitPlace(c,p.word))words.set(p.word,p);else if(manual.status!=='rejected'&&manual.kind==='spaces'&&source.includes(manual.word))spaces.add(manual.word);continue;}
+          if(manual){if(manual.status!=='rejected'&&manual.kind==='places'&&source.includes(manual.word))words.set(manual.word,{...p,word:manual.word});else if(manual.status!=='rejected'&&manual.kind==='spaces'&&source.includes(manual.word))spaces.add(manual.word);continue;}
           const word=name(p.word), target=PLACE_REVIEW.replacements?.[word], space=PLACE_REVIEW.spaces?.[word];
           if(space && source.includes(space) && c.lexical_reviews?.['spaces:'+space]?.status!=='rejected') spaces.add(space);
           if(target && source.includes(target)) words.set(target,{...p,word:target});
@@ -348,6 +348,8 @@ globalThis.GhostMapPlaceReview={
         } else input.segmentation_note=originalSegmentation;
       }
       const placeCorrections={
+        '山市':{'奂山山市':[['奂山'],['山市'],'奂山 / 山市']},
+        '西僧':{'卓锡泰山':[['泰山'],[],'卓锡 / 泰山']},
         '长清僧':{'山东长清县':[['山东','长清县'],[],'山东 / 长清县']},
         '婴宁':{'莒之罗店':[['莒','罗店'],[],'莒 / 之 / 罗店'],'西南山':[[],['西南山'],'西南山'],'里落':[[],['里落'],'里落']},
         '祝翁':{'济阳祝村':[['济阳','祝村'],[],'济阳 / 祝村']},
@@ -411,10 +413,11 @@ globalThis.GhostMapPlaceReview={
       }
       assert(Array.isArray(input.places) && input.places.length <= 500, '地点格式错误');
       result.places = input.places.map(p => {
+        const review=decision(input,p.word);if(review&&review.status!=='rejected'&&review.kind==='places'&&source.includes(review.word))return {word:review.word,mentions:0};
         const word=text(p.word,'地点',100), target=PLACE_REVIEW.replacements?.[word];
         return {word:!decision(input,word)&&target && source.includes(target) ? target : word,mentions:0};
       }).filter(p => explicitPlace(input,p.word)||!decision(input,p.word)&&!rejectedPlaces.has(name(p.word)) && !rejectedPlaces.has(p.word) && !placeWordReason(name(p.word),chapters.get(id).chapter));
-      if(input.places.some(p=>PLACE_REVIEW.replacements?.[p.word])) result.places = [...new Map(result.places.map(p=>[p.word,p])).values()];
+      if(input.places.some(p=>PLACE_REVIEW.replacements?.[p.word]||decision(input,p.word))) result.places = [...new Map(result.places.map(p=>[p.word,p])).values()];
       assert(result.places.every(p => p.word), '地点不可为空');
       assert(new Set(result.places.map(p => name(p.word))).size === result.places.length, '地点不可重复');
       const spaces = input.space_words === undefined ? view(id).space_words || [] : input.space_words;
