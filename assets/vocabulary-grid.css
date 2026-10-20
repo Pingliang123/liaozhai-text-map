@@ -1,0 +1,20 @@
+.vocabulary-scroll{overflow:auto;max-height:70vh;border:1px solid #ccd6cf;margin:12px 0}
+.vocabulary-scroll table{min-width:1180px;table-layout:fixed}
+.vocabulary-scroll th{position:sticky;top:0;z-index:1;background:#e8efe9}
+.vocabulary-scroll th:nth-child(1){width:160px}.vocabulary-scroll th:nth-child(2){width:290px}
+.vocabulary-scroll th:nth-child(3){width:115px}.vocabulary-scroll th:nth-child(4){width:190px}
+.vocabulary-scroll th:nth-child(5){width:300px}.vocabulary-scroll th:nth-child(6){width:110px}
+.vocabulary-scroll td{border-right:1px solid #ccd6cf;padding:8px}.vocabulary-scroll tr:focus-within{background:#f0f6ed}
+.vocabulary-scroll input,.vocabulary-scroll select{width:100%;min-width:0}.vocabulary-scroll input{margin-bottom:5px}
+.vocabulary-scroll blockquote{margin:6px 0;padding:6px;max-height:170px;overflow:auto;font-size:14px}
+.vocabulary-scroll textarea{min-height:110px;font-size:14px}.vocabulary-scroll small{color:#526a60}
+#place-review-list,#report-add{display:none!important}
+#place-panel>:not(.unified-entrance),#people-panel>:not(.unified-entrance),#space-panel>:not(.unified-entrance),#time-panel>:not(.unified-entrance),#segmentation-panel>:not(.unified-entrance){display:none!important}
+#editor-tabs [data-editor=place-panel],#editor-tabs [data-editor=people-panel],#editor-tabs [data-editor=space-panel],#editor-tabs [data-editor=time-panel],#editor-tabs [data-editor=segmentation-panel]{display:none}
+.otherworld-layout{display:grid;grid-template-columns:minmax(180px,1fr) 2fr;gap:14px;padding:12px}
+.otherworld-nodes{display:flex;align-content:start;gap:8px;flex-wrap:wrap;max-height:340px;overflow:auto}
+.otherworld-nodes button{border:2px solid #776296;background:#f1eaf9}.otherworld-nodes button[data-realm=天界]{border-color:#24745e;background:#e6f2ed}
+.otherworld-nodes button[aria-pressed=true]{outline:3px solid #d19122;outline-offset:1px}
+.otherworld-detail{max-height:340px;overflow:auto}.otherworld-crossing{border-left:4px solid #7042b8;padding-left:8px}
+.otherworld-mention{border-left:3px dashed #776296;padding-left:8px}
+@media(max-width:650px){.otherworld-layout{grid-template-columns:1fr}}

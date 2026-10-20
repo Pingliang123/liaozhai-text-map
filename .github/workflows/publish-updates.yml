@@ -14,6 +14,8 @@ on:
       - assets/place-review.js
       - assets/place-crosscheck.js
       - assets/corpus-store.js
+      - assets/vocabulary-grid.*
+      - assets/otherworld-map.js
       - assets/research-lab/*.js
       - assets/research-lab/*.css
       - assets/research-lab/index.html
@@ -80,6 +82,7 @@ jobs:
           node automation/audit-place-space-sync.js
           node automation/test-current-lab-data.js
           node automation/test-corpus-store.js
+          node automation/test-unified-vocabulary.js
           node automation/test-manual-spatial-priority.js
           node automation/test-restored-place-examples.js
           node automation/test-network-freshness.js

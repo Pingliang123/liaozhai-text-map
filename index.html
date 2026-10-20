@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>聊斋文本地图</title>
+<link rel="stylesheet" href="assets/vocabulary-grid.css?v=unified20261020">
+<script src="assets/vocabulary-grid.js?v=unified20261020"></script>
+<script src="assets/otherworld-map.js?v=unified20261020"></script>
 <style>
 :root{font-family:system-ui,"Microsoft JhengHei",sans-serif;color:#243d39;background:#f4f3ed;--ghost:#7042b8;--monster:#d85e00;--god:#008477;--line:#ccd6cf}
 *{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1600px;margin:auto;padding:18px 24px}header{border-bottom:1px solid var(--line)}h1{font-size:clamp(23px,3vw,34px);margin:0 0 8px}h2{font-size:20px;margin:0 0 12px}h3{font-size:16px;margin:14px 0 8px}p{line-height:1.65;margin:8px 0}button,input,select,textarea{font:inherit}button,select,input[type=search],input[type=text]{min-height:38px;border:1px solid #94aaa0;border-radius:6px;padding:7px 10px;background:#fff;color:inherit}button{cursor:pointer}button:hover{background:#e8f0e9}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #1778b5;outline-offset:3px}button.primary{background:#234d43;color:#fff}button.danger{color:#9d2932}a{color:#17678d}.muted{color:#526a60;font-size:13px}.warning{background:#fff3da;border-left:4px solid #b88627;padding:9px 12px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.toolbar label{display:flex;gap:6px;align-items:center}.toolbar input[type=search]{flex:1;min-width:180px}.toolbar select{max-width:320px}.status{padding:8px 0;min-height:35px}.error{color:#a02531}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:16px;min-width:0}.map-grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px}.map-shell{position:relative;min-width:0;background:#edf1eb;border:1px solid var(--line);border-radius:8px;overflow:hidden}.map-shell svg{display:block;width:100%;height:clamp(390px,64svh,650px);touch-action:none;user-select:none}.map-actions{position:absolute;left:12px;top:12px;display:flex;gap:5px;z-index:1}.map-actions button{background:#fffffff0}.map-message{padding:8px 12px;border-top:1px solid var(--line)}.realm-panel{max-height:720px;overflow:auto}.realm-heading{padding:10px;background:#e6f0eb;border-radius:6px}.realm-section[data-realm=地界] .realm-heading{background:#f0eafa}.evidence-card{padding:10px 0;border-bottom:1px solid var(--line)}blockquote{font-family:serif;white-space:pre-wrap;line-height:1.8;margin:10px 0;padding:8px 12px;border-left:3px solid #b0c3b7;background:#f8f9f4}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{display:inline-block;background:#edf1eb;border:1px solid var(--line);border-radius:20px;padding:3px 9px;font-size:13px}.chip[data-type=鬼]{color:var(--ghost);border-color:var(--ghost)}.chip[data-type=妖]{color:var(--monster);border-color:var(--monster)}.chip[data-type=神]{color:var(--god);border-color:var(--god)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.chapters{display:flex;gap:6px;flex-wrap:wrap}.chapters button.active{outline:2px solid #234d43}textarea{width:100%;min-height:95px;resize:vertical;padding:12px;border:1px solid #a7b9ad;border-radius:6px;line-height:1.8;background:#fcfcf8;color:inherit}.full-text{min-height:240px;font-family:serif}.checkboxes{display:flex;gap:16px;flex-wrap:wrap}.checkboxes label{display:flex;align-items:center;gap:5px}.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;min-width:660px}td,th{padding:9px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}table input[type=text]{width:100%;min-width:100px}td .checkboxes{gap:5px;font-size:13px}.row-note{font-size:12px;color:#657668}details{margin-top:14px}summary{cursor:pointer;font-weight:600;padding:8px 0}.place-list{max-height:360px;overflow:auto}.place-list button{margin:3px}.map-point{cursor:pointer}.map-point:focus .hit{stroke:#1778b5;stroke-width:3}.map-label{font-size:13px;fill:#183d36;paint-order:stroke;stroke:#f7faf2;stroke-width:4px;stroke-linejoin:round;pointer-events:none}.map-point .hit{fill:transparent;pointer-events:all}.realm-hub text{font-size:13px;fill:#334b43}.realm-link{fill:none;stroke-width:2;pointer-events:none}.save-bar{position:sticky;bottom:0;z-index:2;padding:12px;background:#eff4ef;border:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}.hidden,[hidden]{display:none!important}footer{font-size:13px;color:#58695e}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
@@ -1152,6 +1155,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
   }
   function showScreen(screen, research = currentResearch) {
+    if ($('vocabulary-editor')) $('vocabulary-editor').hidden = screen !== 'vocabulary-editor';
     for (const id of ['map-section', 'workspace', 'research-screen', 'reports-screen']) $(id).hidden = id !== screen;
     for (const [id, target] of [['nav-map', 'map-section'], ['nav-text', 'workspace'], ['nav-research', 'research-screen'],['nav-reports','reports-screen']]) {
       $(id).setAttribute('aria-current', target === screen ? 'page' : 'false');
@@ -1171,6 +1175,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if (screen === 'workspace' && window.GhostMapReferences) window.GhostMapReferences.render(state.chapter);
   }
   function reveal(id, record = true) {
+    if (['vocabulary-editor','place-panel','people-panel','person-editor','space-panel','time-panel','segmentation-panel','place-review-list'].includes(id)) {
+      openVocabulary({chapter:id==='vocabulary-editor'||id==='place-review-list'?undefined:state.chapter,kind:({'place-panel':'places','people-panel':'people','person-editor':'people','space-panel':'spaces','time-panel':'times'})[id]});return;
+    }
     const target = $(id);
     if (!target) return;
     let screen = id==='reports-screen' ? id : researchPages.includes(id) || id === 'research-screen' ? 'research-screen' :
@@ -1575,6 +1582,12 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('editor-tabs').append(tab);
   }
   $('view-chapter-research').addEventListener('click', () => reveal('research-hub'));
+  $('editor-tabs').prepend(button('词汇修订',()=>openVocabulary({chapter:state.chapter})));
+  for(const id of ['place-panel','people-panel','space-panel','time-panel','segmentation-panel']){
+    const entrance=element('p',{class:'unified-entrance'});
+    entrance.append(button('在词汇表中修改',()=>openVocabulary({chapter:state.chapter})));
+    $(id).append(entrance);
+  }
   for (const [id, step] of [['chapter-prev', -1], ['chapter-next', 1]]) $(id).addEventListener('click', () => {
     const next = adjacentChapter(step);
     if (next !== undefined) chooseChapter(next, true);
@@ -1588,7 +1601,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function routeHash() {
     const id = (window.location?.hash || '').slice(1);
     if (!id) showScreen('map-section');
-    else if ($(id)) reveal(id, false);
+    else if ($(id)||id==='place-review-list') reveal(id, false);
     else showScreen('map-section');
   }
   window.addEventListener('hashchange', routeHash);
@@ -2353,13 +2366,33 @@ section,details,#save-chapter{scroll-margin-top:90px}
   $('movement-edit').addEventListener('click',()=>{reveal('workspace');showEditor('narrative-panel');});
   let reportRows=null, reportPage=0, reportDraft=false, reportMatches=[],reportActive=null;
   const R=GhostMapReports;
-  const placeReviewPanel=element('details',{id:'place-review-list'}),placeReviewBody=element('div',{class:'scroll'});placeReviewPanel.append(element('summary',{},'地点词修改列表'),element('p',{},'每行按篇目保存。统一名称保留原文词语；分词用斜线调整，不改写原文。'),placeReviewBody);$('reports-screen').prepend(placeReviewPanel);let placeReview;if(new URLSearchParams(location.search).get('review')==='places')placeReviewPanel.open=true;
-  placeReviewPanel.append(button('对齐现有地名分词',()=>{try{if(state.dirty||reportDraft)throw Error('请先保存当前草稿');const doc=model.document(),rows=new Map(doc.overrides.map(r=>[r.chapter_id,r]));let count=0,held=0;for(const id of model.ids){const r=GhostPlaceReview.alignPlaces(model.view(id));held+=r.held||0;if(!r.changed)continue;const changes=model.editable(id);changes.segmentation_note=r.note;rows.set(id,{chapter_id:id,changes});count+=r.changed;}if(count){persist({...doc,overrides:[...rows.values()]});renderChapter();updateResults();placeReview?.render();}message('storage-status',(count?'已对齐 '+count+' 处地名分词。':'已完成对齐检查。')+(held?'另有 '+held+' 篇分词与原文不一致，需在全文分词中核对。':''));}catch(e){message('storage-status',e.message,true);}}));
-  placeReviewPanel.addEventListener('toggle',()=>{if(!placeReviewPanel.open)return;if(placeReview){placeReview.render();return;}placeReview=GhostPlaceReview.mount(placeReviewBody,{
-    rows:()=>reportData(),crosscheck:()=>{const rows=reportData(),extra=GhostPlaceCrosscheck.scan(base,model),keys=new Set(rows.map(r=>r.chapter_id+':'+r.key));return [...rows,...extra.filter(r=>!keys.has(r.chapter_id+':'+r.key))];},chapter:id=>model.view(id),unmapped:()=>new Set(unmappedPlaces().map(p=>p.place)),normalize:word=>model.name(word),
+  let vocabularyDraft=false;
+  const vocabularySection=element('section',{id:'vocabulary-editor',class:'panel',hidden:''});
+  vocabularySection.append(element('h2',{},'词汇修订'));
+  document.querySelector('main').append(vocabularySection);
+  const vocabularyNav=element('a',{href:'#vocabulary-editor'},'词汇修订');
+  document.querySelector('header').append(vocabularyNav);
+  vocabularyNav.onclick=e=>{e.preventDefault();openVocabulary();};
+  const vocabularyGrid=GhostVocabularyGrid.mount(vocabularySection,{
+    ids:model.ids,chapter:id=>model.view(id),rows:()=>reportData(),simplify:s=>model.simplify(s),normalize:w=>model.name(w),
+    unmapped:()=>new Set(unmappedPlaces().map(p=>p.place)),draft:value=>{vocabularyDraft=value;reportDraft=value;},
     unitStream:(c,index)=>{const stream=c.segmentation_note||segmented(c),start=c.source_units.slice(0,index).map(u=>(u.text||u.original||'').replace(/\s/gu,'')).join('').length,end=start+(c.source_units[index].text||c.source_units[index].original||'').replace(/\s/gu,'').length;let pos=0;return stream.split(/[\s/|]+/u).filter(Boolean).flatMap(t=>{const a=pos;pos+=t.length;return pos>start&&a<end?[t.slice(Math.max(0,start-a),Math.min(t.length,end-a))]:[];}).join(' / ');},
-    save:(row,edit)=>{if(state.dirty||reportDraft)throw Error('请先保存或取消其他编辑');const proposed=M.create(base);proposed.importDocument(model.document());const c=proposed.view(row.chapter_id),stream=GhostPlaceReview.replaceUnit(c.segmentation_note||segmented(c),c.source_units,edit.unitIndex,edit.tokens);let d=proposed.editable(row.chapter_id);d.segmentation_note=stream;d.places=d.places.filter(p=>p.word!==row.word);d.space_words=d.space_words.filter(w=>w!==row.word);proposed.save(row.chapter_id,d);R.revise(proposed,row,{word:edit.word,kind:edit.kind==='none'?'places':edit.kind,status:edit.kind==='none'?'rejected':'accepted',note:'统一名称：'+edit.canonical+'\n'+(row.review?.note||'').replace(/^统一名称：[^\n]*\n/u,'')});if(!persist(proposed.document()))throw Error('本机保存失败，请保留备份');reportRows=null;renderChapter();updateResults();renderReports();}
-  });});
+    save:(row,edit)=>{
+      if(state.dirty)throw Error('请先保存或取消篇目草稿');
+      const proposed=M.create(base);proposed.importDocument(model.document());
+      const c=proposed.view(row.chapter_id),stream=GhostPlaceReview.replaceUnit(c.segmentation_note||segmented(c),c.source_units,edit.unitIndex,edit.tokens);
+      const types=edit.kind==='people'?edit.types:[];
+      R.revise(proposed,row,{word:edit.word,kind:edit.kind==='none'?row.kind:edit.kind,status:edit.kind==='none'?'rejected':'accepted',canonical:edit.canonical,types,note:'统一名称：'+edit.canonical+'\n'+(row.review?.note||'').replace(/^统一名称：[^\n]*\n/u,'')});
+      const d=proposed.editable(row.chapter_id);d.segmentation_note=stream;proposed.save(row.chapter_id,d);
+      persist(proposed.document());reportRows=null;renderChapter();updateResults();
+    }
+  });
+  function openVocabulary(options={}){
+    if(state.dirty||reportDraft){message('storage-status','请先保存或取消当前草稿',true);return;}
+    vocabularyGrid.open(options);showScreen('vocabulary-editor');
+    if(location.hash!=='#vocabulary-editor')history.pushState(null,'','#vocabulary-editor');
+    vocabularySection.scrollIntoView({block:'start'});
+  }
   let auditReports=null;
   const reportStatuses={retained:'现有（未人工确认）',pending:'待核候选',accepted:'人工保留',rejected:'人工排除',excluded:'已核对排除',corrected:'已修正／改类',removed:'当前修订已移除'};
   function reportData(){if(!reportRows) reportRows=R.rows(base,model);return reportRows;}
@@ -2431,34 +2464,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('path-table').replaceChildren(table);
   }
   function reportEditor(row){
-    const box=element('div',{class:'report-editor','data-report-editor':row.chapter_id+':'+row.key});
-    box.append(element('p',{class:'muted'},'本行仅修改《'+model.view(row.chapter_id).chapter+'》'));
-    if(row.rejection_reason) box.append(element('p',{class:'muted'},'已核对排除：'+row.rejection_reason));
-    if(row.candidate?.context_review_note) box.append(element('p',{class:'muted'},'原文复核：'+row.candidate.context_review_note));
-    const field=(name,label,value,options)=>{const wrap=element('label',{},label),input=element(options?'select':name==='note'?'textarea':'input',{'data-field':name,...(!options?{type:'text'}:{})});if(options) for(const [v,label] of options) input.append(element('option',{value:v},label));input.value=value;wrap.append(input);box.append(wrap);return input;};
-    const word=field('word','修订词语',row.word),kind=field('kind','修订分类',row.kind,Object.entries(R.KINDS));
-    const conclusion=field('status','判定',row.status==='rejected'?'rejected':'accepted',[['accepted','保留修订后的词'],['rejected','排除此词'],['pending','标为待核（保留现有数据）']]);
-    const canonical=field('canonical','所指人物（单字人物必填）',row.person?.canonical||'');
-    const types=element('div',{class:'checkboxes'});checkboxes(types,['人','鬼','妖','神'],Object.keys(row.person?.person_types||{}));box.append(types);
-    const note=field('note','审核依据 / 修订说明',row.review?.note||row.person?.evidence||'');
-    const toggle=()=>{canonical.parentNode.hidden=kind.value!=='people';types.hidden=kind.value!=='people';};toggle();kind.addEventListener('change',toggle);
-    const context=element('blockquote',{},row.context||'请核对本篇原文后新增。');box.append(context);
-    const controls=['report-kind','report-chapter','report-state','report-type','report-search','report-sort','report-view','report-prev','report-next','report-add','report-jump','report-size'];
-    const lock=value=>{reportDraft=value;reportActive=value?box:null;syncSaveStatus();for(const id of controls) $(id).disabled=value;for(const n of $('reports-screen').querySelectorAll('[data-report-picker]')) n.disabled=value;for(const other of $('reports-screen').querySelectorAll('[data-report-editor]')) if(other!==box) for(const tag of ['input','textarea','select','button']) for(const n of other.querySelectorAll(tag)) n.disabled=value;};
-    box.addEventListener('input',()=>lock(true));box.addEventListener('change',()=>lock(true));
-    const close=()=>{lock(false);$('report-new').replaceChildren();renderReports();};
-    box.append(button('保存此行',()=>{
-      if(state.dirty){message('report-status','请先保存或取消「文本与修订」中的草稿，再保存报表。',true);return;}
-      try{
-        const proposed=M.create(base);proposed.importDocument(model.document());
-        const doc=R.revise(proposed,row,{word:word.value,kind:kind.value,status:conclusion.value,canonical:canonical.value,types:checked(types),note:note.value});
-        const durable=persist(doc);lock(false);$('report-new').replaceChildren();reportRows=null;
-        renderChapter();updateResults();renderReports();
-        message('report-status',durable?'已保存《'+model.view(row.chapter_id).chapter+'》的修订，表格、地图与篇目数据已同步。':'已应用于当前页面；本机存储不可用，请下载总资料包。',!durable);
-      }catch(error){message('report-status','未保存：'+error.message,true);}
-    },'primary'),button('取消本行输入',close),button('阅读全文 / 修改分词',()=>{if(reportDraft){message('report-status','请先保存或取消本行输入。',true);return;}if(chooseChapter(row.chapter_id,true)) reveal('segmentation-panel');}));
-    box.querySelector('button').setAttribute('data-report-save','');
-    return box;
+    const entrance=element('div');entrance.append(button('在词汇表中修改',()=>openVocabulary({chapter:row.chapter_id,kind:row.kind,word:row.word,scope:row.present?'active':'all'})));return entrance;
   }
   function renderReports(){
     if(reportDraft || $('reports-screen').hidden) return;
@@ -2556,6 +2562,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     reportRows = null;
     unmappedCache = null;
     pathRowsCache = null;
+    if ($('vocabulary-editor')&&!$('vocabulary-editor').hidden&&!vocabularyDraft) vocabularyGrid.render();
     if (!$('reports-screen').hidden) renderReports();
     if (!$('map-section').hidden) refreshMapResults();
     if (!$('research-screen').hidden) refreshResearchResults();
@@ -2606,6 +2613,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
 
   // Geographic geometry is transformed separately from fixed screen-space controls.
   const map = $('map'), defs = svg('defs'), clip = svg('clipPath', {id: 'geo-clip'}), clipRect = svg('rect');
+  const otherworldPanel=element('details',{id:'otherworld-map',class:'map-message',open:''});
+  map.parentElement.append(otherworldPanel);
+  let otherworldSignature='';
   clip.append(clipRect); defs.append(clip); map.append(defs);
   const clipped = svg('g', {'clip-path': 'url(#geo-clip)'}), scene = svg('g', {class: 'geo-scene', 'pointer-events': 'none'});
   const graticule = svg('g', {stroke: '#d0dbd0', 'stroke-width': '.6', fill: 'none'}), countries = svg('g', {stroke: '#98aea0', 'stroke-width': '.8', fill: '#dfe8da'}), regionBoundaries = svg('g', {class: 'region-boundaries', 'pointer-events': 'none'});
@@ -2688,6 +2698,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const anchors = {天界: [state.width - 48, state.height * .28], 地界: [state.width - 48, state.height * .75]};
     const place = allPlaces().find(p => p.id === state.place), source = visible.find(p => p.id === state.place);
     const links = place ? model.links(place, new Set(filteredChapters(place).map(c => c.chapter_id))) : globalRealmLinks();
+    const signature=JSON.stringify([place?.name,links]);
+    if(signature!==otherworldSignature){
+      otherworldSignature=signature;
+      GhostOtherworldMap.render(otherworldPanel,links,{place:place?.name||'',read:id=>{if(chooseChapter(id,true))reveal('workspace');}});
+    }
     routes.replaceChildren();
     movementLayer.replaceChildren();
     movementDiagram.replaceChildren();
@@ -2767,6 +2782,12 @@ section,details,#save-chapter{scroll-margin-top:90px}
       group.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openRealm(); } });
       group.append(svg('rect', {x: -36, y: -24, width: 72, height: 64, rx: 8, fill: realm === '天界' ? '#dfebe2' : '#ece2f5', stroke: '#a8b9ab'}), svg('text', {x: 0, y: -2, 'text-anchor': 'middle'}, realm), svg('text', {x: 0, y: 20, 'text-anchor': 'middle'}, new Set(relevant.map(e => e.space)).size + ' 证据词'));
       hubs.append(group);
+      for(const [index,node]of GhostOtherworldMap.nodes(relevant).slice(0,3).entries()){
+        const named=svg('g',{role:'button',tabindex:0,'aria-label':'查看异境'+node.name,transform:'translate('+x+','+(y+52+index*27)+')'});
+        named.append(svg('rect',{x:-43,y:-16,width:86,height:24,rx:12,fill:realm==='天界'?'#e6f2ed':'#f1eaf9',stroke:realm==='天界'?'#24745e':'#776296'}),svg('text',{'text-anchor':'middle',y:0},node.name.length>6?node.name.slice(0,6)+'…':node.name),svg('title',{},node.name+'（示意，无地理坐标）'));
+        const select=()=>{otherworldPanel.dataset.selected=node.key;otherworldPanel.open=true;GhostOtherworldMap.render(otherworldPanel,links,{place:place?.name||'',read:id=>{if(chooseChapter(id,true))reveal('workspace');}});otherworldPanel.scrollIntoView({block:'nearest'});};
+        named.addEventListener('click',select);named.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}});hubs.append(named);
+      }
       if (!source || !relevant.length) continue;
       // Separate confirmed chapter-level crossings from mere lexical co-occurrence.
       for (const kind of ['mention', 'crossing']) {
@@ -2829,7 +2850,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
   renderChapter(); showEditor(currentEditor);
   loading.hidden=true;
   document.querySelector('main').inert=false;
-  if(location.hash)routeHash();else showScreen('map-section');
+  if(new URLSearchParams(location.search).get('edit')==='words'||new URLSearchParams(location.search).get('review')==='places'){
+    const params=new URLSearchParams(location.search);
+    openVocabulary({word:params.get('word')||'',kind:params.get('kind')||'',scope:params.get('scope')||'active',chapter:params.has('chapter')?Number(params.get('chapter')):undefined});
+  }else if(location.hash)routeHash();else showScreen('map-section');
   GhostMapSync.mount({base, initialAncestor: storageSnapshot ? M.create(base).document() : (publishedRevisions || M.create(base).document()),
     localIsValidated: true,
     validate: doc => {const candidate=M.create(base);candidate.importDocument(doc);},
