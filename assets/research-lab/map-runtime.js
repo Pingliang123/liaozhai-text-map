@@ -2,21 +2,148 @@ globalThis.GhostMapPlaceReview={
   "reviewed_on": "2026-10-16",
   "method": "逐项对照267个含东西南北中候选词的原文语境；专名、相对空间、误切词与待考区域分别处理。",
   "spaces": {
-    "东北": "东北", "东原": "东原", "东厢": "东厢", "东口": "东口", "东头": "东头",
-    "东山": "东山", "东山之阳": "东山之阳", "东山人": "东山", "东岳庙": "东岳庙",
-    "东座": "东座", "东邻": "东邻", "东郭": "东郭", "东野": "东野", "东门": "东门",
-    "北堂": "北堂", "北壁": "北壁", "北庵": "北庵", "北郭": "北郭", "北门": "北门", "北山": "北山",
-    "南丛": "城南丛葬处", "南垣": "南垣", "南城": "南城", "南屋": "南屋", "南山": "南山",
-    "南扉": "南扉", "南舍": "南舍", "南荡": "南荡", "南郭": "南郭",
-    "城中": "城中", "寺西": "寺西", "山南": "山南", "庙东": "庙东", "祠西": "祠西",
-    "西城": "西城", "西壁": "西壁", "西山": "西山", "西巷": "西巷", "西鄙": "西鄙", "西门": "西门",
-    "观中": "观", "益都之西山": "西山", "适西山": "西山", "邑之东山": "东山", "邑北山": "北山",
-    "邑南": "邑南", "邑西": "邑西", "郡北": "郡北", "郡南": "郡南", "云霄": "天空／高空意象"
+    "东北": "东北",
+    "东原": "东原",
+    "东厢": "东厢",
+    "东口": "东口",
+    "东头": "东头",
+    "东山": "东山",
+    "东山之阳": "东山之阳",
+    "东山人": "东山",
+    "东岳庙": "东岳庙",
+    "东座": "东座",
+    "东邻": "东邻",
+    "东郭": "东郭",
+    "东野": "东野",
+    "东门": "东门",
+    "北堂": "北堂",
+    "北壁": "北壁",
+    "北庵": "北庵",
+    "北郭": "北郭",
+    "北门": "北门",
+    "北山": "北山",
+    "南丛": "城南丛葬处",
+    "南垣": "南垣",
+    "南城": "南城",
+    "南屋": "南屋",
+    "南山": "南山",
+    "南扉": "南扉",
+    "南舍": "南舍",
+    "南荡": "南荡",
+    "南郭": "南郭",
+    "城中": "城中",
+    "寺西": "寺西",
+    "山南": "山南",
+    "庙东": "庙东",
+    "祠西": "祠西",
+    "西城": "西城",
+    "西壁": "西壁",
+    "西山": "西山",
+    "西巷": "西巷",
+    "西鄙": "西鄙",
+    "西门": "西门",
+    "观中": "观",
+    "益都之西山": "西山",
+    "适西山": "西山",
+    "邑之东山": "东山",
+    "邑北山": "北山",
+    "邑南": "邑南",
+    "邑西": "邑西",
+    "郡北": "郡北",
+    "郡南": "郡南",
+    "云霄": "天空／高空意象",
+    "村外": "村外",
+    "山村": "山村",
+    "村落": "村落",
+    "郊外": "郊外",
+    "乡中": "乡中",
+    "予乡": "予乡",
+    "关": "关",
+    "内城": "内城",
+    "北岸": "北岸",
+    "北边": "北边",
+    "北邻": "北邻",
+    "北里": "北里",
+    "南郊": "南郊",
+    "东郊": "东郊",
+    "城东": "城东",
+    "城南": "城南",
+    "城市": "城市",
+    "县": "县",
+    "别村": "别村",
+    "近村": "近村",
+    "邻村": "邻村",
+    "某村": "某村",
+    "北村": "北村",
+    "南村": "南村",
+    "东村": "东村",
+    "西村": "西村",
+    "城北村": "城北村",
+    "都北": "都北",
+    "郡城": "郡城",
+    "邑城": "邑城",
+    "邑中": "邑中",
+    "贵邑": "贵邑",
+    "敝里": "敝里",
+    "里": "里",
+    "里中": "里中",
+    "里落": "里落",
+    "里门": "里门",
+    "故乡": "故乡",
+    "桑梓": "桑梓",
+    "海上": "海上",
+    "海外": "海外",
+    "海滨": "海滨",
+    "湖东": "湖东",
+    "河滨": "河滨",
+    "河干": "河干",
+    "岛": "岛",
+    "岛岸": "岛岸",
+    "大岛": "大岛",
+    "大山": "大山",
+    "涧谷": "涧谷",
+    "苍林": "苍林",
+    "绝壑巉岩": "绝壑巉岩",
+    "西南山": "西南山",
+    "西道": "西道",
+    "西邑": "西邑",
+    "西土": "西土",
+    "西塞": "西塞",
+    "北塞": "北塞",
+    "北地": "北地",
+    "边": "边",
+    "边外": "边外",
+    "塞上": "塞上",
+    "竹桥之西": "竹桥之西",
+    "莲峰下": "莲峰下",
+    "镇之南山": "镇之南山",
+    "御沟": "御沟",
+    "柳堤": "柳堤",
+    "水关": "水关",
+    "文场": "文场",
+    "古战场": "古战场",
+    "五都之市": "五都之市",
+    "罗家": "罗家",
+    "墓": "墓",
+    "郊路": "郊路",
+    "谷口": "谷口"
   },
   "replacements": {
-    "东平人": "东平", "东昌人": "东昌", "东村业": "东村", "东村人": "东村", "宿东村": "东村",
-    "北顺": "顺天府", "河南人": "河南", "泛西湖": "西湖", "真西湖": "西湖", "西安市": "西安",
-    "济南乡": "济南", "秦中者": "秦中", "至西村": "西村", "道南村": "南村", "间西村": "西村"
+    "东平人": "东平",
+    "东昌人": "东昌",
+    "东村业": "东村",
+    "东村人": "东村",
+    "宿东村": "东村",
+    "北顺": "顺天府",
+    "河南人": "河南",
+    "泛西湖": "西湖",
+    "真西湖": "西湖",
+    "西安市": "西安",
+    "济南乡": "济南",
+    "秦中者": "秦中",
+    "至西村": "西村",
+    "道南村": "南村",
+    "间西村": "西村"
   },
   "exclude": {
     "南宫": "本书相关语境为“捷南宫”，指科举登第，不能定位为河北南宫县。",
@@ -24,10 +151,18 @@ globalThis.GhostMapPlaceReview={
     "北闱": "“入／赴／试北闱”为赴试表述，不作独立地名。"
   },
   "chapter_exclusions": {
-    "邵士梅": {"东海": "原文“高东海”是人名；本篇不据此计入东海地名。"},
-    "鸦头": {"中原": "“勾栏中原无情好”中的“中原”跨越“中／原”两个词，不是地域中原。"},
-    "岳神": {"东岳": "“东岳天子”是神祇称号，本篇不据此认定人物抵达泰山。"},
-    "布客": {"山东": "原文为“蒿里山／东四司”，不是山东省；本篇地理联系仍依据长清、泰安、泰山。"}
+    "邵士梅": {
+      "东海": "原文“高东海”是人名；本篇不据此计入东海地名。"
+    },
+    "鸦头": {
+      "中原": "“勾栏中原无情好”中的“中原”跨越“中／原”两个词，不是地域中原。"
+    },
+    "岳神": {
+      "东岳": "“东岳天子”是神祇称号，本篇不据此认定人物抵达泰山。"
+    },
+    "布客": {
+      "山东": "原文为“蒿里山／东四司”，不是山东省；本篇地理联系仍依据长清、泰安、泰山。"
+    }
   },
   "pending": {
     "东山望村": "“居东山望村”须辨东山与望村的结构，暂不扩充定位。",
@@ -35,20 +170,34 @@ globalThis.GhostMapPlaceReview={
     "南村": "各篇村名指向未必一致，保留篇内候选，不统一定位。",
     "西村": "多篇局部村名，须分别考证，不能凭同词跨篇合村。",
     "北村": "各篇所在地不同，保留篇内村名候选，不统一定位。",
-    "东疃": "村名候选，具体位置待考。", "北里": "《刘夫人》乡里称谓，是否专名待考，暂不定位。",
+    "东疃": "村名候选，具体位置待考。",
+    "北里": "《刘夫人》乡里称谓，是否专名待考，暂不定位。",
     "西塞": "军事语境中的西部边塞区域，不是可直接定位的单一地点。",
-    "西疆": "西部边疆区域，具体范围待考。", "西邑": "济之西邑，所指县邑待考。",
-    "南服": "南方地区泛称，范围未定。", "南中": "南方区域称谓，逐篇范围可能不同。",
-    "海东": "海东指向须结合篇内行程考证。", "海南": "《仙人岛》海南为异境叙述，不能自动对应现代海南省。",
+    "西疆": "西部边疆区域，具体范围待考。",
+    "西邑": "济之西邑，所指县邑待考。",
+    "南服": "南方地区泛称，范围未定。",
+    "南中": "南方区域称谓，逐篇范围可能不同。",
+    "海东": "海东指向须结合篇内行程考证。",
+    "海南": "《仙人岛》海南为异境叙述，不能自动对应现代海南省。",
     "海中市": "《罗刹海市》海上市集，作为篇内异境空间，不配现代坐标。",
     "东岳": "既有庙宇、神祇与冥府行政空间语境，不能把每次提及都当作到访泰山。",
-    "南岳": "祭山与神职语境须分别核对。", "西江": "河流、地域、典故语境并存，不能共用单一水域点推断路线。",
+    "南岳": "祭山与神职语境须分别核对。",
+    "西江": "河流、地域、典故语境并存，不能共用单一水域点推断路线。",
     "西湖": "真实湖泊与幻化再现并存，保留地名但须区分故事中的实际移动。",
     "都中": "都城代称，逐篇确认朝代与所指，不自动统一为北京。",
     "济东": "“济东观察”为官职辖域线索，不能等同事件发生地。"
   },
   "chapter_spaces": {
-    "罗刹海市": ["南岛", "海中市"], "韩方": ["南乡"], "于去恶": ["西池"]
+    "罗刹海市": [
+      "南岛",
+      "海中市"
+    ],
+    "韩方": [
+      "南乡"
+    ],
+    "于去恶": [
+      "西池"
+    ]
   }
 }
 ;
@@ -70,6 +219,9 @@ globalThis.GhostMapPlaceReview={
       ? '方位与距离片语，描述位置关系，不是地理专名。' : '';
   }
   const clone = value => JSON.parse(JSON.stringify(value));
+  // Explicit lexical decisions outrank automatic replacement and exclusion lists.
+  const decision = (c,w) => {const r=c.lexical_reviews?.['places:'+w];return r&&['accepted','corrected','rejected'].includes(r.status)?r:null;};
+  const explicitPlace = (c,w) => {const r=decision(c,w);return r&&r.status!=='rejected'&&r.kind==='places'&&r.word===w;};
   const assert = (condition, message) => { if (!condition) throw new Error(message); };
   const strings = (values, allowed, label) => {
     assert(Array.isArray(values), label + '格式错误');
@@ -171,6 +323,8 @@ globalThis.GhostMapPlaceReview={
         const source=c.source_units.map(u=>u.text || u.original || '').join('');
         const spaces=new Set(c.space_words || []), words=new Map();
         for(const p of c.places) {
+          const manual=decision(c,p.word);
+          if(manual){if(explicitPlace(c,p.word))words.set(p.word,p);else if(manual.status!=='rejected'&&manual.kind==='spaces'&&source.includes(manual.word))spaces.add(manual.word);continue;}
           const word=name(p.word), target=PLACE_REVIEW.replacements?.[word], space=PLACE_REVIEW.spaces?.[word];
           if(space && source.includes(space) && c.lexical_reviews?.['spaces:'+space]?.status!=='rejected') spaces.add(space);
           if(target && source.includes(target)) words.set(target,{...p,word:target});
@@ -211,7 +365,7 @@ globalThis.GhostMapPlaceReview={
         '田子成':{'竹桥之西':[['竹桥'],['竹桥之西'],'竹桥 / 之 / 西']}
       };
       for(const [wrong,[places,spaces,tokens]] of Object.entries(placeCorrections[chapters.get(id)?.chapter]||{})){
-        if(!input?.places?.some(p=>p.word===wrong))continue;
+        if(!input?.places?.some(p=>p.word===wrong)||decision(input,wrong))continue;
         input.places=input.places.filter(p=>p.word!==wrong);
         for(const word of places)if(!input.places.some(p=>p.word===word))input.places.push({word,mentions:0});
         input.space_words=[...new Set([...(input.space_words||view(id).space_words||[]),...spaces])];
@@ -219,7 +373,7 @@ globalThis.GhostMapPlaceReview={
         input.lexical_reviews={...input.lexical_reviews,['places:'+wrong]:{status:'corrected',word:(places[0]||spaces[0]),kind:places.length?'places':'spaces',note:'逐篇原文核查：拆除修饰／动作成分，区分地理专名与篇内相对空间。原词：'+wrong}};
       }
       // 《尸变》“邑之蔡店人”：邑之为修饰成分，人为籍贯后缀。
-      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')) {
+      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')&&!decision(input,'邑之蔡店')) {
         input.places=[...new Map(input.places.map(p=>{const row={...p,word:p.word==='邑之蔡店'?'蔡店':p.word};return [row.word,row];})).values()];
         if(input.segmentation_note)input.segmentation_note=input.segmentation_note.replaceAll('邑之蔡店','邑 / 之 / 蔡店').replaceAll('蔡店人','蔡店 / 人');
         input.lexical_reviews={...input.lexical_reviews,'places:邑之蔡店':{status:'corrected',word:'蔡店',kind:'places',note:'《尸变》原文“邑之蔡店人”：地名为蔡店，邑之与人不属于地名。'}};
@@ -258,14 +412,15 @@ globalThis.GhostMapPlaceReview={
       assert(Array.isArray(input.places) && input.places.length <= 500, '地点格式错误');
       result.places = input.places.map(p => {
         const word=text(p.word,'地点',100), target=PLACE_REVIEW.replacements?.[word];
-        return {word:target && source.includes(target) ? target : word,mentions:0};
-      }).filter(p => !rejectedPlaces.has(name(p.word)) && !rejectedPlaces.has(p.word) && !placeWordReason(name(p.word),chapters.get(id).chapter));
+        return {word:!decision(input,word)&&target && source.includes(target) ? target : word,mentions:0};
+      }).filter(p => explicitPlace(input,p.word)||!decision(input,p.word)&&!rejectedPlaces.has(name(p.word)) && !rejectedPlaces.has(p.word) && !placeWordReason(name(p.word),chapters.get(id).chapter));
       if(input.places.some(p=>PLACE_REVIEW.replacements?.[p.word])) result.places = [...new Map(result.places.map(p=>[p.word,p])).values()];
       assert(result.places.every(p => p.word), '地点不可为空');
       assert(new Set(result.places.map(p => name(p.word))).size === result.places.length, '地点不可重复');
       const spaces = input.space_words === undefined ? view(id).space_words || [] : input.space_words;
       assert(Array.isArray(spaces) && spaces.length <= 500, '空间词格式错误');
-      result.space_words = spaces.map(w => text(w, '空间词', 100));
+      const transferred=input.places.filter(p=>!decision(input,p.word)).map(p=>PLACE_REVIEW.spaces?.[p.word]).filter(w=>w&&source.includes(w));
+      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '空间词', 100)))];
       assert(result.space_words.every(w => w && source.includes(w)), '空间词必须在本篇简体原文中出现');
       assert(new Set(result.space_words).size === result.space_words.length, '空间词不可重复');
       const narrative = input.narrative_events === undefined ? view(id).narrative_events || [] : input.narrative_events;
@@ -489,7 +644,7 @@ globalThis.GhostMapPlaceReview={
         } else if(tokens.join('\0')!==previous.join('\0')) {
           const complete=new Set(tokens), old=new Set(previous), known=new Set([...base.places.map(p=>p.name),...chapter.places.map(p=>p.word)]);
           valid.places=valid.places.filter(p=>!old.has(p.word)||complete.has(p.word));
-          for(const word of complete)if(!old.has(word)&&known.has(word)&&!valid.space_words.includes(word)&&!valid.places.some(p=>p.word===word)&&!placeWordReason(word,chapter.chapter))valid.places.push({word,mentions:0});
+          for(const word of complete)if(!decision(valid,word)&&!old.has(word)&&known.has(word)&&!valid.space_words.includes(word)&&!valid.places.some(p=>p.word===word)&&!placeWordReason(word,chapter.chapter))valid.places.push({word,mentions:0});
         }
         overrides.set(id, valid); views.delete(id); placeViews.clear(); geographicCache=null;
       },

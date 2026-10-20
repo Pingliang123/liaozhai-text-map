@@ -78,6 +78,7 @@ jobs:
           node automation/build-lab-times.js
           node automation/audit-place-space-sync.js
           node automation/test-current-lab-data.js
+          node automation/test-manual-spatial-priority.js
           node automation/test-network-freshness.js
           node automation/export-lab-place-levels.js
           node automation/test-place-level-colors.js

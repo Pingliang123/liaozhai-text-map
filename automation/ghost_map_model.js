@@ -16,6 +16,9 @@
       ? '方位与距离片语，描述位置关系，不是地理专名。' : '';
   }
   const clone = value => JSON.parse(JSON.stringify(value));
+  // Explicit lexical decisions outrank automatic replacement and exclusion lists.
+  const decision = (c,w) => {const r=c.lexical_reviews?.['places:'+w];return r&&['accepted','corrected','rejected'].includes(r.status)?r:null;};
+  const explicitPlace = (c,w) => {const r=decision(c,w);return r&&r.status!=='rejected'&&r.kind==='places'&&r.word===w;};
   const assert = (condition, message) => { if (!condition) throw new Error(message); };
   const strings = (values, allowed, label) => {
     assert(Array.isArray(values), label + '格式错误');
@@ -117,6 +120,8 @@
         const source=c.source_units.map(u=>u.text || u.original || '').join('');
         const spaces=new Set(c.space_words || []), words=new Map();
         for(const p of c.places) {
+          const manual=decision(c,p.word);
+          if(manual){if(explicitPlace(c,p.word))words.set(p.word,p);else if(manual.status!=='rejected'&&manual.kind==='spaces'&&source.includes(manual.word))spaces.add(manual.word);continue;}
           const word=name(p.word), target=PLACE_REVIEW.replacements?.[word], space=PLACE_REVIEW.spaces?.[word];
           if(space && source.includes(space) && c.lexical_reviews?.['spaces:'+space]?.status!=='rejected') spaces.add(space);
           if(target && source.includes(target)) words.set(target,{...p,word:target});
@@ -157,7 +162,7 @@
         '田子成':{'竹桥之西':[['竹桥'],['竹桥之西'],'竹桥 / 之 / 西']}
       };
       for(const [wrong,[places,spaces,tokens]] of Object.entries(placeCorrections[chapters.get(id)?.chapter]||{})){
-        if(!input?.places?.some(p=>p.word===wrong))continue;
+        if(!input?.places?.some(p=>p.word===wrong)||decision(input,wrong))continue;
         input.places=input.places.filter(p=>p.word!==wrong);
         for(const word of places)if(!input.places.some(p=>p.word===word))input.places.push({word,mentions:0});
         input.space_words=[...new Set([...(input.space_words||view(id).space_words||[]),...spaces])];
@@ -165,7 +170,7 @@
         input.lexical_reviews={...input.lexical_reviews,['places:'+wrong]:{status:'corrected',word:(places[0]||spaces[0]),kind:places.length?'places':'spaces',note:'逐篇原文核查：拆除修饰／动作成分，区分地理专名与篇内相对空间。原词：'+wrong}};
       }
       // 《尸变》“邑之蔡店人”：邑之为修饰成分，人为籍贯后缀。
-      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')) {
+      if(chapters.get(id)?.chapter==='尸变' && input?.places?.some(p=>p.word==='邑之蔡店')&&!decision(input,'邑之蔡店')) {
         input.places=[...new Map(input.places.map(p=>{const row={...p,word:p.word==='邑之蔡店'?'蔡店':p.word};return [row.word,row];})).values()];
         if(input.segmentation_note)input.segmentation_note=input.segmentation_note.replaceAll('邑之蔡店','邑 / 之 / 蔡店').replaceAll('蔡店人','蔡店 / 人');
         input.lexical_reviews={...input.lexical_reviews,'places:邑之蔡店':{status:'corrected',word:'蔡店',kind:'places',note:'《尸变》原文“邑之蔡店人”：地名为蔡店，邑之与人不属于地名。'}};
@@ -204,14 +209,15 @@
       assert(Array.isArray(input.places) && input.places.length <= 500, '地点格式错误');
       result.places = input.places.map(p => {
         const word=text(p.word,'地点',100), target=PLACE_REVIEW.replacements?.[word];
-        return {word:target && source.includes(target) ? target : word,mentions:0};
-      }).filter(p => !rejectedPlaces.has(name(p.word)) && !rejectedPlaces.has(p.word) && !placeWordReason(name(p.word),chapters.get(id).chapter));
+        return {word:!decision(input,word)&&target && source.includes(target) ? target : word,mentions:0};
+      }).filter(p => explicitPlace(input,p.word)||!decision(input,p.word)&&!rejectedPlaces.has(name(p.word)) && !rejectedPlaces.has(p.word) && !placeWordReason(name(p.word),chapters.get(id).chapter));
       if(input.places.some(p=>PLACE_REVIEW.replacements?.[p.word])) result.places = [...new Map(result.places.map(p=>[p.word,p])).values()];
       assert(result.places.every(p => p.word), '地点不可为空');
       assert(new Set(result.places.map(p => name(p.word))).size === result.places.length, '地点不可重复');
       const spaces = input.space_words === undefined ? view(id).space_words || [] : input.space_words;
       assert(Array.isArray(spaces) && spaces.length <= 500, '空间词格式错误');
-      result.space_words = spaces.map(w => text(w, '空间词', 100));
+      const transferred=input.places.filter(p=>!decision(input,p.word)).map(p=>PLACE_REVIEW.spaces?.[p.word]).filter(w=>w&&source.includes(w));
+      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '空间词', 100)))];
       assert(result.space_words.every(w => w && source.includes(w)), '空间词必须在本篇简体原文中出现');
       assert(new Set(result.space_words).size === result.space_words.length, '空间词不可重复');
       const narrative = input.narrative_events === undefined ? view(id).narrative_events || [] : input.narrative_events;
@@ -435,7 +441,7 @@
         } else if(tokens.join('\0')!==previous.join('\0')) {
           const complete=new Set(tokens), old=new Set(previous), known=new Set([...base.places.map(p=>p.name),...chapter.places.map(p=>p.word)]);
           valid.places=valid.places.filter(p=>!old.has(p.word)||complete.has(p.word));
-          for(const word of complete)if(!old.has(word)&&known.has(word)&&!valid.space_words.includes(word)&&!valid.places.some(p=>p.word===word)&&!placeWordReason(word,chapter.chapter))valid.places.push({word,mentions:0});
+          for(const word of complete)if(!decision(valid,word)&&!old.has(word)&&known.has(word)&&!valid.space_words.includes(word)&&!valid.places.some(p=>p.word===word)&&!placeWordReason(word,chapter.chapter))valid.places.push({word,mentions:0});
         }
         overrides.set(id, valid); views.delete(id); placeViews.clear(); geographicCache=null;
       },
