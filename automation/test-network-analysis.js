@@ -5,6 +5,9 @@ const cs=[{id:1,title:'甲',places:['济南'],spaces:['寺','室']},{id:2,title:
 assert.equal(A.compare(cs,1)[0].score,1);assert.equal(A.compare(cs,1)[0].id,2);assert.equal(A.compare(cs,1,'place').length,1);assert.equal(A.compare(cs,1,'space').length,2);assert.deepEqual(A.compare(cs,'missing'),[]);
 console.log('PASS components, removed bridge, weighted similarity and category filtering');
 assert.deepEqual(A.layout({nodes:[],edges:[]}),[]);
+const crowded=Array.from({length:12},(_,i)=>({id:String(i),label:'济南',x:400+i,y:300+i}));
+const spaced=A.spread(crowded);assert.deepEqual(spaced,A.spread(crowded));assert.equal(crowded[0].x,400);assert.deepEqual(spaced.map(n=>n.id),crowded.map(n=>n.id));assert.deepEqual(A.spread([]),[]);
+for(let i=0;i<spaced.length;i++)for(let j=i+1;j<spaced.length;j++)assert(Math.abs(spaced[i].x-spaced[j].x)>=79.9||Math.abs(spaced[i].y-spaced[j].y)>=47.9,'Labels must have room after collision resolution');
 const star={nodes:Array.from({length:40},(_,i)=>({id:String(i)})),edges:Array.from({length:39},(_,i)=>({source:'0',target:String(i+1)}))};
 const arranged=A.layout(star);assert.deepEqual(arranged,A.layout(star));assert(star.nodes.every(n=>n.x===undefined));assert(arranged.every(n=>Number.isFinite(n.x)&&Number.isFinite(n.y)&&n.x>=40&&n.x<=780&&n.y>=60&&n.y<=640));
 assert(new Set(arranged.map(n=>Math.round(n.x))).size>20);assert(new Set(arranged.map(n=>Math.round(n.y))).size>20);

@@ -27,5 +27,24 @@ function layout(graph){
 }
 function directionStats(graph){const stats=Object.fromEntries(graph.nodes.map(n=>[n.id,{inDegree:0,outDegree:0,inStrength:0,outStrength:0}]));for(const e of graph.edges){const a=stats[e.source],b=stats[e.target];a.outDegree++;b.inDegree++;a.outStrength+=e.weight;b.inStrength+=e.weight;}return stats;}
 function communitySample(graph,partition,perGroup=10,maxGroups=12){const groups=new Map(),strength=new Map(graph.nodes.map(n=>[n.id,0]));for(const e of graph.edges){strength.set(e.source,strength.get(e.source)+e.weight);strength.set(e.target,strength.get(e.target)+e.weight);}for(const n of graph.nodes){const key=partition[n.id];if(!groups.has(key))groups.set(key,[]);groups.get(key).push(n);}const selected=[...groups.values()].sort((a,b)=>b.reduce((s,n)=>s+strength.get(n.id),0)-a.reduce((s,n)=>s+strength.get(n.id),0)).slice(0,maxGroups),nodes=selected.flatMap(g=>[...g].sort((a,b)=>strength.get(b.id)-strength.get(a.id)||a.id.localeCompare(b.id)).slice(0,perGroup)),ids=new Set(nodes.map(n=>n.id));return {nodes,edges:graph.edges.filter(e=>ids.has(e.source)&&ids.has(e.target)),groups:selected.length,totalGroups:groups.size};}
-const api={components,compare,layout,communities,directionStats,communitySample};if(typeof module!=='undefined')module.exports=api;else root.GhostNetworkAnalysis=api;
+// Do not refit after expansion: pan/zoom reveals peripheral nodes.
+function spread(nodes){
+ if(!nodes.length)return [];
+ const cx=nodes.reduce((s,n)=>s+n.x,0)/nodes.length,cy=nodes.reduce((s,n)=>s+n.y,0)/nodes.length;
+ const out=nodes.map(n=>({...n,x:cx+(n.x-cx)*1.6,y:cy+(n.y-cy)*1.6}));
+ for(let pass=0;pass<180;pass++){
+  let moved=false;
+  for(let i=0;i<out.length;i++)for(let j=i+1;j<out.length;j++){
+   const a=out[i],b=out[j],dx=b.x-a.x,dy=b.y-a.y;
+   const gapX=60+Math.max((a.label||'').length,(b.label||'').length)*10,gapY=48;
+   if(Math.abs(dx)>=gapX||Math.abs(dy)>=gapY)continue;
+   moved=true;
+   if((gapX-Math.abs(dx))/gapX<(gapY-Math.abs(dy))/gapY){const delta=(gapX-Math.abs(dx)+1)/2*(dx<0?-1:1);a.x-=delta;b.x+=delta;}
+   else{const delta=(gapY-Math.abs(dy)+1)/2*(dy<0?-1:1);a.y-=delta;b.y+=delta;}
+  }
+  if(!moved)break;
+ }
+ return out;
+}
+const api={components,compare,layout,spread,communities,directionStats,communitySample};if(typeof module!=='undefined')module.exports=api;else root.GhostNetworkAnalysis=api;
 })(typeof window==='undefined'?globalThis:window);
