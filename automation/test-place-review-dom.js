@@ -24,7 +24,7 @@ for (const [fragment, message] of [
 ]) if (!page.includes(fragment)) throw new Error(message);
 console.log('PASS IndexedDB fallback, queued writes, restore and backup warning');
 if (!page.includes('let unmappedCache = null') || !page.includes('if (unmappedCache) return unmappedCache')) throw new Error('全书未定位地点没有缓存');
-if (!require('fs').readFileSync('assets/place-review.js', 'utf8').includes('const sourceRows=api.rows()')) throw new Error('地点修改列表仍重复读取全量记录');
+if (!require('fs').readFileSync('assets/place-review.js', 'utf8').includes('const sourceRows=scope.value===')) throw new Error('地点修改列表仍重复读取全量记录');
 console.log('PASS cached unmapped scan and single source-row read per list render');
 const preview=new E('main');P.mount(preview,{rows:()=>[{...row,word:'赴金陵',key:'places:赴金陵'}],chapter:()=>({...c,places:[{word:'赴金陵'}]}),unitStream:()=> '赴金陵 / 。',save(){}});
 const previewWord=preview.querySelectorAll('input').find(n=>n['aria-label']==='赴金陵修订词语');previewWord.value='金陵';previewWord.listeners.change();assert.equal(preview.querySelectorAll('textarea')[0].value,'赴 / 金陵 / 。');

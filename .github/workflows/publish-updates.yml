@@ -12,6 +12,7 @@ on:
       - audit-reports.js
       - assets/data-loader.js
       - assets/place-review.js
+      - assets/place-crosscheck.js
       - assets/research-lab/*.js
       - assets/research-lab/*.css
       - assets/research-lab/index.html
@@ -75,6 +76,8 @@ jobs:
           node automation/merge-revisions.js manual-revisions.json
           node automation/build-spatial-lab.js
           node automation/build-lab-times.js
+          node automation/audit-place-space-sync.js
+          node automation/test-current-lab-data.js
           node automation/test-network-freshness.js
           node automation/export-lab-place-levels.js
           node automation/test-place-level-colors.js
@@ -111,6 +114,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/research-lab/map-runtime.js reports/place-space-sync-audit.json reports/place-space-sync-audit.md
           git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json assets/research-lab/data.json assets/research-lab/time-terms.json assets/research-lab/topics.json assets/research-lab/networkx-analysis.json assets/research-lab/place-levels.json reports/unmapped-place-equivalence-audit-20261019.json reports/unmapped-place-equivalence-audit-20261019.md
           if ! git diff --cached --quiet; then
             git commit -m "更新人工修订资料包与发布版本"
@@ -123,6 +127,8 @@ jobs:
           mkdir public
           cp index.html data.html data-package.json manual-revisions.json research-data.zip release-manifest.json github-sync.js github-login.js github-sync-config.json audit-reports.js public/
           cp -r assets public/assets
+          mkdir -p public/reports
+          cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md public/reports/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -13,10 +13,19 @@ function spaceView(graph,id,reverse,includeContext=false){const edges=graph.edge
 function build(chapters){
  const places=new Map(),pairs=new Map(),spaces=new Map(),pending=[];
  const node=word=>{const id='place:'+word;if(!places.has(id))places.set(id,{id,label:word,kind:'place',realm:otherworld.has(word)?'otherworld':'human',degree:0});return id;};
- for(const original of chapters){const moved=original.places.filter(w=>sceneTerms.has(w)),c={...original,places:original.places.filter(w=>taxonomy.classify(w).category==='place'),spaces:[...new Set([...original.spaces,...moved])].filter(w=>taxonomy.classify(w).category!=='excluded')};
+ for(const original of chapters){const accepted=w=>original.reviews?.['places:'+w]?.status==='accepted'&&original.reviews['places:'+w].kind==='places',moved=original.places.filter(w=>sceneTerms.has(w)&&!accepted(w)),c={...original,places:original.places.filter(w=>!original.spaces.includes(w)&&(accepted(w)||taxonomy.classify(w).category==='place')),spaces:[...new Set([...original.spaces,...moved])].filter(w=>taxonomy.classify(w).category!=='excluded')};
   for(const p of c.places)node(p);
   const units=c.units.map(u=>({...u,ps:hits(u.text,c.places),ss:hits(u.text,c.spaces.filter(s=>!c.places.includes(s)))})),present=[...new Set(units.flatMap(u=>u.ps.map(p=>p.word)))].sort();
   for(let i=0;i<present.length;i++)for(let j=i+1;j<present.length;j++){const source=node(present[i]),target=node(present[j]),key=JSON.stringify([source,target]);if(!pairs.has(key))pairs.set(key,{source,target,weight:0,relation:'places',chapter:'同篇地点',evidence:[]});const e=pairs.get(key);e.weight++;const excerpts=units.filter(u=>u.ps.some(p=>p.word===present[i]||p.word===present[j]));e.evidence.push({chapter:c.title,chapterId:c.id,actors:[],text:excerpts.map(u=>u.text).join('\n…\n'),basis:'同篇地点关系，每篇计1次；不表示人物移动',units:excerpts.map(u=>u.id)});}
+  // Use an endpoint only when both its place and space are unambiguous and
+  // the saved quotation is present in the source. Never assign all chapter spaces.
+  const text=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
+  for(const step of c.steps||[]){if(!step.quote||!text.includes(step.quote.replace(/\s/gu,'')))continue;
+   for(const endpoint of [step.from,step.to]){if(!endpoint)continue;const pp=hits(endpoint,c.places),ss=hits(endpoint,c.spaces);if(pp.length!==1)continue;
+    for(const s of ss){if(!step.quote.includes(s.word))continue;const source=node(pp[0].word),target='space:'+s.word,key=JSON.stringify([source,target]);if(!spaces.has(key))spaces.set(key,{source,target,weight:0,relation:'located-space',chapter:'地点与空间',evidence:[]});const e=spaces.get(key);if(!e.evidence.some(r=>r.chapterId===c.id))e.weight++;if(!e.evidence.some(r=>r.chapterId===c.id&&r.quote===step.quote))e.evidence.push({chapter:c.title,chapterId:c.id,unit:step.unit,quote:step.quote,text:step.quote,actors:Array.isArray(step.actors)?step.actors:(step.actors||'').split(/[、，,]/u).filter(Boolean),basis:'已保存路径端点的地点归属，仍可回原文核对',assignment:'endpoint'});
+    }
+   }
+  }
   let current=null;
   for(const u of units){
    const uncertain=uncertainScene(u.text);if(uncertain)current=null;
@@ -40,7 +49,7 @@ const api={build,hits,sceneTerms,otherworld,spaceView,uncertainScene,connectedGr
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 function mount(container,chapters,onExport){
  const graphs=build(chapters),intro=el('section');intro.className='card';intro.append(el('h2','地点网络'),el('p','① 全书地点相互关联　② 地点内部的空间'));container.append(intro);
- const first=el('section'),second=el('section');first.className=second.className='card';first.append(el('h2','一、全书地点网络'),el('p','全书地点词共用一张图。同篇出现的地点相连；线宽表示共同出现的篇数。切换“已定位地点”或“全部地点词”；未定位地点不进入前者。'));second.append(el('h2','二、地点与空间'),el('p','点击上图地名，下图显示该地的空间词；也可用下拉框选择。点线查看篇目、人物和原文。'));container.append(first,second);const reviewLink=el('a','地点词修改列表');reviewLink.href='../../index.html?review=places#reports-screen';second.append(reviewLink);
+ const first=el('section'),second=el('section');first.className=second.className='card';first.append(el('h2','一、全书地点网络'),el('p','全书地点词共用一张图。同篇出现的地点相连；线宽表示共同出现的篇数。切换“已定位地点”或“全部地点词”；未定位地点不进入前者。'));second.append(el('h2','二、地点与空间'),el('p','点击上图地名，下图显示该地的空间词；也可用下拉框选择。点线查看篇目、人物和原文。'));container.append(first,second);const reviewLink=el('a','地点词修改列表');reviewLink.href='../../index.html?review=places#reports-screen';second.append(reviewLink);const unassigned=el('details');unassigned.append(el('summary','空间归属未定（'+graphs.pending.length+'处）'));for(const r of graphs.pending.slice(0,60))unassigned.append(el('strong','《'+r.chapter+'》 · '+r.space),el('blockquote',r.text));second.append(unassigned);const reportLink=el('a','重名与分类核对报告（JSON）');reportLink.href='../../reports/place-space-sync-audit.json';second.append(reportLink);
  const allOut=el('div'),spaceOut=el('div'),pick=el('select'),range=el('select');range.setAttribute('aria-label','地点网络范围');for(const [v,t]of [['located','已定位地点'],['all','全部地点词']]){const o=el('option',t);o.value=v;range.append(o);}range.value='all';pick.setAttribute('aria-label','选择地点查看内部空间');for(const n of graphs.spaces.nodes.filter(n=>n.kind==='place').sort((a,b)=>a.label.localeCompare(b.label))){const o=el('option',n.label);o.value=n.id;pick.append(o);}if(graphs.spaces.nodes.some(n=>n.id==='place:济南'))pick.value='place:济南';const rangeLabel=el('label','网络范围');rangeLabel.append(range);first.append(rangeLabel,allOut);const controls=el('div'),placeLabel=el('label','地点词');controls.className='filters';placeLabel.append(pick);controls.append(placeLabel);second.append(controls,spaceOut);
 
  let prepared=null,levels={},levelsReady=false;
