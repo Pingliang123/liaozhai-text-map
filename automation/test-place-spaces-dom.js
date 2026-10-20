@@ -43,5 +43,7 @@ window.GhostPlaceLevelColors=require('../assets/research-lab/place-level-colors'
  assert(all(row,'a').some(a=>a.href==='../../index.html#location-panel'));
  row.ontoggle();assert.equal(all(row,'blockquote').length,24);
  scope.value='all';scope.onchange();assert.equal(all(firstSection,'circle').length,3);
+ const realmRoot=new E('main'),realmChapter={id:9,title:'异境篇',places:['未知地'],spaces:[],units:[{id:0,text:'未知地人，后诉之冥府。'}],steps:[],realm_evidence:[{id:'e-9',realm:'地界',space:'冥府',unit:0,excerpt:'后诉之冥府。'}],evidence_review:{}};
+ window.GhostPlaceSpaces.mount(realmRoot,[realmChapter],()=>{});const realmScope=all(realmRoot,'select').find(n=>n.attrs['aria-label']==='地点网络范围');realmScope.value='unmapped';realmScope.onchange();await new Promise(resolve=>setImmediate(resolve));const realmSection=all(realmRoot,'section').find(n=>n.children.some(x=>x.textContent==='一、全书地点网络'));assert(all(realmSection,'text').some(n=>n.textContent==='冥府'),'未定位地点网络仍显示有原文证据的异境节点');assert.equal(all(realmSection,'circle').length,2);
  console.log('PASS loading guard, mapped alias, lazy full evidence and revision link');
 })().catch(e=>{console.error(e);process.exitCode=1;});

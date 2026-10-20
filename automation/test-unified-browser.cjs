@@ -14,6 +14,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
   });
   await page.goto('http://map.test/index.html');await page.locator('#data-status').waitFor({state:'hidden',timeout:90000});
   assert.deepEqual(errors,[],'Main page must start without JS errors');
+  const labEntry=page.locator('#nav-lab-top');assert.equal(await labEntry.count(),1,'Header must expose the spatial network lab');assert(await labEntry.isVisible());assert((await labEntry.getAttribute('href')).startsWith('assets/research-lab/'));
   await page.locator('header a[href="#vocabulary-editor"]').click();await page.locator('#vocabulary-editor').waitFor({state:'visible'});
   await page.getByLabel('词汇类别',{exact:true}).selectOption('places');await page.getByLabel('搜索词汇',{exact:true}).fill('金陵');
   await page.waitForTimeout(450);assert(await page.locator('#vocabulary-editor tbody tr').count()>0);

@@ -20,7 +20,7 @@
 <style>.editor-group{border-top:1px solid var(--line);padding-top:4px}.panel>summary{font-size:19px;padding:2px 0}.section-nav{position:relative}.research-sequence{display:flex;gap:16px;overflow-x:auto;padding:10px 10px 20px 30px;align-items:stretch}.research-step{min-width:280px;max-width:360px;flex:0 0 320px;border:1px solid var(--line);border-radius:10px;padding:14px;background:#fafbf7}.research-step::marker{font-weight:bold}.research-document{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.9;font:inherit;max-width:85ch}.research-step blockquote{max-height:200px;overflow:auto}@media(max-width:480px){.research-step{flex-basis:260px;min-width:260px}}</style>
 <style>
 .main-nav a[aria-current=page],.research-nav a[aria-current=page]{background:#234d43;color:white}
-.main-nav{gap:8px}.research-nav{gap:6px;border-bottom:1px solid var(--line);padding-bottom:12px}
+.main-nav{gap:8px}.main-nav .lab-entry{background:#b54736;color:#fff;font-weight:700;box-shadow:0 2px 0 #7d2f25}.main-nav .lab-entry:hover{background:#913b2e}.research-nav{gap:6px;border-bottom:1px solid var(--line);padding-bottom:12px}
 .app-bar{position:sticky;top:0;z-index:10;background:#f4f3edf5;border-bottom:1px solid var(--line)}
 .app-bar-inner{max-width:1600px;margin:auto;padding:10px 24px;display:flex;align-items:center;gap:24px}
 .app-bar h1{font-size:21px;margin:0;white-space:nowrap}.app-bar .main-nav{margin:0;flex-shrink:0}
@@ -68,7 +68,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <body>
 <div class="app-bar"><div class="app-bar-inner">
 <h1>聊斋文本地图</h1>
-<nav class="section-nav main-nav" aria-label="页面导航"><a id="nav-map" href="#map-section">地图</a><a id="nav-text" href="#workspace">文本与修订</a><a id="nav-research" href="#research-hub">空间研究</a><a id="nav-reports" href="#reports-screen">数据报表</a></nav>
+<nav class="section-nav main-nav" aria-label="页面导航"><a id="nav-map" href="#map-section">地图</a><a id="nav-text" href="#workspace">文本与修订</a><a id="nav-research" href="#research-hub">空间研究</a><a id="nav-reports" href="#reports-screen">数据报表</a><a id="nav-lab-top" class="lab-entry" href="assets/research-lab/?v=linkedspaces-5eb1830">空间网络实验室 ↗</a></nav>
 <div class="save-indicator"><span id="global-edit-status" role="status" aria-live="polite"></span><button id="quick-save" class="primary" hidden title="保存当前篇全部修订（Ctrl / ⌘ + S）">保存本篇</button></div>
 </div></div>
 <header>
