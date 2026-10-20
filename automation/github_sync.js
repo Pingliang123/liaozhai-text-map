@@ -57,7 +57,7 @@
         if(equal(mine,incoming.doc)){
           acknowledge(incoming.doc);status(connected()?'本机与云端一致。':'已载入云端修订；连接 GitHub 后可自动提交修改。');return;
         }
-        const merged=equal(ancestor,mine)?incoming.doc:equal(ancestor,incoming.doc)?validate(mine):options.merge(ancestor,mine,incoming.doc);
+        const merged=equal(ancestor,mine)?incoming.doc:options.merge(ancestor,mine,incoming.doc);
         if(!connected()) {
           // Never acknowledge unsent local edits as part of the cloud ancestor.
           if(!equal(merged,options.getLocal()))await options.apply(merged);
