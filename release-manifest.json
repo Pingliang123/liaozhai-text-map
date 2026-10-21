@@ -3,7 +3,7 @@
   "counts": {
     "chapters": 491,
     "manual_chapters": 484,
-    "manual_locations": 27
+    "manual_locations": 29
   },
   "research_files": [
     {
@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11059165,
-      "sha256": "273e5ce4a2a30ea3411612f9758f1fbb67332ff2e4d1b00fb7e4b27e1a12d38e"
+      "bytes": 11060620,
+      "sha256": "dc1e3c08c25c658c5ad8b573b3ab49560d25251aa54a58c1a6c5c5d20b372159"
     }
   ],
   "artifacts": [
@@ -520,8 +520,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32427121,
-      "sha256": "459cec307ee20d135a123767ed82a0eacb43084c246df9764b04d0a04efafa36"
+      "bytes": 32432182,
+      "sha256": "099dbf33e35707232d949f2ff1376e3073310a2a7db62d2dce557d14ba42b70f"
     },
     {
       "path": "data.html",
@@ -546,17 +546,17 @@
     {
       "path": "index.html",
       "bytes": 280324,
-      "sha256": "d8e51a13d6f50555371e57a7089989c4772d5b8641cd4d18e0b7604f306d1d93"
+      "sha256": "c7a59e0294062ddedde6c3711b85a6f8e65b88221e11636d5337c0f4cd304da6"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11059165,
-      "sha256": "273e5ce4a2a30ea3411612f9758f1fbb67332ff2e4d1b00fb7e4b27e1a12d38e"
+      "bytes": 11060620,
+      "sha256": "dc1e3c08c25c658c5ad8b573b3ab49560d25251aa54a58c1a6c5c5d20b372159"
     },
     {
       "path": "research-data.zip",
-      "bytes": 19108357,
-      "sha256": "a8b9444165bbcecf391f72bc95a7186521712936e93de72f3773bb4f6837a4e7"
+      "bytes": 19108582,
+      "sha256": "e922c3474253c13d4612a3072140673f62bed02b36eb9eabab4ea52c1318fe25"
     }
   ]
 }
