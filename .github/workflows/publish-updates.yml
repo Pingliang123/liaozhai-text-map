@@ -100,6 +100,8 @@ jobs:
           node automation/test-place-spaces.js
           node automation/test-lab-otherworld.js
           node automation/test-place-spaces-dom.js
+          node automation/build-analysis-reports.js
+          node automation/test-analysis-reports.js
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
           node automation/test-performance.js
@@ -138,7 +140,7 @@ jobs:
           cp index.html data.html data-package.json manual-revisions.json research-data.zip release-manifest.json github-sync.js github-login.js github-sync-config.json audit-reports.js public/
           cp -r assets public/assets
           mkdir -p public/reports
-          cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md public/reports/
+          cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md reports/analysis-reports-20261021.json reports/analysis-reports-20261021.md public/reports/
           cp reports/unified-migration-verification-20261020.json public/reports/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
