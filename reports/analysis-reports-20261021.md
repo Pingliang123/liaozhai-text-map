@@ -11,9 +11,9 @@
 
 |层|节点|边|
 |---|---:|---:|
-|chapter-place|995|862|
-|place-place|504|2122|
-|place-space|971|105|
-|person-context|2820|943|
+|chapter-place|940|802|
+|place-place|449|1770|
+|place-space|966|90|
+|person-context|2815|943|
 
 候选与边界疑点保留原文证据，未自动覆盖人工修订。

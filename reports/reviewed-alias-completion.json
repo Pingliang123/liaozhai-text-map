@@ -1,0 +1,662 @@
+{
+  "changes": [
+    {
+      "word": "陕右",
+      "target": "陕西",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "陕右",
+        "admin_level": "province",
+        "parent_id": null,
+        "modern_name": "陕西区域参考",
+        "region_description": "与陕西同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 108.95,
+        "lat": 34.26,
+        "source_url": "https://ihns.cas.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwdj/202310/t20231030_6910650.html",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 64,
+          "chapter": "某公",
+          "quotes": [
+            "陕右某公，辛丑进士，能记前身。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "粤西",
+      "target": "广西",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "粤西",
+        "admin_level": "province",
+        "parent_id": null,
+        "modern_name": "广西区域参考",
+        "region_description": "与广西同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 110.28626,
+        "lat": 25.28006,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_25055",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 69,
+          "chapter": "阿宝",
+          "quotes": [
+            "粤西孙子楚，名士也。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "东粤",
+      "target": "广东",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "东粤",
+        "admin_level": "province",
+        "parent_id": null,
+        "modern_name": "广东区域参考",
+        "region_description": "与广东同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 113.25607,
+        "lat": 23.13462,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_25054",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 262,
+          "chapter": "阿英",
+          "quotes": [
+            "玉自东粤归，闻乱，兼程进。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "京师",
+      "target": "顺天",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "京师",
+        "admin_level": "prefecture",
+        "parent_id": "place-直隶",
+        "modern_name": "顺天区域参考",
+        "region_description": "与顺天同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 116.368,
+        "lat": 39.93143,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9513",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 415,
+          "chapter": "任秀",
+          "quotes": [
+            "有表叔张某，贾京师，劝使赴都，愿携与俱，不耗其赀。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "北平",
+      "target": "顺天",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "北平",
+        "admin_level": "prefecture",
+        "parent_id": "place-直隶",
+        "modern_name": "顺天区域参考",
+        "region_description": "与顺天同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 116.368,
+        "lat": 39.93143,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9513",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 336,
+          "chapter": "于去恶",
+          "quotes": [
+            "北平陶圣俞，名下士。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "莱郡",
+      "target": "莱州",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "莱郡",
+        "admin_level": "prefecture",
+        "parent_id": "place-山东",
+        "modern_name": "莱州区域参考",
+        "region_description": "与莱州同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 119.94,
+        "lat": 37.18,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9672",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 433,
+          "chapter": "于子游",
+          "quotes": [
+            "康熙初年，莱郡潮出大鱼，鸣号数日，其声如牛。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "济郡",
+      "target": "济南府",
+      "relation": "same-reference-area",
+      "location": {
+        "name": "济郡",
+        "admin_level": "prefecture",
+        "parent_id": "place-山东",
+        "modern_name": "济南府区域参考",
+        "region_description": "与济南府同区的文本名称",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 117.00149,
+        "lat": 36.65013,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9673",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 475,
+          "chapter": "韩方",
+          "quotes": [
+            "明季，济郡以北数州县，邪疫大作，比户皆然。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "蔡店",
+      "target": "阳信",
+      "relation": "within-reference-region",
+      "location": {
+        "name": "蔡店",
+        "admin_level": "village",
+        "parent_id": "place-阳信",
+        "modern_name": "阳信区域参考",
+        "region_description": "位于阳信区域内；采用区域参考点",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 117.57631,
+        "lat": 37.64083,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1006",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "quotes": [
+            "阳信某翁者，邑之蔡店人。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "新城",
+      "target": "济南府",
+      "relation": "within-reference-region",
+      "location": {
+        "name": "新城",
+        "admin_level": "county",
+        "parent_id": "place-济南府",
+        "modern_name": "济南府区域参考",
+        "region_description": "位于济南府区域内；采用区域参考点",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 117.00149,
+        "lat": 36.65013,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9673",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 58,
+          "chapter": "耿十八",
+          "quotes": [
+            "新城耿十八，病危笃，自知不起。"
+          ]
+        },
+        {
+          "chapter_id": 154,
+          "chapter": "捉鬼射狐",
+          "quotes": [
+            "李公著明，睢宁令襟卓先生公子也，为人豪爽无馁怯，为新城王季良内弟。"
+          ]
+        }
+      ]
+    },
+    {
+      "word": "青城山",
+      "target": "成都",
+      "relation": "within-reference-region",
+      "location": {
+        "name": "青城山",
+        "admin_level": "natural",
+        "parent_id": "place-成都",
+        "modern_name": "成都区域参考",
+        "region_description": "位于成都区域内；采用区域参考点",
+        "modern_level": "历史文本区域参考",
+        "coordinate_kind": "approximate",
+        "lon": 104.06,
+        "lat": 30.57,
+        "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9713",
+        "note": "根据原文籍贯、行旅或明确区域指称复核；此坐标为区域参考，不是独立精确位置。"
+      },
+      "evidence": [
+        {
+          "chapter_id": 459,
+          "chapter": "青城妇",
+          "quotes": [
+            "先是，有西商客成都，娶青城山寡妇。",
+            "」初不言，诘再三，始曰：「此处绕青城山有数村落，其中妇女多为蛇交，则生女尖喙，阴中有物类蛇舌。"
+          ]
+        }
+      ]
+    }
+  ],
+  "held": [],
+  "before_locations": [
+    {
+      "name": "阳信",
+      "admin_level": "county",
+      "parent_id": "place-济南府",
+      "modern_name": "阳信县",
+      "region_description": "《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_85534",
+      "note": "DeepSeek语境核查；历史地名参考点，不代表独立精确坐标。《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。",
+      "coordinate_kind": "approximate",
+      "lon": 117.57631,
+      "lat": 37.64083
+    },
+    {
+      "name": "都",
+      "admin_level": "prefecture",
+      "parent_id": null,
+      "modern_name": "当时首都（北京参考点）",
+      "region_description": "“都”是原文的泛称，按篇目时代指当时首都；地图采用北京参考点，不等同于每一篇的精确故事地点。",
+      "modern_level": "首都语义地点（参考点）",
+      "source_url": "https://chgis.hudci.org/tgw/",
+      "note": "用户核定：都指当时首都。该记录用于合并京都、都中、都城等词，不把泛称误写成固定现代地名。",
+      "coordinate_kind": "approximate",
+      "lon": 116.4074,
+      "lat": 39.9042
+    },
+    {
+      "name": "淄邑",
+      "admin_level": "county",
+      "parent_id": "place-济南府",
+      "modern_name": "淄川",
+      "region_description": "与淄川共用区域参考点；保留原文名称",
+      "modern_level": "历史文本区域参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1033",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 118,
+      "lat": 36.65
+    },
+    {
+      "name": "太山",
+      "admin_level": "natural",
+      "parent_id": null,
+      "modern_name": "泰山",
+      "region_description": "与泰山共用区域参考点；保留原文名称",
+      "modern_level": "历史文本区域参考",
+      "source_url": "https://twh.boch.gov.tw/world/intro.aspx?id=545",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。 “太山帝君”等称号不单独证明地理到访。",
+      "coordinate_kind": "approximate",
+      "lon": 117.1,
+      "lat": 36.26
+    },
+    {
+      "name": "淄",
+      "admin_level": "county",
+      "parent_id": "place-济南府",
+      "modern_name": "淄川",
+      "region_description": "与淄川共用区域参考点；保留原文名称",
+      "modern_level": "历史文本区域参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1033",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 118,
+      "lat": 36.65
+    },
+    {
+      "name": "千佛山",
+      "admin_level": "natural",
+      "parent_id": "place-济南府",
+      "modern_name": "千佛山（济南府区域参考）",
+      "region_description": "采用济南府的区域参考点；千佛山在济南府城附近，为济南名山；故事人物在济南语境中前往，可与济南府同区共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9673",
+      "note": "DeepSeek语境核查；上级区域参考点，不代表独立精确坐标。千佛山在济南府城附近，为济南名山；故事人物在济南语境中前往，可与济南府同区共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 117.00149,
+      "lat": 36.65013
+    },
+    {
+      "name": "燕都",
+      "admin_level": "prefecture",
+      "parent_id": null,
+      "modern_name": "燕都（京区域参考）",
+      "region_description": "采用京的区域参考点；燕都指北京，即清代都城；故事年代为清，与“京”所指顺天/北京同区，可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgw/",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。燕都指北京，即清代都城；故事年代为清，与“京”所指顺天/北京同区，可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 116.4074,
+      "lat": 39.9042
+    },
+    {
+      "name": "西岳",
+      "admin_level": "natural",
+      "parent_id": null,
+      "modern_name": "西岳（华山区域参考）",
+      "region_description": "采用华山的区域参考点；西岳即华山，原文“道经华阴”亦印证；与现有华山同区，可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgw/",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。西岳即华山，原文“道经华阴”亦印证；与现有华山同区，可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 110.093,
+      "lat": 34.545
+    },
+    {
+      "name": "胶",
+      "admin_level": "prefecture",
+      "parent_id": "place-莱州",
+      "modern_name": "胶（胶州区域参考）",
+      "region_description": "采用胶州的区域参考点；原文“我胶娼也”为胶州籍贯；籍贯仍是地点线索，共用胶州区域参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1044",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。原文“我胶娼也”为胶州籍贯；籍贯仍是地点线索，共用胶州区域参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 120.03,
+      "lat": 36.26
+    },
+    {
+      "name": "邬镇",
+      "admin_level": "town",
+      "parent_id": "place-招远县",
+      "modern_name": "邬镇（招远县区域参考）",
+      "region_description": "采用招远县的区域参考点；《王六郎》明言“授为招远县邬镇土地”，邬镇为招远县下辖镇，属登州府，虽无CHGIS独立记录，可定位在招远县内。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1015",
+      "note": "DeepSeek语境核查；上级区域参考点，不代表独立精确坐标。《王六郎》明言“授为招远县邬镇土地”，邬镇为招远县下辖镇，属登州府，虽无CHGIS独立记录，可定位在招远县内。",
+      "coordinate_kind": "approximate",
+      "lon": 120.38838,
+      "lat": 37.35215
+    },
+    {
+      "name": "石坑庄",
+      "admin_level": "village",
+      "parent_id": "place-章丘",
+      "modern_name": "石坑庄（章丘区域参考）",
+      "region_description": "采用章丘的区域参考点；原文“即章丘石坑庄”，是具名村庄；保留地名，采用章丘区域参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1037",
+      "note": "DeepSeek语境核查；上级区域参考点，不代表独立精确坐标。原文“即章丘石坑庄”，是具名村庄；保留地名，采用章丘区域参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 117.4939,
+      "lat": 36.81467
+    },
+    {
+      "name": "相公庄",
+      "admin_level": "village",
+      "parent_id": "place-章丘",
+      "modern_name": "相公庄（章丘区域参考）",
+      "region_description": "采用章丘的区域参考点；引文称“章丘小相公庄”，为章丘县所辖村庄，可与章丘同区定位。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1037",
+      "note": "DeepSeek语境核查；上级区域参考点，不代表独立精确坐标。引文称“章丘小相公庄”，为章丘县所辖村庄，可与章丘同区定位。",
+      "coordinate_kind": "approximate",
+      "lon": 117.4939,
+      "lat": 36.81467
+    },
+    {
+      "name": "招远",
+      "admin_level": "county",
+      "parent_id": "place-登州",
+      "modern_name": "招远（招远县区域参考）",
+      "region_description": "采用招远县的区域参考点；“招远张于旦”指招远县人，与现有招远县同地。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1015",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。“招远张于旦”指招远县人，与现有招远县同地。",
+      "coordinate_kind": "approximate",
+      "lon": 120.38838,
+      "lat": 37.35215
+    },
+    {
+      "name": "粤",
+      "admin_level": "province",
+      "parent_id": null,
+      "modern_name": "粤（广东区域参考）",
+      "region_description": "采用广东的区域参考点；三篇引句均以“粤”指岭南广东一带，与现有省级地名“广东”同区可共用参考点，而非仅在其境内某点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_25054",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。三篇引句均以“粤”指岭南广东一带，与现有省级地名“广东”同区可共用参考点，而非仅在其境内某点。",
+      "coordinate_kind": "approximate",
+      "lon": 113.25607,
+      "lat": 23.13462
+    },
+    {
+      "name": "陕",
+      "admin_level": "province",
+      "parent_id": null,
+      "modern_name": "陕（陕西区域参考）",
+      "region_description": "采用陕西的区域参考点；「陕人」「赴陕」为陕西行省简称，属人物籍贯与行旅目的地。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://ihns.cas.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwdj/202310/t20231030_6910650.html",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。「陕人」「赴陕」为陕西行省简称，属人物籍贯与行旅目的地。",
+      "coordinate_kind": "approximate",
+      "lon": 108.95,
+      "lat": 34.26
+    },
+    {
+      "name": "汴梁",
+      "admin_level": "prefecture",
+      "parent_id": "place-河南",
+      "modern_name": "汴梁（开封区域参考）",
+      "region_description": "采用开封的区域参考点；汴梁即开封府旧称，河伯占城云云为神异情节，但地名仍指开封府城。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9597",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。汴梁即开封府旧称，河伯占城云云为神异情节，但地名仍指开封府城。",
+      "coordinate_kind": "approximate",
+      "lon": 114.34333,
+      "lat": 34.78548
+    },
+    {
+      "name": "济城",
+      "admin_level": "prefecture",
+      "parent_id": "place-山东",
+      "modern_name": "济城（济南府区域参考）",
+      "region_description": "采用济南府的区域参考点；《公孙九娘》述于七案连坐者葬济南城郊，《鬼隶》'济城快皂'亦指济南府城，与现有济南府同区，可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9673",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。《公孙九娘》述于七案连坐者葬济南城郊，《鬼隶》'济城快皂'亦指济南府城，与现有济南府同区，可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 117.00149,
+      "lat": 36.65013
+    },
+    {
+      "name": "太华",
+      "admin_level": "natural",
+      "parent_id": null,
+      "modern_name": "太华（华山区域参考）",
+      "region_description": "采用华山的区域参考点；太华即华山，属自然山体，位于华阴县境，与现有华山同区可共用参考点，故用same-area。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgw/",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。太华即华山，属自然山体，位于华阴县境，与现有华山同区可共用参考点，故用same-area。",
+      "coordinate_kind": "approximate",
+      "lon": 110.093,
+      "lat": 34.545
+    },
+    {
+      "name": "华岳",
+      "admin_level": "natural",
+      "parent_id": null,
+      "modern_name": "华岳（华山区域参考）",
+      "region_description": "采用华山的区域参考点；《花姑子》'路经华岳'，华岳即西岳华山，属自然山岳，与现有'华山'为同一地理实体。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgw/",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。《花姑子》'路经华岳'，华岳即西岳华山，属自然山岳，与现有'华山'为同一地理实体。",
+      "coordinate_kind": "approximate",
+      "lon": 110.093,
+      "lat": 34.545
+    },
+    {
+      "name": "岱",
+      "admin_level": "natural",
+      "parent_id": "place-泰安",
+      "modern_name": "岱（泰山区域参考）",
+      "region_description": "采用泰山的区域参考点；村人以香社登岱，岱即泰山，为香社朝山进香之地，与现有泰山同区，可共用泰山参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://twh.boch.gov.tw/world/intro.aspx?id=545",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。村人以香社登岱，岱即泰山，为香社朝山进香之地，与现有泰山同区，可共用泰山参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 117.1,
+      "lat": 36.26
+    },
+    {
+      "name": "洋县",
+      "admin_level": "county",
+      "parent_id": "place-汉中",
+      "modern_name": "洋县（汉中区域参考）",
+      "region_description": "采用汉中的区域参考点；原文称厍大有为汉中洋县人，洋县为汉中府属县，属汉中府辖境，应归入汉中府范围内近似定位。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9664",
+      "note": "DeepSeek语境核查；上级区域参考点，不代表独立精确坐标。原文称厍大有为汉中洋县人，洋县为汉中府属县，属汉中府辖境，应归入汉中府范围内近似定位。",
+      "coordinate_kind": "approximate",
+      "lon": 107.03519,
+      "lat": 33.07648
+    },
+    {
+      "name": "吴门",
+      "admin_level": "prefecture",
+      "parent_id": null,
+      "modern_name": "吴门（苏州区域参考）",
+      "region_description": "采用苏州的区域参考点；吴门为苏州别称，指苏州府。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_32432",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。吴门为苏州别称，指苏州府。",
+      "coordinate_kind": "approximate",
+      "lon": 120.62,
+      "lat": 31.3
+    },
+    {
+      "name": "山右",
+      "admin_level": "province",
+      "parent_id": null,
+      "modern_name": "山右（山西区域参考）",
+      "region_description": "采用山西的区域参考点；山右为山西别称，文中霍姓族籍所指，与山西省同区。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_25011",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。山右为山西别称，文中霍姓族籍所指，与山西省同区。",
+      "coordinate_kind": "approximate",
+      "lon": 112.56483,
+      "lat": 37.87375
+    },
+    {
+      "name": "汴",
+      "admin_level": "prefecture",
+      "parent_id": "place-河南",
+      "modern_name": "汴（开封区域参考）",
+      "region_description": "采用开封的区域参考点；原文“思欲之汴城寻赤城”，汴指汴城/汴梁，即开封，现有地点开封为河南下属府，同区可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9597",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。原文“思欲之汴城寻赤城”，汴指汴城/汴梁，即开封，现有地点开封为河南下属府，同区可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 114.34333,
+      "lat": 34.78548
+    },
+    {
+      "name": "汴城",
+      "admin_level": "prefecture",
+      "parent_id": "place-河南",
+      "modern_name": "汴城（开封区域参考）",
+      "region_description": "采用开封的区域参考点；原文“询至玄帝观”“之汴城寻赤城”，汴城即开封城，现有地点开封为河南下属府，同区可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9597",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。原文“询至玄帝观”“之汴城寻赤城”，汴城即开封城，现有地点开封为河南下属府，同区可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 114.34333,
+      "lat": 34.78548
+    },
+    {
+      "name": "会稽",
+      "admin_level": "prefecture",
+      "parent_id": null,
+      "modern_name": "会稽（绍兴区域参考）",
+      "region_description": "采用绍兴的区域参考点；会稽为绍兴府附郭县及古郡名，故事中「会稽万生」指籍贯，可与绍兴同区共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_32185",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。会稽为绍兴府附郭县及古郡名，故事中「会稽万生」指籍贯，可与绍兴同区共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 120.57826,
+      "lat": 30.00451
+    },
+    {
+      "name": "洛下",
+      "admin_level": "county",
+      "parent_id": "place-河南",
+      "modern_name": "洛下（洛阳区域参考）",
+      "region_description": "采用洛阳的区域参考点；「洛下」即洛阳一带，与现有洛阳同区共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_550",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。「洛下」即洛阳一带，与现有洛阳同区共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 112.45,
+      "lat": 34.62
+    },
+    {
+      "name": "酆都",
+      "admin_level": "county",
+      "parent_id": null,
+      "modern_name": "酆都（酆都县区域参考）",
+      "region_description": "采用酆都县的区域参考点；《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1281",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。",
+      "coordinate_kind": "approximate",
+      "lon": 107.71456,
+      "lat": 29.8874
+    },
+    {
+      "name": "顺天府",
+      "admin_level": "prefecture",
+      "parent_id": "place-直隶",
+      "modern_name": "顺天府（顺天区域参考）",
+      "region_description": "采用顺天的区域参考点；原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。",
+      "modern_level": "文本地理参考",
+      "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9513",
+      "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。",
+      "coordinate_kind": "approximate",
+      "lon": 116.368,
+      "lat": 39.93143
+    }
+  ]
+}
