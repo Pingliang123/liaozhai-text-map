@@ -35,7 +35,7 @@ const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.
 function mount(container,chapters,onExport){
  const data=build(chapters),intro=el('section');intro.className='card';intro.append(el('h2','异与空间'),el('p','从人物的停留与穿梭，考察环境、人物和事件如何构成“异”。篇目异事类型与人物身份分别列出。'));container.append(intro);
  const mode=el('select');mode.setAttribute('aria-label','选择关系类型');
- for(const [v,t]of [['cooccurrence','地点关联 · 同篇'],['movement','人物穿梭 · 有向'],['incidence','篇目与地点 · 二模']]){const o=el('option',t);o.value=v;mode.append(o);}
+ for(const [v,t]of [['movement','人物穿梭 · 有向'],['incidence','篇目与地点 · 二模']]){const o=el('option',t);o.value=v;mode.append(o);}
  const area=el('div');intro.append(mode);container.append(area);
  function draw(){area.replaceChildren();const g=data[mode.value];root.GhostBookNetwork.mount(area,chapters,()=>{},{graph:g,simple:true,readable:true,allowAll:true,initialView:'all',spreadLayout:true,weightedDirected:mode.value==='movement',realmColors:true,networkTitle:mode.selectedOptions[0].textContent,kindLegend:'朱红：异境。节点保留各自的地点或篇目身份。',relationLegend:mode.value==='movement'?'箭头：保存路径的起点 → 终点；线宽：步骤数。':'线宽：同篇篇数或篇目与地点的一次关联。线长不表示地理距离。',edgeLabel:e=>{const r=e.evidence[0];return '《'+r.chapter+'》'+(r.actors?.length?' · '+r.actors.join('、'):'');}});}
  mode.onchange=draw;draw();
