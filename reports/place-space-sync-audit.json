@@ -627,25 +627,6 @@
       ]
     },
     {
-      "word": "都中",
-      "chapter": "张诚",
-      "chapter_id": 72,
-      "kind": "places",
-      "key": "places:都中",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "都中"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 4617,
-          "text": "适张别驾自都中来，过之，见其貌文，怜而抚之，渐苏。"
-        }
-      ]
-    },
-    {
       "word": "冥司",
       "chapter": "张诚",
       "chapter_id": 72,
@@ -661,6 +642,25 @@
         {
           "unit": 4589,
           "text": "菩萨几十年一入冥司，拔诸苦恼，今适值之。"
+        }
+      ]
+    },
+    {
+      "word": "都中",
+      "chapter": "张诚",
+      "chapter_id": 72,
+      "kind": "places",
+      "key": "places:都中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "都中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 4617,
+          "text": "适张别驾自都中来，过之，见其貌文，怜而抚之，渐苏。"
         }
       ]
     },
@@ -931,25 +931,6 @@
       ]
     },
     {
-      "word": "都中",
-      "chapter": "白于玉",
-      "chapter_id": 98,
-      "kind": "places",
-      "key": "places:都中",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "都中"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 6483,
-          "text": "都中延烧民舍数万间，左右前后，并为灰烬，独吴第无恙，惟东南一小阁，化为乌有，即钏口漏覆处也。"
-        }
-      ]
-    },
-    {
       "word": "凤翔",
       "chapter": "白于玉",
       "chapter_id": 98,
@@ -984,6 +965,25 @@
         {
           "unit": 6355,
           "text": "童导入广寒宫，内以水晶为阶，行人如在镜中。"
+        }
+      ]
+    },
+    {
+      "word": "都中",
+      "chapter": "白于玉",
+      "chapter_id": 98,
+      "kind": "places",
+      "key": "places:都中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "都中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 6483,
+          "text": "都中延烧民舍数万间，左右前后，并为灰烬，独吴第无恙，惟东南一小阁，化为乌有，即钏口漏覆处也。"
         }
       ]
     },
@@ -1680,15 +1680,15 @@
       ]
     },
     {
-      "word": "益都",
+      "word": "淄川",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:益都",
+      "key": "places:淄川",
       "status": "pending",
       "present": false,
       "matches": [
-        "益都"
+        "淄川"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -1699,15 +1699,15 @@
       ]
     },
     {
-      "word": "淄川",
+      "word": "益都",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:淄川",
+      "key": "places:益都",
       "status": "pending",
       "present": false,
       "matches": [
-        "淄川"
+        "益都"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -2372,25 +2372,6 @@
       ]
     },
     {
-      "word": "泗水",
-      "chapter": "豢蛇",
-      "chapter_id": 234,
-      "kind": "places",
-      "key": "places:泗水",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "泗水"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 14846,
-          "text": "泗水山中，旧有禅院，四无村落，人迹罕及，有道士栖止其中。"
-        }
-      ]
-    },
-    {
       "word": "中州",
       "chapter": "豢蛇",
       "chapter_id": 234,
@@ -2406,6 +2387,25 @@
         {
           "unit": 14872,
           "text": "余乡有客中州者，寄宿蛇佛寺。"
+        }
+      ]
+    },
+    {
+      "word": "泗水",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:泗水",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "泗水"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14846,
+          "text": "泗水山中，旧有禅院，四无村落，人迹罕及，有道士栖止其中。"
         }
       ]
     },
@@ -2809,25 +2809,6 @@
       ]
     },
     {
-      "word": "顺天",
-      "chapter": "柳生",
-      "chapter_id": 278,
-      "kind": "places",
-      "key": "places:顺天",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "顺天"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 17766,
-          "text": "周生，顺天宦裔也。"
-        }
-      ]
-    },
-    {
       "word": "直隶",
       "chapter": "柳生",
       "chapter_id": 278,
@@ -2843,6 +2824,25 @@
         {
           "unit": 17849,
           "text": "至直隶界，厚赐骑者而去。"
+        }
+      ]
+    },
+    {
+      "word": "顺天",
+      "chapter": "柳生",
+      "chapter_id": 278,
+      "kind": "places",
+      "key": "places:顺天",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "顺天"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 17766,
+          "text": "周生，顺天宦裔也。"
         }
       ]
     },
@@ -3604,25 +3604,6 @@
       ]
     },
     {
-      "word": "都中",
-      "chapter": "张鸿渐",
-      "chapter_id": 363,
-      "kind": "places",
-      "key": "places:都中",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "都中"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22593,
-          "text": "喜极，纳入，作呵叱声，曰：「都中少用度，即当早归，何得遣汝半夜来？"
-        }
-      ]
-    },
-    {
       "word": "卢龙",
       "chapter": "张鸿渐",
       "chapter_id": 363,
@@ -3638,6 +3619,25 @@
         {
           "unit": 22440,
           "text": "时卢龙令赵某贪暴，人民共苦之。"
+        }
+      ]
+    },
+    {
+      "word": "都中",
+      "chapter": "张鸿渐",
+      "chapter_id": 363,
+      "kind": "places",
+      "key": "places:都中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "都中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 22593,
+          "text": "喜极，纳入，作呵叱声，曰：「都中少用度，即当早归，何得遣汝半夜来？"
         }
       ]
     },
@@ -4448,25 +4448,6 @@
       ]
     },
     {
-      "word": "莱芜",
-      "chapter": "鸮鸟",
-      "chapter_id": 460,
-      "kind": "places",
-      "key": "places:莱芜",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "莱芜"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29665,
-          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
-        }
-      ]
-    },
-    {
       "word": "新城",
       "chapter": "鸮鸟",
       "chapter_id": 460,
@@ -4495,6 +4476,25 @@
       "present": false,
       "matches": [
         "益都"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 29665,
+          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
+        }
+      ]
+    },
+    {
+      "word": "莱芜",
+      "chapter": "鸮鸟",
+      "chapter_id": 460,
+      "kind": "places",
+      "key": "places:莱芜",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "莱芜"
       ],
       "issue": "同名漏标",
       "evidence": [
