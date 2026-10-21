@@ -44,17 +44,17 @@ function build(chapters,options={}){
  if(options.includeOtherworld){
    for(const original of chapters){
     const accepted=w=>original.reviews?.['places:'+w]?.status==='accepted'&&original.reviews['places:'+w].kind==='places';
-    const cPlaces=original.places.filter(w=>!original.spaces.includes(w)&&(accepted(w)||taxonomy.classify(w).category==='place'));
+    const cPlaces=original.places.filter(w=>!otherworld.has(w)&&!original.spaces.includes(w)&&(accepted(w)||taxonomy.classify(w).category==='place'));
     const evidences=(original.realm_evidence||[]).filter(e=>(e.realm==='天界'||e.realm==='地界')&&e.space&&original.evidence_review?.[e.id]?.kind!=='reject');
     for(const evidence of evidences){
      const otherId=node(evidence.space),other=places.get(otherId);other.realm='otherworld';other.otherworldRealm=evidence.realm;
-     for(const place of cPlaces){
+     for(const place of cPlaces.filter(p=>p!==evidence.space)){
       const source=node(place),key=JSON.stringify([source,otherId]);
       if(!pairs.has(key))pairs.set(key,{source,target:otherId,weight:0,relation:'place-otherworld',chapter:'地点与异境',evidence:[]});
-      const edge=pairs.get(key);if(!edge.evidence.some(r=>r.chapterId===original.id&&r.id===evidence.id)){edge.weight++;edge.evidence.push({id:evidence.id,chapter:original.title,chapterId:original.id,unit:evidence.unit,actors:[],text:evidence.excerpt||'',basis:'篇内异境证据与地点同篇关联',assignment:'otherworld'});}
+      const edge=pairs.get(key);if(!edge.evidence.some(r=>r.chapterId===original.id&&r.id===evidence.id)){edge.weight++;edge.evidence.push({id:evidence.id,chapter:original.title,chapterId:original.id,unit:evidence.unit,actors:[],text:evidence.excerpt||'',basis:'同篇提及，非移动证据',assignment:'otherworld'});}
      }
      const spaceId='space:'+evidence.space;if(!otherworldSpaces.has(spaceId))otherworldSpaces.set(spaceId,{id:spaceId,label:evidence.space,kind:'space',realm:'otherworld',otherworldRealm:evidence.realm,degree:0});
-     for(const place of cPlaces){const source=node(place),key=JSON.stringify([source,spaceId]);if(!spaces.has(key))spaces.set(key,{source,target:spaceId,weight:0,relation:'located-otherworld',chapter:'地点与异境',evidence:[]});const edge=spaces.get(key);if(!edge.evidence.some(r=>r.chapterId===original.id&&r.id===evidence.id)){edge.weight++;edge.evidence.push({id:evidence.id,chapter:original.title,chapterId:original.id,unit:evidence.unit,quote:evidence.excerpt||'',text:evidence.excerpt||'',actors:[],basis:'篇内异境证据与地点同篇关联',assignment:'otherworld'});}}
+     for(const place of cPlaces.filter(p=>p!==evidence.space)){const source=node(place),key=JSON.stringify([source,spaceId]);if(!spaces.has(key))spaces.set(key,{source,target:spaceId,weight:0,relation:'located-otherworld',chapter:'地点与异境',evidence:[]});const edge=spaces.get(key);if(!edge.evidence.some(r=>r.chapterId===original.id&&r.id===evidence.id)){edge.weight++;edge.evidence.push({id:evidence.id,chapter:original.title,chapterId:original.id,unit:evidence.unit,quote:evidence.excerpt||'',text:evidence.excerpt||'',actors:[],basis:'同篇提及，非移动证据',assignment:'otherworld'});}}
     }
    }
   }
