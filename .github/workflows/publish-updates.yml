@@ -16,6 +16,7 @@ on:
       - assets/corpus-store.js
       - assets/vocabulary-grid.*
       - assets/otherworld-map.js
+      - assets/map-network-link.js
       - assets/research-lab/*.js
       - assets/research-lab/*.css
       - assets/research-lab/index.html
@@ -90,6 +91,7 @@ jobs:
           node automation/test-network-freshness.js
           node automation/export-lab-place-levels.js
           node automation/test-place-level-colors.js
+          node automation/test-hierarchy-network.js
           node automation/export-topic-input.js
           node automation/build-topic-model.js
           node automation/test-topic-places.js

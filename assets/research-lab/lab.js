@@ -1,8 +1,15 @@
 (function(root){'use strict';
 // Keep the network readable: hierarchy is a display filter, not a data deletion.
-const hierarchyState={level:'all',records:{}};
+const hierarchyState={level:'all',records:{},year:null};
 const hierarchyBookMount=root.GhostBookNetwork&&root.GhostBookNetwork.mount;
-if(hierarchyBookMount)root.GhostBookNetwork.mount=function(out,chapters,exporter,options={}){if(options.graph&&hierarchyState.level!=='all'){const keep=new Set(options.graph.nodes.filter(n=>n.realm==='otherworld'||n.kind!=='place'||hierarchyState.records[n.label]?.level===hierarchyState.level).map(n=>n.id));options={...options,graph:{...options.graph,nodes:options.graph.nodes.filter(n=>keep.has(n.id)),edges:options.graph.edges.filter(e=>keep.has(e.source)&&keep.has(e.target))}};}return hierarchyBookMount(out,chapters,exporter,options);};
+if(hierarchyBookMount)root.GhostBookNetwork.mount=function(out,chapters,exporter,options={}){
+ const summary=options.graph&&hierarchyState.level!=='all'&&root.GhostHierarchyNetwork?root.GhostHierarchyNetwork.project(options.graph,hierarchyState.records,hierarchyState.level,hierarchyState.year):null;
+ if(summary)options={...options,graph:summary,tutorial:false,positions:undefined,partition:undefined,metrics:undefined};
+ const selected=options.onNodeSelect;const info=document.createElement('div');options={...options,onNodeSelect:id=>{selected?.(id);info.replaceChildren();if(!id.startsWith('place:'))return;const word=id.slice(6),a=document.createElement('a');a.textContent='在地图查看 '+word;a.href='../../index.html?place='+encodeURIComponent(word)+'#map-section';info.append(a);const record=hierarchyState.records[word];for(const r of record?.belongs_to||[]){const p=document.createElement('p');p.textContent=word+' → '+(Object.values(hierarchyState.records).find(x=>x.id===r.target)?.name||r.target)+' · '+(r.reference_year||'年代未定');info.append(p);}}};
+ const result=hierarchyBookMount(out,chapters,exporter,options);out.append(info);
+ if(summary){const details=document.createElement('details'),title=document.createElement('summary');title.textContent='下辖地点原始关联（含区域内关联）';details.append(title);let expanded=false;details.ontoggle=()=>{if(!details.open||expanded)return;expanded=true;for(const e of [...summary.edges,...summary.internal_edges]){const p=document.createElement('p');p.textContent=e.source.slice(6)+' → '+e.target.slice(6)+' · '+e.original_edges.length+' 组原始关联';details.append(p);for(const original of e.original_edges){const line=document.createElement('p');line.textContent=original.source.slice(6)+' → '+original.target.slice(6);details.append(line);}for(const r of e.evidence||[]){const quote=document.createElement('blockquote');quote.textContent='《'+(r.chapter||'')+'》'+(r.text||'');details.append(quote);}}};const note=document.createElement('p');note.textContent='下辖关联已汇总；同一区域内部关联见明细。未能对应本层级的节点：'+summary.projection.unresolved+'。';out.append(note,details);}
+ return result;
+};
 const hierarchyPlacesMount=root.GhostPlaceSpaces&&root.GhostPlaceSpaces.mount;
 if(hierarchyPlacesMount)root.GhostPlaceSpaces.mount=function(container,chapters,onExport){const result=hierarchyPlacesMount(container,chapters,onExport),first=container.querySelector('.card');if(!first)return result;const label=document.createElement('label');label.textContent='显示层级 ';const select=document.createElement('select');select.setAttribute('aria-label','地点网络层级');[['all','全部层级'],['province','省域'],['prefecture','府／州／地市'],['county','县域'],['town','乡镇／村落'],['natural','山川水域'],['unknown','层级待核']].forEach(([v,t])=>{const o=document.createElement('option');o.value=v;o.textContent=t;select.append(o);});select.onchange=()=>{hierarchyState.level=select.value;container.querySelector('select[aria-label="地点网络范围"]')?.dispatchEvent(new Event('change'));};label.append(select);first.insertBefore(label,first.children[1]||null);fetch('place-levels.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{hierarchyState.records=d.places||{};});return result;};
 const verbs=['入','出','归','宿','居','游','过','至','梦','死','生','见','遇','惧','爱','婚','救','杀','审','逃'];
@@ -37,6 +44,7 @@ function render(){if(!data)return;exportRows=[];hierarchyState.level='all';docum
  GhostTopicPlaces.mount(out,cs,rows=>{exportRows=rows;});
  }else if(tab==='relations'){
  GhostPlaceSpaces.mount(out,cs,rows=>{exportRows=rows;});
+ const period=el('label','归属依据 '),year=el('select');year.setAttribute('aria-label','历史归属年份');for(const [v,t]of [['','现有地图归属（年代未定）'],['1820','1820 年资料']]){const option=el('option',t);option.value=v;year.append(option);}year.onchange=()=>{hierarchyState.year=year.value?Number(year.value):null;out.querySelector('select[aria-label="地点网络范围"]')?.dispatchEvent(new Event('change'));};period.append(year);out.querySelector('.card')?.append(period);
  const audit=el('details');audit.append(el('summary','核查资料与四层数据'));const auditLink=el('a','下载词汇核查与四层关系数据');auditLink.href='../../reports/analysis-reports-20261021.json';audit.append(auditLink);out.append(audit);
  }else if(tab==='book'){
  GhostBookNetwork.mount(out,cs,rows=>{exportRows=rows;});
