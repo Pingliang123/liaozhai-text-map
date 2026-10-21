@@ -6,6 +6,6 @@ for(const before of r.rollback.before_locations)assert.deepEqual(d.place_locatio
 assert(!r.changes.some(x=>x.word==='永年'),'不能把广平县当广平府');
 assert(r.changes.find(x=>x.word==='石坑庄').changes.some(c=>c.location),'具名村庄保留地点定位');
 assert(r.changes.find(x=>x.word==='胶').changes.some(c=>c.location),'籍贯仍可作地名');
-for(const row of r.changes)for(const c of row.changes)if(c.location){assert(Number.isFinite(c.location.lon)&&Number.isFinite(c.location.lat));assert(c.location.source_url);assert(c.location.coordinate_kind==='approximate');}
+for(const row of r.changes)for(const c of row.changes)if(c.location){assert(Number.isFinite(c.location.lon)&&Number.isFinite(c.location.lat));assert(c.location.source_url);assert(c.location.coordinate_kind==='approximate');assert(p.base.places.some(x=>x.name===row.word),'定位须进入总地名登记表，恢复部分篇目备份时仍然有效');}
 const before=JSON.stringify(d),rerun=apply(p,d,a);assert.equal(JSON.stringify(d),before);assert(!rerun.rows.some(r=>r.status==='changed'),'重复执行不得覆盖已保存修订');
 console.log('PASS full model audit, source-backed references, manual data preservation, reviewed corrections and idempotent application');
