@@ -1,6 +1,6 @@
 {
   "reviewed": 317,
-  "changed_words": 30,
+  "changed_words": 31,
   "rollback": {
     "before_locations": [
       {
@@ -5321,6 +5321,49 @@
         }
       ],
       "status": "changed"
+    },
+    {
+      "word": "阳信",
+      "decision": {
+        "word": "阳信",
+        "kind": "place",
+        "relation": "within",
+        "target_name": "阳信",
+        "parent_name": "济南府",
+        "candidate_name": "阳信县",
+        "level": "county",
+        "confidence": 0.95,
+        "reason": "《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。"
+      },
+      "changes": [
+        {
+          "action": "补充定位",
+          "location": {
+            "name": "阳信",
+            "admin_level": "county",
+            "parent_id": "place-济南府",
+            "modern_name": "阳信县",
+            "region_description": "《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。",
+            "modern_level": "文本地理参考",
+            "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_85534",
+            "note": "DeepSeek语境核查；历史地名参考点，不代表独立精确坐标。《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。",
+            "coordinate_kind": "approximate",
+            "lon": 117.57631,
+            "lat": 37.64083
+          },
+          "target": null,
+          "relation": "within",
+          "evidence": [
+            {
+              "chapter": "尸变",
+              "quote": [
+                "阳信某翁者，邑之蔡店人。"
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "changed"
     }
   ],
   "unchanged": [
@@ -5646,23 +5689,6 @@
       "changes": [],
       "status": "unchanged",
       "reason": "语境或地理对应不充分"
-    },
-    {
-      "word": "阳信",
-      "decision": {
-        "word": "阳信",
-        "kind": "place",
-        "relation": "within",
-        "target_name": "阳信",
-        "parent_name": "济南府",
-        "candidate_name": "阳信县",
-        "level": "county",
-        "confidence": 0.95,
-        "reason": "《尸变》开篇“阳信某翁者”，阳信为清代山东县名，属济南府，位于武定府辖境，CHGIS记录为阳信县，与现有地点体系可关联至济南府。"
-      },
-      "changes": [],
-      "status": "unchanged",
-      "reason": "保留已有定位或无足够依据"
     },
     {
       "word": "蔡店",

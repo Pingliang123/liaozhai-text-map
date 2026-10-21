@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),M=require('./ghost_map_model');
 function apply(pack,doc,audit){
- const model=M.create(pack.base);model.importDocument(doc);const known=model.places(),protectedLocations=new Set(doc.place_locations.map(x=>x.name)),rows=[];
+ const model=M.create(pack.base);model.importDocument(doc);const known=model.places(),existingLocations=new Map(doc.place_locations.map(x=>[x.name,x])),rows=[];
  const norm=s=>String(s||'').replace(/(?:省|府|县|縣)$/u,'');const resolve=s=>{const exact=known.find(x=>x.name===s);if(exact)return exact;const all=known.filter(x=>norm(x.name)===norm(s));return all.length===1?all[0]:null;};
  const decisions=new Map(audit.decisions.map(d=>[d.word,{...d}]));const initial=new Map(model.ids.map(id=>[id,model.editable(id)]));
  const reviewed={胶:{kind:'place',relation:'same-area',target_name:'胶州',level:'prefecture',confidence:.95,reason:'原文“我胶娼也”为胶州籍贯；籍贯仍是地点线索，共用胶州区域参考点。'},石坑庄:{kind:'place',relation:'within',target_name:'章丘',level:'village',confidence:.95,reason:'原文“即章丘石坑庄”，是具名村庄；保留地名，采用章丘区域参考点。'},异域:{kind:'space',confidence:.95,reason:'异域为未具名的异乡空间泛称，转入空间词。'},平阴人:{kind:'place',corrected_word:'平阴',confidence:.95,reason:'“人”是籍贯后缀；地名为平阴，分词边界应分开。'}};
@@ -15,17 +15,24 @@ function apply(pack,doc,audit){
   for(const id of chapters){const c=model.view(id),input=model.editable(id),source=c.source_units.map(u=>u.text).join('');if(kind==='space'&&!source.includes(word))continue;input.places=input.places.filter(p=>p.word!==word);if(kind==='space'&&!input.space_words.includes(word))input.space_words.push(word);input.lexical_reviews={...input.lexical_reviews,['places:'+word]:{status:kind==='space'?'corrected':'rejected',word:kind==='space'?word:'',kind:kind==='space'?'spaces':'',note:'DeepSeek语境核查：'+d.reason}};
    model.save(id,input);r.changes.push({chapter_id:id,chapter:c.chapter,action:kind==='space'?'地点词 → 空间词':'退出地点词',quote:c.source_units.filter(u=>u.text.includes(word)).map(u=>u.text).slice(0,3)});
   }
- }else if(kind==='place'&&!protectedLocations.has(word)){
+ }else if(kind==='place'){
+  const existingLocation=existingLocations.get(word);
+  if(existingLocation&&Number.isFinite(existingLocation.lon)&&Number.isFinite(existingLocation.lat)){
+   r.reason='已有有效定位，保留原定位';continue;
+  }
   let target=resolve(d.target_name),parent=resolve(d.parent_name),source_url='',lon,lat,precision='',parent_id=null;
+  // “阳信”这类返回会把自身列为 target_name；自身不是上级，不能建立自指关系。
+  const targetReference=target&&target.name!==word?target:null;
   const candidates=(pack.base.historical_place_search?.records?.find(x=>x.word===word)?.matches||[]).filter(x=>x.name===d.candidate_name&&x.uri&&x.data_source==='CHGIS'&&Number.isFinite(x.lon)&&Number.isFinite(x.lat)&&x.lon!==0);
   const coords=new Set(candidates.map(x=>x.lon+','+x.lat));
   const rank={province:1,prefecture:2,county:3,town:4,village:5};
-  if(target&&d.relation==='within'&&rank[d.level]&&rank[target.admin_level]&&rank[d.level]<=rank[target.admin_level]){r.reason='所选上级层级不高于本地，不能确认隶属';continue;}
-  if(target&&['same-area','within'].includes(d.relation)){lon=target.lon;lat=target.lat;source_url=target.level_source_url||target.source_url;const within=d.relation==='within'||d.level==='natural'&&target.admin_level!=='natural';parent_id=within?target.id:target.parent_id;precision=within?'上级区域参考点':'同区参考点';}
-  else if(candidates.length&&coords.size===1){const c=candidates[0];lon=c.lon;lat=c.lat;source_url=c.uri;precision='历史地名参考点';parent_id=parent?.id||null;}
+  if(targetReference&&d.relation==='within'&&rank[d.level]&&rank[targetReference.admin_level]&&rank[d.level]<=rank[targetReference.admin_level]){r.reason='所选上级层级不高于本地，不能确认隶属';continue;}
+  if(targetReference&&['same-area','within'].includes(d.relation)){lon=targetReference.lon;lat=targetReference.lat;source_url=targetReference.level_source_url||targetReference.source_url;const within=d.relation==='within'||d.level==='natural'&&targetReference.admin_level!=='natural';parent_id=within?targetReference.id:targetReference.parent_id;precision=within?'上级区域参考点':'同区参考点';}
+  else if(candidates.length&&coords.size===1){const c=candidates[0];lon=c.lon;lat=c.lat;source_url=c.uri;precision='历史地名参考点';parent_id=parent?.id||existingLocation?.parent_id||null;}
   else {r.reason='没有可复用的已定位区域或唯一历史坐标';continue;}
   if(!source_url||!Number.isFinite(lon)||!Number.isFinite(lat)||Math.abs(lon)>180||Math.abs(lat)>85)continue;
-  const level=['province','prefecture','county','town','village','natural','region'].includes(d.level)?d.level:'unknown';const loc={name:word,admin_level:level,parent_id,modern_name:target?word+'（'+target.name+'区域参考）':d.candidate_name||word,region_description:(target?`采用${target.name}的区域参考点；`:'')+d.reason,modern_level:'文本地理参考',source_url,note:`DeepSeek语境核查；${precision}，不代表独立精确坐标。${d.reason}`,coordinate_kind:'approximate',lon,lat};
+  if(d.relation==='within'&&!targetReference)parent_id=parent?.id||existingLocation?.parent_id||null;
+  const level=['province','prefecture','county','town','village','natural','region'].includes(d.level)?d.level:'unknown';const loc={name:word,admin_level:level,parent_id,modern_name:targetReference?word+'（'+targetReference.name+'区域参考）':d.candidate_name||word,region_description:(targetReference?`采用${targetReference.name}的区域参考点；`:'')+d.reason,modern_level:'文本地理参考',source_url,note:`DeepSeek语境核查；${precision}，不代表独立精确坐标。${d.reason}`,coordinate_kind:'approximate',lon,lat};
   model.saveLocation(loc);r.changes.push({action:'补充定位',location:loc,target:target?.name||null,relation:d.relation,evidence:chapters.map(id=>({chapter:model.view(id).chapter,quote:model.view(id).source_units.filter(u=>u.text.includes(word)).map(u=>u.text).slice(0,3)}))});
  }
  if(r.changes.length)r.status='changed';else r.reason=r.reason||(kind==='otherworld'?'异境保留文本关联，不设现实坐标':'保留已有定位或无足够依据');

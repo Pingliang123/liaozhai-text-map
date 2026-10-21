@@ -4,9 +4,10 @@ assert.equal(a.decisions.length,317);assert.equal(new Set(a.decisions.map(d=>d.w
 assert.deepEqual([...a.batches.flat()].sort(),a.decisions.map(x=>x.word).sort(),'每个送审词均须有独立返回结果');
 assert(a.decisions.some(x=>x.word==='顺天府'&&x.target_name==='顺天'));
 assert(d.place_locations.some(x=>x.name==='顺天府'&&x.parent_id==='place-直隶'&&Number.isFinite(x.lon)),'已确认地名仍须补充定位');
+assert(d.place_locations.some(x=>x.name==='阳信'&&x.parent_id==='place-济南府'&&Number.isFinite(x.lon)&&x.coordinate_kind==='approximate'),'高置信度的待定位记录应补全坐标与上级关系');
 assert(d.overrides.find(x=>x.chapter_id===393).changes.lexical_reviews['places:顺天府'].status==='accepted','补定位不能覆盖用户词类判断');
 for(const before of r.rollback.before_chapters){const after=d.overrides.find(x=>x.chapter_id===before.chapter_id);for(const key of ['event_types','years','people','narrative_events','realms_present'])assert.deepEqual(after.changes[key],before.changes[key]);}
-for(const before of r.rollback.before_locations)assert.deepEqual(d.place_locations.find(x=>x.name===before.name),before);
+for(const before of r.rollback.before_locations.filter(x=>x.name!=='阳信'))assert.deepEqual(d.place_locations.find(x=>x.name===before.name),before);
 assert(!r.changes.some(x=>x.word==='永年'),'不能把广平县当广平府');
 assert(r.changes.find(x=>x.word==='石坑庄').changes.some(c=>c.location),'具名村庄保留地点定位');
 assert(r.changes.find(x=>x.word==='胶').changes.some(c=>c.location),'籍贯仍可作地名');
