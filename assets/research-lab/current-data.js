@@ -13,7 +13,8 @@ async function load(env=root){
  try{saved=env.localStorage?.getItem(key);}catch(_){}
  if(!saved)saved=await fallback(env.indexedDB,key);
  if(saved)model.importDocument(Store.retainMissing(JSON.parse(saved),installed?installed.revisions:published));
- return {generated:new Date().toISOString(),source_hash:base.source_sha256,revision_hash:'',chapters:snapshot(model),storageKey:key,origin:saved?'本机已保存修订':installed?'本机总资料包':'GitHub 最新修订'};
+ const Records=typeof module!=='undefined'?require('./place-records'):env.GhostPlaceRecords;
+ return {generated:new Date().toISOString(),source_hash:base.source_sha256,revision_hash:bundle.revision_hash||'',chapters:snapshot(model),placeRecords:Records.build(model,base),storageKey:key,origin:saved?'本机已保存修订':installed?'本机总资料包':'GitHub 最新修订'};
 }
 const api={snapshot,load,fallback};if(typeof module!=='undefined')module.exports=api;else root.GhostLabData=api;
 })(globalThis);

@@ -22,8 +22,9 @@ assert(all(highlightRoot,'circle').some(n=>n.attrs.fill==='#b54736'));assert(win
 const groups=all(highlightRoot,'g').filter(n=>n.attrs.role==='button'),a=groups.find(n=>n.attrs['aria-label'].includes('冥府'));a.listeners.click();const lines=all(highlightRoot,'line').filter(n=>n.attrs.role==='button');assert.equal(lines.filter(n=>n.attrs.stroke==='#b04b25').length,1);assert(groups.some(n=>n.attrs.opacity==='.16'||n.attrs.opacity==='0.16'));assert.equal(all(highlightRoot,'circle').length,3,'Highlight preserves entire global graph');
 all(highlightRoot,'button').find(n=>n.textContent==='取消高亮').onclick();assert(lines.every(n=>n.attrs.stroke==='#688479'));assert(groups.every(n=>n.attrs.opacity==='1'));
 console.log('PASS otherworld color, darker base edges, incident-edge highlight, muted unrelated nodes and reset');
-const audit=all(root,'details').find(n=>n.children.some(x=>x.tag==='summary'&&x.textContent==='地点分类核查清单'));audit.open=true;audit.ontoggle();const auditPick=all(audit,'select')[0];assert.equal(auditPick.value,'space');auditPick.value='place';auditPick.onchange();assert(all(audit,'summary').some(n=>n.textContent.startsWith('济南 ·')));assert(all(audit,'blockquote').some(n=>n.textContent.includes('济南')));
-console.log('PASS classification list filters and original-text evidence');
+assert(!all(root,'summary').some(n=>/地点分类核查清单|其他网络分析|^空间归属未定/.test(n.textContent)));
+assert.equal(all(root,'summary').filter(n=>n.textContent.startsWith('全书尚未归属地点的空间线索')).length,1);
+console.log('PASS one pending-space list and no duplicate classification or network panels');
 window.GhostPlaceLevelColors=require('../assets/research-lab/place-level-colors');const levelRoot=new E('main');window.GhostBookNetwork.mount(levelRoot,[c],()=>{},{graph,realmColors:true,levelColors:true,levelRecords:{济南:{level:'prefecture'},青州:{level:'county'}},simple:true,readable:true,allowAll:true,initialView:'all'});const levelPick=all(levelRoot,'select').find(n=>n.attrs['aria-label']==='网络配色');assert.equal(levelPick.value,'level');assert(all(levelRoot,'div').some(n=>n.attrs['aria-label']==='地图层级颜色图例'));for(const key of ['prefecture','county','otherworld'])assert(all(levelRoot,'circle').some(n=>n.attrs.fill===window.GhostPlaceLevelColors.palette[key].color));levelPick.value='kind';levelPick.onchange();assert(all(levelRoot,'circle').some(n=>n.attrs.fill==='#b54736'));console.log('PASS default hierarchy coloring, displayed level legend and alternate coloring');
 (async()=>{
  const chapters=[...Array(6)].map((_,i)=>({...c,id:i,title:'证据'+i,places:['济南','青州市','未知地'],units:[...Array(4)].map((_,j)=>({id:j,text:'至济南，经青州市，到未知地。'}))}));
@@ -46,4 +47,11 @@ window.GhostPlaceLevelColors=require('../assets/research-lab/place-level-colors'
  const realmRoot=new E('main'),realmChapter={id:9,title:'异境篇',places:['未知地'],spaces:[],units:[{id:0,text:'未知地人，后诉之冥府。'}],steps:[],realm_evidence:[{id:'e-9',realm:'地界',space:'冥府',unit:0,excerpt:'后诉之冥府。'}],evidence_review:{}};
  window.GhostPlaceSpaces.mount(realmRoot,[realmChapter],()=>{});const realmScope=all(realmRoot,'select').find(n=>n.attrs['aria-label']==='地点网络范围');realmScope.value='unmapped';realmScope.onchange();await new Promise(resolve=>setImmediate(resolve));const realmSection=all(realmRoot,'section').find(n=>n.children.some(x=>x.textContent==='一、全书地点网络'));assert(all(realmSection,'text').some(n=>n.textContent==='冥府'),'未定位地点网络仍显示有原文证据的异境节点');assert.equal(all(realmSection,'circle').length,2);
  console.log('PASS loading guard, mapped alias, lazy full evidence and revision link');
+ const requests=[];context.fetch=async url=>{requests.push(url);return {ok:true,json:async()=>({graphs:{}})};};
+ const liveRoot=new E('main');window.GhostPlaceSpaces.mount(liveRoot,chapters,()=>{},{placeRecords:{济南:{located:true},青州市:{located:false},未知地:{located:true}}});
+ const liveScope=all(liveRoot,'select').find(n=>n.attrs['aria-label']==='地点网络范围');liveScope.value='located';liveScope.onchange();await new Promise(setImmediate);
+ assert(!requests.includes('place-levels.json'),'实时资料已提供层级，不另读静态定位文件');
+ const liveSection=all(liveRoot,'section').find(n=>n.children.some(x=>x.textContent==='一、全书地点网络'));
+ assert(all(liveSection,'text').some(n=>n.textContent==='未知地'),'本机新定位直接用于网络范围');assert(!all(liveSection,'text').some(n=>n.textContent==='青州市'));
+ console.log('PASS live locations override static registry without extra request');
 })().catch(e=>{console.error(e);process.exitCode=1;});

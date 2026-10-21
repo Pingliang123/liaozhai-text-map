@@ -41,16 +41,15 @@ function mount(container,chapters,onExport){
  mode.onchange=draw;draw();
  const evidence=el('section');evidence.className='card';evidence.append(el('h3','停留与穿梭的证据'));
  const search=el('input');search.placeholder='篇名、人物、地点、空间或原文';search.setAttribute('aria-label','检索异与空间证据');
- const event=el('select');event.setAttribute('aria-label','筛选篇目异事');for(const v of ['全部','人','鬼','妖','神','未定'])event.append(el('option',v));
  const kind=el('select');kind.setAttribute('aria-label','筛选停留或穿梭');for(const [v,t]of [['all','全部步骤'],['movement','穿梭'],['stay','停留及其他事件']]){const o=el('option',t);o.value=v;kind.append(o);}
  const list=el('div'),count=el('p'),more=el('button','再看30条');let limit=30;
  const headers=['篇目／顺序','人物及身份','篇目异事','起点 → 终点','空间标注','原文'];
- function render(){list.replaceChildren();const q=search.value.trim(),rows=data.records.filter(r=>(!q||[r.chapter,r.from,r.to,r.text,...r.actors].join(' ').includes(q))&&(event.value==='全部'||(event.value==='未定'?!r.events.length:r.events.includes(event.value)))&&(kind.value==='all'||(kind.value==='movement'?r.kind==='movement':r.kind!=='movement')));count.textContent=rows.length+' 条；当前资料 '+data.records.length+' 条有原文引句的步骤。';
+ function render(){list.replaceChildren();const q=search.value.trim(),rows=data.records.filter(r=>(!q||[r.chapter,r.from,r.to,r.text,...r.actors].join(' ').includes(q))&&(kind.value==='all'||(kind.value==='movement'?r.kind==='movement':r.kind!=='movement')));count.textContent=rows.length+' 条；当前资料 '+data.records.length+' 条有原文引句的步骤。';
   const wrap=el('div');wrap.className='scroll';const table=el('table'),head=el('tr');for(const h of headers)head.append(el('th',h));const thead=el('thead');thead.append(head);table.append(thead);const body=el('tbody');
   for(const r of rows.slice(0,limit)){const tr=el('tr');for(const t of ['《'+r.chapter+'》／'+r.sequence,r.people.map(p=>p.word+'〔'+(p.types.join('、')||'身份未标')+'〕').join('、')||'未标人物',r.events.join('、')||'未定',(r.from||'未标')+' → '+(r.to||'未标'),[r.realm,r.access].filter(Boolean).join('／')||'未标',r.text])tr.append(el('td',t));body.append(tr);}table.append(body);wrap.append(table);list.append(wrap);more.hidden=rows.length<=limit;
   onExport([headers,...rows.map(r=>[r.chapter+'／'+r.sequence,r.people.map(p=>p.word+'〔'+p.types.join('、')+'〕').join('、'),r.events.join('、'),r.from+' → '+r.to,[r.realm,r.access].join('／'),r.text])]);
  }
- for(const input of [search,event,kind])input[input===search?'oninput':'onchange']=()=>{limit=30;render();};more.onclick=()=>{limit+=30;render();};evidence.append(search,event,kind,count,list,more);container.append(evidence);render();
+ for(const input of [search,kind])input[input===search?'oninput':'onchange']=()=>{limit=30;render();};more.onclick=()=>{limit+=30;render();};evidence.append(search,kind,count,list,more);container.append(evidence);render();
  const method=el('details');method.append(el('summary','关系与证据范围'),el('p','同篇关联用于比较故事的地点组合；有向移动只采用保存步骤、原文引句和唯一可识别的地名端点。停留栏包含其他已标事件，不能一概当作居住。人物身份沿用人物标注，异事类型沿用篇目标注。'),el('p','未能进入地名移动图的线索：'+data.unresolved.length+' 条，可在证据表或统一修订页继续核对。异境使用文本关系，不赋予虚构经纬度。'));
  const download=el('button','下载关系与全部证据');download.onclick=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'})),a=el('a');a.href=url;a.download='聊斋-异与空间关系.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};method.append(download);container.append(method);
 }

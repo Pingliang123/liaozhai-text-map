@@ -369,9 +369,8 @@
         const all = new Map([place,...descendants(place)].flatMap(p => atPlace(p).map(c => [c.chapter_id,c])));
         return [...all.values()].sort((a,b) => a.chapter_id-b.chapter_id);
       }
-      if (!placeViews.has(place.id)) placeViews.set(place.id, [...chapters.keys()].filter(id => overrides.has(id)
-        ? view(id).places.some(p => name(p.word) === name(place.name))
-        : place.chapter_ids.includes(id)).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
+      if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>
+        view(id).places.some(p => name(p.word) === name(place.name))).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
       return placeViews.get(place.id);
     }
     function links(place, allowedIDs) {

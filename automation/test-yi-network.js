@@ -30,6 +30,6 @@ vm.createContext(context);vm.runInContext(fs.readFileSync('assets/research-lab/y
 const out=new Element('main');let csv;window.GhostYiNetwork.mount(out,[c],rows=>csv=rows);
 const all=n=>[n,...n.children.flatMap(all)],controls=all(out),mode=controls.find(n=>n['aria-label']==='选择关系类型');
 mode.value='movement';mode.onchange();assert(calls.at(-1).weightedDirected);assert(calls.at(-1).graph.edges.every(e=>e.directed));
-const event=controls.find(n=>n['aria-label']==='筛选篇目异事');event.value='妖';event.onchange();assert.equal(csv.length,1);event.value='鬼';event.onchange();assert.equal(csv.length,4);
+assert(!controls.some(n=>n['aria-label']==='筛选篇目异事'),'异事筛选沿用页面唯一入口');assert.equal(csv.length,4);
 const search=controls.find(n=>n['aria-label']==='检索异与空间证据');search.value='无此人物';search.oninput();assert.equal(csv.length,1);
 console.log('PASS relationship switch, directed display and synchronized filtered evidence export');
