@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T08:49:14.286Z",
+  "generated_at": "2026-10-21T09:10:38.806Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -208657,7 +208657,7 @@
             "label": "龙虎山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:楚",
@@ -208769,7 +208769,7 @@
             "label": "淮阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:31",
@@ -208895,7 +208895,7 @@
             "label": "平原",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:38",
@@ -209161,7 +209161,7 @@
             "label": "楚中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "chapter:56",
@@ -209294,7 +209294,7 @@
             "label": "济阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:63",
@@ -209378,7 +209378,7 @@
             "label": "沂",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:徐城",
@@ -209532,7 +209532,7 @@
             "label": "秦中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "chapter:79",
@@ -209658,7 +209658,7 @@
             "label": "明湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:芙蓉",
@@ -209679,7 +209679,7 @@
             "label": "涿",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "chapter:89",
@@ -209819,7 +209819,7 @@
             "label": "南岳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:都城",
@@ -210022,7 +210022,7 @@
             "label": "滕邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:108",
@@ -210036,7 +210036,7 @@
             "label": "中州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:广陵",
@@ -210064,7 +210064,7 @@
             "label": "保定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:陕",
@@ -210078,7 +210078,7 @@
             "label": "无极",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:110",
@@ -210239,7 +210239,7 @@
             "label": "永年",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:122",
@@ -210435,7 +210435,7 @@
             "label": "栖霞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:135",
@@ -210876,7 +210876,7 @@
             "label": "汉江",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:172",
@@ -210897,7 +210897,7 @@
             "label": "泺口河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:174",
@@ -210932,7 +210932,7 @@
             "label": "蒿里山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:177",
@@ -210953,7 +210953,7 @@
             "label": "卫辉",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "chapter:179",
@@ -211023,7 +211023,7 @@
             "label": "东香山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:185",
@@ -211072,14 +211072,14 @@
             "label": "潞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:长治",
             "label": "长治",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:189",
@@ -211107,7 +211107,7 @@
             "label": "鄱阳湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:191",
@@ -211121,7 +211121,7 @@
             "label": "秦邮",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:192",
@@ -211205,7 +211205,7 @@
             "label": "稷下",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:199",
@@ -213235,7 +213235,7 @@
             "label": "凤翔",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "chapter:364",
@@ -213347,14 +213347,14 @@
             "label": "查牙山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:养母峪",
             "label": "养母峪",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:375",
@@ -213501,7 +213501,7 @@
             "label": "齐河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:385",
@@ -213683,7 +213683,7 @@
             "label": "宛平",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:397",
@@ -214075,7 +214075,7 @@
             "label": "岳州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:荆州",
@@ -214089,14 +214089,14 @@
             "label": "夷陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:五祖山",
             "label": "五祖山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "chapter:424",
@@ -214117,7 +214117,7 @@
             "label": "秀水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:425",
@@ -214166,7 +214166,7 @@
             "label": "汉水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:汉阳",
@@ -214544,7 +214544,7 @@
             "label": "粤东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:龙津",
@@ -214593,7 +214593,7 @@
             "label": "费邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "chapter:460",
@@ -214656,7 +214656,7 @@
             "label": "兰陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "town"
           },
           {
             "id": "place:竹桥",
@@ -214761,7 +214761,7 @@
             "label": "真定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "chapter:475",
@@ -214831,7 +214831,7 @@
             "label": "陕中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "chapter:481",
@@ -214901,7 +214901,7 @@
             "label": "浙东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:浙界",
@@ -230341,7 +230341,7 @@
             "label": "龙虎山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:楚",
@@ -230376,7 +230376,7 @@
             "label": "淮阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:江南",
@@ -230453,7 +230453,7 @@
             "label": "平原",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:太原",
@@ -230593,7 +230593,7 @@
             "label": "楚中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:江北",
@@ -230677,7 +230677,7 @@
             "label": "济阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:西江",
@@ -230719,7 +230719,7 @@
             "label": "沂",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:徐城",
@@ -230803,7 +230803,7 @@
             "label": "秦中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:相公庄",
@@ -230866,7 +230866,7 @@
             "label": "明湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:芙蓉",
@@ -230880,7 +230880,7 @@
             "label": "涿",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:郴州",
@@ -230950,7 +230950,7 @@
             "label": "南岳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:都城",
@@ -231090,14 +231090,14 @@
             "label": "滕邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:中州",
             "label": "中州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:广陵",
@@ -231118,7 +231118,7 @@
             "label": "保定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:陕",
@@ -231132,7 +231132,7 @@
             "label": "无极",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:绛州",
@@ -231209,7 +231209,7 @@
             "label": "永年",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:河津",
@@ -231314,7 +231314,7 @@
             "label": "栖霞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:石门庄",
@@ -231496,14 +231496,14 @@
             "label": "汉江",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:泺口河",
             "label": "泺口河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:泰安",
@@ -231517,14 +231517,14 @@
             "label": "蒿里山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:卫辉",
             "label": "卫辉",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:华岳",
@@ -231552,7 +231552,7 @@
             "label": "东香山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:临朐",
@@ -231573,14 +231573,14 @@
             "label": "潞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:长治",
             "label": "长治",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:饶州",
@@ -231594,14 +231594,14 @@
             "label": "鄱阳湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:秦邮",
             "label": "秦邮",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:胶州",
@@ -231636,7 +231636,7 @@
             "label": "稷下",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:河间",
@@ -232511,7 +232511,7 @@
             "label": "凤翔",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:颜山",
@@ -232546,14 +232546,14 @@
             "label": "查牙山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:养母峪",
             "label": "养母峪",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:朝鲜",
@@ -232630,7 +232630,7 @@
             "label": "齐河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:清水潭",
@@ -232728,7 +232728,7 @@
             "label": "宛平",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:平凉",
@@ -232931,7 +232931,7 @@
             "label": "岳州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:荆州",
@@ -232945,14 +232945,14 @@
             "label": "夷陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:五祖山",
             "label": "五祖山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:牛首山",
@@ -232966,7 +232966,7 @@
             "label": "秀水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:襄阳",
@@ -232980,7 +232980,7 @@
             "label": "汉水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:汉阳",
@@ -233155,7 +233155,7 @@
             "label": "粤东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:龙津",
@@ -233197,7 +233197,7 @@
             "label": "费邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:聊城",
@@ -233225,7 +233225,7 @@
             "label": "兰陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "town"
           },
           {
             "id": "place:竹桥",
@@ -233260,7 +233260,7 @@
             "label": "真定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:齐东",
@@ -233288,7 +233288,7 @@
             "label": "陕中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:新郑",
@@ -233316,7 +233316,7 @@
             "label": "浙东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:浙界",
@@ -267446,7 +267446,7 @@
             "label": "龙虎山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:楚",
@@ -267529,7 +267529,7 @@
             "label": "淮阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:里门",
@@ -267654,7 +267654,7 @@
             "label": "平原",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:周氏园",
@@ -267980,7 +267980,7 @@
             "label": "楚中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "space:棚",
@@ -268220,7 +268220,7 @@
             "label": "济阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:西江",
@@ -268262,7 +268262,7 @@
             "label": "沂",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:徐城",
@@ -268490,7 +268490,7 @@
             "label": "秦中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:相公庄",
@@ -268607,7 +268607,7 @@
             "label": "明湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:芙蓉",
@@ -268639,7 +268639,7 @@
             "label": "涿",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "space:孤馆",
@@ -268763,7 +268763,7 @@
             "label": "南岳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:都城",
@@ -268963,7 +268963,7 @@
             "label": "滕邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:满屋",
@@ -268988,7 +268988,7 @@
             "label": "中州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:广陵",
@@ -269009,7 +269009,7 @@
             "label": "保定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:陕",
@@ -269023,7 +269023,7 @@
             "label": "无极",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:门庭",
@@ -269196,7 +269196,7 @@
             "label": "永年",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:府前",
@@ -269439,7 +269439,7 @@
             "label": "栖霞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:大佛阁",
@@ -269939,14 +269939,14 @@
             "label": "汉江",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:泺口河",
             "label": "泺口河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:绰然堂",
@@ -269966,7 +269966,7 @@
             "label": "蒿里山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:山南",
@@ -269985,7 +269985,7 @@
             "label": "卫辉",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "space:东院",
@@ -270133,7 +270133,7 @@
             "label": "东香山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:临朐",
@@ -270166,14 +270166,14 @@
             "label": "潞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:长治",
             "label": "长治",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:饶州",
@@ -270187,14 +270187,14 @@
             "label": "鄱阳湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:秦邮",
             "label": "秦邮",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:逆旅阁",
@@ -270361,7 +270361,7 @@
             "label": "稷下",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:郡",
@@ -272034,7 +272034,7 @@
             "label": "凤翔",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "space:门后",
@@ -272099,14 +272099,14 @@
             "label": "查牙山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:养母峪",
             "label": "养母峪",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:西壁",
@@ -272249,7 +272249,7 @@
             "label": "齐河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:太山下",
@@ -272413,7 +272413,7 @@
             "label": "宛平",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:海滨",
@@ -272706,7 +272706,7 @@
             "label": "岳州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:荆州",
@@ -272720,14 +272720,14 @@
             "label": "夷陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:五祖山",
             "label": "五祖山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:观",
@@ -272747,7 +272747,7 @@
             "label": "秀水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:文场",
@@ -272791,7 +272791,7 @@
             "label": "汉水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:汉阳",
@@ -273080,7 +273080,7 @@
             "label": "粤东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:龙津",
@@ -273128,7 +273128,7 @@
             "label": "费邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:西塞",
@@ -273174,7 +273174,7 @@
             "label": "兰陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "town"
           },
           {
             "id": "place:竹桥",
@@ -273227,7 +273227,7 @@
             "label": "真定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "space:部署",
@@ -273321,7 +273321,7 @@
             "label": "陕中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "space:南岸",
@@ -273385,7 +273385,7 @@
             "label": "浙东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:浙界",
@@ -275683,7 +275683,7 @@
             "label": "龙虎山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:楚",
@@ -275920,7 +275920,7 @@
             "label": "淮阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:30:丁乘鹤",
@@ -276234,7 +276234,7 @@
             "label": "平原",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:37:王",
@@ -277029,7 +277029,7 @@
             "label": "楚中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "person:55:祝生",
@@ -277584,7 +277584,7 @@
             "label": "济阳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:西江",
@@ -277647,7 +277647,7 @@
             "label": "沂",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:徐城",
@@ -278281,7 +278281,7 @@
             "label": "秦中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "person:78:李氏",
@@ -278580,7 +278580,7 @@
             "label": "明湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:芙蓉",
@@ -278647,7 +278647,7 @@
             "label": "涿",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "space:孤馆",
@@ -279149,7 +279149,7 @@
             "label": "南岳",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:都城",
@@ -279685,7 +279685,7 @@
             "label": "滕邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:107:赵",
@@ -279745,7 +279745,7 @@
             "label": "中州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:广陵",
@@ -279815,7 +279815,7 @@
             "label": "保定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:陕",
@@ -279829,7 +279829,7 @@
             "label": "无极",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:109:柳芳华",
@@ -280324,7 +280324,7 @@
             "label": "永年",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:121:李司鉴",
@@ -281022,7 +281022,7 @@
             "label": "栖霞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:134:朱",
@@ -282299,7 +282299,7 @@
             "label": "汉江",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:171:王",
@@ -282376,7 +282376,7 @@
             "label": "泺口河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:174:城祭酒",
@@ -282515,7 +282515,7 @@
             "label": "蒿里山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:山南",
@@ -282534,7 +282534,7 @@
             "label": "卫辉",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "person:178:戚生",
@@ -282983,7 +282983,7 @@
             "label": "东香山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:184:周诡",
@@ -283121,14 +283121,14 @@
             "label": "潞",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:长治",
             "label": "长治",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:188:陈",
@@ -283170,7 +283170,7 @@
             "label": "鄱阳湖",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:190:丁普郎",
@@ -283184,7 +283184,7 @@
             "label": "秦邮",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:191:王",
@@ -283533,7 +283533,7 @@
             "label": "稷下",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:198:高季文",
@@ -289182,7 +289182,7 @@
             "label": "凤翔",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "person:363:张",
@@ -289471,14 +289471,14 @@
             "label": "查牙山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:养母峪",
             "label": "养母峪",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "space:西壁",
@@ -289831,7 +289831,7 @@
             "label": "齐河",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "space:太山下",
@@ -290394,7 +290394,7 @@
             "label": "宛平",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:396:谨庵",
@@ -291646,7 +291646,7 @@
             "label": "岳州",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "place:荆州",
@@ -291660,14 +291660,14 @@
             "label": "夷陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "place:五祖山",
             "label": "五祖山",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "person:423:真毓生",
@@ -291834,7 +291834,7 @@
             "label": "秀水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:424:马子安",
@@ -292011,7 +292011,7 @@
             "label": "汉水",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "natural"
           },
           {
             "id": "place:汉阳",
@@ -292951,7 +292951,7 @@
             "label": "粤东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:龙津",
@@ -293020,7 +293020,7 @@
             "label": "费邑",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "county"
           },
           {
             "id": "person:460:杨",
@@ -293199,7 +293199,7 @@
             "label": "兰陵",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "town"
           },
           {
             "id": "place:竹桥",
@@ -293616,7 +293616,7 @@
             "label": "真定",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "prefecture"
           },
           {
             "id": "person:474:尹",
@@ -293997,7 +293997,7 @@
             "label": "陕中",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "person:480:王",
@@ -294215,7 +294215,7 @@
             "label": "浙东",
             "kind": "place",
             "layer": "place",
-            "level": "unknown"
+            "level": "region"
           },
           {
             "id": "place:浙界",
