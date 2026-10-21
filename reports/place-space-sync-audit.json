@@ -1,7 +1,7 @@
 {
-  "revision_hash": "cabdf1aeb98e0a16c35d6b740d055d30fbdb0e8cf2859776e483ca703e11a7a5",
+  "revision_hash": "818aa680c3b02c4093233a07acf63ea37c7932747bb9705c9b680e06130be9a7",
   "chapters": 491,
-  "place_nodes": 440,
+  "place_nodes": 436,
   "space_relations": 89,
   "pending_space_occurrences": 1374,
   "crosscheck": [
@@ -1566,26 +1566,6 @@
       ]
     },
     {
-      "word": "云南军",
-      "chapter": "续黄粱",
-      "chapter_id": 147,
-      "kind": "places",
-      "key": "places:云南军",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "云南军",
-        "云南"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 9617,
-          "text": "奉旨籍家，充云南军。"
-        }
-      ]
-    },
-    {
       "word": "江水",
       "chapter": "龙取水",
       "chapter_id": 148,
@@ -2217,26 +2197,6 @@
         {
           "unit": 13944,
           "text": "弟以冠军应试，中顺天第四；"
-        }
-      ]
-    },
-    {
-      "word": "河南道",
-      "chapter": "颜氏",
-      "chapter_id": 219,
-      "kind": "places",
-      "key": "places:河南道",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "河南道",
-        "河南"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 13947,
-          "text": "寻迁河南道掌印御史，富埒王侯。"
         }
       ]
     },
@@ -3119,26 +3079,6 @@
         {
           "unit": 20239,
           "text": "」又问：「梓潼祠中，一相酹祝，可能达否？"
-        }
-      ]
-    },
-    {
-      "word": "云南军",
-      "chapter": "崔猛",
-      "chapter_id": 324,
-      "kind": "places",
-      "key": "places:云南军",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "云南军",
-        "云南"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 20784,
-          "text": "寻以自首减等，充云南军，申为服役而去；"
         }
       ]
     },
