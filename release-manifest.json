@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 32856845,
-      "sha256": "f3759fec222a6b9cab6964889fd41936a2530596635a66613472c33add173145"
+      "sha256": "879b47a1e67ad94ac20b770fc4586ff85441cf152b649f3da747730eb18396e9"
     },
     {
       "path": "github-login.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 4373019,
-      "sha256": "564f0bb253567f9c576178e75fe4e5a085dae30ed2cbae466e5b2e2781d79ac4"
+      "sha256": "ac981c73d1d97cf633b416e19bd1fe37748962382c52c1c9b5bc2e7f3ce6f54a"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1564573,
-      "sha256": "a814cfa26fb29576df55646f633438e6cd1a8a0cc7cfeef7a8d35cb56757d067"
+      "sha256": "7d04bc17738935dcf94cbe48ebb44634aeee2e1210fdfbb384c2c34a92046237"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -766,7 +766,7 @@
     {
       "path": "data-package.json",
       "bytes": 32856845,
-      "sha256": "f3759fec222a6b9cab6964889fd41936a2530596635a66613472c33add173145"
+      "sha256": "879b47a1e67ad94ac20b770fc4586ff85441cf152b649f3da747730eb18396e9"
     },
     {
       "path": "data.html",
@@ -800,8 +800,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 36258839,
-      "sha256": "1c88a7fed844b43cc2e74de5deba778e11153dab5c51adc754586f2179dc232c"
+      "bytes": 36258838,
+      "sha256": "dc7b841a5fc3957caea1bf36e1e5b14f39f734d428468cbcb24ad7966c1a7356"
     }
   ]
 }
