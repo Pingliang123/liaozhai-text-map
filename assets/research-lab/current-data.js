@@ -9,9 +9,8 @@ async function load(env=root){
  const base=installed?installed.base:publishedBase,model=env.GhostMapModel.create(base);
  model.importDocument(installed?installed.revisions:published);
  const scope=(base.corpus_id||base.source_sha256)+(installed?'-package-'+installed.installation_id:'');
- const key='liaozhai-map-corrections-v3-'+scope;let saved=null;
- try{saved=env.localStorage?.getItem(key);}catch(_){}
- if(!saved)saved=await fallback(env.indexedDB,key);
+ const key='liaozhai-map-corrections-v3-'+scope;
+ const saved=await Store.readLocal(env,key,k=>fallback(env.indexedDB,k));
  if(saved)model.importDocument(Store.retainMissing(JSON.parse(saved),installed?installed.revisions:published));
  const Records=typeof module!=='undefined'?require('./place-records'):env.GhostPlaceRecords;
  return {generated:new Date().toISOString(),source_hash:base.source_sha256,revision_hash:bundle.revision_hash||'',chapters:snapshot(model),placeRecords:Records.build(model,base),storageKey:key,origin:saved?'本机已保存修订':installed?'本机总资料包':'GitHub 最新修订'};
