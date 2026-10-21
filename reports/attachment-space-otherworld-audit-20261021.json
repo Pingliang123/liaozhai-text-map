@@ -1,0 +1,3448 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-21T14:19:57.402Z",
+  "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
+  "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
+  "attachment": {
+    "file": "fb261021185536.pdf",
+    "title": "《聊斋志异》空间的书写与内在意蕴",
+    "method": "按附件的宗教、居所、公共／行旅、自然边界、冥界、仙境、梦境框架，将候选词逐篇回查原文；候选不等于自动接受。",
+    "source_present": true
+  },
+  "chapters": 491,
+  "framework": {
+    "religious": "寺庙、祠、观、殿等宗教／仪式空间",
+    "domestic": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+    "public": "市、街、店、驿、桥、渡等公共／行旅空间",
+    "natural": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+    "underworld": "冥府、地府、阴司、地狱及其内部场所",
+    "immortal": "天宫、月宫、仙岛、仙乡等仙境空间",
+    "demon": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+    "dream": "梦中、梦境及由梦境触发的空间转换"
+  },
+  "summary": {
+    "candidates": 42,
+    "review_rows": 34,
+    "high_priority_gaps": 9,
+    "untouched_annotations": true
+  },
+  "rows": [
+    {
+      "term": "宅",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 79,
+      "chapters": 52,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 10,
+          "chapter": "宅妖",
+          "unit": 290,
+          "excerpt": "宅多妖异。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 829,
+          "excerpt": "先生故公子，以大讼萧条，眷口寡，移而乡居，宅遂旷焉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 842,
+          "excerpt": "便问：「宅何久锢？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 845,
+          "excerpt": "以家宅焚于野火，暂借安顿。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 929,
+          "excerpt": "近单公子解讼归，索宅甚急，意将弃此而西。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 27,
+          "chapter": "鬼哭",
+          "unit": 1163,
+          "excerpt": "王学使七襄之宅，盗聚尤众。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 33,
+          "chapter": "新郎",
+          "unit": 1494,
+          "excerpt": "宅后有长溪，小桥通之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 38,
+          "chapter": "青凤",
+          "unit": 1842,
+          "excerpt": "太原耿氏，故大家，第宅弘阔。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "庐",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 52,
+      "chapters": 47,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 47,
+          "excerpt": "入其庐，灯昏案上；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 6,
+          "chapter": "山魈",
+          "unit": 195,
+          "excerpt": "注念间，风声渐近居庐，俄而房门辟矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 29,
+          "chapter": "焦螟",
+          "unit": 1198,
+          "excerpt": "公造庐而请之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 35,
+          "chapter": "王兰",
+          "unit": 1587,
+          "excerpt": "前后药禳既穷，张造其庐，以术自炫。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 39,
+          "chapter": "画皮",
+          "unit": 2003,
+          "excerpt": "」生言：「敝庐不远，即烦枉顾。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 47,
+          "chapter": "婴宁",
+          "unit": 2799,
+          "excerpt": "寻至村所，庐舍全无，山花零落而已。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 68,
+          "chapter": "莲香",
+          "unit": 4222,
+          "excerpt": "莲香扶新妇入青庐，搭面既揭，欢若生平。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 74,
+          "chapter": "巧娘",
+          "unit": 4823,
+          "excerpt": "巧娘独居无耦，我母子无家，借庐栖止。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厅",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 13,
+      "chapters": 12,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 3,
+          "chapter": "喷水",
+          "unit": 104,
+          "excerpt": "一夜，二婢奉太夫人宿厅上，闻院内扑扑有声，如缝工之喷水者。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 20,
+          "chapter": "狐嫁女",
+          "unit": 782,
+          "excerpt": "酒数厅，翁唤女奴请小姐来。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 105,
+          "chapter": "商三官",
+          "unit": 6980,
+          "excerpt": "移时，闻厅事中格格有声。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 115,
+          "chapter": "犬灯",
+          "unit": 7656,
+          "excerpt": "系马而入，厅堂中酒肴已列。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 221,
+          "chapter": "小谢",
+          "unit": 14015,
+          "excerpt": "生往除厅事。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 256,
+          "chapter": "巩仙",
+          "unit": 16323,
+          "excerpt": "伏身入，则光明洞彻，宽若厅堂，几案床榻，无物不有。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 275,
+          "chapter": "胡四娘",
+          "unit": 17704,
+          "excerpt": "阍人既通，即有旧媪出，导入厅事，具酒馔，亦颇草草。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 286,
+          "chapter": "金和尚",
+          "unit": 18533,
+          "excerpt": "僧舍其中：前有厅事，梁楹节棁，绘金碧，射人眼；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厨",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 21,
+      "chapters": 19,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2133,
+          "excerpt": "涂已，无所作，遂把厨刀霍霍磨之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 48,
+          "chapter": "聂小倩",
+          "unit": 2994,
+          "excerpt": "女即入厨下，代母尸饔，入房穿榻，似熟居者。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 55,
+          "chapter": "水莽草",
+          "unit": 3271,
+          "excerpt": "女便入厨下，代母执炊，供翁媪。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 70,
+          "chapter": "九山王",
+          "unit": 4440,
+          "excerpt": "酒鼎沸于廊下，茶烟袅于厨中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 92,
+          "chapter": "黄九郎",
+          "unit": 5936,
+          "excerpt": "」女自入厨下，设食供母，食已乃去。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 157,
+          "chapter": "鬼作筵",
+          "unit": 10184,
+          "excerpt": "至厨下，见二妇操刀砧于中，俱绀帔而绿缘之，呼我以嫂。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 209,
+          "chapter": "马介甫",
+          "unit": 13325,
+          "excerpt": "」乃起捉厨刀。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 219,
+          "chapter": "颜氏",
+          "unit": 13913,
+          "excerpt": "」生方懊丧，闻妻言，睒䁑而怒曰：「闺中人，身不到场屋，便以功名富贵似汝厨下汲水炊白粥；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厢",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 7,
+      "chapters": 6,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 921,
+          "excerpt": "如不见信，松姊日涉园亭，伺前厢，可望见之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 48,
+          "chapter": "聂小倩",
+          "unit": 2920,
+          "excerpt": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 74,
+          "chapter": "巧娘",
+          "unit": 4786,
+          "excerpt": "」遂异生入东厢，探手 于裤夸而验之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 102,
+          "chapter": "连城",
+          "unit": 6818,
+          "excerpt": "」相将入侧厢中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 102,
+          "chapter": "连城",
+          "unit": 6824,
+          "excerpt": "因徘徊不敢遽生，寄厢中者三日。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 124,
+          "chapter": "翩翩",
+          "unit": 8128,
+          "excerpt": "业为国子左厢，富有金缯而无子，爱子浮若己出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 266,
+          "chapter": "青娥",
+          "unit": 17025,
+          "excerpt": "见小厢中，尚有灯火，伏窥之，则青娥卸晚装矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "客舍",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 7,
+      "chapters": 7,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 168,
+          "chapter": "武技",
+          "unit": 10578,
+          "excerpt": "」李喜，馆之客舍，丰其给，旦夕从学。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 278,
+          "chapter": "柳生",
+          "unit": 17775,
+          "excerpt": "入客舍，坐良久，柳归内不出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 317,
+          "chapter": "霍女",
+          "unit": 19999,
+          "excerpt": "一夜，闻客舍喧饮，黄潜往窥之，见二客戎装上坐：一人裹豹皮巾，凛若天神；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 339,
+          "chapter": "凤仙",
+          "unit": 21742,
+          "excerpt": "刘揖翁及丁、胡入客舍；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 405,
+          "chapter": "五通",
+          "unit": 26073,
+          "excerpt": "一日，过赵，时已暮，赵以客舍为家人所集，遂导客宿内院。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 446,
+          "chapter": "石清虚",
+          "unit": 29060,
+          "excerpt": "叟笑曰：「客舍非耶？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 489,
+          "chapter": "丐仙",
+          "unit": 31470,
+          "excerpt": "高弥重之，卧以客舍，衣以新衣，日与同坐处。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "客店",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1717,
+          "excerpt": "入都，解装客店，主人深惜其晚。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "驿亭",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 2,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 139,
+          "chapter": "库官",
+          "unit": 9234,
+          "excerpt": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 139,
+          "chapter": "库官",
+          "unit": 9244,
+          "excerpt": "及还，宿驿亭，叟复出谒。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "楼台",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 4,
+      "chapters": 4,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 50,
+          "chapter": "地震",
+          "unit": 3083,
+          "excerpt": "某家楼台南北易向；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 256,
+          "chapter": "巩仙",
+          "unit": 16251,
+          "excerpt": "但闻后苑花木楼台，极人间佳胜，若能导我一游，生平足矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 289,
+          "chapter": "阎罗宴",
+          "unit": 18630,
+          "excerpt": "见殿阁楼台，弥亘街路。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 397,
+          "chapter": "贾奉雉",
+          "unit": 25004,
+          "excerpt": "又数年，以侍御出巡两浙，声名赫奕，歌舞楼台，一时称盛。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "市",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 156,
+      "chapters": 96,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 479,
+          "excerpt": "有乡人货梨于市，颇甘芳，价腾贵。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 483,
+          "excerpt": "肆中佣保者，见喋聒不堪，遂出钱市一枚，付道士，道士拜谢，谓众曰：「出家人不解吝惜，我有佳梨，请出供客。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 486,
+          "excerpt": "」于是掬梨大啗，且尽，把核于手，解肩上镵坎地上深数寸，纳之，而覆以土，向市人索汤沃灌。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 494,
+          "excerpt": "道士不知所在，一市粲然。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 1005,
+          "excerpt": "出游都市，共知为狐儿也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 23,
+          "chapter": "妖术",
+          "unit": 1027,
+          "excerpt": "会市上有善卜者，能决人生死，将代问之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 30,
+          "chapter": "叶生",
+          "unit": 1265,
+          "excerpt": "且士得一人知己，可无憾，何必抛却白纻，乃谓之利市哉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 32,
+          "chapter": "成仙",
+          "unit": 1357,
+          "excerpt": "相传驾将出猎，成预隐木市中；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "街",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 14,
+      "chapters": 14,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1759,
+          "excerpt": "既驯，主人令持向街头，赌酒食。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 50,
+          "chapter": "地震",
+          "unit": 3081,
+          "excerpt": "视街上，则男女裸聚，竞相告语，并忘其未衣也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 86,
+          "chapter": "戏术",
+          "unit": 5615,
+          "excerpt": "戏人以二席置街上，持一升入桶中；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8532,
+          "excerpt": "无何，马归，街衢人望见之，噪奔跌蹶，如逢怪物。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 163,
+          "chapter": "寒月芙蕖",
+          "unit": 10324,
+          "excerpt": "夜卧街头，离身数尺外，冰雪尽熔。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 164,
+          "chapter": "酒狂",
+          "unit": 10442,
+          "excerpt": "见街里贸贩，一如人间。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 226,
+          "chapter": "细侯",
+          "unit": 14434,
+          "excerpt": "偶涉廛市，经临街阁下，忽有荔壳坠肩头。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 289,
+          "chapter": "阎罗宴",
+          "unit": 18630,
+          "excerpt": "见殿阁楼台，弥亘街路。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "肆",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 74,
+      "chapters": 45,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 483,
+          "excerpt": "肆中佣保者，见喋聒不堪，遂出钱市一枚，付道士，道士拜谢，谓众曰：「出家人不解吝惜，我有佳梨，请出供客。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2172,
+          "excerpt": "」适从父入市，见帽肆挂狐尾，乞翁市之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2176,
+          "excerpt": "父贸易廛中，儿戏弄其侧，乘父他顾，盗钱去，沽白酒，寄肆廊。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2189,
+          "excerpt": "儿自是日游廛肆间。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 93,
+          "chapter": "金陵女子",
+          "unit": 6014,
+          "excerpt": "忽药肆一翁望见，曰：「婿至矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 107,
+          "chapter": "小二",
+          "unit": 7123,
+          "excerpt": "常开琉璃厂，每进工人而指点之，一切棋灯，其奇式幻采，诸肆莫能及，以故直昂得速售。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 131,
+          "chapter": "田七郎",
+          "unit": 8866,
+          "excerpt": "林儿意益肆，倡言丛众中，诬主人妇与私。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 134,
+          "chapter": "公孙九娘",
+          "unit": 8938,
+          "excerpt": "上官慈悲，捐给棺木，济城工肆，材木一空。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "廛",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 15,
+      "chapters": 14,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1811,
+          "excerpt": "」曰：「小人把向市廛，日得数金，易升斗粟，一家十余食指，无冻馁懮，是何宝如之？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2176,
+          "excerpt": "父贸易廛中，儿戏弄其侧，乘父他顾，盗钱去，沽白酒，寄肆廊。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2189,
+          "excerpt": "儿自是日游廛肆间。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 76,
+          "chapter": "口技",
+          "unit": 4975,
+          "excerpt": "昔王心逸尝言：在都偶过市廛，闻弦歌声，观者如堵。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8607,
+          "excerpt": "仰视龙君在上，世子启奏：「臣游市廛，得中华贤士，引见大王。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 171,
+          "chapter": "鸦头",
+          "unit": 10771,
+          "excerpt": "王一日游市廛，忽遇赵东楼，巾袍不整，形色枯黯。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 188,
+          "chapter": "长治女子",
+          "unit": 12036,
+          "excerpt": "由是日持钵近廛间。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 226,
+          "chapter": "细侯",
+          "unit": 14434,
+          "excerpt": "偶涉廛市，经临街阁下，忽有荔壳坠肩头。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "店",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 10,
+      "chapters": 7,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 38,
+          "excerpt": "阳信某翁者，邑之蔡店人。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 39,
+          "excerpt": "村去城五六里，父子设临路店，宿行商。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 13,
+          "chapter": "种梨",
+          "unit": 487,
+          "excerpt": "好事者，于临路店，索得沸沈，道士接浸坎处。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1717,
+          "excerpt": "入都，解装客店，主人深惜其晚。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 47,
+          "chapter": "婴宁",
+          "unit": 2568,
+          "excerpt": "王子服，莒之罗店人，早孤。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 56,
+          "chapter": "造畜",
+          "unit": 3307,
+          "excerpt": "扬州旅店中，有一人牵驴五头，暂絷枥下，云：「我少选即返。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 146,
+          "chapter": "姊妹易嫁",
+          "unit": 9511,
+          "excerpt": "经王舍人庄，店主先一夕梦神曰：「旦夕有毛解元来，后且脱汝于厄，可善待之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 146,
+          "chapter": "姊妹易嫁",
+          "unit": 9518,
+          "excerpt": "逾三年再赴试，店主人延候如前。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "桥",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 19,
+      "chapters": 10,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 33,
+          "chapter": "新郎",
+          "unit": 1494,
+          "excerpt": "宅后有长溪，小桥通之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 33,
+          "chapter": "新郎",
+          "unit": 1495,
+          "excerpt": "见新妇渡桥径去，益疑。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 162,
+          "chapter": "土地夫人",
+          "unit": 10301,
+          "excerpt": "窎桥王炳者出村，见土地祠中出一美人，顾盼甚殷。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 176,
+          "chapter": "布客",
+          "unit": 11218,
+          "excerpt": "」无何，至河际，断绝桥梁，行人艰涉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 176,
+          "chapter": "布客",
+          "unit": 11220,
+          "excerpt": "请即建桥，利行人；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 176,
+          "chapter": "布客",
+          "unit": 11224,
+          "excerpt": "克日鸠工建桥。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 176,
+          "chapter": "布客",
+          "unit": 11227,
+          "excerpt": "一日，鬼忽来曰：「我已以建桥事上报城隍，转达冥司矣，谓此一节可延寿命。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 183,
+          "chapter": "西湖主",
+          "unit": 11756,
+          "excerpt": "朱门半启，石桥通焉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "渡",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 29,
+      "chapters": 24,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 11,
+          "chapter": "王六郎",
+          "unit": 348,
+          "excerpt": "」曰：「兄于河畔视之，亭午，有女子渡河而溺者，是也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 33,
+          "chapter": "新郎",
+          "unit": 1495,
+          "excerpt": "见新妇渡桥径去，益疑。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 54,
+          "chapter": "张老相公",
+          "unit": 3184,
+          "excerpt": "舟抵金山，张先渡江，嘱家人在舟，勿煿膻腥。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 73,
+          "chapter": "汾州狐",
+          "unit": 4694,
+          "excerpt": "客去乃来，曰：「请便登舟，妾送君渡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 73,
+          "chapter": "汾州狐",
+          "unit": 4695,
+          "excerpt": "」朱曰：「向言不能渡，今何以云？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 99,
+          "chapter": "夜叉国",
+          "unit": 6641,
+          "excerpt": "」归计已决，苦逆风难渡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 101,
+          "chapter": "西僧",
+          "unit": 6706,
+          "excerpt": "倘有西游人，与东渡者中途相值，各述所有，当必相视失笑，两免跋涉矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 104,
+          "chapter": "汪士秀",
+          "unit": 6926,
+          "excerpt": "方谋夜渡，旋见巨喙出水面，深若井。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "舟",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 257,
+      "chapters": 53,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 19,
+          "chapter": "雹神",
+          "unit": 707,
+          "excerpt": "及湖，甫登舟，即有一人驾小艇来，使舟中人为通。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 48,
+          "chapter": "聂小倩",
+          "unit": 2973,
+          "excerpt": "宁（乃）托有妹葬此，发掘女骨，敛以衣衾，赁舟而归。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 51,
+          "chapter": "海公子",
+          "unit": 3098,
+          "excerpt": "闻其佳胜，备酒食，自掉扁舟而往。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 54,
+          "chapter": "张老相公",
+          "unit": 3184,
+          "excerpt": "舟抵金山，张先渡江，嘱家人在舟，勿煿膻腥。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 54,
+          "chapter": "张老相公",
+          "unit": 3185,
+          "excerpt": "盖江中有鼋怪，闻香辄出，坏舟吞行人，为害已久。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 54,
+          "chapter": "张老相公",
+          "unit": 3186,
+          "excerpt": "张去，家人忘之，炙肉舟中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 54,
+          "chapter": "张老相公",
+          "unit": 3187,
+          "excerpt": "忽巨浪覆舟，妻女皆没。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 55,
+          "chapter": "水莽草",
+          "unit": 3239,
+          "excerpt": "妻不能守柏舟节，半年改醮去。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "船",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 21,
+      "chapters": 10,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 99,
+          "chapter": "夜叉国",
+          "unit": 6488,
+          "excerpt": "冀有居人，遂缆船而登，负糗腊焉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 118,
+          "chapter": "雷曹",
+          "unit": 7830,
+          "excerpt": "少时，挽一船至，扶乐入，嘱乐卧守，复跃入江，以两臂夹货出，掷舟中；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8590,
+          "excerpt": "」未几，果有踵门寄资者，遂与装资入船。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8591,
+          "excerpt": "船容数十人，平底高栏。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 182,
+          "chapter": "武孝廉",
+          "unit": 11638,
+          "excerpt": "会有女子乘船，夜来临泊，闻之，自愿以舟载石。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 203,
+          "chapter": "彭海秋",
+          "unit": 12963,
+          "excerpt": "」无何，彩船一只，自空飘落，烟云绕之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 203,
+          "chapter": "彭海秋",
+          "unit": 12971,
+          "excerpt": "出舟一望，月印烟波，游船成市。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 203,
+          "chapter": "彭海秋",
+          "unit": 12975,
+          "excerpt": "少间，一楼船渐近，相傍而行。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "驿",
+      "kind": "space",
+      "framework_group": "public",
+      "framework_label": "市、街、店、驿、桥、渡等公共／行旅空间",
+      "status": "未标注",
+      "occurrences": 6,
+      "chapters": 4,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 32,
+          "chapter": "成仙",
+          "unit": 1359,
+          "excerpt": "驿送而下，著部院审奏。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 139,
+          "chapter": "库官",
+          "unit": 9234,
+          "excerpt": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 139,
+          "chapter": "库官",
+          "unit": 9235,
+          "excerpt": "前驱白：「驿中有怪异，不可宿。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 139,
+          "chapter": "库官",
+          "unit": 9244,
+          "excerpt": "及还，宿驿亭，叟复出谒。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 253,
+          "chapter": "罗祖",
+          "unit": 15890,
+          "excerpt": "乃驿送其子归即墨。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 436,
+          "chapter": "牛犊",
+          "unit": 28307,
+          "excerpt": "次日，牧犊于野，有驿马过，犊望见，误以为虎，直前触之，马毙。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "郊",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 26,
+      "chapters": 23,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 0,
+          "chapter": "考城隍",
+          "unit": 17,
+          "excerpt": "」又勉励秀才数语，二公稽首并下，秀才握手，送诸郊野，自言：长山张某，以诗赠别，都忘其词，中有「有花有酒春常在，无烛无灯夜自明」之句。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 74,
+          "excerpt": "至东郊，瞥见兰若，闻木鱼声，乃急挝山门。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 4,
+          "chapter": "瞳人语",
+          "unit": 120,
+          "excerpt": "清明前一日，偶步郊郭，见一小车，朱茀绣幰，青衣数辈，款段以从。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 878,
+          "excerpt": "居半载，生欲翱翔郊郭，至门，则双扉外扃。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 948,
+          "excerpt": "偶猎郊野，逢一美少年，跨骊驹，频频瞻顾。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 34,
+          "chapter": "灵官",
+          "unit": 1534,
+          "excerpt": "居数年，每至郊祭时，辄先旬日而去，郊后乃返。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 34,
+          "chapter": "灵官",
+          "unit": 1537,
+          "excerpt": "郊期至，则诸神清秽，我无所容，故行遁耳。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 35,
+          "chapter": "王兰",
+          "unit": 1613,
+          "excerpt": "逾数日，张于郊外遇同乡人贺才。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "岩",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 13,
+      "chapters": 11,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 72,
+          "chapter": "张诚",
+          "unit": 4522,
+          "excerpt": "一日，讷入山樵，未终，值大风雨，避身岩下，雨止而日已暮。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 111,
+          "chapter": "刘海石",
+          "unit": 7565,
+          "excerpt": "『山石』合一『岩』字，盖吕仙讳也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 181,
+          "chapter": "花姑子",
+          "unit": 11493,
+          "excerpt": "至则绝壁巉岩，竟无村落；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 240,
+          "chapter": "大人",
+          "unit": 15123,
+          "excerpt": "客曰：旧岁客云南，日暮失道，入大山中，绝壑巉岩，不可得出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 262,
+          "chapter": "阿英",
+          "unit": 16876,
+          "excerpt": "盗纵群队穷搜，凡伏匿岩穴者，悉被杀掳。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 266,
+          "chapter": "青娥",
+          "unit": 17160,
+          "excerpt": "回首峭壁巉岩，无少隙缝，只影茕茕，罔所归适。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 339,
+          "chapter": "凤仙",
+          "unit": 21718,
+          "excerpt": "曰：「妾别后，不曾归家，伏处岩穴，聊与君分苦耳。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 347,
+          "chapter": "元宝",
+          "unit": 22017,
+          "excerpt": "广东临江山崖巉岩，常有元宝嵌石上。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "谷",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 59,
+      "chapters": 42,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 15,
+          "chapter": "长清僧",
+          "unit": 557,
+          "excerpt": "既出，少定，即有诸仆纷来，钱簿谷籍，杂请会计。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 16,
+          "chapter": "蛇人",
+          "unit": 620,
+          "excerpt": "从此隐身大谷，必且为神龙，笥中何可以久居也？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 17,
+          "chapter": "斫蟒",
+          "unit": 656,
+          "excerpt": "胡田村胡姓者，兄弟采樵，深入幽谷。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 19,
+          "chapter": "雹神",
+          "unit": 725,
+          "excerpt": "天师垂思良久，乃顾而嘱曰：「其多降山谷，勿伤禾稼可也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 30,
+          "chapter": "叶生",
+          "unit": 1227,
+          "excerpt": "时赐钱谷恤其家。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 32,
+          "chapter": "成仙",
+          "unit": 1376,
+          "excerpt": "周心知其异，遣人踪迹之，寺观壑谷，物色殆遍。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1735,
+          "excerpt": "自念无以见祖母，蹀踱内外，进退维谷。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 47,
+          "chapter": "婴宁",
+          "unit": 2620,
+          "excerpt": "遥望谷底，丛花乱树中，隐隐有小里落。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "井",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 50,
+      "chapters": 33,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 50,
+          "chapter": "地震",
+          "unit": 3082,
+          "excerpt": "后闻某处井倾仄，不可汲；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 57,
+          "chapter": "凤阳士人",
+          "unit": 3364,
+          "excerpt": "」歌竟，笑曰：「此市井里巷之谣，不足污君听。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 72,
+          "chapter": "张诚",
+          "unit": 4648,
+          "excerpt": "每刻刻念乡井，遂出籍，复故谱。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 79,
+          "chapter": "红玉",
+          "unit": 5035,
+          "excerpt": "数年间，媪与子妇又相继逝，井臼自操之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 93,
+          "chapter": "金陵女子",
+          "unit": 6002,
+          "excerpt": "至家，操井臼甚勤。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 98,
+          "chapter": "白于玉",
+          "unit": 6429,
+          "excerpt": "女外理生计，内训孤儿，井井有法。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 104,
+          "chapter": "汪士秀",
+          "unit": 6926,
+          "excerpt": "方谋夜渡，旋见巨喙出水面，深若井。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 106,
+          "chapter": "于江",
+          "unit": 7019,
+          "excerpt": "欲曳狼归，恐惊母，遂投诸眢井而归。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "田",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 128,
+      "chapters": 83,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 4,
+          "chapter": "瞳人语",
+          "unit": 124,
+          "excerpt": "」婢乃下帘，怒顾生曰：「此芙蓉城七郎子新妇归宁，非同田舍娘子，放教秀才胡觑。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 17,
+          "chapter": "斫蟒",
+          "unit": 656,
+          "excerpt": "胡田村胡姓者，兄弟采樵，深入幽谷。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 19,
+          "chapter": "雹神",
+          "unit": 735,
+          "excerpt": "是日果大雨雹，沟渠皆满，而田中仅数枚焉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 32,
+          "chapter": "成仙",
+          "unit": 1325,
+          "excerpt": "先是，黄吏部家牧佣，牛蹊周田，以是相诟。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1833,
+          "excerpt": "妪命置良田三百亩，起屋作器，居然世家。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 47,
+          "chapter": "婴宁",
+          "unit": 2765,
+          "excerpt": "」又饷家人酒食，始送之出曰：「姨家田产丰裕，能养冗人。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 59,
+          "chapter": "珠儿",
+          "unit": 3462,
+          "excerpt": "常州民李化，富有田产。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 67,
+          "chapter": "酒友",
+          "unit": 3964,
+          "excerpt": "由此益富，治沃田二百亩。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "庄",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 33,
+      "chapters": 21,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 11,
+          "chapter": "王六郎",
+          "unit": 414,
+          "excerpt": "或言：即章丘石坑庄。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 80,
+          "chapter": "龙",
+          "unit": 5213,
+          "excerpt": "章丘小相公庄，有民妇适野，值大风，尘沙扑面，觉一目瞇，如含麦芒。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 94,
+          "chapter": "汤公",
+          "unit": 6061,
+          "excerpt": "入，见螺髻庄严，金容满月；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 137,
+          "chapter": "水灾",
+          "unit": 9214,
+          "excerpt": "一日，石门庄有老叟，暮见二羊斗山上，告村人曰：「大水至矣！",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 142,
+          "chapter": "狐谐",
+          "unit": 9373,
+          "excerpt": "二里许，果见一庄，生平所未历。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 146,
+          "chapter": "姊妹易嫁",
+          "unit": 9511,
+          "excerpt": "经王舍人庄，店主先一夕梦神曰：「旦夕有毛解元来，后且脱汝于厄，可善待之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 196,
+          "chapter": "骂鸭",
+          "unit": 12611,
+          "excerpt": "邑西白家庄居民某，盗邻鸭烹之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 214,
+          "chapter": "云翠仙",
+          "unit": 13692,
+          "excerpt": "」女固言之，色作庄。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "穴",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 66,
+      "chapters": 45,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 97,
+          "excerpt": "视指穴如凿孔然。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 3,
+          "chapter": "喷水",
+          "unit": 105,
+          "excerpt": "太夫人促婢起，穴窗窥视，见一老妪，短身驼背，白发如帚，冠一髻，长二尺许，周院环走，疏急作鹤步，行且喷，水出不穷。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 4,
+          "chapter": "瞳人语",
+          "unit": 139,
+          "excerpt": "静匿房中，见有小人自生鼻内出，大不及豆，营营然竟出门去，渐远，遂迷所在，俄连臂归，飞上面，如蜂蚁之投穴者，如此二三日。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 974,
+          "excerpt": "回视旧居，无复闬闳，惟见高冢岿然，巨穴无底。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 978,
+          "excerpt": "忽于繁烟黑絮之中，见一鬼物，利喙长爪，自穴攫一人出，随烟直上。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 25,
+          "chapter": "三生",
+          "unit": 1139,
+          "excerpt": "闷甚，缘壁而上，穴屋而出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 34,
+          "chapter": "灵官",
+          "unit": 1551,
+          "excerpt": "乃投水自濯讫，又蛰隐穴中几百日，垢浊始净。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 46,
+          "chapter": "陆判",
+          "unit": 2483,
+          "excerpt": "上元游十王殿，时游人甚杂，内有无赖贼窥而艳之，遂阴访居里，乘夜梯入，穴寝门，杀一婢于床下，逼女与淫；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "岸边",
+      "kind": "space",
+      "framework_group": "natural",
+      "framework_label": "山、野、郊、洞、谷、河岸等开放自然与边界空间",
+      "status": "未标注",
+      "occurrences": 2,
+      "chapters": 2,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 381,
+          "chapter": "蛤",
+          "unit": 23459,
+          "excerpt": "东海有蛤，饥时浮岸边，两壳开张；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 465,
+          "chapter": "王桂庵",
+          "unit": 29972,
+          "excerpt": "女拾弃之，金落岸边。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "黄泉",
+      "kind": "otherworld",
+      "framework_group": "underworld",
+      "framework_label": "冥府、地府、阴司、地狱及其内部场所",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 251,
+          "chapter": "八大王",
+          "unit": 15807,
+          "excerpt": "由此目最明，凡有珠宝之处，黄泉下皆可见；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "天堂",
+      "kind": "otherworld",
+      "framework_group": "underworld",
+      "framework_label": "冥府、地府、阴司、地狱及其内部场所",
+      "status": "未标注",
+      "occurrences": 4,
+      "chapters": 4,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 109,
+          "chapter": "宫梦弼",
+          "unit": 7364,
+          "excerpt": "」女笑慰之曰：「新妇在乞人中，稔其况味，今日视之，觉有天堂地狱之别。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 241,
+          "chapter": "向杲",
+          "unit": 15167,
+          "excerpt": "波斯谓母曰：「既愿同离水火，是欲出地狱而登天堂也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 255,
+          "chapter": "邵女",
+          "unit": 16166,
+          "excerpt": "当嫁君时，岂以君家为天堂耶？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 379,
+          "chapter": "天宫",
+          "unit": 23305,
+          "excerpt": "常常如此，则姮娥何殊于罗刹，天堂何别于地狱哉！",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "枉死城",
+      "kind": "otherworld",
+      "framework_group": "underworld",
+      "framework_label": "冥府、地府、阴司、地狱及其内部场所",
+      "status": "已标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 395,
+          "chapter": "席方平",
+          "unit": 24639,
+          "excerpt": "铜臭熏天，遂教枉死城中，全无日月。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u24639-7-10"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "奈河",
+      "kind": "otherworld",
+      "framework_group": "underworld",
+      "framework_label": "冥府、地府、阴司、地狱及其内部场所",
+      "status": "已标注",
+      "occurrences": 3,
+      "chapters": 1,
+      "place_overlap": 3,
+      "examples": [
+        {
+          "chapter_id": 442,
+          "chapter": "王十",
+          "unit": 28804,
+          "excerpt": "」曰：「冥中新阎王到任，见奈河淤平，十八狱坑厕俱满，故捉三种人淘河：小偷、私铸、私盐；",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u28804-13-15"
+          ]
+        },
+        {
+          "chapter_id": 442,
+          "chapter": "王十",
+          "unit": 28813,
+          "excerpt": "鬼引十去，至奈河边，见河内人夫，𫄶续如蚁。",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u28813-6-8"
+          ]
+        },
+        {
+          "chapter_id": 442,
+          "chapter": "王十",
+          "unit": 28831,
+          "excerpt": "望见十，犹缩首衾中，如在奈河状。",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u28831-12-14"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "仙乡",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 478,
+          "chapter": "粉蝶",
+          "unit": 30847,
+          "excerpt": "」阳喜曰：「此乃仙乡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "月宫",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "已标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 14,
+          "chapter": "劳山道士",
+          "unit": 513,
+          "excerpt": "歌毕，盘旋而起，跃登几上，惊顾之间，已复为箸，三人大笑，又一客曰：「今宵最乐，然不胜酒力矣，其饯我于月宫可乎？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u513-50-52"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "广寒宫",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "部分标注",
+      "occurrences": 3,
+      "chapters": 3,
+      "place_overlap": 1,
+      "examples": [
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 926,
+          "excerpt": "是夕，鼓吹阗咽，尘落漫飞，以望中仙人，忽同衾幄，遂疑广寒宫殿，未必在云霄矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 98,
+          "chapter": "白于玉",
+          "unit": 6355,
+          "excerpt": "童导入广寒宫，内以水晶为阶，行人如在镜中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u6355-3-6"
+          ]
+        },
+        {
+          "chapter_id": 460,
+          "chapter": "鸮鸟",
+          "unit": 29678,
+          "excerpt": "』」范公云：「天上有广寒宫，地下有乾清宫，有一古人姜太公。",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "天门",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "已标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 98,
+          "chapter": "白于玉",
+          "unit": 6351,
+          "excerpt": "」曰：「此天门也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u6351-5-7"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "王母宫",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "已标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 1,
+      "examples": [
+        {
+          "chapter_id": 98,
+          "chapter": "白于玉",
+          "unit": 6359,
+          "excerpt": "童言：「王母宫佳丽尢胜。",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u6359-4-7"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "洞府",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "部分标注",
+      "occurrences": 8,
+      "chapters": 8,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2196,
+          "excerpt": "儿笑曰：「我世居洞府，君固否耶？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 124,
+          "chapter": "翩翩",
+          "unit": 8146,
+          "excerpt": "入深山中，见一洞府。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 266,
+          "chapter": "青娥",
+          "unit": 17154,
+          "excerpt": "方争拒间，翁入，叱曰：「俗骨污吾洞府！",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 330,
+          "chapter": "陆押官",
+          "unit": 21120,
+          "excerpt": "至一洞府，见舍宇华耀，迥异人间；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 374,
+          "chapter": "查牙山洞",
+          "unit": 22919,
+          "excerpt": "忽有道士至，自称钟离弟子，言：「师遣先至，粪除洞府。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 375,
+          "chapter": "安期岛",
+          "unit": 22940,
+          "excerpt": "导人洞府，见三叟趺坐。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u22940-2-4"
+          ]
+        },
+        {
+          "chapter_id": 379,
+          "chapter": "天宫",
+          "unit": 23297,
+          "excerpt": "此是洞府。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 397,
+          "chapter": "贾奉雉",
+          "unit": 24916,
+          "excerpt": "渐入深山，至一洞府，其中别有天地。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "毒龙国",
+      "kind": "otherworld",
+      "framework_group": "demon",
+      "framework_label": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 99,
+          "chapter": "夜叉国",
+          "unit": 6628,
+          "excerpt": "此去为毒龙国，向卧眉非路。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "罗刹国",
+      "kind": "otherworld",
+      "framework_group": "demon",
+      "framework_label": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+      "status": "部分标注",
+      "occurrences": 2,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8519,
+          "excerpt": "」曰：「大罗刹国。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8660,
+          "excerpt": "」女乞一物为信，生在罗刹国所得赤玉莲花一对，出以授女。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8660-10-13"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "大罗刹国",
+      "kind": "otherworld",
+      "framework_group": "demon",
+      "framework_label": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+      "status": "已标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8519,
+          "excerpt": "」曰：「大罗刹国。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8519-4-8"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "龙宫",
+      "kind": "otherworld",
+      "framework_group": "demon",
+      "framework_label": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+      "status": "已标注",
+      "occurrences": 8,
+      "chapters": 5,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 126,
+          "chapter": "余德",
+          "unit": 8286,
+          "excerpt": "忽有道士踵门求之，尹出以示，道士曰：「此龙宫蓄水器也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8286-20-22"
+          ]
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8659,
+          "excerpt": "」生曰：「其女耶可名龙宫，男耶可名福海。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8659-10-12"
+          ]
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8701,
+          "excerpt": "过此以往，则『龙宫』无恙，不少把握之期；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8701-7-9"
+          ]
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8716,
+          "excerpt": "龙宫以女子不得往，时掩户泣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8716-0-2"
+          ]
+        },
+        {
+          "chapter_id": 406,
+          "chapter": "又",
+          "unit": 26201,
+          "excerpt": "」女曰：「不然，龙宫无白臾也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u26201-8-10"
+          ]
+        },
+        {
+          "chapter_id": 416,
+          "chapter": "晚霞",
+          "unit": 27308,
+          "excerpt": "初，晚霞在吴江，觉腹中震动，龙宫法禁严，恐旦夕身娩，横遭挞楚；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u27308-14-16"
+          ]
+        },
+        {
+          "chapter_id": 416,
+          "chapter": "晚霞",
+          "unit": 27332,
+          "excerpt": "凡鬼衣龙宫衣，七七魂魄坚凝，生人不殊矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u27332-3-5"
+          ]
+        },
+        {
+          "chapter_id": 417,
+          "chapter": "白秋练",
+          "unit": 27506,
+          "excerpt": "妾去，龙宫之奉，未必不百倍君家也。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u27506-3-5"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "海市",
+      "kind": "otherworld",
+      "framework_group": "demon",
+      "framework_label": "罗刹国、夜叉国、毒龙国、龙宫等异类／异域空间",
+      "status": "已标注",
+      "occurrences": 2,
+      "chapters": 1,
+      "place_overlap": 2,
+      "examples": [
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8580,
+          "excerpt": "村人曰：「吾侪小人受大夫赐，明日赴海市，当求珍玩以报」，问：「海市何地？",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8580-17-19",
+            "u8580-31-33"
+          ]
+        },
+        {
+          "chapter_id": 130,
+          "chapter": "罗刹海市",
+          "unit": 8610,
+          "excerpt": "欲烦椽笔赋『海市』，幸无吝珠玉。",
+          "existing_space": false,
+          "existing_place": true,
+          "existing_otherworld": true,
+          "realm_evidence_ids": [
+            "u8610-6-8"
+          ]
+        }
+      ]
+    }
+  ],
+  "high_priority_gaps": [
+    {
+      "term": "宅",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 79,
+      "chapters": 52,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 10,
+          "chapter": "宅妖",
+          "unit": 290,
+          "excerpt": "宅多妖异。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 829,
+          "excerpt": "先生故公子，以大讼萧条，眷口寡，移而乡居，宅遂旷焉。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 842,
+          "excerpt": "便问：「宅何久锢？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 845,
+          "excerpt": "以家宅焚于野火，暂借安顿。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 929,
+          "excerpt": "近单公子解讼归，索宅甚急，意将弃此而西。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 27,
+          "chapter": "鬼哭",
+          "unit": 1163,
+          "excerpt": "王学使七襄之宅，盗聚尤众。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 33,
+          "chapter": "新郎",
+          "unit": 1494,
+          "excerpt": "宅后有长溪，小桥通之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 38,
+          "chapter": "青凤",
+          "unit": 1842,
+          "excerpt": "太原耿氏，故大家，第宅弘阔。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "庐",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 52,
+      "chapters": 47,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 2,
+          "chapter": "尸变",
+          "unit": 47,
+          "excerpt": "入其庐，灯昏案上；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 6,
+          "chapter": "山魈",
+          "unit": 195,
+          "excerpt": "注念间，风声渐近居庐，俄而房门辟矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 29,
+          "chapter": "焦螟",
+          "unit": 1198,
+          "excerpt": "公造庐而请之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 35,
+          "chapter": "王兰",
+          "unit": 1587,
+          "excerpt": "前后药禳既穷，张造其庐，以术自炫。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 39,
+          "chapter": "画皮",
+          "unit": 2003,
+          "excerpt": "」生言：「敝庐不远，即烦枉顾。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 47,
+          "chapter": "婴宁",
+          "unit": 2799,
+          "excerpt": "寻至村所，庐舍全无，山花零落而已。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 68,
+          "chapter": "莲香",
+          "unit": 4222,
+          "excerpt": "莲香扶新妇入青庐，搭面既揭，欢若生平。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 74,
+          "chapter": "巧娘",
+          "unit": 4823,
+          "excerpt": "巧娘独居无耦，我母子无家，借庐栖止。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厅",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 13,
+      "chapters": 12,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 3,
+          "chapter": "喷水",
+          "unit": 104,
+          "excerpt": "一夜，二婢奉太夫人宿厅上，闻院内扑扑有声，如缝工之喷水者。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 20,
+          "chapter": "狐嫁女",
+          "unit": 782,
+          "excerpt": "酒数厅，翁唤女奴请小姐来。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 105,
+          "chapter": "商三官",
+          "unit": 6980,
+          "excerpt": "移时，闻厅事中格格有声。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 115,
+          "chapter": "犬灯",
+          "unit": 7656,
+          "excerpt": "系马而入，厅堂中酒肴已列。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 221,
+          "chapter": "小谢",
+          "unit": 14015,
+          "excerpt": "生往除厅事。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 256,
+          "chapter": "巩仙",
+          "unit": 16323,
+          "excerpt": "伏身入，则光明洞彻，宽若厅堂，几案床榻，无物不有。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 275,
+          "chapter": "胡四娘",
+          "unit": 17704,
+          "excerpt": "阍人既通，即有旧媪出，导入厅事，具酒馔，亦颇草草。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 286,
+          "chapter": "金和尚",
+          "unit": 18533,
+          "excerpt": "僧舍其中：前有厅事，梁楹节棁，绘金碧，射人眼；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厨",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 21,
+      "chapters": 19,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 40,
+          "chapter": "贾儿",
+          "unit": 2133,
+          "excerpt": "涂已，无所作，遂把厨刀霍霍磨之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 48,
+          "chapter": "聂小倩",
+          "unit": 2994,
+          "excerpt": "女即入厨下，代母尸饔，入房穿榻，似熟居者。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 55,
+          "chapter": "水莽草",
+          "unit": 3271,
+          "excerpt": "女便入厨下，代母执炊，供翁媪。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 70,
+          "chapter": "九山王",
+          "unit": 4440,
+          "excerpt": "酒鼎沸于廊下，茶烟袅于厨中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 92,
+          "chapter": "黄九郎",
+          "unit": 5936,
+          "excerpt": "」女自入厨下，设食供母，食已乃去。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 157,
+          "chapter": "鬼作筵",
+          "unit": 10184,
+          "excerpt": "至厨下，见二妇操刀砧于中，俱绀帔而绿缘之，呼我以嫂。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 209,
+          "chapter": "马介甫",
+          "unit": 13325,
+          "excerpt": "」乃起捉厨刀。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 219,
+          "chapter": "颜氏",
+          "unit": 13913,
+          "excerpt": "」生方懊丧，闻妻言，睒䁑而怒曰：「闺中人，身不到场屋，便以功名富贵似汝厨下汲水炊白粥；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "厢",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 7,
+      "chapters": 6,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 21,
+          "chapter": "娇娜",
+          "unit": 921,
+          "excerpt": "如不见信，松姊日涉园亭，伺前厢，可望见之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 48,
+          "chapter": "聂小倩",
+          "unit": 2920,
+          "excerpt": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 74,
+          "chapter": "巧娘",
+          "unit": 4786,
+          "excerpt": "」遂异生入东厢，探手 于裤夸而验之。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 102,
+          "chapter": "连城",
+          "unit": 6818,
+          "excerpt": "」相将入侧厢中。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 102,
+          "chapter": "连城",
+          "unit": 6824,
+          "excerpt": "因徘徊不敢遽生，寄厢中者三日。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 124,
+          "chapter": "翩翩",
+          "unit": 8128,
+          "excerpt": "业为国子左厢，富有金缯而无子，爱子浮若己出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 266,
+          "chapter": "青娥",
+          "unit": 17025,
+          "excerpt": "见小厢中，尚有灯火，伏窥之，则青娥卸晚装矣。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "客舍",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 7,
+      "chapters": 7,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 168,
+          "chapter": "武技",
+          "unit": 10578,
+          "excerpt": "」李喜，馆之客舍，丰其给，旦夕从学。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 278,
+          "chapter": "柳生",
+          "unit": 17775,
+          "excerpt": "入客舍，坐良久，柳归内不出。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 317,
+          "chapter": "霍女",
+          "unit": 19999,
+          "excerpt": "一夜，闻客舍喧饮，黄潜往窥之，见二客戎装上坐：一人裹豹皮巾，凛若天神；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 339,
+          "chapter": "凤仙",
+          "unit": 21742,
+          "excerpt": "刘揖翁及丁、胡入客舍；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 405,
+          "chapter": "五通",
+          "unit": 26073,
+          "excerpt": "一日，过赵，时已暮，赵以客舍为家人所集，遂导客宿内院。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 446,
+          "chapter": "石清虚",
+          "unit": 29060,
+          "excerpt": "叟笑曰：「客舍非耶？",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        },
+        {
+          "chapter_id": 489,
+          "chapter": "丐仙",
+          "unit": 31470,
+          "excerpt": "高弥重之，卧以客舍，衣以新衣，日与同坐处。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "客店",
+      "kind": "space",
+      "framework_group": "domestic",
+      "framework_label": "宅、庐、室、堂、厅、厢、廊等居所与内部空间",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 37,
+          "chapter": "王成",
+          "unit": 1717,
+          "excerpt": "入都，解装客店，主人深惜其晚。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "黄泉",
+      "kind": "otherworld",
+      "framework_group": "underworld",
+      "framework_label": "冥府、地府、阴司、地狱及其内部场所",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 251,
+          "chapter": "八大王",
+          "unit": 15807,
+          "excerpt": "由此目最明，凡有珠宝之处，黄泉下皆可见；",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "term": "仙乡",
+      "kind": "otherworld",
+      "framework_group": "immortal",
+      "framework_label": "天宫、月宫、仙岛、仙乡等仙境空间",
+      "status": "未标注",
+      "occurrences": 1,
+      "chapters": 1,
+      "place_overlap": 0,
+      "examples": [
+        {
+          "chapter_id": 478,
+          "chapter": "粉蝶",
+          "unit": 30847,
+          "excerpt": "」阳喜曰：「此乃仙乡。",
+          "existing_space": false,
+          "existing_place": false,
+          "existing_otherworld": false,
+          "realm_evidence_ids": []
+        }
+      ]
+    }
+  ]
+}

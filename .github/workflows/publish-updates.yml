@@ -112,6 +112,7 @@ jobs:
           node automation/test-local-source.js
           node automation/build-analysis-reports.js
           node automation/test-analysis-reports.js
+          node automation/test-attachment-space-otherworld.js
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
           node automation/test-performance.js
