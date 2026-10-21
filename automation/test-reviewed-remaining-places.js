@@ -13,8 +13,8 @@ for (const word of ['平原','济阳','龙虎山','淮阳','永年','齐河','�
   assert.equal(changed.get(word).location.coordinate_kind, 'approximate');
   assert(Number.isFinite(changed.get(word).location.lon));
 }
-assert.equal(changed.get('永年').location.parent_id, 'place-广平');
-assert.equal(changed.get('汉水').location.parent_id, 'custom-place-%E6%B1%89%E6%B1%9F');
+assert.equal(changed.get('永年').location.parent_id, 'place-广平府', '不能把广平县当成广平府');
+assert.notEqual(changed.get('汉水').location.parent_id, 'custom-place-%E6%B1%89%E6%B1%9F', '同一河流的别称不是行政父子');
 assert(result.held.some(row => row.word === '金山'), 'ambiguous 金山 should remain held');
 const model = M.create(pack.base); model.importDocument(doc);
 for (const word of Object.keys(entries)) {

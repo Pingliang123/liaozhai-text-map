@@ -86,6 +86,7 @@ jobs:
           node automation/test-user-package-restoration.js
           node automation/test-yi-network.js
           node automation/test-movement-evidence-dedup.js
+          node automation/test-otherworld-hierarchy.js
           node automation/test-unified-vocabulary.js
           node automation/test-manual-spatial-priority.js
           node automation/test-restored-place-examples.js
@@ -151,6 +152,7 @@ jobs:
           cp reports/unified-migration-verification-20261020.json public/reports/
           cp reports/unmapped-region-review-20261021.json public/reports/
           cp reports/unmapped-changes-20261021.md reports/unmapped-changes-20261021.json public/reports/
+          cp reports/otherworld-hierarchy-review-20261021.md reports/otherworld-hierarchy-review-20261021.json public/reports/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

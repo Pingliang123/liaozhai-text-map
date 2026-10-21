@@ -180,7 +180,7 @@ if (require.main === module) {
   pack.revisions = result.revisions;
   for (const change of result.changes) {
     const target = entries[change.word]?.target || change.word;
-    pack.base.place_equivalences = [...(pack.base.place_equivalences || []).filter(row => row.word !== change.word), {word: change.word, target, relation: change.relation, source: '原文逐条复核', note: change.location.region_description}];
+    if (change.relation !== 'already-reviewed') pack.base.place_equivalences = [...(pack.base.place_equivalences || []).filter(row => row.word !== change.word), {word: change.word, target, relation: change.relation, source: '原文逐条复核', note: change.location.region_description}];
     const existing = pack.base.places.find(place => place.name === change.word);
     const record = {...change.location, id: existing?.id || `custom-place-${encodeURIComponent(change.word)}`};
     if (existing) Object.assign(existing, record);

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T09:38:47.866Z",
+  "generated_at": "2026-10-21T11:47:42.137Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -10,7 +10,7 @@
       {
         "term": "冥司",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 14,
         "chapters": [
           22,
@@ -88,7 +88,7 @@
       {
         "term": "阴曹",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 6,
         "chapters": [
           18,
@@ -323,7 +323,7 @@
       {
         "term": "广寒宫",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 3,
         "chapters": [
           21,
@@ -355,7 +355,7 @@
       {
         "term": "十八狱",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 3,
         "chapters": [
           147,
@@ -652,7 +652,7 @@
       {
         "term": "仙人岛",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 1,
         "chapters": [
           272
@@ -688,7 +688,7 @@
       {
         "term": "阴世",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 1,
         "chapters": [
           392
@@ -706,7 +706,7 @@
       {
         "term": "月宫",
         "kind": "异境",
-        "existing": false,
+        "existing": true,
         "mentions": 1,
         "chapters": [
           14
