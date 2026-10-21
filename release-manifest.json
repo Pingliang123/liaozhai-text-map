@@ -521,7 +521,7 @@
     {
       "path": "data-package.json",
       "bytes": 32856820,
-      "sha256": "b0783d833bd95263c7d5e9710f1133c71aa627c854fa2d55f0391aed21ef23d3"
+      "sha256": "a47cb68cd2cc4543c3706ead285b49c80e50a9ea3632b928c4ace0793d471a3f"
     },
     {
       "path": "data.html",
@@ -545,8 +545,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 274221,
-      "sha256": "2d88fc568db88c3724b3a96aa798a9e026e5a4cc9e4d4a9dd1bde85c74f8278e"
+      "bytes": 275314,
+      "sha256": "88f2cbe3ea8839f089be81cc4b4773d3a78fc49fbcb112e0b980c59a16045f11"
     },
     {
       "path": "manual-revisions.json",
@@ -556,7 +556,7 @@
     {
       "path": "research-data.zip",
       "bytes": 19167584,
-      "sha256": "2ac68cfd4b368a36e872132ca7a841a5688f599896efe9e1013710ba6c2b37e3"
+      "sha256": "96fe7937e572d69a9afbd1741331427a736a5c95b4fec5b731f7ffb4d0aa9224"
     }
   ]
 }
