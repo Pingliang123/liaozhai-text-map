@@ -16,6 +16,6 @@ for(const [title,wrong,place,space]of [['西僧','卓锡泰山','泰山',null],[
 console.log('PASS 西僧/山市 legacy restore, final decisions, duplicate removal, source-aligned tokens and no pending reappearance');
 const actual=M.create(base);actual.importDocument(require('../manual-revisions.json'));
 for(const [id,wrong,place]of [[101,'卓锡泰山','泰山'],[248,'奂山山市','奂山'],[15,'河南界','河南'],[30,'淮阳界','淮阳']]){assert(!actual.view(id).places.some(p=>p.word===wrong));assert(actual.view(id).places.some(p=>p.word===place));}
-const full=actual.document(),partial={...full,overrides:full.overrides.slice(0,54)};const merged=M.mergeDocuments(base,full,partial,full);assert.equal(merged.overrides.length,full.overrides.length,'An old partial document cannot erase hundreds of unrelated chapters');
+const full=actual.document(),partial={...full,overrides:full.overrides.slice(0,54)};delete partial.complete_snapshot;const merged=M.mergeDocuments(base,full,partial,full);assert.equal(merged.overrides.length,full.overrides.length,'An old partial document cannot erase hundreds of unrelated chapters');
 const single={...full,overrides:full.overrides.slice(1)};assert.equal(M.mergeDocuments(base,full,single,full).overrides.length,full.overrides.length-1,'Intentional individual reset remains possible');
 console.log('PASS canonical examples and partial-document omission protection without blocking individual reset');

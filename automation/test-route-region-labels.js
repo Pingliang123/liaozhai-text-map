@@ -1,6 +1,6 @@
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-const source=fs.readFileSync(process.argv[2]||'outputs/ghost_map_app.js','utf8');
+const source=fs.readFileSync(process.argv[2]||'index.html','utf8');
 const start=source.indexOf('  function routeRegion('),end=source.indexOf('\n  function renderMovement()',start);
 assert(start>=0&&end>start);
 assert(!source.includes('if(row===current) routeAnnotations.push('),'Route titles remain visible before selection');

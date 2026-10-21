@@ -508,8 +508,253 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11362140,
-      "sha256": "c8bbea8bf3dfc361e7db1a552896eb10366101523c66936c71705f8423792618"
+      "bytes": 11362165,
+      "sha256": "673e01456cb3c477a674e72b24fee3989bc92d406003a771e2b8de9fc811c26b"
+    },
+    {
+      "path": "data.html",
+      "bytes": 1212,
+      "sha256": "7cb31d68fca8d19caa2f9639c798f10ad91d6c79d0cd9a79734ddcf1574e9751"
+    },
+    {
+      "path": "audit-reports.js",
+      "bytes": 10709,
+      "sha256": "2a140ca70ef6c161348d56a3d8dd4fba13a39c39a89dddd6546cc37042a5fe2d"
+    },
+    {
+      "path": "data-package.json",
+      "bytes": 32856845,
+      "sha256": "f3759fec222a6b9cab6964889fd41936a2530596635a66613472c33add173145"
+    },
+    {
+      "path": "github-login.js",
+      "bytes": 4025,
+      "sha256": "f1f8ac29d90edb032222bfb938deb03faf945551caa2dc03dc8ea17c3227e339"
+    },
+    {
+      "path": "github-sync.js",
+      "bytes": 13682,
+      "sha256": "ddd963580d5ea49b5679a77448f913eafc816da3f1668e91c11a363b051c4a3f"
+    },
+    {
+      "path": "github-sync-config.json",
+      "bytes": 80,
+      "sha256": "838eb6ab4db2c2e0011d300203e70cd1408d83ca15613af7b7c77b2a7f0a284b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 276406,
+      "sha256": "a7303979613fc44871b47b115450dbafdeca58013695e9c70826d965f8e817fb"
+    },
+    {
+      "path": "assets/chapter-references.js",
+      "bytes": 2341,
+      "sha256": "c9f8f95e0529f07bc89e0af97176b0fb7944b87efe31eb9e768ca3d344bbc705"
+    },
+    {
+      "path": "assets/chapter-references.json",
+      "bytes": 2925628,
+      "sha256": "9b82eeca925f4c162f07aad0d712a82a827fa6114ac5bdf92df7b9b61d7c1539"
+    },
+    {
+      "path": "assets/corpus-store.js",
+      "bytes": 2146,
+      "sha256": "f5ad2473ce2d045be596d74adfe3d96f558181bb49f5a2c836bf0c120f893cdf"
+    },
+    {
+      "path": "assets/data-loader.js",
+      "bytes": 1123,
+      "sha256": "33ab7af17c127faf4e810d60753b7fd63d413e918eb71679b1db8292eb3affc0"
+    },
+    {
+      "path": "assets/deepseek-review.json",
+      "bytes": 3576243,
+      "sha256": "1e060c2a4eb48b08b070d2e10360d9df3a1d7316d45043ad972bc5a963eae7bd"
+    },
+    {
+      "path": "assets/map-base.json",
+      "bytes": 21494471,
+      "sha256": "de46b2da8e6c38f2422678ece63a77356a6f11cb75d803d910cad3fd03781a9f"
+    },
+    {
+      "path": "assets/map-network-link.js",
+      "bytes": 1506,
+      "sha256": "adb6ab92406a03d4c0312346d54788aa0b0d99a686ec716ade092a1d366ff0cb"
+    },
+    {
+      "path": "assets/otherworld-map.js",
+      "bytes": 2780,
+      "sha256": "f62eb27fd6d4fcca18a7a622542dfe5538748734c15a2bb76d6f7e716a5b5189"
+    },
+    {
+      "path": "assets/place-crosscheck.js",
+      "bytes": 1612,
+      "sha256": "41e3b3fb771bff232d588e2b901d215eb603c65cbe2ded2ef37d7c49744346aa"
+    },
+    {
+      "path": "assets/place-review.js",
+      "bytes": 9384,
+      "sha256": "57f4daf54bcce030eb05d8174471ff8ba19f6d938bb379617248dece57541f88"
+    },
+    {
+      "path": "assets/vocabulary-grid.css",
+      "bytes": 2145,
+      "sha256": "c186cd83d5db819488c81ccfb4aa5f02c5c7d8357c9c7e67cd3ecb9e26770878"
+    },
+    {
+      "path": "assets/vocabulary-grid.js",
+      "bytes": 7964,
+      "sha256": "88446994c737f65659cda01adee67f768ea849d4783a5e411dfbbdbce5141175"
+    },
+    {
+      "path": "assets/research-lab/book-network.js",
+      "bytes": 32863,
+      "sha256": "e05f3c5d4c61671b4a08ed0f668d8e39eb9d3de2b64290892bcd05dd7d3eed47"
+    },
+    {
+      "path": "assets/research-lab/cases-page.js",
+      "bytes": 1773,
+      "sha256": "d07fd3d5cff72bd7dba4ae384386ee9d9564e08c2e689e86c2f9f24051b8127e"
+    },
+    {
+      "path": "assets/research-lab/cases.html",
+      "bytes": 1196,
+      "sha256": "20870735430b5cbff78f78bb194256600a924b1134a98bb492e670e055ae3258"
+    },
+    {
+      "path": "assets/research-lab/chapter-spaces.js",
+      "bytes": 4394,
+      "sha256": "fc7759ec9fc206bee618ac84bfb22480cfb5630eee4826819f7273696b452050"
+    },
+    {
+      "path": "assets/research-lab/current-data.js",
+      "bytes": 3589,
+      "sha256": "27ede9fc254c0d224eb949bc9bbc44c43b0ed9f6aa9501462dac22479441f09a"
+    },
+    {
+      "path": "assets/research-lab/data.json",
+      "bytes": 4373019,
+      "sha256": "564f0bb253567f9c576178e75fe4e5a085dae30ed2cbae466e5b2e2781d79ac4"
+    },
+    {
+      "path": "assets/research-lab/edge-style.js",
+      "bytes": 1369,
+      "sha256": "49cb5741a5a244dfec42822855fa0f3df2947c4afe01e6b88eeb595d896e05a3"
+    },
+    {
+      "path": "assets/research-lab/edit-entrance.js",
+      "bytes": 1095,
+      "sha256": "048cd81ab1cb9aaed6708097f2e0d9432fe176daa50c7e891b169012cd23a305"
+    },
+    {
+      "path": "assets/research-lab/hierarchy-network.js",
+      "bytes": 3367,
+      "sha256": "328847d8b7661a56d7d0833ff05c3490dcaaabf7f1c8b176215ea191ebb5ad30"
+    },
+    {
+      "path": "assets/research-lab/index.html",
+      "bytes": 3789,
+      "sha256": "0f25edf579d0174478f5e7f94a1906833b33ab3ec67f2feaecc86ebdb08f6eea"
+    },
+    {
+      "path": "assets/research-lab/lab.js",
+      "bytes": 16350,
+      "sha256": "3fd78f6e6ab5b7a313cbdd238a501ec6b860c13e8f15391580d194512585adac"
+    },
+    {
+      "path": "assets/research-lab/map-runtime.js",
+      "bytes": 48756,
+      "sha256": "31f387de9af2db162835b3eed6cd9aa28492f25bf6219c293dbe631307d9547b"
+    },
+    {
+      "path": "assets/research-lab/network-analysis.js",
+      "bytes": 6541,
+      "sha256": "4222966d6895cf1a163acdb1fff730726ca3ac2437217b7381d0eb7e98c5e0c2"
+    },
+    {
+      "path": "assets/research-lab/network.js",
+      "bytes": 12103,
+      "sha256": "ac956d21483a6927f5a23429b4aca61894d523c8556a5fda14f032278c0fa460"
+    },
+    {
+      "path": "assets/research-lab/networkx-analysis.json",
+      "bytes": 2874728,
+      "sha256": "00c1565941fa58206ee4a1711b501e8047de8b387c263e4af7fb91144ad3fd6a"
+    },
+    {
+      "path": "assets/research-lab/place-level-colors.js",
+      "bytes": 892,
+      "sha256": "899fd6855ef63596287cdfdd20d128de8d516b8cac7f2b6825e118bf5eee959f"
+    },
+    {
+      "path": "assets/research-lab/place-levels.json",
+      "bytes": 211916,
+      "sha256": "0e2ad7a01f477b391b2e17cd6a110d7f30c1823bf02ec0fe10f3839e30e3ff57"
+    },
+    {
+      "path": "assets/research-lab/place-network.js",
+      "bytes": 3107,
+      "sha256": "1453457d5426847c1a26fbd522b43d2e43fcaec8fd8937e284bc42b0ab84ab84"
+    },
+    {
+      "path": "assets/research-lab/place-records.js",
+      "bytes": 1848,
+      "sha256": "068f4364593a0f2ee664903ea1c47038a70980ad11651d55dbc0da1ad5c16f11"
+    },
+    {
+      "path": "assets/research-lab/place-spaces.js",
+      "bytes": 19429,
+      "sha256": "561729fe47aebf7ba67d40f4325fd1933e3c4bca0d8868737a625478cab61f09"
+    },
+    {
+      "path": "assets/research-lab/place-taxonomy.js",
+      "bytes": 2558,
+      "sha256": "5de52d93065ae2b32c91de64895af8a688a44e439a572ce806a8a1b041edcef0"
+    },
+    {
+      "path": "assets/research-lab/relation-network.js",
+      "bytes": 10576,
+      "sha256": "926c0bb7bb68c79d5c0b963d379b27891eb0bca099d07295511f179d057521d1"
+    },
+    {
+      "path": "assets/research-lab/reviewed-cases.js",
+      "bytes": 9754,
+      "sha256": "5fe395fb56de55acee28860bfaef8b69dd488af17204e78faa0cc67b0b261d71"
+    },
+    {
+      "path": "assets/research-lab/style.css",
+      "bytes": 3330,
+      "sha256": "455d3ead6ccf13b958788c26bb2d46b63447935c31a64d6c0ff65d6079cb1ef6"
+    },
+    {
+      "path": "assets/research-lab/time-terms.json",
+      "bytes": 14580,
+      "sha256": "21a5f0efcfd301eb09e056103a5dbdfdf27013ee064a6f57e23e2438c71d5c46"
+    },
+    {
+      "path": "assets/research-lab/topic-places.js",
+      "bytes": 9019,
+      "sha256": "33c0476bf0c32748eb8449fd16eff6a62bd4051526199623822ec7b930b92ada"
+    },
+    {
+      "path": "assets/research-lab/topics.json",
+      "bytes": 1564573,
+      "sha256": "a814cfa26fb29576df55646f633438e6cd1a8a0cc7cfeef7a8d35cb56757d067"
+    },
+    {
+      "path": "assets/research-lab/tutorial-network.js",
+      "bytes": 1590,
+      "sha256": "8e5c254b912d4416375ab069db22ecb37690a002d76e847627e76d6c0c681b34"
+    },
+    {
+      "path": "assets/research-lab/vocabulary-network.js",
+      "bytes": 3759,
+      "sha256": "a04a3262af63864f3527185076326d763c0ae1221b00c90a7e7154a8dd3e3e83"
+    },
+    {
+      "path": "assets/research-lab/yi-network.js",
+      "bytes": 7546,
+      "sha256": "150944bab8a47eec0fddd3468ef65ce2d6b6d3dce491e42771566fa09a688848"
     }
   ],
   "artifacts": [
@@ -520,8 +765,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32856820,
-      "sha256": "a47cb68cd2cc4543c3706ead285b49c80e50a9ea3632b928c4ace0793d471a3f"
+      "bytes": 32856845,
+      "sha256": "f3759fec222a6b9cab6964889fd41936a2530596635a66613472c33add173145"
     },
     {
       "path": "data.html",
@@ -540,23 +785,23 @@
     },
     {
       "path": "github-sync.js",
-      "bytes": 13350,
-      "sha256": "3420da4797cda8d4460ceb7b5e91b42b2e6fff063a360fa7c1e3059deae7da56"
+      "bytes": 13682,
+      "sha256": "ddd963580d5ea49b5679a77448f913eafc816da3f1668e91c11a363b051c4a3f"
     },
     {
       "path": "index.html",
-      "bytes": 275314,
-      "sha256": "88f2cbe3ea8839f089be81cc4b4773d3a78fc49fbcb112e0b980c59a16045f11"
+      "bytes": 276406,
+      "sha256": "a7303979613fc44871b47b115450dbafdeca58013695e9c70826d965f8e817fb"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11362140,
-      "sha256": "c8bbea8bf3dfc361e7db1a552896eb10366101523c66936c71705f8423792618"
+      "bytes": 11362165,
+      "sha256": "673e01456cb3c477a674e72b24fee3989bc92d406003a771e2b8de9fc811c26b"
     },
     {
       "path": "research-data.zip",
-      "bytes": 19167584,
-      "sha256": "96fe7937e572d69a9afbd1741331427a736a5c95b4fec5b731f7ffb4d0aa9224"
+      "bytes": 36258741,
+      "sha256": "0f2294854e7647eb19c562593c907e999e7487ad7dc36a0f71aedd139ae59ab2"
     }
   ]
 }

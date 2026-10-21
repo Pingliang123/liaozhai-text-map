@@ -6,6 +6,8 @@ on:
       - manual-revisions.json
       - updates/inbox/*.json
       - automation/**
+      - assets/**
+      - reports/**
       - github-sync.js
       - github-login.js
       - github-sync-config.json
@@ -76,7 +78,6 @@ jobs:
             mkdir -p updates/processed
             git mv "$file" "updates/processed/$(basename "$file" .json)-${GITHUB_SHA}.json"
           done
-          node automation/audit-unmapped-place-equivalences.js
           node automation/merge-revisions.js manual-revisions.json
           node automation/build-spatial-lab.js
           node automation/build-lab-times.js
@@ -118,9 +119,12 @@ jobs:
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
           node automation/test-performance.js
+          node automation/update-asset-versions.js
+          node automation/test-site-audit.js
+          node automation/test-lab-state.js
+          node automation/test-lab-cache.js
           node automation/test-cloud-release.js
           python automation/test-release-cleanup.py
-          python automation/finalize-cloud-release.py
       - name: Build tutorial NetworkX analysis
         shell: bash
         run: |
@@ -134,12 +138,15 @@ jobs:
           node automation/test-tutorial-network.js
           node automation/test-tutorial-network-dom.js
           python automation/test-networkx.py
+          python automation/finalize-cloud-release.py
       - name: Record regenerated release
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/research-lab/map-runtime.js reports/place-space-sync-audit.json reports/place-space-sync-audit.md
+          git add data.html assets/research-lab/index.html assets/research-lab/cases.html
+          git add reports/analysis-reports-20261021.json reports/analysis-reports-20261021.md
           git add manual-revisions.json data-package.json index.html research-data.zip release-manifest.json assets/map-base.json assets/research-lab/data.json assets/research-lab/time-terms.json assets/research-lab/topics.json assets/research-lab/networkx-analysis.json assets/research-lab/place-levels.json reports/unmapped-place-equivalence-audit-20261019.json reports/unmapped-place-equivalence-audit-20261019.md
           if ! git diff --cached --quiet; then
             git commit -m "更新人工修订资料包与发布版本"

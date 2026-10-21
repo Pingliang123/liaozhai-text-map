@@ -49,6 +49,8 @@ async function main(){
   cloud.a=4;mode='offline';await assert.rejects(client.sync(),/offline/);assert.deepEqual(local,prior);
   mode='';draft=true;await client.sync();assert.equal(writes,writeCount);draft=false;
   afterPut=()=>{local.d=7;};await client.sync();assert.equal(cloud.d,7,'Save made during PUT must be queued');
+  local.a=9;afterPut=()=>{draft=true;};await client.sync();
+  local.a=10;draft=false;await client.sync();assert.equal(cloud.a,10,'Editing during PUT must not conflict with our own acknowledged commit');
   client.disconnect();local.e=8;const count=writes;await client.sync();assert.equal(writes,count);
   assert(!stored.join('').includes('test-token'));
   // A fresh browser knows its embedded publication baseline, and must accept

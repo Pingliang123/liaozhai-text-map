@@ -17,7 +17,7 @@
     return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(value.replace(/\s/g,'')),x=>x.charCodeAt(0))));
   }
   function create(options) {
-    let ancestor=clone(options.ancestor), token='', running=null, wanted=false;
+    let ancestor=clone(options.ancestor), token='', running=null, wanted=false, pendingCommit=null;
     const connected=()=>!!token||!!options.cloud?.connected();
     const status=options.status||(()=>{}), request=options.request||fetch;
     let validatedJSON=null;
@@ -50,6 +50,11 @@
     function validateRemote(incoming){validate(incoming.doc);if(!/^[a-f0-9]{40}$/.test(incoming.sha||''))throw new Error('云端修订版本标识无效。');return incoming;}
     async function pass() {
       if(options.hasDraft()) { status('请先保存当前输入；保存后会自动同步。');return; }
+      if(pendingCommit){
+        const latest=options.merge(pendingCommit.mine,options.getLocal(),pendingCommit.merged);
+        if(!equal(latest,options.getLocal()))await options.apply(latest);
+        acknowledge(pendingCommit.merged);pendingCommit=null;
+      }
       for(let attempt=0;attempt<3;attempt++) {
         const incoming=await remote(connected());
         if(options.hasDraft()) {status('请先保存当前输入；云端尚未覆盖本机。');return;}
@@ -78,7 +83,7 @@
         }
         // Include edits saved while the network request was in flight.
         const current=options.getLocal(),latest=equal(mine,current)?merged:options.merge(mine,current,merged);
-        if(options.hasDraft()) {status('已提交云端；当前输入保留，保存后继续同步。');return;}
+        if(options.hasDraft()) {pendingCommit={mine,merged};status('已提交云端；当前输入保留，保存后继续同步。');return;}
         if(!equal(latest,options.getLocal()))await options.apply(latest);
         acknowledge(merged);
         if(!equal(latest,merged)) wanted=true;
@@ -91,7 +96,7 @@
       running=(async()=>{try {while(wanted){wanted=false;await pass();}}catch(error){wanted=false;status(error.message,true);throw error;}finally{running=null;}})();
       return running;
     }
-    return {sync,async pull(){if(running)await running.catch(()=>{});if(options.hasDraft())throw new Error('请先保存或取消当前输入。');const incoming=await remote(connected());await options.apply(incoming.doc);ancestor=clone(incoming.doc);options.onAncestor?.(clone(ancestor));status('已载入云端版本；原本机修订请从刚下载的备份核对。');},connect(value){if(!value||/\s/.test(value))throw new Error('请输入有效的 GitHub 授权令牌。');token=value;},async disconnect(){token='';await options.cloud?.logout();status('已退出 GitHub；本机仍可保存，云端修订可继续读取。');},connected};
+    return {sync,async pull(){if(running)await running.catch(()=>{});if(options.hasDraft())throw new Error('请先保存或取消当前输入。');const incoming=await remote(connected());await options.apply(incoming.doc);ancestor=clone(incoming.doc);pendingCommit=null;options.onAncestor?.(clone(ancestor));status('已载入云端版本；原本机修订请从刚下载的备份核对。');},connect(value){if(!value||/\s/.test(value))throw new Error('请输入有效的 GitHub 授权令牌。');token=value;},async disconnect(){token='';await options.cloud?.logout();status('已退出 GitHub；本机仍可保存，云端修订可继续读取。');},connected};
   }
   async function mount(options) {
     const button=document.getElementById('save-github');if(!button)return;

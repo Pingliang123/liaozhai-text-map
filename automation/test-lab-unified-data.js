@@ -19,7 +19,7 @@ const location=model.placeInfo('齐河');model.saveLocation({...location,lon:116
 const local=model.document();
 (async()=>{
  let calls=0;
- const data=await D.load({GhostMapModel:M,GhostMapPackage:{},localStorage:{getItem:k=>k.endsWith('-backend')?null:JSON.stringify(local)},fetch:async url=>{calls++;assert.equal(url,'../../data-package.json');return {ok:true,json:async()=>pack};}});
+ const data=await D.load({GhostMapModel:M,GhostMapPackage:{},localStorage:{getItem:k=>k.endsWith('-backend')?null:JSON.stringify(local)},fetch:async url=>{if(url==='../../release-manifest.json')return {ok:false};calls++;assert.equal(url,'../../data-package.json');return {ok:true,json:async()=>pack};}});
  assert.equal(calls,1,'篇目与层级仅使用一次资料包加载');
  assert.deepEqual(data.chapters,D.snapshot(model));
  assert.equal(data.placeRecords['齐河'].parent,'place-山东','本机上级修订立即用于层级网络');

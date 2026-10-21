@@ -14,7 +14,7 @@ function mount(container,chapters,options={}){
  const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
  const label=el('label','篇目 '),pick=el('select'),out=el('div');pick.setAttribute('aria-label','选择篇目查看空间网络');
  for(const c of chapters){const o=el('option',c.title);o.value=String(c.id);pick.append(o);}
- const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.includes(place));if(c)pick.value=String(c.id);}
+ const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter')||params.get('scene'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.includes(place));if(c)pick.value=String(c.id);}
  label.append(pick);container.append(label,out);
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
@@ -24,7 +24,7 @@ function mount(container,chapters,options={}){
   const read=el('a','原文与修订 ↗');read.href='../../index.html?chapter='+encodeURIComponent(c.id)+'#workspace';container.dataset&&(container.dataset.chapter=String(c.id));out.append(read);
   const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
  }
- pick.onchange=()=>{if(root.history){const url=new URL(root.location.href);url.searchParams.set('chapter',pick.value);root.history.replaceState(null,'',url);}draw();};draw();
+ pick.onchange=()=>{if(root.history){const url=new URL(root.location.href);url.searchParams.set('scene',pick.value);root.history.replaceState(null,'',url);}draw();};draw();
  return {select:pick,refresh(records){options.placeRecords=records;draw();},selectChapter(id){if(chapters.some(c=>String(c.id)===String(id))){pick.value=String(id);draw();}}};
 }
 const api={build,mount};if(typeof module!=='undefined')module.exports=api;else root.GhostChapterSpaces=api;

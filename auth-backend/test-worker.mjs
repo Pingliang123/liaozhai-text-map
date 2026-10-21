@@ -20,9 +20,13 @@ async function login(state,expires=Date.now()+300000){await state.storage.put('c
 const request=async(env,path,options={})=>Worker.fetch(new Request('https://sync.example'+path,{...options,headers:{Origin:env.SITE_ORIGIN,...options.headers}}),env);
 test('old partial browser uploads preserve omitted cloud chapters',async()=>{
  const model=Model.create(base),complete={...doc,overrides:model.ids.slice(0,30).map(id=>({chapter_id:id,changes:model.editable(id)}))},partial=structuredClone({...complete,overrides:complete.overrides.slice(0,1)});partial.overrides[0].changes.review_note='latest manual edit';
+ delete partial.complete_snapshot; // Legacy browsers predate the explicit complete-document marker.
  let written;const state=setup({FETCH:async(url,options)=>{if(options.method==='PUT'){written=JSON.parse(Buffer.from(JSON.parse(options.body).content,'base64'));return r({commit:{sha:'commit'}});}return r({sha,content:pack(complete)});}});await login(state);
  const response=await request(state.env,'/api/revisions',{method:'PUT',headers:{Authorization:'Bearer '+await ticket(sid,secret),'Content-Type':'application/json'},body:JSON.stringify({doc:partial,sha})});
  assert.equal(response.status,200);assert.equal(written.overrides.length,30);assert.equal(written.overrides.find(o=>o.chapter_id===partial.overrides[0].chapter_id).changes.review_note,'latest manual edit');
+ partial.complete_snapshot=true;
+ const reset=await request(state.env,'/api/revisions',{method:'PUT',headers:{Authorization:'Bearer '+await ticket(sid,secret),'Content-Type':'application/json'},body:JSON.stringify({doc:partial,sha})});
+ assert.equal(reset.status,200);assert.equal(written.overrides.length,1,'New complete snapshots preserve deliberate removal, unlike legacy partial uploads');
 });
 
 test('credentials encrypted, tickets authenticated, tampering refused',async()=>{

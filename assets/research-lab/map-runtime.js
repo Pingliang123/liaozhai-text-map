@@ -525,7 +525,7 @@ globalThis.GhostMapPlaceReview={
         evidence_review: clone(c.evidence_review || {})};
     }
     function document() {
-      return {schema_version: 2, corpus_id: base.corpus_id, source_sha256: base.source_sha256,
+      return {schema_version: 2, complete_snapshot: true, corpus_id: base.corpus_id, source_sha256: base.source_sha256,
         overrides: [...overrides].map(([chapter_id, changes]) => ({chapter_id, changes})),
         place_locations:[...locations.values()].map(clone)};
     }
@@ -660,7 +660,7 @@ globalThis.GhostMapPlaceReview={
     const maps = [previous,proposed,incoming].map(d => new Map(d.overrides.map(row => [row.chapter_id,row.changes])));
     // Old browsers can carry only a small subset of the published chapters.
     // Treat a sudden majority omission as a partial document, not mass deletion.
-    if(maps[0].size>=20&&maps[1].size<maps[0].size/2)for(const [id,changes]of maps[2])if(!maps[1].has(id))maps[1].set(id,changes);
+    if(local?.complete_snapshot!==true&&maps[0].size>=20&&maps[1].size<maps[0].size/2)for(const [id,changes]of maps[2])if(!maps[1].has(id))maps[1].set(id,changes);
     const ids = new Set(maps.flatMap(m => [...m.keys()])), result = [];
     for (const id of ids) {
       const [before,mine,theirs] = maps.map(m => m.get(id));

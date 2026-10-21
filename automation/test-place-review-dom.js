@@ -17,10 +17,10 @@ const page = require('fs').readFileSync('index.html', 'utf8');
 for (const [fragment, message] of [
   ["const fallbackDBName = 'liaozhai-map-local-backup-v1'", 'missing IndexedDB backup database'],
   ["indexedDB.open(fallbackDBName, 1)", 'missing IndexedDB opener'],
-  ['queueFallbackWrite(storageKey, storageSnapshot)', 'missing queued fallback write'],
+  ['fallbackWrites=fallbackWrites.catch(()=>{}).then(save)', 'missing recoverable atomic save queue'],
   ['await GhostCorpusStore.readLocal(window,storageKey,fallbackRead)', 'missing shared authoritative fallback restore'],
   ['storagePending || storageInvalid', 'missing pending-save guard'],
-  ['本机保存失败（主储存与备用储存均不可用）：请立即下载 JSON 备份。', 'missing final backup warning']
+  ['当前修改保留，请下载备份。', 'missing final backup warning']
 ]) if (!page.includes(fragment)) throw new Error(message);
 console.log('PASS IndexedDB fallback, queued writes, restore and backup warning');
 if (!page.includes('let unmappedCache = null') || !page.includes('if (unmappedCache) return unmappedCache')) throw new Error('全书未定位地点没有缓存');

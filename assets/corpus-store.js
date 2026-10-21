@@ -5,7 +5,7 @@ async function load(url='data-package.json',request=root.fetch.bind(root)){
  return bundle;
 }
 function retainMissing(local,published){
- if(!Array.isArray(local?.overrides)||!Array.isArray(published?.overrides)||published.overrides.length<20||local.overrides.length>=published.overrides.length/2)return local;
+ if(local?.complete_snapshot===true||!Array.isArray(local?.overrides)||!Array.isArray(published?.overrides)||published.overrides.length<20||local.overrides.length>=published.overrides.length/2)return local;
  const ids=new Set(local.overrides.map(r=>r.chapter_id)),locations=new Map((published.place_locations||[]).map(r=>[r.name,r]));for(const row of local.place_locations||[])locations.set(row.name,row);
  return {...local,overrides:[...published.overrides.filter(r=>!ids.has(r.chapter_id)),...local.overrides].sort((a,b)=>a.chapter_id-b.chapter_id),place_locations:[...locations.values()]};
 }
