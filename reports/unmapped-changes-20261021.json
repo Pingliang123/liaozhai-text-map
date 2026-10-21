@@ -1,6 +1,6 @@
 {
   "reviewed": 317,
-  "changed_words": 28,
+  "changed_words": 30,
   "rollback": {
     "before_locations": [
       {
@@ -5234,6 +5234,93 @@
         }
       ],
       "status": "changed"
+    },
+    {
+      "word": "酆都",
+      "decision": {
+        "word": "酆都",
+        "kind": "place",
+        "relation": "same-area",
+        "target_name": "酆都县",
+        "parent_name": "",
+        "candidate_name": "",
+        "level": "county",
+        "confidence": 0.9,
+        "reason": "《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。"
+      },
+      "changes": [
+        {
+          "action": "补充定位",
+          "location": {
+            "name": "酆都",
+            "admin_level": "county",
+            "parent_id": null,
+            "modern_name": "酆都（酆都县区域参考）",
+            "region_description": "采用酆都县的区域参考点；《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。",
+            "modern_level": "文本地理参考",
+            "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_1281",
+            "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。",
+            "coordinate_kind": "approximate",
+            "lon": 107.71456,
+            "lat": 29.8874
+          },
+          "target": "酆都县",
+          "relation": "same-area",
+          "evidence": [
+            {
+              "chapter": "酆都御史",
+              "quote": [
+                "酆都县外有洞，深不可测，相传阎罗署。",
+                "明有御史行台华公，按临酆都，闻之不以为信，欲入洞以决其惑，众云不可。"
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "changed"
+    },
+    {
+      "word": "顺天府",
+      "decision": {
+        "word": "顺天府",
+        "kind": "place",
+        "relation": "same-area",
+        "target_name": "顺天",
+        "parent_name": "直隶",
+        "candidate_name": "",
+        "level": "prefecture",
+        "confidence": 0.95,
+        "reason": "原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。"
+      },
+      "changes": [
+        {
+          "action": "补充定位",
+          "location": {
+            "name": "顺天府",
+            "admin_level": "prefecture",
+            "parent_id": "place-直隶",
+            "modern_name": "顺天府（顺天区域参考）",
+            "region_description": "采用顺天的区域参考点；原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。",
+            "modern_level": "文本地理参考",
+            "source_url": "https://chgis.hudci.org/tgaz/placename/hvd_9513",
+            "note": "DeepSeek语境核查；同区参考点，不代表独立精确坐标。原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。",
+            "coordinate_kind": "approximate",
+            "lon": 116.368,
+            "lat": 39.93143
+          },
+          "target": "顺天",
+          "relation": "same-area",
+          "evidence": [
+            {
+              "chapter": "三生",
+              "quote": [
+                "某生于北顺天府市肆中。"
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "changed"
     }
   ],
   "unchanged": [
@@ -5694,7 +5781,7 @@
       },
       "changes": [],
       "status": "unchanged",
-      "reason": "保留已有逐词修订"
+      "reason": "没有可复用的已定位区域或唯一历史坐标"
     },
     {
       "word": "朝天观",
@@ -6766,23 +6853,6 @@
       "changes": [],
       "status": "unchanged",
       "reason": "语境或地理对应不充分"
-    },
-    {
-      "word": "酆都",
-      "decision": {
-        "word": "酆都",
-        "kind": "place",
-        "relation": "same-area",
-        "target_name": "酆都县",
-        "parent_name": "",
-        "candidate_name": "",
-        "level": "county",
-        "confidence": 0.9,
-        "reason": "《酆都御史》'酆都县外有洞'明指酆都县，与现有酆都县同名同区，可共用参考点；洞中阎罗署为传说异境不另定位。"
-      },
-      "changes": [],
-      "status": "unchanged",
-      "reason": "保留已有逐词修订"
     },
     {
       "word": "王舍人庄",
@@ -8993,23 +9063,6 @@
       "changes": [],
       "status": "unchanged",
       "reason": "异境保留文本关联，不设现实坐标"
-    },
-    {
-      "word": "顺天府",
-      "decision": {
-        "word": "顺天府",
-        "kind": "place",
-        "relation": "same-area",
-        "target_name": "顺天",
-        "parent_name": "直隶",
-        "candidate_name": "",
-        "level": "prefecture",
-        "confidence": 0.95,
-        "reason": "原文“某生于北顺天府市肆中”，顺天府即明清北京地区，现有地点“顺天”为直隶下属府，二者同区可共用参考点。"
-      },
-      "changes": [],
-      "status": "unchanged",
-      "reason": "保留已有逐词修订"
     },
     {
       "word": "海东",

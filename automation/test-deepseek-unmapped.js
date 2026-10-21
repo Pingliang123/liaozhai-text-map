@@ -1,6 +1,10 @@
 const assert=require('node:assert/strict'),fs=require('fs'),{apply}=require('./apply-deepseek-unmapped');
 const p=JSON.parse(fs.readFileSync('data-package.json')),d=JSON.parse(fs.readFileSync('manual-revisions.json')),a=JSON.parse(fs.readFileSync('reports/deepseek-unmapped-20261021.json')),r=JSON.parse(fs.readFileSync('reports/unmapped-changes-20261021.json'));
 assert.equal(a.decisions.length,317);assert.equal(new Set(a.decisions.map(d=>d.word)).size,317);assert.equal(r.changed_words,r.changes.length);
+assert.deepEqual([...a.batches.flat()].sort(),a.decisions.map(x=>x.word).sort(),'每个送审词均须有独立返回结果');
+assert(a.decisions.some(x=>x.word==='顺天府'&&x.target_name==='顺天'));
+assert(d.place_locations.some(x=>x.name==='顺天府'&&x.parent_id==='place-直隶'&&Number.isFinite(x.lon)),'已确认地名仍须补充定位');
+assert(d.overrides.find(x=>x.chapter_id===393).changes.lexical_reviews['places:顺天府'].status==='accepted','补定位不能覆盖用户词类判断');
 for(const before of r.rollback.before_chapters){const after=d.overrides.find(x=>x.chapter_id===before.chapter_id);for(const key of ['event_types','years','people','narrative_events','realms_present'])assert.deepEqual(after.changes[key],before.changes[key]);}
 for(const before of r.rollback.before_locations)assert.deepEqual(d.place_locations.find(x=>x.name===before.name),before);
 assert(!r.changes.some(x=>x.word==='永年'),'不能把广平县当广平府');
