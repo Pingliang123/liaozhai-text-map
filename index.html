@@ -1693,13 +1693,15 @@ section,details,#save-chapter{scroll-margin-top:90px}
     catch(error) { message('storage-status','未载入，当前输入保留：'+error.message,true); }
   });
   async function exportableRevisions(){
-    if(storagePending)await fallbackWrites;
-    const latest=await GhostCorpusStore.readLocal(window,storageKey,fallbackRead);
-    return latest!==storageSnapshot?M.mergeDocuments(base,storageAncestor,model.document(),latest?withLocationBackup(JSON.parse(latest)):null):model.document();
+    let latest;try{
+      if(storagePending)await fallbackWrites;
+      latest=await GhostCorpusStore.readLocal(window,storageKey,fallbackRead);
+    }catch(error){return {revisions:model.document(),warning:'未能读取其他页面的修订；本次备份保留本页全部修改。'};}
+    return {revisions:latest!==storageSnapshot?M.mergeDocuments(base,storageAncestor,model.document(),latest?withLocationBackup(JSON.parse(latest)):null):model.document(),warning:''};
   }
   $('export-edits').addEventListener('click', async () => {
     if (state.dirty || locationDirty || reportDraft) { message('storage-status', '有未保存的篇目、报表或定位修改，请先保存再下载，避免遗漏。', true); return; }
-    let revisions;try{revisions=await exportableRevisions();}catch(error){message('storage-status','未下载：'+error.message+'。当前修改保留。',true);return;}
+    let revisions;try{const result=await exportableRevisions();revisions=result.revisions;if(result.warning)message('storage-status',result.warning,true);}catch(error){message('storage-status','未下载：'+error.message+'。当前修改保留。',true);return;}
     const url = URL.createObjectURL(new Blob([JSON.stringify(revisions, null, 2)], {type: 'application/json'}));
     const a = element('a', {href: url, download: '聊斋人工修订-v2.json'}); document.body.append(a); a.click(); a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
@@ -1708,9 +1710,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if (state.dirty || locationDirty || reportDraft) { message('storage-status', '有未保存的篇目、报表或定位修改，请先保存再合并下载。', true); return; }
     try {
       // Include saves from other tabs, using the existing conflict-safe merge.
-      const revisions=await exportableRevisions();
+      const {revisions,warning}=await exportableRevisions();
       downloadDocument(P.create(base, revisions), '聊斋文本地图整合资料包.json');
-      message('package-status', '已合并下载总资料包：全文、分词、AI分析、定位及已保存人工修订；请保留下载文件。');
+      message('package-status', warning||'已合并下载总资料包：全文、分词、AI分析、定位及已保存人工修订；请保留下载文件。',!!warning);
     } catch (error) { message('package-status', '未下载：' + error.message, true); }
   });
   $('import-package').addEventListener('change', async () => {

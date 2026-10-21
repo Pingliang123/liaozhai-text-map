@@ -20,6 +20,9 @@ const open=async()=>{if(fail){fail=false;throw Error('temporary storage failure'
 }};};
 function page(){const model=M.create(base),ctx={model,M,base,storageKey:'test',fallbackStoreName:'documents',storageAncestor:model.document(),storageSnapshot:stored,storagePending:false,state:{},fallbackWrites:Promise.resolve(),fallbackOpen:open,withLocationBackup:x=>x,localStorage:{getItem:()=> 'indexedDB'},message(){},GhostCorpusStore:{signalSaved(){}},window:{dispatchEvent(){}},Event:class{},JSON};vm.createContext(ctx);vm.runInContext(source,ctx);return ctx;}
 async function main(){
+ const exportSource=html.slice(html.indexOf('  async function exportableRevisions('),html.indexOf("  $('export-edits').addEventListener("));
+ const emergency={storagePending:false,GhostCorpusStore:{readLocal:async()=>{throw Error('blocked storage');}},window:{},storageKey:'test',fallbackRead(){},model:full};vm.createContext(emergency);vm.runInContext(exportSource,emergency);
+ const backup=await emergency.exportableRevisions();assert.deepEqual(backup.revisions,full.document());assert(backup.warning,'Even a total storage failure must allow an emergency download');
  const a=page(),b=page(),[id0,id1]=a.model.ids;
  const da=a.model.editable(id0),db=b.model.editable(id1);da.event_types={人:1};db.event_types={鬼:1};a.model.save(id0,da);b.model.save(id1,db);
  a.persistFallback(a.model.document());b.persistFallback(b.model.document());await Promise.all([a.fallbackWrites,b.fallbackWrites]);
