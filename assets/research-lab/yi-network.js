@@ -12,11 +12,11 @@ function build(chapters){
   const present=new Set(c.units.flatMap(u=>P.hits(u.text,c.places).map(h=>'place:'+h.word)).filter(id=>placeIds.has(id)));
   for(const id of present)incidence.push({source:chapter,target:id,weight:1,relation:'chapter-place',directed:false,evidence:[{chapter:c.title,chapterId:c.id,actors:[],text:c.units.filter(u=>P.hits(u.text,c.places).some(h=>'place:'+h.word===id)).map(u=>u.text).join('\n'),basis:'篇目提及地点'}]});
   const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
-  for(const [index,s]of (c.steps||[]).entries()){
+  for(const [index,s]of P.uniqueSteps(c.steps).entries()){
    if(!s.quote||!source.includes(s.quote.replace(/\s/gu,''))){unresolved.push({chapter:c.title,index,reason:'缺少可核对引句'});continue;}
    const actors=Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean);
    const people=actors.map(word=>({word,types:(c.people||[]).find(p=>p.word===word)?.types||[]}));
-   const record={chapter:c.title,chapterId:c.id,unit:s.unit,sequence:index+1,from:s.from||'',to:s.to||'',kind:s.kind,actors,people,events:c.events||[],realm:s.realm||'',access:s.access||'',text:s.quote,basis:'已保存步骤；引句存在于原文'};
+   const record={chapter:c.title,chapterId:c.id,unit:s.unit,sequence:(s.source_indices?.[0]??index)+1,source_indices:s.source_indices,from:s.from||'',to:s.to||'',kind:s.kind,actors,people,events:c.events||[],realm:s.realm||'',access:s.access||'',text:s.quote,basis:'已保存步骤；引句存在于原文'};
    records.push(record);
    if(s.kind!=='movement'||!s.from||!s.to)continue;
    const resolve=text=>P.hits(text,placeLabels);

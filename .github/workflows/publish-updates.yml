@@ -85,6 +85,7 @@ jobs:
           node automation/test-corpus-store.js
           node automation/test-user-package-restoration.js
           node automation/test-yi-network.js
+          node automation/test-movement-evidence-dedup.js
           node automation/test-unified-vocabulary.js
           node automation/test-manual-spatial-priority.js
           node automation/test-restored-place-examples.js

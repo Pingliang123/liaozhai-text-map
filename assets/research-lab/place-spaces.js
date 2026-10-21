@@ -8,7 +8,18 @@ const otherworld=new Set(['冥府','冥司','冥界','阴司','阴曹','阴世',
 function uncertainScene(text){return /追述|忆及|昔年|闻说|听说|梦见|梦中|尝闻|传闻|据说|欲往|欲赴|欲至|将往|将赴|拟往|未至|未到|不至|不到|[曰云言道][：:]*[“「]/.test(text);}
 function evidenceKey(chapterId,source,target,anchorText,text){return JSON.stringify([chapterId,source,target,anchorText,text]);}
 function connectedGraph(graph,preserve=()=>false){const ids=new Set(graph.edges.flatMap(e=>[e.source,e.target]));return {...graph,nodes:graph.nodes.filter(n=>ids.has(n.id)||preserve(n))};}
-function movementNotes(c){const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');return (c.steps||[]).filter(s=>s.kind==='movement'&&s.from&&s.to&&s.quote&&source.includes(s.quote.replace(/\s/gu,''))).map(s=>{const from=hits(s.from,c.places),to=hits(s.to,c.places);return {chapter:c.title,chapterId:c.id,unit:s.unit,from:s.from,to:s.to,fromPlace:from.length===1?from[0].word:null,toPlace:to.length===1?to[0].word:null,actors:Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean),text:s.quote};});}
+function uniqueSteps(steps){
+ const rows=[],groups=new Map(),compact=s=>(s||'').replace(/\s/gu,'');
+ for(const [index,s] of (steps||[]).entries()){
+  const actors=(Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u)).map(x=>x.trim()).filter(Boolean).sort();
+  const key=JSON.stringify([s.unit,s.kind,s.from,s.to,actors,s.realm||'',s.access||'']);
+  const quote=compact(s.quote),matches=groups.get(key)||[];
+  const duplicate=s.kind==='movement'&&s.unit!=null&&quote?matches.find(row=>{const other=compact(row.quote);return other&&(quote.startsWith(other)||other.startsWith(quote));}):null;
+  if(duplicate){duplicate.source_indices.push(index);if(quote.length>compact(duplicate.quote).length)duplicate.quote=s.quote;continue;}
+  const row={...s,source_indices:[index]};rows.push(row);matches.push(row);groups.set(key,matches);
+ }return rows;
+}
+function movementNotes(c){const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');return uniqueSteps(c.steps).filter(s=>s.kind==='movement'&&s.from&&s.to&&s.quote&&source.includes(s.quote.replace(/\s/gu,''))).map(s=>{const from=hits(s.from,c.places),to=hits(s.to,c.places);return {chapter:c.title,chapterId:c.id,unit:s.unit,source_indices:s.source_indices,from:s.from,to:s.to,fromPlace:from.length===1?from[0].word:null,toPlace:to.length===1?to[0].word:null,actors:Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean),text:s.quote};});}
 function spaceView(graph,id,reverse,includeContext=false){const edges=graph.edges.map(e=>({...e,evidence:e.evidence.filter(r=>includeContext||r.assignment==='explicit')})).filter(e=>(reverse?e.target===id:e.source===id)&&e.evidence.length).map(e=>({...e,weight:new Set(e.evidence.map(r=>r.chapterId)).size}));const ids=new Set([id,...edges.flatMap(e=>[e.source,e.target])]);return {nodes:graph.nodes.filter(n=>ids.has(n.id)).map(n=>({...n,degree:edges.filter(e=>e.source===n.id||e.target===n.id).length})),edges,mode:'located-spaces'};}
 function build(chapters,options={}){
  const places=new Map(),pairs=new Map(),spaces=new Map(),otherworldSpaces=new Map(),pending=[];
@@ -20,7 +31,7 @@ function build(chapters,options={}){
   // Use an endpoint only when both its place and space are unambiguous and
   // the saved quotation is present in the source. Never assign all chapter spaces.
   const text=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
-  for(const step of c.steps||[]){if(!step.quote||!text.includes(step.quote.replace(/\s/gu,'')))continue;
+  for(const step of uniqueSteps(c.steps)){if(!step.quote||!text.includes(step.quote.replace(/\s/gu,'')))continue;
    for(const endpoint of [step.from,step.to]){if(!endpoint)continue;const pp=hits(endpoint,c.places),ss=hits(endpoint,c.spaces);if(pp.length!==1)continue;
     for(const s of ss){if(!step.quote.includes(s.word))continue;const source=node(pp[0].word),target='space:'+s.word,key=JSON.stringify([source,target]);if(!spaces.has(key))spaces.set(key,{source,target,weight:0,relation:'located-space',chapter:'地点与空间',evidence:[]});const e=spaces.get(key);if(!e.evidence.some(r=>r.chapterId===c.id))e.weight++;if(!e.evidence.some(r=>r.chapterId===c.id&&r.quote===step.quote))e.evidence.push({chapter:c.title,chapterId:c.id,unit:step.unit,quote:step.quote,text:step.quote,actors:Array.isArray(step.actors)?step.actors:(step.actors||'').split(/[、，,]/u).filter(Boolean),basis:'已保存路径端点的地点归属，仍可回原文核对',assignment:'endpoint'});
     }
@@ -62,7 +73,7 @@ function build(chapters,options={}){
  for(const g of [ppAll,ps]){const byId=new Map(g.nodes.map(n=>[n.id,n]));for(const e of g.edges){byId.get(e.source).degree++;byId.get(e.target).degree++;}}
  const isolatedPlaces=ppAll.nodes.filter(n=>n.degree===0),connectedIds=new Set(ppAll.nodes.filter(n=>n.degree>0).map(n=>n.id)),pp={nodes:ppAll.nodes.filter(n=>connectedIds.has(n.id)),edges:ppAll.edges.filter(e=>connectedIds.has(e.source)&&connectedIds.has(e.target)),mode:'places'};const classification=[...new Set(chapters.flatMap(c=>c.places))].sort().map(word=>({...taxonomy.classify(word),evidence:chapters.filter(c=>c.places.includes(word)).map(c=>({chapter:c.title,chapterId:c.id,units:c.units.filter(u=>u.text.includes(word))}))}));return {places:pp,placesAll:ppAll,spaces:ps,pending,isolatedPlaces,classification};
 }
-const api={build,hits,sceneTerms,otherworld,spaceView,uncertainScene,connectedGraph,movementNotes};if(typeof module!=='undefined'){module.exports=api;return;}
+const api={build,hits,sceneTerms,otherworld,spaceView,uncertainScene,connectedGraph,movementNotes,uniqueSteps};if(typeof module!=='undefined'){module.exports=api;return;}
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 function mount(container,chapters,onExport,options={}){
  const graphs=build(chapters,{includeOtherworld:true}),intro=el('section');intro.className='card';intro.append(el('h2','地点与空间'));container.append(intro);

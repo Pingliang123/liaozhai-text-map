@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('node:assert/strict'),P=require('../assets/research-lab/place-spaces'),Y=require('../assets/research-lab/yi-network');
+const step={unit:8,from:'甲',to:'乙',actors:'王十、诸鬼',kind:'movement',quote:'鬼引十去。'};
+const long={...step,quote:'鬼引十去。又见河水。'},source=[step,long],before=JSON.stringify(source);
+const rows=P.uniqueSteps(source);assert.equal(rows.length,1);assert.equal(rows[0].quote,long.quote);assert.deepEqual(rows[0].source_indices,[0,1]);assert.equal(JSON.stringify(source),before);
+for(const variant of [{...long,unit:9},{...long,actors:'李生'},{...long,from:'乙',to:'甲'},{...long,quote:'另一次移动。'},{...long,realm:'异境'}])assert.equal(P.uniqueSteps([step,variant]).length,2);
+assert.equal(P.uniqueSteps([{...step,unit:undefined},{...long,unit:undefined}]).length,2,'位置不明不合并');
+assert.equal(P.uniqueSteps([{...step,quote:''},long]).length,2,'不能将缺少引句的记录吞入其他步骤');
+const c={id:1,title:'示例',places:['甲','乙'],spaces:[],people:[],events:[],units:[{id:8,text:long.quote}],steps:source};
+assert.equal(P.movementNotes(c).length,1);const network=Y.build([c]);assert.equal(network.records.length,1);assert.equal(network.movement.edges[0].weight,1);assert.deepEqual(network.records[0].source_indices,[0,1]);
+const real=require('../assets/research-lab/data.json').chapters.find(c=>c.title==='王十'),snapshot=JSON.stringify(real);
+const actual=P.movementNotes(real).filter(r=>r.from==='官署'&&r.to==='奈河边');assert.equal(actual.length,1);assert(actual[0].text.endsWith('又视河水浑赤，臭不可闻。'));assert.equal(actual[0].source_indices.length,2);
+assert.equal(Y.build([real]).records.filter(r=>r.from==='官署'&&r.to==='奈河边').length,1);assert.equal(JSON.stringify(real),snapshot);
+console.log('PASS 王十 short/long quotation merge, movement counts, provenance and distinct events preserved');
