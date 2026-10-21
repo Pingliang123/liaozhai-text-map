@@ -102,6 +102,7 @@ jobs:
           node automation/test-topic-places-dom.js
           node automation/test-lab-unified-data.js
           node automation/test-lab-consolidation.js
+          node automation/test-research-integration.js
           node automation/test-network-analysis.js
           node automation/test-book-network-dom.js
           node automation/test-edge-reading.js

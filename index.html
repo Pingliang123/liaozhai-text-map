@@ -40,6 +40,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 .editor-group{padding:6px 0}.research-page>summary{display:none}
 #research-screen>.research-page{margin-top:0}.save-bar{margin-top:12px}
 #overview{font-size:13px;color:#526a60}header>.status{font-size:12px}
+.research-bridge{border:1px solid var(--line);border-radius:12px;padding:18px;background:#f7faf4;margin:12px 0 16px}.research-bridge .toolbar{margin-top:14px}.research-bridge a.primary{display:inline-block;padding:9px 14px;border-radius:8px;background:#234d43;color:#fff;text-decoration:none}.research-bridge a.primary:hover{background:#173c33}
 .editing-column #entity-panel{border:0;padding:0;margin:0}.editing-column .editor-group,.editing-column #narrative-panel,.editing-column #realm-review,.editing-column #segmentation-panel{margin:0;padding:0;border:0}
 .editing-column>div>details>summary,.editing-column>details>summary{display:none}
 .editor-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}.editor-tabs button{font-size:13px;padding:6px 10px}
@@ -68,7 +69,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <body>
 <div class="app-bar"><div class="app-bar-inner">
 <h1>聊斋文本地图</h1>
-<nav class="section-nav main-nav" aria-label="页面导航"><a id="nav-map" href="#map-section">地图</a><a id="nav-text" href="#workspace">文本与修订</a><a id="nav-research" href="#research-hub">空间研究</a><a id="nav-reports" href="#reports-screen">数据报表</a><a id="nav-lab-top" class="lab-entry" href="assets/research-lab/?v=linkedspaces-5eb1830">空间网络实验室 ↗</a></nav>
+<nav class="section-nav main-nav" aria-label="页面导航"><a id="nav-map" href="#map-section">地图</a><a id="nav-text" href="#workspace">文本与修订</a><a id="nav-research" class="lab-entry" href="assets/research-lab/?tab=relations">空间研究</a><a id="nav-reports" href="#reports-screen">数据报表</a></nav>
 <div class="save-indicator"><span id="global-edit-status" role="status" aria-live="polite"></span><button id="quick-save" class="primary" hidden title="保存当前篇全部修订（Ctrl / ⌘ + S）">保存本篇</button></div>
 </div></div>
 <header>
@@ -165,7 +166,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <details id="segmentation-panel"><summary>完整分词</summary><p class="muted">用斜线调整分词，保留原文与标点；保存并通过全文对齐后，报表更新词频。</p><textarea id="segmentation-editor" class="full-text" aria-label="本篇完整分词修订"></textarea><button id="original-segmentation">还原原始分词</button></details>
 </div></div><div class="save-bar"><button id="save-chapter" class="primary">保存本篇全部修订</button><button id="cancel-edit" hidden>取消本次修改</button><span id="edit-status" role="status" aria-live="polite"></span><details><summary>更多操作</summary><button id="reset-chapter" class="danger">撤回本篇全部修订</button></details></div>
 </section>
-<section id="research-screen" class="panel" hidden><h2>空间研究</h2><nav class="section-nav research-nav" aria-label="研究工具"><a id="nav-path" href="#research-hub">情节路径</a><a id="nav-synthesis" href="#book-synthesis">全书比较</a><a id="nav-chronology" href="#chronology-panel">地点年表</a><a id="nav-lab" href="assets/research-lab/?v=linkedspaces-5eb1830">空间网络实验室</a><details id="research-more"><summary>研究资料</summary><div><a id="nav-candidates" href="#candidate-review">AI 审核原始记录</a><a id="nav-documents" href="#research-library">研究文档</a></div></details></nav>
+<section id="research-screen" class="panel" hidden><h2>空间研究已合并</h2><div id="research-unified-bridge" class="research-bridge"><p>空间网络、篇目路径、词汇与边界、地区主题及层级分析统一放在空间叙事实验室中。文本地图保留地图、原文修订和数据报表，研究结果使用同一份资料。</p><p class="toolbar"><a class="primary" href="assets/research-lab/?tab=relations">进入空间叙事实验室 ↗</a><a href="#map-section">回到地图</a><a href="#workspace">打开文本与修订</a><a href="#reports-screen">查看数据报表</a></p><p class="muted">旧的篇内路径、年表与研究文档仍保留在本页的相容区域，可由旧书签进入；新的研究入口不再重复显示这些功能。</p></div><nav id="legacy-research-nav" class="section-nav research-nav" aria-label="旧研究工具" hidden><a id="nav-path" href="#research-hub">旧篇目路径</a><a id="nav-synthesis" href="#book-synthesis">旧全书比较</a><a id="nav-chronology" href="#chronology-panel">旧地点年表</a><a id="nav-lab" href="assets/research-lab/?tab=relations">空间叙事实验室</a><details id="research-more"><summary>旧研究资料</summary><div><a id="nav-candidates" href="#candidate-review">AI 审核原始记录</a><a id="nav-documents" href="#research-library">研究文档</a></div></details></nav>
 <details open class="research-page" id="research-hub">
 <summary id="research-heading">人物、场景与情节路径</summary>
 <div class="toolbar research-controls"><label>篇目 <select id="research-chapter-select"></select></label><button id="edit-research">修改本篇路径</button><button id="research-all">查看全书范围</button></div>
@@ -1143,7 +1144,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   const researchPages = ['research-hub', 'book-synthesis', 'chronology-panel', 'candidate-review', 'research-library'];
   const editorPages = [['place-panel', '地点与分类'], ['people-panel', '人物'], ['space-panel', '空间词'], ['time-panel', '时间词'], ['realm-review', '三界关系'], ['narrative-panel', '情节路径'], ['segmentation-panel', '分词']];
   let currentEditor = 'place-panel';
-  let currentResearch = 'research-hub';
+  let currentResearch = 'research-unified';
   function showEditor(id) {
     currentEditor = id;
     for (const [target, label] of editorPages) {
@@ -1160,9 +1161,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     if (screen === 'research-screen') {
       currentResearch = research;
-      $('nav-research').setAttribute('href', '#' + research);
+      $('research-unified-bridge').hidden = research !== 'research-unified';
+      $('legacy-research-nav').hidden = research === 'research-unified';
       $('research-more').open = ['candidate-review','research-library'].includes(research);
-      for (const id of researchPages) { $(id).hidden = id !== research; $(id).open = id === research; }
+      for (const id of researchPages) { const page = $(id); page.hidden = id !== research; page.open = id === research; }
       for (const [id, target] of [['nav-path', 'research-hub'], ['nav-synthesis', 'book-synthesis'], ['nav-chronology', 'chronology-panel'], ['nav-candidates', 'candidate-review'], ['nav-documents', 'research-library']]) {
         $(id).setAttribute('aria-current', target === research ? 'page' : 'false');
       }
@@ -1592,7 +1594,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const next = adjacentChapter(step);
     if (next !== undefined) chooseChapter(next, true);
   });
-  for (const [id, target] of [['nav-map', 'map-section'], ['nav-text', 'workspace'], ['nav-research', 'research-hub'],
+  for (const [id, target] of [['nav-map', 'map-section'], ['nav-text', 'workspace'],
     ['nav-path', 'research-hub'], ['nav-synthesis', 'book-synthesis'], ['nav-chronology', 'chronology-panel'],
     ['nav-candidates', 'candidate-review'], ['nav-documents', 'research-library'],['nav-reports','reports-screen']]) $(id).addEventListener('click', event => {
       if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
