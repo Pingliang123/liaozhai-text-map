@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T03:51:32.530Z",
+  "generated_at": "2026-10-21T05:04:43.998Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -209024,13 +209024,6 @@
             "level": "town"
           },
           {
-            "id": "place:十王殿",
-            "label": "十王殿",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "place:苏溪",
             "label": "苏溪",
             "kind": "place",
@@ -209673,13 +209666,6 @@
             "kind": "place",
             "layer": "place",
             "level": "natural"
-          },
-          {
-            "id": "place:萧寺",
-            "label": "萧寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "chapter:84",
@@ -211290,13 +211276,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:旧圃",
-            "label": "旧圃",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "chapter:193",
@@ -213196,13 +213175,6 @@
             "level": "unknown"
           },
           {
-            "id": "place:伏虎寺",
-            "label": "伏虎寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "chapter:332",
             "label": "邵士梅",
             "kind": "chapter",
@@ -213366,13 +213338,6 @@
           {
             "id": "place:稷门",
             "label": "稷门",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
-            "id": "place:异域",
-            "label": "异域",
             "kind": "place",
             "layer": "place",
             "level": "unknown"
@@ -214384,13 +214349,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:平阴人",
-            "label": "平阴人",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "chapter:422",
@@ -216477,25 +216435,6 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:46|place:十王殿",
-            "source": "chapter:46",
-            "target": "place:十王殿",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
             "id": "chapter-place|chapter:46|place:苏溪",
             "source": "chapter:46",
             "target": "place:苏溪",
@@ -217753,25 +217692,6 @@
             "id": "chapter-place|chapter:83|place:南海",
             "source": "chapter:83",
             "target": "place:南海",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "chapter-place|chapter:83|place:萧寺",
-            "source": "chapter:83",
-            "target": "place:萧寺",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -220353,25 +220273,6 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:155|place:萧寺",
-            "source": "chapter:155",
-            "target": "place:萧寺",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              155
-            ],
-            "evidence": [
-              {
-                "chapter_id": 155,
-                "chapter": "蹇偿债",
-                "unit": null,
-                "excerpt": "蹇偿债"
-              }
-            ]
-          },
-          {
             "id": "chapter-place|chapter:155|place:青州",
             "source": "chapter:155",
             "target": "place:青州",
@@ -221287,25 +221188,6 @@
             "id": "chapter-place|chapter:192|place:胶州",
             "source": "chapter:192",
             "target": "place:胶州",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              192
-            ],
-            "evidence": [
-              {
-                "chapter_id": 192,
-                "chapter": "莲花公主",
-                "unit": null,
-                "excerpt": "莲花公主"
-              }
-            ]
-          },
-          {
-            "id": "chapter-place|chapter:192|place:旧圃",
-            "source": "chapter:192",
-            "target": "place:旧圃",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -225863,25 +225745,6 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:331|place:伏虎寺",
-            "source": "chapter:331",
-            "target": "place:伏虎寺",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
             "id": "chapter-place|chapter:333|place:江南",
             "source": "chapter:333",
             "target": "place:江南",
@@ -226303,25 +226166,6 @@
             "id": "chapter-place|chapter:343|place:稷门",
             "source": "chapter:343",
             "target": "place:稷门",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "chapter-place|chapter:343|place:异域",
-            "source": "chapter:343",
-            "target": "place:异域",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -228906,25 +228750,6 @@
             "id": "chapter-place|chapter:421|place:平阴",
             "source": "chapter:421",
             "target": "place:平阴",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              421
-            ],
-            "evidence": [
-              {
-                "chapter_id": 421,
-                "chapter": "拆楼人",
-                "unit": null,
-                "excerpt": "拆楼人"
-              }
-            ]
-          },
-          {
-            "id": "chapter-place|chapter:421|place:平阴人",
-            "source": "chapter:421",
-            "target": "place:平阴人",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -232219,13 +232044,6 @@
             "level": "town"
           },
           {
-            "id": "place:十王殿",
-            "label": "十王殿",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "place:苏溪",
             "label": "苏溪",
             "kind": "place",
@@ -232609,13 +232427,6 @@
             "kind": "place",
             "layer": "place",
             "level": "natural"
-          },
-          {
-            "id": "place:萧寺",
-            "label": "萧寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "place:颜镇",
@@ -233463,13 +233274,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:旧圃",
-            "label": "旧圃",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "place:醴泉寺",
@@ -234396,13 +234200,6 @@
             "level": "unknown"
           },
           {
-            "id": "place:伏虎寺",
-            "label": "伏虎寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "place:邳",
             "label": "邳",
             "kind": "place",
@@ -234482,13 +234279,6 @@
           {
             "id": "place:稷门",
             "label": "稷门",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
-            "id": "place:异域",
-            "label": "异域",
             "kind": "place",
             "layer": "place",
             "level": "unknown"
@@ -234954,13 +234744,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:平阴人",
-            "label": "平阴人",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "place:黄冈",
@@ -237438,44 +237221,6 @@
             ]
           },
           {
-            "id": "place-place|place:陵阳|place:十王殿",
-            "source": "place:陵阳",
-            "target": "place:十王殿",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:十王殿|place:陵阳",
-            "source": "place:十王殿",
-            "target": "place:陵阳",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:陵阳|place:苏溪",
             "source": "place:陵阳",
             "target": "place:苏溪",
@@ -237574,120 +237319,6 @@
             "id": "place-place|place:西岳|place:陵阳",
             "source": "place:西岳",
             "target": "place:陵阳",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:十王殿|place:苏溪",
-            "source": "place:十王殿",
-            "target": "place:苏溪",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:苏溪|place:十王殿",
-            "source": "place:苏溪",
-            "target": "place:十王殿",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:十王殿|place:华阴",
-            "source": "place:十王殿",
-            "target": "place:华阴",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:华阴|place:十王殿",
-            "source": "place:华阴",
-            "target": "place:十王殿",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:十王殿|place:西岳",
-            "source": "place:十王殿",
-            "target": "place:西岳",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              46
-            ],
-            "evidence": [
-              {
-                "chapter_id": 46,
-                "chapter": "陆判",
-                "unit": null,
-                "excerpt": "陆判"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:西岳|place:十王殿",
-            "source": "place:西岳",
-            "target": "place:十王殿",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -240440,44 +240071,6 @@
             ]
           },
           {
-            "id": "place-place|place:招远|place:萧寺",
-            "source": "place:招远",
-            "target": "place:萧寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:萧寺|place:招远",
-            "source": "place:萧寺",
-            "target": "place:招远",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:河北|place:南海",
             "source": "place:河北",
             "target": "place:南海",
@@ -240500,82 +240093,6 @@
             "id": "place-place|place:南海|place:河北",
             "source": "place:南海",
             "target": "place:河北",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:河北|place:萧寺",
-            "source": "place:河北",
-            "target": "place:萧寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:萧寺|place:河北",
-            "source": "place:萧寺",
-            "target": "place:河北",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:南海|place:萧寺",
-            "source": "place:南海",
-            "target": "place:萧寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              83
-            ],
-            "evidence": [
-              {
-                "chapter_id": 83,
-                "chapter": "鲁公女",
-                "unit": null,
-                "excerpt": "鲁公女"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:萧寺|place:南海",
-            "source": "place:萧寺",
-            "target": "place:南海",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -246694,44 +246211,6 @@
             ]
           },
           {
-            "id": "place-place|place:萧寺|place:青州",
-            "source": "place:萧寺",
-            "target": "place:青州",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              155
-            ],
-            "evidence": [
-              {
-                "chapter_id": 155,
-                "chapter": "蹇偿债",
-                "unit": null,
-                "excerpt": "蹇偿债"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:青州|place:萧寺",
-            "source": "place:青州",
-            "target": "place:萧寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              155
-            ],
-            "evidence": [
-              {
-                "chapter_id": 155,
-                "chapter": "蹇偿债",
-                "unit": null,
-                "excerpt": "蹇偿债"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:莱芜|place:西州",
             "source": "place:莱芜",
             "target": "place:西州",
@@ -248072,44 +247551,6 @@
                 "chapter": "伍秋月",
                 "unit": null,
                 "excerpt": "伍秋月"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:胶州|place:旧圃",
-            "source": "place:胶州",
-            "target": "place:旧圃",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              192
-            ],
-            "evidence": [
-              {
-                "chapter_id": 192,
-                "chapter": "莲花公主",
-                "unit": null,
-                "excerpt": "莲花公主"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:旧圃|place:胶州",
-            "source": "place:旧圃",
-            "target": "place:胶州",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              192
-            ],
-            "evidence": [
-              {
-                "chapter_id": 192,
-                "chapter": "莲花公主",
-                "unit": null,
-                "excerpt": "莲花公主"
               }
             ]
           },
@@ -259836,44 +259277,6 @@
             ]
           },
           {
-            "id": "place-place|place:江南|place:伏虎寺",
-            "source": "place:江南",
-            "target": "place:伏虎寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:伏虎寺|place:江南",
-            "source": "place:伏虎寺",
-            "target": "place:江南",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:秦邮|place:成都",
             "source": "place:秦邮",
             "target": "place:成都",
@@ -259950,44 +259353,6 @@
             ]
           },
           {
-            "id": "place-place|place:秦邮|place:伏虎寺",
-            "source": "place:秦邮",
-            "target": "place:伏虎寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:伏虎寺|place:秦邮",
-            "source": "place:伏虎寺",
-            "target": "place:秦邮",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:成都|place:金沙寺",
             "source": "place:成都",
             "target": "place:金沙寺",
@@ -260010,82 +259375,6 @@
             "id": "place-place|place:金沙寺|place:成都",
             "source": "place:金沙寺",
             "target": "place:成都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:成都|place:伏虎寺",
-            "source": "place:成都",
-            "target": "place:伏虎寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:伏虎寺|place:成都",
-            "source": "place:伏虎寺",
-            "target": "place:成都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:金沙寺|place:伏虎寺",
-            "source": "place:金沙寺",
-            "target": "place:伏虎寺",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              331
-            ],
-            "evidence": [
-              {
-                "chapter_id": 331,
-                "chapter": "蒋太史",
-                "unit": null,
-                "excerpt": "蒋太史"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:伏虎寺|place:金沙寺",
-            "source": "place:伏虎寺",
-            "target": "place:金沙寺",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -261052,44 +260341,6 @@
             ]
           },
           {
-            "id": "place-place|place:河间|place:异域",
-            "source": "place:河间",
-            "target": "place:异域",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:异域|place:河间",
-            "source": "place:异域",
-            "target": "place:河间",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:东疃|place:东昌",
             "source": "place:东疃",
             "target": "place:东昌",
@@ -261204,44 +260455,6 @@
             ]
           },
           {
-            "id": "place-place|place:东疃|place:异域",
-            "source": "place:东疃",
-            "target": "place:异域",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:异域|place:东疃",
-            "source": "place:异域",
-            "target": "place:东疃",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:东昌|place:恩",
             "source": "place:东昌",
             "target": "place:恩",
@@ -261318,44 +260531,6 @@
             ]
           },
           {
-            "id": "place-place|place:东昌|place:异域",
-            "source": "place:东昌",
-            "target": "place:异域",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:异域|place:东昌",
-            "source": "place:异域",
-            "target": "place:东昌",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:恩|place:稷门",
             "source": "place:恩",
             "target": "place:稷门",
@@ -261378,82 +260553,6 @@
             "id": "place-place|place:稷门|place:恩",
             "source": "place:稷门",
             "target": "place:恩",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:恩|place:异域",
-            "source": "place:恩",
-            "target": "place:异域",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:异域|place:恩",
-            "source": "place:异域",
-            "target": "place:恩",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:稷门|place:异域",
-            "source": "place:稷门",
-            "target": "place:异域",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              343
-            ],
-            "evidence": [
-              {
-                "chapter_id": 343,
-                "chapter": "爱奴",
-                "unit": null,
-                "excerpt": "爱奴"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:异域|place:稷门",
-            "source": "place:异域",
-            "target": "place:稷门",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -267574,44 +266673,6 @@
                 "chapter": "白秋练",
                 "unit": null,
                 "excerpt": "白秋练"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:平阴|place:平阴人",
-            "source": "place:平阴",
-            "target": "place:平阴人",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              421
-            ],
-            "evidence": [
-              {
-                "chapter_id": 421,
-                "chapter": "拆楼人",
-                "unit": null,
-                "excerpt": "拆楼人"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:平阴人|place:平阴",
-            "source": "place:平阴人",
-            "target": "place:平阴",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              421
-            ],
-            "evidence": [
-              {
-                "chapter_id": 421,
-                "chapter": "拆楼人",
-                "unit": null,
-                "excerpt": "拆楼人"
               }
             ]
           },
@@ -277353,13 +276414,6 @@
             "level": "town"
           },
           {
-            "id": "place:十王殿",
-            "label": "十王殿",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "place:苏溪",
             "label": "苏溪",
             "kind": "place",
@@ -277379,6 +276433,12 @@
             "kind": "place",
             "layer": "place",
             "level": "unknown"
+          },
+          {
+            "id": "space:十王殿",
+            "label": "十王殿",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "place:罗店",
@@ -278123,11 +277183,10 @@
             "level": "natural"
           },
           {
-            "id": "place:萧寺",
+            "id": "space:萧寺",
             "label": "萧寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:南屋",
@@ -279817,13 +278876,6 @@
             "level": "county"
           },
           {
-            "id": "place:旧圃",
-            "label": "旧圃",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "space:桂府",
             "label": "桂府",
             "kind": "space",
@@ -279856,6 +278908,12 @@
           {
             "id": "space:茅庐",
             "label": "茅庐",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:旧圃",
+            "label": "旧圃",
             "kind": "space",
             "layer": "space"
           },
@@ -281384,11 +280442,10 @@
             "level": "unknown"
           },
           {
-            "id": "place:伏虎寺",
+            "id": "space:伏虎寺",
             "label": "伏虎寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:东座",
@@ -281499,13 +280556,6 @@
             "level": "unknown"
           },
           {
-            "id": "place:异域",
-            "label": "异域",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "space:敝里",
             "label": "敝里",
             "kind": "space",
@@ -281526,6 +280576,12 @@
           {
             "id": "space:别第",
             "label": "别第",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:异域",
+            "label": "异域",
             "kind": "space",
             "layer": "space"
           },
@@ -282278,13 +281334,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:平阴人",
-            "label": "平阴人",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "space:大禅院",
@@ -283133,6 +282182,25 @@
                 "chapter": "画皮",
                 "unit": 2050,
                 "excerpt": "」答曰：「仆（早）赴青帝庙，良不知。"
+              }
+            ]
+          },
+          {
+            "id": "place-space|place:陵阳|space:十王殿",
+            "source": "place:陵阳",
+            "target": "space:十王殿",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 1,
+            "chapters": [
+              46
+            ],
+            "evidence": [
+              {
+                "chapter_id": 46,
+                "chapter": "陆判",
+                "unit": 2386,
+                "excerpt": "」盖陵阳有十王殿，神鬼皆以木雕，妆饰如生。"
               }
             ]
           },
@@ -286554,13 +285622,6 @@
             "level": "town"
           },
           {
-            "id": "place:十王殿",
-            "label": "十王殿",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "place:苏溪",
             "label": "苏溪",
             "kind": "place",
@@ -286587,6 +285648,12 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 46
+          },
+          {
+            "id": "space:十王殿",
+            "label": "十王殿",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "person:46:朱起",
@@ -288395,11 +287462,10 @@
             "level": "natural"
           },
           {
-            "id": "place:萧寺",
+            "id": "space:萧寺",
             "label": "萧寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "person:83:鲁公",
@@ -293246,13 +292312,6 @@
             "level": "county"
           },
           {
-            "id": "place:旧圃",
-            "label": "旧圃",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "person:192:窦旭",
             "label": "窦旭",
             "kind": "person",
@@ -293313,6 +292372,12 @@
           {
             "id": "space:茅庐",
             "label": "茅庐",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:旧圃",
+            "label": "旧圃",
             "kind": "space",
             "layer": "space"
           },
@@ -298425,11 +297490,10 @@
             "level": "unknown"
           },
           {
-            "id": "place:伏虎寺",
+            "id": "space:伏虎寺",
             "label": "伏虎寺",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "person:332:冀良",
@@ -298792,13 +297856,6 @@
             "level": "unknown"
           },
           {
-            "id": "place:异域",
-            "label": "异域",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
-          },
-          {
             "id": "person:343:徐",
             "label": "徐",
             "kind": "person",
@@ -298903,6 +297960,12 @@
           {
             "id": "space:别第",
             "label": "别第",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:异域",
+            "label": "异域",
             "kind": "space",
             "layer": "space"
           },
@@ -301587,13 +300650,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "place:平阴人",
-            "label": "平阴人",
-            "kind": "place",
-            "layer": "place",
-            "level": "unknown"
           },
           {
             "id": "person:422:明彭将军宏",
@@ -316671,11 +315727,11 @@
             ]
           },
           {
-            "id": "person-context|person:343:夫人|place:异域",
+            "id": "person-context|person:343:夫人|space:异域",
             "source": "person:343:夫人",
-            "target": "place:异域",
+            "target": "space:异域",
             "layer": "person-context",
-            "relation": "人物—地点",
+            "relation": "人物—空间",
             "weight": 1,
             "chapters": [
               343
@@ -322647,19 +321703,19 @@
     },
     "stats": {
       "chapter-place": {
-        "nodes": 1001,
-        "edges": 869
+        "nodes": 995,
+        "edges": 862
       },
       "place-place": {
-        "nodes": 510,
-        "edges": 2160
+        "nodes": 504,
+        "edges": 2122
       },
       "place-space": {
-        "nodes": 972,
-        "edges": 104
+        "nodes": 971,
+        "edges": 105
       },
       "person-context": {
-        "nodes": 2821,
+        "nodes": 2820,
         "edges": 943
       }
     }

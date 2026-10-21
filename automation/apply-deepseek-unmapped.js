@@ -1,0 +1,40 @@
+'use strict';
+const fs=require('node:fs'),M=require('./ghost_map_model');
+function apply(pack,doc,audit){
+ const model=M.create(pack.base);model.importDocument(doc);const known=model.places(),protectedLocations=new Set(doc.place_locations.map(x=>x.name)),rows=[];
+ const norm=s=>String(s||'').replace(/(?:省|府|县|縣)$/u,'');const resolve=s=>{const exact=known.find(x=>x.name===s);if(exact)return exact;const all=known.filter(x=>norm(x.name)===norm(s));return all.length===1?all[0]:null;};
+ const decisions=new Map(audit.decisions.map(d=>[d.word,{...d}]));const initial=new Map(model.ids.map(id=>[id,model.editable(id)]));
+ const reviewed={胶:{kind:'place',relation:'same-area',target_name:'胶州',level:'prefecture',confidence:.95,reason:'原文“我胶娼也”为胶州籍贯；籍贯仍是地点线索，共用胶州区域参考点。'},石坑庄:{kind:'place',relation:'within',target_name:'章丘',level:'village',confidence:.95,reason:'原文“即章丘石坑庄”，是具名村庄；保留地名，采用章丘区域参考点。'},异域:{kind:'space',confidence:.95,reason:'异域为未具名的异乡空间泛称，转入空间词。'},平阴人:{kind:'place',corrected_word:'平阴',confidence:.95,reason:'“人”是籍贯后缀；地名为平阴，分词边界应分开。'}};
+ for(const [word,d] of Object.entries(reviewed))if(decisions.has(word))decisions.set(word,{...decisions.get(word),...d,reviewed_by:'context-review'});
+ for(const word of ['陕','粤','汴梁','洛下','相公庄'])if(decisions.has(word))decisions.set(word,{...decisions.get(word),confidence:.9,reviewed_by:'context-review'});
+ for(const [word,d] of decisions){const r={word,decision:d,changes:[],status:'unchanged'};rows.push(r);let kind=d.kind;if(['region','village','natural','town'].includes(kind))kind='place';if(!Number.isFinite(d.confidence)||d.confidence<0.85||/不能确定|不确定|可能不同|不同地区|不宜统一|多义/.test(d.reason||'')){r.reason='语境或地理对应不充分';continue;}
+ const chapters=model.ids.filter(id=>model.view(id).places.some(p=>p.word===word));if(!chapters.length){r.reason='现有地点词表中已无该词';continue;}
+ const explicitlyReviewed=chapters.some(id=>['accepted','corrected','rejected'].includes(initial.get(id).lexical_reviews?.['places:'+word]?.status));if(explicitlyReviewed){r.reason='保留已有逐词修订';continue;}
+ if(d.corrected_word){for(const id of chapters){const c=model.view(id),input=model.editable(id);if(!c.source_units.some(u=>u.text.includes(d.corrected_word)))continue;input.places=input.places.filter(x=>x.word!==word);if(!input.places.some(x=>x.word===d.corrected_word))input.places.push({word:d.corrected_word,mentions:0});input.lexical_reviews={...input.lexical_reviews,['places:'+word]:{status:'corrected',word:d.corrected_word,kind:'places',note:d.reason}};model.save(id,input);r.changes.push({action:'修正地名及分词边界',chapter_id:id,chapter:c.chapter,to:d.corrected_word});}}
+ else if(kind==='space'||kind==='exclude'){
+  for(const id of chapters){const c=model.view(id),input=model.editable(id),source=c.source_units.map(u=>u.text).join('');if(kind==='space'&&!source.includes(word))continue;input.places=input.places.filter(p=>p.word!==word);if(kind==='space'&&!input.space_words.includes(word))input.space_words.push(word);input.lexical_reviews={...input.lexical_reviews,['places:'+word]:{status:kind==='space'?'corrected':'rejected',word:kind==='space'?word:'',kind:kind==='space'?'spaces':'',note:'DeepSeek语境核查：'+d.reason}};
+   model.save(id,input);r.changes.push({chapter_id:id,chapter:c.chapter,action:kind==='space'?'地点词 → 空间词':'退出地点词',quote:c.source_units.filter(u=>u.text.includes(word)).map(u=>u.text).slice(0,3)});
+  }
+ }else if(kind==='place'&&!protectedLocations.has(word)){
+  let target=resolve(d.target_name),parent=resolve(d.parent_name),source_url='',lon,lat,precision='',parent_id=null;
+  const candidates=(pack.base.historical_place_search?.records?.find(x=>x.word===word)?.matches||[]).filter(x=>x.name===d.candidate_name&&x.uri&&x.data_source==='CHGIS'&&Number.isFinite(x.lon)&&Number.isFinite(x.lat)&&x.lon!==0);
+  const coords=new Set(candidates.map(x=>x.lon+','+x.lat));
+  const rank={province:1,prefecture:2,county:3,town:4,village:5};
+  if(target&&d.relation==='within'&&rank[d.level]&&rank[target.admin_level]&&rank[d.level]<=rank[target.admin_level]){r.reason='所选上级层级不高于本地，不能确认隶属';continue;}
+  if(target&&['same-area','within'].includes(d.relation)){lon=target.lon;lat=target.lat;source_url=target.level_source_url||target.source_url;const within=d.relation==='within'||d.level==='natural'&&target.admin_level!=='natural';parent_id=within?target.id:target.parent_id;precision=within?'上级区域参考点':'同区参考点';}
+  else if(candidates.length&&coords.size===1){const c=candidates[0];lon=c.lon;lat=c.lat;source_url=c.uri;precision='历史地名参考点';parent_id=parent?.id||null;}
+  else {r.reason='没有可复用的已定位区域或唯一历史坐标';continue;}
+  if(!source_url||!Number.isFinite(lon)||!Number.isFinite(lat)||Math.abs(lon)>180||Math.abs(lat)>85)continue;
+  const level=['province','prefecture','county','town','village','natural','region'].includes(d.level)?d.level:'unknown';const loc={name:word,admin_level:level,parent_id,modern_name:target?word+'（'+target.name+'区域参考）':d.candidate_name||word,region_description:(target?`采用${target.name}的区域参考点；`:'')+d.reason,modern_level:'文本地理参考',source_url,note:`DeepSeek语境核查；${precision}，不代表独立精确坐标。${d.reason}`,coordinate_kind:'approximate',lon,lat};
+  model.saveLocation(loc);r.changes.push({action:'补充定位',location:loc,target:target?.name||null,relation:d.relation,evidence:chapters.map(id=>({chapter:model.view(id).chapter,quote:model.view(id).source_units.filter(u=>u.text.includes(word)).map(u=>u.text).slice(0,3)}))});
+ }
+ if(r.changes.length)r.status='changed';else r.reason=r.reason||(kind==='otherworld'?'异境保留文本关联，不设现实坐标':'保留已有定位或无足够依据');
+ }
+ const result=model.document();for(const row of result.overrides){const before=initial.get(row.chapter_id);for(const k of ['event_types','years','people','narrative_events','realms_present'])if(JSON.stringify(row.changes[k])!==JSON.stringify(before[k]))throw Error('不相关字段发生变化：'+row.chapter_id+' '+k);}
+ return {revisions:result,rows};
+}
+function run(){const pack=JSON.parse(fs.readFileSync('data-package.json')),doc=JSON.parse(fs.readFileSync('manual-revisions.json')),audit=JSON.parse(fs.readFileSync('reports/deepseek-unmapped-20261021.json'));if(audit.decisions.length!==317)throw Error('审核未完成，不写入');const result=apply(pack,doc,audit);pack.revisions=result.revisions;
+ const changes=result.rows.filter(r=>r.status==='changed');for(const r of changes){const c=r.changes.find(c=>c.location&&c.target);if(c){const target=pack.base.places.find(x=>x.name===c.target);const relation=c.location.parent_id===target?.id?'within-reference-region':'same-reference-area';const eq={word:r.word,target:c.target,relation,note:r.decision.reason,source:'DeepSeek与原文语境核查'};pack.base.place_equivalences=[...(pack.base.place_equivalences||[]).filter(x=>x.word!==r.word),eq];}}
+ fs.writeFileSync('manual-revisions.json',JSON.stringify(result.revisions));fs.writeFileSync('data-package.json',JSON.stringify(pack));
+ const ids=new Set(changes.flatMap(r=>r.changes.map(c=>c.chapter_id)).filter(x=>x!=null));const report={reviewed:result.rows.length,changed_words:changes.length,rollback:{before_locations:doc.place_locations,before_chapters:doc.overrides.filter(x=>ids.has(x.chapter_id))},changes,unchanged:result.rows.filter(r=>r.status!=='changed')};fs.writeFileSync('reports/unmapped-changes-20261021.json',JSON.stringify(report,null,2));const clean=s=>String(s||'').replace(/\|/g,'／').replace(/\s+/g,' ');fs.writeFileSync('reports/unmapped-changes-20261021.md','# 未定位词修改名单\n\n审核 '+report.reviewed+' 项；实际修改 '+changes.length+' 个词。\n\n|原词|修改|对应区域／坐标|理由|\n|---|---|---|---|\n'+changes.map(r=>{const loc=r.changes.find(x=>x.location)?.location;return '|'+[r.word,[...new Set(r.changes.map(x=>x.action))].join('、'),loc?`${loc.modern_name}；${loc.lon}, ${loc.lat}`:r.changes.map(x=>x.chapter).join('、'),r.decision.reason].map(clean).join('|')+'|';}).join('\n')+'\n');console.log(JSON.stringify({reviewed:report.reviewed,changed:changes.length,locations:changes.filter(r=>r.changes.some(x=>x.location)).length,classification:changes.filter(r=>r.changes.some(x=>!x.location)).length}));}
+if(require.main===module)run();module.exports={apply};

@@ -1,7 +1,7 @@
 {
-  "revision_hash": "9c948c23f845077a1d3dc6ceee03e23824df788c65ad0a938687d2b4451a3611",
+  "revision_hash": "273e5ce4a2a30ea3411612f9758f1fbb67332ff2e4d1b00fb7e4b27e1a12d38e",
   "chapters": 491,
-  "place_nodes": 450,
+  "place_nodes": 449,
   "space_relations": 89,
   "pending_space_occurrences": 1366,
   "crosscheck": [
@@ -44,15 +44,15 @@
       ]
     },
     {
-      "word": "兰若",
+      "word": "都中",
       "chapter": "画壁",
       "chapter_id": 5,
       "kind": "places",
-      "key": "places:兰若",
+      "key": "places:都中",
       "status": "pending",
       "present": false,
       "matches": [
-        "兰若"
+        "都中"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -63,15 +63,15 @@
       ]
     },
     {
-      "word": "都中",
+      "word": "兰若",
       "chapter": "画壁",
       "chapter_id": 5,
       "kind": "places",
-      "key": "places:都中",
+      "key": "places:兰若",
       "status": "pending",
       "present": false,
       "matches": [
-        "都中"
+        "兰若"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -627,25 +627,6 @@
       ]
     },
     {
-      "word": "异域",
-      "chapter": "聂小倩",
-      "chapter_id": 48,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 3009,
-          "text": "宁促之，愀然曰：「异域孤魂，殊怯荒墓。"
-        }
-      ]
-    },
-    {
       "word": "栖霞",
       "chapter": "地震",
       "chapter_id": 50,
@@ -722,25 +703,6 @@
       ]
     },
     {
-      "word": "冥司",
-      "chapter": "张诚",
-      "chapter_id": 72,
-      "kind": "places",
-      "key": "places:冥司",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "冥司"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 4589,
-          "text": "菩萨几十年一入冥司，拔诸苦恼，今适值之。"
-        }
-      ]
-    },
-    {
       "word": "都中",
       "chapter": "张诚",
       "chapter_id": 72,
@@ -756,6 +718,25 @@
         {
           "unit": 4617,
           "text": "适张别驾自都中来，过之，见其貌文，怜而抚之，渐苏。"
+        }
+      ]
+    },
+    {
+      "word": "冥司",
+      "chapter": "张诚",
+      "chapter_id": 72,
+      "kind": "places",
+      "key": "places:冥司",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "冥司"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 4589,
+          "text": "菩萨几十年一入冥司，拔诸苦恼，今适值之。"
         }
       ]
     },
@@ -1026,6 +1007,25 @@
       ]
     },
     {
+      "word": "都中",
+      "chapter": "白于玉",
+      "chapter_id": 98,
+      "kind": "places",
+      "key": "places:都中",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "都中"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 6483,
+          "text": "都中延烧民舍数万间，左右前后，并为灰烬，独吴第无恙，惟东南一小阁，化为乌有，即钏口漏覆处也。"
+        }
+      ]
+    },
+    {
       "word": "凤翔",
       "chapter": "白于玉",
       "chapter_id": 98,
@@ -1060,25 +1060,6 @@
         {
           "unit": 6355,
           "text": "童导入广寒宫，内以水晶为阶，行人如在镜中。"
-        }
-      ]
-    },
-    {
-      "word": "都中",
-      "chapter": "白于玉",
-      "chapter_id": 98,
-      "kind": "places",
-      "key": "places:都中",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "都中"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 6483,
-          "text": "都中延烧民舍数万间，左右前后，并为灰烬，独吴第无恙，惟东南一小阁，化为乌有，即钏口漏覆处也。"
         }
       ]
     },
@@ -1338,25 +1319,6 @@
       ]
     },
     {
-      "word": "异域",
-      "chapter": "翩翩",
-      "chapter_id": 124,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 8137,
-          "text": "自恐死异域，乞食西行；"
-        }
-      ]
-    },
-    {
       "word": "会稽藤",
       "chapter": "杨千总",
       "chapter_id": 127,
@@ -1429,25 +1391,6 @@
         {
           "unit": 8520,
           "text": "都城在北去三十里。"
-        }
-      ]
-    },
-    {
-      "word": "异域",
-      "chapter": "罗刹海市",
-      "chapter_id": 130,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 8597,
-          "text": "」世子过，目生曰：「此非异域人。"
         }
       ]
     },
@@ -1566,25 +1509,6 @@
       ]
     },
     {
-      "word": "兰若",
-      "chapter": "促织",
-      "chapter_id": 135,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 9105,
-          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
-        }
-      ]
-    },
-    {
       "word": "华阴",
       "chapter": "促织",
       "chapter_id": 135,
@@ -1600,6 +1524,25 @@
         {
           "unit": 9082,
           "text": "有华阴令，欲媚上官，以一头进，试使斗而才，因责常供。"
+        }
+      ]
+    },
+    {
+      "word": "兰若",
+      "chapter": "促织",
+      "chapter_id": 135,
+      "kind": "places",
+      "key": "places:兰若",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "兰若"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 9105,
+          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
         }
       ]
     },
@@ -1890,15 +1833,15 @@
       ]
     },
     {
-      "word": "淄川",
+      "word": "益都",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:淄川",
+      "key": "places:益都",
       "status": "pending",
       "present": false,
       "matches": [
-        "淄川"
+        "益都"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -1909,15 +1852,15 @@
       ]
     },
     {
-      "word": "益都",
+      "word": "淄川",
       "chapter": "捉鬼射狐",
       "chapter_id": 154,
       "kind": "places",
-      "key": "places:益都",
+      "key": "places:淄川",
       "status": "pending",
       "present": false,
       "matches": [
-        "益都"
+        "淄川"
       ],
       "issue": "同名漏标",
       "evidence": [
@@ -2804,25 +2747,6 @@
       ]
     },
     {
-      "word": "中州",
-      "chapter": "豢蛇",
-      "chapter_id": 234,
-      "kind": "places",
-      "key": "places:中州",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "中州"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 14872,
-          "text": "余乡有客中州者，寄宿蛇佛寺。"
-        }
-      ]
-    },
-    {
       "word": "兰若",
       "chapter": "豢蛇",
       "chapter_id": 234,
@@ -2857,6 +2781,25 @@
         {
           "unit": 14846,
           "text": "泗水山中，旧有禅院，四无村落，人迹罕及，有道士栖止其中。"
+        }
+      ]
+    },
+    {
+      "word": "中州",
+      "chapter": "豢蛇",
+      "chapter_id": 234,
+      "kind": "places",
+      "key": "places:中州",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "中州"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 14872,
+          "text": "余乡有客中州者，寄宿蛇佛寺。"
         }
       ]
     },
@@ -3317,25 +3260,6 @@
       ]
     },
     {
-      "word": "直隶",
-      "chapter": "柳生",
-      "chapter_id": 278,
-      "kind": "places",
-      "key": "places:直隶",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "直隶"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 17849,
-          "text": "至直隶界，厚赐骑者而去。"
-        }
-      ]
-    },
-    {
       "word": "顺天",
       "chapter": "柳生",
       "chapter_id": 278,
@@ -3351,6 +3275,25 @@
         {
           "unit": 17766,
           "text": "周生，顺天宦裔也。"
+        }
+      ]
+    },
+    {
+      "word": "直隶",
+      "chapter": "柳生",
+      "chapter_id": 278,
+      "kind": "places",
+      "key": "places:直隶",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "直隶"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 17849,
+          "text": "至直隶界，厚赐骑者而去。"
         }
       ]
     },
@@ -4265,25 +4208,6 @@
       ]
     },
     {
-      "word": "卢龙",
-      "chapter": "张鸿渐",
-      "chapter_id": 363,
-      "kind": "places",
-      "key": "places:卢龙",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "卢龙"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22440,
-          "text": "时卢龙令赵某贪暴，人民共苦之。"
-        }
-      ]
-    },
-    {
       "word": "都中",
       "chapter": "张鸿渐",
       "chapter_id": 363,
@@ -4303,6 +4227,25 @@
       ]
     },
     {
+      "word": "卢龙",
+      "chapter": "张鸿渐",
+      "chapter_id": 363,
+      "kind": "places",
+      "key": "places:卢龙",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "卢龙"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 22440,
+          "text": "时卢龙令赵某贪暴，人民共苦之。"
+        }
+      ]
+    },
+    {
       "word": "高苑",
       "chapter": "农妇",
       "chapter_id": 368,
@@ -4318,44 +4261,6 @@
         {
           "unit": 22721,
           "text": "夫家高苑，距淄百余里；"
-        }
-      ]
-    },
-    {
-      "word": "异域僧",
-      "chapter": "金陵乙",
-      "chapter_id": 369,
-      "kind": "places",
-      "key": "places:异域僧",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 22755,
-          "text": "盖孙觅一异域僧，为之厌胜，授符先归，僧犹未至也。"
-        }
-      ]
-    },
-    {
-      "word": "异域",
-      "chapter": "金陵乙",
-      "chapter_id": 369,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22755,
-          "text": "盖孙觅一异域僧，为之厌胜，授符先归，僧犹未至也。"
         }
       ]
     },
@@ -4877,25 +4782,6 @@
       ]
     },
     {
-      "word": "异域",
-      "chapter": "任秀",
-      "chapter_id": 415,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27152,
-          "text": "今不幸，殂谢异域。"
-        }
-      ]
-    },
-    {
       "word": "直隶",
       "chapter": "白秋练",
       "chapter_id": 417,
@@ -4911,25 +4797,6 @@
         {
           "unit": 27342,
           "text": "直隶有慕生，小字蟾宫，商人慕小寰之子。"
-        }
-      ]
-    },
-    {
-      "word": "异域",
-      "chapter": "王者",
-      "chapter_id": 418,
-      "kind": "places",
-      "key": "places:异域",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "异域"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27563,
-          "text": "自分留鞹异域，已无生望，因念进退一死，亦姑听之。"
         }
       ]
     },
@@ -5345,6 +5212,25 @@
       ]
     },
     {
+      "word": "莱芜",
+      "chapter": "鸮鸟",
+      "chapter_id": 460,
+      "kind": "places",
+      "key": "places:莱芜",
+      "status": "pending",
+      "present": false,
+      "matches": [
+        "莱芜"
+      ],
+      "issue": "同名漏标",
+      "evidence": [
+        {
+          "unit": 29665,
+          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
+        }
+      ]
+    },
+    {
       "word": "新城",
       "chapter": "鸮鸟",
       "chapter_id": 460,
@@ -5373,25 +5259,6 @@
       "present": false,
       "matches": [
         "益都"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29665,
-          "text": "适益都令董、莱芜令范、新城令孙，会集旅舍。"
-        }
-      ]
-    },
-    {
-      "word": "莱芜",
-      "chapter": "鸮鸟",
-      "chapter_id": 460,
-      "kind": "places",
-      "key": "places:莱芜",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "莱芜"
       ],
       "issue": "同名漏标",
       "evidence": [
