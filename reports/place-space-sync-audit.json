@@ -1,29 +1,10 @@
 {
-  "revision_hash": "694e6baed8e1988a39bb4c713f72d459b485757abc4bea74f27f441ab870dbfe",
+  "revision_hash": "7b9234e2facfe32b01b80361055363fc5593c83cd963ac456cfa2855d0a076dc",
   "chapters": 491,
-  "place_nodes": 449,
+  "place_nodes": 440,
   "space_relations": 89,
-  "pending_space_occurrences": 1366,
+  "pending_space_occurrences": 1374,
   "crosscheck": [
-    {
-      "word": "兰若",
-      "chapter": "尸变",
-      "chapter_id": 2,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 74,
-          "text": "至东郊，瞥见兰若，闻木鱼声，乃急挝山门。"
-        }
-      ]
-    },
     {
       "word": "芙蓉",
       "chapter": "瞳人语",
@@ -40,25 +21,6 @@
         {
           "unit": 124,
           "text": "」婢乃下帘，怒顾生曰：「此芙蓉城七郎子新妇归宁，非同田舍娘子，放教秀才胡觑。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "画壁",
-      "chapter_id": 5,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 149,
-          "text": "江西孟龙潭与朱孝廉客都中，偶涉一兰若，殿宇禅舍，俱不甚弘敞，惟一老僧挂褡其中。"
         }
       ]
     },
@@ -162,25 +124,6 @@
         {
           "unit": 511,
           "text": "已而歌曰：「仙仙乎，而还乎，而幽我于广寒乎？"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "长清僧",
-      "chapter_id": 15,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 565,
-          "text": "无烦问途，竟至兰若。"
         }
       ]
     },
@@ -604,25 +547,6 @@
         {
           "unit": 2859,
           "text": "女于荒烟错楚中，指示墓处，果得媪尸，肤革犹存。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "聂小倩",
-      "chapter_id": 48,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 2875,
-          "text": "适赴金华，至北郭，解装兰若。"
         }
       ]
     },
@@ -1357,25 +1281,6 @@
       ]
     },
     {
-      "word": "郡庠",
-      "chapter": "罗刹海市",
-      "chapter_id": 130,
-      "kind": "places",
-      "key": "places:郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 8498,
-          "text": "十四岁入郡庠，即知名。"
-        }
-      ]
-    },
-    {
       "word": "都城",
       "chapter": "罗刹海市",
       "chapter_id": 130,
@@ -1486,44 +1391,6 @@
         {
           "unit": 9070,
           "text": "半载不能自释，复如稷门，冀有所遇。"
-        }
-      ]
-    },
-    {
-      "word": "类兰若",
-      "chapter": "促织",
-      "chapter_id": 135,
-      "kind": "places",
-      "key": "places:类兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 9105,
-          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "促织",
-      "chapter_id": 135,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 9105,
-          "text": "拾视之，非字而画，中绘殿阁类兰若，后小山下怪石乱卧，针针丛棘，青麻头伏焉；"
         }
       ]
     },
@@ -1947,25 +1814,6 @@
       ]
     },
     {
-      "word": "小勾栏",
-      "chapter": "鸦头",
-      "chapter_id": 171,
-      "kind": "places",
-      "key": "places:小勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 10671,
-          "text": "」答云：「此是小勾栏。"
-        }
-      ]
-    },
-    {
       "word": "芙蓉",
       "chapter": "鸦头",
       "chapter_id": 171,
@@ -1985,29 +1833,6 @@
       ]
     },
     {
-      "word": "勾栏",
-      "chapter": "鸦头",
-      "chapter_id": 171,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 10671,
-          "text": "」答云：「此是小勾栏。"
-        },
-        {
-          "unit": 10794,
-          "text": "适媪他出，鸦头自窗中呼赵曰：「勾栏中原无情好，所绸缪者，钱耳。"
-        }
-      ]
-    },
-    {
       "word": "中原",
       "chapter": "鸦头",
       "chapter_id": 171,
@@ -2023,44 +1848,6 @@
         {
           "unit": 10794,
           "text": "适媪他出，鸦头自窗中呼赵曰：「勾栏中原无情好，所绸缪者，钱耳。"
-        }
-      ]
-    },
-    {
-      "word": "约俟兰若",
-      "chapter": "封三娘",
-      "chapter_id": 174,
-      "kind": "places",
-      "key": "places:约俟兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 10965,
-          "text": "」昧爽，封即去，约俟兰若。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "封三娘",
-      "chapter_id": 174,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 10965,
-          "text": "」昧爽，封即去，约俟兰若。"
         }
       ]
     },
@@ -2198,25 +1985,6 @@
         {
           "unit": 11423,
           "text": "利津金永年，八十二岁无子，媪亦七十八岁，自分绝望。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "西湖主",
-      "chapter_id": 183,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 11754,
-          "text": "茂林中隐有殿阁，谓是兰若。"
         }
       ]
     },
@@ -2407,44 +2175,6 @@
         {
           "unit": 13758,
           "text": "而此俗都中尤盛。"
-        }
-      ]
-    },
-    {
-      "word": "饮野寺",
-      "chapter": "大力将军",
-      "chapter_id": 217,
-      "kind": "places",
-      "key": "places:饮野寺",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "野寺"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 13797,
-          "text": "清明饮野寺中，见殿前有古钟，大于两石瓮；"
-        }
-      ]
-    },
-    {
-      "word": "野寺",
-      "chapter": "大力将军",
-      "chapter_id": 217,
-      "kind": "places",
-      "key": "places:野寺",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "野寺"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 13797,
-          "text": "清明饮野寺中，见殿前有古钟，大于两石瓮；"
         }
       ]
     },
@@ -2644,52 +2374,6 @@
       ]
     },
     {
-      "word": "氏殡宫",
-      "chapter": "萧七",
-      "chapter_id": 232,
-      "kind": "places",
-      "key": "places:氏殡宫",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "殡宫"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 14682,
-          "text": "偶适姻家，道出于氏殡宫。"
-        },
-        {
-          "unit": 14802,
-          "text": "」细认其处，乃于氏殡宫也。"
-        }
-      ]
-    },
-    {
-      "word": "殡宫",
-      "chapter": "萧七",
-      "chapter_id": 232,
-      "kind": "places",
-      "key": "places:殡宫",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "殡宫"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 14682,
-          "text": "偶适姻家，道出于氏殡宫。"
-        },
-        {
-          "unit": 14802,
-          "text": "」细认其处，乃于氏殡宫也。"
-        }
-      ]
-    },
-    {
       "word": "秦中",
       "chapter": "乱离二则",
       "chapter_id": 233,
@@ -2705,25 +2389,6 @@
         {
           "unit": 14845,
           "text": "惜言者忘其姓字，秦中或有能道之者。"
-        }
-      ]
-    },
-    {
-      "word": "遥见兰若",
-      "chapter": "豢蛇",
-      "chapter_id": 234,
-      "kind": "places",
-      "key": "places:遥见兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 14850,
-          "text": "遥见兰若，趋投之。"
         }
       ]
     },
@@ -2762,25 +2427,6 @@
         {
           "unit": 14872,
           "text": "余乡有客中州者，寄宿蛇佛寺。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "豢蛇",
-      "chapter_id": 234,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 14850,
-          "text": "遥见兰若，趋投之。"
         }
       ]
     },
@@ -2895,44 +2541,6 @@
         {
           "unit": 15276,
           "text": "张在广陵，以十金购一鸽，体最小，善走，置地上，盘旋无已时，不至于死不休也，故常须人把握之；"
-        }
-      ]
-    },
-    {
-      "word": "惟勾栏",
-      "chapter": "江城",
-      "chapter_id": 249,
-      "kind": "places",
-      "key": "places:惟勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 15525,
-          "text": "」媪战而告曰：「半月来，惟勾栏李云娘过此两度耳。"
-        }
-      ]
-    },
-    {
-      "word": "勾栏",
-      "chapter": "江城",
-      "chapter_id": 249,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 15525,
-          "text": "」媪战而告曰：「半月来，惟勾栏李云娘过此两度耳。"
         }
       ]
     },
@@ -3222,25 +2830,6 @@
       ]
     },
     {
-      "word": "兰若",
-      "chapter": "僧术",
-      "chapter_id": 276,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 17725,
-          "text": "村外兰若，有居僧某，素与分深。"
-        }
-      ]
-    },
-    {
       "word": "直隶界",
       "chapter": "柳生",
       "chapter_id": 278,
@@ -3408,25 +2997,6 @@
         {
           "unit": 19023,
           "text": "母摇首止之，执手喜曰：「适梦之阴司，见王者颜色和霁。"
-        }
-      ]
-    },
-    {
-      "word": "兰若",
-      "chapter": "钟生",
-      "chapter_id": 296,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 19102,
-          "text": "」困少苏，相将入兰若，礼佛而进。"
         }
       ]
     },
@@ -3615,25 +3185,6 @@
       ]
     },
     {
-      "word": "兰若",
-      "chapter": "李生",
-      "chapter_id": 329,
-      "kind": "places",
-      "key": "places:兰若",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "兰若"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 21033,
-          "text": "村外里余，有兰若，筑精舍三楹，趺坐其中。"
-        }
-      ]
-    },
-    {
       "word": "人间",
       "chapter": "陆押官",
       "chapter_id": 330,
@@ -3752,25 +3303,6 @@
       ]
     },
     {
-      "word": "宿野寺",
-      "chapter": "陈锡九",
-      "chapter_id": 334,
-      "kind": "places",
-      "key": "places:宿野寺",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "野寺"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 21229,
-          "text": "锡九无策，惟朝丐市廛，暮宿野寺，冀有知者。"
-        }
-      ]
-    },
-    {
       "word": "人间",
       "chapter": "陈锡九",
       "chapter_id": 334,
@@ -3786,25 +3318,6 @@
         {
           "unit": 21243,
           "text": "今固尚在人间耶！"
-        }
-      ]
-    },
-    {
-      "word": "野寺",
-      "chapter": "陈锡九",
-      "chapter_id": 334,
-      "kind": "places",
-      "key": "places:野寺",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "野寺"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 21229,
-          "text": "锡九无策，惟朝丐市廛，暮宿野寺，冀有知者。"
         }
       ]
     },
@@ -3862,25 +3375,6 @@
         {
           "unit": 21550,
           "text": "刘学师言：「济宁有狂生某，善饮；"
-        }
-      ]
-    },
-    {
-      "word": "郡庠",
-      "chapter": "凤仙",
-      "chapter_id": 339,
-      "kind": "places",
-      "key": "places:郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 21579,
-          "text": "十五入郡庠。"
         }
       ]
     },
@@ -4113,44 +3607,6 @@
       ]
     },
     {
-      "word": "野寺",
-      "chapter": "药僧",
-      "chapter_id": 357,
-      "kind": "places",
-      "key": "places:野寺",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "野寺"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22258,
-          "text": "济宁某，偶于野寺外，见一游僧，向阳扪虱；"
-        }
-      ]
-    },
-    {
-      "word": "勾栏",
-      "chapter": "于中丞",
-      "chapter_id": 358,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22305,
-          "text": "盗供：「是夜同在勾栏，故与妓女合谋，置金床上，令抱卧至窝处始瓜分耳。"
-        }
-      ]
-    },
-    {
       "word": "莱阳民",
       "chapter": "抽肠",
       "chapter_id": 362,
@@ -4261,44 +3717,6 @@
         {
           "unit": 22721,
           "text": "夫家高苑，距淄百余里；"
-        }
-      ]
-    },
-    {
-      "word": "勾栏数",
-      "chapter": "折狱",
-      "chapter_id": 371,
-      "kind": "places",
-      "key": "places:勾栏数",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 22815,
-          "text": "」周怒曰：「我挟勾栏数宿之赀，宁一度可偿耶？"
-        }
-      ]
-    },
-    {
-      "word": "勾栏",
-      "chapter": "折狱",
-      "chapter_id": 371,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 22815,
-          "text": "」周怒曰：「我挟勾栏数宿之赀，宁一度可偿耶？"
         }
       ]
     },
@@ -4649,25 +4067,6 @@
       ]
     },
     {
-      "word": "勾栏",
-      "chapter": "瑞云",
-      "chapter_id": 400,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 25474,
-          "text": "不然，如仆者，何能于勾栏中买佳丽哉！"
-        }
-      ]
-    },
-    {
       "word": "余杭",
       "chapter": "瑞云",
       "chapter_id": 400,
@@ -4763,25 +4162,6 @@
       ]
     },
     {
-      "word": "关圣祠",
-      "chapter": "青蛙神",
-      "chapter_id": 414,
-      "kind": "places",
-      "key": "places:关圣祠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "关圣祠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27081,
-          "text": "会居人敛金修关圣祠，贫富皆与有力；"
-        }
-      ]
-    },
-    {
       "word": "直隶",
       "chapter": "白秋练",
       "chapter_id": 417,
@@ -4816,71 +4196,6 @@
         {
           "unit": 27620,
           "text": "初令秦中，一卖油者有薄罪，其言戆，何怒，杖杀之。"
-        }
-      ]
-    },
-    {
-      "word": "勾栏",
-      "chapter": "陈云栖",
-      "chapter_id": 423,
-      "kind": "places",
-      "key": "places:勾栏",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "勾栏"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 27835,
-          "text": "诚以闺阁之身，腆然酬应如勾栏，所不堪耳。"
-        }
-      ]
-    },
-    {
-      "word": "洞庭君",
-      "chapter": "织成",
-      "chapter_id": 428,
-      "kind": "places",
-      "key": "places:洞庭君",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "洞庭"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 27923,
-          "text": "见南面一人，冠类王者，因行且语，曰：「闻洞庭君为柳氏，臣亦柳氏；"
-        },
-        {
-          "unit": 27981,
-          "text": "」女曰：「实告君：前舟中所遇，即洞庭君也。"
-        },
-        {
-          "unit": 27993,
-          "text": "相传唐柳毅遇龙女，洞庭君以为婿。"
-        }
-      ]
-    },
-    {
-      "word": "郡庠",
-      "chapter": "竹青",
-      "chapter_id": 429,
-      "kind": "places",
-      "key": "places:郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 28112,
-          "text": "汉产十二岁入郡庠。"
         }
       ]
     },
@@ -5033,25 +4348,6 @@
         {
           "unit": 28777,
           "text": "历城县二隶，奉邑令韩承宣命，营干他郡，岁暮方归。"
-        }
-      ]
-    },
-    {
-      "word": "郡庠",
-      "chapter": "曾友于",
-      "chapter_id": 447,
-      "kind": "places",
-      "key": "places:郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 29244,
-          "text": "祖最慧，寄籍三泊年余，入云南郡庠。"
         }
       ]
     },
@@ -5307,25 +4603,6 @@
       ]
     },
     {
-      "word": "入郡庠",
-      "chapter": "寄生",
-      "chapter_id": 466,
-      "kind": "places",
-      "key": "places:入郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "包含已知地名的分词",
-      "evidence": [
-        {
-          "unit": 30098,
-          "text": "长益秀美，八九岁能文，十四入郡庠。"
-        }
-      ]
-    },
-    {
       "word": "京都皇子",
       "chapter": "寄生",
       "chapter_id": 466,
@@ -5341,25 +4618,6 @@
         {
           "unit": 30186,
           "text": "早与老身谋，即许京都皇子，能夺还也。"
-        }
-      ]
-    },
-    {
-      "word": "郡庠",
-      "chapter": "寄生",
-      "chapter_id": 466,
-      "kind": "places",
-      "key": "places:郡庠",
-      "status": "pending",
-      "present": false,
-      "matches": [
-        "郡庠"
-      ],
-      "issue": "同名漏标",
-      "evidence": [
-        {
-          "unit": 30098,
-          "text": "长益秀美，八九岁能文，十四入郡庠。"
         }
       ]
     },
