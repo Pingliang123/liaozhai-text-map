@@ -18,7 +18,7 @@ for (const [fragment, message] of [
   ["const fallbackDBName = 'liaozhai-map-local-backup-v1'", 'missing IndexedDB backup database'],
   ["indexedDB.open(fallbackDBName, 1)", 'missing IndexedDB opener'],
   ['queueFallbackWrite(storageKey, storageSnapshot)', 'missing queued fallback write'],
-  ['await fallbackRead(storageKey)', 'missing fallback restore'],
+  ['await GhostCorpusStore.readLocal(window,storageKey,fallbackRead)', 'missing shared authoritative fallback restore'],
   ['storagePending || storageInvalid', 'missing pending-save guard'],
   ['本机保存失败（主储存与备用储存均不可用）：请立即下载 JSON 备份。', 'missing final backup warning']
 ]) if (!page.includes(fragment)) throw new Error(message);
