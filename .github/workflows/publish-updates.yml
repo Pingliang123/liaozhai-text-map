@@ -92,6 +92,7 @@ jobs:
           node automation/export-lab-place-levels.js
           node automation/test-place-level-colors.js
           node automation/test-hierarchy-network.js
+          node automation/test-unmapped-regions.js
           node automation/export-topic-input.js
           node automation/build-topic-model.js
           node automation/test-topic-places.js
@@ -144,6 +145,7 @@ jobs:
           mkdir -p public/reports
           cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md reports/analysis-reports-20261021.json reports/analysis-reports-20261021.md public/reports/
           cp reports/unified-migration-verification-20261020.json public/reports/
+          cp reports/unmapped-region-review-20261021.json public/reports/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

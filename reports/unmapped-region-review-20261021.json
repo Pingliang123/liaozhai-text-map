@@ -1,0 +1,6273 @@
+{
+  "generated_at": "2026-10-21T04:39:22.802Z",
+  "provider": "原文、已存CHGIS检索与人工指定区域；本轮未调用DeepSeek",
+  "checked": 317,
+  "located": 0,
+  "resolved_references": [
+    {
+      "word": "淄邑",
+      "target": "淄川",
+      "relation": "same-reference-area",
+      "source": "用户区域对应与原文核对",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。"
+    },
+    {
+      "word": "太山",
+      "target": "泰山",
+      "relation": "same-reference-area",
+      "source": "用户区域对应与原文核对",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。"
+    },
+    {
+      "word": "淄",
+      "target": "淄川",
+      "relation": "same-reference-area",
+      "source": "用户区域对应与原文核对",
+      "note": "用户指定区域对应，原文核对；保留文本名称，共用现有参考点。"
+    }
+  ],
+  "manual_chapters_unchanged": true,
+  "rows": [
+    {
+      "word": "阳信",
+      "evidence": [
+        {
+          "chapter": "尸变",
+          "chapter_id": 2,
+          "quotes": [
+            {
+              "unit": 38,
+              "text": "阳信某翁者，邑之蔡店人。"
+            }
+          ]
+        }
+      ],
+      "status": "manual-preserved"
+    },
+    {
+      "word": "蔡店",
+      "evidence": [
+        {
+          "chapter": "尸变",
+          "chapter_id": 2,
+          "quotes": [
+            {
+              "unit": 38,
+              "text": "阳信某翁者，邑之蔡店人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "芙蓉城",
+      "evidence": [
+        {
+          "chapter": "瞳人语",
+          "chapter_id": 4,
+          "quotes": [
+            {
+              "unit": 124,
+              "text": "」婢乃下帘，怒顾生曰：「此芙蓉城七郎子新妇归宁，非同田舍娘子，放教秀才胡觑。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "邬镇",
+      "evidence": [
+        {
+          "chapter": "王六郎",
+          "chapter_id": 11,
+          "quotes": [
+            {
+              "unit": 369,
+              "text": "今授为招远县邬镇土地，来日赴任。"
+            },
+            {
+              "unit": 378,
+              "text": "问之居人，果有邬镇。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "石坑庄",
+      "evidence": [
+        {
+          "chapter": "王六郎",
+          "chapter_id": 11,
+          "quotes": [
+            {
+              "unit": 414,
+              "text": "或言：即章丘石坑庄。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "阴曹",
+      "evidence": [
+        {
+          "chapter": "犬奸",
+          "chapter_id": 18,
+          "quotes": [
+            {
+              "unit": 703,
+              "text": "至于犬不良，阴曹应穷于法。"
+            }
+          ]
+        },
+        {
+          "chapter": "李伯言",
+          "chapter_id": 91,
+          "quotes": [
+            {
+              "unit": 5763,
+              "text": "吏急进曰：「阴曹不与人世等，一念之私不可容。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "龙虎山",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 19,
+          "quotes": [
+            {
+              "unit": 706,
+              "text": "拟登龙虎山谒天师。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "兴福寺",
+      "evidence": [
+        {
+          "chapter": "僧孽",
+          "chapter_id": 22,
+          "quotes": [
+            {
+              "unit": 1016,
+              "text": "时其见居兴福寺，因往探之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "关东",
+      "evidence": [
+        {
+          "chapter": "焦螟",
+          "chapter_id": 29,
+          "quotes": [
+            {
+              "unit": 1197,
+              "text": "大臣或言：关东道士焦暝，居内城，总持敕勒之术，颇有效。"
+            }
+          ]
+        },
+        {
+          "chapter": "叶生",
+          "chapter_id": 30,
+          "quotes": [
+            {
+              "unit": 1224,
+              "text": "会关东丁乘鹤来令是邑，见其文，奇之；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "淮阳",
+      "evidence": [
+        {
+          "chapter": "叶生",
+          "chapter_id": 30,
+          "quotes": [
+            {
+              "unit": 1221,
+              "text": "淮阳叶生者，失其名字。"
+            },
+            {
+              "unit": 1275,
+              "text": "抵淮阳界，命仆马送生归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "朝天观",
+      "evidence": [
+        {
+          "chapter": "灵官",
+          "chapter_id": 34,
+          "quotes": [
+            {
+              "unit": 1532,
+              "text": "朝天观道士某，喜吐纳之术。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "铁围山",
+      "evidence": [
+        {
+          "chapter": "王兰",
+          "chapter_id": 35,
+          "quotes": [
+            {
+              "unit": 1638,
+              "text": "贺才邪荡，已罚窜铁围山。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "烟墩",
+      "evidence": [
+        {
+          "chapter": "王兰",
+          "chapter_id": 35,
+          "quotes": [
+            {
+              "unit": 1632,
+              "text": "一日聚饮于烟墩，才大醉狂呼，王止之不听。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "千佛山",
+      "evidence": [
+        {
+          "chapter": "鹰虎神",
+          "chapter_id": 36,
+          "quotes": [
+            {
+              "unit": 1648,
+              "text": "奈室无长物，惟于荐底得钱三百，纳腰中，拔关而出，将登千佛山。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "衡府",
+      "evidence": [
+        {
+          "chapter": "王成",
+          "chapter_id": 37,
+          "quotes": [
+            {
+              "unit": 1666,
+              "text": "王祖为衡府仪宾，家中故物，多此款式，因把钗踌躇。"
+            }
+          ]
+        },
+        {
+          "chapter": "林四娘",
+          "chapter_id": 81,
+          "quotes": [
+            {
+              "unit": 5259,
+              "text": "女愀然曰：「妾，衡府宫人也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "燕都",
+      "evidence": [
+        {
+          "chapter": "王成",
+          "chapter_id": 37,
+          "quotes": [
+            {
+              "unit": 1705,
+              "text": "妪命趣装，计六七日可达燕都。"
+            }
+          ]
+        },
+        {
+          "chapter": "辛十四娘",
+          "chapter_id": 151,
+          "quotes": [
+            {
+              "unit": 9963,
+              "text": "先是，女遣婢赴燕都，欲达宫闱，为生陈冤抑。"
+            }
+          ]
+        },
+        {
+          "chapter": "鸦头",
+          "chapter_id": 171,
+          "quotes": [
+            {
+              "unit": 10752,
+              "text": "后数年，偶入燕都，过育婴堂，见一儿，七八岁。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "贝勒府",
+      "evidence": [
+        {
+          "chapter": "王成",
+          "chapter_id": 37,
+          "quotes": [
+            {
+              "unit": 1719,
+              "text": "贝勒府购致甚急，价顿昂，较常可三倍。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "平原",
+      "evidence": [
+        {
+          "chapter": "王成",
+          "chapter_id": 37,
+          "quotes": [
+            {
+              "unit": 1659,
+              "text": "王成，平原故家子，性最懒。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "仪宾府",
+      "evidence": [
+        {
+          "chapter": "王成",
+          "chapter_id": 37,
+          "quotes": [
+            {
+              "unit": 1665,
+              "text": "见草际金钗一股，拾视之，镌有细字云：「仪宾府造」。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "青帝庙",
+      "evidence": [
+        {
+          "chapter": "画皮",
+          "chapter_id": 39,
+          "quotes": [
+            {
+              "unit": 2033,
+              "text": "」乃以蝇拂授生，令挂寝门，临别，约会于青帝庙。"
+            },
+            {
+              "unit": 2050,
+              "text": "」答曰：「仆（早）赴青帝庙，良不知。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "冥府",
+      "evidence": [
+        {
+          "chapter": "董生",
+          "chapter_id": 43,
+          "quotes": [
+            {
+              "unit": 2322,
+              "text": "我已诉之冥府，泄此幽愤。"
+            }
+          ]
+        },
+        {
+          "chapter": "王货郎",
+          "chapter_id": 384,
+          "quotes": [
+            {
+              "unit": 23640,
+              "text": "」答云：「冥府一疑案，须弟一证之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "十王殿",
+      "evidence": [
+        {
+          "chapter": "陆判",
+          "chapter_id": 46,
+          "quotes": [
+            {
+              "unit": 2385,
+              "text": "或戏之云：「君有豪名，能深夜赴十王殿，负得左廊判官来，众当醵作筵。"
+            },
+            {
+              "unit": 2386,
+              "text": "」盖陵阳有十王殿，神鬼皆以木雕，妆饰如生。"
+            },
+            {
+              "unit": 2483,
+              "text": "上元游十王殿，时游人甚杂，内有无赖贼窥而艳之，遂阴访居里，乘夜梯入，穴寝门，杀一婢于床下，逼女与淫；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "苏溪",
+      "evidence": [
+        {
+          "chapter": "陆判",
+          "chapter_id": 46,
+          "quotes": [
+            {
+              "unit": 2503,
+              "text": "」吴夜梦女曰：「儿为苏溪杨大年所贼，无与朱孝廉。"
+            }
+          ]
+        }
+      ],
+      "status": "gazetteer-candidate",
+      "candidates": [
+        {
+          "record_id": "hvd_18739",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_18739",
+          "name": "苏溪",
+          "api_name": "苏溪",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "宝庆府 (Baoqing Fu)",
+          "coordinates": "111.09068, 28.03615",
+          "lon": 111.09068,
+          "lat": 28.03615,
+          "data_source": "CHGIS"
+        }
+      ],
+      "reason": "已存CHGIS唯一同名区域；仍需核对故事所在地。"
+    },
+    {
+      "word": "西岳",
+      "evidence": [
+        {
+          "chapter": "陆判",
+          "chapter_id": 46,
+          "quotes": [
+            {
+              "unit": 2551,
+              "text": "奉命祭西岳，道经华阴，忽有舆从羽葆，驰冲卤簿。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "罗店",
+      "evidence": [
+        {
+          "chapter": "婴宁",
+          "chapter_id": 47,
+          "quotes": [
+            {
+              "unit": 2568,
+              "text": "王子服，莒之罗店人，早孤。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "胶",
+      "evidence": [
+        {
+          "chapter": "海公子",
+          "chapter_id": 51,
+          "quotes": [
+            {
+              "unit": 3106,
+              "text": "」曰：「我胶娼也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "古迹岛",
+      "evidence": [
+        {
+          "chapter": "海公子",
+          "chapter_id": 51,
+          "quotes": [
+            {
+              "unit": 3095,
+              "text": "东海古迹岛，有五色耐冬花，四时不凋。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "相公祠",
+      "evidence": [
+        {
+          "chapter": "张老相公",
+          "chapter_id": 54,
+          "quotes": [
+            {
+              "unit": 3198,
+              "text": "行旅寺僧并快之，建张老相公祠，肖像其中，以为小神，祷之辄应。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "金山",
+      "evidence": [
+        {
+          "chapter": "张老相公",
+          "chapter_id": 54,
+          "quotes": [
+            {
+              "unit": 3184,
+              "text": "舟抵金山，张先渡江，嘱家人在舟，勿煿膻腥。"
+            },
+            {
+              "unit": 3189,
+              "text": "因登金山，谒寺僧，询鼋之异，将以仇鼋。"
+            }
+          ]
+        },
+        {
+          "chapter": "伍秋月",
+          "chapter_id": 191,
+          "quotes": [
+            {
+              "unit": 12139,
+              "text": "江水澄波，金山在目，心甚快之。"
+            }
+          ]
+        },
+        {
+          "chapter": "晚霞",
+          "chapter_id": 416,
+          "quotes": [
+            {
+              "unit": 27219,
+              "text": "至金山下，堕水死。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_20431",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_20431",
+          "name": "金山",
+          "api_name": "金山",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "曹州府 (Caozhou Fu)",
+          "coordinates": "116.18794, 35.21531",
+          "lon": 116.18794,
+          "lat": 35.21531,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_40508",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_40508",
+          "name": "金山县",
+          "api_name": "金山县",
+          "years": "1796 ~ 1911",
+          "feature_type": "县 (xian)",
+          "parent_name": "松江府 (Songjiang Fu)",
+          "coordinates": "121.15807, 30.90122",
+          "lon": 121.15807,
+          "lat": 30.90122,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "桃花江",
+      "evidence": [
+        {
+          "chapter": "水莽草",
+          "chapter_id": 55,
+          "quotes": [
+            {
+              "unit": 3204,
+              "text": "以故楚中桃花江一带，此鬼尤多云。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "楚中",
+      "evidence": [
+        {
+          "chapter": "水莽草",
+          "chapter_id": 55,
+          "quotes": [
+            {
+              "unit": 3204,
+              "text": "以故楚中桃花江一带，此鬼尤多云。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "新城",
+      "evidence": [
+        {
+          "chapter": "耿十八",
+          "chapter_id": 58,
+          "quotes": [
+            {
+              "unit": 3399,
+              "text": "新城耿十八，病危笃，自知不起。"
+            }
+          ]
+        },
+        {
+          "chapter": "捉鬼射狐",
+          "chapter_id": 154,
+          "quotes": [
+            {
+              "unit": 10079,
+              "text": "李公著明，睢宁令襟卓先生公子也，为人豪爽无馁怯，为新城王季良内弟。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "思乡地",
+      "evidence": [
+        {
+          "chapter": "耿十八",
+          "chapter_id": 58,
+          "quotes": [
+            {
+              "unit": 3417,
+              "text": "俄至一处，闻人言曰：「此思乡地也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "望乡台",
+      "evidence": [
+        {
+          "chapter": "耿十八",
+          "chapter_id": 58,
+          "quotes": [
+            {
+              "unit": 3426,
+              "text": "囊头械足之辈，呜咽而下上，闻人言为「望乡台」。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "楚江",
+      "evidence": [
+        {
+          "chapter": "珠儿",
+          "chapter_id": 59,
+          "quotes": [
+            {
+              "unit": 3540,
+              "text": "又二三日，谓母曰：「惠姊在冥中大好，嫁得楚江王小郎子，珠翠满头髻；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "济阳",
+      "evidence": [
+        {
+          "chapter": "祝翁",
+          "chapter_id": 62,
+          "quotes": [
+            {
+              "unit": 3708,
+              "text": "济阳祝村有祝翁者，年五十余，病卒。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "陕右",
+      "evidence": [
+        {
+          "chapter": "某公",
+          "chapter_id": 64,
+          "quotes": [
+            {
+              "unit": 3746,
+              "text": "陕右某公，辛丑进士，能记前身。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "红花埠",
+      "evidence": [
+        {
+          "chapter": "莲香",
+          "chapter_id": 68,
+          "quotes": [
+            {
+              "unit": 3969,
+              "text": "少孤，馆于红花埠。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "三山",
+      "evidence": [
+        {
+          "chapter": "莲香",
+          "chapter_id": 68,
+          "quotes": [
+            {
+              "unit": 4131,
+              "text": "」莲解囊出药，曰：「妾早知有今，别后采药三山，凡三阅月，物料始备，瘵蛊至死，投之无不苏者。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "沂",
+      "evidence": [
+        {
+          "chapter": "莲香",
+          "chapter_id": 68,
+          "quotes": [
+            {
+              "unit": 3968,
+              "text": "桑生，名晓，字子明，沂州人。"
+            },
+            {
+              "unit": 4280,
+              "text": "余庚戌南游至沂，阻雨，休于旅舍。"
+            }
+          ]
+        },
+        {
+          "chapter": "刘姓",
+          "chapter_id": 254,
+          "quotes": [
+            {
+              "unit": 15909,
+              "text": "后去淄居沂，习气不除，乡人咸畏恶之。"
+            },
+            {
+              "unit": 15918,
+              "text": "时有同邑李翠石作典商于沂，刘持状入城，适与之遇。"
+            }
+          ]
+        },
+        {
+          "chapter": "薛慰娘",
+          "chapter_id": 463,
+          "quotes": [
+            {
+              "unit": 29759,
+              "text": "及归，至沂而病。"
+            },
+            {
+              "unit": 29791,
+              "text": "先是，其父李洪都，与同乡某甲行贾，死于沂，某因瘗诸丛葬处。"
+            },
+            {
+              "unit": 29798,
+              "text": "于是亲求父骨，至沂遍访。"
+            }
+          ]
+        },
+        {
+          "chapter": "锦瑟",
+          "chapter_id": 480,
+          "quotes": [
+            {
+              "unit": 30945,
+              "text": "沂人王生，少孤，自为族。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "徐城",
+      "evidence": [
+        {
+          "chapter": "莲香",
+          "chapter_id": 68,
+          "quotes": [
+            {
+              "unit": 4261,
+              "text": "父徐城卖浆者，死三年矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "粤西",
+      "evidence": [
+        {
+          "chapter": "阿宝",
+          "chapter_id": 69,
+          "quotes": [
+            {
+              "unit": 4283,
+              "text": "粤西孙子楚，名士也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "水月寺",
+      "evidence": [
+        {
+          "chapter": "阿宝",
+          "chapter_id": 69,
+          "quotes": [
+            {
+              "unit": 4345,
+              "text": "浴佛节，闻将降香水月寺，遂早旦往候道左，目眩睛劳。"
+            }
+          ]
+        },
+        {
+          "chapter": "封三娘",
+          "chapter_id": 174,
+          "quotes": [
+            {
+              "unit": 10887,
+              "text": "会上元日，水月寺中诸尼，作「盂兰盆会」。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "遵化道",
+      "evidence": [
+        {
+          "chapter": "遵化署狐",
+          "chapter_id": 71,
+          "quotes": [
+            {
+              "unit": 4490,
+              "text": "诸城邱公为遵化道。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "遵化",
+      "evidence": [
+        {
+          "chapter": "遵化署狐",
+          "chapter_id": 71,
+          "quotes": [
+            {
+              "unit": 4490,
+              "text": "诸城邱公为遵化道。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "秦女村",
+      "evidence": [
+        {
+          "chapter": "巧娘",
+          "chapter_id": 74,
+          "quotes": [
+            {
+              "unit": 4718,
+              "text": "问其姓名居里，云：「华姓，居秦女村，去北郭三四里。"
+            },
+            {
+              "unit": 4721,
+              "text": "问秦女村，迄无知者。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "潍邑",
+      "evidence": [
+        {
+          "chapter": "潍水狐",
+          "chapter_id": 78,
+          "quotes": [
+            {
+              "unit": 4995,
+              "text": "潍邑李氏有别第。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "秦中",
+      "evidence": [
+        {
+          "chapter": "潍水狐",
+          "chapter_id": 78,
+          "quotes": [
+            {
+              "unit": 5011,
+              "text": "问其居里，以秦中对。"
+            },
+            {
+              "unit": 5014,
+              "text": "秦中不可居，大难将作。"
+            }
+          ]
+        },
+        {
+          "chapter": "鸲鹆",
+          "chapter_id": 110,
+          "quotes": [
+            {
+              "unit": 7491,
+              "text": "后有往秦中者，见其人携鸟在西安市上。"
+            }
+          ]
+        },
+        {
+          "chapter": "青娥",
+          "chapter_id": 266,
+          "quotes": [
+            {
+              "unit": 17072,
+              "text": "会秦中欧公宰是邑，见生文，深器之，时召入内署，极意优宠。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "相公庄",
+      "evidence": [
+        {
+          "chapter": "龙",
+          "chapter_id": 80,
+          "quotes": [
+            {
+              "unit": 5213,
+              "text": "章丘小相公庄，有民妇适野，值大风，尘沙扑面，觉一目瞇，如含麦芒。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "牛山",
+      "evidence": [
+        {
+          "chapter": "龙",
+          "chapter_id": 80,
+          "quotes": [
+            {
+              "unit": 5207,
+              "text": "房生与友人登牛山，入寺游瞩，忽椽间一黄砖堕，上盘一小蛇，细裁如蚓。"
+            }
+          ]
+        },
+        {
+          "chapter": "司札吏",
+          "chapter_id": 424,
+          "quotes": [
+            {
+              "unit": 27873,
+              "text": "秀水王司直梓其诗，名曰：牛山四十屁。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "招远",
+      "evidence": [
+        {
+          "chapter": "鲁公女",
+          "chapter_id": 83,
+          "quotes": [
+            {
+              "unit": 5319,
+              "text": "招远张于旦，性疏狂不羁。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "河北",
+      "evidence": [
+        {
+          "chapter": "鲁公女",
+          "chapter_id": 83,
+          "quotes": [
+            {
+              "unit": 5358,
+              "text": "曰：「蒙惠及泉下人，经咒藏满，今得生河北卢户部家。"
+            },
+            {
+              "unit": 5401,
+              "text": "生曰：「待吾至河北，来而后娶。"
+            },
+            {
+              "unit": 5402,
+              "text": "屈指已及约期，遂命仆马至河北。"
+            }
+          ]
+        },
+        {
+          "chapter": "又",
+          "chapter_id": 406,
+          "quotes": [
+            {
+              "unit": 26143,
+              "text": "一日，生诣河北，笠带断绝，风吹欲落，辄于马上以手自按。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "萧寺",
+      "evidence": [
+        {
+          "chapter": "鲁公女",
+          "chapter_id": 83,
+          "quotes": [
+            {
+              "unit": 5320,
+              "text": "读书萧寺。"
+            }
+          ]
+        },
+        {
+          "chapter": "蹇偿债",
+          "chapter_id": 155,
+          "quotes": [
+            {
+              "unit": 10118,
+              "text": "公读书萧寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "颜镇",
+      "evidence": [
+        {
+          "chapter": "戏术",
+          "chapter_id": 86,
+          "quotes": [
+            {
+              "unit": 5620,
+              "text": "利津李见田，在颜镇闲游陶场，欲市巨瓮，与陶人争直，不成而去。"
+            }
+          ]
+        },
+        {
+          "chapter": "胡大姑",
+          "chapter_id": 225,
+          "quotes": [
+            {
+              "unit": 14390,
+              "text": "时颜镇张八公子家，有狐居楼上，恒与人语。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "明湖",
+      "evidence": [
+        {
+          "chapter": "丐僧",
+          "chapter_id": 87,
+          "quotes": [
+            {
+              "unit": 5629,
+              "text": "赤足衣百衲，日于芙蓉﹑明湖诸馆，诵经抄募。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "芙蓉",
+      "evidence": [
+        {
+          "chapter": "丐僧",
+          "chapter_id": 87,
+          "quotes": [
+            {
+              "unit": 5629,
+              "text": "赤足衣百衲，日于芙蓉﹑明湖诸馆，诵经抄募。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_16932",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_16932",
+          "name": "芙蓉",
+          "api_name": "芙蓉",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "韶州府 (Shaozhou Fu)",
+          "coordinates": "114.14964, 24.50572",
+          "lon": 114.14964,
+          "lat": 24.50572,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_17304",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_17304",
+          "name": "芙蓉",
+          "api_name": "芙蓉",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "桂林府 (Guilin Fu)",
+          "coordinates": "110.14944, 26.02090",
+          "lon": 110.14944,
+          "lat": 26.0209,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "涿",
+      "evidence": [
+        {
+          "chapter": "伏狐",
+          "chapter_id": 88,
+          "quotes": [
+            {
+              "unit": 5655,
+              "text": "一日，止于涿。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "苕溪",
+      "evidence": [
+        {
+          "chapter": "黄九郎",
+          "chapter_id": 92,
+          "quotes": [
+            {
+              "unit": 5792,
+              "text": "何师参，字子萧，斋于苕溪之东，门临旷野。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "黄龙府",
+      "evidence": [
+        {
+          "chapter": "黄九郎",
+          "chapter_id": 92,
+          "quotes": [
+            {
+              "unit": 5987,
+              "text": "设黄龙府潮水忽至，何以御之？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "黑松林",
+      "evidence": [
+        {
+          "chapter": "黄九郎",
+          "chapter_id": 92,
+          "quotes": [
+            {
+              "unit": 5986,
+              "text": "彼黑松林戎马顿来，固相安矣；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "圣庙",
+      "evidence": [
+        {
+          "chapter": "汤公",
+          "chapter_id": 94,
+          "quotes": [
+            {
+              "unit": 6048,
+              "text": "无几，至圣庙，见宣圣南面坐。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "阴司",
+      "evidence": [
+        {
+          "chapter": "阎罗",
+          "chapter_id": 95,
+          "quotes": [
+            {
+              "unit": 6075,
+              "text": "余至阴司，亦其属曹。"
+            },
+            {
+              "unit": 6077,
+              "text": "或问：「李昨赴阴司何事？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "粤",
+      "evidence": [
+        {
+          "chapter": "连琐",
+          "chapter_id": 96,
+          "quotes": [
+            {
+              "unit": 6230,
+              "text": "刀实妾父出使粤中，百金购之。"
+            }
+          ]
+        },
+        {
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "quotes": [
+            {
+              "unit": 16844,
+              "text": "有表兄为粤司李，玉往省之，久不归。"
+            },
+            {
+              "unit": 16885,
+              "text": "玉自东粤归，闻乱，兼程进。"
+            }
+          ]
+        },
+        {
+          "chapter": "象",
+          "chapter_id": 308,
+          "quotes": [
+            {
+              "unit": 19361,
+              "text": "粤中有猎兽者，挟矢如山。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南岳",
+      "evidence": [
+        {
+          "chapter": "白于玉",
+          "chapter_id": 98,
+          "quotes": [
+            {
+              "unit": 6437,
+              "text": "」后奉旨祭南岳，中途遇寇。"
+            }
+          ]
+        },
+        {
+          "chapter": "库官",
+          "chapter_id": 139,
+          "quotes": [
+            {
+              "unit": 9234,
+              "text": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。"
+            }
+          ]
+        },
+        {
+          "chapter": "神女",
+          "chapter_id": 391,
+          "quotes": [
+            {
+              "unit": 23977,
+              "text": "家君为南岳都理司，偶失礼于地官，将达帝听；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "天门",
+      "evidence": [
+        {
+          "chapter": "白于玉",
+          "chapter_id": 98,
+          "quotes": [
+            {
+              "unit": 6351,
+              "text": "」曰：「此天门也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "广寒宫",
+      "evidence": [
+        {
+          "chapter": "白于玉",
+          "chapter_id": 98,
+          "quotes": [
+            {
+              "unit": 6355,
+              "text": "童导入广寒宫，内以水晶为阶，行人如在镜中。"
+            }
+          ]
+        },
+        {
+          "chapter": "鸮鸟",
+          "chapter_id": 460,
+          "quotes": [
+            {
+              "unit": 29678,
+              "text": "』」范公云：「天上有广寒宫，地下有乾清宫，有一古人姜太公。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "桂阙",
+      "evidence": [
+        {
+          "chapter": "白于玉",
+          "chapter_id": 98,
+          "quotes": [
+            {
+              "unit": 6363,
+              "text": "玉砌雕阑，殆疑桂阙。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中国",
+      "evidence": [
+        {
+          "chapter": "夜叉国",
+          "chapter_id": 99,
+          "quotes": [
+            {
+              "unit": 6577,
+              "text": "知为中国人，便问居里。"
+            },
+            {
+              "unit": 6588,
+              "text": "商曰：「此中国之官名。"
+            },
+            {
+              "unit": 6599,
+              "text": "但母非中国人，言貌殊异；"
+            }
+          ]
+        },
+        {
+          "chapter": "西僧",
+          "chapter_id": 101,
+          "quotes": [
+            {
+              "unit": 6690,
+              "text": "其服色言貌，俱与中国殊异。"
+            },
+            {
+              "unit": 6701,
+              "text": "离西土者十有二人，至中国仅存其二。"
+            },
+            {
+              "unit": 6702,
+              "text": "西土传中国名山四：一泰山，一华山，一五台，一落伽也。"
+            }
+          ]
+        },
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8511,
+              "text": "其来者，口鼻位置，尚皆与中国同，共罗浆酒奉马，马问其相骇之故，答曰：「尝闻祖父言：西去二万六千里，有中国，其人民形象率诡异。"
+            },
+            {
+              "unit": 8549,
+              "text": "问：「中国亦有此乐乎？"
+            },
+            {
+              "unit": 8568,
+              "text": "既见，问中国治安之道，马委曲上陈，大蒙嘉叹，赐宴离宫。"
+            }
+          ]
+        },
+        {
+          "chapter": "狐谐",
+          "chapter_id": 142,
+          "quotes": [
+            {
+              "unit": 9350,
+              "text": "使臣曰：『中国马生骡，骡主驹驹。"
+            }
+          ]
+        },
+        {
+          "chapter": "红毛毡",
+          "chapter_id": 361,
+          "quotes": [
+            {
+              "unit": 22407,
+              "text": "红毛国，旧许与中国相贸易。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "交州",
+      "evidence": [
+        {
+          "chapter": "夜叉国",
+          "chapter_id": 99,
+          "quotes": [
+            {
+              "unit": 6485,
+              "text": "交州徐姓，泛海为贾。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "卧眉",
+      "evidence": [
+        {
+          "chapter": "夜叉国",
+          "chapter_id": 99,
+          "quotes": [
+            {
+              "unit": 6538,
+              "text": "大夜叉按头点视，问：「卧眉山众，尽于此乎？"
+            },
+            {
+              "unit": 6575,
+              "text": "时一商泛海，亦遭风飘至卧眉。"
+            },
+            {
+              "unit": 6625,
+              "text": "夜叉喜曰：「卧眉，我故里也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "卧眉山",
+      "evidence": [
+        {
+          "chapter": "夜叉国",
+          "chapter_id": 99,
+          "quotes": [
+            {
+              "unit": 6538,
+              "text": "大夜叉按头点视，问：「卧眉山众，尽于此乎？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "毒龙国",
+      "evidence": [
+        {
+          "chapter": "夜叉国",
+          "chapter_id": 99,
+          "quotes": [
+            {
+              "unit": 6628,
+              "text": "此去为毒龙国，向卧眉非路。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "流沙河",
+      "evidence": [
+        {
+          "chapter": "西僧",
+          "chapter_id": 101,
+          "quotes": [
+            {
+              "unit": 6694,
+              "text": "又经流沙河，河中有水晶山，峭壁插天际，四面莹澈，似无所隔。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "梨花岛",
+      "evidence": [
+        {
+          "chapter": "汪士秀",
+          "chapter_id": 104,
+          "quotes": [
+            {
+              "unit": 6890,
+              "text": "」白衣者曰：「此夕风景，大似广利王宴梨花岛时。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "诸葛城",
+      "evidence": [
+        {
+          "chapter": "商三官",
+          "chapter_id": 105,
+          "quotes": [
+            {
+              "unit": 6941,
+              "text": "故诸葛城，有商士禹者，士人也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "滕邑",
+      "evidence": [
+        {
+          "chapter": "小二",
+          "chapter_id": 107,
+          "quotes": [
+            {
+              "unit": 7031,
+              "text": "滕邑赵旺，夫妻奉佛，不茹荤血，乡中有「善人」之目。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "琉璃厂",
+      "evidence": [
+        {
+          "chapter": "小二",
+          "chapter_id": 107,
+          "quotes": [
+            {
+              "unit": 7123,
+              "text": "常开琉璃厂，每进工人而指点之，一切棋灯，其奇式幻采，诸肆莫能及，以故直昂得速售。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中州",
+      "evidence": [
+        {
+          "chapter": "庚娘",
+          "chapter_id": 108,
+          "quotes": [
+            {
+              "unit": 7143,
+              "text": "金大用，中州旧家子也。"
+            }
+          ]
+        },
+        {
+          "chapter": "钟生",
+          "chapter_id": 296,
+          "quotes": [
+            {
+              "unit": 19041,
+              "text": "曰：「在中州，今十四岁矣。"
+            },
+            {
+              "unit": 19044,
+              "text": "钟舅令于西江，母遣往省，以便途过中州，将应继室之谶。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "保定",
+      "evidence": [
+        {
+          "chapter": "宫梦弼",
+          "chapter_id": 109,
+          "quotes": [
+            {
+              "unit": 7290,
+              "text": "柳芳华，保定人。"
+            },
+            {
+              "unit": 7353,
+              "text": "阅两月，始达保定，访和居址，直造其家。"
+            },
+            {
+              "unit": 7397,
+              "text": "既而冻馁难堪，不得已如保定。"
+            }
+          ]
+        },
+        {
+          "chapter": "公孙夏",
+          "chapter_id": 474,
+          "quotes": [
+            {
+              "unit": 30480,
+              "text": "保定有国学生某，将入都纳赀，谋得县尹。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_88205",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_88205",
+          "name": "保定县",
+          "api_name": "保定县",
+          "years": "1380 ~ 1911",
+          "feature_type": "县 (xian)",
+          "parent_name": "北平府 (Beiping Fu)",
+          "coordinates": "116.36626, 39.00622",
+          "lon": 116.36626,
+          "lat": 39.00622,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_87649",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_87649",
+          "name": "保定府",
+          "api_name": "保定府",
+          "years": "1735 ~ 1911",
+          "feature_type": "府 (fu)",
+          "parent_name": "清 (Qing)",
+          "coordinates": "115.50209, 38.85570",
+          "lon": 115.50209,
+          "lat": 38.8557,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_9506",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_9506",
+          "name": "保定府",
+          "api_name": "保定府",
+          "years": "1820 ~ 1820",
+          "feature_type": "府 (fu)",
+          "parent_name": "直隶 (Zhili)",
+          "coordinates": "115.48461, 38.75659",
+          "lon": 115.48461,
+          "lat": 38.75659,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "陕",
+      "evidence": [
+        {
+          "chapter": "宫梦弼",
+          "chapter_id": 109,
+          "quotes": [
+            {
+              "unit": 7294,
+              "text": "惟一客宫梦弼，陕人，生平无所乞请。"
+            }
+          ]
+        },
+        {
+          "chapter": "任秀",
+          "chapter_id": 415,
+          "quotes": [
+            {
+              "unit": 27145,
+              "text": "竭赀赴陕。"
+            },
+            {
+              "unit": 27149,
+              "text": "至陕，任病不起，申善视之。"
+            },
+            {
+              "unit": 27204,
+              "text": "秀至陕时，亦颇闻其姓字；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "无极",
+      "evidence": [
+        {
+          "chapter": "宫梦弼",
+          "chapter_id": 109,
+          "quotes": [
+            {
+              "unit": 7320,
+              "text": "先是，柳生时，为和论亲于无极黄氏，素封也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "汴梁",
+      "evidence": [
+        {
+          "chapter": "狐妾",
+          "chapter_id": 117,
+          "quotes": [
+            {
+              "unit": 7773,
+              "text": "向结伴至汴梁，其城为河伯占据，库藏皆没水中，入水各得些须，何能饱无餍之求？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "云贵",
+      "evidence": [
+        {
+          "chapter": "狐妾",
+          "chapter_id": 117,
+          "quotes": [
+            {
+              "unit": 7781,
+              "text": "乞于上官，得解饷云贵间。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "大佛寺",
+      "evidence": [
+        {
+          "chapter": "赌符",
+          "chapter_id": 119,
+          "quotes": [
+            {
+              "unit": 7906,
+              "text": "值大佛寺来一僧，专事樗蒲，赌甚豪。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "庙",
+      "evidence": [
+        {
+          "chapter": "赌符",
+          "chapter_id": 119,
+          "quotes": [
+            {
+              "unit": 7897,
+              "text": "韩道士，居邑中之天齐庙。"
+            },
+            {
+              "unit": 7903,
+              "text": "诣庙发扃，则韩已坐室中。"
+            },
+            {
+              "unit": 7928,
+              "text": "载钱归庙，除偿韩外，追而计之，并末后所失，适符原数也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西疆",
+      "evidence": [
+        {
+          "chapter": "阿霞",
+          "chapter_id": 120,
+          "quotes": [
+            {
+              "unit": 7964,
+              "text": "家君宦游西疆，明日将从母去，容即乘间禀命，而相从以终焉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "城隍庙",
+      "evidence": [
+        {
+          "chapter": "李司鉴",
+          "chapter_id": 121,
+          "quotes": [
+            {
+              "unit": 8037,
+              "text": "司鉴在府前，忽于肉架下夺一屠刀，奔入城隍庙，登戏台上，对神而跪。"
+            }
+          ]
+        },
+        {
+          "chapter": "刘全",
+          "chapter_id": 469,
+          "quotes": [
+            {
+              "unit": 30336,
+              "text": "一日适城隍庙，闲步廊下，见内塑刘全献瓜像，被鸟雀遗粪，糊蔽目睛。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "永年",
+      "evidence": [
+        {
+          "chapter": "李司鉴",
+          "chapter_id": 121,
+          "quotes": [
+            {
+              "unit": 8034,
+              "text": "李司鉴，永年举人也。"
+            },
+            {
+              "unit": 8036,
+              "text": "地方报广平，行永年查审。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西村",
+      "evidence": [
+        {
+          "chapter": "瓜异",
+          "chapter_id": 128,
+          "quotes": [
+            {
+              "unit": 8298,
+              "text": "康熙二十六年六月，邑西村民圃中，黄瓜上复生蔓，结西瓜一枚，大如碗。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "大士祠",
+      "evidence": [
+        {
+          "chapter": "青梅",
+          "chapter_id": 129,
+          "quotes": [
+            {
+              "unit": 8492,
+              "text": "三年张行取入都，过庵，以五百金为尼寿，尼不受，强之，乃受二百金，起大士祠，建王夫人碑。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "寺",
+      "evidence": [
+        {
+          "chapter": "青梅",
+          "chapter_id": 129,
+          "quotes": [
+            {
+              "unit": 8406,
+              "text": "王如晋半载，夫人卒，停柩寺中。"
+            },
+            {
+              "unit": 8434,
+              "text": "后有夜穴寺壁者，尼惊呼始去。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中华",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8541,
+              "text": "曰：「仆少奉王命出使最多，独未至中华。"
+            },
+            {
+              "unit": 8607,
+              "text": "仰视龙君在上，世子启奏：「臣游市廛，得中华贤士，引见大王。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "海市",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8580,
+              "text": "村人曰：「吾侪小人受大夫赐，明日赴海市，当求珍玩以报」，问：「海市何地？"
+            },
+            {
+              "unit": 8610,
+              "text": "欲烦椽笔赋『海市』，幸无吝珠玉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "海中市",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8581,
+              "text": "」曰：「海中市，四海鲛人，集货珠宝。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "采霞宫",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8615,
+              "text": "」遂集诸龙族，宴集采霞宫。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "殡宫",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8712,
+              "text": "灵舆至殡宫，有女子缞绖临穴。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "宫",
+      "evidence": [
+        {
+          "chapter": "罗刹海市",
+          "chapter_id": 130,
+          "quotes": [
+            {
+              "unit": 8568,
+              "text": "既见，问中国治安之道，马委曲上陈，大蒙嘉叹，赐宴离宫。"
+            },
+            {
+              "unit": 8605,
+              "text": "俄睹宫殿，玳瑁为梁，鲂鳞作瓦，四壁晶明，鉴影炫目。"
+            },
+            {
+              "unit": 8615,
+              "text": "」遂集诸龙族，宴集采霞宫。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "邢村",
+      "evidence": [
+        {
+          "chapter": "产龙",
+          "chapter_id": 132,
+          "quotes": [
+            {
+              "unit": 8909,
+              "text": "壬戌间，邑邢村李氏妇，夫死，有遗腹，忽胀如瓮，忽束如握。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "济城",
+      "evidence": [
+        {
+          "chapter": "公孙九娘",
+          "chapter_id": 134,
+          "quotes": [
+            {
+              "unit": 8938,
+              "text": "上官慈悲，捐给棺木，济城工肆，材木一空。"
+            }
+          ]
+        },
+        {
+          "chapter": "鬼隶",
+          "chapter_id": 441,
+          "quotes": [
+            {
+              "unit": 28780,
+              "text": "隶曰：「济城快皂，相识十有八九，二君殊昧生平。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "栖霞",
+      "evidence": [
+        {
+          "chapter": "公孙九娘",
+          "chapter_id": 134,
+          "quotes": [
+            {
+              "unit": 8936,
+              "text": "于七一案，连坐被诛者，栖霞、莱阳两县最多。"
+            },
+            {
+              "unit": 8989,
+              "text": "甥曰：「九娘，栖霞公孙氏。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "大佛阁",
+      "evidence": [
+        {
+          "chapter": "促织",
+          "chapter_id": 135,
+          "quotes": [
+            {
+              "unit": 9110,
+              "text": "」细瞩景状，与村东大佛阁真逼似。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "石门庄",
+      "evidence": [
+        {
+          "chapter": "水灾",
+          "chapter_id": 137,
+          "quotes": [
+            {
+              "unit": 9214,
+              "text": "一日，石门庄有老叟，暮见二羊斗山上，告村人曰：「大水至矣！"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "辽东",
+      "evidence": [
+        {
+          "chapter": "库官",
+          "chapter_id": 139,
+          "quotes": [
+            {
+              "unit": 9245,
+              "text": "及问库物，曰：「已拨辽东兵饷矣。"
+            }
+          ]
+        },
+        {
+          "chapter": "钟生",
+          "chapter_id": 296,
+          "quotes": [
+            {
+              "unit": 18993,
+              "text": "钟庆余，辽东名士。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "江淮",
+      "evidence": [
+        {
+          "chapter": "库官",
+          "chapter_id": 139,
+          "quotes": [
+            {
+              "unit": 9234,
+              "text": "邹平张华东，奉旨祭南岳，道出江淮间，将宿驿亭。"
+            }
+          ]
+        },
+        {
+          "chapter": "神女",
+          "chapter_id": 391,
+          "quotes": [
+            {
+              "unit": 24018,
+              "text": "适兄贾于江淮，为买少姬而归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "酆都",
+      "evidence": [
+        {
+          "chapter": "酆都御史",
+          "chapter_id": 140,
+          "quotes": [
+            {
+              "unit": 9252,
+              "text": "酆都县外有洞，深不可测，相传阎罗署。"
+            },
+            {
+              "unit": 9256,
+              "text": "明有御史行台华公，按临酆都，闻之不以为信，欲入洞以决其惑，众云不可。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "王舍人庄",
+      "evidence": [
+        {
+          "chapter": "姊妹易嫁",
+          "chapter_id": 146,
+          "quotes": [
+            {
+              "unit": 9511,
+              "text": "经王舍人庄，店主先一夕梦神曰：「旦夕有毛解元来，后且脱汝于厄，可善待之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "湖襄",
+      "evidence": [
+        {
+          "chapter": "棋鬼",
+          "chapter_id": 150,
+          "quotes": [
+            {
+              "unit": 9753,
+              "text": "成曰：「渠湖襄人，癖嗜弈，产荡尽。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "东岳",
+      "evidence": [
+        {
+          "chapter": "棋鬼",
+          "chapter_id": 150,
+          "quotes": [
+            {
+              "unit": 9758,
+              "text": "会东岳凤楼成，下牒诸府，征文人作碑记。"
+            }
+          ]
+        },
+        {
+          "chapter": "席方平",
+          "chapter_id": 395,
+          "quotes": [
+            {
+              "unit": 24642,
+              "text": "即押赴东岳施行。"
+            }
+          ]
+        },
+        {
+          "chapter": "鬼隶",
+          "chapter_id": 441,
+          "quotes": [
+            {
+              "unit": 28782,
+              "text": "今将以公文投东岳。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "太华",
+      "evidence": [
+        {
+          "chapter": "辛十四娘",
+          "chapter_id": 151,
+          "quotes": [
+            {
+              "unit": 10004,
+              "text": "后苍头至太华、遇十四娘，乘青骡，婢子跨蹇以从，问：「冯郎安否？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "兰若",
+      "evidence": [
+        {
+          "chapter": "辛十四娘",
+          "chapter_id": 151,
+          "quotes": [
+            {
+              "unit": 9771,
+              "text": "薄暮醉归，道侧故有兰若，久芜废，有女子自内出，则向丽人也，忽见生来，即转身入。"
+            },
+            {
+              "unit": 9867,
+              "text": "再往兰若，则殿宇荒凉，问之居人，则寺中往往见狐貍。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西州",
+      "evidence": [
+        {
+          "chapter": "胡四相公",
+          "chapter_id": 158,
+          "quotes": [
+            {
+              "unit": 10261,
+              "text": "后道一先生为西州学使，张请如晋。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "罗村",
+      "evidence": [
+        {
+          "chapter": "泥书生",
+          "chapter_id": 161,
+          "quotes": [
+            {
+              "unit": 10284,
+              "text": "罗村有陈代者少蠢陋，娶妻某氏颇丽。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "窎桥",
+      "evidence": [
+        {
+          "chapter": "土地夫人",
+          "chapter_id": 162,
+          "quotes": [
+            {
+              "unit": 10301,
+              "text": "窎桥王炳者出村，见土地祠中出一美人，顾盼甚殷。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "济东",
+      "evidence": [
+        {
+          "chapter": "寒月芙蕖",
+          "chapter_id": 163,
+          "quotes": [
+            {
+              "unit": 10364,
+              "text": "济东观察公甚悦之，携归署，日与狎玩。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "郭岳庙",
+      "evidence": [
+        {
+          "chapter": "赵城虎",
+          "chapter_id": 166,
+          "quotes": [
+            {
+              "unit": 10543,
+              "text": "遂诣东郭岳庙，跪而祝之，哭失声。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "义虎祠",
+      "evidence": [
+        {
+          "chapter": "赵城虎",
+          "chapter_id": 166,
+          "quotes": [
+            {
+              "unit": 10567,
+              "text": "土人立「义虎祠」于东郊，至今犹存。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "汉江",
+      "evidence": [
+        {
+          "chapter": "鸦头",
+          "chapter_id": 171,
+          "quotes": [
+            {
+              "unit": 10710,
+              "text": "平明，至汉江口，税屋而止。"
+            }
+          ]
+        },
+        {
+          "chapter": "竹青",
+          "chapter_id": 429,
+          "quotes": [
+            {
+              "unit": 28043,
+              "text": "曰：「妾今为汉江神女，返故乡时常少。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "泺口河",
+      "evidence": [
+        {
+          "chapter": "木雕美人",
+          "chapter_id": 173,
+          "quotes": [
+            {
+              "unit": 10876,
+              "text": "商人白有功言：「在泺口河上，见一人荷竹簏，牵巨犬二。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "绰然堂",
+      "evidence": [
+        {
+          "chapter": "狐梦",
+          "chapter_id": 175,
+          "quotes": [
+            {
+              "unit": 11196,
+              "text": "康熙二十一年腊月十九日，毕子与余抵足绰然堂，细述其异。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蒿里山",
+      "evidence": [
+        {
+          "chapter": "布客",
+          "chapter_id": 176,
+          "quotes": [
+            {
+              "unit": 11212,
+              "text": "」短衣人曰：「我非生人，乃蒿里山东四司隶役。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "卫辉",
+      "evidence": [
+        {
+          "chapter": "章阿端",
+          "chapter_id": 178,
+          "quotes": [
+            {
+              "unit": 11268,
+              "text": "卫辉戚生，少年蕴藉，有气敢任。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "华岳",
+      "evidence": [
+        {
+          "chapter": "花姑子",
+          "chapter_id": 181,
+          "quotes": [
+            {
+              "unit": 11434,
+              "text": "暮归，路经华岳，迷窜山谷中。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "安乐乡",
+      "evidence": [
+        {
+          "chapter": "花姑子",
+          "chapter_id": 181,
+          "quotes": [
+            {
+              "unit": 11442,
+              "text": "叟曰：「此非安乐乡。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "上苑",
+      "evidence": [
+        {
+          "chapter": "西湖主",
+          "chapter_id": 183,
+          "quotes": [
+            {
+              "unit": 11757,
+              "text": "攀扉一望，则台榭环云，拟于上苑，又疑是贵家园亭。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "东香山",
+      "evidence": [
+        {
+          "chapter": "孝子",
+          "chapter_id": 184,
+          "quotes": [
+            {
+              "unit": 11920,
+              "text": "青州东香山之前，有周顺亭者，事母至孝。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "牛头岭",
+      "evidence": [
+        {
+          "chapter": "长治女子",
+          "chapter_id": 188,
+          "quotes": [
+            {
+              "unit": 12066,
+              "text": "寻至牛头岭，始闻村人传言，岭下一女子剖心而死。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "潞",
+      "evidence": [
+        {
+          "chapter": "长治女子",
+          "chapter_id": 188,
+          "quotes": [
+            {
+              "unit": 12033,
+              "text": "陈欢乐，潞之长治人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "长治",
+      "evidence": [
+        {
+          "chapter": "长治女子",
+          "chapter_id": 188,
+          "quotes": [
+            {
+              "unit": 12033,
+              "text": "陈欢乐，潞之长治人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "鄱阳湖",
+      "evidence": [
+        {
+          "chapter": "鄱阳神",
+          "chapter_id": 190,
+          "quotes": [
+            {
+              "unit": 12121,
+              "text": "翟湛持，司理饶州，道经鄱阳湖。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "秦邮",
+      "evidence": [
+        {
+          "chapter": "伍秋月",
+          "chapter_id": 191,
+          "quotes": [
+            {
+              "unit": 12131,
+              "text": "秦邮王鼎，字仙湖。"
+            }
+          ]
+        },
+        {
+          "chapter": "蒋太史",
+          "chapter_id": 331,
+          "quotes": [
+            {
+              "unit": 21127,
+              "text": "假归江南，抵秦邮，不欲归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "旧圃",
+      "evidence": [
+        {
+          "chapter": "莲花公主",
+          "chapter_id": 192,
+          "quotes": [
+            {
+              "unit": 12377,
+              "text": "迹所由来，则邻翁之旧圃也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "醴泉寺",
+      "evidence": [
+        {
+          "chapter": "绿衣女",
+          "chapter_id": 193,
+          "quotes": [
+            {
+              "unit": 12386,
+              "text": "读书醴泉寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南湖",
+      "evidence": [
+        {
+          "chapter": "荷花三娘子",
+          "chapter_id": 195,
+          "quotes": [
+            {
+              "unit": 12554,
+              "text": "明日辰刻，早越南湖，如见有采菱女，著冰縠帔者，当急舟趁之。"
+            },
+            {
+              "unit": 12561,
+              "text": "宗如言，至南湖，见荷荡佳丽颇多。"
+            }
+          ]
+        }
+      ],
+      "status": "gazetteer-candidate",
+      "candidates": [
+        {
+          "record_id": "hvd_16404",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_16404",
+          "name": "南湖",
+          "api_name": "南湖",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "安西州 (Anxi Zhou)",
+          "coordinates": "94.10114, 39.90532",
+          "lon": 94.10114,
+          "lat": 39.90532,
+          "data_source": "CHGIS"
+        }
+      ],
+      "reason": "已存CHGIS唯一同名区域；仍需核对故事所在地。"
+    },
+    {
+      "word": "村寺",
+      "evidence": [
+        {
+          "chapter": "荷花三娘子",
+          "chapter_id": 195,
+          "quotes": [
+            {
+              "unit": 12510,
+              "text": "会一番僧卓锡村寺，见宗，惊曰：「君身有邪气，曾何所遇？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "岱",
+      "evidence": [
+        {
+          "chapter": "柳氏子",
+          "chapter_id": 197,
+          "quotes": [
+            {
+              "unit": 12639,
+              "text": "后三四年，村人以香社登岱。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "稷下",
+      "evidence": [
+        {
+          "chapter": "上仙",
+          "chapter_id": 198,
+          "quotes": [
+            {
+              "unit": 12675,
+              "text": "癸亥三月，与高季文赴稷下，同居逆旅。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "莱城",
+      "evidence": [
+        {
+          "chapter": "彭海秋",
+          "chapter_id": 203,
+          "quotes": [
+            {
+              "unit": 12929,
+              "text": "」客问：「莱城有名妓无也？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "天河",
+      "evidence": [
+        {
+          "chapter": "彭海秋",
+          "chapter_id": 203,
+          "quotes": [
+            {
+              "unit": 12960,
+              "text": "」客曰：「此处呼舟较远，天河中当有渡者。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "临邛",
+      "evidence": [
+        {
+          "chapter": "彭海秋",
+          "chapter_id": 203,
+          "quotes": [
+            {
+              "unit": 12951,
+              "text": "便是不封侯，莫向临邛去！"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "扶风",
+      "evidence": [
+        {
+          "chapter": "彭海秋",
+          "chapter_id": 203,
+          "quotes": [
+            {
+              "unit": 12925,
+              "text": "乃仰天再咳，歌「扶风豪士之曲」，相与欢笑。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "徐州",
+      "evidence": [
+        {
+          "chapter": "梁彦",
+          "chapter_id": 206,
+          "quotes": [
+            {
+              "unit": 13179,
+              "text": "徐州梁彦，患嚏，久而不已。"
+            }
+          ]
+        },
+        {
+          "chapter": "佟客",
+          "chapter_id": 340,
+          "quotes": [
+            {
+              "unit": 21776,
+              "text": "董生，徐州人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "普陀寺",
+      "evidence": [
+        {
+          "chapter": "马介甫",
+          "chapter_id": 209,
+          "quotes": [
+            {
+              "unit": 13444,
+              "text": "一日，杨夫人及伯母烧香普陀寺，近村农妇，并来参谒。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "洋县",
+      "evidence": [
+        {
+          "chapter": "厍将军",
+          "chapter_id": 211,
+          "quotes": [
+            {
+              "unit": 13469,
+              "text": "厍大有，字君实，汉中洋县人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "茂陵",
+      "evidence": [
+        {
+          "chapter": "绛妃",
+          "chapter_id": 212,
+          "quotes": [
+            {
+              "unit": 13523,
+              "text": "茂陵天子，秋高而念佳人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "满洲",
+      "evidence": [
+        {
+          "chapter": "跳神",
+          "chapter_id": 215,
+          "quotes": [
+            {
+              "unit": 13781,
+              "text": "满洲妇女，奉事尤虔。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "滕",
+      "evidence": [
+        {
+          "chapter": "白莲教",
+          "chapter_id": 218,
+          "quotes": [
+            {
+              "unit": 13874,
+              "text": "不数月，聚党以万计，滕、峄一带，望风而靡。"
+            }
+          ]
+        },
+        {
+          "chapter": "盗户",
+          "chapter_id": 315,
+          "quotes": [
+            {
+              "unit": 19805,
+              "text": "顺治间，滕、峄之区，十人而七盗，官不敢捕。"
+            }
+          ]
+        },
+        {
+          "chapter": "邢子仪",
+          "chapter_id": 328,
+          "quotes": [
+            {
+              "unit": 20960,
+              "text": "滕有杨某，从白莲教党，得左道之术。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "峄",
+      "evidence": [
+        {
+          "chapter": "白莲教",
+          "chapter_id": 218,
+          "quotes": [
+            {
+              "unit": 13874,
+              "text": "不数月，聚党以万计，滕、峄一带，望风而靡。"
+            }
+          ]
+        },
+        {
+          "chapter": "盗户",
+          "chapter_id": 315,
+          "quotes": [
+            {
+              "unit": 19805,
+              "text": "顺治间，滕、峄之区，十人而七盗，官不敢捕。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "城隍祠",
+      "evidence": [
+        {
+          "chapter": "小谢",
+          "chapter_id": 221,
+          "quotes": [
+            {
+              "unit": 14122,
+              "text": "忽小谢至，怆惋欲绝，言：「秋容归，经由城隍祠，被西廊黑判强摄去，逼充御媵。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "吴门",
+      "evidence": [
+        {
+          "chapter": "吴门画工",
+          "chapter_id": 223,
+          "quotes": [
+            {
+              "unit": 14241,
+              "text": "吴门画工某，忘其名。"
+            }
+          ]
+        },
+        {
+          "chapter": "晚霞",
+          "chapter_id": 416,
+          "quotes": [
+            {
+              "unit": 27216,
+              "text": "吴门则载美妓，较不同耳。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "余杭",
+      "evidence": [
+        {
+          "chapter": "细侯",
+          "chapter_id": 226,
+          "quotes": [
+            {
+              "unit": 14433,
+              "text": "昌化满生，设帐于余杭。"
+            }
+          ]
+        },
+        {
+          "chapter": "司文郎",
+          "chapter_id": 318,
+          "quotes": [
+            {
+              "unit": 20051,
+              "text": "寺中有余杭生先在，王以比屋居，投刺焉。"
+            },
+            {
+              "unit": 20060,
+              "text": "余杭生适过，共起逊坐。"
+            },
+            {
+              "unit": 20101,
+              "text": "余杭生时一遇之，虽不甚倾谈，而傲睨之气顿减。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "昌化",
+      "evidence": [
+        {
+          "chapter": "细侯",
+          "chapter_id": 226,
+          "quotes": [
+            {
+              "unit": 14433,
+              "text": "昌化满生，设帐于余杭。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "泗水山",
+      "evidence": [
+        {
+          "chapter": "豢蛇",
+          "chapter_id": 234,
+          "quotes": [
+            {
+              "unit": 14846,
+              "text": "泗水山中，旧有禅院，四无村落，人迹罕及，有道士栖止其中。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蛇佛寺",
+      "evidence": [
+        {
+          "chapter": "豢蛇",
+          "chapter_id": 234,
+          "quotes": [
+            {
+              "unit": 14872,
+              "text": "余乡有客中州者，寄宿蛇佛寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "山神祠",
+      "evidence": [
+        {
+          "chapter": "向杲",
+          "chapter_id": 241,
+          "quotes": [
+            {
+              "unit": 15186,
+              "text": "岭上旧有山神祠，强起奔赴。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "岳庙",
+      "evidence": [
+        {
+          "chapter": "周三",
+          "chapter_id": 243,
+          "quotes": [
+            {
+              "unit": 15251,
+              "text": "仆友人周三，侨居岳庙，宜可降伏，当代求之。"
+            },
+            {
+              "unit": 15253,
+              "text": "胡临别与吏约，明日张筵于岳庙之东。"
+            }
+          ]
+        },
+        {
+          "chapter": "岳神",
+          "chapter_id": 355,
+          "quotes": [
+            {
+              "unit": 22100,
+              "text": "早诣岳庙，默作祈禳。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "平城",
+      "evidence": [
+        {
+          "chapter": "冷生",
+          "chapter_id": 246,
+          "quotes": [
+            {
+              "unit": 15359,
+              "text": "平城冷生，少最钝，年二十余，未能通一经。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "奂山",
+      "evidence": [
+        {
+          "chapter": "山市",
+          "chapter_id": 248,
+          "quotes": [
+            {
+              "unit": 15409,
+              "text": "奂山山市，邑八景之一也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "玉笥山",
+      "evidence": [
+        {
+          "chapter": "江城",
+          "chapter_id": 249,
+          "quotes": [
+            {
+              "unit": 15526,
+              "text": "适公子言，曾于玉笥山见陶家妇，爱其双翘，嘱奴招致之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "黑帝祠",
+      "evidence": [
+        {
+          "chapter": "江城",
+          "chapter_id": 249,
+          "quotes": [
+            {
+              "unit": 15459,
+              "text": "」母托烧香黑帝祠，诣之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "恒河",
+      "evidence": [
+        {
+          "chapter": "八大王",
+          "chapter_id": 251,
+          "quotes": [
+            {
+              "unit": 15757,
+              "text": "后自婿家归，至恒河之侧，日已就昏，见一醉者，从二三僮，颠跛而至。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南都",
+      "evidence": [
+        {
+          "chapter": "八大王",
+          "chapter_id": 251,
+          "quotes": [
+            {
+              "unit": 15765,
+              "text": "」呓然而对曰：「我南都旧令尹也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "肃府",
+      "evidence": [
+        {
+          "chapter": "八大王",
+          "chapter_id": 251,
+          "quotes": [
+            {
+              "unit": 15816,
+              "text": "时肃府第三公主绝美，雅慕其名。"
+            },
+            {
+              "unit": 15820,
+              "text": "年余，为妻所泄，闻之肃府。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "石匣营",
+      "evidence": [
+        {
+          "chapter": "罗祖",
+          "chapter_id": 253,
+          "quotes": [
+            {
+              "unit": 15891,
+              "text": "后石匣营有樵人入山，见一道人坐洞中，未尝求食。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "后宰门",
+      "evidence": [
+        {
+          "chapter": "巩仙",
+          "chapter_id": 256,
+          "quotes": [
+            {
+              "unit": 16254,
+              "text": "中贵亦喜，引道人自后宰门入，诸景俱历。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "野寺",
+      "evidence": [
+        {
+          "chapter": "死僧",
+          "chapter_id": 261,
+          "quotes": [
+            {
+              "unit": 16722,
+              "text": "某道士，云游日暮，投止野寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "东粤",
+      "evidence": [
+        {
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "quotes": [
+            {
+              "unit": 16885,
+              "text": "玉自东粤归，闻乱，兼程进。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "匡山",
+      "evidence": [
+        {
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "quotes": [
+            {
+              "unit": 16741,
+              "text": "适读书匡山僧寺，夜初就枕，闻窗外有女子声。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "望村",
+      "evidence": [
+        {
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "quotes": [
+            {
+              "unit": 16786,
+              "text": "妾陆氏，居东山望村。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "晋中",
+      "evidence": [
+        {
+          "chapter": "青娥",
+          "chapter_id": 266,
+          "quotes": [
+            {
+              "unit": 17213,
+              "text": "以晋中祖墓所在，从兄而归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "山右",
+      "evidence": [
+        {
+          "chapter": "青娥",
+          "chapter_id": 266,
+          "quotes": [
+            {
+              "unit": 17196,
+              "text": "仲仙喜曰：「弟赴都时，父嘱文场中如逢山右霍姓者，吾族也，宜与款接，今果然矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蒙山",
+      "evidence": [
+        {
+          "chapter": "牛癀",
+          "chapter_id": 268,
+          "quotes": [
+            {
+              "unit": 17235,
+              "text": "陈华封，蒙山人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "梅姑祠",
+      "evidence": [
+        {
+          "chapter": "金姑夫",
+          "chapter_id": 269,
+          "quotes": [
+            {
+              "unit": 17279,
+              "text": "会稽有梅姑祠。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中原",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17382,
+              "text": "我中原才子，偶遭狼狈，过此图以身报，何但不忘！"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "仙人岛",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17391,
+              "text": "」丈夫起敬曰：「此名仙人岛，远绝人世。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "海南",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17508,
+              "text": "恐至海南，无以为家，夙夜代营宫室，勿嫌草创。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "灵山",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17318,
+              "text": "王勉，字黾斋，灵山人。"
+            }
+          ]
+        },
+        {
+          "chapter": "鸮鸟",
+          "chapter_id": 460,
+          "quotes": [
+            {
+              "unit": 29683,
+              "text": "天上有灵山，地下有泰山，有一古人是寒山。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_20489",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_20489",
+          "name": "灵山",
+          "api_name": "灵山",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "莱州府 (Laizhou Fu)",
+          "coordinates": "120.12978, 35.93969",
+          "lon": 120.12978,
+          "lat": 35.93969,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_306",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_306",
+          "name": "灵山县",
+          "api_name": "灵山县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "廉州府 (Lianzhou Fu)",
+          "coordinates": "109.28741, 22.43459",
+          "lon": 109.28741,
+          "lat": 22.43459,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "火云洞",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17412,
+              "text": "芳云低告曰：「上句是孙行者离火云洞，下句是猪八戒过子母河也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "子母河",
+      "evidence": [
+        {
+          "chapter": "仙人岛",
+          "chapter_id": 272,
+          "quotes": [
+            {
+              "unit": 17412,
+              "text": "芳云低告曰：「上句是孙行者离火云洞，下句是猪八戒过子母河也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南服",
+      "evidence": [
+        {
+          "chapter": "阎罗薨",
+          "chapter_id": 273,
+          "quotes": [
+            {
+              "unit": 17553,
+              "text": "巡抚某公父，先为南服总督，殂谢已久。"
+            }
+          ]
+        },
+        {
+          "chapter": "梦狼",
+          "chapter_id": 302,
+          "quotes": [
+            {
+              "unit": 19232,
+              "text": "长子甲，筮仕南服，三年无耗。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蒙山寺",
+      "evidence": [
+        {
+          "chapter": "颠道人",
+          "chapter_id": 274,
+          "quotes": [
+            {
+              "unit": 17591,
+              "text": "颠道人，不知姓名，寓蒙山寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "剑南",
+      "evidence": [
+        {
+          "chapter": "胡四娘",
+          "chapter_id": 275,
+          "quotes": [
+            {
+              "unit": 17611,
+              "text": "程孝思，剑南人。"
+            },
+            {
+              "unit": 17662,
+              "text": "李公假千金，先使纪纲赴剑南，为之治第。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "瑶池",
+      "evidence": [
+        {
+          "chapter": "甄后",
+          "chapter_id": 281,
+          "quotes": [
+            {
+              "unit": 17947,
+              "text": "美人曰：「我止赴瑶池一回宴耳；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "铜雀",
+      "evidence": [
+        {
+          "chapter": "甄后",
+          "chapter_id": 281,
+          "quotes": [
+            {
+              "unit": 17991,
+              "text": "」答云：「妾铜雀故妓也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "天曹",
+      "evidence": [
+        {
+          "chapter": "甄后",
+          "chapter_id": 281,
+          "quotes": [
+            {
+              "unit": 17996,
+              "text": "妾谪限未满，夫人请之天曹，暂使给役，去留皆在夫人，故得长侍床箦耳。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "幽冥",
+      "evidence": [
+        {
+          "chapter": "甄后",
+          "chapter_id": 281,
+          "quotes": [
+            {
+              "unit": 17962,
+              "text": "彼曩以阿瞒故，久滞幽冥，今未闻知。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "人间",
+      "evidence": [
+        {
+          "chapter": "甄后",
+          "chapter_id": 281,
+          "quotes": [
+            {
+              "unit": 17994,
+              "text": "妾与夫人，俱隶仙籍，偶以罪过谪人间。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "秦",
+      "evidence": [
+        {
+          "chapter": "宦娘",
+          "chapter_id": 282,
+          "quotes": [
+            {
+              "unit": 18021,
+              "text": "温如春，秦之世家也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "天宫",
+      "evidence": [
+        {
+          "chapter": "阿绣",
+          "chapter_id": 283,
+          "quotes": [
+            {
+              "unit": 18308,
+              "text": "生时，与余从母至天宫，见西王母，心窃爱慕，归则刻意效之。"
+            }
+          ]
+        },
+        {
+          "chapter": "天宫",
+          "chapter_id": 379,
+          "quotes": [
+            {
+              "unit": 23309,
+              "text": "女曰：「来夕与君一游天宫，便即为别。"
+            },
+            {
+              "unit": 23338,
+              "text": "」女曰：「此是天宫。"
+            },
+            {
+              "unit": 23362,
+              "text": "不意人情乖沮，今将粪除天宫，不能复相容矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "河南道",
+      "evidence": [
+        {
+          "chapter": "小翠",
+          "chapter_id": 285,
+          "quotes": [
+            {
+              "unit": 18383,
+              "text": "时值三年大计吏，忌公握河南道篆，思中伤之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "云南军",
+      "evidence": [
+        {
+          "chapter": "小翠",
+          "chapter_id": 285,
+          "quotes": [
+            {
+              "unit": 18427,
+              "text": "案乃定，以给谏充云南军。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "五莲山",
+      "evidence": [
+        {
+          "chapter": "金和尚",
+          "chapter_id": 286,
+          "quotes": [
+            {
+              "unit": 18523,
+              "text": "父无赖，以数百钱鬻于五莲山寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中都",
+      "evidence": [
+        {
+          "chapter": "细柳",
+          "chapter_id": 291,
+          "quotes": [
+            {
+              "unit": 18651,
+              "text": "细柳娘，中都之士人女也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "临清",
+      "evidence": [
+        {
+          "chapter": "画马",
+          "chapter_id": 292,
+          "quotes": [
+            {
+              "unit": 18785,
+              "text": "临清崔生，家窭贫。"
+            },
+            {
+              "unit": 18801,
+              "text": "后王以急务，遣校尉骑赴临清。"
+            }
+          ]
+        },
+        {
+          "chapter": "任秀",
+          "chapter_id": 415,
+          "quotes": [
+            {
+              "unit": 27172,
+              "text": "至临清，泊舟关外。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "晋邸",
+      "evidence": [
+        {
+          "chapter": "画马",
+          "chapter_id": 292,
+          "quotes": [
+            {
+              "unit": 18800,
+              "text": "居半年，无耗，遂以八百金货于晋邸，乃自市健骡以归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "淮上",
+      "evidence": [
+        {
+          "chapter": "周克昌",
+          "chapter_id": 311,
+          "quotes": [
+            {
+              "unit": 19403,
+              "text": "淮上贡士周天仪，年五旬，止一子，名克昌，爱暱之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "郡庠",
+      "evidence": [
+        {
+          "chapter": "周克昌",
+          "chapter_id": 311,
+          "quotes": [
+            {
+              "unit": 19414,
+              "text": "逾年，文思大进，既入郡庠试，遂知名。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "红桥",
+      "evidence": [
+        {
+          "chapter": "嫦娥",
+          "chapter_id": 312,
+          "quotes": [
+            {
+              "unit": 19443,
+              "text": "父与红桥下林妪有素。"
+            },
+            {
+              "unit": 19444,
+              "text": "一日，父子过红桥，遇之，固请过诸其家，瀹茗共话。"
+            },
+            {
+              "unit": 19477,
+              "text": "一日，偶经红桥，见嫦娥适在门内，疾趋过之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "姚巷",
+      "evidence": [
+        {
+          "chapter": "嫦娥",
+          "chapter_id": 312,
+          "quotes": [
+            {
+              "unit": 19526,
+              "text": "偶过姚巷，值一女子，垢面敝衣，㑌儴如丐。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "广寒",
+      "evidence": [
+        {
+          "chapter": "嫦娥",
+          "chapter_id": 312,
+          "quotes": [
+            {
+              "unit": 19595,
+              "text": "广寒十一姑不日下嫁，须绣枕百幅、履百双，可从我去，相共操作。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "阜城门",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19705,
+              "text": "阜城门有吕先生，年虽耄，可师，请与俱迁之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "天宁寺",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19714,
+              "text": "一日，陈以故至天宁寺，遇褚廊下，劈檾淬硫，作火具焉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "勾栏",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19750,
+              "text": "」僮去少时，与姬俱至，盖勾栏李遏云也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "李皇亲园",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19744,
+              "text": "刘曰：「今日李皇亲园中，游人甚伙，当往一豁积闷，相便送君归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "皇亲园",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19744,
+              "text": "刘曰：「今日李皇亲园中，游人甚伙，当往一豁积闷，相便送君归。"
+            },
+            {
+              "unit": 19785,
+              "text": "又至皇亲园，见题句犹存，而淡墨依稀，若将磨灭。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "梅花馆",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19749,
+              "text": "刘顾僮曰：「梅花馆近有新姬，不知在家否？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "冥司",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19780,
+              "text": "表兄为冥司典簿，求白地府主者，或当有说。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "地府",
+      "evidence": [
+        {
+          "chapter": "褚生",
+          "chapter_id": 314,
+          "quotes": [
+            {
+              "unit": 19780,
+              "text": "表兄为冥司典簿，求白地府主者，或当有说。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "报国寺",
+      "evidence": [
+        {
+          "chapter": "司文郎",
+          "chapter_id": 318,
+          "quotes": [
+            {
+              "unit": 20050,
+              "text": "平阳王平子，赴试北闱，赁居报国寺。"
+            }
+          ]
+        },
+        {
+          "chapter": "石清虚",
+          "chapter_id": 446,
+          "quotes": [
+            {
+              "unit": 29101,
+              "text": "积有数年，偶入报国寺，见卖石者，则故物也，将便认取。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "梓潼祠",
+      "evidence": [
+        {
+          "chapter": "司文郎",
+          "chapter_id": 318,
+          "quotes": [
+            {
+              "unit": 20239,
+              "text": "」又问：「梓潼祠中，一相酹祝，可能达否？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南部",
+      "evidence": [
+        {
+          "chapter": "司文郎",
+          "chapter_id": 318,
+          "quotes": [
+            {
+              "unit": 20186,
+              "text": "──盖王祖曾为南部郎，入都寓此，暴病而卒，金其所遗也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "九天",
+      "evidence": [
+        {
+          "chapter": "司文郎",
+          "chapter_id": 318,
+          "quotes": [
+            {
+              "unit": 20241,
+              "text": "九天甚远，但洁身力行，自有地司牒报，则某必与知之。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "于陵",
+      "evidence": [
+        {
+          "chapter": "采薇翁",
+          "chapter_id": 323,
+          "quotes": [
+            {
+              "unit": 20656,
+              "text": "于陵刘芝生，聚众数万，将南渡。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "泗上",
+      "evidence": [
+        {
+          "chapter": "邢子仪",
+          "chapter_id": 328,
+          "quotes": [
+            {
+              "unit": 20963,
+              "text": "至泗上某绅家，幻法为戏，妇女出窥。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "湖广",
+      "evidence": [
+        {
+          "chapter": "陆押官",
+          "chapter_id": 330,
+          "quotes": [
+            {
+              "unit": 21052,
+              "text": "赵公，湖广武陵人，官宫詹，致仕归。"
+            }
+          ]
+        },
+        {
+          "chapter": "汪可受",
+          "chapter_id": 435,
+          "quotes": [
+            {
+              "unit": 28278,
+              "text": "湖广黄梅县汪可受，能记三生：一世为秀才，读书僧寺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "武陵",
+      "evidence": [
+        {
+          "chapter": "陆押官",
+          "chapter_id": 330,
+          "quotes": [
+            {
+              "unit": 21052,
+              "text": "赵公，湖广武陵人，官宫詹，致仕归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "金沙寺",
+      "evidence": [
+        {
+          "chapter": "蒋太史",
+          "chapter_id": 331,
+          "quotes": [
+            {
+              "unit": 21129,
+              "text": "遂入蜀，居成都金沙寺；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "伏虎寺",
+      "evidence": [
+        {
+          "chapter": "蒋太史",
+          "chapter_id": 331,
+          "quotes": [
+            {
+              "unit": 21130,
+              "text": "久之，又之峨嵋，居伏虎寺，示疾怛化。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "武夷",
+      "evidence": [
+        {
+          "chapter": "陈锡九",
+          "chapter_id": 334,
+          "quotes": [
+            {
+              "unit": 21317,
+              "text": "昨夕忽归，曰：「我在武夷，迟归二日，难为保儿矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "北平",
+      "evidence": [
+        {
+          "chapter": "于去恶",
+          "chapter_id": 336,
+          "quotes": [
+            {
+              "unit": 21384,
+              "text": "北平陶圣俞，名下士。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "交南",
+      "evidence": [
+        {
+          "chapter": "于去恶",
+          "chapter_id": 336,
+          "quotes": [
+            {
+              "unit": 21486,
+              "text": "遍阅遗卷，得五兄甚喜，荐作交南巡海使，旦晚舆马可到。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "罗国",
+      "evidence": [
+        {
+          "chapter": "于去恶",
+          "chapter_id": 336,
+          "quotes": [
+            {
+              "unit": 21421,
+              "text": "曰：「文昌奉命都罗国封王，帘官之考遂罢。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "辽城",
+      "evidence": [
+        {
+          "chapter": "辽阳军",
+          "chapter_id": 341,
+          "quotes": [
+            {
+              "unit": 21818,
+              "text": "会辽城陷，为乱兵所杀；"
+            },
+            {
+              "unit": 21829,
+              "text": "设辽城无恙，然后受刑未晚也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "东疃",
+      "evidence": [
+        {
+          "chapter": "爱奴",
+          "chapter_id": 343,
+          "quotes": [
+            {
+              "unit": 21858,
+              "text": "有舍甥，延求明师，适托某至东疃聘吕子廉，渠已受贽稷门。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "恩",
+      "evidence": [
+        {
+          "chapter": "爱奴",
+          "chapter_id": 343,
+          "quotes": [
+            {
+              "unit": 21853,
+              "text": "河间徐生，设教于恩。"
+            },
+            {
+              "unit": 21859,
+              "text": "君如苟就，束仪请倍于恩。"
+            },
+            {
+              "unit": 21958,
+              "text": "频蒙相邀，所以不肯相从者，以少受夫人重恩，不忍离逷耳。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "稷门",
+      "evidence": [
+        {
+          "chapter": "爱奴",
+          "chapter_id": 343,
+          "quotes": [
+            {
+              "unit": 21858,
+              "text": "有舍甥，延求明师，适托某至东疃聘吕子廉，渠已受贽稷门。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "异域",
+      "evidence": [
+        {
+          "chapter": "爱奴",
+          "chapter_id": 343,
+          "quotes": [
+            {
+              "unit": 21968,
+              "text": "婢曰：「妾过蒙夫人宠，主人自异域来，得黄金数万，妾窃取之，亦不甚追问。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "武夷山",
+      "evidence": [
+        {
+          "chapter": "武夷",
+          "chapter_id": 349,
+          "quotes": [
+            {
+              "unit": 22028,
+              "text": "武夷山有削壁千仞，人每于下拾沈香玉块焉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "江浙",
+      "evidence": [
+        {
+          "chapter": "小梅",
+          "chapter_id": 356,
+          "quotes": [
+            {
+              "unit": 22108,
+              "text": "偶游江浙，见媪哭于途，诘之。"
+            }
+          ]
+        },
+        {
+          "chapter": "五通",
+          "chapter_id": 405,
+          "quotes": [
+            {
+              "unit": 26042,
+              "text": "至于江浙五通，民家有美妇，辄被淫占，父母兄弟，皆莫敢息，为害尤烈。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西河",
+      "evidence": [
+        {
+          "chapter": "小梅",
+          "chapter_id": 356,
+          "quotes": [
+            {
+              "unit": 22214,
+              "text": "君记取家有死口时，当于晨鸡初唱，诣西河柳堤上，见有挑葵花灯来者，遮道苦求，可免灾难。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "凤翔",
+      "evidence": [
+        {
+          "chapter": "张鸿渐",
+          "chapter_id": 363,
+          "quotes": [
+            {
+              "unit": 22449,
+              "text": "至凤翔界，资斧断绝。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "颜山",
+      "evidence": [
+        {
+          "chapter": "农妇",
+          "chapter_id": 368,
+          "quotes": [
+            {
+              "unit": 22723,
+              "text": "妇自赴颜山，贩陶器为业。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西崖庄",
+      "evidence": [
+        {
+          "chapter": "折狱",
+          "chapter_id": 371,
+          "quotes": [
+            {
+              "unit": 22781,
+              "text": "邑之西崖庄，有贾某被人杀于途；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "西崖",
+      "evidence": [
+        {
+          "chapter": "折狱",
+          "chapter_id": 371,
+          "quotes": [
+            {
+              "unit": 22781,
+              "text": "邑之西崖庄，有贾某被人杀于途；"
+            },
+            {
+              "unit": 22797,
+              "text": "」又问：「去西崖几里？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "查牙山",
+      "evidence": [
+        {
+          "chapter": "查牙山洞",
+          "chapter_id": 374,
+          "quotes": [
+            {
+              "unit": 22868,
+              "text": "章丘查牙山，有石窟如井，深数尺许。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "养母峪",
+      "evidence": [
+        {
+          "chapter": "查牙山洞",
+          "chapter_id": 374,
+          "quotes": [
+            {
+              "unit": 22916,
+              "text": "康熙二十六、七年间，养母峪之南石崖崩，现洞口；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "朝鲜",
+      "evidence": [
+        {
+          "chapter": "安期岛",
+          "chapter_id": 375,
+          "quotes": [
+            {
+              "unit": 22923,
+              "text": "长山刘中堂鸿训，同武弁某使朝鲜。"
+            },
+            {
+              "unit": 22958,
+              "text": "既至朝鲜，备述其异。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "安期岛",
+      "evidence": [
+        {
+          "chapter": "安期岛",
+          "chapter_id": 375,
+          "quotes": [
+            {
+              "unit": 22924,
+              "text": "闻安期岛神仙所居，欲命舟往游。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "圣后府",
+      "evidence": [
+        {
+          "chapter": "云萝公主",
+          "chapter_id": 377,
+          "quotes": [
+            {
+              "unit": 23000,
+              "text": "婢曰：「此圣后府中云萝公主也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "中州境",
+      "evidence": [
+        {
+          "chapter": "鸟语",
+          "chapter_id": 378,
+          "quotes": [
+            {
+              "unit": 23235,
+              "text": "中州境有道士，募食乡村。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "桃源",
+      "evidence": [
+        {
+          "chapter": "刘夫人",
+          "chapter_id": 382,
+          "quotes": [
+            {
+              "unit": 23528,
+              "text": "桃源薛生与最善；"
+            },
+            {
+              "unit": 23567,
+              "text": "生诣淮，交盘已，留伍居肆，装赀返桃源，同二慕启岳父母骸骨，两家细小，载与俱归。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_760",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_760",
+          "name": "桃源县",
+          "api_name": "桃源县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "淮安府 (Huai'an Fu)",
+          "coordinates": "118.65459, 33.68589",
+          "lon": 118.65459,
+          "lat": 33.68589,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_700",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_700",
+          "name": "桃源县",
+          "api_name": "桃源县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "常德府 (Changde Fu)",
+          "coordinates": "111.47777, 28.90160",
+          "lon": 111.47777,
+          "lat": 28.9016,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "齐河",
+      "evidence": [
+        {
+          "chapter": "王货郎",
+          "chapter_id": 384,
+          "quotes": [
+            {
+              "unit": 23636,
+              "text": "济南业酒人某翁，遣子小二如齐河索贳价。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "清水潭",
+      "evidence": [
+        {
+          "chapter": "疲龙",
+          "chapter_id": 385,
+          "quotes": [
+            {
+              "unit": 23673,
+              "text": "又逾日，舟人命多备白米，戒曰：「去清水潭不远矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "鲍庄",
+      "evidence": [
+        {
+          "chapter": "神女",
+          "chapter_id": 391,
+          "quotes": [
+            {
+              "unit": 23882,
+              "text": "姑从之入，则座上先有里人鲍庄在焉。"
+            },
+            {
+              "unit": 23891,
+              "text": "鲍庄夜死于途。"
+            },
+            {
+              "unit": 23893,
+              "text": "检得鲍庄体有重伤，生以谋杀论死，备历械梏；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "阴世",
+      "evidence": [
+        {
+          "chapter": "湘裙",
+          "chapter_id": 392,
+          "quotes": [
+            {
+              "unit": 24179,
+              "text": "一夕，夫妻款洽，仲戏问：「阴世有佳人否？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "顺天府",
+      "evidence": [
+        {
+          "chapter": "三生",
+          "chapter_id": 393,
+          "quotes": [
+            {
+              "unit": 24288,
+              "text": "某生于北顺天府市肆中。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "海东",
+      "evidence": [
+        {
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "quotes": [
+            {
+              "unit": 24418,
+              "text": "适家人由海东经此，得翁凶问。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "汴",
+      "evidence": [
+        {
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "quotes": [
+            {
+              "unit": 24314,
+              "text": "」问其姓名，曰：「吾汴城北村玄帝观王赤城也。"
+            },
+            {
+              "unit": 24384,
+              "text": "心怀怨愤，无之可伸，思欲之汴城寻赤城，而家有老父，病废已久，日夜筹思，莫决进止。"
+            },
+            {
+              "unit": 24467,
+              "text": "石乃即刻治任如汴，询至玄帝观，则赤城归未久。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "玄帝观",
+      "evidence": [
+        {
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "quotes": [
+            {
+              "unit": 24314,
+              "text": "」问其姓名，曰：「吾汴城北村玄帝观王赤城也。"
+            },
+            {
+              "unit": 24467,
+              "text": "石乃即刻治任如汴，询至玄帝观，则赤城归未久。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "汴城",
+      "evidence": [
+        {
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "quotes": [
+            {
+              "unit": 24314,
+              "text": "」问其姓名，曰：「吾汴城北村玄帝观王赤城也。"
+            },
+            {
+              "unit": 24384,
+              "text": "心怀怨愤，无之可伸，思欲之汴城寻赤城，而家有老父，病废已久，日夜筹思，莫决进止。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "东安",
+      "evidence": [
+        {
+          "chapter": "席方平",
+          "chapter_id": 395,
+          "quotes": [
+            {
+              "unit": 24498,
+              "text": "席方平，东安人。"
+            }
+          ]
+        }
+      ],
+      "status": "ambiguous",
+      "candidates": [
+        {
+          "record_id": "hvd_105",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_105",
+          "name": "东安县",
+          "api_name": "东安县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "顺天府 (Shuntian Fu)",
+          "coordinates": "116.74375, 39.37043",
+          "lon": 116.74375,
+          "lat": 39.37043,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_17473",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_17473",
+          "name": "东安",
+          "api_name": "东安",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "梧州府 (Wuzhou Fu)",
+          "coordinates": "111.52890, 23.84773",
+          "lon": 111.5289,
+          "lat": 23.84773,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_24148",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_24148",
+          "name": "东安",
+          "api_name": "东安",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "武进县 (Wujin Xian)",
+          "coordinates": "119.73497, 31.58398",
+          "lon": 119.73497,
+          "lat": 31.58398,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_728",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_728",
+          "name": "东安县",
+          "api_name": "东安县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "永州府 (Yongzhou Fu)",
+          "coordinates": "111.22209, 26.33200",
+          "lon": 111.22209,
+          "lat": 26.332,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_310",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_310",
+          "name": "东安县",
+          "api_name": "东安县",
+          "years": "1820 ~ 1820",
+          "feature_type": "县 (xian)",
+          "parent_name": "罗定州 (Luoding Zhou)",
+          "coordinates": "112.03999, 22.93319",
+          "lon": 112.03999,
+          "lat": 22.93319,
+          "data_source": "CHGIS"
+        },
+        {
+          "record_id": "hvd_88211",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_88211",
+          "name": "东安县",
+          "api_name": "东安县",
+          "years": "1370 ~ 1911",
+          "feature_type": "县 (xian)",
+          "parent_name": "北平府 (Beiping Fu)",
+          "coordinates": "116.71631, 39.44894",
+          "lon": 116.71631,
+          "lat": 39.44894,
+          "data_source": "CHGIS"
+        }
+      ]
+    },
+    {
+      "word": "胶莱",
+      "evidence": [
+        {
+          "chapter": "素秋",
+          "chapter_id": 396,
+          "quotes": [
+            {
+              "unit": 24850,
+              "text": "公子阴使人委送之，至胶莱之界，尘雾幛天，既晴，已迷所往。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "宛平",
+      "evidence": [
+        {
+          "chapter": "素秋",
+          "chapter_id": 396,
+          "quotes": [
+            {
+              "unit": 24810,
+              "text": "」公子倒屣而出，烛之，非他，乃周生，宛平之名士也，素以声气相善。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蒙沂",
+      "evidence": [
+        {
+          "chapter": "阿纤",
+          "chapter_id": 399,
+          "quotes": [
+            {
+              "unit": 25261,
+              "text": "贸贩为业，往往客蒙沂之间。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "于远郡",
+      "evidence": [
+        {
+          "chapter": "仇大娘",
+          "chapter_id": 401,
+          "quotes": [
+            {
+              "unit": 25543,
+              "text": "先是，仲有前室女大娘，嫁于远郡，性刚猛，每归宁，餽赠不满其志，辄迕父母，往往以愤去，仲以是怒恶之；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "黑暗狱",
+      "evidence": [
+        {
+          "chapter": "龙飞相公",
+          "chapter_id": 403,
+          "quotes": [
+            {
+              "unit": 25753,
+              "text": "」戴急问其何词，季曰：「不敢相欺，尊名在黑暗狱中。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "会稽",
+      "evidence": [
+        {
+          "chapter": "五通",
+          "chapter_id": 405,
+          "quotes": [
+            {
+              "unit": 26072,
+              "text": "有会稽万生者，赵之表弟，刚猛善射。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "淮",
+      "evidence": [
+        {
+          "chapter": "又",
+          "chapter_id": 406,
+          "quotes": [
+            {
+              "unit": 26116,
+              "text": "设帐于淮，馆搢绅园中。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "吴下",
+      "evidence": [
+        {
+          "chapter": "又",
+          "chapter_id": 406,
+          "quotes": [
+            {
+              "unit": 26212,
+              "text": "若在万生用武之后，则吴下仅遗半通，宜其不足为害也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "泾河",
+      "evidence": [
+        {
+          "chapter": "申氏",
+          "chapter_id": 407,
+          "quotes": [
+            {
+              "unit": 26213,
+              "text": "泾河之侧，有士人子申氏者，家窭贫，竟日恒不举火。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "洛下",
+      "evidence": [
+        {
+          "chapter": "葛巾",
+          "chapter_id": 409,
+          "quotes": [
+            {
+              "unit": 26572,
+              "text": "自此牡丹之盛，洛下无双焉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "南中",
+      "evidence": [
+        {
+          "chapter": "黄英",
+          "chapter_id": 411,
+          "quotes": [
+            {
+              "unit": 26654,
+              "text": "逾岁，春将半，始载南中异卉而归，于都中设花肆，十日尽售，复归艺菊。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "大圣祠",
+      "evidence": [
+        {
+          "chapter": "齐天大圣",
+          "chapter_id": 413,
+          "quotes": [
+            {
+              "unit": 26901,
+              "text": "至夜，梦一人招之去，入大圣祠，仰见大圣有怒色，责之曰：「因汝无状，以菩萨刀穿汝胫股；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "江汉",
+      "evidence": [
+        {
+          "chapter": "青蛙神",
+          "chapter_id": 414,
+          "quotes": [
+            {
+              "unit": 26957,
+              "text": "江汉之间，俗事蛙神最虔。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "京师",
+      "evidence": [
+        {
+          "chapter": "任秀",
+          "chapter_id": 415,
+          "quotes": [
+            {
+              "unit": 27170,
+              "text": "有表叔张某，贾京师，劝使赴都，愿携与俱，不耗其赀。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "江水",
+      "evidence": [
+        {
+          "chapter": "晚霞",
+          "chapter_id": 416,
+          "quotes": [
+            {
+              "unit": 27214,
+              "text": "下临江水，险危欲堕。"
+            },
+            {
+              "unit": 27295,
+              "text": "但见江水若壁，以首力触不得入。"
+            },
+            {
+              "unit": 27309,
+              "text": "又不得一见阿端，但欲求死，遂潜投江水。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "吴江府",
+      "evidence": [
+        {
+          "chapter": "晚霞",
+          "chapter_id": 416,
+          "quotes": [
+            {
+              "unit": 27287,
+              "text": "惟解姥日往来吴江府；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "平阴人",
+      "evidence": [
+        {
+          "chapter": "拆楼人",
+          "chapter_id": 421,
+          "quotes": [
+            {
+              "unit": 27619,
+              "text": "何冏卿，平阴人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "臧氏村",
+      "evidence": [
+        {
+          "chapter": "陈云栖",
+          "chapter_id": 423,
+          "quotes": [
+            {
+              "unit": 27645,
+              "text": "庵去臧氏村仅十余里，生因窃往。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "岳州",
+      "evidence": [
+        {
+          "chapter": "陈云栖",
+          "chapter_id": 423,
+          "quotes": [
+            {
+              "unit": 27723,
+              "text": "怅恨而归，伪告母曰：「舅言：陈翁如岳州，待其归，当遣伻来。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "夷陵",
+      "evidence": [
+        {
+          "chapter": "陈云栖",
+          "chapter_id": 423,
+          "quotes": [
+            {
+              "unit": 27637,
+              "text": "真毓生，楚夷陵人，孝廉之子。"
+            },
+            {
+              "unit": 27730,
+              "text": "」闻夫人家夷陵，移坐就榻，告愬坎坷，词旨悲恻。"
+            },
+            {
+              "unit": 27772,
+              "text": "妾少字夷陵潘氏，音耗阔绝，必已另有良匹。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "五祖山",
+      "evidence": [
+        {
+          "chapter": "陈云栖",
+          "chapter_id": 423,
+          "quotes": [
+            {
+              "unit": 27776,
+              "text": "但前在五祖山时，有女冠问潘氏，今又潘氏，固知夷陵世族无此姓也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "牛首山",
+      "evidence": [
+        {
+          "chapter": "司札吏",
+          "chapter_id": 424,
+          "quotes": [
+            {
+              "unit": 27870,
+              "text": "牛首山一僧，自名铁汉，又名铁屎。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "秀水",
+      "evidence": [
+        {
+          "chapter": "司札吏",
+          "chapter_id": 424,
+          "quotes": [
+            {
+              "unit": 27873,
+              "text": "秀水王司直梓其诗，名曰：牛山四十屁。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "郡狱",
+      "evidence": [
+        {
+          "chapter": "织成",
+          "chapter_id": 428,
+          "quotes": [
+            {
+              "unit": 28004,
+              "text": "真君怒，执毅付郡狱。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "汉水",
+      "evidence": [
+        {
+          "chapter": "竹青",
+          "chapter_id": 429,
+          "quotes": [
+            {
+              "unit": 28077,
+              "text": "归家数月，苦忆汉水，因潜出黑衣著之。"
+            },
+            {
+              "unit": 28078,
+              "text": "两胁生翼，翕然凌空，经两时许，已达汉水。"
+            },
+            {
+              "unit": 28088,
+              "text": "三日后，汉水神女皆登堂，以服食珍物相贺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "吴王庙",
+      "evidence": [
+        {
+          "chapter": "竹青",
+          "chapter_id": 429,
+          "quotes": [
+            {
+              "unit": 28013,
+              "text": "羞于行乞，饿甚，暂憩吴王庙中，拜祷神座。"
+            },
+            {
+              "unit": 28037,
+              "text": "后领荐归，复谒吴王庙，荐以少牢。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "湖村",
+      "evidence": [
+        {
+          "chapter": "竹青",
+          "chapter_id": 429,
+          "quotes": [
+            {
+              "unit": 28039,
+              "text": "是夜宿于湖村，秉烛方坐，忽几前如飞鸟飘落，视之，则二十许丽人，冁然曰：「别来无恙乎？"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "昆仑山",
+      "evidence": [
+        {
+          "chapter": "狐女",
+          "chapter_id": 431,
+          "quotes": [
+            {
+              "unit": 28186,
+              "text": "伊奔入昆仑山，四顾荒凉。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "莱郡",
+      "evidence": [
+        {
+          "chapter": "于子游",
+          "chapter_id": 433,
+          "quotes": [
+            {
+              "unit": 28258,
+              "text": "康熙初年，莱郡潮出大鱼，鸣号数日，其声如牛。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "燕子谷",
+      "evidence": [
+        {
+          "chapter": "王大",
+          "chapter_id": 437,
+          "quotes": [
+            {
+              "unit": 28318,
+              "text": "王云：「燕子谷黄八官人放利债，同往贷之，宜必诺允。"
+            },
+            {
+              "unit": 28395,
+              "text": "公子家燕子谷，捉获博徒在观音庙，相去十余里。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "平康巷",
+      "evidence": [
+        {
+          "chapter": "香玉",
+          "chapter_id": 439,
+          "quotes": [
+            {
+              "unit": 28591,
+              "text": "曰：「妾小字香玉，隶籍平康巷。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "下清宫",
+      "evidence": [
+        {
+          "chapter": "香玉",
+          "chapter_id": 439,
+          "quotes": [
+            {
+              "unit": 28573,
+              "text": "劳山下清宫，耐冬高二丈，大数十围，牡丹高丈余，花时璀璨似锦。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "奈河",
+      "evidence": [
+        {
+          "chapter": "王十",
+          "chapter_id": 442,
+          "quotes": [
+            {
+              "unit": 28804,
+              "text": "」曰：「冥中新阎王到任，见奈河淤平，十八狱坑厕俱满，故捉三种人淘河：小偷、私铸、私盐；"
+            },
+            {
+              "unit": 28813,
+              "text": "鬼引十去，至奈河边，见河内人夫，𫄶续如蚁。"
+            },
+            {
+              "unit": 28831,
+              "text": "望见十，犹缩首衾中，如在奈河状。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "高苑",
+      "evidence": [
+        {
+          "chapter": "王十",
+          "chapter_id": 442,
+          "quotes": [
+            {
+              "unit": 28795,
+              "text": "高苑民王十，负盐于博兴。"
+            },
+            {
+              "unit": 28820,
+              "text": "见高苑肆商，亦在其中，十独苛遇之：入河楚背，上岸敲股。"
+            }
+          ]
+        },
+        {
+          "chapter": "一员官",
+          "chapter_id": 488,
+          "quotes": [
+            {
+              "unit": 31419,
+              "text": "会高苑有穆情怀者，狐附之，辄慷慨与人谈论，音响在座上，但不见其人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "十八狱",
+      "evidence": [
+        {
+          "chapter": "王十",
+          "chapter_id": 442,
+          "quotes": [
+            {
+              "unit": 28804,
+              "text": "」曰：「冥中新阎王到任，见奈河淤平，十八狱坑厕俱满，故捉三种人淘河：小偷、私铸、私盐；"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "关帝庙",
+      "evidence": [
+        {
+          "chapter": "大男",
+          "chapter_id": 443,
+          "quotes": [
+            {
+              "unit": 28851,
+              "text": "」母曰：「汝往塾，路经关帝庙，当拜之，祐汝速长。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "岭南",
+      "evidence": [
+        {
+          "chapter": "外国人",
+          "chapter_id": 444,
+          "quotes": [
+            {
+              "unit": 28971,
+              "text": "己巳秋，岭南从外洋飘一巨艘来。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "吕宋国",
+      "evidence": [
+        {
+          "chapter": "外国人",
+          "chapter_id": 444,
+          "quotes": [
+            {
+              "unit": 28973,
+              "text": "自言：「吕宋国人。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "外洋",
+      "evidence": [
+        {
+          "chapter": "外国人",
+          "chapter_id": 444,
+          "quotes": [
+            {
+              "unit": 28971,
+              "text": "己巳秋，岭南从外洋飘一巨艘来。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "海岱门",
+      "evidence": [
+        {
+          "chapter": "石清虚",
+          "chapter_id": 446,
+          "quotes": [
+            {
+              "unit": 29119,
+              "text": "明年八月二十日，昧爽时，可诣海岱门，以两贯相赎。"
+            },
+            {
+              "unit": 29123,
+              "text": "邢如期至海岱门，则其家人窃石出售，因以两贯市归。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "冯村",
+      "evidence": [
+        {
+          "chapter": "曾友于",
+          "chapter_id": 447,
+          "quotes": [
+            {
+              "unit": 29262,
+              "text": "成夹之以肘，置诸冯村而还。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "苍龙岭",
+      "evidence": [
+        {
+          "chapter": "苗生",
+          "chapter_id": 452,
+          "quotes": [
+            {
+              "unit": 29478,
+              "text": "三日后，应有儒服儒冠者见噬于虎，然必在苍龙岭下，始是代某者。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "左车祠",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 456,
+          "quotes": [
+            {
+              "unit": 29561,
+              "text": "道经雹神李左车祠，入游眺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "安村",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 456,
+          "quotes": [
+            {
+              "unit": 29575,
+              "text": "安村外有关圣祠，适有稗贩客，释肩门外，忽弃双簏，趋祠中，拔架上大刀旋舞。"
+            }
+          ]
+        }
+      ],
+      "status": "gazetteer-candidate",
+      "candidates": [
+        {
+          "record_id": "hvd_23517",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_23517",
+          "name": "安村",
+          "api_name": "安村",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "临安县 (Lin'an Xian)",
+          "coordinates": "119.73226, 30.31769",
+          "lon": 119.73226,
+          "lat": 30.31769,
+          "data_source": "CHGIS"
+        }
+      ],
+      "reason": "已存CHGIS唯一同名区域；仍需核对故事所在地。"
+    },
+    {
+      "word": "雹神李左车祠",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 456,
+          "quotes": [
+            {
+              "unit": 29561,
+              "text": "道经雹神李左车祠，入游眺。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "关圣祠",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 456,
+          "quotes": [
+            {
+              "unit": 29575,
+              "text": "安村外有关圣祠，适有稗贩客，释肩门外，忽弃双簏，趋祠中，拔架上大刀旋舞。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "祠",
+      "evidence": [
+        {
+          "chapter": "雹神",
+          "chapter_id": 456,
+          "quotes": [
+            {
+              "unit": 29561,
+              "text": "道经雹神李左车祠，入游眺。"
+            },
+            {
+              "unit": 29562,
+              "text": "祠前有池，池水清澈，有朱鱼数尾游泳其中。"
+            },
+            {
+              "unit": 29575,
+              "text": "安村外有关圣祠，适有稗贩客，释肩门外，忽弃双簏，趋祠中，拔架上大刀旋舞。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "粤东",
+      "evidence": [
+        {
+          "chapter": "老龙舡户",
+          "chapter_id": 458,
+          "quotes": [
+            {
+              "unit": 29616,
+              "text": "朱公徽荫巡抚粤东时，往来商旅，多告无头冤状。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "龙津",
+      "evidence": [
+        {
+          "chapter": "老龙舡户",
+          "chapter_id": 458,
+          "quotes": [
+            {
+              "unit": 29635,
+              "text": "」盖省之东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此入粤。"
+            },
+            {
+              "unit": 29636,
+              "text": "公遣武弁，密授机谋，捉龙津驾舟者，次第擒获五十余名，皆不械而服。"
+            }
+          ]
+        }
+      ],
+      "status": "gazetteer-candidate",
+      "candidates": [
+        {
+          "record_id": "hvd_19252",
+          "uri": "https://chgis.hudci.org/tgaz/placename/hvd_19252",
+          "name": "龙津",
+          "api_name": "龙津",
+          "years": "1820 ~ 1820",
+          "feature_type": "村镇 (cun zhen)",
+          "parent_name": "饶州府 (Raozhou Fu)",
+          "coordinates": "116.63668, 28.64851",
+          "lon": 116.63668,
+          "lat": 28.64851,
+          "data_source": "CHGIS"
+        }
+      ],
+      "reason": "已存CHGIS唯一同名区域；仍需核对故事所在地。"
+    },
+    {
+      "word": "小岭",
+      "evidence": [
+        {
+          "chapter": "老龙舡户",
+          "chapter_id": 458,
+          "quotes": [
+            {
+              "unit": 29635,
+              "text": "」盖省之东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此入粤。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "蓝关",
+      "evidence": [
+        {
+          "chapter": "老龙舡户",
+          "chapter_id": 458,
+          "quotes": [
+            {
+              "unit": 29635,
+              "text": "」盖省之东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此入粤。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "老龙津",
+      "evidence": [
+        {
+          "chapter": "老龙舡户",
+          "chapter_id": 458,
+          "quotes": [
+            {
+              "unit": 29635,
+              "text": "」盖省之东北，曰小岭、曰蓝关，源自老龙津，以达南海，岭外巨商，每由此入粤。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "青城山",
+      "evidence": [
+        {
+          "chapter": "青城妇",
+          "chapter_id": 459,
+          "quotes": [
+            {
+              "unit": 29642,
+              "text": "先是，有西商客成都，娶青城山寡妇。"
+            },
+            {
+              "unit": 29651,
+              "text": "」初不言，诘再三，始曰：「此处绕青城山有数村落，其中妇女多为蛇交，则生女尖喙，阴中有物类蛇舌。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "费邑",
+      "evidence": [
+        {
+          "chapter": "青城妇",
+          "chapter_id": 459,
+          "quotes": [
+            {
+              "unit": 29641,
+              "text": "费邑高梦说为成都守，有一奇狱。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "淮南",
+      "evidence": [
+        {
+          "chapter": "薛慰娘",
+          "chapter_id": 463,
+          "quotes": [
+            {
+              "unit": 29794,
+              "text": "长伯仁，举进士，令淮南。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "兰陵",
+      "evidence": [
+        {
+          "chapter": "田子成",
+          "chapter_id": 464,
+          "quotes": [
+            {
+              "unit": 29912,
+              "text": "」乃歌「兰陵美酒」之什。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "竹桥",
+      "evidence": [
+        {
+          "chapter": "田子成",
+          "chapter_id": 464,
+          "quotes": [
+            {
+              "unit": 29908,
+              "text": "千里云山飞不到，梦魂夜夜竹桥西。"
+            },
+            {
+              "unit": 29962,
+              "text": "又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "江村",
+      "evidence": [
+        {
+          "chapter": "王桂庵",
+          "chapter_id": 465,
+          "quotes": [
+            {
+              "unit": 29990,
+              "text": "一夜，梦至江村，过数门，见一家柴扉南向，门内疏竹为篱，意是亭园，迳入。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "真定",
+      "evidence": [
+        {
+          "chapter": "公孙夏",
+          "chapter_id": 474,
+          "quotes": [
+            {
+              "unit": 30491,
+              "text": "目前真定缺员，便可急图。"
+            },
+            {
+              "unit": 30512,
+              "text": "区画方已，真定卤簿已至。"
+            },
+            {
+              "unit": 30522,
+              "text": "」从者答：「真定守。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "济郡",
+      "evidence": [
+        {
+          "chapter": "韩方",
+          "chapter_id": 475,
+          "quotes": [
+            {
+              "unit": 30552,
+              "text": "明季，济郡以北数州县，邪疫大作，比户皆然。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "神仙岛",
+      "evidence": [
+        {
+          "chapter": "粉蝶",
+          "chapter_id": 478,
+          "quotes": [
+            {
+              "unit": 30843,
+              "text": "此名神仙岛，离琼三千里，仆流寓亦不久也。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "陕中",
+      "evidence": [
+        {
+          "chapter": "锦瑟",
+          "chapter_id": 480,
+          "quotes": [
+            {
+              "unit": 31120,
+              "text": "有陕中贾某，媒通兰氏，遂就生第与妇合。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "澹台",
+      "evidence": [
+        {
+          "chapter": "秦桧",
+          "chapter_id": 485,
+          "quotes": [
+            {
+              "unit": 31364,
+              "text": "又青州城内，旧有澹台子羽祠。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "浙东",
+      "evidence": [
+        {
+          "chapter": "浙东生",
+          "chapter_id": 486,
+          "quotes": [
+            {
+              "unit": 31367,
+              "text": "浙东生房某，客于陕，教授生徒。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "世家园",
+      "evidence": [
+        {
+          "chapter": "浙东生",
+          "chapter_id": 486,
+          "quotes": [
+            {
+              "unit": 31387,
+              "text": "适世家园中有虎阱，揉木为圈，结绳作网，以覆其口。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "浙界",
+      "evidence": [
+        {
+          "chapter": "浙东生",
+          "chapter_id": 486,
+          "quotes": [
+            {
+              "unit": 31394,
+              "text": "其地乃浙界，离家止四百余里矣。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "word": "金城",
+      "evidence": [
+        {
+          "chapter": "丐仙",
+          "chapter_id": 489,
+          "quotes": [
+            {
+              "unit": 31440,
+              "text": "高玉成，故家子，居金城之广里。"
+            }
+          ]
+        }
+      ],
+      "status": "unresolved"
+    }
+  ]
+}

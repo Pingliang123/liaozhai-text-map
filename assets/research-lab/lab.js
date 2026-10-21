@@ -55,6 +55,7 @@ function render(){if(!data)return;exportRows=[];hierarchyState.level='all';docum
  const similar=el('section',undefined,'card'),pick=el('select');pick.setAttribute('aria-label','选择比较篇目');for(const c of cs){const o=el('option',c.title);o.value=c.id;pick.append(o);}const result=el('div');similar.append(el('h3','寻找相似空间组合与不同异事'),el('p','按空间词集合的交集÷并集（Jaccard）排序。共有高频词可能抬高相似度；分值不是文学价值或影响关系。'),pick,result);out.append(similar);const load=()=>result.replaceChildren(table(['篇名','相似度','共同空间词','异事类型'],similarity(cs,Number(pick.value)).map(r=>[r.chapter,r.score.toFixed(3),r.common.join('、'),r.events.join('、')||'未定'])));pick.onchange=load;load();exportRows=[['空间转移','篇名','人物','原文'],...routes.flatMap(r=>r.rows.map(s=>[r.key,s.chapter,s.actors,s.quote]))];
  }
  if(tab==='relations'){
+  const link=el('a','未定位地点核查报告');link.href='../../reports/unmapped-region-review-20261021.json';const downloads=out.querySelector('details');if(downloads)downloads.append(link);else out.append(link);
   for(const details of out.querySelectorAll('details')){const title=details.querySelector('summary')?.textContent||'';if(/其他网络分析|地点分类核查清单|空间归属未定（/.test(title))details.remove();}
  }
  if(tab==='words'){
