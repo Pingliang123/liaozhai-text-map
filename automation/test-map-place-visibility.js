@@ -22,5 +22,6 @@ for(const [width,height]of [[1000,600],[600,500],[300,460]]){
 }
 assert(html.includes("$('movement-controls').insertBefore(movementDiagram,$('movement-status'))"),'示意放在地图外');
 assert(!html.includes('state.height-108'),'不再遮住地图底部');
+assert(html.includes('小点＝缩略地名')&&!html.includes('灰点＝未标记'),'缩略点不误称未标记');
 assert.equal(JSON.stringify(m.document()),before,'不改人工定位及篇目资料');
 console.log('PASS '+points.length+'个有直接或下级篇目的定位点均保留；吕宋国、上下级区分、选定名称与地图外示意');
