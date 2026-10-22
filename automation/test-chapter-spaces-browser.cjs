@@ -9,6 +9,8 @@ const {chromium}=require('playwright');
   await page.goto('http://map.test/assets/research-lab/?chapter=34');
   const pick=page.getByLabel('选择篇目查看空间网络',{exact:true});await pick.waitFor({timeout:90000});
   assert.equal(await pick.inputValue(),'34');const section=page.locator('section.card').filter({has:page.getByRole('heading',{name:'二、篇目空间网络',exact:true})});assert(await section.locator('svg circle').count()>0);
+  // The chapter URL filters the available chapters. Clear that filter before testing a different chapter.
+  await page.goto('http://map.test/assets/research-lab/');await pick.waitFor({timeout:90000});
   await pick.selectOption('35');assert((await section.locator('a').last().getAttribute('href')).includes('chapter=35'));
   assert.equal(await page.getByLabel('选择地点查看内部空间',{exact:true}).count(),0);
   // A failed large localStorage write can leave an old document behind. Both sites must read the newer IndexedDB record.
