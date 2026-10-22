@@ -1339,7 +1339,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       if(typeof saved.actor==='string') restoredRouteActor=saved.actor;
     }
   }catch(_){}
-  function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'book'):scope;}
+  function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'off'):scope;}
   function routeAggregatePlaces(){return aggregatePlaces();}
   function changeRegionScope(value){
     $('place-count-scope').value=value;
