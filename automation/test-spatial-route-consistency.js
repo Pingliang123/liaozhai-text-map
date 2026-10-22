@@ -5,6 +5,9 @@ const html=fs.readFileSync('index.html','utf8'),context={GhostSpatialRoutes:Rout
 const script=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('else root.GhostMapNarrative=api'));
 vm.runInContext(script,context);const N=context.GhostMapNarrative;
 const pack=require('../data-package.json'),model=M.create(pack.base);model.importDocument(pack.revisions);
+const workflow=fs.readFileSync('.github/workflows/publish-updates.yml','utf8');
+assert(workflow.startsWith('name: Validate revisions and publish map'),'流程必须以有效YAML键开始');
+assert(workflow.includes('          node automation/test-yi-network.js\n          node automation/test-spatial-route-consistency.js'),'回归测试必须在发布命令区内');
 const before=JSON.stringify(model.document()),chapters=D.snapshot(model),places=model.places(),keys=[];
 for(const c of chapters){
  const map=N.rows(model,[model.view(c.id)],places),lab=c.route_steps;
