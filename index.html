@@ -79,7 +79,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </header>
 <main>
 
-<script src="assets/spatial-routes.js?v=5d2a493cd360"></script>
+<script src="assets/spatial-routes.js?v=9ded14719192"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -98,7 +98,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <aside id="realm-panel" class="realm-panel" aria-label="三界空间证据"></aside>
 </div>
 <section id="movement-controls" class="work-step" aria-label="人物路线与空间解读"><h3>人物路线与空间解读</h3>
-<div class="toolbar"><label>路线范围 <select id="movement-scope"><option value="auto">自动跟随地点／篇目</option><option value="chapter">当前篇人物路线</option><option value="place">所选地点的多篇路线</option><option value="off">关闭路线</option></select></label><label>篇目 <select id="movement-chapter"></select></label><label>人物 <select id="movement-actor"></select></label><button id="movement-edit">修订本篇路径与空间分类</button></div>
+<div class="toolbar"><label>路线范围 <select id="movement-scope"><option value="auto">自动跟随地点</option><option value="book">全书路线</option><option value="chapter">当前篇人物路线</option><option value="place">所选地点的多篇路线</option><option value="off">关闭路线</option></select></label><label>篇目 <select id="movement-chapter"></select></label><label>人物 <select id="movement-actor"></select></label><button id="movement-edit">修订本篇路径与空间分类</button></div>
 <p id="movement-status" class="muted" role="status"></p><p id="route-label-status" class="muted" role="status"></p><details id="route-legend-panel"><summary>路线颜色图例</summary><div id="movement-legend" class="chips" aria-label="路线图例"></div></details>
 <div class="toolbar"><label>地图中的空间步骤 <select id="movement-step"></select></label><button id="movement-next">下一步</button></div>
 <details id="movement-path-panel"><summary>空间路径与人物塑造 · 对照原文</summary><div id="movement-paths"></div></details>
@@ -814,11 +814,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
     return GhostSpatialRoutes.endpoint(label,binding,places,model);
   }
   function rows(model,chapters,places) {
-    return chapters.flatMap(c=>GhostSpatialRoutes.normalize(c.narrative_events || []).map((input)=>{
-      const index=input.index;
-      const row=movement(input);
-      const projected=GhostSpatialRoutes.project({...c,narrative_events:[row]},places,model)[0];
-      return {...row,...projected,index,source_indices:input.source_indices,chapter_id:c.chapter_id,chapter:c.chapter,actorsList:actors(c,row),classification:space(row)};
+    return chapters.flatMap(c=>GhostSpatialRoutes.project(c,places,model).map(row=>{
+      return {...row,chapter_id:c.chapter_id,chapter:c.chapter,actorsList:actors(c,row),classification:space(row)};
     }));
   }
   function eventDates(row,base,place) {
@@ -1337,11 +1334,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if(saved){
       if(model.ids.includes(saved.chapter)) state.chapter=saved.chapter;
       if(allPlaces().some(p=>p.id===saved.place)) state.place=saved.place;
-      if(['auto','chapter','place','off'].includes(saved.scope)) $('movement-scope').value=saved.scope;
+      if(['auto','book','chapter','place','off'].includes(saved.scope)) $('movement-scope').value=saved.scope;
       if(typeof saved.actor==='string') restoredRouteActor=saved.actor;
     }
   }catch(_){}
-  function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'chapter'):scope;}
+  function movementMode(){const scope=$('movement-scope').value||'auto';return scope==='auto'?(state.place?'place':'book'):scope;}
   function routeAggregatePlaces(){return aggregatePlaces();}
   function changeRegionScope(value){
     $('place-count-scope').value=value;
@@ -2258,26 +2255,26 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('movement-chapter').replaceChildren(...model.ids.map(id=>element('option',{value:id},model.view(id).chapter)));
     $('movement-chapter').value=String(state.chapter);
     const routeAggregate=routeAggregatePlaces(), directIds=selected ? new Set(model.atPlace(selected,false).map(c=>c.chapter_id)) : new Set();
-    const chapters=mode==='place' ? selected ? model.atPlace(selected,routeAggregate) : [] : [model.view(state.chapter)];
+    const chapters=mode==='book'?model.ids.map(id=>model.view(id)):mode==='place' ? selected ? model.atPlace(selected,routeAggregate) : [] : [model.view(state.chapter)];
     const type=$('event-filter').value;
     const all=N.rows(model,chapters.filter(c=>!type || c.event_types[type]>0),allPlaces()).map(row=>mode==='place' ? routeRegion(row,selected,routeAggregate) : {...row,route_scope:'direct',region_label:''});
     const old=restoredRouteActor || $('movement-actor').value,actorChoices=[...new Set(all.flatMap(r=>r.actorsList.map(a=>r.chapter_id+'|'+a)))];restoredRouteActor='';
     $('movement-actor').replaceChildren(element('option',{value:''},'全部人物'),...actorChoices.map(key=>{
-      const split=key.indexOf('|'),id=Number(key.slice(0,split));return element('option',{value:key},(mode==='place'?'《'+model.view(id).chapter+'》 · ':'')+key.slice(split+1));
+      const split=key.indexOf('|'),id=Number(key.slice(0,split));return element('option',{value:key},((mode==='place'||mode==='book')?'《'+model.view(id).chapter+'》 · ':'')+key.slice(split+1));
     }));
     $('movement-actor').value=actorChoices.includes(old)?old:'';
     const actor=$('movement-actor').value;
     try{if(typeof sessionStorage!=='undefined') sessionStorage.setItem(routeViewKey,JSON.stringify({chapter:state.chapter,place:state.place,scope:$('movement-scope').value,actor}));}catch(_){}
     movementRows=mode && mode!=='off' ? all.filter(r=>!actor || r.actorsList.some(a=>r.chapter_id+'|'+a===actor)) : [];
-    const moves=movementRows.filter(r=>r.transition_kind==='movement'),mapped=moves.filter(r=>r.source_valid && r.from && r.to && r.from.id!==r.to.id).length;
+    const moves=movementRows.filter(r=>r.transition_kind==='movement'),mapped=moves.filter(r=>r.source_valid && r.from && r.to).length,local=moves.filter(r=>r.source_valid&&r.from&&r.to&&r.from.id===r.to.id).length;
     const step=$('movement-step').value;
     $('movement-step').replaceChildren(...moves.map(r=>element('option',{value:r.chapter_id+':'+r.index},'《'+r.chapter+'》第'+(r.index+1)+'步 '+r.from_space+' → '+r.to_space)));
     $('movement-step').value=moves.some(r=>r.chapter_id+':'+r.index===step)?step:moves.length?moves[0].chapter_id+':'+moves[0].index:'';
     $('movement-next').disabled=moves.length<2;
     message('movement-status',!mode || mode==='off' ? '选择篇目或地点查看路线。' : mode==='place' && !selected ? '请先在地图上选择一个地点。' :
-      (mode==='place'?selected.name+' · '+(routeAggregate?'含下级地点':'直接提及')+' · '+chapters.length+'篇关联篇目':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+mapped+'步可画地理参考线。虚线：同篇行程；颜色按'+(mode==='place'?'篇目':'人物称呼')+'区分。点击路线查看原文；AI结果待核。');
+      (mode==='place'?selected.name+' · '+(routeAggregate?'含下级地点':'直接提及')+' · '+chapters.length+'篇关联篇目':mode==='book'?'全书':'《'+model.view(state.chapter).chapter+'》')+'：'+moves.length+'步人物移动，'+(mapped-local)+'步跨地点、'+local+'步区域内示意。环线表示本地空间移动，不表示实际距离。虚线：同篇行程；颜色按'+((mode==='place'||mode==='book')?'篇目':'人物称呼')+'区分。点击路线查看原文；AI结果待核。');
     const legend=$('movement-legend');legend.replaceChildren();
-    const keys=[...new Map(moves.map(r=>[mode==='place'?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),(mode==='place' && r.region_label?r.region_label+' · ':'')+(mode==='place'?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、'))])).entries()];
+    const keys=[...new Map(moves.filter(r=>r.source_valid&&r.from&&r.to).map(r=>[(mode==='place'||mode==='book')?r.chapter_id:actor || r.chapter_id+'|'+r.actorsList.join('、'),(mode==='place' && r.region_label?r.region_label+' · ':'')+((mode==='place'||mode==='book')?'《'+r.chapter+'》':actor?actor.slice(actor.indexOf('|')+1):r.actorsList.join('、'))])).entries()];
     for(const [key,label] of keys) {const chip=element('span',{class:'chip'},label);chip.style.borderColor=N.color(key);chip.style.color=N.color(key);legend.append(chip);}
     const paths=$('movement-paths');paths.replaceChildren();
     paths.append(element('p',{class:'muted'},'空间的使用方式与其所属世界在此分别考察。寺庙、书斋或庭院是否属于私人空间，应结合人物能否进入、观看及支配此处来判断，单凭名称所得的分类仍待核查。位置未明的场景保留原有名称，人物籍贯不作为场景坐标。'));
@@ -2303,9 +2300,13 @@ section,details,#save-chapter{scroll-margin-top:90px}
       if(start+30<movementRows.length) {const more=button('继续显示后续步骤（共'+movementRows.length+'步）',()=>{more.remove();appendRows(start+30);});paths.append(more);}
     };appendRows();
     const relations=$('movement-relations');relations.replaceChildren(element('p',{class:'muted'},'同一情节步骤中共同出现的人物，可据其言行考察彼此关系；跨篇人物若见于相同地点与纪年，则可进一步比较，但其相遇、亲缘或影响关系尚须其他材料佐证。“翌日”等相对时间仅用于本篇，籍贯亦与事发地点分别处理。'));
-    for(const row of movementRows.filter(r=>r.actorsList.length>1)) {
-      const item=element('details');item.append(element('summary',{},'同一情节步骤（同场待核）：《'+row.chapter+'》 '+row.actorsList.join('、')+' · '+row.space),element('blockquote',{},row.quote));relations.append(item);
-    }
+    const sharedScenes=movementRows.filter(r=>r.actorsList.length>1);
+    const appendSharedScenes=(start=0)=>{
+      for(const row of sharedScenes.slice(start,start+30)) {
+        const item=element('details');item.append(element('summary',{},'同一情节步骤（同场待核）：《'+row.chapter+'》 '+row.actorsList.join('、')+' · '+row.space),element('blockquote',{},row.quote));relations.append(item);
+      }
+      if(start+30<sharedScenes.length){const more=button('查看更多同场人物',()=>{more.remove();appendSharedScenes(start+30);});relations.append(more);}
+    };appendSharedScenes();
     const pairs=N.relations(movementRows,selected,base);
     relations.append(element('p',{},selected?'经明确路线端点关联到'+selected.name+'的跨篇步骤对：'+pairs.length+'组。':'选择地点并切换“所选地点的多篇路线”，查看同地人物与时间线索。'));
     const showPairs=(start=0)=>{
@@ -2317,7 +2318,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       if(start+30<pairs.length) {const more=button('查看更多同地关联',()=>{more.remove();showPairs(start+30);});relations.append(more);}
     };showPairs();
   }
-  $('movement-scope').addEventListener('change',()=>{renderMovement();paintMap();});
+  $('movement-scope').addEventListener('change',()=>{$('movement-actor').value='';renderMovement();paintMap();});
 
   $('movement-step').addEventListener('change',paintMap);
   $('movement-next').addEventListener('click',()=>{const options=[...$('movement-step').children],index=options.findIndex(o=>o.value===$('movement-step').value);if(options.length)$('movement-step').value=options[(index+1)%options.length].value;paintMap();});
@@ -2697,22 +2698,22 @@ section,details,#save-chapter{scroll-margin-top:90px}
         card.open=true;card.scrollIntoView({block:'start'});
       };view.addEventListener('click',open);view.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});movementDiagram.append(view);
     }
-    for(const [index,row] of movementRows.filter(r=>r.transition_kind==='movement' && r.source_valid && r.from && r.to && r.from.id!==r.to.id).entries()) {
+    for(const [index,row] of movementRows.filter(r=>r.transition_kind==='movement' && r.source_valid && r.from && r.to).entries()) {
       const a=projection([row.from.lon,row.from.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
-      const color=N.color(mode==='place'?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
-      const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];
-      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row===current?4.5:row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : current ? .3 : .75,'marker-end':'url(#movement-arrow)'});
+      const color=N.color((mode==='place'||mode==='book')?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
+      const geometry=GhostSpatialRoutes.shape(a,b,index),control=geometry.control;
+      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:geometry.d,fill:'none',stroke:color,'stroke-width':row===current?4.5:row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : current?.from&&current?.to ? .3 : .75,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});
-      line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+'；'+row.quote));movementLayer.append(line);
+      line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+(geometry.local?'；区域内示意，非实际距离':'')+'；'+row.quote));movementLayer.append(line);
       for(const [point,place] of [[a,row.from],[b,row.to]]) {
         movementLayer.append(svg('circle',{cx:point[0],cy:point[1],r:4,fill:color}));
         addEndpoint(place,point,color);
       }
       const actorText=row.actorsList.join('、')||'人物待核',actorChars=[...actorText],actorLines=[];
       for(let i=0;i<actorChars.length;i+=16) actorLines.push(actorChars.slice(i,i+16).join(''));
-      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',...actorLines],anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4],color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
+      routeAnnotations.push({id:row.chapter_id+':'+row.index,text:(row.region_label?row.region_label+' · ':'')+'《'+row.chapter+'》 · '+actorText,lines:['《'+row.chapter+'》',...actorLines],anchor:geometry.anchor,color,priority:row===current?4:1,title:(row.region_label?row.region_label+'；':'篇目路线；')+'《'+row.chapter+'》 第'+(row.index+1)+'步 '+actorText+'：'+row.from_space+' → '+row.to_space,select:selectRoute});
     }
     const obstacles=[...placeLabels.map(l=>l.rect),...visible.map(p=>[p.display[0]-9,p.display[1]-9,18,18]),[0,0,240,54]];
     for(const row of movementRows.filter(r=>r.transition_kind==='movement')) for(const place of [row.from,row.to].filter(Boolean)){const xy=G.screen(projection([place.lon,place.lat]),state.transform);obstacles.push([xy[0]-9,xy[1]-9,18,18]);}

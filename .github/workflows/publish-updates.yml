@@ -87,6 +87,7 @@ jobs:
           node automation/test-user-package-restoration.js
           node automation/test-yi-network.js
           node automation/test-spatial-route-consistency.js
+          node automation/test-route-coverage.js
 
           node automation/test-place-node-merges.js
           node automation/test-movement-evidence-dedup.js

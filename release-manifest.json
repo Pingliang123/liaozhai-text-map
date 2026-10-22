@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 276028,
-      "sha256": "f44d34d9ce315c70ee6bd801e4e3d1cff61e155236c0a39fb8a906cad3a5c957"
+      "bytes": 276448,
+      "sha256": "5f27f95ddc135117e1df3c045c49b61e1316221bfa9a0f4c1d546733c7e2606d"
     },
     {
       "path": "assets/chapter-references.js",
@@ -633,8 +633,8 @@
     },
     {
       "path": "assets/research-lab/data.json",
-      "bytes": 13017131,
-      "sha256": "e50dce5f5683e6074700fd5434e25d62e056106d2599066c19521420e0a8dd2c"
+      "bytes": 13023856,
+      "sha256": "df08ff0d2440ba9e3a34dc028b48d7b5ccb9165d52d72376f8c4b9cf8aedf7a2"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 3913,
-      "sha256": "b8c79b56fa1701e4cec5276d4fd12f1ef3696fc6de1304466d3da6eeb94fb52a"
+      "sha256": "789cde37da5abb4d819209ef7230f77d78c6f6126da7b0b307c67fadee50f0d5"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -758,8 +758,8 @@
     },
     {
       "path": "assets/spatial-routes.js",
-      "bytes": 3927,
-      "sha256": "5d2a493cd36034ac6932b28887c242e30b4c5dbcccb61bb2d2e676244abc5ff5"
+      "bytes": 6823,
+      "sha256": "9ded14719192469db615bbc60a67a6cd6f4e2bb9a7e1789911abd7d3aac69499"
     },
     {
       "path": "assets/place-node-merges.js",
@@ -800,8 +800,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 276028,
-      "sha256": "f44d34d9ce315c70ee6bd801e4e3d1cff61e155236c0a39fb8a906cad3a5c957"
+      "bytes": 276448,
+      "sha256": "5f27f95ddc135117e1df3c045c49b61e1316221bfa9a0f4c1d546733c7e2606d"
     },
     {
       "path": "manual-revisions.json",
@@ -810,8 +810,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 37799500,
-      "sha256": "b3799c5c88db32255ca22f987cd4f0342e8bad1807699a9b87556521a85959c9"
+      "bytes": 37802646,
+      "sha256": "e0822d49c8c1a7776e03eb9faae8eb62c5ffd3a4a3494a286175af68f59ac8a7"
     }
   ]
 }
