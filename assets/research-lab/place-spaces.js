@@ -15,7 +15,7 @@ function movementNotes(c){
  return steps.filter(s=>s.kind==='movement'&&s.from&&s.to&&s.quote&&source.includes(s.quote.replace(/\s/gu,''))).map(s=>{const from=hits(s.from,c.places),to=hits(s.to,c.places);return {chapter:c.title,chapterId:c.id,unit:s.unit,source_indices:s.source_indices,from:s.from,to:s.to,fromPlace:c.route_steps?s.fromPlace:from.length===1?from[0].word:null,toPlace:c.route_steps?s.toPlace:to.length===1?to[0].word:null,actors:Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean),text:s.quote};});
 }
 function spaceView(graph,id,reverse,includeContext=false){const edges=graph.edges.map(e=>({...e,evidence:e.evidence.filter(r=>includeContext||r.assignment==='explicit')})).filter(e=>(reverse?e.target===id:e.source===id)&&e.evidence.length).map(e=>({...e,weight:new Set(e.evidence.map(r=>r.chapterId)).size}));const ids=new Set([id,...edges.flatMap(e=>[e.source,e.target])]);return {nodes:graph.nodes.filter(n=>ids.has(n.id)).map(n=>({...n,degree:edges.filter(e=>e.source===n.id||e.target===n.id).length})),edges,mode:'located-spaces'};}
-function build(chapters,options={}){
+function buildRaw(chapters,options={}){
  const places=new Map(),pairs=new Map(),spaces=new Map(),otherworldSpaces=new Map(),pending=[];
  const node=word=>{const id='place:'+word;if(!places.has(id))places.set(id,{id,label:word,kind:'place',realm:otherworld.has(word)?'otherworld':'human',degree:0});return id;};
  for(const original of chapters){const accepted=w=>original.reviews?.['places:'+w]?.status==='accepted'&&original.reviews['places:'+w].kind==='places',moved=original.places.filter(w=>sceneTerms.has(w)&&!accepted(w)),c={...original,places:original.places.filter(w=>!original.spaces.includes(w)&&(accepted(w)||taxonomy.classify(w).category==='place')),spaces:[...new Set([...original.spaces,...moved])].filter(w=>taxonomy.classify(w).category!=='excluded')};
@@ -67,6 +67,15 @@ function build(chapters,options={}){
  for(const g of [ppAll,ps]){const byId=new Map(g.nodes.map(n=>[n.id,n]));for(const e of g.edges){byId.get(e.source).degree++;byId.get(e.target).degree++;}}
  const isolatedPlaces=ppAll.nodes.filter(n=>n.degree===0),connectedIds=new Set(ppAll.nodes.filter(n=>n.degree>0).map(n=>n.id)),pp={nodes:ppAll.nodes.filter(n=>connectedIds.has(n.id)),edges:ppAll.edges.filter(e=>connectedIds.has(e.source)&&connectedIds.has(e.target)),mode:'places'};const classification=[...new Set(chapters.flatMap(c=>c.places))].sort().map(word=>({...taxonomy.classify(word),evidence:chapters.filter(c=>c.places.includes(word)).map(c=>({chapter:c.title,chapterId:c.id,units:c.units.filter(u=>u.text.includes(word))}))}));return {places:pp,placesAll:ppAll,spaces:ps,pending,isolatedPlaces,classification};
 }
+function build(chapters,options={}){
+ const out=buildRaw(chapters,options),aliases=Object.assign({},...chapters.map(c=>c.place_aliases||{}));
+ if(Object.entries(aliases).some(([a,b])=>a!==b)){
+  const Merge=typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges;
+  out.placesAll=Merge.graph(out.placesAll,aliases);out.spaces=Merge.graph(out.spaces,aliases);
+  out.isolatedPlaces=out.placesAll.nodes.filter(n=>!n.degree);out.places=connectedGraph({...out.placesAll,mode:'places'});
+ }
+ return out;
+}
 const api={build,hits,sceneTerms,otherworld,spaceView,uncertainScene,connectedGraph,movementNotes,uniqueSteps};if(typeof module!=='undefined'){module.exports=api;return;}
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 function mount(container,chapters,onExport,options={}){
@@ -76,7 +85,7 @@ function mount(container,chapters,onExport,options={}){
  const allOut=el('div'),range=el('select');range.setAttribute('aria-label','地点网络范围');for(const [v,t]of [['located','已定位地点'],['unmapped','未定位地点＋异境'],['all','全部地点词']]){const o=el('option',t);o.value=v;range.append(o);}const savedRange=new URLSearchParams(root.location?.search||'').get('range');range.value=['located','unmapped','all'].includes(savedRange)?savedRange:'all';const rangeLabel=el('label','网络范围');rangeLabel.append(range);first.append(rangeLabel,allOut);
  const chapterUI=root.GhostChapterSpaces.mount(second,chapters,{placeRecords:options.placeRecords});
  // Compatibility with place-linked bookmarks: choose the first matching chapter.
- const pick={set value(id){const c=chapters.find(c=>c.places.includes(id.slice(6)));if(c)chapterUI.selectChapter(c.id);}};
+ const pick={set value(id){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===id.slice(6)));if(c)chapterUI.selectChapter(c.id);}};
 
  let prepared=null,levels=options.placeRecords||{},levelsReady=!!options.placeRecords;
  const moves=el('details'),moveBody=el('div');moves.append(el('summary','人物移动与原文'),moveBody);first.append(moves);const notes=chapters.flatMap(movementNotes);

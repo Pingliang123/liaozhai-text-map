@@ -9,7 +9,7 @@ const model=M.create(pack.base);model.importDocument(doc);
 // Added administrative parents need not have the obsolete chapter_ids field.
 for(const p of model.places()){
  const direct=model.atPlace(p).map(c=>c.chapter_id);
- assert.deepEqual(direct,model.ids.filter(id=>model.view(id).places.some(x=>(pack.base.name_aliases?.[x.word]||x.word)===p.name)),p.name);
+ assert.deepEqual(direct,model.ids.filter(id=>model.view(id).places.some(x=>model.placeName(x.word)===p.name)),p.name);
  const aggregate=model.atPlace(p,true).map(c=>c.chapter_id);
  assert.equal(aggregate.length,new Set(aggregate).size,p.name+'汇总去重');
 }

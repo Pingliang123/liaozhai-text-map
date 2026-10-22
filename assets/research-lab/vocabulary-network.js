@@ -9,7 +9,7 @@ function build(chapters,mode='unit'){
   const scopes=mode==='chapter'?[{hits:[...present.values()],u:null}]:units;
   for(const {hits,u}of scopes)for(let i=0;i<hits.length;i++)for(let j=i+1;j<hits.length;j++){const pair=[hits[i].id,hits[j].id].sort();if(pair[0]===pair[1])continue;const key=JSON.stringify(pair);if(!edges.has(key))edges.set(key,{source:pair[0],target:pair[1],weight:0,evidence:[],chapter:'词汇共现'});const e=edges.get(key);e.weight++;e.evidence.push({chapter:c.title,chapterId:c.id,unit:u?.id,text:u?u.text:units.filter(r=>r.hits.some(t=>t.id===pair[0]||t.id===pair[1])).map(r=>r.u.text).join('\n')});}
  }
- for(const e of edges.values()){nodes.get(e.source).degree++;nodes.get(e.target).degree++;}return {nodes:[...nodes.values()],edges:[...edges.values()],mode};
+ for(const e of edges.values()){nodes.get(e.source).degree++;nodes.get(e.target).degree++;}const graph={nodes:[...nodes.values()],edges:[...edges.values()],mode},aliases=Object.assign({},...chapters.map(c=>c.place_aliases||{}));return Object.entries(aliases).some(([a,b])=>a!==b)?(typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges).graph(graph,aliases):graph;
 }
 const api={build};if(typeof module!=='undefined'){module.exports=api;return;}
 const el=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};

@@ -257,6 +257,7 @@ globalThis.GhostMapPlaceReview={
     const normalize = base.name_aliases || {};
     const rejectedPlaces = new Set(base.rejected_place_words || []);
     const name = value => Object.hasOwn(normalize, value) ? normalize[value] : value;
+    const placeName = value => {let word=name(value);const seen=new Set();while(base.place_node_aliases?.[word]&&!seen.has(word)){seen.add(word);word=base.place_node_aliases[word];}return word;};
     const placeID = word => base.places.find(p => name(p.name) === word)?.id || 'custom-place-' + encodeURIComponent(word);
     function validateLocation(input) {
       assert(input && typeof input === 'object', '定位资料格式错误');
@@ -313,7 +314,11 @@ globalThis.GhostMapPlaceReview={
           location_audit:{status:'user',note:'当前定位由用户修订；原始自动核查不覆盖用户判断。'},
           level_label:LEVELS[r.admin_level], min_zoom:1});
       }
-      geographicCache=[...rows.values()].filter(p=>!placeWordReason(name(p.name))); return geographicCache;
+      const groups=new Map();
+      for(const p of rows.values()){const key=placeName(p.name);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(p);}
+      const merged=[...groups].map(([key,group])=>{const preferred=group.find(p=>p.name===key)||group[0];return {...preferred,name:key,merged_names:[...new Set(group.map(p=>p.name))],merged_ids:[...new Set(group.map(p=>p.id))]};});
+      const mergedIDs=new Map(merged.flatMap(p=>p.merged_ids.map(id=>[id,p.id])));
+      geographicCache=merged.map(p=>({...p,parent_id:mergedIDs.get(p.parent_id)||p.parent_id})).map(p=>({...p,parent_id:p.parent_id===p.id?null:p.parent_id})).filter(p=>!placeWordReason(name(p.name))); return geographicCache;
     }
     const modelIDs = [...chapters.keys()];
     const view = id => {
@@ -573,7 +578,7 @@ globalThis.GhostMapPlaceReview={
         return [...all.values()].sort((a,b) => a.chapter_id-b.chapter_id);
       }
       if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>
-        view(id).places.some(p => name(p.word) === name(place.name))).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
+        view(id).places.some(p => placeName(p.word) === placeName(place.name))).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
       return placeViews.get(place.id);
     }
     function links(place, allowedIDs) {
@@ -584,7 +589,7 @@ globalThis.GhostMapPlaceReview={
             // A crossing from another location in the chapter is NOT a route
             // from the currently selected birthplace or mentioned location.
             return {...e, chapter_id: c.chapter_id, chapter: c.chapter, review: {...review,
-              kind: review.kind === 'crossing' && name(review.origin_place) !== name(place.name) ? 'mention' : review.kind}};
+              kind: review.kind === 'crossing' && placeName(review.origin_place) !== placeName(place.name) ? 'mention' : review.kind}};
           }));
     }
     function activeEvidence(allowedIDs) {
@@ -652,7 +657,7 @@ globalThis.GhostMapPlaceReview={
         overrides.set(id, valid); views.delete(id); placeViews.clear(); geographicCache=null;
       },
       reset: id => { overrides.delete(id); views.delete(id); placeViews.clear(); geographicCache=null; }, hasEdit: id => overrides.has(id),
-      ids: [...chapters.keys()], name, simplify};
+      ids: [...chapters.keys()], name, placeName, simplify};
   }
   function mergeDocuments(base, ancestor, local, remote) {
     const normalized = doc => { const m = create(base); if (doc) m.importDocument(doc); return m.document(); };

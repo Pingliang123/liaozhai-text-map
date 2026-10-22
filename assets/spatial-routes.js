@@ -22,12 +22,13 @@ function normalize(steps){
  return out;
 }
 function endpoint(label,binding,places,model={name:s=>s,simplify:s=>s}){
- if(binding)return places.find(p=>p.id===binding)||null;
- const term=model.name(model.simplify(String(label||'').trim()));
- const exact=places.filter(p=>model.name(p.name)===term);
+ if(binding)return places.find(p=>p.id===binding||p.merged_ids?.includes(binding))||null;
+ const normalize=model.placeName||model.name;
+ const term=normalize(model.simplify(String(label||'').trim()));
+ const exact=places.filter(p=>normalize(p.name)===term);
  if(exact.length===1)return {...exact[0],route_binding:'exact'};
- const candidates=places.filter(p=>{const word=model.name(p.name),suffix=term.slice(word.length);return word.length>=2&&term.startsWith(word)&&!/^(?:至|去|往|赴|离|出|自)/.test(suffix)&&/^(?:逆旅|野外|界|之|府|县|城|家|宅|村|北郭|南郭|东郭|西郭|境内|故里|寓所|客店|旅舍|官署|寺|庙|山中|城外|城中|（|\(|[\p{Script=Han}]{1,4}(?:家|宅))/u.test(suffix);}).sort((a,b)=>b.name.length-a.name.length);
- return candidates.length&&(!candidates[1]||candidates[0].name.length>candidates[1].name.length)?{...candidates[0],route_binding:'region'}:null;
+ const candidates=places.flatMap(p=>(p.merged_names||[p.name]).map(raw=>({p,word:model.name(raw)}))).filter(({word})=>{const suffix=model.name(model.simplify(String(label||'').trim())).slice(word.length);return word.length>=2&&model.name(model.simplify(String(label||'').trim())).startsWith(word)&&!/^(?:至|去|往|赴|离|出|自)/.test(suffix)&&/^(?:逆旅|野外|界|之|府|县|城|家|宅|村|北郭|南郭|东郭|西郭|境内|故里|寓所|客店|旅舍|官署|寺|庙|山中|城外|城中|（|\(|[\p{Script=Han}]{1,4}(?:家|宅))/u.test(suffix);}).sort((a,b)=>b.word.length-a.word.length);
+ return candidates.length&&(!candidates[1]||candidates[0].word.length>candidates[1].word.length||candidates[0].p.id===candidates[1].p.id)?{...candidates[0].p,route_binding:'region'}:null;
 }
 function project(chapter,places,model){
  const units=chapter.source_units||chapter.units||[],source=compact(units.map(u=>u.text||u.original||'').join(''));

@@ -9,7 +9,7 @@ function build(chapters){
  const placeLabels=base.placesAll.nodes.map(n=>n.label);
  for(const c of chapters){
   const chapter='chapter:'+c.id;put({id:chapter,label:'《'+c.title+'》',kind:'chapter'});
-  const present=new Set(c.units.flatMap(u=>P.hits(u.text,c.places).map(h=>'place:'+h.word)).filter(id=>placeIds.has(id)));
+  const present=new Set(c.units.flatMap(u=>P.hits(u.text,c.places).map(h=>'place:'+(c.place_aliases?.[h.word]||h.word))).filter(id=>placeIds.has(id)));
   for(const id of present)incidence.push({source:chapter,target:id,weight:1,relation:'chapter-place',directed:false,evidence:[{chapter:c.title,chapterId:c.id,actors:[],text:c.units.filter(u=>P.hits(u.text,c.places).some(h=>'place:'+h.word===id)).map(u=>u.text).join('\n'),basis:'篇目提及地点'}]});
   const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
   for(const [index,raw]of (c.route_steps||P.uniqueSteps(c.steps)).entries()){

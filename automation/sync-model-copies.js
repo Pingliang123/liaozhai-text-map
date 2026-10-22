@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs');
+const model=fs.readFileSync('automation/ghost_map_model.js','utf8');
+fs.writeFileSync('auth-backend/model.cjs',model);
+let html=fs.readFileSync('index.html','utf8');
+const start=html.indexOf('(function (root) {'),end=html.indexOf('})(globalThis);',start);
+if(start<0||end<0)throw Error('Missing inline model');
+html=html.slice(0,start)+model.trim()+html.slice(end+'})(globalThis);'.length);
+fs.writeFileSync('index.html',html);
+console.log('Synchronized model without changing correction policies');

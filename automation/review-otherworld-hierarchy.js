@@ -42,7 +42,7 @@ const excluded=[
 const extraTerms=['冥中','九幽','刀山','剑树','刀山狱','奈河','望乡台','思乡地','给孤园','黑暗狱','十八狱','天门','王母宫','天河','洞府','神仙岛','安期岛','卧眉','毒龙国','火云洞','子母河','瑶台','天庭','桃源','龙宫','冥府','冥界','冥司','幽冥','地府','阴曹','阴司','阴世','阴间','酆都','地狱','天界','天宫','九天','瑶池','广寒宫','仙界','仙境','蓬莱','瀛洲','罗刹国','罗刹海市','水府','仙人岛','洞天','福地','佛国','灵山','南天门','灵霄殿','月宫','水晶宫','海中市','海市'];
 const aliases=[['汉水','汉江'],['滕','滕邑'],['沂','沂州'],['莱城','莱州'],['徐州','彭城'],['武夷','武夷山'],['辽城','辽阳'],['中州境','中州'],['吴江府','吴江'],['中华','中国']];
 function audit(base,doc){
- const m=M.create(base);m.importDocument(doc);const ps=m.places(),byId=new Map(ps.map(p=>[p.id,p]));
+ const m=M.create(base);m.importDocument(doc);const ps=m.places(),byId=new Map(ps.flatMap(p=>(p.merged_ids||[p.id]).map(id=>[id,p])));
  const cycles=[],dangling=[],sameLevel=[],missing=[],conflicts=[];
  for(const p of ps){
   if(!p.parent_id){if(!['province','region'].includes(p.admin_level))missing.push({word:p.name,level:p.admin_level});continue;}

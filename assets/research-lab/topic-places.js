@@ -3,8 +3,8 @@ function group(data,name,aggregate=false,ids=null){const p=data.places.find(p=>p
 function distance(a,b){const kl=(x,m)=>x.reduce((s,v,i)=>s+(v>0?v*Math.log2(v/m[i]):0),0),m=a.map((v,i)=>(v+b[i])/2);return Math.sqrt(Math.max(0,(kl(a,m)+kl(b,m))/2));}
 function currentMembership(data,chapters,records){
  const current=new Map(chapters.map(c=>[c.id,c]));
- const documents=data.documents.map(d=>({...d,places:current.get(d.id)?.places||d.places}));
- const names=new Set([...Object.keys(records),...chapters.flatMap(c=>c.places||[])]);
+ const documents=data.documents.map(d=>{const c=current.get(d.id);return {...d,places:c?[...new Set(c.places.map(w=>c.place_aliases?.[w]||w))]:d.places};});
+ const names=new Set([...Object.values(records).map(r=>r.canonical||r.name),...documents.flatMap(d=>d.places)]);
  const places=[...names].map(name=>{const r=records[name],descendants=new Set([r?.id].filter(Boolean));let changed=true;while(changed){changed=false;for(const p of Object.values(records))if(p.parent&&descendants.has(p.parent)&&!descendants.has(p.id)){descendants.add(p.id);changed=true;}}
   const words=new Set([name,...Object.entries(records).filter(([,p])=>descendants.has(p.id)).map(([word])=>word)]);
   return {id:r?.id||name,name,chapter_ids:documents.filter(d=>d.places.includes(name)).map(d=>d.id),aggregate_ids:documents.filter(d=>d.places.some(w=>words.has(w))).map(d=>d.id)};

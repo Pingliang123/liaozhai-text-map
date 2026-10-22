@@ -5,7 +5,7 @@ function build(chapters){const nodes=new Map(),edges=[];const put=(id,label,kind
    const id=put(kind+':'+(kind==='person'?c.id+':':'')+word,word,kind,kind==='person'?c.title:undefined);
    const hits=c.units.filter(u=>u.text.includes(word)),hit=hits[0];edges.push({source:chapter,target:id,kind:'chapter-annotation',weight:Math.max(1,hits.length),evidence:hits.map(u=>({chapter:c.title,unit:u.id,text:u.text})),chapter:c.title});nodes.get(chapter).degree++;nodes.get(id).degree++;
   }
- }return {nodes:[...nodes.values()],edges};}
+ }const graph={nodes:[...nodes.values()],edges},aliases=Object.assign({},...chapters.map(c=>c.place_aliases||{}));return Object.entries(aliases).some(([a,b])=>a!==b)?(typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges).graph(graph,aliases):graph;}
 function neighborhood(graph,focus,limit=60){const byId=new Map(graph.nodes.map(n=>[n.id,n])),adj=new Map(graph.nodes.map(n=>[n.id,[]]));for(const e of graph.edges){adj.get(e.source).push(e.target);adj.get(e.target).push(e.source);}const chosen=new Set();let frontier=byId.has(focus)?[focus]:[];
  while(frontier.length&&chosen.size<limit){const next=[];for(const id of frontier){if(chosen.has(id))continue;if(chosen.size>=limit)break;chosen.add(id);next.push(...adj.get(id));}frontier=[...new Set(next)].filter(id=>!chosen.has(id)).sort((a,b)=>byId.get(b).degree-byId.get(a).degree||a.localeCompare(b));}
  return {nodes:graph.nodes.filter(n=>chosen.has(n.id)),edges:graph.edges.filter(e=>chosen.has(e.source)&&chosen.has(e.target)),neighbors:adj.get(focus)||[]};}

@@ -12,7 +12,7 @@ function build(chapters,mode='chapter',times={}){
  const nodes=new Map(),edges=new Map();let skipped=0;
  for(const c of chapters)for(const [i,s]of c.steps.entries()){
   if(s.kind!=='movement')continue;if(!s.from||!s.to||/未明|不详|未知|待核|未定/.test(s.from+s.to)){skipped++;continue;}
-  const endpoint=word=>{const kind=c.places.includes(word)?'place':'space',scoped=!c.places.includes(word)&&!c.spaces.includes(word),id=scoped?'setting:'+c.id+':'+word:kind+':'+word;if(!nodes.has(id))nodes.set(id,{id,label:word,kind,chapter:scoped?c.title:undefined,degree:0});return id;};
+  const endpoint=word=>{const kind=c.places.includes(word)?'place':'space',scoped=!c.places.includes(word)&&!c.spaces.includes(word),id=scoped?'setting:'+c.id+':'+word:kind+':'+(kind==='place'?(c.place_aliases?.[word]||word):word);if(!nodes.has(id))nodes.set(id,{id,label:kind==='place'?(c.place_aliases?.[word]||word):word,kind,chapter:scoped?c.title:undefined,degree:0});return id;};
   const source=endpoint(s.from),target=endpoint(s.to),key=JSON.stringify([source,target]);if(!edges.has(key))edges.set(key,{source,target,weight:0,directed:true,relation:'movement',chapter:'人物移动',evidence:[]});const e=edges.get(key);e.weight++;e.evidence.push({chapter:c.title,chapterId:c.id,unit:s.unit,step:i,actors:s.actors?[s.actors]:[],text:s.quote||'',basis:'已有移动步骤标注',evidenceId:c.id+':step:'+i+':'+source+':'+target});
  }
  for(const e of edges.values()){nodes.get(e.source).degree++;nodes.get(e.target).degree++;}return {nodes:[...nodes.values()],edges:[...edges.values()],mode,skipped};

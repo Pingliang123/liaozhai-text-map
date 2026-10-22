@@ -1,0 +1,580 @@
+{
+  "date": "2026-10-22",
+  "policy": "同一地理实体的文本异名合并显示；原文词表、分词、人工修订及原定位记录保留。",
+  "groups": [
+    {
+      "canonical": "淄川",
+      "aliases": [
+        "淄邑",
+        "淄"
+      ],
+      "evidence": [
+        {
+          "word": "淄邑",
+          "chapter": "蛇人",
+          "chapter_id": 16,
+          "excerpts": [
+            "一日，至淄邑东山间，饲以美饵，祝而纵之。"
+          ]
+        },
+        {
+          "word": "淄邑",
+          "chapter": "古瓶",
+          "chapter_id": 461,
+          "excerpts": [
+            "淄邑北村井涸，村人甲、乙缒入淘之。"
+          ]
+        },
+        {
+          "word": "淄邑",
+          "chapter": "周生",
+          "chapter_id": 467,
+          "excerpts": [
+            "周主者，淄邑之幕客。"
+          ]
+        },
+        {
+          "word": "淄邑",
+          "chapter": "太原狱",
+          "chapter_id": 481,
+          "excerpts": [
+            "时淄邑孙进士柳下令临晋，推折狱才，遂下其案于临晋。"
+          ]
+        },
+        {
+          "word": "淄",
+          "chapter": "刘姓",
+          "chapter_id": 254,
+          "excerpts": [
+            "后去淄居沂，习气不除，乡人咸畏恶之。",
+            "刘时在淄，为主捕隶。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "泰山",
+      "aliases": [
+        "太山",
+        "岱"
+      ],
+      "evidence": [
+        {
+          "word": "太山",
+          "chapter": "胡四姐",
+          "chapter_id": 61,
+          "excerpts": [
+            "尚生，太山人。"
+          ]
+        },
+        {
+          "word": "太山",
+          "chapter": "小二",
+          "chapter_id": 107,
+          "excerpts": [
+            "太山帝君会诸冥曹，造暴客恶箓，须银灯千架，架计重十两；"
+          ]
+        },
+        {
+          "word": "太山",
+          "chapter": "王货郎",
+          "chapter_id": 384,
+          "excerpts": [
+            "」但引手招之，不觉从去，尽夜狂奔，至太山下。"
+          ]
+        },
+        {
+          "word": "岱",
+          "chapter": "柳氏子",
+          "chapter_id": 197,
+          "excerpts": [
+            "后三四年，村人以香社登岱。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "华山",
+      "aliases": [
+        "太华",
+        "华岳",
+        "西岳"
+      ],
+      "evidence": [
+        {
+          "word": "太华",
+          "chapter": "辛十四娘",
+          "chapter_id": 151,
+          "excerpts": [
+            "后苍头至太华、遇十四娘，乘青骡，婢子跨蹇以从，问：「冯郎安否？"
+          ]
+        },
+        {
+          "word": "华岳",
+          "chapter": "花姑子",
+          "chapter_id": 181,
+          "excerpts": [
+            "暮归，路经华岳，迷窜山谷中。"
+          ]
+        },
+        {
+          "word": "西岳",
+          "chapter": "陆判",
+          "chapter_id": 46,
+          "excerpts": [
+            "奉命祭西岳，道经华阴，忽有舆从羽葆，驰冲卤簿。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "扬州",
+      "aliases": [
+        "广陵"
+      ],
+      "evidence": [
+        {
+          "word": "广陵",
+          "chapter": "庚娘",
+          "chapter_id": 108,
+          "excerpts": [
+            "途遇少年，亦偕妻以逃者，自言广陵王十八，愿为前驱。",
+            "既葬，金怀刃托钵，将赴广陵。",
+            "前言广陵者，诈也。"
+          ]
+        },
+        {
+          "word": "广陵",
+          "chapter": "彭海秋",
+          "chapter_id": 203,
+          "excerpts": [
+            "客曰：「小生广陵人，与君同姓，字海秋。",
+            "公子云：「此娼女，广陵第一人。"
+          ]
+        },
+        {
+          "word": "广陵",
+          "chapter": "嫦娥",
+          "chapter_id": 312,
+          "excerpts": [
+            "太原宗子美，从父游学，流寓广陵。"
+          ]
+        },
+        {
+          "word": "广陵",
+          "chapter": "薛慰娘",
+          "chapter_id": 463,
+          "excerpts": [
+            "适有宦者，任满赴都，遣觅美妾，凡历数家，无当意者，将为扁舟诣广陵。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "开封",
+      "aliases": [
+        "汴梁",
+        "汴城",
+        "汴"
+      ],
+      "evidence": [
+        {
+          "word": "汴梁",
+          "chapter": "狐妾",
+          "chapter_id": 117,
+          "excerpts": [
+            "向结伴至汴梁，其城为河伯占据，库藏皆没水中，入水各得些须，何能饱无餍之求？"
+          ]
+        },
+        {
+          "word": "汴城",
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "excerpts": [
+            "」问其姓名，曰：「吾汴城北村玄帝观王赤城也。",
+            "心怀怨愤，无之可伸，思欲之汴城寻赤城，而家有老父，病废已久，日夜筹思，莫决进止。"
+          ]
+        },
+        {
+          "word": "汴",
+          "chapter": "长亭",
+          "chapter_id": 394,
+          "excerpts": [
+            "」问其姓名，曰：「吾汴城北村玄帝观王赤城也。",
+            "心怀怨愤，无之可伸，思欲之汴城寻赤城，而家有老父，病废已久，日夜筹思，莫决进止。",
+            "石乃即刻治任如汴，询至玄帝观，则赤城归未久。",
+            "」曰：「父以君在汴曾相戏弄，未能忘怀，言之絮絮；"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "苏州",
+      "aliases": [
+        "吴门"
+      ],
+      "evidence": [
+        {
+          "word": "吴门",
+          "chapter": "吴门画工",
+          "chapter_id": 223,
+          "excerpts": [
+            "吴门画工某，忘其名。"
+          ]
+        },
+        {
+          "word": "吴门",
+          "chapter": "晚霞",
+          "chapter_id": 416,
+          "excerpts": [
+            "吴门则载美妓，较不同耳。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "山西",
+      "aliases": [
+        "山右"
+      ],
+      "evidence": [
+        {
+          "word": "山右",
+          "chapter": "青娥",
+          "chapter_id": 266,
+          "excerpts": [
+            "仲仙喜曰：「弟赴都时，父嘱文场中如逢山右霍姓者，吾族也，宜与款接，今果然矣。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "广东",
+      "aliases": [
+        "粤",
+        "东粤"
+      ],
+      "evidence": [
+        {
+          "word": "粤",
+          "chapter": "连琐",
+          "chapter_id": 96,
+          "excerpts": [
+            "刀实妾父出使粤中，百金购之。"
+          ]
+        },
+        {
+          "word": "粤",
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "excerpts": [
+            "有表兄为粤司李，玉往省之，久不归。",
+            "玉自东粤归，闻乱，兼程进。"
+          ]
+        },
+        {
+          "word": "粤",
+          "chapter": "象",
+          "chapter_id": 308,
+          "excerpts": [
+            "粤中有猎兽者，挟矢如山。"
+          ]
+        },
+        {
+          "word": "东粤",
+          "chapter": "阿英",
+          "chapter_id": 262,
+          "excerpts": [
+            "玉自东粤归，闻乱，兼程进。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "广西",
+      "aliases": [
+        "粤西"
+      ],
+      "evidence": [
+        {
+          "word": "粤西",
+          "chapter": "阿宝",
+          "chapter_id": 69,
+          "excerpts": [
+            "粤西孙子楚，名士也。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "陕西",
+      "aliases": [
+        "陕",
+        "陕右"
+      ],
+      "evidence": [
+        {
+          "word": "陕",
+          "chapter": "宫梦弼",
+          "chapter_id": 109,
+          "excerpts": [
+            "惟一客宫梦弼，陕人，生平无所乞请。"
+          ]
+        },
+        {
+          "word": "陕",
+          "chapter": "任秀",
+          "chapter_id": 415,
+          "excerpts": [
+            "竭赀赴陕。",
+            "至陕，任病不起，申善视之。",
+            "秀至陕时，亦颇闻其姓字；"
+          ]
+        },
+        {
+          "word": "陕右",
+          "chapter": "某公",
+          "chapter_id": 64,
+          "excerpts": [
+            "陕右某公，辛丑进士，能记前身。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "胶州",
+      "aliases": [
+        "胶"
+      ],
+      "evidence": [
+        {
+          "word": "胶",
+          "chapter": "海公子",
+          "chapter_id": 51,
+          "excerpts": [
+            "」曰：「我胶娼也。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "招远县",
+      "aliases": [
+        "招远"
+      ],
+      "evidence": [
+        {
+          "word": "招远",
+          "chapter": "鲁公女",
+          "chapter_id": 83,
+          "excerpts": [
+            "招远张于旦，性疏狂不羁。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "汉江",
+      "aliases": [
+        "汉水"
+      ],
+      "evidence": [
+        {
+          "word": "汉水",
+          "chapter": "竹青",
+          "chapter_id": 429,
+          "excerpts": [
+            "归家数月，苦忆汉水，因潜出黑衣著之。",
+            "两胁生翼，翕然凌空，经两时许，已达汉水。",
+            "三日后，汉水神女皆登堂，以服食珍物相贺。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "武夷山",
+      "aliases": [
+        "武夷"
+      ],
+      "evidence": [
+        {
+          "word": "武夷",
+          "chapter": "陈锡九",
+          "chapter_id": 334,
+          "excerpts": [
+            "昨夕忽归，曰：「我在武夷，迟归二日，难为保儿矣。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "长清",
+      "aliases": [
+        "长清县"
+      ],
+      "evidence": [
+        {
+          "word": "长清县",
+          "chapter": "长清僧",
+          "chapter_id": 15,
+          "excerpts": [
+            "惟问：「山东长清县，知之否？"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "历城",
+      "aliases": [
+        "历城县"
+      ],
+      "evidence": [
+        {
+          "word": "历城县",
+          "chapter": "鬼隶",
+          "chapter_id": 441,
+          "excerpts": [
+            "历城县二隶，奉邑令韩承宣命，营干他郡，岁暮方归。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "滕邑",
+      "aliases": [
+        "滕"
+      ],
+      "evidence": [
+        {
+          "word": "滕",
+          "chapter": "白莲教",
+          "chapter_id": 218,
+          "excerpts": [
+            "不数月，聚党以万计，滕、峄一带，望风而靡。"
+          ]
+        },
+        {
+          "word": "滕",
+          "chapter": "盗户",
+          "chapter_id": 315,
+          "excerpts": [
+            "顺治间，滕、峄之区，十人而七盗，官不敢捕。"
+          ]
+        },
+        {
+          "word": "滕",
+          "chapter": "邢子仪",
+          "chapter_id": 328,
+          "excerpts": [
+            "滕有杨某，从白莲教党，得左道之术。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "辽阳",
+      "aliases": [
+        "辽城"
+      ],
+      "evidence": [
+        {
+          "word": "辽城",
+          "chapter": "辽阳军",
+          "chapter_id": 341,
+          "excerpts": [
+            "会辽城陷，为乱兵所杀；",
+            "设辽城无恙，然后受刑未晚也。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "莱州",
+      "aliases": [
+        "莱郡"
+      ],
+      "evidence": [
+        {
+          "word": "莱郡",
+          "chapter": "于子游",
+          "chapter_id": 433,
+          "excerpts": [
+            "康熙初年，莱郡潮出大鱼，鸣号数日，其声如牛。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "酆都县",
+      "aliases": [
+        "酆都"
+      ],
+      "evidence": [
+        {
+          "word": "酆都",
+          "chapter": "酆都御史",
+          "chapter_id": 140,
+          "excerpts": [
+            "酆都县外有洞，深不可测，相传阎罗署。",
+            "明有御史行台华公，按临酆都，闻之不以为信，欲入洞以决其惑，众云不可。"
+          ]
+        }
+      ]
+    },
+    {
+      "canonical": "顺天",
+      "aliases": [
+        "顺天府"
+      ],
+      "evidence": [
+        {
+          "word": "顺天府",
+          "chapter": "三生",
+          "chapter_id": 393,
+          "excerpts": [
+            "某生于北顺天府市肆中。"
+          ]
+        }
+      ]
+    }
+  ],
+  "retained_separate": [
+    [
+      "千佛山",
+      "济南府"
+    ],
+    [
+      "蔡店",
+      "阳信"
+    ],
+    [
+      "历城",
+      "济南府"
+    ],
+    [
+      "京",
+      "都",
+      "顺天"
+    ],
+    [
+      "东岳",
+      "泰山"
+    ],
+    [
+      "蒙山",
+      "蒙阴"
+    ],
+    [
+      "秦中",
+      "陕西"
+    ],
+    [
+      "吴下",
+      "苏州"
+    ],
+    [
+      "粤东",
+      "广东"
+    ]
+  ]
+}

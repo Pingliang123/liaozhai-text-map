@@ -4,6 +4,10 @@ async function load(url='data-package.json',request=root.fetch.bind(root)){
  const bundle=await response.json();if(bundle.package_type!=='liaozhai-text-map'||bundle.package_version!==1||!Array.isArray(bundle.base?.chapter_overview)||!Array.isArray(bundle.revisions?.overrides))throw Error('总资料包格式不完整');
  return bundle;
 }
+function effectiveBase(published,local){
+ if(!local)return published;
+ return local.source_sha256===published.source_sha256?{...local,place_node_aliases:{...(local.place_node_aliases||{}),...(published.place_node_aliases||{})}}:local;
+}
 function retainMissing(local,published){
  if(local?.complete_snapshot===true||!Array.isArray(local?.overrides)||!Array.isArray(published?.overrides)||published.overrides.length<20||local.overrides.length>=published.overrides.length/2)return local;
  const ids=new Set(local.overrides.map(r=>r.chapter_id)),locations=new Map((published.place_locations||[]).map(r=>[r.name,r]));for(const row of local.place_locations||[])locations.set(row.name,row);
@@ -27,5 +31,5 @@ function signalSaved(env,key,backend){
   if(backend==='indexedDB')try{env.localStorage.removeItem(key);notify();}catch(_){}
  }
 }
-const api={load,retainMissing,readLocal,signalSaved};if(typeof module!=='undefined')module.exports=api;else root.GhostCorpusStore=api;
+const api={load,effectiveBase,retainMissing,readLocal,signalSaved};if(typeof module!=='undefined')module.exports=api;else root.GhostCorpusStore=api;
 })(globalThis);

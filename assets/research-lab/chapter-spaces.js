@@ -14,7 +14,8 @@ function build(chapter){
   const kind=s.transition_kind??s.kind,from=s.from_space??s.from,to=s.to_space??s.to;
   if(kind!=='movement'||!from||!to||!s.quote||!sourceText.includes(s.quote.replace(/\s/gu,'')))continue;
   const ids=[from,to].map(label=>{
-   const existing=[...nodes.values()].find(n=>n.label===label);
+   const canonical=chapter.place_aliases?.[label]||label;
+   const existing=[...nodes.values()].find(n=>n.label===canonical);
    if(existing)return existing.id;
    const id='scene:'+label;nodes.set(id,{id,label,kind:'space',degree:0,realm:P.otherworld.has(label)||/冥府|地府|阴司|龙宫|幻境/.test(label)?'otherworld':'human'});return id;
   });
@@ -29,7 +30,7 @@ function mount(container,chapters,options={}){
  const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
  const label=el('label','篇目 '),pick=el('select'),out=el('div');pick.setAttribute('aria-label','选择篇目查看空间网络');
  for(const c of chapters){const o=el('option',c.title);o.value=String(c.id);pick.append(o);}
- const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter')||params.get('scene'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.includes(place));if(c)pick.value=String(c.id);}
+ const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter')||params.get('scene'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===place));if(c)pick.value=String(c.id);}
  label.append(pick);container.append(label,out);
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
