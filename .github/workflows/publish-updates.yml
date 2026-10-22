@@ -1,3 +1,5 @@
+
+          node automation/test-spatial-route-consistency.js
 name: Validate revisions and publish map
 on:
   push:

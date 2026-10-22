@@ -12,7 +12,8 @@ function build(chapters){
   const present=new Set(c.units.flatMap(u=>P.hits(u.text,c.places).map(h=>'place:'+h.word)).filter(id=>placeIds.has(id)));
   for(const id of present)incidence.push({source:chapter,target:id,weight:1,relation:'chapter-place',directed:false,evidence:[{chapter:c.title,chapterId:c.id,actors:[],text:c.units.filter(u=>P.hits(u.text,c.places).some(h=>'place:'+h.word===id)).map(u=>u.text).join('\n'),basis:'篇目提及地点'}]});
   const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
-  for(const [index,s]of P.uniqueSteps(c.steps).entries()){
+  for(const [index,raw]of (c.route_steps||P.uniqueSteps(c.steps)).entries()){
+   const s=c.route_steps?{...raw,from:raw.from_space,to:raw.to_space,kind:raw.transition_kind,realm:raw.space_realm,access:raw.space_access}:raw;
    if(!s.quote||!source.includes(s.quote.replace(/\s/gu,''))){unresolved.push({chapter:c.title,index,reason:'缺少可核对引句'});continue;}
    const actors=Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean);
    const people=actors.map(word=>({word,types:(c.people||[]).find(p=>p.word===word)?.types||[]}));
@@ -20,9 +21,11 @@ function build(chapters){
    records.push(record);
    if(s.kind!=='movement'||!s.from||!s.to)continue;
    const resolve=text=>P.hits(text,placeLabels);
-   const a=resolve(s.from),b=resolve(s.to);
+   const a=c.route_steps?(raw.from?[{word:raw.from.name}]:[]):resolve(s.from),b=c.route_steps?(raw.to?[{word:raw.to.name}]:[]):resolve(s.to);
    if(a.length!==1||b.length!==1){unresolved.push({...record,reason:'移动端点尚不能唯一对应地名'});continue;}
    const from='place:'+a[0].word,to='place:'+b[0].word,key=JSON.stringify([from,to]);
+   if(from===to)continue;
+   for(const [id,label]of [[from,a[0].word],[to,b[0].word]])put({id,label,kind:'place'});
    if(!ties.has(key))ties.set(key,{source:from,target:to,weight:0,directed:true,relation:'movement',evidence:[]});
    const e=ties.get(key);e.evidence.push(record);e.weight++;
   }

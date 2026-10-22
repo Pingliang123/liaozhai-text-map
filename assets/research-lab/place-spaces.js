@@ -8,18 +8,12 @@ const otherworld=new Set(['冥府','冥司','冥界','阴司','阴曹','阴世',
 function uncertainScene(text){return /追述|忆及|昔年|闻说|听说|梦见|梦中|尝闻|传闻|据说|欲往|欲赴|欲至|将往|将赴|拟往|未至|未到|不至|不到|[曰云言道][：:]*[“「]/.test(text);}
 function evidenceKey(chapterId,source,target,anchorText,text){return JSON.stringify([chapterId,source,target,anchorText,text]);}
 function connectedGraph(graph,preserve=()=>false){const ids=new Set(graph.edges.flatMap(e=>[e.source,e.target]));return {...graph,nodes:graph.nodes.filter(n=>ids.has(n.id)||preserve(n))};}
-function uniqueSteps(steps){
- const rows=[],groups=new Map(),compact=s=>(s||'').replace(/\s/gu,'');
- for(const [index,s] of (steps||[]).entries()){
-  const actors=(Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u)).map(x=>x.trim()).filter(Boolean).sort();
-  const key=JSON.stringify([s.unit,s.kind,s.from,s.to,actors,s.realm||'',s.access||'']);
-  const quote=compact(s.quote),matches=groups.get(key)||[];
-  const duplicate=s.kind==='movement'&&s.unit!=null&&quote?matches.find(row=>{const other=compact(row.quote);return other&&(quote.startsWith(other)||other.startsWith(quote));}):null;
-  if(duplicate){duplicate.source_indices.push(index);if(quote.length>compact(duplicate.quote).length)duplicate.quote=s.quote;continue;}
-  const row={...s,source_indices:[index]};rows.push(row);matches.push(row);groups.set(key,matches);
- }return rows;
+function uniqueSteps(steps){return (typeof module!=='undefined'?require('../spatial-routes'):root.GhostSpatialRoutes).normalize(steps);}
+function movementNotes(c){
+ const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');
+ const steps=c.route_steps?c.route_steps.map(s=>({...s,from:s.from_space,to:s.to_space,fromPlace:s.from?.name||null,toPlace:s.to?.name||null,kind:s.transition_kind})):uniqueSteps(c.steps);
+ return steps.filter(s=>s.kind==='movement'&&s.from&&s.to&&s.quote&&source.includes(s.quote.replace(/\s/gu,''))).map(s=>{const from=hits(s.from,c.places),to=hits(s.to,c.places);return {chapter:c.title,chapterId:c.id,unit:s.unit,source_indices:s.source_indices,from:s.from,to:s.to,fromPlace:c.route_steps?s.fromPlace:from.length===1?from[0].word:null,toPlace:c.route_steps?s.toPlace:to.length===1?to[0].word:null,actors:Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean),text:s.quote};});
 }
-function movementNotes(c){const source=c.units.map(u=>u.text).join('').replace(/\s/gu,'');return uniqueSteps(c.steps).filter(s=>s.kind==='movement'&&s.from&&s.to&&s.quote&&source.includes(s.quote.replace(/\s/gu,''))).map(s=>{const from=hits(s.from,c.places),to=hits(s.to,c.places);return {chapter:c.title,chapterId:c.id,unit:s.unit,source_indices:s.source_indices,from:s.from,to:s.to,fromPlace:from.length===1?from[0].word:null,toPlace:to.length===1?to[0].word:null,actors:Array.isArray(s.actors)?s.actors:(s.actors||'').split(/[、，,]/u).filter(Boolean),text:s.quote};});}
 function spaceView(graph,id,reverse,includeContext=false){const edges=graph.edges.map(e=>({...e,evidence:e.evidence.filter(r=>includeContext||r.assignment==='explicit')})).filter(e=>(reverse?e.target===id:e.source===id)&&e.evidence.length).map(e=>({...e,weight:new Set(e.evidence.map(r=>r.chapterId)).size}));const ids=new Set([id,...edges.flatMap(e=>[e.source,e.target])]);return {nodes:graph.nodes.filter(n=>ids.has(n.id)).map(n=>({...n,degree:edges.filter(e=>e.source===n.id||e.target===n.id).length})),edges,mode:'located-spaces'};}
 function build(chapters,options={}){
  const places=new Map(),pairs=new Map(),spaces=new Map(),otherworldSpaces=new Map(),pending=[];

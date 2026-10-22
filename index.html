@@ -79,6 +79,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </header>
 <main>
 
+<script src="assets/spatial-routes.js?v=c4f2efad054b"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -766,18 +767,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   'use strict';
   const COLORS=['#176bb0','#a33b22','#7042b8','#008477','#8b6200','#b32973'];
   const color = key => COLORS[[...String(key)].reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,0)%COLORS.length];
-  // Earlier close readings predate explicit transition fields. These exact
-  // quotations identify movement without supplying an unmentioned origin.
-  const LEGACY_MOVES = new Map([
-    ['公力疾乘马从去，路甚生疎，至一城郭，如王者都。',['路（具体地名未明）','陌生城郭']],
-    ['至安丘，遇雨，避身逆旅。',['出发地未明','安丘逆旅']],
-    ['马欣动，即刻治装，从客至金陵。',['家（具体地名未明）','金陵']],
-    ['于间壁开扉通南第，日过课其仆。',['马宅','南第']]
-  ]);
-  function movement(row) {
-    const route=LEGACY_MOVES.get(row.quote);
-    return row.transition_kind===undefined && route ? {...row,transition_kind:'movement',from_space:route[0],to_space:route[1]} : row;
-  }
+  function movement(row) { return GhostSpatialRoutes.normalize([row])[0]; }
   function actorLabels(text) {
     const labels=[], stack=[]; let label='';
     const closing={'（':'）','(':')','[':']','【':'】'};
@@ -816,29 +806,14 @@ section,details,#save-chapter{scroll-margin-top:90px}
       interpretation:row.space_function || row.interpretation || ''};
   }
   function endpoint(label, binding, places, model) {
-    if (binding) return places.find(p=>p.id===binding) || null;
-    const term=model.name(model.simplify((label || '').trim()));
-    // Never use a chapter's birthplace as a missing endpoint, or substring-match generic scenes.
-    const exact=places.filter(p=>model.name(p.name)===term);
-    if(exact.length===1) return {...exact[0],route_binding:'exact'};
-    const candidates=places.filter(p=>{
-      const word=model.name(p.name);
-      const suffix=term.slice(word.length);
-      return word.length>=2 && term.startsWith(word) && !/^(?:至|去|往|赴|离|出|自)/.test(suffix) && /^(?:府|县|城|家|宅|村|北郭|南郭|东郭|西郭|境内|故里|寓所|客店|旅舍|官署|寺|庙|山中|城外|城中|（|\(|[\p{Script=Han}]{1,4}(?:家|宅))/u.test(suffix);
-    }).sort((a,b)=>b.name.length-a.name.length);
-    if(candidates.length && (!candidates[1] || candidates[0].name.length>candidates[1].name.length)) return {...candidates[0],route_binding:'region'};
-    return null;
+    return GhostSpatialRoutes.endpoint(label,binding,places,model);
   }
   function rows(model,chapters,places) {
-    return chapters.flatMap(c=>(c.narrative_events || []).map((input,index)=>{
-      let row=movement(input);
-      let from=endpoint(row.from_space,row.from_place_id,places,model);
-      const to=endpoint(row.to_space,row.to_place_id,places,model);
-      // If a place occurs only once as “X人”, it establishes origin, not departure.
-      if(from && !row.from_place_id && row.quote?.includes(from.name+'人') && row.quote.split(from.name).length===2) {
-        row={...row,from_space:'出发地未明（'+from.name+'仅见籍贯）'};from=null;
-      }
-      return {...row,chapter_id:c.chapter_id,chapter:c.chapter,index,actorsList:actors(c,row),classification:space(row),from,to};
+    return chapters.flatMap(c=>GhostSpatialRoutes.normalize(c.narrative_events || []).map((input)=>{
+      const index=input.index;
+      const row=movement(input);
+      const projected=GhostSpatialRoutes.project({...c,narrative_events:[row]},places,model)[0];
+      return {...row,...projected,index,source_indices:input.source_indices,chapter_id:c.chapter_id,chapter:c.chapter,actorsList:actors(c,row),classification:space(row)};
     }));
   }
   function eventDates(row,base,place) {
@@ -2288,7 +2263,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const actor=$('movement-actor').value;
     try{if(typeof sessionStorage!=='undefined') sessionStorage.setItem(routeViewKey,JSON.stringify({chapter:state.chapter,place:state.place,scope:$('movement-scope').value,actor}));}catch(_){}
     movementRows=mode && mode!=='off' ? all.filter(r=>!actor || r.actorsList.some(a=>r.chapter_id+'|'+a===actor)) : [];
-    const moves=movementRows.filter(r=>r.transition_kind==='movement'),mapped=moves.filter(r=>r.from && r.to).length;
+    const moves=movementRows.filter(r=>r.transition_kind==='movement'),mapped=moves.filter(r=>r.source_valid && r.from && r.to && r.from.id!==r.to.id).length;
     const step=$('movement-step').value;
     $('movement-step').replaceChildren(...moves.map(r=>element('option',{value:r.chapter_id+':'+r.index},'《'+r.chapter+'》第'+(r.index+1)+'步 '+r.from_space+' → '+r.to_space)));
     $('movement-step').value=moves.some(r=>r.chapter_id+':'+r.index===step)?step:moves.length?moves[0].chapter_id+':'+moves[0].index:'';
@@ -2702,10 +2677,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
       const w=drawWidth()-20,y=state.height-108;
       movementDiagram.append(svg('rect',{x:10,y,width:w,height:100,rx:8,fill:'#fff',stroke:'#94aaa0',opacity:.96}));
-      movementDiagram.append(svg('text',{x:20,y:y+18,'font-size':12},'空间示意 · 《'+current.chapter+'》第'+(current.index+1)+'步'));
+      movementDiagram.append(svg('text',{x:20,y:y+18,'font-size':12},'空间示意 · 《'+current.chapter+'》第'+(current.index+1)+'步 · '+current.geographic_status));
       const summary=current.from_space+' → '+current.to_space;
       movementDiagram.append(svg('text',{x:20,y:y+43,'font-size':14},summary.slice(0,Math.max(15,Math.floor(w/14)))));
-      const caption=current.actorsList.join('、')+' · '+current.classification.access+' / '+current.classification.realm+'（待核）';
+      const caption=(current.from?.name||'未定位')+' → '+(current.to?.name||'未定位')+' · '+current.actorsList.join('、');
       movementDiagram.append(svg('text',{x:20,y:y+65,'font-size':12},caption.slice(0,Math.max(15,Math.floor(w/12)))));
       const view=svg('g',{role:'button',tabindex:0,'aria-label':'查看此步原文与空间解读','pointer-events':'all'});
       view.append(svg('rect',{x:18,y:y+72,width:170,height:23,rx:3,fill:'#e6eee8'}),svg('text',{x:24,y:y+88,'font-size':12},'查看此步原文与空间解读'));
@@ -2716,12 +2691,12 @@ section,details,#save-chapter{scroll-margin-top:90px}
         card.open=true;card.scrollIntoView({block:'start'});
       };view.addEventListener('click',open);view.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});movementDiagram.append(view);
     }
-    for(const [index,row] of movementRows.filter(r=>r.transition_kind==='movement' && r.from && r.to).entries()) {
+    for(const [index,row] of movementRows.filter(r=>r.transition_kind==='movement' && r.source_valid && r.from && r.to && r.from.id!==r.to.id).entries()) {
       const a=projection([row.from.lon,row.from.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const color=N.color(mode==='place'?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
       const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];
-      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : .75,'marker-end':'url(#movement-arrow)'});
+      const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:'M'+a.join(',')+' Q'+((a[0]+b[0])/2)+','+((a[1]+b[1])/2-12-(index%4)*6)+' '+b.join(','),fill:'none',stroke:color,'stroke-width':row===current?4.5:row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : current ? .3 : .75,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});
       line.append(svg('title',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 '+row.actorsList.join('、')+'：'+row.from_space+' → '+row.to_space+'；'+row.quote));movementLayer.append(line);
