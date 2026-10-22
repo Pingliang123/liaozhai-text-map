@@ -1000,30 +1000,31 @@ section,details,#save-chapter{scroll-margin-top:90px}
   const levelRank = p => ({province:1,region:1,prefecture:2,natural:2,county:3,town:4,village:5,unknown:6}[placeLevel(p)] || 6);
   const minimumZoom = p => ({province:1,region:1,prefecture:1.8,natural:1.8,county:3,town:5,village:7,unknown:5}[placeLevel(p)] || 5);
   function visiblePoints(points, transform, width, height, selected = null, options = {}) {
-    // Thin in screen space instead of moving historical locations across the
-    // map. Zooming separates the anchors naturally; selection always wins,
-    // including two textual names which share a coordinate.
+    // All in-view locations retain an anchor. Thin only the prominent symbols
+    // and labels; otherwise valid low-frequency places silently disappear.
     const budget = Math.max(6, Math.min(60, Math.floor(width * height / 14000)));
     const ranked = points.map(p => ({...p, anchor: screen(p.xy, transform)}))
-      .filter(p => p.id === selected || options.expandAll || p.min_zoom === undefined || transform.k >= minimumZoom(p))
       .filter(p => p.anchor.every(Number.isFinite) && p.anchor[0] >= 14 && p.anchor[1] >= 14 && p.anchor[0] <= width - 14 && p.anchor[1] <= height - 14)
       .sort((a, b) => Number(b.id === selected) - Number(a.id === selected) ||
         levelRank(a) - levelRank(b) ||
         (b.chapters?.length ?? b.chapter_ids?.length ?? 0) - (a.chapters?.length ?? a.chapter_ids?.length ?? 0) ||
         Number(a.mapping_source === 'historical_search_auto_promoted') - Number(b.mapping_source === 'historical_search_auto_promoted') ||
         String(a.id).localeCompare(String(b.id)));
-    const visible = [];
+    const prominent = [];
     for (const p of ranked) {
-      if (visible.length >= budget) break;
-      if (visible.some(q => Math.hypot(q.anchor[0] - p.anchor[0], q.anchor[1] - p.anchor[1]) < 38)) continue;
-      visible.push({...p, display: [...p.anchor]});
+      if (prominent.length >= budget) break;
+      if (!(p.id === selected || options.expandAll || p.min_zoom === undefined || transform.k >= minimumZoom(p))) continue;
+      if (prominent.some(q => Math.hypot(q.anchor[0] - p.anchor[0], q.anchor[1] - p.anchor[1]) < 38)) continue;
+      prominent.push(p);
     }
-    return visible;
+    const highlighted=new Set(prominent.map(p=>p.id));
+    return ranked.map(p=>({...p,display:[...p.anchor],prominent:highlighted.has(p.id)}));
   }
   function labels(points, width, height, selected) {
     const placed = [];
     const budget = Math.max(4, Math.min(24, Math.floor(width * height / 22000)));
-    for (const p of [...points].sort((a, b) => (b.id === selected) - (a.id === selected))) {
+    const candidates=points.filter(p=>p.prominent!==false || p.id===selected);
+    for (const p of candidates.sort((a, b) => (b.id === selected) - (a.id === selected))) {
       if (placed.length >= budget) break;
       const before=placed.length;
       const [x, y] = p.display, w = p.name.length * 13 + 2;
@@ -1031,11 +1032,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
       for (const [dx, dy] of [[gap,5],[-w-gap,5],[-w/2,-12],[-w/2,27],[gap,-10],[gap,25],[-w-gap,-10],[-w-gap,25]]) {
         const rect = [x + dx, y + dy - 13, w, 17];
         if (rect[0] < 2 || rect[1] < 2 || rect[0] + w > width || rect[1] + 17 > height) continue;
-        if (points.some(q => q.id !== p.id && q.display[0] > rect[0] - 13 && q.display[0] < rect[0] + w + 13 && q.display[1] > rect[1] - 13 && q.display[1] < rect[1] + 30)) continue;
+        if (candidates.some(q => q.id !== p.id && q.display[0] > rect[0] - 13 && q.display[0] < rect[0] + w + 13 && q.display[1] > rect[1] - 13 && q.display[1] < rect[1] + 30)) continue;
         if (placed.some(q => rect[0] < q.rect[0] + q.rect[2] + 3 && rect[0] + w + 3 > q.rect[0] && rect[1] < q.rect[1] + q.rect[3] + 2 && rect[1] + 17 + 2 > q.rect[1])) continue;
         const edge = [Math.max(rect[0],Math.min(x,rect[0]+w)), Math.max(rect[1],Math.min(y,rect[1]+17))];
         const distance = q => Math.hypot(q.display[0]-Math.max(rect[0],Math.min(q.display[0],rect[0]+w)),q.display[1]-Math.max(rect[1],Math.min(q.display[1],rect[1]+17)));
-        const ambiguous = points.some(q => q.id !== p.id && distance(q) <= distance(p)+6);
+        const ambiguous = candidates.some(q => q.id !== p.id && distance(q) <= distance(p)+6);
         const length = Math.hypot(edge[0]-x,edge[1]-y);
         placed.push({id:p.id,text:p.name,x:rect[0],y:rect[1]+13,rect,
           leader:ambiguous || length > 12 ? {from:p.display,to:edge} : null}); break;
@@ -1814,7 +1815,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
   }
   function currentPlaces() {
     return allPlaces().filter(matchesLayer)
-      .map(p => ({...p,chapters:filteredChapters(p)})).filter(p => p.chapters.length);
+      .map(p => {const chapters=filteredChapters(p);return {...p,chapters,context_chapters:chapters.length?[]:filteredChapters(p,true)};})
+      .filter(p => p.chapters.length || p.context_chapters.length);
   }
   function renderPlace() {
     const out = $('place-detail'); out.replaceChildren();
@@ -2539,7 +2541,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function refreshMapResults(){
     const places = currentPlaces().sort((a,b)=>G.levelRank(a)-G.levelRank(b) || a.name.localeCompare(b.name,'zh'));
     const symbols={province:'◇ ',settlement:'○ ',natural:'△ ',cultural:'□ ',ambiguous:'□ '};
-    $('place-select').replaceChildren(element('option', {value: ''}, '选择地点'), ...places.map(p => element('option', {value: p.id, 'data-place-name': p.name,'data-place-aliases':JSON.stringify(p.merged_names||[p.name])}, (symbols[p.scale_category] || '')+p.name + '〔'+(p.level_label || M.LEVELS[G.placeLevel(p)])+(p.location_audit?.status==='ambiguous'?'；同名待核':'')+'〕 · ' + p.chapters.length + ' 篇')));
+    $('place-select').replaceChildren(element('option', {value: ''}, '选择地点'), ...places.map(p => element('option', {value: p.id, 'data-place-name': p.name,'data-place-aliases':JSON.stringify(p.merged_names||[p.name])}, (symbols[p.scale_category] || '')+p.name + '〔'+(p.level_label || M.LEVELS[G.placeLevel(p)])+(p.location_audit?.status==='ambiguous'?'；同名待核':'')+'〕 · ' + p.chapters.length + ' 篇'+(p.context_chapters.length?'（下级 '+p.context_chapters.length+' 篇）':''))));
     $('place-select').value = state.place || '';
     const missing = unmappedPlaces().length;
     $('overview').replaceChildren(...[model.ids.length + ' 篇原文', allPlaces().length + ' 个地名参考点', missing + ' 个未定位地点词',
@@ -2586,8 +2588,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
   const routes = svg('g', {class: 'realm-link-layer', 'pointer-events': 'none'}), leaders = svg('g', {'pointer-events': 'none'}), labels = svg('g', {'pointer-events': 'none'}), points = svg('g', {class: 'point-layer'}), hubs = svg('g', {class: 'realm-hub'});
   const movementLayer=svg('g',{class:'movement-layer','clip-path':'url(#geo-clip)','pointer-events':'none'});
   const arrow=svg('marker',{id:'movement-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'});arrow.append(svg('path',{d:'M0,0 L10,5 L0,10 Z',fill:'#243d39'}));defs.append(arrow);
-  const movementDiagram=svg('g',{class:'movement-diagram',role:'group','aria-label':'篇内空间示意，非地理坐标'});
-  map.append(routes, movementLayer, leaders, labels, points, hubs,movementDiagram);
+  const movementDiagram=svg('svg',{class:'movement-diagram',role:'group','aria-label':'篇内空间示意，非地理坐标',viewBox:'0 0 700 108'});
+  movementDiagram.style.width='100%';movementDiagram.style.height='108px';
+  $('movement-controls').insertBefore(movementDiagram,$('movement-status'));
+  map.append(routes, movementLayer, leaders, labels, points, hubs);
   const drawWidth = () => Math.max(200, state.width - 96);
   const path = coords => coords.map((coord, i) => (i ? 'L' : 'M') + projection(coord).join(',')).join('');
   function drawBackground() {
@@ -2616,12 +2620,12 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const expandAll = Boolean($('place-layer').value || $('map-search').value.trim());
     const visible = G.visiblePoints(matched.map(p => ({...p, xy: projection([p.lon, p.lat])})), state.transform, drawWidth(), state.height, state.place,{expandAll});
     const scope = expandAll ? '显示所选层级／搜索结果。' : state.transform.k < 1.8 ? '总览：省域与文化区域。' : state.transform.k < 3 ? '展开至府／州与山川。' : state.transform.k < 5 ? '展开至县／散州。' : '展开至村镇与待核层级。';
-    message('map-count', scope+' 当前显示 ' + visible.length + ' 个地点，符合筛选的共 ' + matched.length + ' 个。搜索或选单可直接选择下级地点。' +
+    message('map-count', scope+' 图中 ' + visible.length + ' 个地点，其中 ' + visible.filter(p=>p.prominent).length + ' 处突出显示；小点可点击，放大查看名称。符合筛选的共 ' + matched.length + ' 个。' +
       ' 当前统计：'+(aggregatePlaces()?'含下级地点。':'直接提及篇目。'));
     const ids = new Set(visible.map(p => p.id));
     for (const [id, node] of pointNodes) if (!ids.has(id)) { node.remove(); pointNodes.delete(id); }
     leaders.replaceChildren();
-    for (const p of visible) {
+    for (const p of [...visible].sort((a,b)=>Number(a.prominent)-Number(b.prominent)||Number(a.id===state.place)-Number(b.id===state.place))) {
       let node = pointNodes.get(p.id);
       if (!node) {
         node = svg('g', {class: 'map-point', role: 'button', tabindex: '0'});
@@ -2637,15 +2641,17 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
       node.setAttribute('transform', 'translate(' + p.display.join(',') + ')');
       const types = M.EVENTS.filter(t => p.chapters.some(c => c.event_types[t] > 0));
-      node.setAttribute('aria-label', p.name + '，'+(p.level_label || M.LEVELS[G.placeLevel(p)])+(p.location_audit?.status==='ambiguous'?'，同名位置待核':'')+'，' + p.chapters.length + '篇，异事类型：' + (types.join('、') || '未标记'));
+      node.setAttribute('aria-label', p.name + '，'+(p.level_label || M.LEVELS[G.placeLevel(p)])+(p.location_audit?.status==='ambiguous'?'，同名位置待核':'')+'，' + p.chapters.length + '篇'+(p.context_chapters.length?'，仅下级关联'+p.context_chapters.length+'篇':'')+'，异事类型：' + (types.join('、') || '未标记'));
       node.setAttribute('aria-pressed', String(state.place === p.id)); node.querySelector('title').textContent = node.getAttribute('aria-label');
       node.querySelector('.core').setAttribute('fill', state.place === p.id ? '#152d29' : '#82998c');
-      node.querySelector('.core').setAttribute('r', G.levelRank(p) <= 2 ? 6 : G.levelRank(p) === 3 ? 4.5 : 3);
+      node.querySelector('.core').setAttribute('r', p.prominent ? G.levelRank(p) <= 2 ? 6 : G.levelRank(p) === 3 ? 4.5 : 3 : 2.5);
+      node.querySelector('.hit').setAttribute('r',p.prominent?13:5);
+      points.append(node);
       const symbol=node.querySelector('.scale-symbol'), category=p.scale_category || 'settlement';
       symbol.setAttribute('d',category==='province'?'M0,-5.5 L5.5,0 L0,5.5 L-5.5,0 Z':category==='natural'?'M0,-5.5 L5,3.5 L-5,3.5 Z':'M-4,-4 H4 V4 H-4 Z');
-      symbol.setAttribute('fill',state.place===p.id?'#152d29':'#82998c');symbol.style.display=category==='settlement'?'none':'';
-      node.querySelector('.core').style.display=category==='settlement'?'':'none';
-      for (const type of M.EVENTS) { const ring=node.querySelector('[data-type="' + type + '"]'); ring.style.display = types.includes(type) ? '' : 'none'; ring.style.opacity=state.place===p.id ? '1' : '.25'; }
+      symbol.setAttribute('fill',state.place===p.id?'#152d29':'#82998c');symbol.style.display=!p.prominent||category==='settlement'?'none':'';
+      node.querySelector('.core').style.display=!p.prominent||category==='settlement'?'':'none';
+      for (const type of M.EVENTS) { const ring=node.querySelector('[data-type="' + type + '"]'); ring.style.display = p.prominent&&types.includes(type) ? '' : 'none'; ring.style.opacity=state.place===p.id ? '1' : '.25'; }
       if (Math.hypot(p.anchor[0] - p.display[0], p.anchor[1] - p.display[1]) > 1) leaders.append(svg('line', {x1: p.anchor[0], y1: p.anchor[1], x2: p.display[0], y2: p.display[1], stroke: '#789485', 'stroke-width': 1}));
     }
     const placeLabels=$('show-labels').checked ? G.labels(visible,drawWidth(),state.height,state.place):[];
@@ -2671,6 +2677,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     movementDiagram.replaceChildren();
     const mode=movementMode();
     const current=movementRows.find(r=>r.chapter_id+':'+r.index===$('movement-step').value);
+    movementDiagram.style.display=current?'':'none';
     const routeAnnotations=[], namedEndpoints=new Set(placeLabels.map(l=>l.id));
     const addEndpoint=(place,xy,color,priority=2)=>{
       if(namedEndpoints.has(place.id)) return;
@@ -2682,7 +2689,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
         movementLayer.append(svg('circle',{cx:xy[0],cy:xy[1],r:7,fill:'#fff',stroke:N.color(current.chapter_id),'stroke-width':3}));
         addEndpoint(place,xy,N.color(current.chapter_id),3);
       }
-      const w=drawWidth()-20,y=state.height-108;
+      const w=680,y=4;
       movementDiagram.append(svg('rect',{x:10,y,width:w,height:100,rx:8,fill:'#fff',stroke:'#94aaa0',opacity:.96}));
       movementDiagram.append(svg('text',{x:20,y:y+18,'font-size':12},'空间示意 · 《'+current.chapter+'》第'+(current.index+1)+'步 · '+current.geographic_status));
       const summary=current.from_space+' → '+current.to_space;
@@ -2717,7 +2724,6 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     const obstacles=[...placeLabels.map(l=>l.rect),...visible.map(p=>[p.display[0]-9,p.display[1]-9,18,18]),[0,0,240,54]];
     for(const row of movementRows.filter(r=>r.transition_kind==='movement')) for(const place of [row.from,row.to].filter(Boolean)){const xy=G.screen(projection([place.lon,place.lat]),state.transform);obstacles.push([xy[0]-9,xy[1]-9,18,18]);}
-    if(current) obstacles.push([10,state.height-108,drawWidth()-20,100]);
     const routeLayout=G.routeLabels(routeAnnotations,drawWidth(),state.height,obstacles);
     const annotationLeaders=svg('g',{'pointer-events':'none'});movementLayer.append(annotationLeaders);
     for(const label of routeLayout){
