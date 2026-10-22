@@ -1076,7 +1076,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
           best={...item,lines,rect,x:left+6,y:top+16,edge,distance:Math.hypot(edge[0]-x,edge[1]-y)};break;
         }
       }
-      if(best){occupied.push(best.rect);placed.push(best);}
+      if(best&&best.distance<=80){occupied.push(best.rect);placed.push(best);}
     }
     return placed;
   }
@@ -2738,11 +2738,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const shown=new Set(routeLayout.map(label=>label.id));
     const overflow=routeAnnotations.filter(label=>!shown.has(label.id));
     const captionList=$('route-label-status');captionList.replaceChildren();
-    if(overflow.length) captionList.append(element('span',{},'其余标注：'));
+    const extraLabels=element('details');if(overflow.length){extraLabels.append(element('summary',{},'更多路线与端点（'+overflow.length+'）'));captionList.append(extraLabels);}
     for(const label of overflow) {
       const caption=label.lines ? label.lines.join(' · ') : label.text;
-      if(label.select) captionList.append(button(caption,label.select));
-      else captionList.append(element('span',{class:'chip'},caption));
+      if(label.select) extraLabels.append(button(caption,label.select));
+      else extraLabels.append(element('span',{class:'chip'},caption));
     }
     for (const realm of ['天界', '地界']) {
       const relevant = links.filter(e => e.realm === realm), [x, y] = anchors[realm], group = svg('g', {class: 'realm-hub', role: 'button', tabindex: 0, 'aria-label': '查看' + realm + '原文证据', transform: 'translate(' + x + ',' + y + ')'});
