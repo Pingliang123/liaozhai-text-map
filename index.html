@@ -79,7 +79,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </header>
 <main>
 
-<script src="assets/spatial-routes.js?v=9ded14719192"></script>
+<script src="assets/spatial-routes.js?v=83785ac4ebc2"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -2702,7 +2702,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       const a=projection([row.from.lon,row.from.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const b=projection([row.to.lon,row.to.lat]).map((v,i)=>v*state.transform.k+(i?state.transform.y:state.transform.x));
       const color=N.color((mode==='place'||mode==='book')?row.chapter_id:$('movement-actor').value || row.chapter_id+'|'+row.actorsList.join('、'));
-      const geometry=GhostSpatialRoutes.shape(a,b,index),control=geometry.control;
+      const geometry=GhostSpatialRoutes.shape(a,b,index,row.from.id===row.to.id),control=geometry.control;
       const line=svg('path',{class:'character-route',role:'button',tabindex:0,'aria-label':'《'+row.chapter+'》第'+(row.index+1)+'步 '+row.actorsList.join('、')+' '+row.from_space+'到'+row.to_space,'pointer-events':'stroke',d:geometry.d,fill:'none',stroke:color,'stroke-width':row===current?4.5:row.route_scope==='context'?1.8:2.8,'stroke-dasharray':row.route_scope==='context'?'7 5':'none','opacity':row===current ? 1 : current?.from&&current?.to ? .3 : .75,'marker-end':'url(#movement-arrow)'});
       const selectRoute=()=>{if(!suppressClick && chooseChapter(row.chapter_id)){$('movement-step').value=row.chapter_id+':'+row.index;paintMap();}};
       line.addEventListener('click',e=>{e.stopPropagation();selectRoute();});line.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRoute();}});

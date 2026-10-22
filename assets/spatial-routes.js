@@ -61,8 +61,7 @@ function project(chapter,places,model){
    geographic_status:!source_valid?'引句未核对':from&&to?(from.id===to.id?'同一地点内':'两端已定位'):from||to?'一端未定位':'两端未定位'};
  });
 }
-function shape(a,b,index=0){
- const local=Math.hypot(a[0]-b[0],a[1]-b[1])<1;
+function shape(a,b,index=0,local=a[0]===b[0]&&a[1]===b[1]){
  if(local){const r=30+(index%4)*8;return {local,d:'M'+[a[0]+6,a[1]].join(',')+' C'+[a[0]+r*2,a[1]-r*2,a[0]-r*2,a[1]-r*2,a[0]-6,a[1]].join(','),control:[a[0],a[1]-r*2],anchor:[a[0],a[1]-r*1.5]};}
  const control=[(a[0]+b[0])/2,(a[1]+b[1])/2-12-(index%4)*6];return {local,d:'M'+a.join(',')+' Q'+control.join(',')+' '+b.join(','),control,anchor:[(a[0]+2*control[0]+b[0])/4,(a[1]+2*control[1]+b[1])/4]};
 }

@@ -13,6 +13,7 @@ const birthplace=make('济南张生，好奇，喜游猎。');birthplace.narrati
 for(const [q,realm]of [['生乘风飞至街头。','人间'],['生自济南至金陵街头。','人间'],['生从寓所至街头。','异境'],['生从寓所至街头。','待核']])assert.equal(R.project(make(q,realm),points,model)[0].to,null,'不把远行或异境推为本地');
 const loop=R.shape([100,100],[100,100]);assert(loop.local&&loop.d.includes('C'));assert(!/NaN/.test(loop.d));assert.notEqual(loop.anchor[1],100);
 assert(!R.shape([0,0],[100,100]).local);
+assert(!R.shape([0,0],[0.1,0.1],0,false).local,'缩小后相邻地点不变成区域内移动');
 const pack=require('../data-package.json'),m=M.create(pack.base);m.importDocument(pack.revisions);const before=JSON.stringify(m.document()),moves=D.snapshot(m).flatMap(c=>c.route_steps.filter(r=>r.transition_kind==='movement'));
 assert(moves.filter(r=>r.source_valid&&r.from&&r.to&&r.from.id!==r.to.id).length>70,'补回漏识别的跨地点路线');
 assert(moves.filter(r=>r.source_valid&&r.from&&r.to&&r.from.id===r.to.id).length>7,'本地区域内移动可显示');

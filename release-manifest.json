@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 276448,
-      "sha256": "5f27f95ddc135117e1df3c045c49b61e1316221bfa9a0f4c1d546733c7e2606d"
+      "bytes": 276472,
+      "sha256": "5ddf5569022dce98ec7711ef84447da57e8c782cb9898feae259e87ea7df234b"
     },
     {
       "path": "assets/chapter-references.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 3913,
-      "sha256": "789cde37da5abb4d819209ef7230f77d78c6f6126da7b0b307c67fadee50f0d5"
+      "sha256": "c91fb85a523e789683b57991f500d23ad8e0a28868784dd37bfb710656504897"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -758,8 +758,8 @@
     },
     {
       "path": "assets/spatial-routes.js",
-      "bytes": 6823,
-      "sha256": "9ded14719192469db615bbc60a67a6cd6f4e2bb9a7e1789911abd7d3aac69499"
+      "bytes": 6806,
+      "sha256": "83785ac4ebc2d258d15d881a7a426a87bcc610f3c5b899aab521c79bf8176cbc"
     },
     {
       "path": "assets/place-node-merges.js",
@@ -800,8 +800,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 276448,
-      "sha256": "5f27f95ddc135117e1df3c045c49b61e1316221bfa9a0f4c1d546733c7e2606d"
+      "bytes": 276472,
+      "sha256": "5ddf5569022dce98ec7711ef84447da57e8c782cb9898feae259e87ea7df234b"
     },
     {
       "path": "manual-revisions.json",
@@ -810,8 +810,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 37802646,
-      "sha256": "e0822d49c8c1a7776e03eb9faae8eb62c5ffd3a4a3494a286175af68f59ac8a7"
+      "bytes": 37802640,
+      "sha256": "b2c2828836bd6b2402bb3d16c23b68d5dcae01ead798061d0215c9aa71e301f2"
     }
   ]
 }
