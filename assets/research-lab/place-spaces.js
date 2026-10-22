@@ -83,9 +83,17 @@ function mount(container,chapters,onExport,options={}){
  const first=el('section'),second=el('section');first.className=second.className='card';first.append(el('h2','一、全书地点网络'),el('p','同篇地点相连，线宽表示涉及篇数。'));second.append(el('h2','二、篇目空间网络'),el('p','选择篇目，查看地点、空间与异境。点线读原文。'));container.append(first,second);
 
  const allOut=el('div'),range=el('select');range.setAttribute('aria-label','地点网络范围');for(const [v,t]of [['located','已定位地点'],['unmapped','未定位地点＋异境'],['all','全部地点词']]){const o=el('option',t);o.value=v;range.append(o);}const savedRange=new URLSearchParams(root.location?.search||'').get('range');range.value=['located','unmapped','all'].includes(savedRange)?savedRange:'all';const rangeLabel=el('label','网络范围');rangeLabel.append(range);first.append(rangeLabel,allOut);
- const chapterUI=root.GhostChapterSpaces.mount(second,chapters,{placeRecords:options.placeRecords});
+ const viewMode=el('select');viewMode.setAttribute('aria-label','空间网络视图');for(const [v,t]of [['chapter','按篇目'],['place','按地点']]){const o=el('option',t);o.value=v;viewMode.append(o);}const viewLabel=el('label','空间网络 ');viewLabel.append(viewMode);second.append(viewLabel);
+ const chapterPanel=el('div'),placePanel=el('div');placePanel.hidden=true;second.append(chapterPanel,placePanel);
+ const chapterUI=root.GhostChapterSpaces.mount(chapterPanel,chapters,{placeRecords:options.placeRecords});
+ const placePick=el('select');placePick.setAttribute('aria-label','选择地点查看内部空间');
+ for(const n of graphs.spaces.nodes.filter(n=>n.kind==='place'&&graphs.spaces.edges.some(e=>e.source===n.id)).sort((a,b)=>a.label.localeCompare(b.label,'zh'))){const o=el('option',n.label);o.value=n.id;placePick.append(o);}
+ const placePlot=el('div');placePanel.append(placePick,el('p','线表示场景归属；点线查看原文。'),placePlot);
+ function drawPlaceSpaces(){placePlot.replaceChildren();if(!placePick.value){placePlot.append(el('p','当前范围没有具备归属证据的地点—空间关系。'));return;}const graph=spaceView(graphs.spaces,placePick.value,false,true);root.GhostBookNetwork.mount(placePlot,chapters,onExport,{graph,lexical:true,simple:true,readable:true,allowAll:true,chapterSpatial:true,realmColors:true,networkTitle:'地点与空间',relationLegend:'连线依据定位语句、场景延续或路径端点；以原文为准。'});}
+ placePick.onchange=drawPlaceSpaces;viewMode.onchange=()=>{chapterPanel.hidden=viewMode.value!=='chapter';placePanel.hidden=viewMode.value!=='place';second.children[0].textContent=viewMode.value==='place'?'二、地点与空间':'二、篇目空间网络';if(!placePanel.hidden)drawPlaceSpaces();};
+ if(new URLSearchParams(root.location?.search||'').get('spaceview')==='place'){viewMode.value='place';viewMode.onchange();}
  // Compatibility with place-linked bookmarks: choose the first matching chapter.
- const pick={set value(id){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===id.slice(6)));if(c)chapterUI.selectChapter(c.id);}};
+ const pick={set value(id){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===id.slice(6)));if(c)chapterUI.selectChapter(c.id);if([...placePick.children].some(o=>o.value===id)){placePick.value=id;if(viewMode.value==='place')drawPlaceSpaces();}}};
 
  let prepared=null,levels=options.placeRecords||{},levelsReady=!!options.placeRecords;
  const moves=el('details'),moveBody=el('div');moves.append(el('summary','人物移动与原文'),moveBody);first.append(moves);const notes=chapters.flatMap(movementNotes);

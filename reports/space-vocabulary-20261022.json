@@ -1,0 +1,3716 @@
+{
+  "checked_chapters": 491,
+  "changes": [
+    {
+      "chapter_id": 1,
+      "chapter": "耳中人",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 35,
+          "quote": "忽有邻人假物，扣门而呼，小人闻之，意张皇，绕屋而转，如鼠失窟。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 2,
+      "chapter": "尸变",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 45,
+          "quote": "」时翁有子妇新死，停尸室中，子出购材木未归。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 2,
+      "chapter": "尸变",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 58,
+          "quote": "觉出房去，即闻纸衾声。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 3,
+      "chapter": "喷水",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 110,
+          "quote": "东曦既上，家人毕集，叩门不应，方骇。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 4,
+      "chapter": "瞳人语",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 139,
+          "quote": "静匿房中，见有小人自生鼻内出，大不及豆，营营然竟出门去，渐远，遂迷所在，俄连臂归，飞上面，如蜂蚁之投穴者，如此二三日。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 5,
+      "chapter": "画壁",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 151,
+          "quote": "殿中塑志公像，两壁图绘精妙，人物如生，东壁画散花天女，内一垂髫者拈花微笑，樱唇欲动，眼波将流。"
+        },
+        {
+          "unit": 176,
+          "quote": "时孟龙潭在殿中，转瞬不见朱，疑以问僧，僧笑曰：「往听说法去矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 5,
+      "chapter": "画壁",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 174,
+          "quote": "俄闻靴声至房内，复出，未几，烦喧渐远，心稍安，然户外辄有往来语论者。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 10,
+      "chapter": "宅妖",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 306,
+          "quote": "馆中人闻声毕集，堂中人物杳然矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 11,
+      "chapter": "王六郎",
+      "word": "祠",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 390,
+          "quote": "」许亦异之，乃往祭于祠而祝曰：「别君后，寤寐不去心，远践曩约。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 12,
+      "chapter": "偷桃",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 420,
+          "quote": "堂上四官，皆赤衣，东西相向坐。"
+        },
+        {
+          "unit": 428,
+          "quote": "」堂上相顾数语。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 14,
+      "chapter": "劳山道士",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 516,
+          "quote": "几上肴核尚存，壁上月，纸圆如镜而已。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 14,
+      "chapter": "劳山道士",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 532,
+          "quote": "」王果去墙数步奔而入，及墙，虚若无物，回视，果在墙外矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 20,
+      "chapter": "狐嫁女",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 759,
+          "quote": "」乃相率入楼，楼门尽辟。"
+        },
+        {
+          "unit": 769,
+          "quote": "入视楼中，陈设芳丽。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 21,
+      "chapter": "娇娜",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 971,
+          "quote": "乃使仗剑于门，嘱曰：「雷霆轰击，勿动也！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 23,
+      "chapter": "妖术",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1052,
+          "quote": "逾时，一物穿窗入，怪狞如鬼。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 30,
+      "chapter": "叶生",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1288,
+          "quote": "子自塾中归，见结驷于门，审所自来，骇奔告母。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 32,
+      "chapter": "成仙",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1316,
+          "quote": "节序登堂，如一家焉。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 32,
+      "chapter": "成仙",
+      "word": "野外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1475,
+          "quote": "至野外，见成，与俱行。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 35,
+      "chapter": "王兰",
+      "word": "郊外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1613,
+          "quote": "逾数日，张于郊外遇同乡人贺才。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 36,
+      "chapter": "鹰虎神",
+      "word": "寝室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1647,
+          "quote": "有偷儿预匿廊间，伺道士起，潜入寝室，搜括财物。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 38,
+      "chapter": "青凤",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1853,
+          "quote": "登楼，殊无少异。"
+        },
+        {
+          "unit": 1854,
+          "quote": "穿楼而过，闻人语切切。"
+        },
+        {
+          "unit": 1908,
+          "quote": "次夜，更既深，灭烛欲寝，闻楼后发扃，辟之外閛然。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 38,
+      "chapter": "青凤",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1910,
+          "quote": "俄闻履声细碎，有烛光自房中出。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 38,
+      "chapter": "青凤",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 1943,
+          "quote": "闭门，置床上，则青凤也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 39,
+      "chapter": "画皮",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2065,
+          "quote": "陈氏拜迎于门，哭求回生之法，道士谢不能；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 40,
+      "chapter": "贾儿",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2129,
+          "quote": "然嬉戏无节，日效木亏者，以砖石叠窗上，止之不听。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 41,
+      "chapter": "蛇癖",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2239,
+          "quote": "且善嗅，尝隔墙闻蛇香，急奔墙外，果得蛇盈尺。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 45,
+      "chapter": "庙鬼",
+      "word": "窗外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2378,
+          "quote": "才至窗外，妇不复人形，目电闪，口血赤如盆。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2815,
+          "quote": "生以其憨痴，恐泄漏房中隐事；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2678,
+          "quote": "」户外嗤嗤笑不已。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2622,
+          "quote": "北向一家，门前皆丝柳，墙内桃杏尤繁，间以修竹；"
+        },
+        {
+          "unit": 2626,
+          "quote": "俄闻墙内有女子，长呼「小荣」，其声娇细。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2994,
+          "quote": "女即入厨下，代母尸饔，入房穿榻，似熟居者。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2952,
+          "quote": "近一更许，窗外隐隐有人影，俄而近窗来窥，目光睒闪。"
+        },
+        {
+          "unit": 2953,
+          "quote": "宁惧，方欲呼燕，忽有物裂箧而出，耀若匹练，触折窗上石棂，飚然一射，即遽敛入，宛如电灭。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 2894,
+          "quote": "见短墙外一小院落，有妇可四十余；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 56,
+      "chapter": "造畜",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 3315,
+          "quote": "乃匿诸室中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 56,
+      "chapter": "造畜",
+      "word": "院中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 3316,
+          "quote": "既而驴主至，驱五羊于院中，惊问驴之所在。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 67,
+      "chapter": "酒友",
+      "word": "院",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 3957,
+          "quote": "狐又告曰：“院后有窖藏，宜发之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 3999,
+          "quote": "房中得无有人否？"
+        },
+        {
+          "unit": 4041,
+          "quote": "」莲香曰：「不然，如君之年，房后三日，精气可复，纵狐何害？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4249,
+          "quote": "一日，婢忽曰：「门外一妪，携女求售。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4067,
+          "quote": "及闭户挑灯，辄捉履倾想。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4114,
+          "quote": "曰：「妾，李通判女，早夭，瘗于墙外，已死春蚕，遗丝未尽。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4061,
+          "quote": "顷刻，洞下三两行，觉脏腑清虚，精神顿爽。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4225,
+          "quote": "别后愤不归墓，随风漾泊。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 70,
+      "chapter": "九山王",
+      "word": "廊",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4440,
+          "quote": "酒鼎沸于廊下，茶烟袅于厨中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 70,
+      "chapter": "九山王",
+      "word": "园",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4438,
+          "quote": "则入园中，歘见舍宇华好，崭然一新。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 73,
+      "chapter": "汾州狐",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 4683,
+          "quote": "但贺者在门，吊者即在闾，不能官也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 78,
+      "chapter": "潍水狐",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5020,
+          "quote": "邑搢绅闻其异，日结驷于门，愿纳交翁，翁无不伛偻接见。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 79,
+      "chapter": "红玉",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5085,
+          "quote": "会清明抱子登墓，遇邑绅宋氏。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 80,
+      "chapter": "龙",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5200,
+          "quote": "登楼哗噪，铳炮轰然。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 83,
+      "chapter": "鲁公女",
+      "word": "宫殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5383,
+          "quote": "夜梦青衣人邀去，见宫殿中坐一人，如菩萨状，逆之曰：「子为善可喜。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 84,
+      "chapter": "道士",
+      "word": "庙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5466,
+          "quote": "略致研诘，始知其初居村东破庙中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 85,
+      "chapter": "胡氏",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5538,
+          "quote": "次日，有客来谒，絷黑卫于门。"
+        },
+        {
+          "unit": 5588,
+          "quote": "如不以尘浊见弃，在门墙之幼子，年十五矣，愿得坦腹订下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 85,
+      "chapter": "胡氏",
+      "word": "厕",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5570,
+          "quote": "主人适登厕，俄见狐兵，张弓挟矢而至，乱射之；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 85,
+      "chapter": "胡氏",
+      "word": "室中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5533,
+          "quote": "扃闭俨然，不闻款叩而已在室中矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 88,
+      "chapter": "伏狐",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5658,
+          "quote": "投以药，则房中术也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 88,
+      "chapter": "伏狐",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5669,
+          "quote": "狐惊痛，啼声吱然，如鹰脱媾，穿窗而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 90,
+      "chapter": "苏仙",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5723,
+          "quote": "少年出金葬母，植二桃于墓，乃别而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 91,
+      "chapter": "李伯言",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5761,
+          "quote": "忽见殿上火生，焰烧梁栋。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 91,
+      "chapter": "李伯言",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5739,
+          "quote": "堂下有铜柱，高八九尺，围可一抱；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 92,
+      "chapter": "黄九郎",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 5912,
+          "quote": "」扶之而下，系驴于门而入。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 96,
+      "chapter": "连琐",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 6081,
+          "quote": "斋临旷野，墙外多古墓，夜闻白杨萧萧，声如涛涌。"
+        },
+        {
+          "unit": 6096,
+          "quote": "杨由是伺诸墙下，听其吟毕，乃隔壁而续之曰：「幽情苦绪何人见？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 96,
+      "chapter": "连琐",
+      "word": "坟",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 6249,
+          "quote": "君记取百日之期，视妾坟前，有青鸟鸣于树头，即速发冢。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 6352,
+          "quote": "」门边有巨虎蹲伏。"
+        },
+        {
+          "unit": 6361,
+          "quote": "移时，见白生候于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 102,
+      "chapter": "连城",
+      "word": "庭中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 6847,
+          "quote": "」夫妇出视，则宾娘已至庭中矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7186,
+          "quote": "」归房，又欲犯之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7205,
+          "quote": "刀钝鈌不可入，启户而奔。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 109,
+      "chapter": "宫梦弼",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7398,
+          "quote": "既到门，见闬闳峻丽，阍人怒目张，终日不得通。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 109,
+      "chapter": "宫梦弼",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7386,
+          "quote": "闻旧婿烜耀，闭户自伤而已。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 114,
+      "chapter": "梦别",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7614,
+          "quote": "至门，则提旛挂矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 117,
+      "chapter": "狐妾",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7721,
+          "quote": "移时返曰：「门外一甖，可供数日饮。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 117,
+      "chapter": "狐妾",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7748,
+          "quote": "下官殊不恶于洞九，何不一惠顾？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 119,
+      "chapter": "赌符",
+      "word": "庙",
+      "action": "place-to-space",
+      "evidence": [
+        {
+          "unit": 7897,
+          "quote": "韩道士，居邑中之天齐庙。"
+        },
+        {
+          "unit": 7903,
+          "quote": "诣庙发扃，则韩已坐室中。"
+        },
+        {
+          "unit": 7928,
+          "quote": "载钱归庙，除偿韩外，追而计之，并末后所失，适符原数也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 119,
+      "chapter": "赌符",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7903,
+          "quote": "诣庙发扃，则韩已坐室中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 119,
+      "chapter": "赌符",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7901,
+          "quote": "韩付钥曰：「请先往启门坐，少旋我即至。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 120,
+      "chapter": "阿霞",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8018,
+          "quote": "问郑曰：「堂上客，非景庆云耶？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 120,
+      "chapter": "阿霞",
+      "word": "祠",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 7985,
+          "quote": "会海神寿，祠内外士女云集，景亦在。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 120,
+      "chapter": "阿霞",
+      "word": "窗外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8024,
+          "quote": "女在窗外言曰：「此私贮，聊酬夙好，可将去，觅一良匹。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 124,
+      "chapter": "翩翩",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8205,
+          "quote": "日在洞中弄儿为乐。"
+        },
+        {
+          "unit": 8213,
+          "quote": "」女在洞中，辄取叶写书教儿读，儿过目即了。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 126,
+      "chapter": "余德",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8284,
+          "quote": "久之渐播，索玩者纷错于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 129,
+      "chapter": "青梅",
+      "word": "寺",
+      "action": "place-to-space",
+      "evidence": [
+        {
+          "unit": 8406,
+          "quote": "王如晋半载，夫人卒，停柩寺中。"
+        },
+        {
+          "unit": 8434,
+          "quote": "后有夜穴寺壁者，尼惊呼始去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 129,
+      "chapter": "青梅",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8458,
+          "quote": "」导入殿中，移榻肃坐。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "word": "宫",
+      "action": "place-to-space",
+      "evidence": [
+        {
+          "unit": 8568,
+          "quote": "既见，问中国治安之道，马委曲上陈，大蒙嘉叹，赐宴离宫。"
+        },
+        {
+          "unit": 8605,
+          "quote": "俄睹宫殿，玳瑁为梁，鲂鳞作瓦，四壁晶明，鉴影炫目。"
+        },
+        {
+          "unit": 8615,
+          "quote": "」遂集诸龙族，宴集采霞宫。"
+        },
+        {
+          "unit": 8620,
+          "quote": "无何，宫女数人扶女郎出，佩环声动，鼓吹暴作，拜竟睨之，实仙人也。"
+        },
+        {
+          "unit": 8622,
+          "quote": "少时酒罢，双鬟挑画灯，导生入副宫，女浓妆坐伺。"
+        },
+        {
+          "unit": 8634,
+          "quote": "宫中有玉树一株，围可合抱，本莹澈如白琉璃，中有心淡黄色，稍细于臂，叶类碧玉，厚一钱许，细碎有浓阴。"
+        },
+        {
+          "unit": 8659,
+          "quote": "」生曰：「其女耶可名龙宫，男耶可名福海。"
+        },
+        {
+          "unit": 8664,
+          "quote": "生拜别出宫，女乘白羊车。"
+        },
+        {
+          "unit": 8701,
+          "quote": "过此以往，则『龙宫』无恙，不少把握之期；"
+        },
+        {
+          "unit": 8712,
+          "quote": "灵舆至殡宫，有女子缞绖临穴。"
+        },
+        {
+          "unit": 8716,
+          "quote": "龙宫以女子不得往，时掩户泣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8613,
+          "quote": "生立成千余言，献殿上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8710,
+          "quote": "生知母寿不永，周身物悉为预具，墓中植松槚百余。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 131,
+      "chapter": "田七郎",
+      "word": "狱",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8799,
+          "quote": "」武大惊，驰视之，已械收在狱。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 133,
+      "chapter": "保住",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8934,
+          "quote": "树尽登屋，屋尽登楼，飞奔殿阁，不啻翅翎，瞥然不知所在。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 133,
+      "chapter": "保住",
+      "word": "廊",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8926,
+          "quote": "廊下有鹦鹉宿架上，住乃作猫子叫，既而学鹦鹉鸣，疾呼「猫来」。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 133,
+      "chapter": "保住",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 8933,
+          "quote": "住跃登树上，墙下故有大槐三十余章，住穿树行杪，如鸟移枝。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 134,
+      "chapter": "公孙九娘",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9054,
+          "quote": "幸念一夕恩义，收儿骨归葬墓侧，使百年得所依栖，死且不朽。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 135,
+      "chapter": "促织",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9184,
+          "quote": "既入宫中，举天下所贡蝴蝶、螳螂、油利挞、青丝额……一切异状，遍试之，无出其右者。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 140,
+      "chapter": "酆都御史",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9256,
+          "quote": "明有御史行台华公，按临酆都，闻之不以为信，欲入洞以决其惑，众云不可。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9489,
+          "quote": "」及亲迎，新郎入宴，彩舆在门，女方掩袂向隅而哭。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9470,
+          "quote": "或经其侧，闻墓中叱咤声曰：「若等速避去，勿久混贵人宅！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 147,
+      "chapter": "续黄粱",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9652,
+          "quote": "约食时，鬼方以巨叉取曾，复伏堂下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9773,
+          "quote": "」絷驴于门，往觇其异。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 9911,
+          "quote": "女曰：「如欲我留，与君约：从今闭户绝交游，勿浪饮。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 152,
+      "chapter": "白莲教",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10009,
+          "quote": "一日将他往，堂中置一盆，又一盆覆之，嘱门人坐守，戒勿启视。"
+        },
+        {
+          "unit": 10016,
+          "quote": "」又一夕，烧巨烛于堂上，戒恪守，勿以风灭。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 158,
+      "chapter": "胡四相公",
+      "word": "寝室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10252,
+          "quote": "胡曰：「君试开寝室门，则弟在焉。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 160,
+      "chapter": "鼠戏",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10282,
+          "quote": "歌声甫动，则有鼠自囊中出，蒙假面，被小装服，自背登楼，人立而舞。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 162,
+      "chapter": "土地夫人",
+      "word": "祠",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10301,
+          "quote": "窎桥王炳者出村，见土地祠中出一美人，顾盼甚殷。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 163,
+      "chapter": "寒月芙蕖",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10350,
+          "quote": "既而旨酒散馥，热炙腾熏，皆自壁中传递而出，座客无不骇异。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 164,
+      "chapter": "酒狂",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10400,
+          "quote": "忽一人自户内出，见缪，诧异曰：「尔何来？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10563,
+          "quote": "数年，妪死，虎来吼于堂中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10546,
+          "quote": "虎入，殊不他顾，蹲立门中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "word": "冢",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10566,
+          "quote": "虎直赴冢前，嗥鸣雷动，移时始去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 174,
+      "chapter": "封三娘",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 10918,
+          "quote": "适经墙外过，闻女子语，便一攀望，冀是小姐，今果如愿。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 181,
+      "chapter": "花姑子",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 11454,
+          "quote": "房西隅有煤炉，女即入房拨火。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 183,
+      "chapter": "西湖主",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 11766,
+          "quote": "俄闻马腾于门，似有女子笑语。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 186,
+      "chapter": "阎王",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 11981,
+          "quote": "又房中娘子贤似孟姑姑，任郎君东家眠，西家宿，不敢一作声。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 188,
+      "chapter": "长治女子",
+      "word": "阁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12079,
+          "quote": "瞬息至官廨，如言伏阁上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 188,
+      "chapter": "长治女子",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12080,
+          "quote": "时岭下人罗跪堂下，尚未讯诘。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 188,
+      "chapter": "长治女子",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12042,
+          "quote": "居数日，女绣于房，忽觉足麻痺，渐至股，又渐至腰腹；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 191,
+      "chapter": "伍秋月",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12245,
+          "quote": "抱入房中，衣裳随风尽化。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 191,
+      "chapter": "伍秋月",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12204,
+          "quote": "归见吊客在门，知兄果死。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 192,
+      "chapter": "莲花公主",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12334,
+          "quote": "」调笑未已，一宫女驰入曰：「妖入宫门，王避偏殿，凶祸不远矣！"
+        },
+        {
+          "unit": 12340,
+          "quote": "章云：「含香殿大学士臣黑翼，为非常妖异，祈早迁都，以存国脉事：据黄门报称：自五月初六日，来一千丈巨蟒，盘踞宫外，吞食内外臣民一万三千八百余口；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 192,
+      "chapter": "莲花公主",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12280,
+          "quote": "入重门，见殿上一王者，见生入，降阶而迎，执宾主礼。"
+        },
+        {
+          "unit": 12282,
+          "quote": "仰视殿上一扁曰「桂府」。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 192,
+      "chapter": "莲花公主",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12274,
+          "quote": "既登堂，生启问曰：「素既不叙，遂疏参谒。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 192,
+      "chapter": "莲花公主",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12375,
+          "quote": "方竖两堵，而群蜂自墙外来，络绎如蝇。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 193,
+      "chapter": "绿衣女",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12407,
+          "quote": "歌已，启门窥曰：「防窗外有人。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 193,
+      "chapter": "绿衣女",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12433,
+          "quote": "频展双翼，已乃穿窗而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 193,
+      "chapter": "绿衣女",
+      "word": "窗外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12387,
+          "quote": "夜方披诵，忽一女子在窗外赞曰：「于相公勤读哉！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 194,
+      "chapter": "黎氏",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12478,
+          "quote": "谢得妇，嬖爱异常，日惟闭门相对，更不通客。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 194,
+      "chapter": "黎氏",
+      "word": "寝室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12482,
+          "quote": "方至寝室，一巨狼冲门跃出，几惊绝！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 198,
+      "chapter": "上仙",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12681,
+          "quote": "入其舍，复室中挂红幕。"
+        },
+        {
+          "unit": 12697,
+          "quote": "」言未已，闻室中细细繁响，如蝙蝠飞鸣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 198,
+      "chapter": "上仙",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12684,
+          "quote": "北壁下有案；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 202,
+      "chapter": "金生色",
+      "word": "寝室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 12837,
+          "quote": "婢在外榻，见亡者自幛后出，带剑入寝室去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 203,
+      "chapter": "彭海秋",
+      "word": "厕",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13020,
+          "quote": "中夜少苏，急欲登厕；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 209,
+      "chapter": "马介甫",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13419,
+          "quote": "从之入，见堂中金碧焕映。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 209,
+      "chapter": "马介甫",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13278,
+          "quote": "妇殊不发一语，遽起，入房自寝。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 212,
+      "chapter": "绛妃",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13491,
+          "quote": "无何，诣一殿外，金钩碧箔，光明射眼。"
+        },
+        {
+          "unit": 13508,
+          "quote": "」妃喜，即殿上赐笔札。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 215,
+      "chapter": "跳神",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13760,
+          "quote": "堂中肉于案，酒于盆，甚设几上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 217,
+      "chapter": "大力将军",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13797,
+          "quote": "清明饮野寺中，见殿前有古钟，大于两石瓮；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 217,
+      "chapter": "大力将军",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13855,
+          "quote": "按籍点照，古玩床几，堂内外罗列几满。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 217,
+      "chapter": "大力将军",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13829,
+          "quote": "因其问讯之殷，即命仆马，投刺于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 219,
+      "chapter": "颜氏",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13924,
+          "quote": "女入房，巾服而出，曰：「视妾可作男儿否？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 219,
+      "chapter": "颜氏",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13961,
+          "quote": "于是使生承其衔，仍闭门而雌伏矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 220,
+      "chapter": "杜翁",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 13972,
+          "quote": "偶自市中出，坐墙下，以候同游。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 221,
+      "chapter": "小谢",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14052,
+          "quote": "因戏之曰：「房中纵送，我都不解，缠我无益。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 221,
+      "chapter": "小谢",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14099,
+          "quote": "小谢又引其弟三郎来，拜生门下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 226,
+      "chapter": "细侯",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14451,
+          "quote": "闭户相对，君读妾织，暇则诗酒可遣，千户侯何足贵！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 228,
+      "chapter": "美人首",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14552,
+          "quote": "一商操刀伏壁下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 229,
+      "chapter": "刘亮采",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14568,
+          "quote": "与若有夙因，故敢内交门下。"
+        },
+        {
+          "unit": 14584,
+          "quote": "为人任侠，急人之急，以故秦、楚、燕、赵之客，趾错于门；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 230,
+      "chapter": "蕙芳",
+      "word": "宫殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 14622,
+          "quote": "入室，见翠栋雕梁，侔于宫殿；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 237,
+      "chapter": "饿鬼",
+      "word": "庙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15018,
+          "quote": "天明共视，如庙中所塑灵官状。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 238,
+      "chapter": "考弊司",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15038,
+          "quote": "至一府署，廨宇不甚弘厂，惟一堂高广，堂下两碣东西立，绿书大于栲栳，一云「孝弟忠信」，一云「礼义廉耻」。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 245,
+      "chapter": "聂政",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15355,
+          "quote": "丈夫亦入墓中而没。"
+        },
+        {
+          "unit": 15356,
+          "quote": "夫妻叩墓归，犹惧王命复临。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 246,
+      "chapter": "冷生",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15362,
+          "quote": "如是多日，忽得狂易病：每得题为文，则闭门枯坐；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 248,
+      "chapter": "山市",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15420,
+          "quote": "一行有五点明处，楼外天也。"
+        },
+        {
+          "unit": 15424,
+          "quote": "而楼上人往来屑屑，或凭或立，不一状。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 250,
+      "chapter": "孙生",
+      "word": "室中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15712,
+          "quote": "妻或在室中，与他人嬉笑；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15834,
+          "quote": "妃召生妻入宫，将鸩之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15828,
+          "quote": "公主闭户不食。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "word": "寝室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15809,
+          "quote": "于寝室中掘得藏镪数百，用度颇充。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 253,
+      "chapter": "罗祖",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15891,
+          "quote": "后石匣营有樵人入山，见一道人坐洞中，未尝求食。"
+        },
+        {
+          "unit": 15895,
+          "quote": "积数年，洞外蓬蒿成林。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 254,
+      "chapter": "刘姓",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 15915,
+          "quote": "父方骇怪，刘已诟骂在门，且言将讼。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 255,
+      "chapter": "邵女",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16209,
+          "quote": "夜梦至一处，似庙宇，殿中鬼神皆动。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 255,
+      "chapter": "邵女",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16055,
+          "quote": "若得千金，出车马，入楼阁，老身再到门，则阍者呵叱及之矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 256,
+      "chapter": "巩仙",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16284,
+          "quote": "细视之，则皆宫中乐妓耳。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 256,
+      "chapter": "巩仙",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16256,
+          "quote": "中贵方凭窗，道人一推，但觉身堕楼外，有细葛绷腰，悬于空际；"
+        },
+        {
+          "unit": 16260,
+          "quote": "见其去地绝远，登楼共视，则葛端系櫺上；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 256,
+      "chapter": "巩仙",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16377,
+          "quote": "遗衲用催生，应如响，求者踵接于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 259,
+      "chapter": "梅女",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16649,
+          "quote": "封到门投刺，具通族阀。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 259,
+      "chapter": "梅女",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16595,
+          "quote": "日及曛，叩壁而呼，三声未已，爱卿即入。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 261,
+      "chapter": "死僧",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16725,
+          "quote": "僧直入殿，登佛座，抱佛头而笑，久之乃去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 261,
+      "chapter": "死僧",
+      "word": "廊",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 16723,
+          "quote": "见僧房扃闭，遂藉蒲团，趺坐廊下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 266,
+      "chapter": "青娥",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17132,
+          "quote": "一丽人自房中出，视之，则青娥也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 266,
+      "chapter": "青娥",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17012,
+          "quote": "会有一道士在门，手握小镵，长裁尺许。"
+        },
+        {
+          "unit": 17203,
+          "quote": "才到门，家人迎告，是夜失太翁及夫人所在。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 271,
+      "chapter": "鬼津",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17308,
+          "quote": "李某昼卧，见一妇人自墙中出，蓬首如筐，发垂蔽面；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17469,
+          "quote": "每作房中之戏，招与共事，两情益笃，时色授而手语之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17521,
+          "quote": "出则车马已候于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 273,
+      "chapter": "阎罗薨",
+      "word": "庭",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17586,
+          "quote": "公见之，中心惨怛，痛不可忍，不觉失声一号，庭中寂然，万形俱灭矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 280,
+      "chapter": "鬼令",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17931,
+          "quote": "」相与大笑，未几出门去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 281,
+      "chapter": "甄后",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17975,
+          "quote": "初至门，门者以我为妖，欲加缚絷。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 281,
+      "chapter": "甄后",
+      "word": "庭中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 17964,
+          "quote": "」旋见龙舆止于庭中，乃以玉脂合赠刘，作别登车，云推而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 285,
+      "chapter": "小翠",
+      "word": "亭",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18495,
+          "quote": "夫人惊起，驾肩舆而往，启钥入亭。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 286,
+      "chapter": "金和尚",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18534,
+          "quote": "堂上几屏，晶光可鉴；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 286,
+      "chapter": "金和尚",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18532,
+          "quote": "每一门内，四缭连屋，皆此辈列而居。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 288,
+      "chapter": "商妇",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18618,
+          "quote": "偷儿愤其冤，自首于堂，告以是夜所见。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 288,
+      "chapter": "商妇",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18610,
+          "quote": "既而壁上一小门开，一室尽亮。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 289,
+      "chapter": "阎罗宴",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18631,
+          "quote": "既入，一王者坐殿上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 291,
+      "chapter": "细柳",
+      "word": "狱",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18757,
+          "quote": "收狱中，又无资斧，大为狱吏所虐，乞食于囚，苛延余息。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 293,
+      "chapter": "局诈",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 18874,
+          "quote": "见天子坐殿上，爪牙森立。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 296,
+      "chapter": "钟生",
+      "word": "阁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 19000,
+          "quote": "」挽登阁上，屏人语，因问：「莫欲知将来否？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 296,
+      "chapter": "钟生",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 19055,
+          "quote": "约二十余里，入一山村，有叟在门，下骑揖之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 302,
+      "chapter": "梦狼",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 19248,
+          "quote": "」又入一门，见堂上、堂下，坐者、卧者，皆狼也。"
+        },
+        {
+          "unit": 19248,
+          "quote": "」又入一门，见堂上、堂下，坐者、卧者，皆狼也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 312,
+      "chapter": "嫦娥",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 19477,
+          "quote": "一日，偶经红桥，见嫦娥适在门内，疾趋过之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 316,
+      "chapter": "某乙",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 19829,
+          "quote": "以乙远至，迳不熟，俾伏墙外，司传递、守囊橐焉。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 318,
+      "chapter": "司文郎",
+      "word": "寺",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20051,
+          "quote": "寺中有余杭生先在，王以比屋居，投刺焉。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 319,
+      "chapter": "丑狐",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20287,
+          "quote": "室中掷石如盆，门窗釜甑，无复全者。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 319,
+      "chapter": "丑狐",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20275,
+          "quote": "女赂遗渐少，生由此心厌之，聘术士至，画符于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 320,
+      "chapter": "吕无病",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20456,
+          "quote": "廉得情，怒曰：「堂上公以我为天下之龌龊教官，勒索伤天害理之钱，以吮人痈痔者耶！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 320,
+      "chapter": "吕无病",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20342,
+          "quote": "先自涉览，而后进之，笑曰：「今日河魁不曾在房。"
+        },
+        {
+          "unit": 20448,
+          "quote": "孙命舁诸房中护养之，将待其瘥而后出之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 320,
+      "chapter": "吕无病",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20515,
+          "quote": "妇由此不茹荤酒，闭户诵佛而已。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 322,
+      "chapter": "姚安",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20627,
+          "quote": "然以其美也，故疑之：闭户相守，步辄缀焉；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 324,
+      "chapter": "崔猛",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20719,
+          "quote": "适一道士在门，崔过之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 324,
+      "chapter": "崔猛",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20759,
+          "quote": "忽启户出，辄又还卧。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 324,
+      "chapter": "崔猛",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20810,
+          "quote": "又数日，申忽夜入王家，将其父子婶妇并杀之，黏纸于壁，自书姓名；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 324,
+      "chapter": "崔猛",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 20820,
+          "quote": "申破扉始觉，越墙伏暗中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 329,
+      "chapter": "李生",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21043,
+          "quote": "俄而装成，启户牵出。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 330,
+      "chapter": "陆押官",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21096,
+          "quote": "一日，赵赴友筵，堂中有盆兰甚茂，爱之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 333,
+      "chapter": "顾生",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21168,
+          "quote": "历阶而升，则客已满座，见一少年北面坐，知是王子，便伏堂下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 333,
+      "chapter": "顾生",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21160,
+          "quote": "愕疑间，一人自舍后出，见之曰：「小王子谓有远客在门，果然。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 334,
+      "chapter": "陈锡九",
+      "word": "狱",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21340,
+          "quote": "女骇问之，始知周已被械在狱矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 336,
+      "chapter": "于去恶",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21397,
+          "quote": "」一日，就陶借书去，闭户抄甚疾，终日五十余纸，亦不见其折叠成卷。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 339,
+      "chapter": "凤仙",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 21584,
+          "quote": "闻室中小语，伏窥之，见少年拥丽者眠榻上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 350,
+      "chapter": "大鼠",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22033,
+          "quote": "万历间，宫中有鼠，大与猫等，为害甚剧。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 357,
+      "chapter": "药僧",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22260,
+          "quote": "因戏曰：「和尚亦卖房中丹否？"
+        }
+      ]
+    },
+    {
+      "chapter_id": 362,
+      "chapter": "抽肠",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22437,
+          "quote": "而室中并无痕迹，惟数日血腥不散。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 363,
+      "chapter": "张鸿渐",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22456,
+          "quote": "」妪乃令入，闭门，授以草荐，嘱曰：「我怜客无归，私容止宿，未明宜早去，恐吾家小娘子闻知，将便怪罪。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 363,
+      "chapter": "张鸿渐",
+      "word": "室中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22490,
+          "quote": "」一转盼间，则院落如故，身固已在室中矣，益异之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 366,
+      "chapter": "王子安",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22700,
+          "quote": "寻至门后，得一缨帽如盏大，共疑之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 22945,
+          "quote": "洞外石壁上有铁锥，锐没石中；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 377,
+      "chapter": "云萝公主",
+      "word": "阁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23093,
+          "quote": "登阁视之，内外陈设焕然矣。"
+        },
+        {
+          "unit": 23125,
+          "quote": "」阁上以锦布满，冬未尝寒，夏未尝热。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 377,
+      "chapter": "云萝公主",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23021,
+          "quote": "生遮止，闭门。"
+        },
+        {
+          "unit": 23028,
+          "quote": "先是，有滦州生袁大用，侨寓邻坊，投刺于门；"
+        },
+        {
+          "unit": 23212,
+          "quote": "」会可弃盗粟出赌，妇知之，弯弓于门以拒之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 377,
+      "chapter": "云萝公主",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23085,
+          "quote": "」并不启关，飞簷越壁而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23313,
+          "quote": "经几曲画廓，始至一处，堂上垂珠帘，烧巨烛如昼。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "word": "室",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23325,
+          "quote": "室中流苏绣帐，衾褥香软。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23300,
+          "quote": "」既而女起，闭户而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23344,
+          "quote": "入洞，见丹垩精工，寝处褥革棕毡尺许厚。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23515,
+          "quote": "堂下一筵向西。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23599,
+          "quote": "墓内外两家并力营缮，较前益坚美。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "word": "坟",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23596,
+          "quote": "后一人卖坟中玉簪，获之，穷讯其党，始知玉卿为首。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 387,
+      "chapter": "布商",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23777,
+          "quote": "适有防海将军经寺外，遥自缺墙外望见一红裳女子入僧舍，疑之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 389,
+      "chapter": "何仙",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 23809,
+          "quote": "曾在黑暗狱中八百年，损其目之精气，如人久在洞中，乍出，则天地异色，无正明也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 392,
+      "chapter": "湘裙",
+      "word": "窗外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 24117,
+          "quote": "」女在窗外小语曰：「我不嫁田家牧牛子。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 394,
+      "chapter": "长亭",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 24316,
+          "quote": "石由此精于符箓，委贽者踵接于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 395,
+      "chapter": "席方平",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 24604,
+          "quote": "」席询之从者，始知车中即上帝殿下九王，所嘱即二郎也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 395,
+      "chapter": "席方平",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 24546,
+          "quote": "方将就缚，忽堂上大呼「席某」，二鬼即复押回。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 395,
+      "chapter": "席方平",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 24521,
+          "quote": "役至门辞去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "院",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25165,
+          "quote": "」遂请于院、司，移案再鞫。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25028,
+          "quote": "一日，送至门，见一少年过，白服裙帽，丰采甚都。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25060,
+          "quote": "次夜，逾垣入，直达女所，以指叩窗。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25197,
+          "quote": "」盖公先使人以灰涂壁，又以烟煤濯其手：杀人者恐神来书，故匿背于壁而有灰色；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25098,
+          "quote": "逾数夕，越墙入女家，门户不悉，误诣翁舍。"
+        },
+        {
+          "unit": 25106,
+          "quote": "于墙下得绣履，媪视之，臙脂物也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 399,
+      "chapter": "阿纤",
+      "word": "庑",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25264,
+          "quote": "徘徊庑下。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 400,
+      "chapter": "瑞云",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25428,
+          "quote": "瑞云名噪已久，自此富商贵介，日接于门。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 401,
+      "chapter": "仇大娘",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25655,
+          "quote": "大娘奉母坐堂上，操杖问之：「汝愿受扑责，便可姑留；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 401,
+      "chapter": "仇大娘",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25578,
+          "quote": "遥望门内，繁花如锦，盖即公子内斋也。"
+        },
+        {
+          "unit": 25682,
+          "quote": "次朝，以乘舆取归，母逆于门而跪拜之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 401,
+      "chapter": "仇大娘",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25580,
+          "quote": "」禄信之，寻桥入户，至一院落，闻女子笑声。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 403,
+      "chapter": "龙飞相公",
+      "word": "洞",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 25772,
+          "quote": "戴移闭洞中，不敢复作声。"
+        },
+        {
+          "unit": 25774,
+          "quote": "洞中冥黑，真与地狱无少异者。"
+        },
+        {
+          "unit": 25839,
+          "quote": "会里中人复治旧井，入洞见戴，抚之未死。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 405,
+      "chapter": "五通",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26104,
+          "quote": "至日，某仍悬采于门，使万坐室中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 406,
+      "chapter": "又",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26165,
+          "quote": "」次夜方寝，婢来叩户。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 406,
+      "chapter": "又",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26138,
+          "quote": "事甫毕，婢来叩窗；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 407,
+      "chapter": "申氏",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26276,
+          "quote": "遂叩门求赏。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 408,
+      "chapter": "恒娘",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26338,
+          "quote": "日未昏，即起入房，阖扉眠矣。"
+        },
+        {
+          "unit": 26364,
+          "quote": "朱益善遇宝带，每房中之宴，辄呼与共榻坐；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 409,
+      "chapter": "葛巾",
+      "word": "楼",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26533,
+          "quote": "生知有变，举家登楼。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 410,
+      "chapter": "冯木匠",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26582,
+          "quote": "少间，女果越窗过，径已入怀。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 411,
+      "chapter": "黄英",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26641,
+          "quote": "」少间，房中呼「三郎」，陶诺而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 411,
+      "chapter": "黄英",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26685,
+          "quote": "然遵马教，闭门不复业菊，而享用过于世家。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 411,
+      "chapter": "黄英",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26659,
+          "quote": "更于墙外买田一区，筑墉四周，悉种菊。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 413,
+      "chapter": "齐天大圣",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26910,
+          "quote": "成与俱来，并跪堂上。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 414,
+      "chapter": "青蛙神",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 26990,
+          "quote": "方消让间，舆已在门，青衣成群，而十娘入矣。"
+        },
+        {
+          "unit": 27123,
+          "quote": "直至百金，四足尽起，下床出门，狼犺数步，复返身卧门内。"
+        },
+        {
+          "unit": 27123,
+          "quote": "直至百金，四足尽起，下床出门，狼犺数步，复返身卧门内。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 414,
+      "chapter": "青蛙神",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27106,
+          "quote": "请全纳，缩如拳，从容出，入墙罅而去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 414,
+      "chapter": "青蛙神",
+      "word": "祠",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27011,
+          "quote": "翁惧，负荆于祠，词义殷切。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 416,
+      "chapter": "晚霞",
+      "word": "窗",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27303,
+          "quote": "次且至家，忽闻窗中有女子曰：「汝子来矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 416,
+      "chapter": "晚霞",
+      "word": "宫殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27223,
+          "quote": "俄入宫殿，见一人兜牟坐。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 417,
+      "chapter": "白秋练",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27528,
+          "quote": "候水至，倾注盆内，闭门缓妾衣，抱入浸之，宜得活。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 422,
+      "chapter": "大蝎",
+      "word": "寺",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27630,
+          "quote": "询之土人，则曰：「寺中有妖，入者辄死。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27747,
+          "quote": "见有少女在堂，年可十八九，姿容曼妙，目所未睹。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "word": "窗外",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 27693,
+          "quote": "」生立窗外，似将有言，盛乃去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 429,
+      "chapter": "竹青",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28088,
+          "quote": "三日后，汉水神女皆登堂，以服食珍物相贺。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 429,
+      "chapter": "竹青",
+      "word": "庙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28013,
+          "quote": "羞于行乞，饿甚，暂憩吴王庙中，拜祷神座。"
+        },
+        {
+          "unit": 28031,
+          "quote": "忽如梦醒，则身卧庙中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 431,
+      "chapter": "狐女",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28195,
+          "quote": "近视，则墙可及肩，四围并无门户，而墙上密排坎窞，女以足踏之而过，伊亦从之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 437,
+      "chapter": "王大",
+      "word": "厕",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28405,
+          "quote": "二鬼押至家，索贿，不令即活，缚诸厕内，令示梦家人。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 439,
+      "chapter": "香玉",
+      "word": "宫",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28725,
+          "quote": "次年四月至宫，则花一朵，含苞未放；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 442,
+      "chapter": "王十",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 28824,
+          "quote": "先是，十负盐未归，天明，妻启户，则盐两囊置庭中，而十久不至。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 446,
+      "chapter": "石清虚",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29126,
+          "quote": "及卒，子遵遗教，瘗石墓中。"
+        },
+        {
+          "unit": 29137,
+          "quote": "邢子拾碎石出，仍瘗墓中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 453,
+      "chapter": "蝎客",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29499,
+          "quote": "」其人入室四顾，鼻作嗅声者三，遂出门去。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 458,
+      "chapter": "老龙舡户",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29634,
+          "quote": "壁上门为户：岂非『老龙舡户』耶！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 462,
+      "chapter": "元少先生",
+      "word": "殿",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29741,
+          "quote": "自门隟目注之，见一王者坐殿上，阶下剑树刀山，皆冥中事。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 463,
+      "chapter": "薛慰娘",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29862,
+          "quote": "」曰：「昨夕冯某浼早登堂，一署券保。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 463,
+      "chapter": "薛慰娘",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29833,
+          "quote": "女在墓，为群鬼所凌，李翁时呵护之，女乃父事翁。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 464,
+      "chapter": "田子成",
+      "word": "坟",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29949,
+          "quote": "要亦易辨，去此数武，但见坟上有丛芦十茎者是也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 465,
+      "chapter": "王桂庵",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 29990,
+          "quote": "一夜，梦至江村，过数门，见一家柴扉南向，门内疏竹为篱，意是亭园，迳入。"
+        },
+        {
+          "unit": 30005,
+          "quote": "一门内，马缨一树，梦境宛然。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 466,
+      "chapter": "寄生",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30215,
+          "quote": "到门，以毡贴地而入。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 466,
+      "chapter": "寄生",
+      "word": "庭中",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30132,
+          "quote": "急出舍，则丽人已在庭中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 468,
+      "chapter": "褚遂良",
+      "word": "厕",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30289,
+          "quote": "又少时，欲登厕。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 469,
+      "chapter": "刘全",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30352,
+          "quote": "少间，堂上呼侯名，侯上跪，一马亦跪。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 472,
+      "chapter": "姬生",
+      "word": "户",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30434,
+          "quote": "便启户出。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 472,
+      "chapter": "姬生",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30449,
+          "quote": "妻为之谋，使乘夜抛其墙内。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 476,
+      "chapter": "纫针",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30684,
+          "quote": "此言出，问名者趾错于门，夫妻为拣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 477,
+      "chapter": "桓侯",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30784,
+          "quote": "将至门，使者始实告之；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 478,
+      "chapter": "粉蝶",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30818,
+          "quote": "时已初冬，墙内不知何花，蓓蕾满树。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 479,
+      "chapter": "李檀斯",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30941,
+          "quote": "其村中有媪走无常，谓人曰：「今夜与一人舁檀老投生淄川柏家庄一新门中，身躯重赘，几被压死。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31143,
+          "quote": "入房，则生卧榻上；"
+        }
+      ]
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31134,
+          "quote": "一夕，正与妾饮，则车马扣门而女至矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "壁",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 30967,
+          "quote": "因抓石叩壁曰：「地如可入，幸示一途！"
+        }
+      ]
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "墙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31065,
+          "quote": "遇一伏妪，始知女与春燕皆越墙矣。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 481,
+      "chapter": "太原狱",
+      "word": "堂",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31190,
+          "quote": "堂上刀石具在，可自取击杀之。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 482,
+      "chapter": "新郑讼",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31215,
+          "quote": "又从之，入一门内。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 484,
+      "chapter": "房文淑",
+      "word": "房",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31312,
+          "quote": "至房中，视之，二十余丽者也。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 484,
+      "chapter": "房文淑",
+      "word": "庙",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31258,
+          "quote": "岁暮，僚役各归家，邓独炊庙中。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 490,
+      "chapter": "人妖",
+      "word": "门",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31600,
+          "quote": "」便下床，启门易生。"
+        }
+      ]
+    },
+    {
+      "chapter_id": 490,
+      "chapter": "人妖",
+      "word": "墓",
+      "action": "add-space",
+      "evidence": [
+        {
+          "unit": 31638,
+          "quote": "后卒，即葬府西马氏墓侧，今依稀在焉。"
+        }
+      ]
+    }
+  ],
+  "held": [
+    {
+      "chapter_id": 426,
+      "chapter": "司训",
+      "word": "房",
+      "reason": "保留已有修订",
+      "evidence": [
+        {
+          "unit": 27895,
+          "quote": "某为亲戚寄卖房中伪器，辄藏靴中，随在求售。"
+        }
+      ]
+    }
+  ],
+  "policy": "保留已有人工决定；明确纠正宫、寺、庙三处；独立分词和处所句法双重匹配。"
+}

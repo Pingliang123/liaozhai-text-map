@@ -10,9 +10,11 @@ for(const f of ['chapter-spaces.js','place-spaces.js'])vm.runInContext(fs.readFi
 const a={id:0,title:'甲',places:['济南','青州'],spaces:['寺'],people:[],units:[{id:0,text:'至济南，宿寺，赴青州。'}],steps:[]},b={...a,id:1,title:'乙',spaces:['室'],units:[{id:1,text:'至青州，入室。'}]},out=new E('main');
 window.GhostPlaceSpaces.mount(out,[a,b],()=>{},{placeRecords:{济南:{located:true},青州:{located:true}}});
 assert(all(out,'h2').some(n=>n.textContent==='二、篇目空间网络'));
-assert(!all(out,'select').some(n=>n.attrs['aria-label']==='选择地点查看内部空间'));
+const mode=all(out,'select').find(n=>n.attrs['aria-label']==='空间网络视图'),placePick=all(out,'select').find(n=>n.attrs['aria-label']==='选择地点查看内部空间');assert(mode&&placePick);
 const pick=all(out,'select').find(n=>n.attrs['aria-label']==='选择篇目查看空间网络');assert.deepEqual(pick.children.map(n=>n.textContent),['甲','乙']);
 pick.value='1';pick.onchange();const graph=mounted.at(-1);assert(graph.nodes.some(n=>n.id==='space:室'));assert(!graph.nodes.some(n=>n.id==='space:寺'));assert(all(out,'a').some(n=>n.href==='../../index.html?chapter=1#workspace'));
 assert.equal(all(out,'summary').filter(n=>n.textContent.startsWith('全书尚未归属地点的空间线索')).length,1);
+mode.value='place';mode.onchange();assert(mounted.at(-1).nodes.some(n=>n.id==='place:济南'));assert(mounted.at(-1).nodes.some(n=>n.id==='space:寺'));assert(!mounted.at(-1).nodes.some(n=>n.id==='space:室'));
+placePick.value='place:青州';placePick.onchange();assert(mounted.at(-1).nodes.some(n=>n.id==='space:室'));
 window.location.search='?chapter=0';const linked=new E('section');window.GhostChapterSpaces.mount(linked,[a,b]);assert.equal(all(linked,'select')[0].value,'0');
 console.log('PASS chapter picker, chapter isolation, original links, deep links and one pending list');
