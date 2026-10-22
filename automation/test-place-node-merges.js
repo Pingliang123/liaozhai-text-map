@@ -21,4 +21,5 @@ const html=fs.readFileSync('assets/research-lab/index.html','utf8');assert(html.
 const Store=require('../assets/corpus-store'),oldBase={...pack.base,place_node_aliases:{},custom:'保留'};
 const installed=Store.effectiveBase(pack.base,oldBase);assert.equal(installed.custom,'保留');assert.deepEqual(installed.place_node_aliases,pack.base.place_node_aliases);assert.deepEqual(oldBase.place_node_aliases,{},'旧资料包不能原地改写');
 assert(require('../assets/map-network-link').matchesPlace({value:'place-扬州',dataset:{placeName:'扬州',placeAliases:'["扬州","广陵"]'}},'广陵'),'旧地名网址仍找到合并节点');
+assert(fs.readFileSync('assets/research-lab/book-network.js','utf8').includes('(n.original_names||[]).some(word=>word.includes(q))'),'网络检索同时检索原词');
 console.log('PASS 21组29个异名合并；地图和网络同名；旧绑定、上下级、原文、人工修订均保留');
