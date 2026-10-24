@@ -18,16 +18,7 @@ const cases=[
   ['户外','斋室',['聂小倩'],'movement','人间','私人',2997,3002,'剑囊形成进入障碍，移悬他室后才得入内。'],
   ['晨昏往返','留与同卧起',['聂小倩'],'change','人间','私人',3013,3020,'从黄昏离去到被留宿，变化的是家庭接纳程度。']
  ]},
- {title:'黄英',question:'院落经营、家庭边界与清贫身份如何互相牵动？',note:'陶、三郎在本篇指陶生，原文后段明确姊弟为菊精。胡在“胡醉至此”中是疑问用语。东篱、市井含价值判断，不能当作实地行程；河朔在初遇对话中是拟居区域。',events:[
-  ['马家','金陵',['马子才'],'movement','人间','跨地行旅',26596,26599,'购菊推动远行；顺天提供人物背景，原句没有给马家精确坐标。'],
-  ['归途中','马第南荒圃小室',['马子才','陶生','黄英'],'movement','人间','私人',26601,26616,'共同归家与安排居所，为此后的邻居关系提供条件。'],
-  ['荒庭','菊畦与售花场所',['陶生','马子才'],'change','人间','私人兼经营',26629,26640,'废弃枝种变成商品，庭院用途的变化使清高与谋生发生冲突。'],
-  ['南北两第','开扉相通、合为一第',['黄英','马子才'],'change','人间','私人',26674,26684,'空间合并伴随财物边界失效，马的经济独立主张受到挑战。'],
-  ['合居宅第','园中茅茨',['马子才'],'movement','人间','私人',26695,26698,'另居将清贫主张落实为居住安排。'],
-  ['园中茅茨','黄英居处，复合居',['马子才'],'movement','人间','私人',26699,26704,'相思促使往返，人物自称的廉洁受到生活选择的反讽。'],
-  ['宅内宴饮处','门外菊畦',['陶生'],'movement','人间','私人',26720,26732,'在菊畦显露本形，异事发生在人间居所。'],
-  ['枯菊所在处','闺中盆内',['黄英（携陶生菊梗）'],'movement','人间','私人',26738,26747,'搬移的是菊梗；闺中灌溉使亲属照料延续到植物形态。']
- ]},
+ {title:'黄英',question:'院落经营、家庭边界与清贫身份如何互相牵动？',note:'路径直接读取总资料库。顺天是马宅的推定区域参考，非精确宅址；河朔为拟居，东粤为送信客来源。菊精活动仍在人间。',events:[]},
  {title:'罗刹海市',question:'不同异域的评价秩序与出入限制有何区别？',note:'罗刹国、海市和水国龙宫是三个不同层次的场所；不可一律称为天界。末段龙宫是女儿名，福海是儿子名；灌注地名网络会造成误连。',events:[
   ['海上','异域都会',['马骥'],'movement','海上→异域','城邑',8501,8504,'飓风造成非自愿进入，美貌在异域反被视为怪异。'],
   ['山村','罗刹都城',['马骥','引路村人'],'movement','异域','城邑',8518,8533,'村人引路及官员形貌展示出以丑为美的等级秩序。'],
@@ -54,7 +45,12 @@ const cases=[
   ['丁宅','杨家',['杨姓主人'],'movement','人间','私人',3171,3177,'返家后才得知先前送来的资助，延迟揭示强化丁的周全。']
  ]}
 ];
-const fingerprints={'画壁':'1c82de77','聂小倩':'56fd51f8','黄英':'38067b68','罗刹海市':'3fa06e83','席方平':'5ffe8e9b','丁前溪':'1fcda188'};
-function resolve(chapters){const result=cases.map(c=>{const source=chapters.find(x=>x.title===c.title);if(!source)throw Error('缺少篇目：'+c.title);return {...c,chapterId:source.id,events:c.events.map((e,i)=>{const [from,to,actors,kind,realm,access,start,end,reading]=e;const units=source.units.filter(u=>u.id>=start&&u.id<=end);if(!units.length||units[0].id!==start||units.at(-1).id!==end)throw Error('原文单位不匹配：'+c.title);return {id:c.title+':'+i,from,to,actors,kind,realm,access,reading,units,quote:units.map(u=>u.text).join('')};})};});for(const c of result){let h=2166136261;const text=JSON.stringify(c.events.map(e=>e.units.map(u=>[u.id,u.text])));for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);if((h>>>0).toString(16)!==fingerprints[c.title])throw Error('原文已变化，请重新核对：'+c.title);}return result;}
+const fingerprints={'画壁':'1c82de77','聂小倩':'56fd51f8','罗刹海市':'3fa06e83','席方平':'5ffe8e9b','丁前溪':'1fcda188'};
+function resolve(chapters){const result=cases.map(c=>{const source=chapters.find(x=>x.title===c.title);if(!source)throw Error('缺少篇目：'+c.title);
+ if(c.title==='黄英'){let h=2166136261;const text=JSON.stringify(source.units.map(u=>[u.id,u.text]));for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);if((h>>>0).toString(16)!=='69060a4e')throw Error('原文已变化，请重新核对：'+c.title);return {...c,chapterId:source.id,canonical:true,events:(source.route_steps||[]).filter(s=>s.transition_kind==='movement'||s.transition_kind==='plot').map((s,i)=>{
+  const units=source.units.filter(u=>u.id>=s.unit&&u.id<=(s.unit_end??s.unit));if(!units.map(u=>u.text).join('').includes(s.quote))throw Error('原文已变化，请重新核对：'+c.title);
+  return {id:c.title+':'+i,from:s.from_space||s.to_space,to:s.to_space,actors:Array.isArray(s.actors)?s.actors:String(s.actors||'').split('、'),kind:s.transition_kind==='plot'?'change':'movement',realm:s.space_realm,access:s.space_access,reading:s.interpretation,units,quote:s.quote};
+ })};}
+ return {...c,chapterId:source.id,events:c.events.map((e,i)=>{const [from,to,actors,kind,realm,access,start,end,reading]=e;const units=source.units.filter(u=>u.id>=start&&u.id<=end);if(!units.length||units[0].id!==start||units.at(-1).id!==end)throw Error('原文单位不匹配：'+c.title);return {id:c.title+':'+i,from,to,actors,kind,realm,access,reading,units,quote:units.map(u=>u.text).join('')};})};});for(const c of result){if(c.canonical)continue;let h=2166136261;const text=JSON.stringify(c.events.map(e=>e.units.map(u=>[u.id,u.text])));for(let i=0;i<text.length;i++)h=Math.imul(h^text.charCodeAt(i),16777619);if((h>>>0).toString(16)!==fingerprints[c.title])throw Error('原文已变化，请重新核对：'+c.title);}return result;}
 const api={resolve};if(typeof module!=='undefined'){module.exports=api;return;}root.GhostReviewedCases=api;
 })(typeof window==='undefined'?globalThis:window);

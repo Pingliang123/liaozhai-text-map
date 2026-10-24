@@ -31,8 +31,15 @@ function buildRaw(chapters,options={}){
     }
    }
   }
+  const boundRoutes=(c.route_steps||[]).filter(s=>s.source_valid&&s.transition_kind==='movement'&&(s.from_place_id||s.to_place_id));
+  const starts=new Map(),ends=new Map();for(const s of boundRoutes){const end=s.unit_end??s.unit;if(!starts.has(s.unit))starts.set(s.unit,[]);starts.get(s.unit).push(s);if(!ends.has(end))ends.set(end,[]);ends.get(end).push(s);}
   let current=null;
   for(const u of units){
+   // An explicitly reviewed journey interrupts the old scene. Its destination
+   // can anchor subsequent units, but a departure must not leave later rooms
+   // attributed to the city just left (e.g. Huang Ying's return from Jinling).
+   const starting=starts.get(u.id)||[],ending=ends.get(u.id)||[];
+   if(starting.length)current=null;
    const uncertain=uncertainScene(u.text);if(uncertain)current=null;
    const anchors=uncertain?[]:u.ps.filter(p=>!/^人/.test(u.text.slice(p.end))&&(/[在于至到抵赴往如游寓居归入过自从]$/.test(u.text.slice(0,p.at))||/^(?:城中|境内|境中)/.test(u.text.slice(p.end))));
    if(u.ps.length&&!anchors.length)current=null;
@@ -44,6 +51,7 @@ function buildRaw(chapters,options={}){
     if(!e.evidence.some(r=>r.chapterId===c.id&&r.unit===u.id))e.evidence.push({chapter:c.title,chapterId:c.id,unit:u.id,anchorUnit:anchor.unit,anchorText:anchor.text,quote:u.text,evidenceId:evidenceKey(c.id,source,target,anchor.text,u.text),actors:R.presentPeople(c,u.text),text:same?u.text:anchor.text+'\n…\n'+u.text,basis:same?'定位语句同单位线索':'延续前文场景的线索，需结合上下文核对',assignment:same?'explicit':'context'});
    }
    if(anchors.length){const last=anchors.at(-1);current={place:last.word,unit:u.id,text:u.text};if(u.ps.some(p=>p.at>last.at))current=null;}
+   if(ending.length){const last=ending.at(-1),place=last.to?.name,word=place&&c.places.find(w=>(c.place_aliases?.[w]||w)===place);current=word?{place:word,unit:u.id,text:last.quote}:null;}
   }
  }
  if(options.includeOtherworld){

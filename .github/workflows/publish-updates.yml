@@ -87,6 +87,7 @@ jobs:
           node automation/test-user-package-restoration.js
           node automation/test-yi-network.js
           node automation/test-spatial-route-consistency.js
+          node automation/test-huangying-review.js
           node automation/test-route-coverage.js
           node automation/test-map-place-visibility.js
 
@@ -169,6 +170,7 @@ jobs:
           cp reports/place-space-sync-audit.json reports/place-space-sync-audit.md reports/analysis-reports-20261021.json reports/analysis-reports-20261021.md reports/attachment-space-otherworld-audit-20261021.json reports/attachment-space-otherworld-audit-20261021.md reports/attachment-space-otherworld-application-20261021.json public/reports/
           cp reports/unified-migration-verification-20261020.json public/reports/
           cp reports/space-vocabulary-20261022.json public/reports/
+          cp reports/huangying-review-20261024.json reports/huangying-review-20261024.md public/reports/
           cp reports/unmapped-region-review-20261021.json public/reports/
           cp reports/unmapped-changes-20261021.md reports/unmapped-changes-20261021.json public/reports/
           cp reports/otherworld-hierarchy-review-20261021.md reports/otherworld-hierarchy-review-20261021.json public/reports/
