@@ -20,10 +20,12 @@ async function load(env=root){
  const key='liaozhai-map-corrections-v3-'+scope;
  const saved=await Store.readLocal(env,key,k=>fallback(env.indexedDB,k));
  if(saved)model.importDocument(Store.retainMissing(JSON.parse(saved),installed?installed.revisions:published));
+ const update=await Store.rebasePublished(model.document(),published,env);
+ if(update.applied.length)model.importDocument(update.document);
  const Records=typeof module!=='undefined'?require('./place-records'):env.GhostPlaceRecords;
  const chapters=snapshot(model),placeRecords=Records.build(model,base),state=JSON.stringify([chapters,placeRecords]);
  const revision_hash=root.crypto?.subtle?Array.from(new Uint8Array(await root.crypto.subtle.digest('SHA-256',new TextEncoder().encode(state))),b=>b.toString(16).padStart(2,'0')).join(''):state;
- return {generated:new Date().toISOString(),source_hash:base.source_sha256,revision_hash,chapters,placeRecords,storageKey:key,origin:saved?'本机已保存修订':installed?'本机总资料包':'GitHub 最新修订'};
+ return {generated:new Date().toISOString(),source_hash:base.source_sha256,revision_hash,chapters,placeRecords,storageKey:key,origin:update.applied.length?'本机修订＋发布更新':saved?'本机已保存修订':installed?'本机总资料包':'GitHub 最新修订'};
 }
 const api={snapshot,load,fallback};if(typeof module!=='undefined')module.exports=api;else root.GhostLabData=api;
 })(globalThis);

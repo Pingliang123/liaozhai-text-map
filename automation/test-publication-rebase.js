@@ -1,0 +1,25 @@
+'use strict';
+const assert=require('node:assert/strict'),cp=require('node:child_process'),fs=require('node:fs'),S=require('../assets/corpus-store'),M=require('./ghost_map_model'),D=require('../assets/research-lab/current-data');
+const pack=require('../data-package.json'),published=pack.revisions;
+const old=JSON.parse(cp.execFileSync('git',['show','cb19c3e:manual-revisions.json'],{maxBuffer:30000000}));
+const row=d=>d.overrides.find(r=>r.chapter_id===411).changes;
+(async()=>{
+ const saved=JSON.stringify(old),result=await S.rebasePublished(old,published);assert(result.applied.length>0);assert.equal(JSON.stringify(old),saved,'合并不改写原备份');
+ assert.deepEqual(row(result.document),row(published),'未改动的旧黄英资料完整更新');
+ assert.deepEqual(result.document.overrides.filter(r=>r.chapter_id!==411),old.overrides.filter(r=>r.chapter_id!==411));assert.deepEqual(result.document.place_locations,old.place_locations);
+ const normalized=M.create(pack.base);normalized.importDocument(old);assert.deepEqual(row((await S.rebasePublished(normalized.document(),published)).document),row(published),'模型规范化后的旧快照也能识别');
+ const edited=structuredClone(old);row(edited).event_types={人:1};row(edited).review_note='我的新笔记';row(edited).lexical_reviews['spaces:井']={status:'rejected',word:'井',kind:'spaces',note:'我手动改的'};
+ const changed=await S.rebasePublished(edited,published);assert.deepEqual(row(changed.document).event_types,{人:1});assert.equal(row(changed.document).review_note,'我的新笔记');assert.equal(row(changed.document).lexical_reviews['spaces:井'].note,'我手动改的');assert.equal(row(changed.document).narrative_events.length,45);
+ const paths=structuredClone(old);row(paths).narrative_events[0].interpretation='我单独修改的解释';assert.deepEqual(row((await S.rebasePublished(paths,published)).document).narrative_events,row(paths).narrative_events,'发生分歧的路径字段不自动覆盖');
+ const reset=structuredClone(old);reset.overrides=reset.overrides.filter(r=>r.chapter_id!==411);assert(!(await S.rebasePublished(reset,published)).document.overrides.some(r=>r.chapter_id===411),'主动重置不恢复');
+ const wrong={...old,source_sha256:'other'};assert.strictEqual((await S.rebasePublished(wrong,published)).document,wrong);
+ assert.equal((await S.rebasePublished(result.document,published)).applied.length,0,'不重复迁移');
+ const state=new Map(),env={localStorage:{getItem:k=>state.get(k)??null,setItem:(k,v)=>state.set(k,v)}};
+ const backup=await S.backupBeforeUpdate(env,'test',saved,result.version);await S.backupBeforeUpdate(env,'test','later',result.version);assert.equal(state.get(backup),saved,'更新前备份不被二次覆盖');
+ const key='liaozhai-map-corrections-v3-'+old.corpus_id;
+ const live=await D.load({GhostMapModel:M,GhostMapPackage:{},localStorage:{getItem:k=>k===key?saved:null},fetch:async url=>({ok:true,json:async()=>url.includes('release-manifest')?require('../release-manifest.json'):pack})});
+ assert.equal(live.chapters.find(c=>c.id===411).route_steps.length,45);assert.equal(live.origin,'本机修订＋发布更新');assert.equal(saved,JSON.stringify(old));
+ for(const file of ['index.html','assets/research-lab/index.html','assets/research-lab/cases.html'])assert(fs.readFileSync(file,'utf8').includes('publication-rebases.js'));
+ assert(fs.readFileSync('index.html','utf8').includes("location.hash==='#map-section'"));
+ console.log('PASS 旧快照更新45步、保留人工分歧/重置/定位、不可覆盖备份、三处统一与篇目链接开路线');
+})().catch(e=>{console.error(e);process.exitCode=1;});

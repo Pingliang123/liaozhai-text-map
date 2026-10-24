@@ -88,6 +88,7 @@ jobs:
           node automation/test-yi-network.js
           node automation/test-spatial-route-consistency.js
           node automation/test-huangying-review.js
+          node automation/test-publication-rebase.js
           node automation/test-route-coverage.js
           node automation/test-map-place-visibility.js
 
