@@ -523,8 +523,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32959664,
-      "sha256": "a8924ef0ba932bc1c44106c112791a924336f0a2c4d2cda32d74b495f923da87"
+      "bytes": 32959730,
+      "sha256": "34a5b61e7b334e6e4908ddf693cf215abe4038bac4794b9d0b871f63b1dbbbdd"
     },
     {
       "path": "github-login.js",
@@ -544,7 +544,7 @@
     {
       "path": "index.html",
       "bytes": 278326,
-      "sha256": "3782855a19cb0cfcad98982de540ae4a4631383ff4ccbb53076eefb14258da59"
+      "sha256": "dac9d648174fe56604ae85cb19fb511601820e4f35a9c593f225eebe6870ced3"
     },
     {
       "path": "assets/chapter-references.js",
@@ -573,8 +573,8 @@
     },
     {
       "path": "assets/map-base.json",
-      "bytes": 21512422,
-      "sha256": "21da0e35d74633c8126e8247d65aae319708905804aed47f8e856d30f7624089"
+      "bytes": 21512488,
+      "sha256": "380bb8842ac140e5d96b8cc4a13dc6ec21aebbc717e7f85f8220eccf0e2d3af6"
     },
     {
       "path": "assets/map-network-link.js",
@@ -623,8 +623,8 @@
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
-      "bytes": 6267,
-      "sha256": "a8eec0ae63108591d54e08cdf6008787b816cbfe6090fe84835ba213b2ce5353"
+      "bytes": 7789,
+      "sha256": "b000f8d152b7bb676edd0a6cddc59916f426a8f9425da7270a274acb207195d1"
     },
     {
       "path": "assets/research-lab/current-data.js",
@@ -633,8 +633,8 @@
     },
     {
       "path": "assets/research-lab/data.json",
-      "bytes": 13124270,
-      "sha256": "998efae47adb59213f8d841a284c55a8107bb29e2837db354955e79927b40722"
+      "bytes": 13123756,
+      "sha256": "068bbd828f72f3bca0f52b44f7fa6b6adf38b679b8e983b7b3604e3629e1ecff"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 4111,
-      "sha256": "58db8fd0210bfa65744e4308fdbf3cdd5364219ab5ab9bcc8294485331171730"
+      "sha256": "694a1371f8d1a5c4726941bc14f78b24424c4b5fa28c279247c4e2163f91e103"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -678,8 +678,8 @@
     },
     {
       "path": "assets/research-lab/networkx-analysis.json",
-      "bytes": 2876578,
-      "sha256": "55b9a42ad9b9da08e2b1b787e516ecb7dc24460312e4c4ccb1cb177d6b5e0f18"
+      "bytes": 2871319,
+      "sha256": "fd8afc0c68d8c1ed8a927305fbe1b678db44865f045872fee406035d27602df5"
     },
     {
       "path": "assets/research-lab/place-level-colors.js",
@@ -688,8 +688,8 @@
     },
     {
       "path": "assets/research-lab/place-levels.json",
-      "bytes": 233275,
-      "sha256": "a92883dba7af7b10b097568536956ff16d64fc219548a38c24e1cf5b21ce1af6"
+      "bytes": 236987,
+      "sha256": "19c9c33f875360d02e41c98e2d8d630e3e2de62e5cdf8f0bcc6f990010354db4"
     },
     {
       "path": "assets/research-lab/place-network.js",
@@ -738,8 +738,8 @@
     },
     {
       "path": "assets/research-lab/topics.json",
-      "bytes": 1561385,
-      "sha256": "5d86e3ee82d1dec3b763e0e494dede36769c1f0a0b2dd025bb9da3883199d5e0"
+      "bytes": 1560974,
+      "sha256": "e17e42eb86e51097c5536a2c21044ee45e739a18edac7651b5f88ff09ad343e3"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -790,8 +790,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32959664,
-      "sha256": "a8924ef0ba932bc1c44106c112791a924336f0a2c4d2cda32d74b495f923da87"
+      "bytes": 32959730,
+      "sha256": "34a5b61e7b334e6e4908ddf693cf215abe4038bac4794b9d0b871f63b1dbbbdd"
     },
     {
       "path": "data.html",
@@ -816,7 +816,7 @@
     {
       "path": "index.html",
       "bytes": 278326,
-      "sha256": "3782855a19cb0cfcad98982de540ae4a4631383ff4ccbb53076eefb14258da59"
+      "sha256": "dac9d648174fe56604ae85cb19fb511601820e4f35a9c593f225eebe6870ced3"
     },
     {
       "path": "manual-revisions.json",
@@ -825,8 +825,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 37885696,
-      "sha256": "c7f6fb31664e08bceece6c26aa5f8eaa4197e90e7988f32d5e3a69f53a111a01"
+      "bytes": 37884082,
+      "sha256": "f144725a91352a1acd71cc293f669b8396a64f649b2d4ea85709c3a2f40a4702"
     }
   ]
 }

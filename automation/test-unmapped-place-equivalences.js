@@ -13,7 +13,8 @@ assert(Object.keys(ALIASES).length >= 25);
 const pack = JSON.parse(fs.readFileSync('data-package.json', 'utf8'));
 const model = M.create(pack.base);
 model.importDocument(JSON.parse(fs.readFileSync('manual-revisions.json', 'utf8')));
-assert(model.places().some(row => row.name === '都' && row.coordinate_kind === 'approximate'));
+assert(model.places().some(row => row.name === model.placeName('都') && row.merged_names.includes('都')));
+assert.equal(model.placeInfo('都').coordinate_kind,'approximate','原文都的定位精度仍保留');
 assert(!Object.hasOwn(pack.base.name_aliases, '青州城'), '同篇已有“青州”时不应重复合并“青州城”');
 assert(!Object.hasOwn(pack.base.name_aliases, '客金陵'), '同篇已有“金陵”时不应重复合并“客金陵”');
 for(const id of model.ids){const words=model.view(id).places.map(p=>model.name(p.word));assert.equal(new Set(words).size,words.length,'首都别名归并后不应产生重复篇目地点');}

@@ -16,7 +16,7 @@ assert(rows.some(r=>r.unit===26599&&r.from.name==='顺天'&&r.to.name==='金陵'
 assert(rows.some(r=>r.unit===26705&&r.to.name==='金陵'&&r.actors==='马子才'));
 assert(!rows.some(r=>r.transition_kind==='movement'&&/河朔/.test(r.from_space+r.to_space)));
 assert(rows.filter(r=>r.from_space==='东粤').every(r=>r.actors==='送信客'));
-assert(rows.filter(r=>r.from_space.includes('南中')).every(r=>r.from===null&&r.to.name==='都'));
+assert(rows.filter(r=>r.from_space.includes('南中')).every(r=>r.from===null&&r.to.name===model.placeName('都')));
 assert(!c.places.some(p=>p.word==='南中'));assert(c.space_words.includes('南中'));
 assert(!c.space_words.includes('井'));assert(c.space_words.includes('南第'));assert(c.space_words.includes('花肆'));
 assert(c.people.some(p=>p.word==='陶生'&&p.person_types.妖));assert(c.people.find(p=>p.word==='陶').canonical==='陶生');
