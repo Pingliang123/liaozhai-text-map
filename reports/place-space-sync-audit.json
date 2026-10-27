@@ -1,8 +1,8 @@
 {
   "revision_hash": "cd1d1bad40273e9d019617afee8c9a134f1b565235c0ff7ae5024c0ed9f1ba30",
   "chapters": 491,
-  "place_nodes": 398,
-  "space_relations": 197,
+  "place_nodes": 394,
+  "space_relations": 196,
   "pending_space_occurrences": 3114,
   "crosscheck": [
     {

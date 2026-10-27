@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T09:10:00.186Z",
+  "generated_at": "2026-10-27T09:46:31.914Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -220911,8 +220911,8 @@
             "level": "province"
           },
           {
-            "id": "place:都",
-            "label": "都",
+            "id": "place:顺天",
+            "label": "顺天",
             "kind": "place",
             "layer": "place",
             "level": "prefecture"
@@ -221308,20 +221308,6 @@
             "kind": "chapter",
             "layer": "chapter",
             "chapter_id": 37
-          },
-          {
-            "id": "place:燕都",
-            "label": "燕都",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
-            "id": "place:京",
-            "label": "京",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
           },
           {
             "id": "place:平原",
@@ -224285,13 +224271,6 @@
             "level": "region"
           },
           {
-            "id": "place:顺天",
-            "label": "顺天",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "chapter:267",
             "label": "镜听",
             "kind": "chapter",
@@ -226105,13 +226084,6 @@
             "level": "county"
           },
           {
-            "id": "place:京师",
-            "label": "京师",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "chapter:416",
             "label": "晚霞",
             "kind": "chapter",
@@ -227232,9 +227204,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:5|place:都",
+            "id": "chapter-place|chapter:5|place:顺天",
             "source": "chapter:5",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -227669,9 +227641,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:30|place:都",
+            "id": "chapter-place|chapter:30|place:顺天",
             "source": "chapter:30",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -227859,28 +227831,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:37|place:燕都",
+            "id": "chapter-place|chapter:37|place:顺天",
             "source": "chapter:37",
-            "target": "place:燕都",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              37
-            ],
-            "evidence": [
-              {
-                "chapter_id": 37,
-                "chapter": "王成",
-                "unit": null,
-                "excerpt": "王成"
-              }
-            ]
-          },
-          {
-            "id": "chapter-place|chapter:37|place:京",
-            "source": "chapter:37",
-            "target": "place:京",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -229645,9 +229598,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:98|place:都",
+            "id": "chapter-place|chapter:98|place:顺天",
             "source": "chapter:98",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -231374,9 +231327,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:151|place:燕都",
+            "id": "chapter-place|chapter:151|place:顺天",
             "source": "chapter:151",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -231849,9 +231802,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:171|place:燕都",
+            "id": "chapter-place|chapter:171|place:顺天",
             "source": "chapter:171",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -233331,9 +233284,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:233|place:都",
+            "id": "chapter-place|chapter:233|place:顺天",
             "source": "chapter:233",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -234965,9 +234918,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:286|place:都",
+            "id": "chapter-place|chapter:286|place:顺天",
             "source": "chapter:286",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -235915,9 +235868,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:318|place:都",
+            "id": "chapter-place|chapter:318|place:顺天",
             "source": "chapter:318",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -237169,9 +237122,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:363|place:都",
+            "id": "chapter-place|chapter:363|place:顺天",
             "source": "chapter:363",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -237587,9 +237540,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:379|place:都",
+            "id": "chapter-place|chapter:379|place:顺天",
             "source": "chapter:379",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -238746,9 +238699,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:408|place:都",
+            "id": "chapter-place|chapter:408|place:顺天",
             "source": "chapter:408",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -238898,25 +238851,6 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:411|place:都",
-            "source": "chapter:411",
-            "target": "place:都",
-            "layer": "chapter-place",
-            "relation": "篇目—地点",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
             "id": "chapter-place|chapter:412|place:彭城",
             "source": "chapter:412",
             "target": "place:彭城",
@@ -239050,9 +238984,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:415|place:京师",
+            "id": "chapter-place|chapter:415|place:顺天",
             "source": "chapter:415",
-            "target": "place:京师",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -242033,9 +241967,9 @@
             ]
           },
           {
-            "id": "chapter-place|chapter:488|place:都",
+            "id": "chapter-place|chapter:488|place:顺天",
             "source": "chapter:488",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "chapter-place",
             "relation": "篇目—地点",
             "weight": 1,
@@ -242150,8 +242084,8 @@
             "level": "province"
           },
           {
-            "id": "place:都",
-            "label": "都",
+            "id": "place:顺天",
+            "label": "顺天",
             "kind": "place",
             "layer": "place",
             "level": "prefecture"
@@ -242323,20 +242257,6 @@
             "kind": "place",
             "layer": "place",
             "level": "natural"
-          },
-          {
-            "id": "place:燕都",
-            "label": "燕都",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
-            "id": "place:京",
-            "label": "京",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
           },
           {
             "id": "place:平原",
@@ -243697,13 +243617,6 @@
             "level": "region"
           },
           {
-            "id": "place:顺天",
-            "label": "顺天",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "place:蒙山",
             "label": "蒙山",
             "kind": "place",
@@ -244474,13 +244387,6 @@
             "level": "county"
           },
           {
-            "id": "place:京师",
-            "label": "京师",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "place:江水",
             "label": "江水",
             "kind": "place",
@@ -245038,9 +244944,9 @@
             ]
           },
           {
-            "id": "place-place|place:江西|place:都",
+            "id": "place-place|place:江西|place:顺天",
             "source": "place:江西",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -245057,8 +244963,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:江西",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:江西",
+            "source": "place:顺天",
             "target": "place:江西",
             "layer": "place-place",
             "relation": "地点共现",
@@ -245760,9 +245666,9 @@
             ]
           },
           {
-            "id": "place-place|place:淮阳|place:都",
+            "id": "place-place|place:淮阳|place:顺天",
             "source": "place:淮阳",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -245779,8 +245685,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:淮阳",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:淮阳",
+            "source": "place:顺天",
             "target": "place:淮阳",
             "layer": "place-place",
             "relation": "地点共现",
@@ -245798,9 +245704,9 @@
             ]
           },
           {
-            "id": "place-place|place:关东|place:都",
+            "id": "place-place|place:关东|place:顺天",
             "source": "place:关东",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -245817,8 +245723,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:关东",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:关东",
+            "source": "place:顺天",
             "target": "place:关东",
             "layer": "place-place",
             "relation": "地点共现",
@@ -246102,46 +246008,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:京",
-            "source": "place:燕都",
-            "target": "place:京",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              37
-            ],
-            "evidence": [
-              {
-                "chapter_id": 37,
-                "chapter": "王成",
-                "unit": null,
-                "excerpt": "王成"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:京|place:燕都",
-            "source": "place:京",
-            "target": "place:燕都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              37
-            ],
-            "evidence": [
-              {
-                "chapter_id": 37,
-                "chapter": "王成",
-                "unit": null,
-                "excerpt": "王成"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:燕都|place:平原",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:平原",
+            "source": "place:顺天",
             "target": "place:平原",
             "layer": "place-place",
             "relation": "地点共现",
@@ -246159,47 +246027,9 @@
             ]
           },
           {
-            "id": "place-place|place:平原|place:燕都",
+            "id": "place-place|place:平原|place:顺天",
             "source": "place:平原",
-            "target": "place:燕都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              37
-            ],
-            "evidence": [
-              {
-                "chapter_id": 37,
-                "chapter": "王成",
-                "unit": null,
-                "excerpt": "王成"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:京|place:平原",
-            "source": "place:京",
-            "target": "place:平原",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              37
-            ],
-            "evidence": [
-              {
-                "chapter_id": 37,
-                "chapter": "王成",
-                "unit": null,
-                "excerpt": "王成"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:平原|place:京",
-            "source": "place:平原",
-            "target": "place:京",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -249270,9 +249100,9 @@
             ]
           },
           {
-            "id": "place-place|place:南岳|place:都",
+            "id": "place-place|place:南岳|place:顺天",
             "source": "place:南岳",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -249289,8 +249119,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:南岳",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:南岳",
+            "source": "place:顺天",
             "target": "place:南岳",
             "layer": "place-place",
             "relation": "地点共现",
@@ -249422,8 +249252,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:天门",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:天门",
+            "source": "place:顺天",
             "target": "place:天门",
             "layer": "place-place",
             "relation": "地点共现",
@@ -249441,9 +249271,9 @@
             ]
           },
           {
-            "id": "place-place|place:天门|place:都",
+            "id": "place-place|place:天门|place:顺天",
             "source": "place:天门",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -249460,8 +249290,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:广寒宫",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:广寒宫",
+            "source": "place:顺天",
             "target": "place:广寒宫",
             "layer": "place-place",
             "relation": "地点共现",
@@ -249479,9 +249309,9 @@
             ]
           },
           {
-            "id": "place-place|place:广寒宫|place:都",
+            "id": "place-place|place:广寒宫|place:顺天",
             "source": "place:广寒宫",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -249498,8 +249328,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:桂阙",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:桂阙",
+            "source": "place:顺天",
             "target": "place:桂阙",
             "layer": "place-place",
             "relation": "地点共现",
@@ -249517,9 +249347,9 @@
             ]
           },
           {
-            "id": "place-place|place:桂阙|place:都",
+            "id": "place-place|place:桂阙|place:顺天",
             "source": "place:桂阙",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -253296,14 +253126,15 @@
             ]
           },
           {
-            "id": "place-place|place:平阳|place:燕都",
+            "id": "place-place|place:平阳|place:顺天",
             "source": "place:平阳",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 2,
             "chapters": [
-              151
+              151,
+              318
             ],
             "evidence": [
               {
@@ -253311,18 +253142,25 @@
                 "chapter": "辛十四娘",
                 "unit": null,
                 "excerpt": "辛十四娘"
+              },
+              {
+                "chapter_id": 318,
+                "chapter": "司文郎",
+                "unit": null,
+                "excerpt": "司文郎"
               }
             ]
           },
           {
-            "id": "place-place|place:燕都|place:平阳",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:平阳",
+            "source": "place:顺天",
             "target": "place:平阳",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 2,
             "chapters": [
-              151
+              151,
+              318
             ],
             "evidence": [
               {
@@ -253330,6 +253168,12 @@
                 "chapter": "辛十四娘",
                 "unit": null,
                 "excerpt": "辛十四娘"
+              },
+              {
+                "chapter_id": 318,
+                "chapter": "司文郎",
+                "unit": null,
+                "excerpt": "司文郎"
               }
             ]
           },
@@ -253486,8 +253330,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:大同",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:大同",
+            "source": "place:顺天",
             "target": "place:大同",
             "layer": "place-place",
             "relation": "地点共现",
@@ -253505,9 +253349,9 @@
             ]
           },
           {
-            "id": "place-place|place:大同|place:燕都",
+            "id": "place-place|place:大同|place:顺天",
             "source": "place:大同",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -253524,8 +253368,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:华山",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:华山",
+            "source": "place:顺天",
             "target": "place:华山",
             "layer": "place-place",
             "relation": "地点共现",
@@ -253543,9 +253387,9 @@
             ]
           },
           {
-            "id": "place-place|place:华山|place:燕都",
+            "id": "place-place|place:华山|place:顺天",
             "source": "place:华山",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -253562,8 +253406,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:广平",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:广平",
+            "source": "place:顺天",
             "target": "place:广平",
             "layer": "place-place",
             "relation": "地点共现",
@@ -253581,9 +253425,9 @@
             ]
           },
           {
-            "id": "place-place|place:广平|place:燕都",
+            "id": "place-place|place:广平|place:顺天",
             "source": "place:广平",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -253600,8 +253444,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:直隶",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:直隶",
+            "source": "place:顺天",
             "target": "place:直隶",
             "layer": "place-place",
             "relation": "地点共现",
@@ -253619,9 +253463,9 @@
             ]
           },
           {
-            "id": "place-place|place:直隶|place:燕都",
+            "id": "place-place|place:直隶|place:顺天",
             "source": "place:直隶",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -254246,9 +254090,9 @@
             ]
           },
           {
-            "id": "place-place|place:东昌|place:燕都",
+            "id": "place-place|place:东昌|place:顺天",
             "source": "place:东昌",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -254265,8 +254109,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:东昌",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:东昌",
+            "source": "place:顺天",
             "target": "place:东昌",
             "layer": "place-place",
             "relation": "地点共现",
@@ -254322,9 +254166,9 @@
             ]
           },
           {
-            "id": "place-place|place:汉江|place:燕都",
+            "id": "place-place|place:汉江|place:顺天",
             "source": "place:汉江",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -254341,8 +254185,8 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:汉江",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:汉江",
+            "source": "place:顺天",
             "target": "place:汉江",
             "layer": "place-place",
             "relation": "地点共现",
@@ -254398,14 +254242,15 @@
             ]
           },
           {
-            "id": "place-place|place:燕都|place:山东",
-            "source": "place:燕都",
+            "id": "place-place|place:顺天|place:山东",
+            "source": "place:顺天",
             "target": "place:山东",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 2,
             "chapters": [
-              171
+              171,
+              314
             ],
             "evidence": [
               {
@@ -254413,18 +254258,25 @@
                 "chapter": "鸦头",
                 "unit": null,
                 "excerpt": "鸦头"
+              },
+              {
+                "chapter_id": 314,
+                "chapter": "褚生",
+                "unit": null,
+                "excerpt": "褚生"
               }
             ]
           },
           {
-            "id": "place-place|place:山东|place:燕都",
+            "id": "place-place|place:山东|place:顺天",
             "source": "place:山东",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 2,
             "chapters": [
-              171
+              171,
+              314
             ],
             "evidence": [
               {
@@ -254432,6 +254284,12 @@
                 "chapter": "鸦头",
                 "unit": null,
                 "excerpt": "鸦头"
+              },
+              {
+                "chapter_id": 314,
+                "chapter": "褚生",
+                "unit": null,
+                "excerpt": "褚生"
               }
             ]
           },
@@ -256744,14 +256602,16 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:陕西",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:陕西",
+            "source": "place:顺天",
             "target": "place:陕西",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 3,
             "chapters": [
-              233
+              233,
+              393,
+              415
             ],
             "evidence": [
               {
@@ -256759,18 +256619,32 @@
                 "chapter": "乱离二则",
                 "unit": null,
                 "excerpt": "乱离二则"
+              },
+              {
+                "chapter_id": 393,
+                "chapter": "三生",
+                "unit": null,
+                "excerpt": "三生"
+              },
+              {
+                "chapter_id": 415,
+                "chapter": "任秀",
+                "unit": null,
+                "excerpt": "任秀"
               }
             ]
           },
           {
-            "id": "place-place|place:陕西|place:都",
+            "id": "place-place|place:陕西|place:顺天",
             "source": "place:陕西",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 1,
+            "weight": 3,
             "chapters": [
-              233
+              233,
+              393,
+              415
             ],
             "evidence": [
               {
@@ -256778,6 +256652,18 @@
                 "chapter": "乱离二则",
                 "unit": null,
                 "excerpt": "乱离二则"
+              },
+              {
+                "chapter_id": 393,
+                "chapter": "三生",
+                "unit": null,
+                "excerpt": "三生"
+              },
+              {
+                "chapter_id": 415,
+                "chapter": "任秀",
+                "unit": null,
+                "excerpt": "任秀"
               }
             ]
           },
@@ -259950,9 +259836,9 @@
             ]
           },
           {
-            "id": "place-place|place:诸城|place:都",
+            "id": "place-place|place:诸城|place:顺天",
             "source": "place:诸城",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -259969,8 +259855,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:诸城",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:诸城",
+            "source": "place:顺天",
             "target": "place:诸城",
             "layer": "place-place",
             "relation": "地点共现",
@@ -260026,8 +259912,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:五莲山",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:五莲山",
+            "source": "place:顺天",
             "target": "place:五莲山",
             "layer": "place-place",
             "relation": "地点共现",
@@ -260045,9 +259931,9 @@
             ]
           },
           {
-            "id": "place-place|place:五莲山|place:都",
+            "id": "place-place|place:五莲山|place:顺天",
             "source": "place:五莲山",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -260744,44 +260630,6 @@
                 "chapter": "嫦娥",
                 "unit": null,
                 "excerpt": "嫦娥"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:顺天|place:山东",
-            "source": "place:顺天",
-            "target": "place:山东",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              314
-            ],
-            "evidence": [
-              {
-                "chapter_id": 314,
-                "chapter": "褚生",
-                "unit": null,
-                "excerpt": "褚生"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:山东|place:顺天",
-            "source": "place:山东",
-            "target": "place:顺天",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              314
-            ],
-            "evidence": [
-              {
-                "chapter_id": 314,
-                "chapter": "褚生",
-                "unit": null,
-                "excerpt": "褚生"
               }
             ]
           },
@@ -261498,44 +261346,6 @@
             ]
           },
           {
-            "id": "place-place|place:平阳|place:都",
-            "source": "place:平阳",
-            "target": "place:都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              318
-            ],
-            "evidence": [
-              {
-                "chapter_id": 318,
-                "chapter": "司文郎",
-                "unit": null,
-                "excerpt": "司文郎"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:都|place:平阳",
-            "source": "place:都",
-            "target": "place:平阳",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              318
-            ],
-            "evidence": [
-              {
-                "chapter_id": 318,
-                "chapter": "司文郎",
-                "unit": null,
-                "excerpt": "司文郎"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:平阳|place:南部",
             "source": "place:平阳",
             "target": "place:南部",
@@ -261726,9 +261536,9 @@
             ]
           },
           {
-            "id": "place-place|place:登州|place:都",
+            "id": "place-place|place:登州|place:顺天",
             "source": "place:登州",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -261745,8 +261555,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:登州",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:登州",
+            "source": "place:顺天",
             "target": "place:登州",
             "layer": "place-place",
             "relation": "地点共现",
@@ -261916,9 +261726,9 @@
             ]
           },
           {
-            "id": "place-place|place:梓潼|place:都",
+            "id": "place-place|place:梓潼|place:顺天",
             "source": "place:梓潼",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -261935,8 +261745,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:梓潼",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:梓潼",
+            "source": "place:顺天",
             "target": "place:梓潼",
             "layer": "place-place",
             "relation": "地点共现",
@@ -262068,9 +261878,9 @@
             ]
           },
           {
-            "id": "place-place|place:余杭|place:都",
+            "id": "place-place|place:余杭|place:顺天",
             "source": "place:余杭",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -262087,8 +261897,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:余杭",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:余杭",
+            "source": "place:顺天",
             "target": "place:余杭",
             "layer": "place-place",
             "relation": "地点共现",
@@ -262182,14 +261992,15 @@
             ]
           },
           {
-            "id": "place-place|place:金陵|place:都",
+            "id": "place-place|place:金陵|place:顺天",
             "source": "place:金陵",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 2,
+            "weight": 3,
             "chapters": [
               318,
+              396,
               411
             ],
             "evidence": [
@@ -262200,6 +262011,12 @@
                 "excerpt": "司文郎"
               },
               {
+                "chapter_id": 396,
+                "chapter": "素秋",
+                "unit": null,
+                "excerpt": "素秋"
+              },
+              {
                 "chapter_id": 411,
                 "chapter": "黄英",
                 "unit": null,
@@ -262208,14 +262025,15 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:金陵",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:金陵",
+            "source": "place:顺天",
             "target": "place:金陵",
             "layer": "place-place",
             "relation": "地点共现",
-            "weight": 2,
+            "weight": 3,
             "chapters": [
               318,
+              396,
               411
             ],
             "evidence": [
@@ -262224,6 +262042,12 @@
                 "chapter": "司文郎",
                 "unit": null,
                 "excerpt": "司文郎"
+              },
+              {
+                "chapter_id": 396,
+                "chapter": "素秋",
+                "unit": null,
+                "excerpt": "素秋"
               },
               {
                 "chapter_id": 411,
@@ -262310,8 +262134,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:南部",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:南部",
+            "source": "place:顺天",
             "target": "place:南部",
             "layer": "place-place",
             "relation": "地点共现",
@@ -262329,9 +262153,9 @@
             ]
           },
           {
-            "id": "place-place|place:南部|place:都",
+            "id": "place-place|place:南部|place:顺天",
             "source": "place:南部",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -262348,8 +262172,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:九天",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:九天",
+            "source": "place:顺天",
             "target": "place:九天",
             "layer": "place-place",
             "relation": "地点共现",
@@ -262367,9 +262191,9 @@
             ]
           },
           {
-            "id": "place-place|place:九天|place:都",
+            "id": "place-place|place:九天|place:顺天",
             "source": "place:九天",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -264704,9 +264528,9 @@
             ]
           },
           {
-            "id": "place-place|place:永平|place:都",
+            "id": "place-place|place:永平|place:顺天",
             "source": "place:永平",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -264723,8 +264547,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:永平",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:永平",
+            "source": "place:顺天",
             "target": "place:永平",
             "layer": "place-place",
             "relation": "地点共现",
@@ -264780,9 +264604,9 @@
             ]
           },
           {
-            "id": "place-place|place:太原|place:都",
+            "id": "place-place|place:太原|place:顺天",
             "source": "place:太原",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -264799,8 +264623,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:太原",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:太原",
+            "source": "place:顺天",
             "target": "place:太原",
             "layer": "place-place",
             "relation": "地点共现",
@@ -264856,8 +264680,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:凤翔",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:凤翔",
+            "source": "place:顺天",
             "target": "place:凤翔",
             "layer": "place-place",
             "relation": "地点共现",
@@ -264875,9 +264699,9 @@
             ]
           },
           {
-            "id": "place-place|place:凤翔|place:都",
+            "id": "place-place|place:凤翔|place:顺天",
             "source": "place:凤翔",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -265464,8 +265288,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:天宫",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:天宫",
+            "source": "place:顺天",
             "target": "place:天宫",
             "layer": "place-place",
             "relation": "地点共现",
@@ -265483,9 +265307,9 @@
             ]
           },
           {
-            "id": "place-place|place:天宫|place:都",
+            "id": "place-place|place:天宫|place:顺天",
             "source": "place:天宫",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -266414,44 +266238,6 @@
             ]
           },
           {
-            "id": "place-place|place:陕西|place:顺天",
-            "source": "place:陕西",
-            "target": "place:顺天",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              393
-            ],
-            "evidence": [
-              {
-                "chapter_id": 393,
-                "chapter": "三生",
-                "unit": null,
-                "excerpt": "三生"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:顺天|place:陕西",
-            "source": "place:顺天",
-            "target": "place:陕西",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              393
-            ],
-            "evidence": [
-              {
-                "chapter_id": 393,
-                "chapter": "三生",
-                "unit": null,
-                "excerpt": "三生"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:泰山|place:海东",
             "source": "place:泰山",
             "target": "place:海东",
@@ -266904,58 +266690,6 @@
                 "chapter": "素秋",
                 "unit": null,
                 "excerpt": "素秋"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:顺天|place:金陵",
-            "source": "place:顺天",
-            "target": "place:金陵",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 2,
-            "chapters": [
-              396,
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 396,
-                "chapter": "素秋",
-                "unit": null,
-                "excerpt": "素秋"
-              },
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:金陵|place:顺天",
-            "source": "place:金陵",
-            "target": "place:顺天",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 2,
-            "chapters": [
-              396,
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 396,
-                "chapter": "素秋",
-                "unit": null,
-                "excerpt": "素秋"
-              },
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
               }
             ]
           },
@@ -268100,44 +267834,6 @@
             ]
           },
           {
-            "id": "place-place|place:顺天|place:都",
-            "source": "place:顺天",
-            "target": "place:都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:都|place:顺天",
-            "source": "place:都",
-            "target": "place:顺天",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:河朔|place:广东",
             "source": "place:河朔",
             "target": "place:广东",
@@ -268160,82 +267856,6 @@
             "id": "place-place|place:广东|place:河朔",
             "source": "place:广东",
             "target": "place:河朔",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:河朔|place:都",
-            "source": "place:河朔",
-            "target": "place:都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:都|place:河朔",
-            "source": "place:都",
-            "target": "place:河朔",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:广东|place:都",
-            "source": "place:广东",
-            "target": "place:都",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              411
-            ],
-            "evidence": [
-              {
-                "chapter_id": 411,
-                "chapter": "黄英",
-                "unit": null,
-                "excerpt": "黄英"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:都|place:广东",
-            "source": "place:都",
-            "target": "place:广东",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -268366,9 +267986,9 @@
             ]
           },
           {
-            "id": "place-place|place:鱼台|place:京师",
+            "id": "place-place|place:鱼台|place:顺天",
             "source": "place:鱼台",
-            "target": "place:京师",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -268385,8 +268005,8 @@
             ]
           },
           {
-            "id": "place-place|place:京师|place:鱼台",
-            "source": "place:京师",
+            "id": "place-place|place:顺天|place:鱼台",
+            "source": "place:顺天",
             "target": "place:鱼台",
             "layer": "place-place",
             "relation": "地点共现",
@@ -268480,9 +268100,9 @@
             ]
           },
           {
-            "id": "place-place|place:宿迁|place:京师",
+            "id": "place-place|place:宿迁|place:顺天",
             "source": "place:宿迁",
-            "target": "place:京师",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -268499,8 +268119,8 @@
             ]
           },
           {
-            "id": "place-place|place:京师|place:宿迁",
-            "source": "place:京师",
+            "id": "place-place|place:顺天|place:宿迁",
+            "source": "place:顺天",
             "target": "place:宿迁",
             "layer": "place-place",
             "relation": "地点共现",
@@ -268556,44 +268176,6 @@
             ]
           },
           {
-            "id": "place-place|place:陕西|place:京师",
-            "source": "place:陕西",
-            "target": "place:京师",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              415
-            ],
-            "evidence": [
-              {
-                "chapter_id": 415,
-                "chapter": "任秀",
-                "unit": null,
-                "excerpt": "任秀"
-              }
-            ]
-          },
-          {
-            "id": "place-place|place:京师|place:陕西",
-            "source": "place:京师",
-            "target": "place:陕西",
-            "layer": "place-place",
-            "relation": "地点共现",
-            "weight": 1,
-            "chapters": [
-              415
-            ],
-            "evidence": [
-              {
-                "chapter_id": 415,
-                "chapter": "任秀",
-                "unit": null,
-                "excerpt": "任秀"
-              }
-            ]
-          },
-          {
             "id": "place-place|place:陕西|place:临清",
             "source": "place:陕西",
             "target": "place:临清",
@@ -268632,8 +268214,8 @@
             ]
           },
           {
-            "id": "place-place|place:京师|place:临清",
-            "source": "place:京师",
+            "id": "place-place|place:顺天|place:临清",
+            "source": "place:顺天",
             "target": "place:临清",
             "layer": "place-place",
             "relation": "地点共现",
@@ -268651,9 +268233,9 @@
             ]
           },
           {
-            "id": "place-place|place:临清|place:京师",
+            "id": "place-place|place:临清|place:顺天",
             "source": "place:临清",
-            "target": "place:京师",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -277224,9 +276806,9 @@
             ]
           },
           {
-            "id": "place-place|place:济南|place:都",
+            "id": "place-place|place:济南|place:顺天",
             "source": "place:济南",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -277243,8 +276825,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:济南",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:济南",
+            "source": "place:顺天",
             "target": "place:济南",
             "layer": "place-place",
             "relation": "地点共现",
@@ -277300,9 +276882,9 @@
             ]
           },
           {
-            "id": "place-place|place:泰安|place:都",
+            "id": "place-place|place:泰安|place:顺天",
             "source": "place:泰安",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -277319,8 +276901,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:泰安",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:泰安",
+            "source": "place:顺天",
             "target": "place:泰安",
             "layer": "place-place",
             "relation": "地点共现",
@@ -277338,9 +276920,9 @@
             ]
           },
           {
-            "id": "place-place|place:高苑|place:都",
+            "id": "place-place|place:高苑|place:顺天",
             "source": "place:高苑",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "place-place",
             "relation": "地点共现",
             "weight": 1,
@@ -277357,8 +276939,8 @@
             ]
           },
           {
-            "id": "place-place|place:都|place:高苑",
-            "source": "place:都",
+            "id": "place-place|place:顺天|place:高苑",
+            "source": "place:顺天",
             "target": "place:高苑",
             "layer": "place-place",
             "relation": "地点共现",
@@ -277532,8 +277114,8 @@
             "level": "province"
           },
           {
-            "id": "place:都",
-            "label": "都",
+            "id": "place:顺天",
+            "label": "顺天",
             "kind": "place",
             "layer": "place",
             "level": "prefecture"
@@ -277975,20 +277557,6 @@
             "label": "寝室",
             "kind": "space",
             "layer": "space"
-          },
-          {
-            "id": "place:燕都",
-            "label": "燕都",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
-            "id": "place:京",
-            "label": "京",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
           },
           {
             "id": "place:平原",
@@ -281179,13 +280747,6 @@
             "level": "region"
           },
           {
-            "id": "place:顺天",
-            "label": "顺天",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "space:隅",
             "label": "隅",
             "kind": "space",
@@ -282856,13 +282417,6 @@
             "level": "county"
           },
           {
-            "id": "place:京师",
-            "label": "京师",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "place:江水",
             "label": "江水",
             "kind": "place",
@@ -283744,8 +283298,8 @@
             ]
           },
           {
-            "id": "place-space|place:都|space:殿",
-            "source": "place:都",
+            "id": "place-space|place:顺天|space:殿",
+            "source": "place:顺天",
             "target": "space:殿",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -285004,8 +284558,8 @@
             ]
           },
           {
-            "id": "place-space|place:燕都|space:宫闱",
-            "source": "place:燕都",
+            "id": "place-space|place:顺天|space:宫闱",
+            "source": "place:顺天",
             "target": "space:宫闱",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -285023,8 +284577,8 @@
             ]
           },
           {
-            "id": "place-space|place:燕都|space:宫",
-            "source": "place:燕都",
+            "id": "place-space|place:顺天|space:宫",
+            "source": "place:顺天",
             "target": "space:宫",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -285723,8 +285277,8 @@
             ]
           },
           {
-            "id": "place-space|place:都|space:田",
-            "source": "place:都",
+            "id": "place-space|place:顺天|space:田",
+            "source": "place:顺天",
             "target": "space:田",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -286603,8 +286157,8 @@
             ]
           },
           {
-            "id": "place-space|place:都|space:花肆",
-            "source": "place:都",
+            "id": "place-space|place:顺天|space:花肆",
+            "source": "place:顺天",
             "target": "space:花肆",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -286622,8 +286176,8 @@
             ]
           },
           {
-            "id": "place-space|place:都|space:都中",
-            "source": "place:都",
+            "id": "place-space|place:顺天|space:都中",
+            "source": "place:顺天",
             "target": "space:都中",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -286641,8 +286195,8 @@
             ]
           },
           {
-            "id": "place-space|place:都|space:南中",
-            "source": "place:都",
+            "id": "place-space|place:顺天|space:南中",
+            "source": "place:顺天",
             "target": "space:南中",
             "layer": "place-space",
             "relation": "地点—空间",
@@ -287771,8 +287325,8 @@
             "level": "province"
           },
           {
-            "id": "place:都",
-            "label": "都",
+            "id": "place:顺天",
+            "label": "顺天",
             "kind": "place",
             "layer": "place",
             "level": "prefecture"
@@ -288683,20 +288237,6 @@
             "label": "寝室",
             "kind": "space",
             "layer": "space"
-          },
-          {
-            "id": "place:燕都",
-            "label": "燕都",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
-            "id": "place:京",
-            "label": "京",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
           },
           {
             "id": "place:平原",
@@ -298089,13 +297629,6 @@
             "level": "region"
           },
           {
-            "id": "place:顺天",
-            "label": "顺天",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "person:266:霍桓",
             "label": "霍桓",
             "kind": "person",
@@ -303798,13 +303331,6 @@
             "level": "county"
           },
           {
-            "id": "place:京师",
-            "label": "京师",
-            "kind": "place",
-            "layer": "place",
-            "level": "prefecture"
-          },
-          {
             "id": "person:415:任建之",
             "label": "任建之",
             "kind": "person",
@@ -307193,9 +306719,9 @@
             ]
           },
           {
-            "id": "person-context|person:5:朱|place:都",
+            "id": "person-context|person:5:朱|place:顺天",
             "source": "person:5:朱",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -313536,9 +313062,9 @@
             ]
           },
           {
-            "id": "person-context|person:151:陈|place:燕都",
+            "id": "person-context|person:151:陈|place:顺天",
             "source": "person:151:陈",
-            "target": "place:燕都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -317597,9 +317123,9 @@
             ]
           },
           {
-            "id": "person-context|person:233:学师刘芳辉|place:都",
+            "id": "person-context|person:233:学师刘芳辉|place:顺天",
             "source": "person:233:学师刘芳辉",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -321707,9 +321233,9 @@
             ]
           },
           {
-            "id": "person-context|person:318:宋|place:都",
+            "id": "person-context|person:318:宋|place:顺天",
             "source": "person:318:宋",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -324513,9 +324039,9 @@
             ]
           },
           {
-            "id": "person-context|person:379:郭|place:都",
+            "id": "person-context|person:379:郭|place:顺天",
             "source": "person:379:郭",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -324532,9 +324058,9 @@
             ]
           },
           {
-            "id": "person-context|person:379:郭生|place:都",
+            "id": "person-context|person:379:郭生|place:顺天",
             "source": "person:379:郭生",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -326556,9 +326082,9 @@
             ]
           },
           {
-            "id": "person-context|person:408:洪|place:都",
+            "id": "person-context|person:408:洪|place:顺天",
             "source": "person:408:洪",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -326575,9 +326101,9 @@
             ]
           },
           {
-            "id": "person-context|person:408:洪大业|place:都",
+            "id": "person-context|person:408:洪大业|place:顺天",
             "source": "person:408:洪大业",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -327561,9 +327087,9 @@
             ]
           },
           {
-            "id": "person-context|person:415:张某|place:京师",
+            "id": "person-context|person:415:张某|place:顺天",
             "source": "person:415:张某",
-            "target": "place:京师",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -332247,9 +331773,9 @@
             ]
           },
           {
-            "id": "person-context|person:488:夫人|place:都",
+            "id": "person-context|person:488:夫人|place:顺天",
             "source": "person:488:夫人",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -332285,9 +331811,9 @@
             ]
           },
           {
-            "id": "person-context|person:488:公子|place:都",
+            "id": "person-context|person:488:公子|place:顺天",
             "source": "person:488:公子",
-            "target": "place:都",
+            "target": "place:顺天",
             "layer": "person-context",
             "relation": "人物—地点",
             "weight": 1,
@@ -332384,19 +331910,19 @@
     },
     "stats": {
       "chapter-place": {
-        "nodes": 895,
-        "edges": 790
+        "nodes": 891,
+        "edges": 788
       },
       "place-place": {
-        "nodes": 404,
-        "edges": 1694
+        "nodes": 400,
+        "edges": 1674
       },
       "place-space": {
-        "nodes": 974,
+        "nodes": 970,
         "edges": 199
       },
       "person-context": {
-        "nodes": 2824,
+        "nodes": 2820,
         "edges": 1315
       }
     }
