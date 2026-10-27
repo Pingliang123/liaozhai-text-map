@@ -6,7 +6,9 @@ async function load(url='data-package.json',request=root.fetch.bind(root)){
 }
 function effectiveBase(published,local){
  if(!local)return published;
- return local.source_sha256===published.source_sha256?{...local,place_node_aliases:{...(local.place_node_aliases||{}),...(published.place_node_aliases||{})}}:local;
+ // Imported packages may contain an obsolete geographic registry. Annotations
+ // live in revisions, not base; keep them while using current geography.
+ return local.source_sha256===published.source_sha256?{...local,places:published.places,place_hierarchy:published.place_hierarchy,place_equivalences:published.place_equivalences,place_node_aliases:{...(local.place_node_aliases||{}),...(published.place_node_aliases||{})}}:local;
 }
 function retainMissing(local,published){
  if(local?.complete_snapshot===true||!Array.isArray(local?.overrides)||!Array.isArray(published?.overrides)||published.overrides.length<20||local.overrides.length>=published.overrides.length/2)return local;
@@ -40,6 +42,16 @@ async function rebasePublished(local,published,env=root){
     const reviews={...(changes||row.changes).lexical_reviews,[key]:review};put('lexical_reviews',reviews);result.applied.push({chapter_id:rule.chapter_id,field:'lexical_reviews:'+key});
    }else result.preserved.push({chapter_id:rule.chapter_id,field:'lexical_reviews:'+key});
   }
+ }
+ for(const rule of registry.locations||[]){
+  const row=local.place_locations?.find(r=>r.name===rule.name),remote=published.place_locations?.find(r=>r.name===rule.name);
+  if(!row||!remote||rule.fields.every(f=>same(row[f],remote[f])))continue;
+  if(!rule.ancestors.includes(await hash(row))){result.preserved.push({place:rule.name,field:'parent_id'});continue;}
+  if(!copied){result.document={...local,overrides:local.overrides.slice()};copied=true;}
+  if(result.document.place_locations===local.place_locations)result.document.place_locations=local.place_locations.slice();
+  const updated={...row};for(const field of rule.fields)updated[field]=remote[field];
+  result.document.place_locations[result.document.place_locations.indexOf(row)]=updated;
+  result.applied.push({place:rule.name,field:'parent_id'});
  }
  return result;
 }

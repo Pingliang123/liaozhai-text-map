@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11446993,
-      "sha256": "f43a4e31a765a8d7d28740f2b0969e282010c450c944a48ca9f3735533935026"
+      "bytes": 11447033,
+      "sha256": "cd1d1bad40273e9d019617afee8c9a134f1b565235c0ff7ae5024c0ed9f1ba30"
     },
     {
       "path": "data.html",
@@ -523,8 +523,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32942215,
-      "sha256": "c3b4d0a50015587b9c0aecde5bd08313d41692b2a7600c9969a505c67bcf07c1"
+      "bytes": 32959664,
+      "sha256": "81b824a6d54d8899bf1770e66e67deb87795ef7ecea1822a705c8b382f1de095"
     },
     {
       "path": "github-login.js",
@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 278338,
-      "sha256": "0329e28985ec2ca0c9ae11696ef4707206da8d57b566455ff114aa7ba1790946"
+      "bytes": 278326,
+      "sha256": "624be589fae02e0effd7e4334169ff5279b3b83cd5b06033b1cb8b4411be58da"
     },
     {
       "path": "assets/chapter-references.js",
@@ -558,8 +558,8 @@
     },
     {
       "path": "assets/corpus-store.js",
-      "bytes": 5901,
-      "sha256": "040f2381e0adba3a18afa987392805bb3053831708201ac4e17acd6d66074c03"
+      "bytes": 6982,
+      "sha256": "65f64ce678b40b4ba7c5188a2a98130b82f328b562e9b623c22f694968a7a856"
     },
     {
       "path": "assets/data-loader.js",
@@ -619,7 +619,7 @@
     {
       "path": "assets/research-lab/cases.html",
       "bytes": 1671,
-      "sha256": "3cfe5e212040052b05f0743f4a011f851f9452d8bb5f5dbb10659f87d1dc899b"
+      "sha256": "7ff16a7b116367abdfcedfa642984c398ef2bcfaa97962a4ef1f3a0492459d48"
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 13124270,
-      "sha256": "03ddf51739e6217e6e98e5d5db0f14f83674faaa154960e23b58c5648449f10d"
+      "sha256": "09b484099297ac5086767803a8c15cc3ff2f6f7627e338416915b22e19d28542"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 4111,
-      "sha256": "c36caac9b210d5bfcbf5007101d9ff6b1e218d0de1dc783bd2ad1bb07b1d9c19"
+      "sha256": "58db8fd0210bfa65744e4308fdbf3cdd5364219ab5ab9bcc8294485331171730"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -688,8 +688,8 @@
     },
     {
       "path": "assets/research-lab/place-levels.json",
-      "bytes": 209985,
-      "sha256": "907b52fa713b334b1cf50fe05082129bb5742aba5844505b45777eda90219056"
+      "bytes": 233275,
+      "sha256": "a92883dba7af7b10b097568536956ff16d64fc219548a38c24e1cf5b21ce1af6"
     },
     {
       "path": "assets/research-lab/place-network.js",
@@ -698,8 +698,8 @@
     },
     {
       "path": "assets/research-lab/place-records.js",
-      "bytes": 2313,
-      "sha256": "9d7237d30d064fa4f11ed004f2a6bf11a914d7c222d00a98e37b974a7cdf8d06"
+      "bytes": 2410,
+      "sha256": "dec44471225458afb3b927bc2bcb8fc9ff638c041a856bce4a3eede77b7569e2"
     },
     {
       "path": "assets/research-lab/place-spaces.js",
@@ -738,8 +738,8 @@
     },
     {
       "path": "assets/research-lab/topics.json",
-      "bytes": 1561161,
-      "sha256": "05bfb668f6f59b01f309847b905878c8bac4afd17c3fa51e7e518bd68aca190d"
+      "bytes": 1561385,
+      "sha256": "0ad2f019f6e93f3686f5ab2526b766d6c8f362cff045f4a323f5572c773e5c0d"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -768,8 +768,8 @@
     },
     {
       "path": "assets/publication-rebases.js",
-      "bytes": 1650,
-      "sha256": "ea8e3d496412e7e9b1e0551180c25fd94a9a3b0db9bf61aa304bb5a8cc0479b0"
+      "bytes": 2398,
+      "sha256": "7551eb47ee2700a43c1976b6f54719a3af4e1c7d5fade3adaa8423233dd94336"
     },
     {
       "path": "assets/chapter-search.css",
@@ -790,8 +790,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 32942215,
-      "sha256": "c3b4d0a50015587b9c0aecde5bd08313d41692b2a7600c9969a505c67bcf07c1"
+      "bytes": 32959664,
+      "sha256": "81b824a6d54d8899bf1770e66e67deb87795ef7ecea1822a705c8b382f1de095"
     },
     {
       "path": "data.html",
@@ -815,18 +815,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 278338,
-      "sha256": "0329e28985ec2ca0c9ae11696ef4707206da8d57b566455ff114aa7ba1790946"
+      "bytes": 278326,
+      "sha256": "624be589fae02e0effd7e4334169ff5279b3b83cd5b06033b1cb8b4411be58da"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11446993,
-      "sha256": "f43a4e31a765a8d7d28740f2b0969e282010c450c944a48ca9f3735533935026"
+      "bytes": 11447033,
+      "sha256": "cd1d1bad40273e9d019617afee8c9a134f1b565235c0ff7ae5024c0ed9f1ba30"
     },
     {
       "path": "research-data.zip",
-      "bytes": 37877559,
-      "sha256": "77d349e18a7f4f9dba59db8270cb389160ea66ffc6cb2d4b6e32716756321d36"
+      "bytes": 37882814,
+      "sha256": "b5cfac2ee36d5ec542415b63ca3c0eff38ce49fb3222b60901ce9564c820707d"
     }
   ]
 }

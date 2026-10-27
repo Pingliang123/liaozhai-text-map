@@ -66,6 +66,7 @@ jobs:
           node automation/test-sync-size.js
           node automation/test-github-login.js
           node automation/test-region-scope.js
+          node automation/test-province-hierarchy.js
           node automation/test-chapter-references.js
           node automation/test-audit-reports.js
           node automation/test-audit-reports-dom.js

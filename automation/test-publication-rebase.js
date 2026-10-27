@@ -6,7 +6,9 @@ const row=d=>d.overrides.find(r=>r.chapter_id===411).changes;
 (async()=>{
  const saved=JSON.stringify(old),result=await S.rebasePublished(old,published);assert(result.applied.length>0);assert.equal(JSON.stringify(old),saved,'合并不改写原备份');
  assert.deepEqual(row(result.document),row(published),'未改动的旧黄英资料完整更新');
- assert.deepEqual(result.document.overrides.filter(r=>r.chapter_id!==411),old.overrides.filter(r=>r.chapter_id!==411));assert.deepEqual(result.document.place_locations,old.place_locations);
+ assert.deepEqual(result.document.overrides.filter(r=>r.chapter_id!==411),old.overrides.filter(r=>r.chapter_id!==411));
+ const stripParent=rows=>rows.map(({parent_id,...rest})=>rest);assert.deepEqual(stripParent(result.document.place_locations),stripParent(old.place_locations),'定位名称、坐标、备注不变');
+ for(const r of result.document.place_locations){const change=result.applied.some(x=>x.place===r.name);assert.equal(r.parent_id,(change?published:old).place_locations.find(x=>x.name===r.name).parent_id,'仅指纹匹配的旧上级可迁移');}
  const normalized=M.create(pack.base);normalized.importDocument(old);assert.deepEqual(row((await S.rebasePublished(normalized.document(),published)).document),row(published),'模型规范化后的旧快照也能识别');
  const edited=structuredClone(old);row(edited).event_types={人:1};row(edited).review_note='我的新笔记';row(edited).lexical_reviews['spaces:井']={status:'rejected',word:'井',kind:'spaces',note:'我手动改的'};
  const changed=await S.rebasePublished(edited,published);assert.deepEqual(row(changed.document).event_types,{人:1});assert.equal(row(changed.document).review_note,'我的新笔记');assert.equal(row(changed.document).lexical_reviews['spaces:井'].note,'我手动改的');assert.equal(row(changed.document).narrative_events.length,45);

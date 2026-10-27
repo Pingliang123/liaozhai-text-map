@@ -49,8 +49,8 @@ function audit(base,doc){
   const parent=byId.get(p.parent_id);if(!parent){dangling.push({word:p.name,parent:p.parent_id});continue;}
   if(parent.admin_level===p.admin_level)sameLevel.push({word:p.name,parent:parent.name,level:p.admin_level,note:'同级不必然错误；州县层级、山川包含或区域参考需区分'});
   let current=p,seen=new Set();while(current?.parent_id){if(seen.has(current.id)){cycles.push(p.name);break;}seen.add(current.id);current=byId.get(current.parent_id);}
-  const expected=(p.historical_parent_name||'').replace(/[省府县]$/,'');
-  if(expected&&!parent.name.includes(expected)&&!(p.historical_parent_name||'').includes(parent.name))conflicts.push({word:p.name,parent:parent.name,historical_parent:p.historical_parent_name,reference_year:p.hierarchy_year||null});
+  const reference=p.hierarchy_reference?.parent||p.historical_parent_name||'',expected=reference.replace(/[省府县]$/,'');
+  if(expected&&!parent.name.includes(expected)&&!reference.includes(parent.name))conflicts.push({word:p.name,parent:parent.name,historical_parent:reference,reference_year:p.hierarchy_reference?.year||p.hierarchy_year||null});
  }
  const edges=base.place_hierarchy.edges,historicalDangling=edges.filter(e=>!byId.has(e.child_id)||!byId.has(e.parent_id)),historicalCycles=[],historicalConflicts=[];
  // Check every interval endpoint, not just 1820 or the undated map parent.
