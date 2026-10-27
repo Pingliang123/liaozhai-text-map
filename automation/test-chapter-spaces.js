@@ -20,3 +20,12 @@ assert.deepEqual(journey.edges.find(e=>e.directed&&e.source==='scene:甲').evide
 for(const word of ['都','京','京师','燕都']){assert.equal(m.placeName(word),'顺天');assert(!m.places().some(p=>p.name===word));}
 const capital=m.places().find(p=>p.name==='顺天');assert(capital.merged_names.includes('都'));assert(capital.merged_names.includes('京'));
 console.log('PASS ordered return visits, numbered edges, capital aliases and original forms');
+for(const chapter of D.snapshot(m)){
+ const graph=C.build(chapter),layout=C.ordered(graph);
+ assert.equal(layout.edges.length,graph.itinerary.length,'每条移动保留单独有向边：'+chapter.title);
+ assert.equal(layout.nodes.length,graph.itinerary.length*2);
+ assert.equal(new Set(layout.nodes.map(n=>n.id)).size,layout.nodes.length,'重访地点使用独立访问节点');
+ layout.rows.forEach((r,i)=>{assert.equal(r.order,i+1);assert.equal(r.quote,graph.itinerary[i].quote);assert.equal(r.fromNode.y,r.toNode.y);assert(r.toNode.x>r.fromNode.x);if(i)assert(r.y>=layout.rows[i-1].y+layout.rows[i-1].height);});
+}
+const ordered=C.ordered(journey);assert.equal(ordered.edges.length,3);assert.equal(ordered.nodes.filter(n=>n.label==='甲').length,3,'往返重访不折叠成一团');
+console.log('PASS 全491篇：直接按步骤布局、方向、重复访问、原文证据与无重叠行');

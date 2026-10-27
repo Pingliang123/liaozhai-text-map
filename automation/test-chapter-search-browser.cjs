@@ -39,9 +39,10 @@ const {chromium}=require('playwright');
   const sceneInput=scene.locator('..').locator('input[role=combobox]');
   await sceneInput.fill('黃英');await sceneInput.press('Enter');
   assert.equal(await scene.inputValue(),'411');
-  const itinerary=page.locator('.chapter-itinerary');await itinerary.waitFor();
-  assert(await itinerary.locator('li').count()>20,'黄英完整移动与改建步骤可顺序阅读');
-  await itinerary.locator('summary').first().click();assert(await itinerary.locator('blockquote').first().isVisible(),'步骤可展开原文');
+  const itinerary=page.locator('.chapter-ordered-network');await itinerary.waitFor();
+  assert(await itinerary.locator('svg [data-step]').count()>20,'黄英完整移动与改建直接按次序绘图');
+  await itinerary.locator('svg [data-step="2"]').click();assert((await itinerary.locator('.chapter-step-evidence h4').textContent()).includes('第2步'),'点选图中步骤查看原文');
+  await itinerary.screenshot({path:process.env.TEMP+'/liaozhai-ordered-network.png'});
   // A later programmatic/native selection still uses the original handlers.
   await scene.selectOption('34');
   await page.waitForFunction(()=>{const s=document.querySelector('select[aria-label="选择篇目查看空间网络"]');return s.value==='34'&&s.parentElement.querySelector('input').value===s.selectedOptions[0].textContent;});

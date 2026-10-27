@@ -39,22 +39,47 @@ function mount(container,chapters,options={}){
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
   const graph=build(c);out.append(el('h3','《'+c.title+'》'));
-  if(graph.itinerary.length){
-   const path=el('section'),heading=el('h4','移动次序'),list=el('ol');path.className='chapter-itinerary';
-   path.append(heading,el('p','按已保存步骤顺序排列；同一地点可重复出现。点击步骤查看原文。'));
-   for(const step of graph.itinerary){const item=el('li'),detail=el('details'),summary=el('summary',step.from+' → '+step.to+' · '+(step.actors.join('、')||'人物未标注')+(step.kind==='spatial-change'?'（空间变化）':''));detail.append(summary,el('blockquote',step.quote));item.append(detail);list.append(item);}
-   path.append(list);out.append(path);
-  }
   if(!graph.nodes.length){out.append(el('p','本篇尚无地点或空间词标注。'));return;}
-  const movementEdges=graph.edges.filter(e=>e.directed),movementNodes=new Set(movementEdges.flatMap(e=>[e.source,e.target]));
-  const display={...graph,edges:movementEdges.length?movementEdges:graph.edges,nodes:graph.nodes.filter(n=>movementEdges.length?movementNodes.has(n.id):n.degree||n.realm==='otherworld')};
-  root.GhostBookNetwork.mount(out,[c],()=>{},{graph:display,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},chapterSpatial:true,networkTitle:'《'+c.title+'》空间网络',kindLegend:'地点按层级配色；绿：空间；朱红：异境。',relationLegend:'箭头表示方向，线上的序号对应上方步骤；往返和重复到访分别记录。',edgeLabel:e=>(e.directed?'第'+e.evidence.map(r=>r.sequence).join('、')+'步 · ':'关联 · ')+(e.relation==='spatial-change'?'空间变化 · ':'')+[...new Set(e.evidence.flatMap(r=>r.actors||[]))].join('、')});
-  if(movementEdges.length){const relations=el('details');relations.append(el('summary','地点与空间关联（'+graph.edges.filter(e=>!e.directed).length+'条）'));const list=el('ul');for(const e of graph.edges.filter(e=>!e.directed)){const names=e.source+'|'+e.target;const li=el('li',names.split('|').map(id=>graph.nodes.find(n=>n.id===id)?.label||id).join(' — '));list.append(li);}relations.append(list);out.append(relations);}
+  renderOrdered(out,graph,c,options);
   const read=el('a','原文与修订 ↗');read.href='../../index.html?chapter='+encodeURIComponent(c.id)+'#workspace';container.dataset&&(container.dataset.chapter=String(c.id));out.append(read);
   const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
  }
  pick.onchange=()=>{if(root.history){const url=new URL(root.location.href);url.searchParams.set('scene',pick.value);root.history.replaceState(null,'',url);}draw();};draw();
  return {select:pick,refresh(records){options.placeRecords=records;draw();},selectChapter(id){if(chapters.some(c=>String(c.id)===String(id))){pick.value=String(id);draw();}}};
 }
-const api={build,mount};if(typeof module!=='undefined')module.exports=api;else root.GhostChapterSpaces=api;
+function ordered(graph){
+ const nodes=[],edges=[],rows=[];let y=48;
+ for(const step of graph.itinerary){const height=Math.max(100,48+Math.ceil((step.actors.join('、').length||6)/18)*20,48+Math.ceil(Math.max(step.from.length,step.to.length)/12)*20),a={id:'visit:'+step.order+':from',label:step.from,x:210,y:y+height/2},b={id:'visit:'+step.order+':to',label:step.to,x:690,y:y+height/2};
+  nodes.push(a,b);edges.push({source:a.id,target:b.id,directed:true,order:step.order});rows.push({...step,y,height,fromNode:a,toNode:b});y+=height;
+ }
+ return {nodes,edges,rows,width:900,height:Math.max(160,y+20)};
+}
+function renderOrdered(container,graph,chapter,options){
+ const doc=container.ownerDocument,el=(tag,text)=>{const n=doc.createElement(tag);if(text!==undefined)n.textContent=text;return n;},svgEl=(tag,attrs={})=>{const n=doc.createElementNS('http://www.w3.org/2000/svg',tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,String(v));return n;};
+ const frame=el('section');frame.className='chapter-ordered-network';container.append(frame);
+ const explanation=el('p',graph.itinerary.length?'自上而下读步骤，箭头由起点指向终点；重复到访另列节点。点选一行查看原文。':'本篇没有已标注的移动步骤。下图只显示已有地点与空间关联，不推断先后。');frame.append(explanation);
+ const scroll=el('div');scroll.style.cssText='overflow:auto;max-height:680px;border:1px solid #cdd8d0;border-radius:8px;background:#fafcf9';frame.append(scroll);
+ const layout=ordered(graph),svg=svgEl('svg',{viewBox:'0 0 '+layout.width+' '+layout.height,width:'100%',role:'img','aria-label':'《'+chapter.title+'》按次序排列的空间网络'});svg.style.cssText='display:block;min-width:760px';scroll.append(svg);
+ const evidence=el('section');evidence.className='chapter-step-evidence';evidence.setAttribute('aria-live','polite');frame.append(evidence);
+ const write=(parent,text,x,y,color='#203e36',size=15)=>{const n=svgEl('text',{x,y,fill:color,'font-size':size,'text-anchor':'middle'});n.textContent=text;parent.append(n);return n;};
+ const lines=(parent,text,x,y,max=12)=>{const chars=Array.from(text);for(let i=0;i<chars.length;i+=max)write(parent,chars.slice(i,i+max).join(''),x,y+(i/max)*20);};
+ const color=label=>{const node=graph.nodes.find(n=>n.label===label);return node?.realm==='otherworld'?'#a33b32':node?.kind==='place'?(root.GhostPlaceLevelColors?.style(node,options.placeRecords||{}).color||'#316d9c'):'#33725a';};
+ const defs=svgEl('defs'),marker=svgEl('marker',{id:'chapter-sequence-arrow-'+chapter.id,viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:8,markerHeight:8,orient:'auto-start-reverse'});marker.append(svgEl('path',{d:'M0 0 L10 5 L0 10 Z',fill:'#365f52'}));defs.append(marker);svg.append(defs);
+ if(layout.rows.length){write(svg,'起点',210,28);write(svg,'步骤／人物',450,28);write(svg,'终点',690,28);
+  const groups=[];
+  for(const row of layout.rows){const g=svgEl('g',{'data-step':row.order,tabindex:0,role:'button','aria-label':'第'+row.order+'步 '+row.from+'到'+row.to});g.style.cursor='pointer';const bg=svgEl('rect',{x:6,y:row.y,width:888,height:row.height-4,rx:6,fill:row.order%2?'#f0f5ef':'#fff'});g.append(bg);
+   const cy=row.fromNode.y;
+   g.append(svgEl('line',{x1:335,y1:cy+18,x2:562,y2:cy+18,stroke:'#365f52','stroke-width':row.kind==='spatial-change'?2:3,'stroke-dasharray':row.kind==='spatial-change'?'6 4':'none','marker-end':'url(#chapter-sequence-arrow-'+chapter.id+')'}));
+   for(const n of [row.fromNode,row.toNode]){const height=Math.max(46,Math.ceil(n.label.length/12)*20+20);g.append(svgEl('rect',{x:n.x-120,y:cy-height/2,width:240,height,rx:8,fill:'#fff',stroke:color(n.label),'stroke-width':2}));lines(g,n.label,n.x,cy-((Math.ceil(n.label.length/12)-1)*10)+5);}
+   write(g,String(row.order),42,cy+5,'#365f52',22);const actors=row.actors.join('、')||'人物未标注';lines(g,actors,450,cy-20,18);if(row.kind==='spatial-change')write(g,'空间变化',450,cy+42,'#755332',12);
+   const select=()=>{for(const item of groups)item.bg.setAttribute('stroke',item===entry?'#365f52':'none');evidence.replaceChildren(el('h4','第'+row.order+'步：'+row.from+' → '+row.to),el('p',actors),el('blockquote',row.quote));};
+   const entry={bg,select};groups.push(entry);g.addEventListener('click',select);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select();}});svg.append(g);
+  }groups[0].select();
+ }else{
+  // No invented movement: retain the original evidence-backed association graph.
+  scroll.remove();root.GhostBookNetwork.mount(frame,[chapter],()=>{},{graph,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+chapter.title+'》地点与空间关联'});
+ }
+ if(layout.rows.length){const details=el('details');details.append(el('summary','地点与空间关联'));details.addEventListener('toggle',()=>{if(!details.open||details.dataset.loaded)return;details.dataset.loaded='1';const associations={...graph,edges:graph.edges.filter(e=>!e.directed)};root.GhostBookNetwork.mount(details,[chapter],()=>{},{graph:associations,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+chapter.title+'》地点与空间关联'});});frame.append(details);}
+}
+const api={build,mount,ordered};if(typeof module!=='undefined')module.exports=api;else root.GhostChapterSpaces=api;
 })(typeof window==='undefined'?globalThis:window);

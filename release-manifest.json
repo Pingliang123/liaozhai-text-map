@@ -623,8 +623,8 @@
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
-      "bytes": 7789,
-      "sha256": "b000f8d152b7bb676edd0a6cddc59916f426a8f9425da7270a274acb207195d1"
+      "bytes": 11267,
+      "sha256": "0249f02effc7c4f0aac117831902925120fb6cfae88983d809316cdcc8f70336"
     },
     {
       "path": "assets/research-lab/current-data.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 4111,
-      "sha256": "694a1371f8d1a5c4726941bc14f78b24424c4b5fa28c279247c4e2163f91e103"
+      "sha256": "a1ace7d0638ea3d58a044cc6effe2af74cb770fc2fd94adc8492945043911879"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -825,8 +825,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 37884086,
-      "sha256": "5b3e8c5440dab51701b273bfa743098bd55c3db7bd70ed726a419fd92ed994ba"
+      "bytes": 37885431,
+      "sha256": "f7d11491e443268ec9370340734b10c91f0334717b616d660803f8dae0507f4c"
     }
   ]
 }
