@@ -14,3 +14,9 @@ const pack=require('../data-package.json'),M=require('./ghost_map_model'),D=requ
 const m=M.create(pack.base);m.importDocument(pack.revisions);
 for(const c of D.snapshot(m)){const graph=C.build(c),ids=new Set(graph.nodes.map(n=>n.id));assert.equal(ids.size,graph.nodes.length);for(const e of graph.edges){assert(ids.has(e.source)&&ids.has(e.target));assert(e.evidence.every(r=>r.chapterId===c.id));}}
 console.log('PASS all chapter spatial graphs, source attribution, otherworlds and unchanged manual data');
+const journey=C.build({...chapter,units:[{id:0,text:'甲至乙。乙还甲。甲复至乙。'}],route_steps:[{from_space:'甲',to_space:'乙',transition_kind:'movement',quote:'甲至乙。',actors:'张生',index:0},{from_space:'乙',to_space:'甲',transition_kind:'movement',quote:'乙还甲。',actors:'张生',index:1},{from_space:'甲',to_space:'乙',transition_kind:'movement',quote:'甲复至乙。',actors:'张生',index:2}]});
+assert.deepEqual(journey.itinerary.map(s=>[s.order,s.from,s.to]),[[1,'甲','乙'],[2,'乙','甲'],[3,'甲','乙']],'往返次序不可因边合并丢失');
+assert.deepEqual(journey.edges.find(e=>e.directed&&e.source==='scene:甲').evidence.map(e=>e.sequence),[1,3]);
+for(const word of ['都','京','京师','燕都']){assert.equal(m.placeName(word),'顺天');assert(!m.places().some(p=>p.name===word));}
+const capital=m.places().find(p=>p.name==='顺天');assert(capital.merged_names.includes('都'));assert(capital.merged_names.includes('京'));
+console.log('PASS ordered return visits, numbered edges, capital aliases and original forms');

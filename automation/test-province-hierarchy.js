@@ -6,7 +6,7 @@ const records=R.build(model,pack.base),saved=require('../assets/research-lab/pla
 function province(word,year=null){const p=H.project({nodes:[{id:'place:'+word,label:word,kind:'place'}],edges:[]},records,'province',year);return p.nodes[0]?.label;}
 for(const [provinceName,names]of Object.entries({江苏:['苏州','松江','常州','镇江','江宁','金陵','徐州','彭城','吴江','吴江府','宿迁','睢宁','邳','木渎镇','瓜州'],浙江:['湖州','绍兴','会稽','金华','衢州','上虞','钱塘','苕溪'],直隶:['滦州','河间','天津','京','燕都','无极','海岱门'],湖北:['云梦'],湖南:['沅江','武陵']})){
  const root=model.places().find(p=>p.name===provinceName),members=new Set(model.descendants(root).map(p=>p.name));
- for(const name of names){assert(members.has(name),provinceName+'应包含'+name);assert.equal(province(name),provinceName,'地图与网络必须使用相同省域：'+name);}
+ for(const name of names){assert(members.has(model.placeName(name)),provinceName+'应包含'+name);assert.equal(province(name),provinceName,'地图与网络必须使用相同省域：'+name);}
 }
 assert.equal(province('松江',1820),'江苏','清代松江府不能按今上海直辖市处理');
 assert.equal(province('湖州',1820),'浙江');assert.equal(province('瓜州'),'江苏');
