@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>聊斋文本地图</title>
+<link rel="stylesheet" href="assets/chapter-search.css?v=1af857fe202f"><script defer src="assets/chapter-search.js?v=bf6a47a19c36"></script>
 <link rel="stylesheet" href="assets/vocabulary-grid.css?v=c186cd83d5db">
 <script src="assets/vocabulary-grid.js?v=88446994c737"></script>
 <script src="assets/otherworld-map.js?v=f62eb27fd6d4"></script>
@@ -1193,6 +1194,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     } catch (error) { packageError = '本机总资料包未载入，当前使用网站基线：' + error.message; }
   }
   const base = GhostCorpusStore.effectiveBase(embedded,installed?.base), model = M.create(base);
+  window.GhostChapterSearch?.configure(model.simplify);
   const publishedRevisions = !installed ? publishedData : null;
   if (publishedRevisions) model.importDocument(publishedRevisions);
   const state = {place: null, chapter: model.ids[0], dirty: false, unpersisted: false, candidatePage: 0, transform: {k: 1, x: 0, y: 0}, width: 0, height: 0};

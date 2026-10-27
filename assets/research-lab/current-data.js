@@ -15,6 +15,7 @@ async function load(env=root){
  const P=env.GhostMapPackage;let installed=null;
  if(env.indexedDB) {const saved=await P.load(env.indexedDB,publishedBase);if(saved)installed=P.validate(saved,publishedBase);}
  const base=Store.effectiveBase(publishedBase,installed?.base),model=env.GhostMapModel.create(base);
+ env.GhostChapterSearch?.configure(model.simplify);
  model.importDocument(installed?installed.revisions:published);
  const scope=(base.corpus_id||base.source_sha256)+(installed?'-package-'+installed.installation_id:'');
  const key='liaozhai-map-corrections-v3-'+scope;

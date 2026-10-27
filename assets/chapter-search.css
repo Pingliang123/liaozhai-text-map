@@ -1,0 +1,11 @@
+.chapter-search-box{display:inline-flex;align-items:center;position:relative;max-width:100%;width:260px;vertical-align:middle}
+.chapter-search-box>input{width:100%;min-width:0!important;min-height:38px;box-sizing:border-box;border:1px solid #94aaa0;border-radius:6px;padding:7px 36px 7px 10px;background:#fff;color:inherit;font:inherit}
+.chapter-search-box>.chapter-search-toggle{position:absolute;right:1px;top:1px;bottom:1px;min-height:0;border:0;background:transparent;width:32px;padding:0;cursor:pointer;color:inherit}
+.chapter-search-native{position:absolute!important;width:1px!important;min-width:0!important;height:1px!important;min-height:0!important;padding:0!important;overflow:hidden!important;clip-path:inset(50%);white-space:nowrap;pointer-events:none}
+.chapter-search-popup{position:fixed;z-index:10020;overflow-y:auto;overscroll-behavior:contain;background:#fff;color:#243d39;border:1px solid #94aaa0;border-radius:7px;box-shadow:0 5px 18px #193c3426;font:inherit;box-sizing:border-box}
+.chapter-search-popup[hidden]{display:none!important}
+.chapter-search-option{padding:9px 12px;cursor:pointer;line-height:1.4}
+.chapter-search-option:hover,.chapter-search-option[aria-selected=true]{background:#e5efe9;color:#183d36}
+.chapter-search-empty{padding:12px;color:#657668}
+.chapter-search-box>input:focus-visible{outline:3px solid #1778b5;outline-offset:2px}
+@media(max-width:600px){.chapter-search-box{width:220px;max-width:calc(100vw - 80px)}}

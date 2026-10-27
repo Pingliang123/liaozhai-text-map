@@ -126,6 +126,7 @@ jobs:
           node automation/test-attachment-space-otherworld-application.js
           node automation/test-data-loading.js
           node automation/test-chapter-filter.js
+          node automation/test-chapter-search.js
           node automation/test-performance.js
           node automation/update-asset-versions.js
           node automation/test-site-audit.js

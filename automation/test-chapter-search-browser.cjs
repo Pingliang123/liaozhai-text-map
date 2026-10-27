@@ -1,0 +1,52 @@
+const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.TEST_BROWSER||'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+ try{
+  const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage(),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await context.route('**/*',async route=>{const u=new URL(route.request().url());if(u.origin!=='http://localhost')return route.abort();let p=decodeURIComponent(u.pathname);if(p.endsWith('/'))p+='index.html';const f=path.resolve(process.cwd(),'.'+p);if(!f.startsWith(process.cwd()+path.sep))return route.abort();try{await route.fulfill({body:fs.readFileSync(f),contentType:({'.js':'text/javascript','.html':'text/html','.json':'application/json','.css':'text/css'})[path.extname(f)]||'application/octet-stream'});}catch{await route.fulfill({status:404,body:'Not found'});}});
+  const search=id=>page.locator('#'+id).locator('..').locator('input[role=combobox]');
+  await page.goto('http://localhost/index.html?chapter=411#map-section');
+  await page.waitForFunction(()=>document.querySelector('#movement-chapter')?.options.length>400&&!document.querySelector('main')?.inert,{timeout:90000});
+  await search('movement-chapter').fill('畫壁');
+  assert.equal(await page.locator('#movement-chapter').inputValue(),'411');
+  await search('movement-chapter').press('Enter');
+  assert.equal(await page.locator('#movement-chapter').inputValue(),'5');
+  await search('movement-chapter').fill('没有这个篇名');
+  assert(await page.getByText('没有匹配篇目',{exact:true}).isVisible());
+  await search('movement-chapter').press('Escape');
+  assert.equal(await page.locator('#movement-chapter').inputValue(),'5');
+  await page.evaluate(()=>{document.querySelector('#movement-chapter').value='411';});
+  await page.waitForFunction(()=>document.querySelector('#movement-chapter').parentElement.querySelector('input').value.includes('黄英'));
+  await page.goto('http://localhost/index.html?chapter=411#workspace');
+  await search('chapter-select').waitFor();
+  await page.waitForFunction(()=>document.querySelector('#segmentation-editor')?.value.length>100,{timeout:90000});
+  await search('chapter-select').fill('黃英');await search('chapter-select').press('Enter');
+  const editor=page.locator('#segmentation-editor'),draft=(await editor.inputValue())+' / ';
+  await editor.evaluate((n,value)=>{n.value=value;n.dispatchEvent(new Event('input',{bubbles:true}));},draft);
+  page.once('dialog',dialog=>dialog.dismiss());
+  await search('chapter-select').fill('畫壁');await search('chapter-select').press('Enter');
+  assert.equal(await page.locator('#chapter-select').inputValue(),'411');assert.equal(await editor.inputValue(),draft);
+  await page.goto('http://localhost/assets/research-lab/?tab=relations');
+  await page.waitForFunction(()=>document.querySelector('#chapter')?.options.length>400,{timeout:90000});
+  await search('chapter').fill('黃英');await search('chapter').press('Enter');
+  assert.equal(await page.locator('#chapter').inputValue(),'411');
+  await search('chapter').fill('全书');await search('chapter').press('Enter');
+  assert.equal(await page.locator('#chapter').inputValue(),'');
+  const scene=page.locator('select[aria-label="选择篇目查看空间网络"]');
+  await scene.waitFor({state:'attached'});
+  const sceneInput=scene.locator('..').locator('input[role=combobox]');
+  await sceneInput.fill('黃英');await sceneInput.press('Enter');
+  assert.equal(await scene.inputValue(),'411');
+  // A later programmatic/native selection still uses the original handlers.
+  await scene.selectOption('34');
+  await page.waitForFunction(()=>{const s=document.querySelector('select[aria-label="选择篇目查看空间网络"]');return s.value==='34'&&s.parentElement.querySelector('input').value===s.selectedOptions[0].textContent;});
+  await page.setViewportSize({width:390,height:844});
+  await sceneInput.fill('黄');
+  const popup=page.locator('.chapter-search-popup:visible');const bounds=await popup.boundingBox();assert(bounds.x>=0&&bounds.x+bounds.width<=391);
+  await sceneInput.press('Escape');
+  assert.deepEqual(errors,[]);
+  console.log('PASS browser: both sites, traditional search, deferred selection, keyboard, no matches, programmatic sync, native handlers and mobile popup');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});
