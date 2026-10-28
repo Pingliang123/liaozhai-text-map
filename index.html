@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>聊斋文本地图</title>
-<link rel="stylesheet" href="assets/chapter-search.css?v=1af857fe202f"><script defer src="assets/chapter-search.js?v=bf6a47a19c36"></script>
+<link rel="stylesheet" href="assets/chapter-search.css?v=1af857fe202f"><script defer src="assets/chapter-search.js?v=2837269b8643"></script>
 <link rel="stylesheet" href="assets/vocabulary-grid.css?v=c186cd83d5db">
 <script src="assets/vocabulary-grid.js?v=88446994c737"></script>
 <script src="assets/otherworld-map.js?v=f62eb27fd6d4"></script>
@@ -80,7 +80,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </header>
 <main>
 
-<script src="assets/spatial-routes.js?v=83785ac4ebc2"></script>
+<script src="assets/spatial-routes.js?v=8adcac9e15ab"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -281,6 +281,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const rejectedPlaces = new Set(base.rejected_place_words || []);
     const name = value => Object.hasOwn(normalize, value) ? normalize[value] : value;
     const placeName = value => {let word=name(value);const seen=new Set();while(base.place_node_aliases?.[word]&&!seen.has(word)){seen.add(word);word=base.place_node_aliases[word];}return word;};
+    const isToken=(c,w)=>{const Routes=typeof module!=='undefined'&&module.exports?require('../assets/spatial-routes'):root.GhostSpatialRoutes,lex=Routes?.lexicon(c);return !lex?.strict||lex.words.has(w);};
     const placeID = word => base.places.find(p => name(p.name) === word)?.id || 'custom-place-' + encodeURIComponent(word);
     function validateLocation(input) {
       assert(input && typeof input === 'object', '定位资料格式错误');
@@ -600,13 +601,16 @@ section,details,#save-chapter{scroll-margin-top:90px}
         const all = new Map([place,...descendants(place)].flatMap(p => atPlace(p).map(c => [c.chapter_id,c])));
         return [...all.values()].sort((a,b) => a.chapter_id-b.chapter_id);
       }
-      if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>
-        view(id).places.some(p => placeName(p.word) === placeName(place.name))).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
+      const Routes=typeof module!=='undefined'&&module.exports?require('../assets/spatial-routes'):root.GhostSpatialRoutes;
+      if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>{
+        const c=view(id),lex=Routes?.lexicon(c);
+        return c.places.some(p => placeName(p.word) === placeName(place.name)&&(!lex?.strict||lex.words.has(p.word)));
+      }).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
       return placeViews.get(place.id);
     }
     function links(place, allowedIDs) {
       return atPlace(place).filter(c => !allowedIDs || allowedIDs.has(c.chapter_id)).flatMap(c =>
-        c.realm_evidence.filter(e => c.realms_present.includes(e.realm) && (c.evidence_review?.[e.id]?.kind !== 'reject'))
+        c.realm_evidence.filter(e => isToken(c,e.space)&&c.realms_present.includes(e.realm) && (c.evidence_review?.[e.id]?.kind !== 'reject'))
           .map(e => {
             const review = c.evidence_review?.[e.id] || {kind: 'mention', note: ''};
             // A crossing from another location in the chapter is NOT a route
@@ -618,7 +622,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     function activeEvidence(allowedIDs) {
       return [...chapters.keys()].filter(id => !allowedIDs || allowedIDs.has(id)).flatMap(id => {
         const c = view(id);
-        return c.realm_evidence.filter(e => c.realms_present.includes(e.realm) && c.evidence_review?.[e.id]?.kind !== 'reject')
+        return c.realm_evidence.filter(e => isToken(c,e.space)&&c.realms_present.includes(e.realm) && c.evidence_review?.[e.id]?.kind !== 'reject')
           .map(e => ({...e, chapter_id: id, chapter: c.chapter, review: c.evidence_review?.[e.id] || {kind: 'mention', note: ''}}));
       });
     }
@@ -816,7 +820,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
   }
   function rows(model,chapters,places) {
     return chapters.flatMap(c=>GhostSpatialRoutes.project(c,places,model).map(row=>{
-      return {...row,chapter_id:c.chapter_id,chapter:c.chapter,actorsList:actors(c,row),classification:space(row)};
+      const lex=GhostSpatialRoutes.lexicon(c);
+      return {...row,chapter_id:c.chapter_id,chapter:c.chapter,actorsList:actors(c,row).filter(w=>!lex.strict||lex.words.has(w)),classification:space(row)};
     }));
   }
   function eventDates(row,base,place) {
@@ -2295,7 +2300,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
       for(const row of movementRows.slice(start,start+30)) {
         const c=model.view(row.chapter_id),s=row.classification,card=element('details',{'data-movement-row':row.chapter_id+':'+row.index});
         card.append(element('summary',{},'《'+row.chapter+'》 第'+(row.index+1)+'步 · '+row.actorsList.join('、')+' · '+(row.from_space && row.to_space?row.from_space+' → '+row.to_space:row.space)));
-        if(row.transition_kind==='movement') {
+        if(row.transition_kind==='movement'&&row.from_space&&row.to_space) {
           const diagram=svg('svg',{viewBox:'0 0 700 64',role:'img','aria-label':row.from_space+'到'+row.to_space});diagram.style.width='100%';diagram.style.maxHeight='90px';
           for(const [x,label] of [[5,row.from_space],[440,row.to_space]]) {diagram.append(svg('rect',{x,y:8,width:250,height:42,rx:8,fill:'#edf1eb',stroke:'#82998c'}));const t=svg('text',{x:x+10,y:34,'font-size':14},label.slice(0,16));t.append(svg('title',{},label));diagram.append(t);}
           diagram.append(svg('path',{d:'M265,29 H428 M417,21 L428,29 L417,37',stroke:N.color(row.chapter_id),fill:'none','stroke-width':2}));card.append(diagram);

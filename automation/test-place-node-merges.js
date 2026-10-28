@@ -7,7 +7,7 @@ for(const id of m.ids)assert.deepEqual(m.view(id),old.view(id),'原文、分词�
 const ps=m.places();assert.equal(new Set(ps.map(p=>p.name)).size,ps.length);
 for(const [alias,target]of Object.entries(pack.base.place_node_aliases)){
  assert(!ps.some(p=>p.name===alias),alias+'应合并');assert(ps.some(p=>p.name===target));
- const p=ps.find(p=>p.name===target),expected=m.ids.filter(id=>m.view(id).places.some(w=>m.placeName(w.word)===target));assert.deepEqual(m.atPlace(p).map(c=>c.chapter_id),expected);
+ const p=ps.find(p=>p.name===target),expected=m.ids.filter(id=>{const c=m.view(id),tokens=Routes.lexicon(c).words;return c.places.some(w=>m.placeName(w.word)===target&&tokens.has(w.word));});assert.deepEqual(m.atPlace(p).map(c=>c.chapter_id),expected);
  const prior=old.places().find(p=>p.name===alias);if(prior)assert.equal(Routes.endpoint(alias,prior.id,ps,m)?.name,target,'旧地图绑定仍可使用');
 }
 for(const names of [['千佛山','济南府'],['蔡店','阳信'],['历城','济南府'],['蒙山','蒙阴']])assert(names.every(w=>ps.some(p=>p.name===w)),'上下级和共坐标地点保留');

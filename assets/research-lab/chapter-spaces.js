@@ -1,5 +1,5 @@
 (function(root){'use strict';
-function build(chapter){
+function build(chapter,options={}){
  const P=typeof module!=='undefined'?require('./place-spaces'):root.GhostPlaceSpaces;
  const graphs=P.build([chapter],{includeOtherworld:true}),nodes=new Map(),edges=[],aliases=new Map();
  for(const graph of [graphs.placesAll,graphs.spaces])for(const n of graph.nodes){const id=n.realm==='otherworld'?'space:'+n.label:n.id;aliases.set(n.id,id);nodes.set(id,{...n,id,kind:n.realm==='otherworld'?'space':n.kind,degree:0});}
@@ -8,6 +8,14 @@ function build(chapter){
  const pairs=new Map();
  for(const e of [...graphs.placesAll.edges,...graphs.spaces.edges]){const source=aliases.get(e.source)||e.source,target=aliases.get(e.target)||e.target;if(source===target)continue;const key=JSON.stringify([source,target].sort());let edge=pairs.get(key);if(!edge){edge={...e,source,target,evidence:[],weight:1};pairs.set(key,edge);}const seen=new Set(edge.evidence.map(r=>JSON.stringify([r.chapterId,r.unit,r.text])));for(const r of e.evidence){const k=JSON.stringify([r.chapterId,r.unit,r.text]);if(!seen.has(k)){seen.add(k);edge.evidence.push(r);}}}
  for(const e of pairs.values()){edges.push(e);for(const id of [e.source,e.target])nodes.get(id).degree++;}
+ if(!options.paths){
+  const R=typeof module!=='undefined'?require('./relation-network'):root.GhostRelationNetwork;
+  const Merge=typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges;
+  const related=Merge.graph(R.build([chapter],'chapter'),chapter.place_aliases||{});
+  for(const n of related.nodes)if(!nodes.has(n.id))nodes.set(n.id,n);
+  for(const e of related.edges){const key=JSON.stringify([e.source,e.target].sort());if(!pairs.has(key)){pairs.set(key,e);edges.push({...e,relation:'chapter',directed:false});}}
+  return {nodes:[...nodes.values()],edges,itinerary:[],mode:'chapter-spaces',pending:graphs.pending};
+ }
  const routes=chapter.route_steps||P.uniqueSteps(chapter.steps),moves=new Map(),itinerary=[];
  const sourceText=chapter.units.map(u=>u.text).join('').replace(/\s/gu,'');
  for(const s of routes){
@@ -32,15 +40,19 @@ function build(chapter){
 }
 function mount(container,chapters,options={}){
  const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
- const label=el('label','篇目 '),pick=el('select'),out=el('div');pick.setAttribute('aria-label','选择篇目查看空间网络');
+ const label=el('label','篇目 '),pick=el('select'),out=el('div');pick.setAttribute('aria-label',options.paths?'选择篇目查看人物路径':'选择篇目查看空间网络');
  for(const c of chapters){const o=el('option',c.title);o.value=String(c.id);pick.append(o);}
  const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter')||params.get('scene'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===place));if(c)pick.value=String(c.id);}
  label.append(pick);container.append(label,out);
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
-  const graph=build(c);out.append(el('h3','《'+c.title+'》'));
+  const graph=build(c,options);out.append(el('h3','《'+c.title+'》'+(options.paths?'人物路径':'空间网络')));
+  if(c.token_basis?.includes('未全文对齐'))out.append(el('p','本篇修订分词未与全文对齐，暂用原典词位分词；修订记录保留。'));
+  if(c.lexical_omissions?.length){const note=el('details');note.append(el('summary','未对齐分词的词项 · '+c.lexical_omissions.length),el('p',c.lexical_omissions.map(r=>r.word).join('、')),el('p','保留在修订资料中；请在文本与修订中核对分词边界后再进入网络。'));out.append(note);}
+  if(options.paths){const pending=(c.route_steps||[]).filter(s=>s.transition_kind==='movement'&&(!s.from_space||!s.to_space));if(pending.length)out.append(el('p',pending.length+'条移动端点未对齐分词，暂不绘线。'));}
   if(!graph.nodes.length){out.append(el('p','本篇尚无地点或空间词标注。'));return;}
-  renderOrdered(out,graph,c,options);
+  if(options.paths)renderOrdered(out,graph,c,options);
+  else root.GhostBookNetwork.mount(out,[c],()=>{},{graph,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},chapterSpatial:true,networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'节点取自原典分词；线表示同篇关联或场景归属，不表示移动顺序。点线查看原文。'});
   const read=el('a','原文与修订 ↗');read.href='../../index.html?chapter='+encodeURIComponent(c.id)+'#workspace';container.dataset&&(container.dataset.chapter=String(c.id));out.append(read);
   const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
  }

@@ -7,7 +7,18 @@ async function publishedBundle(env,Store){
  const bundle=await Store.load('../../data-package.json',env.fetch.bind(env));
  publishedCache.set(env,{version,bundle});return bundle;
 }
-function snapshot(model){const Routes=typeof module!=='undefined'?require('../spatial-routes'):root.GhostSpatialRoutes,places=model.places();return model.ids.map(id=>{const c=model.view(id);return {place_aliases:Object.fromEntries(c.places.map(p=>[p.word,model.placeName(p.word)])),route_steps:Routes.project(c,places,model).map(r=>({...r,from:r.from?{id:r.from.id,name:r.from.name,lon:r.from.lon,lat:r.from.lat}:null,to:r.to?{id:r.to.id,name:r.to.name,lon:r.to.lon,lat:r.to.lat}:null})),id,title:c.chapter,spaces:c.space_words||[],times:Object.keys(c.years||{}),places:c.places.map(p=>p.word),reviews:c.lexical_reviews||{},people:c.people.map(p=>({word:p.word,types:Object.keys(p.person_types||{})})),events:Object.keys(c.event_types||{}),realms:[...(c.realms_present||[])],realm_evidence:(c.realm_evidence||[]).map(e=>({id:e.id,realm:e.realm,space:e.space||'',unit:e.unit,excerpt:e.excerpt||e.quote||e.text||'',kind:e.kind||''})),evidence_review:c.evidence_review||{},units:c.source_units.map(u=>({id:u.unit,text:u.text||u.original||''})),steps:(c.narrative_events||[]).map(e=>({from:e.from_space||'',to:e.to_space||'',actors:e.actors||'',quote:e.quote||'',kind:e.transition_kind||'',unit:e.unit,realm:e.space_realm||'',access:e.space_access||''}))};});}
+function snapshot(model){
+ const Routes=typeof module!=='undefined'?require('../spatial-routes'):root.GhostSpatialRoutes,places=model.places();
+ return model.ids.map(id=>{
+  const c=model.view(id),lex=Routes.lexicon(c),valid=w=>!lex.strict||lex.words.has(w),projected=Routes.project(c,places,model),unitWords=Routes.tokenUnits(c,lex);
+  const steps=projected.map(r=>({from:r.from_space,to:r.to_space,actors:r.actors||'',quote:r.quote||'',kind:r.transition_kind,unit:r.unit,realm:r.space_realm||'',access:r.space_access||''}));
+  return {source_tokens:[...lex.words],token_basis:lex.basis,lexical_omissions:[...c.places.map(p=>({word:p.word,kind:'place'})),...(c.space_words||[]).map(word=>({word,kind:'space'})),...c.people.map(p=>({word:p.word,kind:'person'}))].filter(r=>!valid(r.word)),
+   place_aliases:Object.fromEntries(c.places.filter(p=>valid(p.word)).map(p=>[p.word,model.placeName(p.word)])),
+   route_steps:projected.map(r=>({...r,from:r.from?{id:r.from.id,name:r.from.name,lon:r.from.lon,lat:r.from.lat}:null,to:r.to?{id:r.to.id,name:r.to.name,lon:r.to.lon,lat:r.to.lat}:null})),id,title:c.chapter,
+   spaces:(c.space_words||[]).filter(valid),times:Object.keys(c.years||{}).filter(valid),places:c.places.map(p=>p.word).filter(valid),reviews:c.lexical_reviews||{},people:c.people.filter(p=>valid(p.word)).map(p=>({word:p.word,types:Object.keys(p.person_types||{})})),events:Object.keys(c.event_types||{}),realms:[...(c.realms_present||[])],
+   realm_evidence:(c.realm_evidence||[]).filter(e=>valid(e.space)).map(e=>({id:e.id,realm:e.realm,space:e.space||'',unit:e.unit,excerpt:e.excerpt||e.quote||e.text||'',kind:e.kind||''})),evidence_review:c.evidence_review||{},units:c.source_units.map((u,i)=>({id:u.unit,text:u.text||u.original||'',token_words:unitWords[i]})),steps};
+ });
+}
 async function fallback(idb,key){if(!idb)return null;return new Promise((resolve,reject)=>{const req=idb.open('liaozhai-map-local-backup-v1',1);req.onupgradeneeded=()=>req.result.createObjectStore('documents');req.onerror=()=>reject(req.error);req.onsuccess=()=>{const db=req.result;const op=db.transaction('documents').objectStore('documents').get(key);op.onsuccess=()=>{db.close();resolve(op.result||null);};op.onerror=()=>{db.close();reject(op.error);};};});}
 async function load(env=root){
  const Store=typeof module!=='undefined'?require('../corpus-store'):env.GhostCorpusStore;

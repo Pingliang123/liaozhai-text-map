@@ -6,6 +6,7 @@ const mounted=[];
 const window={location:{search:''},GhostPlaceTaxonomy:require('../assets/research-lab/place-taxonomy'),GhostRelationNetwork:require('../assets/research-lab/relation-network'),GhostTutorialNetwork:require('../assets/research-lab/tutorial-network'),GhostBookNetwork:{mount:(out,cs,ex,opts)=>{mounted.push(opts.graph);out.append(new E('svg'));}}};
 const context={window,document:{createElement:t=>new E(t)},URLSearchParams,fetch:()=>new Promise(()=>{})};vm.createContext(context);
 window.GhostSpatialRoutes=require('../assets/spatial-routes');
+window.GhostPlaceNodeMerges=require('../assets/place-node-merges');
 for(const f of ['chapter-spaces.js','place-spaces.js'])vm.runInContext(fs.readFileSync('assets/research-lab/'+f,'utf8'),context);
 const a={id:0,title:'甲',places:['济南','青州'],spaces:['寺'],people:[],units:[{id:0,text:'至济南，宿寺，赴青州。'}],steps:[]},b={...a,id:1,title:'乙',spaces:['室'],units:[{id:1,text:'至青州，入室。'}]},out=new E('main');
 window.GhostPlaceSpaces.mount(out,[a,b],()=>{},{placeRecords:{济南:{located:true},青州:{located:true}}});

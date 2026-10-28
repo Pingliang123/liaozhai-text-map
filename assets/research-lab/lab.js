@@ -41,7 +41,7 @@ function render(){if(!data)return;exportRows=[];const version=++renderVersion,se
  for(const [v,t]of [['places','地点与空间'],['paths','人物与路径']]){const o=el('option',t);o.value=v;mode.append(o);}mode.value=relationMode;
  mode.onchange=()=>{relationMode=mode.value;const url=new URL(location.href);url.searchParams.set('mode',relationMode);url.searchParams.set('tab','relations');history.replaceState(null,'',url);render();};
  const label=el('label','关系 ');label.append(mode);controls.append(label);out.append(controls);
- if(relationMode==='paths'){GhostYiNetwork.mount(out,cs,setExport);}
+ if(relationMode==='paths'){GhostChapterSpaces.mount(out,cs,{paths:true,placeRecords:hierarchyState.records});const whole=el('details');whole.append(el('summary','全书人物路径汇总'));let loaded=false;whole.ontoggle=()=>{if(whole.open&&!loaded){loaded=true;GhostYiNetwork.mount(whole,cs,setExport);}};out.append(whole);}
  else{
  GhostPlaceSpaces.mount(out,cs,setExport);
  const period=el('label','归属依据 '),year=el('select');year.setAttribute('aria-label','历史归属年份');

@@ -55,6 +55,7 @@
     const rejectedPlaces = new Set(base.rejected_place_words || []);
     const name = value => Object.hasOwn(normalize, value) ? normalize[value] : value;
     const placeName = value => {let word=name(value);const seen=new Set();while(base.place_node_aliases?.[word]&&!seen.has(word)){seen.add(word);word=base.place_node_aliases[word];}return word;};
+    const isToken=(c,w)=>{const Routes=typeof module!=='undefined'&&module.exports?require('../assets/spatial-routes'):root.GhostSpatialRoutes,lex=Routes?.lexicon(c);return !lex?.strict||lex.words.has(w);};
     const placeID = word => base.places.find(p => name(p.name) === word)?.id || 'custom-place-' + encodeURIComponent(word);
     function validateLocation(input) {
       assert(input && typeof input === 'object', '定位资料格式错误');
@@ -374,13 +375,16 @@
         const all = new Map([place,...descendants(place)].flatMap(p => atPlace(p).map(c => [c.chapter_id,c])));
         return [...all.values()].sort((a,b) => a.chapter_id-b.chapter_id);
       }
-      if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>
-        view(id).places.some(p => placeName(p.word) === placeName(place.name))).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
+      const Routes=typeof module!=='undefined'&&module.exports?require('../assets/spatial-routes'):root.GhostSpatialRoutes;
+      if (!placeViews.has(place.id)) placeViews.set(place.id, modelIDs.filter(id =>{
+        const c=view(id),lex=Routes?.lexicon(c);
+        return c.places.some(p => placeName(p.word) === placeName(place.name)&&(!lex?.strict||lex.words.has(p.word)));
+      }).map(view).sort((a, b) => a.chapter_id - b.chapter_id));
       return placeViews.get(place.id);
     }
     function links(place, allowedIDs) {
       return atPlace(place).filter(c => !allowedIDs || allowedIDs.has(c.chapter_id)).flatMap(c =>
-        c.realm_evidence.filter(e => c.realms_present.includes(e.realm) && (c.evidence_review?.[e.id]?.kind !== 'reject'))
+        c.realm_evidence.filter(e => isToken(c,e.space)&&c.realms_present.includes(e.realm) && (c.evidence_review?.[e.id]?.kind !== 'reject'))
           .map(e => {
             const review = c.evidence_review?.[e.id] || {kind: 'mention', note: ''};
             // A crossing from another location in the chapter is NOT a route
@@ -392,7 +396,7 @@
     function activeEvidence(allowedIDs) {
       return [...chapters.keys()].filter(id => !allowedIDs || allowedIDs.has(id)).flatMap(id => {
         const c = view(id);
-        return c.realm_evidence.filter(e => c.realms_present.includes(e.realm) && c.evidence_review?.[e.id]?.kind !== 'reject')
+        return c.realm_evidence.filter(e => isToken(c,e.space)&&c.realms_present.includes(e.realm) && c.evidence_review?.[e.id]?.kind !== 'reject')
           .map(e => ({...e, chapter_id: id, chapter: c.chapter, review: c.evidence_review?.[e.id] || {kind: 'mention', note: ''}}));
       });
     }

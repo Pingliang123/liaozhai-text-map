@@ -9,6 +9,6 @@ assert.equal(P.uniqueSteps([{...step,quote:''},long]).length,2,'不能将缺少�
 const c={id:1,title:'示例',places:['甲','乙'],spaces:[],people:[],events:[],units:[{id:8,text:long.quote}],steps:source};
 assert.equal(P.movementNotes(c).length,1);const network=Y.build([c]);assert.equal(network.records.length,1);assert.equal(network.movement.edges[0].weight,1);assert.deepEqual(network.records[0].source_indices,[0,1]);
 const real=require('../assets/research-lab/data.json').chapters.find(c=>c.title==='王十'),snapshot=JSON.stringify(real);
-const actual=P.movementNotes(real).filter(r=>r.from==='官署'&&r.to==='奈河边');assert.equal(actual.length,1);assert(actual[0].text.endsWith('又视河水浑赤，臭不可闻。'));assert.equal(actual[0].source_indices.length,2);
-assert.equal(Y.build([real]).records.filter(r=>r.from==='官署'&&r.to==='奈河边').length,1);assert.equal(JSON.stringify(real),snapshot);
+const actual=real.route_steps.filter(r=>r.original_from_space==='官署'&&r.original_to_space==='奈河边');assert.equal(actual.length,1);assert(actual[0].quote.endsWith('又视河水浑赤，臭不可闻。'));assert.equal(actual[0].source_indices.length,2);
+assert.equal(JSON.stringify(real),snapshot);assert(actual[0].lexical_status,'去重后仍须核对端点词界');
 console.log('PASS 王十 short/long quotation merge, movement counts, provenance and distinct events preserved');

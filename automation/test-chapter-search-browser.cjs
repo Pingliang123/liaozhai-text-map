@@ -39,10 +39,14 @@ const {chromium}=require('playwright');
   const sceneInput=scene.locator('..').locator('input[role=combobox]');
   await sceneInput.fill('黃英');await sceneInput.press('Enter');
   assert.equal(await scene.inputValue(),'411');
+  assert.equal(await page.locator('.chapter-ordered-network').count(),0,'篇目空间图不混入人物路线');
+  await page.getByLabel('关系网络类型',{exact:true}).selectOption('paths');
   const itinerary=page.locator('.chapter-ordered-network');await itinerary.waitFor();
-  assert(await itinerary.locator('svg [data-step]').count()>20,'黄英完整移动与改建直接按次序绘图');
+  const pathPick=page.getByLabel('选择篇目查看人物路径',{exact:true}),pathInput=pathPick.locator('..').locator('input[role=combobox]');await pathInput.fill('黃英');await pathInput.press('Enter');
+  assert(await itinerary.locator('svg [data-step]').count()>0,'人物路径只使用分词可对应的端点');
   await itinerary.locator('svg [data-step="2"]').click();assert((await itinerary.locator('.chapter-step-evidence h4').textContent()).includes('第2步'),'点选图中步骤查看原文');
   await itinerary.screenshot({path:process.env.TEMP+'/liaozhai-ordered-network.png'});
+  await page.getByLabel('关系网络类型',{exact:true}).selectOption('places');
   // A later programmatic/native selection still uses the original handlers.
   await scene.selectOption('34');
   await page.waitForFunction(()=>{const s=document.querySelector('select[aria-label="选择篇目查看空间网络"]');return s.value==='34'&&s.parentElement.querySelector('input').value===s.selectedOptions[0].textContent;});

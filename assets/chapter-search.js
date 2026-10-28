@@ -2,7 +2,7 @@
 let simplify=s=>s;
 const normalize=s=>simplify(String(s||'').normalize('NFKC')).replace(/[\s《》]/gu,'').toLowerCase();
 function matches(rows,query){const q=normalize(query);return rows.filter(r=>!r.disabled&&(!q||normalize(r.label).includes(q)));}
-const selector='#chapter-select,#movement-chapter,#research-chapter-select,#report-chapter,#chapter,#case,select[aria-label="词汇篇目"],select[aria-label="选择篇目查看空间网络"],select[aria-label="比较篇目"],select[data-report-picker]';
+const selector='#chapter-select,#movement-chapter,#research-chapter-select,#report-chapter,#chapter,#case,select[aria-label="词汇篇目"],select[aria-label="选择篇目查看空间网络"],select[aria-label="选择篇目查看人物路径"],select[aria-label="比较篇目"],select[data-report-picker]';
 const widgets=new Set(),bySelect=new WeakMap();let opened=null,serial=0;
 function configure(fn){if(typeof fn!=='function')return;simplify=fn;for(const w of widgets)w.refresh();}
 function enhance(select){
