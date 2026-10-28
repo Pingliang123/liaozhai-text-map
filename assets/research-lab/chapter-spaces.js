@@ -47,6 +47,7 @@ function mount(container,chapters,options={}){
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
   const graph=build(c,options);out.append(el('h3','《'+c.title+'》'+(options.paths?'人物路径':'空间网络')));
+  if(options.paths){const all=el('a','查看本篇全部空间词（'+c.spaces.length+'）');const url=new URL(root.location?.href||'https://pingliang123.github.io/liaozhai-text-map/assets/research-lab/');url.searchParams.set('mode','places');url.searchParams.set('chapter',String(c.id));url.searchParams.delete('scene');all.href=url.href;out.append(all);}
   if(c.token_basis?.includes('未全文对齐'))out.append(el('p','本篇修订分词未与全文对齐，暂用原典词位分词；修订记录保留。'));
   if(c.lexical_omissions?.length){const note=el('details');note.append(el('summary','未对齐分词的词项 · '+c.lexical_omissions.length),el('p',c.lexical_omissions.map(r=>r.word).join('、')),el('p','保留在修订资料中；请在文本与修订中核对分词边界后再进入网络。'));out.append(note);}
   if(options.paths){const pending=(c.route_steps||[]).filter(s=>s.transition_kind==='movement'&&(!s.from_space||!s.to_space));if(pending.length)out.append(el('p',pending.length+'条移动端点未对齐分词，暂不绘线。'));}

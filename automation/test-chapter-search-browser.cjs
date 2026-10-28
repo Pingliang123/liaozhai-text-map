@@ -54,6 +54,13 @@ const {chromium}=require('playwright');
   await sceneInput.fill('黄');
   const popup=page.locator('.chapter-search-popup:visible');const bounds=await popup.boundingBox();assert(bounds.x>=0&&bounds.x+bounds.width<=391);
   await sceneInput.press('Escape');
+  await page.goto('http://localhost/assets/research-lab/?tab=relations&mode=paths&chapter=395');
+  const allSpaces=page.getByRole('link',{name:/查看本篇全部空间词/});await allSpaces.waitFor({timeout:90000});
+  assert((await allSpaces.getAttribute('href')).includes('mode=places'));
+  await allSpaces.click();
+  await page.waitForFunction(()=>document.querySelector('select[aria-label="选择篇目查看空间网络"]')?.value==='395',{timeout:90000});
+  assert((await page.locator('body').textContent()).includes('狱门'));
+  assert((await page.locator('body').textContent()).includes('簷下'));
   assert.deepEqual(errors,[]);
   console.log('PASS browser: both sites, traditional search, deferred selection, keyboard, no matches, programmatic sync, native handlers and mobile popup');
  }finally{await browser.close();}

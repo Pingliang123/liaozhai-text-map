@@ -121,6 +121,7 @@ jobs:
           node automation/test-space-vocabulary-reconcile.js
           node automation/test-chapter-spaces.js
           node automation/test-source-token-networks.js
+          node automation/test-concrete-space-supplement.js
           node automation/test-local-source.js
           node automation/build-analysis-reports.js
           node automation/test-analysis-reports.js
