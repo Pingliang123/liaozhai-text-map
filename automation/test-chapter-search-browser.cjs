@@ -62,6 +62,8 @@ const {chromium}=require('playwright');
   await page.locator('.chapter-complete-spaces .network-canvas svg').waitFor();
   const pathWords=await page.locator('.chapter-complete-spaces .network-canvas svg g[role="button"] > text').allTextContents();
   for(const word of require('../assets/research-lab/data.json').chapters.find(c=>c.id===395).spaces)assert(pathWords.includes(word),'人物路径页面缺少空间节点：'+word);
+  assert((await page.locator('body').textContent()).includes('空间词总数：25'),'空间词总数显示错误');
+  assert((await page.locator('.chapter-space-list').textContent()).includes('狱门'),'完整空间词列表缺少狱门');
   await allSpaces.click();
   await page.waitForFunction(()=>document.querySelector('select[aria-label="选择篇目查看空间网络"]')?.value==='395',{timeout:90000});
   assert((await page.locator('body').textContent()).includes('狱门'));
