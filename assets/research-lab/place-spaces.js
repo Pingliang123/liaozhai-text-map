@@ -92,7 +92,9 @@ function mount(container,chapters,onExport,options={}){
 
  const allOut=el('div'),range=el('select');range.setAttribute('aria-label','地点网络范围');for(const [v,t]of [['located','已定位地点'],['unmapped','未定位地点＋异境'],['all','全部地点词']]){const o=el('option',t);o.value=v;range.append(o);}const savedRange=new URLSearchParams(root.location?.search||'').get('range');range.value=['located','unmapped','all'].includes(savedRange)?savedRange:'all';const rangeLabel=el('label','网络范围');rangeLabel.append(range);first.append(rangeLabel,allOut);
  const viewMode=el('select');viewMode.setAttribute('aria-label','空间网络视图');for(const [v,t]of [['chapter','按篇目'],['place','按地点']]){const o=el('option',t);o.value=v;viewMode.append(o);}const viewLabel=el('label','空间网络 ');viewLabel.append(viewMode);second.append(viewLabel);
+ second.id='chapter-spatial-network';
  const chapterPanel=el('div'),placePanel=el('div');placePanel.hidden=true;second.append(chapterPanel,placePanel);
+ if(root.location?.hash==='#chapter-spatial-network')root.requestAnimationFrame?.(()=>second.scrollIntoView?.({block:'start'}));
  const chapterUI=root.GhostChapterSpaces.mount(chapterPanel,chapters,{placeRecords:options.placeRecords});
  const placePick=el('select');placePick.setAttribute('aria-label','选择地点查看内部空间');
  for(const n of graphs.spaces.nodes.filter(n=>n.kind==='place'&&graphs.spaces.edges.some(e=>e.source===n.id)).sort((a,b)=>a.label.localeCompare(b.label,'zh'))){const o=el('option',n.label);o.value=n.id;placePick.append(o);}

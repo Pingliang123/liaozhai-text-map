@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 4111,
-      "sha256": "a8270e8ed02bb2403357d4dc0ae2effcfecc3e5f758454f6f91f652a1fd1f59b"
+      "sha256": "14c7230040e807a67e964c84d58a4fce8a9b71d329a4046e2198e56cc28e137c"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -703,8 +703,8 @@
     },
     {
       "path": "assets/research-lab/place-spaces.js",
-      "bytes": 22415,
-      "sha256": "50510b7614a1d69180f74d7c5bf86b85e5299f8dab2de7ae80431eaf62ef6d67"
+      "bytes": 22582,
+      "sha256": "3e49163b6fa2040e1fad6eef5367dc04916b6f56b01bebc89a9912bcf7a82424"
     },
     {
       "path": "assets/research-lab/place-taxonomy.js",
@@ -825,8 +825,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39093804,
-      "sha256": "7ebf6c5519327e4758a946b4f9c7cff5720f741e18b2ca0ecefc841b819fdf55"
+      "bytes": 39093882,
+      "sha256": "65a668ef74e0da832737a9e9bc58474ff1996a3a2b7b8c8c264186d2c8f1fbfd"
     }
   ]
 }
