@@ -73,7 +73,13 @@ function buildRaw(chapters,options={}){
     }
    }
   }
- const allPlaceNodes=[...places.values()].map(n=>({...n})),ppAll={nodes:allPlaceNodes,edges:[...pairs.values()],mode:'places-all'},psNodes=new Map([...places].map(([id,n])=>[id,{...n}]));for(const original of chapters)for(const word of original.places.filter(w=>sceneTerms.has(w))){const id='space:'+word;if(!psNodes.has(id))psNodes.set(id,{id,label:word,kind:'space',degree:0});}for(const [id,n] of otherworldSpaces)if(!psNodes.has(id))psNodes.set(id,{...n});for(const e of spaces.values())if(!psNodes.has(e.target))psNodes.set(e.target,{id:e.target,label:e.target.slice(6),kind:'space',degree:0});const ps={nodes:[...psNodes.values()],edges:[...spaces.values()],mode:'located-spaces'};
+ const allPlaceNodes=[...places.values()].map(n=>({...n})),ppAll={nodes:allPlaceNodes,edges:[...pairs.values()],mode:'places-all'},psNodes=new Map([...places].map(([id,n])=>[id,{...n}]));
+ // Keep every space annotation in the full place-space graph, including
+ // isolated words whose attribution is still pending. Previously this loop
+ // only copied spaces that had first been classified as scene terms, so
+ // hundreds of valid chapter annotations disappeared from the network data.
+ for(const original of chapters)for(const word of [...(original.spaces||[]),...original.places.filter(w=>sceneTerms.has(w))]){const id='space:'+word;if(!psNodes.has(id))psNodes.set(id,{id,label:word,kind:'space',degree:0});}
+ for(const [id,n] of otherworldSpaces)if(!psNodes.has(id))psNodes.set(id,{...n});for(const e of spaces.values())if(!psNodes.has(e.target))psNodes.set(e.target,{id:e.target,label:e.target.slice(6),kind:'space',degree:0});const ps={nodes:[...psNodes.values()],edges:[...spaces.values()],mode:'located-spaces'};
  for(const g of [ppAll,ps]){const byId=new Map(g.nodes.map(n=>[n.id,n]));for(const e of g.edges){byId.get(e.source).degree++;byId.get(e.target).degree++;}}
  const isolatedPlaces=ppAll.nodes.filter(n=>n.degree===0),connectedIds=new Set(ppAll.nodes.filter(n=>n.degree>0).map(n=>n.id)),pp={nodes:ppAll.nodes.filter(n=>connectedIds.has(n.id)),edges:ppAll.edges.filter(e=>connectedIds.has(e.source)&&connectedIds.has(e.target)),mode:'places'};const classification=[...new Set(chapters.flatMap(c=>c.places))].sort().map(word=>({...taxonomy.classify(word),evidence:chapters.filter(c=>c.places.includes(word)).map(c=>({chapter:c.title,chapterId:c.id,units:c.units.filter(u=>u.text.includes(word))}))}));return {places:pp,placesAll:ppAll,spaces:ps,pending,isolatedPlaces,classification};
 }
