@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 32954184,
-      "sha256": "a2065a15739fe91c67ad286ecdc81d6443ca5cb597821e7d3ced1b24984ebe16"
+      "sha256": "fdd8db5314751f855e0f30a5fe2fdd42dab4c9f33e219414d6e904d84020bf0b"
     },
     {
       "path": "github-login.js",
@@ -623,8 +623,8 @@
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
-      "bytes": 13466,
-      "sha256": "965c5f9759f7f77fae4d573d7520390f1358f52a39faa6106046d474d6e37e50"
+      "bytes": 13889,
+      "sha256": "8e1fb10610b68518584dd601c9ad30fedf4b30c328021ad6937b78fe1e5b3781"
     },
     {
       "path": "assets/research-lab/current-data.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18378134,
-      "sha256": "e39851d0766c971ddcabcc2b176fa3686d397ffc6fd895e927b431eb4bbfd23b"
+      "sha256": "1fe51c56ea97067ba10d6a0533f3d199026bffee128794735c583aa698d21e7c"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 4131,
-      "sha256": "6df3e5d2bfc5e59c632121a7286318d734a9e673dd0315dc4d42cd9c85e906ff"
+      "sha256": "4829f1dbd3117492724df5190e6ef217ea94f35699ae9e8b3ff78b381f3084a0"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -703,8 +703,8 @@
     },
     {
       "path": "assets/research-lab/place-spaces.js",
-      "bytes": 22582,
-      "sha256": "3e49163b6fa2040e1fad6eef5367dc04916b6f56b01bebc89a9912bcf7a82424"
+      "bytes": 22884,
+      "sha256": "a5fce4e18de1a06894f0250a7c8382d68503119da6f9b7faee0f8c1808602294"
     },
     {
       "path": "assets/research-lab/place-taxonomy.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597074,
-      "sha256": "8c2acf74bd62d419367e464db88ec8442d2f5f4988e956c40369f19562655cf5"
+      "sha256": "3f5cd7c03f02f9a265c8332d8539a056a88376d06a2a949209522a25fb470cec"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -791,7 +791,7 @@
     {
       "path": "data-package.json",
       "bytes": 32954184,
-      "sha256": "a2065a15739fe91c67ad286ecdc81d6443ca5cb597821e7d3ced1b24984ebe16"
+      "sha256": "fdd8db5314751f855e0f30a5fe2fdd42dab4c9f33e219414d6e904d84020bf0b"
     },
     {
       "path": "data.html",
@@ -825,8 +825,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39094671,
-      "sha256": "c23f57f06c072a99ab371445e289beeb33a42b89762afa5ebdee889fdd8714f4"
+      "bytes": 39095004,
+      "sha256": "dd547dcccc4b3ac31ea1215daab0eb60937d51a4801f91733c658841dc074a9c"
     }
   ]
 }
