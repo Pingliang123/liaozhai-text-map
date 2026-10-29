@@ -79,7 +79,7 @@ function buildRaw(chapters,options={}){
 }
 function build(chapters,options={}){
  const out=buildRaw(chapters,options),aliases=Object.assign({},globalPlaceAliases,...chapters.map(c=>c.place_aliases||{}));
- if(Object.entries(aliases).some(([a,b])=>a!==b)){
+ if(Object.entries(aliases).some(([a,b])=>a!==b&&out.placesAll.nodes.some(n=>n.label===a))){
   const Merge=typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges;
   out.placesAll=Merge.graph(out.placesAll,aliases);out.spaces=Merge.graph(out.spaces,aliases);
   out.isolatedPlaces=out.placesAll.nodes.filter(n=>!n.degree);out.places=connectedGraph({...out.placesAll,mode:'places'});
