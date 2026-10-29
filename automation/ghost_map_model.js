@@ -1,6 +1,6 @@
 (function (root) {
   'use strict';
-  const EVENTS = ['人', '鬼', '妖', '神'];
+  const EVENTS = ['人', '鬼', '狐', '妖', '神'];
   const PEOPLE = ['人', '鬼', '妖', '神'];
   const REALMS = ['人间', '天界', '地界'];
   const LEVELS = {unknown:'待核',province:'省级',prefecture:'府／州／地市级',county:'县级',town:'乡镇级',village:'村落',natural:'山川水域',region:'区域／跨界'};
@@ -212,7 +212,7 @@
       }
       assert(input.event_types && typeof input.event_types === 'object' && !Array.isArray(input.event_types), '异事类型格式错误');
       for (const type of Object.keys(input.event_types)) {
-        assert(EVENTS.includes(type) && input.event_types[type] === 1, '异事类型只接受人、鬼、妖、神的篇目标记');
+        assert(EVENTS.includes(type) && input.event_types[type] === 1, '异事类型只接受人、鬼、狐、妖、神的篇目标记');
         result.event_types[type] = 1;
       }
       assert(Array.isArray(input.places) && input.places.length <= 500, '地点格式错误');

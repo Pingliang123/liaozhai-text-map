@@ -123,6 +123,7 @@ jobs:
           node automation/test-source-token-networks.js
           node automation/test-concrete-space-supplement.js
           node automation/test-space-publication-refresh.js
+          node automation/test-fox-events.js
           node automation/test-local-source.js
           node automation/build-analysis-reports.js
           node automation/test-analysis-reports.js

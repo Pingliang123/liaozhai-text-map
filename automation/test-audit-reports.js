@@ -4,7 +4,7 @@ const A=require('../audit-reports.js');
 const chapters=[{chapter_id:0,chapter:'甲',event_types:{人:1},places:[]},{chapter_id:33,chapter:'乙',event_types:{鬼:1,妖:1},places:[{word:'济南'}]},{chapter_id:34,chapter:'丙',event_types:{},places:[]}];
 const model={ids:chapters.map(c=>c.chapter_id),view:id=>chapters.find(c=>c.chapter_id===id)};
 const all=A.eventRows(model);assert.equal(all.length,3);const stats=A.eventStats(all);
-assert.deepEqual(stats.counts,[['人',1],['鬼',1],['妖',1],['神',0],['未定',1]]);
+assert.deepEqual(stats.counts,[['人',1],['鬼',1],['狐',0],['妖',1],['神',0],['未定',1]]);
 assert.equal(stats.combinations.reduce((sum,r)=>sum+r[1],0),3);
 assert.deepEqual(A.eventRows(model,'','济南','鬼').map(r=>r.chapter_id),[33]);
 assert.equal(A.eventRows(model,'0').length,1);assert.equal(A.eventRows(model,'','','未定')[0].chapter_id,34);

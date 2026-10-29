@@ -1,6 +1,6 @@
 (function(root){
   'use strict';
-  const TYPES=['人','鬼','妖','神'];
+  const TYPES=['人','鬼','狐','妖','神'];
   function chapterChoices(model,query='',status='all'){
     query=model.simplify(query).trim();
     return model.ids.filter(id=>{const c=model.view(id),known=TYPES.some(t=>c.event_types?.[t]>0);
@@ -17,7 +17,7 @@
     const combinations=new Map();for(const r of rows){const key=r.types.join('／')||'未定';combinations.set(key,(combinations.get(key)||0)+1);}
     return {counts:[...TYPES,'未定'].map(t=>[t,rows.filter(r=>t==='未定'?!r.types.length:r.types.includes(t)).length]),combinations:[...combinations],total:rows.length};
   }
-  function validateTypes(types){if(types.some(t=>!TYPES.includes(t))||new Set(types).size!==types.length||types.includes('人')&&types.length>1)throw Error('人类仅用于无鬼、妖、神作用的故事；鬼、妖、神可以多选。');return Object.fromEntries(types.map(t=>[t,1]));}
+  function validateTypes(types){if(types.some(t=>!TYPES.includes(t))||new Set(types).size!==types.length||types.includes('人')&&types.length>1)throw Error('人类仅用于无人外主体作用的故事；鬼、狐、妖、神可以多选。');return Object.fromEntries(types.map(t=>[t,1]));}
   function csv(rows){const safe=v=>'"'+String(v??'').replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"';return '\ufeff'+rows.map(row=>row.map(safe).join(',')).join('\r\n');}
   function mount(options){
     const {model,container,bars,pie,save,open,canEdit,chapter}=options;
@@ -26,7 +26,7 @@
     const button=(text,fn)=>{const n=el('button',text,{type:'button'});n.addEventListener('click',fn);return n;};
     const download=(name,rows)=>{const url=URL.createObjectURL(new Blob([csv(rows)],{type:'text/csv;charset=utf-8'})),a=el('a','',{href:url,download:name});doc.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);};
     const events=el('details','',{open:''});events.append(el('summary','异事类型'));
-    events.append(el('p','一篇可同时涉及鬼、妖、神；“人”指无人外主体介入的故事。各类型篇数可重叠，饼图按互斥组合计数。',{class:'muted'}));
+    events.append(el('p','狐从妖中单列；妖指其他妖怪。一篇可涉及多个类型，“人”指无人外主体介入。饼图按类型组合计数。',{class:'muted'}));
     const toolbar=el('div','',{class:'toolbar'}),search=el('input','',{type:'search',placeholder:'搜索篇名或地点','aria-label':'搜索异事类型'}),filter=el('select','',{'aria-label':'筛选异事类型'});
     for(const t of ['全部',...TYPES,'未定'])filter.append(el('option',t,{value:t==='全部'?'':t}));
     const count=el('p','',{role:'status'}),charts=el('div','',{class:'report-charts'}),bar=el('div'),pieChart=el('div');

@@ -65,6 +65,10 @@ const {chromium}=require('playwright');
   assert((await page.locator('body').textContent()).includes('簷下'));
   const words=await page.getByRole('heading',{name:'《席方平》空间网络',exact:true}).locator('..').locator('.network-canvas svg g[role="button"] > text').allTextContents();
   for(const word of require('../assets/research-lab/data.json').chapters.find(c=>c.id===395).spaces)assert(words.includes(word),'旧浏览器实际缺少节点：'+word);
+  await page.evaluate(()=>{const c=document.querySelector('#chapter');c.value='';c.dispatchEvent(new Event('change'));});
+  await page.locator('#event').selectOption('狐');
+  const foxCount=require('../assets/research-lab/data.json').chapters.filter(c=>c.events.includes('狐')).length;
+  await page.waitForFunction(n=>document.querySelector('#status').textContent.includes(n+' 篇'),foxCount,{timeout:30000});
   assert.deepEqual(errors,[]);
   console.log('PASS browser: both sites, traditional search, deferred selection, keyboard, no matches, programmatic sync, native handlers and mobile popup');
  }finally{await browser.close();}

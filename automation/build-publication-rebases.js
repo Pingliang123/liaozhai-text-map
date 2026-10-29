@@ -22,5 +22,8 @@ for(const row of previous.overrides){const current=pack.revisions.overrides.find
  }
 }
 data.version='concrete-spaces-20261029';
+const foxBefore=JSON.parse(cp.execFileSync('git',['show','75cceb4:manual-revisions.json'],{maxBuffer:100000000}));
+for(const row of foxBefore.overrides){const remote=pack.revisions.overrides.find(r=>r.chapter_id===row.chapter_id);if(!remote||hash(row.changes.event_types)===hash(remote.changes.event_types))continue;let rule=data.chapters.find(r=>r.chapter_id===row.chapter_id);if(!rule){rule={chapter_id:row.chapter_id,title:model.view(row.chapter_id).chapter,fields:{},reviews:{}};data.chapters.push(rule);}rule.fields.event_types=[...new Set([...(rule.fields.event_types||[]),hash(row.changes.event_types)])];}
+data.version='fox-events-20261029';
 fs.writeFileSync('assets/publication-rebases.js',"(function(root){'use strict';const data="+JSON.stringify(data)+";if(typeof module!=='undefined')module.exports=data;else root.GhostPublicationRebases=data;})(globalThis);\n");
 console.log('Recorded pre-review Huangying fingerprints; no current records copied');
