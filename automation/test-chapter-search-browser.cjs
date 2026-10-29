@@ -54,6 +54,8 @@ const {chromium}=require('playwright');
   await sceneInput.fill('黄');
   const popup=page.locator('.chapter-search-popup:visible');const bounds=await popup.boundingBox();assert(bounds.x>=0&&bounds.x+bounds.width<=391);
   await sceneInput.press('Escape');
+  const old=JSON.parse(require('node:child_process').execFileSync('git',['show','c0a8604:manual-revisions.json'],{maxBuffer:100000000}));old.overrides=old.overrides.filter(r=>r.chapter_id===395);old.complete_snapshot=false;
+  await context.addInitScript(old=>localStorage.setItem('liaozhai-map-corrections-v3-'+old.corpus_id,JSON.stringify(old)),old);
   await page.goto('http://localhost/assets/research-lab/?tab=relations&mode=paths&chapter=395');
   const allSpaces=page.getByRole('link',{name:/查看本篇全部空间词/});await allSpaces.waitFor({timeout:90000});
   assert((await allSpaces.getAttribute('href')).includes('mode=places'));
@@ -61,6 +63,8 @@ const {chromium}=require('playwright');
   await page.waitForFunction(()=>document.querySelector('select[aria-label="选择篇目查看空间网络"]')?.value==='395',{timeout:90000});
   assert((await page.locator('body').textContent()).includes('狱门'));
   assert((await page.locator('body').textContent()).includes('簷下'));
+  const words=await page.getByRole('heading',{name:'《席方平》空间网络',exact:true}).locator('..').locator('.network-canvas svg g[role="button"] > text').allTextContents();
+  for(const word of require('../assets/research-lab/data.json').chapters.find(c=>c.id===395).spaces)assert(words.includes(word),'旧浏览器实际缺少节点：'+word);
   assert.deepEqual(errors,[]);
   console.log('PASS browser: both sites, traditional search, deferred selection, keyboard, no matches, programmatic sync, native handlers and mobile popup');
  }finally{await browser.close();}

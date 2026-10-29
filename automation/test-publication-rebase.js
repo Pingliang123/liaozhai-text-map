@@ -6,7 +6,7 @@ const row=d=>d.overrides.find(r=>r.chapter_id===411).changes;
 (async()=>{
  const saved=JSON.stringify(old),result=await S.rebasePublished(old,published);assert(result.applied.length>0);assert.equal(JSON.stringify(old),saved,'合并不改写原备份');
  assert.deepEqual(row(result.document),row(published),'未改动的旧黄英资料完整更新');
- assert.deepEqual(result.document.overrides.filter(r=>r.chapter_id!==411),old.overrides.filter(r=>r.chapter_id!==411));
+ for(const item of old.overrides.filter(r=>r.chapter_id!==411)){const next=result.document.overrides.find(r=>r.chapter_id===item.chapter_id);for(const field of Object.keys(item.changes))if(!result.applied.some(r=>r.chapter_id===item.chapter_id&&(r.field===field||r.field.startsWith(field+':'))))assert.deepEqual(next.changes[field],item.changes[field]);}
  const stripParent=rows=>rows.map(({parent_id,...rest})=>rest);assert.deepEqual(stripParent(result.document.place_locations),stripParent(old.place_locations),'定位名称、坐标、备注不变');
  for(const r of result.document.place_locations){const change=result.applied.some(x=>x.place===r.name);assert.equal(r.parent_id,(change?published:old).place_locations.find(x=>x.name===r.name).parent_id,'仅指纹匹配的旧上级可迁移');}
  const normalized=M.create(pack.base);normalized.importDocument(old);assert.deepEqual(row((await S.rebasePublished(normalized.document(),published)).document),row(published),'模型规范化后的旧快照也能识别');
