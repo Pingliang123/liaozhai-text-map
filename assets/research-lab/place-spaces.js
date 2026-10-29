@@ -4,6 +4,8 @@ const taxonomy=typeof module!=='undefined'?require('./place-taxonomy'):root.Ghos
 function hits(text,words){const found=[],occupied=[];for(const word of [...new Set(words)].filter(Boolean).sort((a,b)=>b.length-a.length||(a<b?-1:a>b?1:0))){let at=-1;while((at=text.indexOf(word,at+1))>=0){const end=at+word.length;if(occupied.some(([a,b])=>at<b&&end>a))continue;occupied.push([at,end]);found.push({word,at,end});}}return found.sort((a,b)=>a.at-b.at);}
 const sceneTerms=new Set(Object.values(taxonomy.groups).flatMap(g=>g.words).filter(w=>taxonomy.classify(w).category==='space'));
 const otherworld=new Set(['冥府','冥司','冥界','阴司','阴曹','阴世','幽冥','地府','天宫','九天','瑶池','广寒宫','广寒','仙人岛','神仙岛','罗刹国','大罗刹国','毒龙国','十八狱','黑暗狱']);
+// 這些是同一首都參照點的不同歷史稱謂。原文詞形仍保留在證據中，網絡節點統一顯示為「順天」。
+const globalPlaceAliases={都:'顺天',京:'顺天',京师:'顺天',燕都:'顺天',顺天府:'顺天'};
 // These units require semantic review before they can establish or inherit a scene.
 function uncertainScene(text){return /追述|忆及|昔年|闻说|听说|梦见|梦中|尝闻|传闻|据说|欲往|欲赴|欲至|将往|将赴|拟往|未至|未到|不至|不到|[曰云言道][：:]*[“「]/.test(text);}
 function evidenceKey(chapterId,source,target,anchorText,text){return JSON.stringify([chapterId,source,target,anchorText,text]);}
@@ -76,7 +78,7 @@ function buildRaw(chapters,options={}){
  const isolatedPlaces=ppAll.nodes.filter(n=>n.degree===0),connectedIds=new Set(ppAll.nodes.filter(n=>n.degree>0).map(n=>n.id)),pp={nodes:ppAll.nodes.filter(n=>connectedIds.has(n.id)),edges:ppAll.edges.filter(e=>connectedIds.has(e.source)&&connectedIds.has(e.target)),mode:'places'};const classification=[...new Set(chapters.flatMap(c=>c.places))].sort().map(word=>({...taxonomy.classify(word),evidence:chapters.filter(c=>c.places.includes(word)).map(c=>({chapter:c.title,chapterId:c.id,units:c.units.filter(u=>u.text.includes(word))}))}));return {places:pp,placesAll:ppAll,spaces:ps,pending,isolatedPlaces,classification};
 }
 function build(chapters,options={}){
- const out=buildRaw(chapters,options),aliases=Object.assign({},...chapters.map(c=>c.place_aliases||{}));
+ const out=buildRaw(chapters,options),aliases=Object.assign({},globalPlaceAliases,...chapters.map(c=>c.place_aliases||{}));
  if(Object.entries(aliases).some(([a,b])=>a!==b)){
   const Merge=typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges;
   out.placesAll=Merge.graph(out.placesAll,aliases);out.spaces=Merge.graph(out.spaces,aliases);
