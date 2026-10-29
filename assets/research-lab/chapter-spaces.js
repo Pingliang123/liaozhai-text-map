@@ -52,7 +52,11 @@ function mount(container,chapters,options={}){
   if(c.lexical_omissions?.length){const note=el('details');note.append(el('summary','未对齐分词的词项 · '+c.lexical_omissions.length),el('p',c.lexical_omissions.map(r=>r.word).join('、')),el('p','保留在修订资料中；请在文本与修订中核对分词边界后再进入网络。'));out.append(note);}
   if(options.paths){const pending=(c.route_steps||[]).filter(s=>s.transition_kind==='movement'&&(!s.from_space||!s.to_space));if(pending.length)out.append(el('p',pending.length+'条移动端点未对齐分词，暂不绘线。'));}
   if(!graph.nodes.length){out.append(el('p','本篇尚无地点或空间词标注。'));return;}
-  if(options.paths)renderOrdered(out,graph,c,options);
+  if(options.paths){
+   const complete=el('section');complete.className='chapter-complete-spaces';complete.append(el('h4','全部空间词 · '+c.spaces.length));out.append(complete);
+   root.GhostBookNetwork.mount(complete,[c],()=>{},{graph:build(c),lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'线表示文本关联；下方另列人物移动顺序。'});
+   renderOrdered(out,graph,c,options);
+  }
   else root.GhostBookNetwork.mount(out,[c],()=>{},{graph,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},chapterSpatial:true,networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'节点取自原典分词；线表示同篇关联或场景归属，不表示移动顺序。点线查看原文。'});
   const read=el('a','原文与修订 ↗');read.href='../../index.html?chapter='+encodeURIComponent(c.id)+'#workspace';container.dataset&&(container.dataset.chapter=String(c.id));out.append(read);
   const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
@@ -92,7 +96,6 @@ function renderOrdered(container,graph,chapter,options){
   // No invented movement: retain the original evidence-backed association graph.
   scroll.remove();root.GhostBookNetwork.mount(frame,[chapter],()=>{},{graph,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+chapter.title+'》地点与空间关联'});
  }
- if(layout.rows.length){const details=el('details');details.append(el('summary','地点与空间关联'));details.addEventListener('toggle',()=>{if(!details.open||details.dataset.loaded)return;details.dataset.loaded='1';const associations={...graph,edges:graph.edges.filter(e=>!e.directed)};root.GhostBookNetwork.mount(details,[chapter],()=>{},{graph:associations,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+chapter.title+'》地点与空间关联'});});frame.append(details);}
 }
 const api={build,mount,ordered};if(typeof module!=='undefined')module.exports=api;else root.GhostChapterSpaces=api;
 })(typeof window==='undefined'?globalThis:window);
