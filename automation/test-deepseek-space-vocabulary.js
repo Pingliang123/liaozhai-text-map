@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('node:assert/strict'),A=require('./deepseek-space-vocabulary');
+const data={chapters:[{id:1,title:'甲篇',source_tokens:['赴金陵','金','陵','。','门'],units:[{id:0,text:'某生赴金陵，夜宿门中。',token_words:['某生','赴金陵','，','夜宿','门中','。']},{id:1,text:'又至金陵城。',token_words:['又','至','金','陵','城','。']}]}]};
+const input=A.buildInput(data);assert.equal(input.reduce((n,x)=>n+x.frequency,0),5);assert(input.some(x=>x.word==='赴金陵'));assert.deepEqual(input.find(x=>x.word==='金').examples[0].tokens,['又','至','金','陵','城','。']);
+assert.doesNotThrow(()=>A.validateBatch([0,1],input.slice(0,2)));assert.throws(()=>A.validateBatch([0],input.slice(0,2)));
+const gold=input.findIndex(x=>x.word==='金');assert(A.validCandidate({i:gold,word:'金',type:'place',example:0,reason:'目标词表示专名地点'},input));assert(!A.validCandidate({i:gold,word:'别的词',type:'built',example:0,reason:'周边词出现空间'},input));assert(!A.validCandidate({i:input.findIndex(x=>x.word==='。'),word:'。',type:'built',example:0,reason:'标点'},input));
+const split=input.findIndex(x=>x.word==='赴金陵');assert(A.validSegmentation({i:split,word:'赴金陵',example:0,certainty:'likely',before:['赴金陵'],after:['赴','金陵'],reason:'動詞與地名黏連'},input));
+const merge=input.findIndex(x=>x.word==='金');assert(A.validSegmentation({i:merge,word:'金',example:0,certainty:'possible',before:['金','陵'],after:['金陵'],reason:'專名疑被拆分'},input));
+assert(!A.validSegmentation({i:merge,word:'金',example:0,certainty:'likely',before:['金','陵'],after:['金','陵'],reason:'沒有实际边界变化'},input));
+assert(!A.validSegmentation({i:split,word:'赴金陵',example:0,certainty:'likely',before:['赴金陵'],after:['赴','金陵市'],reason:'字元不同'},input));
+const row=A.asReportRow({i:input.findIndex(x=>x.word==='金'),type:'place',example:0,reason:'专名地点'},input);assert.equal(row.evidence.chapter,'甲篇');assert.equal(row.evidence.quote,'又至金陵城。');
+const md=A.makeMarkdown({model:'deepseek-flash',input:{unique_types:1,token_occurrences:1},checked_types:1,space_candidates:[row],segmentation_suspects:[]});assert(md.includes('空间词候选')&&md.includes('金')&&md.includes('又至金陵城。'));
+console.log('PASS complete-token coverage, source examples, candidate schema and source-preserving segmentation validation');
