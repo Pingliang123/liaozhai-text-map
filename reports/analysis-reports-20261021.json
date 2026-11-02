@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T10:02:18.564Z",
+  "generated_at": "2026-11-02T13:28:04.042Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -152423,17 +152423,6 @@
     {
       "chapter_id": 15,
       "chapter": "长清僧",
-      "unit": 557,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "谷籍"
-      ],
-      "excerpt": "既出，少定，即有诸仆纷来，钱簿谷籍，杂请会计。"
-    },
-    {
-      "chapter_id": 15,
-      "chapter": "长清僧",
       "unit": 559,
       "term": "长清",
       "exact_token": false,
@@ -153334,17 +153323,6 @@
         "门者"
       ],
       "excerpt": "逾数日，门者忽通叶生至。"
-    },
-    {
-      "chapter_id": 30,
-      "chapter": "叶生",
-      "unit": 1265,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "之利市"
-      ],
-      "excerpt": "且士得一人知己，可无憾，何必抛却白纻，乃谓之利市哉。"
     },
     {
       "chapter_id": 30,
@@ -154861,17 +154839,6 @@
         "王叹曰"
       ],
       "excerpt": "王叹曰：「此我数也，于主人何尤？"
-    },
-    {
-      "chapter_id": 37,
-      "chapter": "王成",
-      "unit": 1735,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "进退维谷"
-      ],
-      "excerpt": "自念无以见祖母，蹀踱内外，进退维谷。"
     },
     {
       "chapter_id": 37,
@@ -158290,17 +158257,6 @@
     {
       "chapter_id": 52,
       "chapter": "丁前溪",
-      "unit": 3128,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "钱谷"
-      ],
-      "excerpt": "富有钱谷。"
-    },
-    {
-      "chapter_id": 52,
-      "chapter": "丁前溪",
       "unit": 3129,
       "term": "郭解",
       "exact_token": false,
@@ -158326,17 +158282,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "雨日中不止。"
-    },
-    {
-      "chapter_id": 52,
-      "chapter": "丁前溪",
-      "unit": 3134,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "馆谷"
-      ],
-      "excerpt": "有少年来，馆谷丰隆。"
     },
     {
       "chapter_id": 53,
@@ -158663,17 +158608,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "」某舁送之，将至家门而卒。"
-    },
-    {
-      "chapter_id": 55,
-      "chapter": "水莽草",
-      "unit": 3239,
-      "term": "舟",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "柏舟节"
-      ],
-      "excerpt": "妻不能守柏舟节，半年改醮去。"
     },
     {
       "chapter_id": 55,
@@ -160145,17 +160079,6 @@
     {
       "chapter_id": 68,
       "chapter": "莲香",
-      "unit": 4099,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田舍郎"
-      ],
-      "excerpt": "临榻哂曰：「田舍郎，我岂妄哉！"
-    },
-    {
-      "chapter_id": 68,
-      "chapter": "莲香",
       "unit": 4104,
       "term": "莲",
       "exact_token": false,
@@ -160313,17 +160236,6 @@
         "李益惭"
       ],
       "excerpt": "」李益惭，俯仰若无所容。"
-    },
-    {
-      "chapter_id": 68,
-      "chapter": "莲香",
-      "unit": 4147,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "丹田火热"
-      ],
-      "excerpt": "生觉丹田火热，精神焕发。"
     },
     {
       "chapter_id": 68,
@@ -163303,28 +163215,6 @@
       "excerpt": "戏人以二席置街上，持一升入桶中；"
     },
     {
-      "chapter_id": 86,
-      "chapter": "戏术",
-      "unit": 5620,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "欲市巨瓮"
-      ],
-      "excerpt": "利津李见田，在颜镇闲游陶场，欲市巨瓮，与陶人争直，不成而去。"
-    },
-    {
-      "chapter_id": 86,
-      "chapter": "戏术",
-      "unit": 5620,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "李见田"
-      ],
-      "excerpt": "利津李见田，在颜镇闲游陶场，欲市巨瓮，与陶人争直，不成而去。"
-    },
-    {
       "chapter_id": 87,
       "chapter": "丐僧",
       "unit": 5628,
@@ -164760,17 +164650,6 @@
       "excerpt": "无何，见路侧一僧趺坐，趋拜问途。"
     },
     {
-      "chapter_id": 94,
-      "chapter": "汤公",
-      "unit": 6061,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄严"
-      ],
-      "excerpt": "入，见螺髻庄严，金容满月；"
-    },
-    {
       "chapter_id": 95,
       "chapter": "阎罗",
       "unit": 6073,
@@ -165750,17 +165629,6 @@
         "拔宅飞升"
       ],
       "excerpt": "顾念一人得道，拔宅飞升。"
-    },
-    {
-      "chapter_id": 98,
-      "chapter": "白于玉",
-      "unit": 6429,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "井井有法"
-      ],
-      "excerpt": "女外理生计，内训孤儿，井井有法。"
     },
     {
       "chapter_id": 98,
@@ -166952,17 +166820,6 @@
       "chapter": "汪士秀",
       "unit": 6876,
       "term": "庐州",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庐州人"
-      ],
-      "excerpt": "汪士秀，庐州人。"
-    },
-    {
-      "chapter_id": 104,
-      "chapter": "汪士秀",
-      "unit": 6876,
-      "term": "庐",
       "exact_token": false,
       "embedded_in_tokens": [
         "庐州人"
@@ -171534,17 +171391,6 @@
       "chapter_id": 131,
       "chapter": "田七郎",
       "unit": 8726,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田七郎"
-      ],
-      "excerpt": "」曰：「田七郎非与？"
-    },
-    {
-      "chapter_id": 131,
-      "chapter": "田七郎",
-      "unit": 8726,
       "term": "七郎",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -172372,17 +172218,6 @@
     {
       "chapter_id": 131,
       "chapter": "田七郎",
-      "unit": 8866,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "意益肆"
-      ],
-      "excerpt": "林儿意益肆，倡言丛众中，诬主人妇与私。"
-    },
-    {
-      "chapter_id": 131,
-      "chapter": "田七郎",
       "unit": 8867,
       "term": "武",
       "exact_token": false,
@@ -172478,17 +172313,6 @@
         "必七郎"
       ],
       "excerpt": "亦疑杀林儿必七郎。"
-    },
-    {
-      "chapter_id": 131,
-      "chapter": "田七郎",
-      "unit": 8896,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田七郎"
-      ],
-      "excerpt": "纷纷集认，识者知为田七郎也。"
     },
     {
       "chapter_id": 131,
@@ -173935,17 +173759,6 @@
     {
       "chapter_id": 147,
       "chapter": "续黄粱",
-      "unit": 9594,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "任肆"
-      ],
-      "excerpt": "又且平民膏腴，任肆蚕食；"
-    },
-    {
-      "chapter_id": 147,
-      "chapter": "续黄粱",
       "unit": 9603,
       "term": "君前",
       "exact_token": false,
@@ -174483,17 +174296,6 @@
         "即登堂称"
       ],
       "excerpt": "闻生得狐妇，馈遗为𫗬，即登堂称觞。"
-    },
-    {
-      "chapter_id": 151,
-      "chapter": "辛十四娘",
-      "unit": 9881,
-      "term": "穴",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "穴壁窥之"
-      ],
-      "excerpt": "女闻，谓生曰：「曩公子来，我穴壁窥之，其人猿睛鹰准，不可与久居也。"
     },
     {
       "chapter_id": 151,
@@ -181516,17 +181318,6 @@
     {
       "chapter_id": 202,
       "chapter": "金生色",
-      "unit": 12831,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "妇益肆"
-      ],
-      "excerpt": "于是妇益肆。"
-    },
-    {
-      "chapter_id": 202,
-      "chapter": "金生色",
       "unit": 12832,
       "term": "村中",
       "exact_token": false,
@@ -183687,17 +183478,6 @@
     {
       "chapter_id": 212,
       "chapter": "绛妃",
-      "unit": 13524,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肆狂无忌"
-      ],
-      "excerpt": "从此怙宠日恣，因而肆狂无忌。"
-    },
-    {
-      "chapter_id": 212,
-      "chapter": "绛妃",
       "unit": 13527,
       "term": "山林",
       "exact_token": false,
@@ -183791,17 +183571,6 @@
         "朱旛"
       ],
       "excerpt": "久矣朱旛不竖，娟娟者𫕥涕谁怜？"
-    },
-    {
-      "chapter_id": 212,
-      "chapter": "绛妃",
-      "unit": 13577,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肆虐"
-      ],
-      "excerpt": "讼狂伯之肆虐，章未报于天庭。"
     },
     {
       "chapter_id": 212,
@@ -188718,17 +188487,6 @@
       "chapter_id": 255,
       "chapter": "邵女",
       "unit": 15993,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄礼"
-      ],
-      "excerpt": "一日，柴初度，金卑词庄礼，为丈夫寿。"
-    },
-    {
-      "chapter_id": 255,
-      "chapter": "邵女",
-      "unit": 15993,
       "term": "柴",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -189224,17 +188982,6 @@
         "柴躬"
       ],
       "excerpt": "柴躬自纪理，劬劳甚苦，而家中米盐，不食自尽。"
-    },
-    {
-      "chapter_id": 255,
-      "chapter": "邵女",
-      "unit": 16205,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "女急市"
-      ],
-      "excerpt": "女急市银针数枚，──比至，则气息濒尽──按穴刺之，画然痛止。"
     },
     {
       "chapter_id": 255,
@@ -190163,17 +189910,6 @@
       "chapter_id": 262,
       "chapter": "阿英",
       "unit": 16732,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庐陵人"
-      ],
-      "excerpt": "甘玉，字璧人，庐陵人。"
-    },
-    {
-      "chapter_id": 262,
-      "chapter": "阿英",
-      "unit": 16732,
       "term": "玉",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -190334,17 +190070,6 @@
         "秦氏"
       ],
       "excerpt": "家无昆季，惟外姊秦氏同居。"
-    },
-    {
-      "chapter_id": 262,
-      "chapter": "阿英",
-      "unit": 16815,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "殊矜庄"
-      ],
-      "excerpt": "久之，女殊矜庄，又娇婉善言。"
     },
     {
       "chapter_id": 262,
@@ -190517,39 +190242,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "少选，飞绕室中，呼曰：「嫂嫂，别矣！"
-    },
-    {
-      "chapter_id": 263,
-      "chapter": "橘树",
-      "unit": 16929,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄氏"
-      ],
-      "excerpt": "女归，受庄氏聘。"
-    },
-    {
-      "chapter_id": 263,
-      "chapter": "橘树",
-      "unit": 16930,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄丙戌"
-      ],
-      "excerpt": "庄丙戌登进士，释褐为兴化令。"
-    },
-    {
-      "chapter_id": 263,
-      "chapter": "橘树",
-      "unit": 16935,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄任"
-      ],
-      "excerpt": "庄任三年，繁实不懈；"
     },
     {
       "chapter_id": 265,
@@ -192985,17 +192677,6 @@
     {
       "chapter_id": 278,
       "chapter": "柳生",
-      "unit": 17784,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市侩"
-      ],
-      "excerpt": "仆即式微，犹是世裔，何至下昏于市侩？"
-    },
-    {
-      "chapter_id": 278,
-      "chapter": "柳生",
       "unit": 17805,
       "term": "傅",
       "exact_token": false,
@@ -193147,17 +192828,6 @@
         "周久"
       ],
       "excerpt": "周久不归，家人谓其已死，恣意侵冒，粟帛器具，荡无存者。"
-    },
-    {
-      "chapter_id": 279,
-      "chapter": "冤狱",
-      "unit": 17861,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "阳谷"
-      ],
-      "excerpt": "朱生，阳谷人。"
     },
     {
       "chapter_id": 279,
@@ -193630,17 +193300,6 @@
         "郎葛公"
       ],
       "excerpt": "邑有林下部郎葛公，喜文士，温偶诣之，受命弹琴。"
-    },
-    {
-      "chapter_id": 282,
-      "chapter": "宦娘",
-      "unit": 18073,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄书"
-      ],
-      "excerpt": "怀归，出锦笺，庄书一通，置案间；"
     },
     {
       "chapter_id": 282,
@@ -194278,17 +193937,6 @@
         "西王母"
       ],
       "excerpt": "生时，与余从母至天宫，见西王母，心窃爱慕，归则刻意效之。"
-    },
-    {
-      "chapter_id": 283,
-      "chapter": "阿绣",
-      "unit": 18316,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄语"
-      ],
-      "excerpt": "每有亡失，则华妆端坐，插玳瑁簪长数寸，朝家人而庄语之：「所窃物，夜当送至某所；"
     },
     {
       "chapter_id": 284,
@@ -198342,17 +197990,6 @@
       "chapter_id": 316,
       "chapter": "某乙",
       "unit": 19838,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肆然"
-      ],
-      "excerpt": "曹有大寇某，得重赀归，肆然安寝。"
-    },
-    {
-      "chapter_id": 316,
-      "chapter": "某乙",
-      "unit": 19838,
       "term": "寇",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -200764,28 +200401,6 @@
         "舟几覆"
       ],
       "excerpt": "年余，贷赀盈辇，归至江，遭飓，舟几覆，物半丧失。"
-    },
-    {
-      "chapter_id": 321,
-      "chapter": "钱卜巫",
-      "unit": 20590,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "种谷"
-      ],
-      "excerpt": "近秋方雨，家无别种，田数亩悉以种谷。"
-    },
-    {
-      "chapter_id": 321,
-      "chapter": "钱卜巫",
-      "unit": 20591,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "惟谷无恙"
-      ],
-      "excerpt": "既而又旱，荞菽半死，惟谷无恙；"
     },
     {
       "chapter_id": 322,
@@ -203334,17 +202949,6 @@
       "chapter_id": 334,
       "chapter": "陈锡九",
       "unit": 21343,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "罚谷"
-      ],
-      "excerpt": "太守释令自赎，罚谷一百石，批赐孝子陈锡九。"
-    },
-    {
-      "chapter_id": 334,
-      "chapter": "陈锡九",
-      "unit": 21343,
       "term": "锡九",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -204266,17 +203870,6 @@
         "掷凤仙怀"
       ],
       "excerpt": "」因以拍板掷凤仙怀中，便串繁响。"
-    },
-    {
-      "chapter_id": 339,
-      "chapter": "凤仙",
-      "unit": 21673,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田婆"
-      ],
-      "excerpt": "翁曰：「此自真腊携来，所谓『田婆罗』也。"
     },
     {
       "chapter_id": 339,
@@ -205488,28 +205081,6 @@
         "王先拜"
       ],
       "excerpt": "王使婢为设坐南向，王先拜，女亦答拜；"
-    },
-    {
-      "chapter_id": 356,
-      "chapter": "小梅",
-      "unit": 22150,
-      "term": "庄",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庄容"
-      ],
-      "excerpt": "下而长幼卑贱，以次伏叩，女庄容坐受；"
-    },
-    {
-      "chapter_id": 356,
-      "chapter": "小梅",
-      "unit": 22158,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "井井"
-      ],
-      "excerpt": "女乃排拨丧务，一切井井，由是大小无敢懈者。"
     },
     {
       "chapter_id": 356,
@@ -207983,17 +207554,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "因留居署中，优礼之。"
-    },
-    {
-      "chapter_id": 378,
-      "chapter": "鸟语",
-      "unit": 23258,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肆言辄无所忌"
-      ],
-      "excerpt": "而道士朴野，肆言辄无所忌。"
     },
     {
       "chapter_id": 379,
@@ -210577,17 +210137,6 @@
     {
       "chapter_id": 394,
       "chapter": "长亭",
-      "unit": 24349,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "鬼益肆"
-      ],
-      "excerpt": "鬼益肆，除长亭外，子妇婢女，俱被淫惑。"
-    },
-    {
-      "chapter_id": 394,
-      "chapter": "长亭",
       "unit": 24350,
       "term": "石",
       "exact_token": false,
@@ -211459,17 +211008,6 @@
         "公门"
       ],
       "excerpt": "祇宜公门修行，庶还落蓐之身；"
-    },
-    {
-      "chapter_id": 395,
-      "chapter": "席方平",
-      "unit": 24633,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肆淫威"
-      ],
-      "excerpt": "肆淫威于冥界，咸知狱吏为尊；"
     },
     {
       "chapter_id": 395,
@@ -215757,17 +215295,6 @@
     {
       "chapter_id": 409,
       "chapter": "葛巾",
-      "unit": 26399,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "宅眷"
-      ],
-      "excerpt": "疑是贵家宅眷，亦遂遄返。"
-    },
-    {
-      "chapter_id": 409,
-      "chapter": "葛巾",
       "unit": 26436,
       "term": "室",
       "exact_token": false,
@@ -218862,17 +218389,6 @@
     {
       "chapter_id": 423,
       "chapter": "陈云栖",
-      "unit": 27841,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "井井"
-      ],
-      "excerpt": "自得盛，经理井井，昼日无事，辄与女弈。"
-    },
-    {
-      "chapter_id": 423,
-      "chapter": "陈云栖",
       "unit": 27850,
       "term": "田",
       "exact_token": false,
@@ -219588,17 +219104,6 @@
       "excerpt": "生携玉珮去，自此不返。"
     },
     {
-      "chapter_id": 430,
-      "chapter": "段氏",
-      "unit": 28132,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "诸姪益肆"
-      ],
-      "excerpt": "又将年余，段中风不起，诸姪益肆，牛马什物，竞自取去。"
-    },
-    {
       "chapter_id": 431,
       "chapter": "狐女",
       "unit": 28173,
@@ -219777,17 +219282,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "父喜，握手曰：「吾家止汝一人，既能文，家门之幸也，何自匿为？"
-    },
-    {
-      "chapter_id": 436,
-      "chapter": "牛犊",
-      "unit": 28307,
-      "term": "驿",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "驿马"
-      ],
-      "excerpt": "次日，牧犊于野，有驿马过，犊望见，误以为虎，直前触之，马毙。"
     },
     {
       "chapter_id": 437,
@@ -222237,17 +221731,6 @@
     {
       "chapter_id": 447,
       "chapter": "曾友于",
-      "unit": 29200,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "诸兄怒其市惠"
-      ],
-      "excerpt": "诸兄怒其市惠，登门窘辱。"
-    },
-    {
-      "chapter_id": 447,
-      "chapter": "曾友于",
       "unit": 29247,
       "term": "家中",
       "exact_token": false,
@@ -222949,17 +222432,6 @@
     {
       "chapter_id": 460,
       "chapter": "鸮鸟",
-      "unit": 29659,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市民"
-      ],
-      "excerpt": "康熙乙亥间，西塞用兵，市民间骡马运粮。"
-    },
-    {
-      "chapter_id": 460,
-      "chapter": "鸮鸟",
       "unit": 29660,
       "term": "杨",
       "exact_token": false,
@@ -223623,17 +223095,6 @@
         "薛寅侯"
       ],
       "excerpt": "薛寅侯就养于婿，婿为买妇，生子女各一焉。"
-    },
-    {
-      "chapter_id": 464,
-      "chapter": "田子成",
-      "unit": 29889,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田子成"
-      ],
-      "excerpt": "江宁田子成，过洞庭，舟覆而没。"
     },
     {
       "chapter_id": 464,
@@ -225601,17 +225062,6 @@
     {
       "chapter_id": 467,
       "chapter": "周生",
-      "unit": 30258,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "置夹谷弥山"
-      ],
-      "excerpt": "置夹谷弥山之草，惟爱余桃。"
-    },
-    {
-      "chapter_id": 467,
-      "chapter": "周生",
       "unit": 30263,
       "term": "周",
       "exact_token": false,
@@ -227183,17 +226633,6 @@
         "傅投刺"
       ],
       "excerpt": "是日当官覆审，傅投刺谒宰，其案始销。"
-    },
-    {
-      "chapter_id": 476,
-      "chapter": "纫针",
-      "unit": 30716,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市币"
-      ],
-      "excerpt": "会试后，市币帛而还，居其旧第，行亲迎礼。"
     },
     {
       "chapter_id": 476,
@@ -229069,17 +228508,6 @@
         "厨舍"
       ],
       "excerpt": "忽曰：「几忘却，厨舍门未关，防狗子偷吃也。"
-    },
-    {
-      "chapter_id": 490,
-      "chapter": "人妖",
-      "unit": 31613,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "谷城人"
-      ],
-      "excerpt": "生诘之，云是谷城人王二喜。"
     },
     {
       "chapter_id": 490,

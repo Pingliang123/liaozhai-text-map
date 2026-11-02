@@ -1,0 +1,2202 @@
+{
+  "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
+  "checked": 45,
+  "applied": 45,
+  "rows": [
+    {
+      "chapter_id": 15,
+      "chapter": "长清僧",
+      "word": "谷",
+      "reason": "谷籍指粮食账籍",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 557,
+          "quote": "既出，少定，即有诸仆纷来，钱簿谷籍，杂请会计。",
+          "containing": [
+            "谷籍"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 30,
+      "chapter": "叶生",
+      "word": "市",
+      "reason": "利市在此为吉利获益的说法",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 1265,
+          "quote": "且士得一人知己，可无憾，何必抛却白纻，乃谓之利市哉。",
+          "containing": [
+            "之利市"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 37,
+      "chapter": "王成",
+      "word": "谷",
+      "reason": "进退维谷为困境成语",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 1735,
+          "quote": "自念无以见祖母，蹀踱内外，进退维谷。",
+          "containing": [
+            "进退维谷"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 52,
+      "chapter": "丁前溪",
+      "word": "谷",
+      "reason": "钱谷、馆谷分别指粮食及供养",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 3128,
+          "quote": "富有钱谷。",
+          "containing": [
+            "钱谷"
+          ]
+        },
+        {
+          "unit": 3134,
+          "quote": "有少年来，馆谷丰隆。",
+          "containing": [
+            "馆谷"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 55,
+      "chapter": "水莽草",
+      "word": "舟",
+      "reason": "柏舟节指守节典故",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "舟",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 3239,
+          "quote": "妻不能守柏舟节，半年改醮去。",
+          "containing": [
+            "柏舟节"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "田",
+      "reason": "田舍郎为人物称谓，丹田为身体部位",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 4099,
+          "quote": "临榻哂曰：「田舍郎，我岂妄哉！",
+          "containing": [
+            "田舍郎"
+          ]
+        },
+        {
+          "unit": 4147,
+          "quote": "生觉丹田火热，精神焕发。",
+          "containing": [
+            "丹田火热"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 86,
+      "chapter": "戏术",
+      "word": "市",
+      "reason": "欲市巨瓮的市为购买",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 5620,
+          "quote": "利津李见田，在颜镇闲游陶场，欲市巨瓮，与陶人争直，不成而去。",
+          "containing": [
+            "欲市巨瓮"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 86,
+      "chapter": "戏术",
+      "word": "田",
+      "reason": "李见田为人名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 5620,
+          "quote": "利津李见田，在颜镇闲游陶场，欲市巨瓮，与陶人争直，不成而去。",
+          "containing": [
+            "李见田"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 94,
+      "chapter": "汤公",
+      "word": "庄",
+      "reason": "庄严为形容词",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 6061,
+          "quote": "入，见螺髻庄严，金容满月；",
+          "containing": [
+            "庄严"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "word": "井",
+      "reason": "井井有法为有条理",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 6429,
+          "quote": "女外理生计，内训孤儿，井井有法。",
+          "containing": [
+            "井井有法"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 104,
+      "chapter": "汪士秀",
+      "word": "庐",
+      "reason": "庐州为地名，不是庐舍",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 6876,
+          "quote": "汪士秀，庐州人。",
+          "containing": [
+            "庐州"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 131,
+      "chapter": "田七郎",
+      "word": "肆",
+      "reason": "意益肆为放纵",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 8866,
+          "quote": "林儿意益肆，倡言丛众中，诬主人妇与私。",
+          "containing": [
+            "意益肆"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 131,
+      "chapter": "田七郎",
+      "word": "田",
+      "reason": "田七郎为人名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 8726,
+          "quote": "」曰：「田七郎非与？",
+          "containing": [
+            "田七郎"
+          ]
+        },
+        {
+          "unit": 8896,
+          "quote": "纷纷集认，识者知为田七郎也。",
+          "containing": [
+            "田七郎"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 147,
+      "chapter": "续黄粱",
+      "word": "肆",
+      "reason": "任肆蚕食为放纵侵夺",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 9594,
+          "quote": "又且平民膏腴，任肆蚕食；",
+          "containing": [
+            "任肆蚕食"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "word": "穴",
+      "reason": "穴壁窥之的穴为凿孔动作",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "穴",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 9881,
+          "quote": "女闻，谓生曰：「曩公子来，我穴壁窥之，其人猿睛鹰准，不可与久居也。",
+          "containing": [
+            "穴壁窥之"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 202,
+      "chapter": "金生色",
+      "word": "肆",
+      "reason": "妇益肆为放纵",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 12831,
+          "quote": "于是妇益肆。",
+          "containing": [
+            "妇益肆"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 212,
+      "chapter": "绛妃",
+      "word": "肆",
+      "reason": "肆狂、肆虐均为放纵施为",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 13524,
+          "quote": "从此怙宠日恣，因而肆狂无忌。",
+          "containing": [
+            "肆狂无忌"
+          ]
+        },
+        {
+          "unit": 13577,
+          "quote": "讼狂伯之肆虐，章未报于天庭。",
+          "containing": [
+            "肆虐"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 255,
+      "chapter": "邵女",
+      "word": "市",
+      "reason": "市银针为购买",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 16205,
+          "quote": "女急市银针数枚，──比至，则气息濒尽──按穴刺之，画然痛止。",
+          "containing": [
+            "女急市"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 255,
+      "chapter": "邵女",
+      "word": "庄",
+      "reason": "庄礼为庄重的礼仪",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 15993,
+          "quote": "一日，柴初度，金卑词庄礼，为丈夫寿。",
+          "containing": [
+            "庄礼"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 262,
+      "chapter": "阿英",
+      "word": "庐",
+      "reason": "庐陵为地名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 16732,
+          "quote": "甘玉，字璧人，庐陵人。",
+          "containing": [
+            "庐陵人"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 262,
+      "chapter": "阿英",
+      "word": "庄",
+      "reason": "矜庄为庄重",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 16815,
+          "quote": "久之，女殊矜庄，又娇婉善言。",
+          "containing": [
+            "殊矜庄"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 263,
+      "chapter": "橘树",
+      "word": "庄",
+      "reason": "庄氏、庄任指庄姓人物",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 16929,
+          "quote": "女归，受庄氏聘。",
+          "containing": [
+            "庄氏"
+          ]
+        },
+        {
+          "unit": 16930,
+          "quote": "庄丙戌登进士，释褐为兴化令。",
+          "containing": [
+            "庄丙戌"
+          ]
+        },
+        {
+          "unit": 16935,
+          "quote": "庄任三年，繁实不懈；",
+          "containing": [
+            "庄任"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 278,
+      "chapter": "柳生",
+      "word": "市",
+      "reason": "市侩为人物身份",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 17784,
+          "quote": "仆即式微，犹是世裔，何至下昏于市侩？",
+          "containing": [
+            "市侩"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 279,
+      "chapter": "冤狱",
+      "word": "谷",
+      "reason": "阳谷为地名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 17861,
+          "quote": "朱生，阳谷人。",
+          "containing": [
+            "阳谷"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 282,
+      "chapter": "宦娘",
+      "word": "庄",
+      "reason": "庄书为郑重书写",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 18073,
+          "quote": "怀归，出锦笺，庄书一通，置案间；",
+          "containing": [
+            "庄书"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 283,
+      "chapter": "阿绣",
+      "word": "庄",
+      "reason": "庄语为郑重说话",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 18316,
+          "quote": "每有亡失，则华妆端坐，插玳瑁簪长数寸，朝家人而庄语之：「所窃物，夜当送至某所；",
+          "containing": [
+            "庄语"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 316,
+      "chapter": "某乙",
+      "word": "肆",
+      "reason": "肆然为肆无忌惮的状态",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 19838,
+          "quote": "曹有大寇某，得重赀归，肆然安寝。",
+          "containing": [
+            "肆然"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 321,
+      "chapter": "钱卜巫",
+      "word": "谷",
+      "reason": "种谷、惟谷指谷物",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 20590,
+          "quote": "近秋方雨，家无别种，田数亩悉以种谷。",
+          "containing": [
+            "种谷"
+          ]
+        },
+        {
+          "unit": 20591,
+          "quote": "既而又旱，荞菽半死，惟谷无恙；",
+          "containing": [
+            "惟谷无恙"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 334,
+      "chapter": "陈锡九",
+      "word": "谷",
+      "reason": "罚谷一百石指粮食",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 21343,
+          "quote": "太守释令自赎，罚谷一百石，批赐孝子陈锡九。",
+          "containing": [
+            "罚谷"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 339,
+      "chapter": "凤仙",
+      "word": "田",
+      "reason": "田婆罗为物名用字",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 21673,
+          "quote": "翁曰：「此自真腊携来，所谓『田婆罗』也。",
+          "containing": [
+            "田婆"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "word": "井",
+      "reason": "经理井井指事务有条理",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 22158,
+          "quote": "女乃排拨丧务，一切井井，由是大小无敢懈者。",
+          "containing": [
+            "井井"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "word": "庄",
+      "reason": "庄容为庄重仪容",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "庄",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 22150,
+          "quote": "下而长幼卑贱，以次伏叩，女庄容坐受；",
+          "containing": [
+            "庄容"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 378,
+      "chapter": "鸟语",
+      "word": "肆",
+      "reason": "肆言为放言",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 23258,
+          "quote": "而道士朴野，肆言辄无所忌。",
+          "containing": [
+            "肆言辄无所忌"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 394,
+      "chapter": "长亭",
+      "word": "肆",
+      "reason": "鬼益肆为更加放纵",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 24349,
+          "quote": "鬼益肆，除长亭外，子妇婢女，俱被淫惑。",
+          "containing": [
+            "鬼益肆"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 395,
+      "chapter": "席方平",
+      "word": "肆",
+      "reason": "肆淫威为施逞威势",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 24633,
+          "quote": "肆淫威于冥界，咸知狱吏为尊；",
+          "containing": [
+            "肆淫威"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 409,
+      "chapter": "葛巾",
+      "word": "宅",
+      "reason": "宅眷在此指家属",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "宅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 26399,
+          "quote": "疑是贵家宅眷，亦遂遄返。",
+          "containing": [
+            "宅眷"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "word": "井",
+      "reason": "经理井井为有条理",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 27841,
+          "quote": "自得盛，经理井井，昼日无事，辄与女弈。",
+          "containing": [
+            "井井"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 430,
+      "chapter": "段氏",
+      "word": "肆",
+      "reason": "诸侄益肆为更加放纵",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 28132,
+          "quote": "又将年余，段中风不起，诸姪益肆，牛马什物，竞自取去。",
+          "containing": [
+            "诸姪益肆"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 436,
+      "chapter": "牛犊",
+      "word": "驿",
+      "reason": "驿马是马匹而非驿站",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "驿",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 28307,
+          "quote": "次日，牧犊于野，有驿马过，犊望见，误以为虎，直前触之，马毙。",
+          "containing": [
+            "驿马"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 447,
+      "chapter": "曾友于",
+      "word": "市",
+      "reason": "市惠为买好施惠",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 29200,
+          "quote": "诸兄怒其市惠，登门窘辱。",
+          "containing": [
+            "诸兄怒其市惠"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 460,
+      "chapter": "鸮鸟",
+      "word": "市",
+      "reason": "市民间骡马为向民间购买骡马",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 29659,
+          "quote": "康熙乙亥间，西塞用兵，市民间骡马运粮。",
+          "containing": [
+            "市民"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 464,
+      "chapter": "田子成",
+      "word": "田",
+      "reason": "田子成为人名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 29889,
+          "quote": "江宁田子成，过洞庭，舟覆而没。",
+          "containing": [
+            "田子成"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 467,
+      "chapter": "周生",
+      "word": "谷",
+      "reason": "夹谷为典故中的专名，不是单字山谷",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 30258,
+          "quote": "置夹谷弥山之草，惟爱余桃。",
+          "containing": [
+            "置夹谷弥山"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 476,
+      "chapter": "纫针",
+      "word": "市",
+      "reason": "市币帛为购买",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 30716,
+          "quote": "会试后，市币帛而还，居其旧第，行亲迎礼。",
+          "containing": [
+            "市币"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": 490,
+      "chapter": "人妖",
+      "word": "谷",
+      "reason": "谷城为地名",
+      "status": "已排除非空间词",
+      "prior_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "evidence": [
+        {
+          "unit": 31613,
+          "quote": "生诘之，云是谷城人王二喜。",
+          "containing": [
+            "谷城人"
+          ]
+        }
+      ]
+    }
+  ],
+  "endpoint_review": [
+    {
+      "chapter_id": 35,
+      "chapter": "王兰",
+      "step_index": 27,
+      "unit": 1632,
+      "side": "to",
+      "raw": "烟墩",
+      "label": "烟墩",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "一日聚饮于烟墩",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 35,
+      "chapter": "王兰",
+      "step_index": 28,
+      "unit": 1632,
+      "side": "to",
+      "raw": "烟墩",
+      "label": "烟墩",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "一日聚饮于烟墩，才大醉狂呼，王止之不听。适巡方御史过，闻呼搜之，获张。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "step_index": 0,
+      "unit": 2873,
+      "side": "from",
+      "raw": "浙",
+      "label": "浙",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "宁采臣，浙人。性慷爽，廉隅自重，每对人言：「生平无二色。适赴金华，至北郭，解装兰若",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 51,
+      "chapter": "海公子",
+      "step_index": 1,
+      "unit": 3097,
+      "side": "from",
+      "raw": "登州",
+      "label": "登州",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "登州张生，好奇，喜游猎。",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "step_index": 2,
+      "unit": 3184,
+      "side": "to",
+      "raw": "金山",
+      "label": "金山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "舟抵金山，张先渡江，嘱家人在舟，勿煿膻腥。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "step_index": 7,
+      "unit": 3189,
+      "side": "to",
+      "raw": "金山寺",
+      "label": "金山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "因登金山，谒寺僧，询鼋之异，将以仇鼋。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "step_index": 12,
+      "unit": 3194,
+      "side": "from",
+      "raw": "金山寺",
+      "label": "金山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "便招铁工，起炉山半，冶赤铁，重百余斤。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "step_index": 12,
+      "unit": 3194,
+      "side": "to",
+      "raw": "金山山半",
+      "label": "金山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "便招铁工，起炉山半，冶赤铁，重百余斤。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 54,
+      "chapter": "张老相公",
+      "step_index": 13,
+      "unit": 3195,
+      "side": "from",
+      "raw": "金山山半",
+      "label": "金山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "审知所常伏处，使二三健男子，以大箝举投之，鼋跃出，疾吞而下。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 58,
+      "chapter": "耿十八",
+      "step_index": 3,
+      "unit": 3416,
+      "side": "to",
+      "raw": "思乡地",
+      "label": "思乡地",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "车行咋咋，响震耳际，亦不自知何往。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 58,
+      "chapter": "耿十八",
+      "step_index": 5,
+      "unit": 3425,
+      "side": "from",
+      "raw": "思乡地",
+      "label": "思乡地",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "又移时，见有台，高数仞，游人甚伙；囊头械足之辈，呜咽而下上，闻人言为「望乡台」。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 58,
+      "chapter": "耿十八",
+      "step_index": 5,
+      "unit": 3425,
+      "side": "to",
+      "raw": "望乡台",
+      "label": "望乡台",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "又移时，见有台，高数仞，游人甚伙；囊头械足之辈，呜咽而下上，闻人言为「望乡台」。",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 58,
+      "chapter": "耿十八",
+      "step_index": 6,
+      "unit": 3427,
+      "side": "to",
+      "raw": "望乡台",
+      "label": "望乡台",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "诸人至此，俱踏辕下，纷然竞登。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 58,
+      "chapter": "耿十八",
+      "step_index": 8,
+      "unit": 3438,
+      "side": "from",
+      "raw": "望乡台",
+      "label": "望乡台",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "匠人谋与越台而遁。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 6,
+      "unit": 6338,
+      "side": "to",
+      "raw": "天门",
+      "label": "天门",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生乃知其非常人，错愕良久，怅怅自失。逾数日，细雨忽集，思白綦切。视所卧榻，鼠迹碎琐；慨然扫除，设席即寝。无何，见白家童来相招，忻然从之。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 7,
+      "unit": 6342,
+      "side": "to",
+      "raw": "天门",
+      "label": "天门",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "无何，见白家童来相招，忻然从之。俄有桐凤翔集，童捉谓生曰：「黑径难行，可乘此代步。」",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 8,
+      "unit": 6346,
+      "side": "to",
+      "raw": "天门",
+      "label": "天门",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生如所请，宽然殊有余地，童亦附其尾上；戛然一声，凌升空际。未几，见一朱门。童先下，扶生亦下。问：「此何所？」曰：「此天门也。」",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 9,
+      "unit": 6355,
+      "side": "from",
+      "raw": "天门",
+      "label": "天门",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "童导入广寒宫，内以水晶为阶，行人如在镜中。桂树两章，参空合抱；花气随风，香无断际。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 9,
+      "unit": 6355,
+      "side": "to",
+      "raw": "广寒宫",
+      "label": "广寒宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "童导入广寒宫，内以水晶为阶，行人如在镜中。桂树两章，参空合抱；花气随风，香无断际。",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 10,
+      "unit": 6359,
+      "side": "from",
+      "raw": "广寒宫",
+      "label": "广寒宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "童言：「王母宫佳丽尢胜。」然恐主人伺久，不暇留连，导与趋出。移时，见白生候于门。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 98,
+      "chapter": "白于玉",
+      "step_index": 11,
+      "unit": 6361,
+      "side": "from",
+      "raw": "广寒宫",
+      "label": "广寒宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "移时，见白生候于门。握手入，见檐外清水白沙，涓涓流溢；玉砌雕阑，殆疑桂阙。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 99,
+      "chapter": "夜叉国",
+      "step_index": 0,
+      "unit": 6485,
+      "side": "to",
+      "raw": "卧眉山深山",
+      "label": "卧眉山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "交州徐姓，泛海为贾。忽被大风吹去。开眼至一处，深山苍莽。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 99,
+      "chapter": "夜叉国",
+      "step_index": 1,
+      "unit": 6488,
+      "side": "to",
+      "raw": "卧眉山岸",
+      "label": "卧眉山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "遂缆船而登，负糗腊焉",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "step_index": 17,
+      "unit": 8590,
+      "side": "to",
+      "raw": "海市",
+      "label": "海市",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "未几，果有踵门寄资者，遂与装资入船。船容数十人，平底高栏。十人摇橹，激水如箭。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "step_index": 18,
+      "unit": 8590,
+      "side": "to",
+      "raw": "海市",
+      "label": "海市",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "遂与装资入船。船容数十人，平底高栏。十人摇橹，激水如箭。凡三日，遥见水云幌漾之中，楼阁层叠",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "step_index": 20,
+      "unit": 8602,
+      "side": "from",
+      "raw": "海市",
+      "label": "海市",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "乃出西城，方至岛岸，所骑嘶跃入水。生大骇失声。则见海水中分，屹如壁立。俄睹宫殿，玳瑁为梁，鲂鳞作瓦，四壁晶明，鉴影炫目。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 130,
+      "chapter": "罗刹海市",
+      "step_index": 21,
+      "unit": 8602,
+      "side": "from",
+      "raw": "海市",
+      "label": "海市",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "乃出西城，方至岛岸，所骑嘶跃入水。生大骇失声。则见海水中分，屹如壁立。俄睹宫殿",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 137,
+      "chapter": "水灾",
+      "step_index": 4,
+      "unit": 9215,
+      "side": "from",
+      "raw": "石门庄",
+      "label": "石门庄",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "遂携家播迁。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "step_index": 9,
+      "unit": 9511,
+      "side": "to",
+      "raw": "王舍人庄",
+      "label": "王舍人庄",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "经王舍人庄，店主先一夕梦神曰：「旦夕有毛解元来，后且脱汝于厄，可善待之。」",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "step_index": 11,
+      "unit": 9517,
+      "side": "from",
+      "raw": "王舍人庄",
+      "label": "王舍人庄",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "及试，竟落第，偃蹇丧志，赧见主人，不敢复由王舍，迂道归家。逾三年再赴试",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 146,
+      "chapter": "姊妹易嫁",
+      "step_index": 12,
+      "unit": 9518,
+      "side": "to",
+      "raw": "王舍人庄",
+      "label": "王舍人庄",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "逾三年再赴试，店主人延候如前。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 195,
+      "chapter": "荷花三娘子",
+      "step_index": 13,
+      "unit": 12561,
+      "side": "to",
+      "raw": "南湖",
+      "label": "南湖",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "宗如言，至南湖，见荷荡佳丽颇多。中一垂髫人，衣冰縠，绝代也。促舟劘逼，忽迷所往。即拨荷丛，果有红莲一枝，干不盈尺，折之而归。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 195,
+      "chapter": "荷花三娘子",
+      "step_index": 14,
+      "unit": 12565,
+      "side": "from",
+      "raw": "南湖",
+      "label": "南湖",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "入门，置几上，削蜡于旁，将以𦶟火。一回头，化为姝丽。宗惊喜伏拜。女曰：「痴生！我是妖狐，将为君崇矣！」宗不听。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 2,
+      "unit": 15757,
+      "side": "to",
+      "raw": "恒河之侧",
+      "label": "恒河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "后自婿家归，至恒河之侧",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 3,
+      "unit": 15757,
+      "side": "to",
+      "raw": "恒河之侧",
+      "label": "恒河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "后自婿家归，至恒河之侧，日已就昏，见一醉者，从二三僮，颠跛而至。遥见生，便问：「何人？」",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 6,
+      "unit": 15774,
+      "side": "from",
+      "raw": "恒河之侧",
+      "label": "恒河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生辞之不得。握手行数里，见一小村。既入，则廊舍华好，似贵人家。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 7,
+      "unit": 15775,
+      "side": "from",
+      "raw": "恒河之侧",
+      "label": "恒河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "握手行数里，见一小村。既入，则廊舍华好",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 21,
+      "unit": 15838,
+      "side": "to",
+      "raw": "肃府王邸",
+      "label": "肃府",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生告妻曰：「王侯之女，不可以先后论嫡庶也。」妻不听，归修聘币纳王邸，赍送者迨千人。珍石宝玉之属，王家不能知其名。王大喜，释生归，以公主嫔焉。公主仍怀镜归。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 251,
+      "chapter": "八大王",
+      "step_index": 22,
+      "unit": 15839,
+      "side": "to",
+      "raw": "肃府王邸",
+      "label": "肃府",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "归修聘币纳王邸，赍送者迨千人",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 253,
+      "chapter": "罗祖",
+      "step_index": 0,
+      "unit": 15861,
+      "side": "from",
+      "raw": "即墨",
+      "label": "即墨",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "罗祖，即墨人也。少贫。总族中应出一丁戍北边，即以罗往。",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "step_index": 12,
+      "unit": 17383,
+      "side": "to",
+      "raw": "仙人岛桓家",
+      "label": "仙人岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "女子以棹催艇，疾如风雨，俄已近岸。于舱中携所采莲花一握，导与俱去。半里许入村，见朱户南开，进历数重门",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "step_index": 13,
+      "unit": 17385,
+      "side": "to",
+      "raw": "仙人岛桓家",
+      "label": "仙人岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "半里许入村，见朱户南开，进历数重门",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "step_index": 22,
+      "unit": 17523,
+      "side": "from",
+      "raw": "仙人岛桓家",
+      "label": "仙人岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "俄至海岸，王心虑其无途。芳云出素练一疋，望南抛去，化为长堤，其阔盈丈。瞬息驰过，堤亦渐收。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 272,
+      "chapter": "仙人岛",
+      "step_index": 23,
+      "unit": 17524,
+      "side": "from",
+      "raw": "仙人岛桓家",
+      "label": "仙人岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "芳云出素练一疋，望南抛去，化为长堤，其阔盈丈。瞬息驰过，堤亦渐收。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 274,
+      "chapter": "颠道人",
+      "step_index": 2,
+      "unit": 17593,
+      "side": "to",
+      "raw": "蒙山寺门",
+      "label": "蒙山寺",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "宴毕过寺，甫及门",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 274,
+      "chapter": "颠道人",
+      "step_index": 6,
+      "unit": 17602,
+      "side": "from",
+      "raw": "蒙山寺寺门",
+      "label": "蒙山寺",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "众骇，拥贵人急奔，息于三里之外。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 274,
+      "chapter": "颠道人",
+      "step_index": 7,
+      "unit": 17603,
+      "side": "to",
+      "raw": "蒙山寺",
+      "label": "蒙山寺",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "使数人逡巡往探，渐入寺，则人蟒俱无。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 274,
+      "chapter": "颠道人",
+      "step_index": 10,
+      "unit": 17609,
+      "side": "from",
+      "raw": "蒙山寺内老槐",
+      "label": "蒙山寺",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "逾时少苏，舁归",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 286,
+      "chapter": "金和尚",
+      "step_index": 0,
+      "unit": 18522,
+      "side": "from",
+      "raw": "诸城（家）",
+      "label": "诸城",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "金和尚，诸城人。父无赖，以数百钱鬻于五莲山寺。少顽钝，不能肄清业，牧猪赴市，若佣保。",
+      "raw_in_quote": false,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 333,
+      "chapter": "顾生",
+      "step_index": 1,
+      "unit": 21153,
+      "side": "from",
+      "raw": "江南",
+      "label": "江南",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "江南顾生，客稷下",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 355,
+      "chapter": "岳神",
+      "step_index": 1,
+      "unit": 22099,
+      "side": "to",
+      "raw": "岳庙",
+      "label": "岳庙",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "醒而恶之。早诣岳庙，默作祈禳。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 355,
+      "chapter": "岳神",
+      "step_index": 2,
+      "unit": 22101,
+      "side": "from",
+      "raw": "岳庙",
+      "label": "岳庙",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "既出，见药肆一人，绝肖所见。问之，知为医生。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "step_index": 10,
+      "unit": 22223,
+      "side": "to",
+      "raw": "西河柳堤",
+      "label": "西河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "忽四乡瘟疫流行，死者甚众，一婢病三日死。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "step_index": 11,
+      "unit": 22225,
+      "side": "to",
+      "raw": "西河柳堤",
+      "label": "西河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "是日与客饮，大醉而睡。既醒，闻鸡鸣，急起至堤头，见灯光闪烁，适已过去。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "step_index": 3,
+      "unit": 22935,
+      "side": "to",
+      "raw": "安期岛",
+      "label": "安期岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "但言：「副使不可行。」又出，遍视从人，惟二人可以从游。遂命舟导刘俱往。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "step_index": 4,
+      "unit": 22937,
+      "side": "to",
+      "raw": "安期岛",
+      "label": "安期岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "遂命舟导刘俱往。水程不知远近，但觉习习如驾云雾，移时已抵其境。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "step_index": 5,
+      "unit": 22938,
+      "side": "to",
+      "raw": "安期岛",
+      "label": "安期岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "水程不知远近，但觉习习如驾云雾，移时已抵其境。时方严寒，既至，则气候温煦，山花遍岩谷。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "step_index": 9,
+      "unit": 22955,
+      "side": "from",
+      "raw": "安期岛",
+      "label": "安期岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "问以休咎，笑曰：「世外人岁月不知，何解人事？」问以却老术，曰：「此非富贵人所能为者。」刘兴辞，小张仍送之归。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "step_index": 10,
+      "unit": 22957,
+      "side": "from",
+      "raw": "安期岛",
+      "label": "安期岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "刘兴辞，小张仍送之归。既至朝鲜，备述其异。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "step_index": 3,
+      "unit": 23309,
+      "side": "to",
+      "raw": "天宫",
+      "label": "天宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "女曰：「来夕与君一游天宫，便即为别。」",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "step_index": 9,
+      "unit": 23342,
+      "side": "from",
+      "raw": "天宫",
+      "label": "天宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "女笑，允给灯火。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 379,
+      "chapter": "天宫",
+      "step_index": 10,
+      "unit": 23343,
+      "side": "from",
+      "raw": "天宫",
+      "label": "天宫",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "漏下四点，呼婢笼烛抱衣而送之。入洞，见丹垩精工",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "step_index": 9,
+      "unit": 23528,
+      "side": "to",
+      "raw": "桃源薛生别业",
+      "label": "桃源",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "桃源薛生与最善；适过访之，薛一门俱适别业，昏暮无所复之。阍人延生入，扫榻作炊。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "step_index": 13,
+      "unit": 23567,
+      "side": "to",
+      "raw": "桃源",
+      "label": "桃源",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生诣淮，交盘已，留伍居肆，装赀返桃源，同二慕启岳父母骸骨，两家细小，载与俱归。",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 382,
+      "chapter": "刘夫人",
+      "step_index": 14,
+      "unit": 23567,
+      "side": "to",
+      "raw": "桃源",
+      "label": "桃源",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生诣淮，交盘已，留伍居肆，装赀返桃源",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 385,
+      "chapter": "疲龙",
+      "step_index": 4,
+      "unit": 23673,
+      "side": "to",
+      "raw": "清水潭",
+      "label": "清水潭",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "又逾日，舟人命多备白米，戒曰：「去清水潭不远矣。如有所见，但糁米于水，寂无哗。」",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 385,
+      "chapter": "疲龙",
+      "step_index": 6,
+      "unit": 23680,
+      "side": "from",
+      "raw": "清水潭",
+      "label": "清水潭",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "久之见海波深黑，始有呻者。因问掷米之故，答曰：「龙畏蛆，恐入其甲。白米类蛆，故龙见辄伏，舟行其上，可无害也",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 409,
+      "chapter": "葛巾",
+      "step_index": 0,
+      "unit": 26390,
+      "side": "from",
+      "raw": "洛阳",
+      "label": "洛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "常大用，洛人。癖好牡丹。闻曹州牡丹甲齐、鲁，心向往之。适以他事如曹，因假搢绅之园居焉。",
+      "raw_in_quote": false,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 415,
+      "chapter": "任秀",
+      "step_index": 0,
+      "unit": 27143,
+      "side": "from",
+      "raw": "鱼台",
+      "label": "鱼台",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "任建之，鱼台人。贩毡裘为业。竭赀赴陕。途中逢一人。自言：「申竹亭，宿迁人。」话言投契，盟为弟昆，行止与俱。",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "step_index": 2,
+      "unit": 27645,
+      "side": "from",
+      "raw": "臧氏村",
+      "label": "臧氏村",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "庵去臧氏村仅十余里，生因窃往。扣其关，果有女道士三四人，谦喜承迎，仪度皆洁。中一最少者，旷世真无其俦，心好而目注之。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 423,
+      "chapter": "陈云栖",
+      "step_index": 3,
+      "unit": 27664,
+      "side": "to",
+      "raw": "臧氏村",
+      "label": "臧氏村",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "生归，思恋綦切。次日，又诣之。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 431,
+      "chapter": "狐女",
+      "step_index": 3,
+      "unit": 28185,
+      "side": "to",
+      "raw": "昆仑山",
+      "label": "昆仑山",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "后值叛寇横恣，村人尽窜，一家相失。伊奔入昆仑山，四顾荒凉。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 437,
+      "chapter": "王大",
+      "step_index": 2,
+      "unit": 28318,
+      "side": "to",
+      "raw": "燕子谷",
+      "label": "燕子谷",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "王云：「燕子谷黄八官人放利债，同往贷之，宜必诺允。」于是四人并去。",
+      "raw_in_quote": true,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 439,
+      "chapter": "香玉",
+      "step_index": 1,
+      "unit": 28574,
+      "side": "from",
+      "raw": "胶州",
+      "label": "胶州",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "胶州黄生，舍读其中。",
+      "raw_in_quote": true,
+      "reason": "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用",
+      "coordinate_available": true
+    },
+    {
+      "chapter_id": 442,
+      "chapter": "王十",
+      "step_index": 6,
+      "unit": 28813,
+      "side": "to",
+      "raw": "奈河边",
+      "label": "奈河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "鬼引十去，至奈河边，见河内人夫，𫄶续如蚁。又视河水浑赤，臭不可闻。",
+      "raw_in_quote": true,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 442,
+      "chapter": "王十",
+      "step_index": 9,
+      "unit": 28822,
+      "side": "from",
+      "raw": "奈河",
+      "label": "奈河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "经三昼夜，河夫半死，河工亦竣。前二鬼仍送至家，豁然而苏。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 442,
+      "chapter": "王十",
+      "step_index": 10,
+      "unit": 28823,
+      "side": "from",
+      "raw": "奈河",
+      "label": "奈河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "前二鬼仍送至家，豁然而苏。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 442,
+      "chapter": "王十",
+      "step_index": 13,
+      "unit": 28828,
+      "side": "from",
+      "raw": "奈河",
+      "label": "奈河",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "肆商亦于前日死，至是始苏。骨朵击处，皆成巨疽，浑身腐溃，臭不可近。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 452,
+      "chapter": "苗生",
+      "step_index": 20,
+      "unit": 29486,
+      "side": "to",
+      "raw": "苍龙岭",
+      "label": "苍龙岭",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "至岭半，肴酒并陈，敬礼臻至。会郡守登岭上，与蒋为通家，闻蒋在下，遣人召之。蒋不敢以白衣往，遂与尤易冠服。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 456,
+      "chapter": "雹神",
+      "step_index": 7,
+      "unit": 29580,
+      "side": "from",
+      "raw": "安村",
+      "label": "安村",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "村去祠四十余里，敬修楮帛祭具，诣祠哀祷，但求怜悯，不敢枉驾。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 458,
+      "chapter": "老龙舡户",
+      "step_index": 6,
+      "unit": 29636,
+      "side": "to",
+      "raw": "老龙津",
+      "label": "老龙津",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "公遣武弁，密授机谋，捉龙津驾舟者，次第擒获五十余名，皆不械而服。",
+      "raw_in_quote": false,
+      "reason": "缺少可靠定位或同名地点尚需消歧",
+      "coordinate_available": false
+    },
+    {
+      "chapter_id": 478,
+      "chapter": "粉蝶",
+      "step_index": 11,
+      "unit": 30897,
+      "side": "from",
+      "raw": "神仙岛",
+      "label": "神仙岛",
+      "diagnosis": "地点词已识别但无地理绑定",
+      "quote": "阳颇忆家，告十娘曰：「吾居此，蒙姑抚养甚乐；顾家中悬念。离家三千里，何日可能还也！」十娘曰：「此即不难。故舟尚在，当助尔一帆风。子无家室，我已遣粉蝶矣。」乃赠以琴。又授以药，曰：「归医祖母，不惟却病，亦可延年。」遂送至海岸，俾登舟。阳觅楫，十娘曰：「无须此物。」因解裙作帆，为之萦系。阳虑迷途，十娘曰：「勿忧，但听帆漾耳。」系已，下舟。阳凄然，方欲拜别，而南风竞起，离岸已远矣。",
+      "raw_in_quote": false,
+      "reason": "异境或超自然场所，无需真实经纬度",
+      "coordinate_available": false
+    }
+  ],
+  "remaining_omitted_spaces": 461,
+  "endpoint_counts": {
+    "缺少可靠定位或同名地点尚需消歧": 47,
+    "定位资料存在；路径规则因端点绑定或人物籍贯语境而未采用": 8,
+    "异境或超自然场所，无需真实经纬度": 27
+  }
+}
