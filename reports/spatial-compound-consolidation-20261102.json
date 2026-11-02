@@ -1,0 +1,2361 @@
+{
+  "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
+  "changes": [
+    {
+      "chapter_id": 0,
+      "chapter": "考城隍",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 17,
+          "quote": "」又勉励秀才数语，二公稽首并下，秀才握手，送诸郊野，自言：长山张某，以诗赠别，都忘其词，中有「有花有酒春常在，无烛无灯夜自明」之句。",
+          "containing": [
+            "郊野"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊野"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 16,
+      "chapter": "蛇人",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 620,
+          "quote": "从此隐身大谷，必且为神龙，笥中何可以久居也？",
+          "containing": [
+            "大谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "大谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 19,
+      "chapter": "雹神",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 725,
+          "quote": "天师垂思良久，乃顾而嘱曰：「其多降山谷，勿伤禾稼可也。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 19,
+      "chapter": "雹神",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 735,
+          "quote": "是日果大雨雹，沟渠皆满，而田中仅数枚焉。",
+          "containing": [
+            "田中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 32,
+      "chapter": "成仙",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1357,
+          "quote": "相传驾将出猎，成预隐木市中；",
+          "containing": [
+            "市中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 32,
+      "chapter": "成仙",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1376,
+          "quote": "周心知其异，遣人踪迹之，寺观壑谷，物色殆遍。",
+          "containing": [
+            "壑谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "壑谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 34,
+      "chapter": "灵官",
+      "word": "穴",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1551,
+          "quote": "乃投水自濯讫，又蛰隐穴中几百日，垢浊始净。",
+          "containing": [
+            "穴中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "穴",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "穴中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 35,
+      "chapter": "王兰",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1613,
+          "quote": "逾数日，张于郊外遇同乡人贺才。",
+          "containing": [
+            "郊外"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊外"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 37,
+      "chapter": "王成",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1759,
+          "quote": "既驯，主人令持向街头，赌酒食。",
+          "containing": [
+            "街头"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街头"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 37,
+      "chapter": "王成",
+      "word": "廛",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1811,
+          "quote": "」曰：「小人把向市廛，日得数金，易升斗粟，一家十余食指，无冻馁懮，是何宝如之？",
+          "containing": [
+            "市廛"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "廛",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市廛"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 37,
+      "chapter": "王成",
+      "word": "店",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1717,
+          "quote": "入都，解装客店，主人深惜其晚。",
+          "containing": [
+            "客店"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "店",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "客店"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 38,
+      "chapter": "青凤",
+      "word": "宅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 1842,
+          "quote": "太原耿氏，故大家，第宅弘阔。",
+          "containing": [
+            "第宅"
+          ]
+        },
+        {
+          "unit": 1985,
+          "quote": "」女谓生曰：「君如念妾，还乞以楼宅相假，使妾得以申返哺之私。",
+          "containing": [
+            "楼宅"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "宅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "第宅",
+        "楼宅"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 39,
+      "chapter": "画皮",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 2003,
+          "quote": "」生言：「敝庐不远，即烦枉顾。",
+          "containing": [
+            "敝庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "敝庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 2799,
+          "quote": "寻至村所，庐舍全无，山花零落而已。",
+          "containing": [
+            "庐舍"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "庐舍"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 2569,
+          "quote": "绝惠，十四入泮，母最爱之，寻常不令游郊野。",
+          "containing": [
+            "郊野"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊野"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "word": "宅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 2940,
+          "quote": "倘肯囊妾朽骨，归葬安宅，不啻再造。",
+          "containing": [
+            "安宅"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "宅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "安宅"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 48,
+      "chapter": "聂小倩",
+      "word": "厢",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 2920,
+          "quote": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。",
+          "containing": [
+            "东厢"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厢",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "东厢"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 50,
+      "chapter": "地震",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 3081,
+          "quote": "视街上，则男女裸聚，竞相告语，并忘其未衣也。",
+          "containing": [
+            "街上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 55,
+      "chapter": "水莽草",
+      "word": "厨",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 3271,
+          "quote": "女便入厨下，代母执炊，供翁媪。",
+          "containing": [
+            "厨下"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厨",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厨下"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 56,
+      "chapter": "造畜",
+      "word": "店",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 3307,
+          "quote": "扬州旅店中，有一人牵驴五头，暂絷枥下，云：「我少选即返。",
+          "containing": [
+            "旅店"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "店",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "旅店"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 57,
+      "chapter": "凤阳士人",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 3364,
+          "quote": "」歌竟，笑曰：「此市井里巷之谣，不足污君听。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 57,
+      "chapter": "凤阳士人",
+      "word": "井",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 3364,
+          "quote": "」歌竟，笑曰：「此市井里巷之谣，不足污君听。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 68,
+      "chapter": "莲香",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 4222,
+          "quote": "莲香扶新妇入青庐，搭面既揭，欢若生平。",
+          "containing": [
+            "青庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "青庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 70,
+      "chapter": "九山王",
+      "word": "厨",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 4440,
+          "quote": "酒鼎沸于廊下，茶烟袅于厨中。",
+          "containing": [
+            "厨中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厨",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厨中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 70,
+      "chapter": "九山王",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 4485,
+          "quote": "军旅旌旗，弥满山谷。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 74,
+      "chapter": "巧娘",
+      "word": "厢",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 4786,
+          "quote": "」遂异生入东厢，探手 于裤夸而验之。",
+          "containing": [
+            "东厢"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厢",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "东厢"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 79,
+      "chapter": "红玉",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 5170,
+          "quote": "适宵行，见儿啼谷口，抱养于秦。",
+          "containing": [
+            "谷口"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "谷口"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 80,
+      "chapter": "龙",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 5211,
+          "quote": "方至山半，闻寺中霹雳一声，震动山谷。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 86,
+      "chapter": "戏术",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 5615,
+          "quote": "戏人以二席置街上，持一升入桶中；",
+          "containing": [
+            "街上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 93,
+      "chapter": "金陵女子",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 6014,
+          "quote": "忽药肆一翁望见，曰：「婿至矣。",
+          "containing": [
+            "药肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "药肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 99,
+      "chapter": "夜叉国",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 6579,
+          "quote": "少年曳入幽谷一小石洞，洞外皆丛棘；",
+          "containing": [
+            "幽谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "幽谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 106,
+      "chapter": "于江",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 7003,
+          "quote": "乡民于江，父宿田间，为狼所食。",
+          "containing": [
+            "田间"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田间"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 107,
+      "chapter": "小二",
+      "word": "宅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 7097,
+          "quote": "而从此渐购牛马，蓄厮婢，自营宅第。",
+          "containing": [
+            "宅第"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "宅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "宅第"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 115,
+      "chapter": "犬灯",
+      "word": "厅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 7656,
+          "quote": "系马而入，厅堂中酒肴已列。",
+          "containing": [
+            "厅堂"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厅堂"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 115,
+      "chapter": "犬灯",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 7659,
+          "quote": "既出，则依然田陇耳。",
+          "containing": [
+            "田陇"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田陇"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 123,
+      "chapter": "毛狐",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 8056,
+          "quote": "偶芸田间，见少妇盛妆，践禾越陌而过，貌赤色，致亦风流。",
+          "containing": [
+            "田间"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田间"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 129,
+      "chapter": "青梅",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 8431,
+          "quote": "」居无何，市中无赖窥女美，每打门游语为戏，尼不能止。",
+          "containing": [
+            "市中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 135,
+      "chapter": "促织",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 9084,
+          "quote": "市中游侠儿，得佳者笼养之，昂其直，居为奇货。",
+          "containing": [
+            "市中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 147,
+      "chapter": "续黄粱",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 9583,
+          "quote": "有龙图学士包拯上疏，其略曰：「窃以曾某，原一饮赌无赖，市井小人。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 147,
+      "chapter": "续黄粱",
+      "word": "井",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 9583,
+          "quote": "有龙图学士包拯上疏，其略曰：「窃以曾某，原一饮赌无赖，市井小人。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 9870,
+          "quote": "顷之门外哗然，跴屣出窥，则绣幰已驻于庭，双鬟扶女坐青庐中。",
+          "containing": [
+            "青庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "青庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 151,
+      "chapter": "辛十四娘",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 9805,
+          "quote": "夜色迷闷，误入涧谷，狼奔鸱叫，竖毛寒心。",
+          "containing": [
+            "涧谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "涧谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 157,
+      "chapter": "鬼作筵",
+      "word": "厨",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10184,
+          "quote": "至厨下，见二妇操刀砧于中，俱绀帔而绿缘之，呼我以嫂。",
+          "containing": [
+            "厨下"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厨",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厨下"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 163,
+      "chapter": "寒月芙蕖",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10324,
+          "quote": "夜卧街头，离身数尺外，冰雪尽熔。",
+          "containing": [
+            "街头"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街头"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 164,
+      "chapter": "酒狂",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10468,
+          "quote": "」缪悉如命，乃促之行，送之郊外，又嘱曰：「必勿食言，累我无益。",
+          "containing": [
+            "郊外"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊外"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 165,
+      "chapter": "阳武侯",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10490,
+          "quote": "先生有荒田，公牧其处，辄见蛇兔斗草莱中；",
+          "containing": [
+            "荒田"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "荒田"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10541,
+          "quote": "隶集诸猎人，日夜伏山谷，冀得一虎，庶可塞责。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 171,
+      "chapter": "鸦头",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 10821,
+          "quote": "」命持葬郊野。",
+          "containing": [
+            "郊野"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊野"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 181,
+      "chapter": "花姑子",
+      "word": "岩",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 11493,
+          "quote": "至则绝壁巉岩，竟无村落；",
+          "containing": [
+            "绝壁巉岩"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "岩",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "绝壁巉岩"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 192,
+      "chapter": "莲花公主",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 12354,
+          "quote": "有茅庐三数间，姑同窜匿可乎？",
+          "containing": [
+            "茅庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "茅庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 204,
+      "chapter": "堪舆",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13070,
+          "quote": "日日连骑遍郊野，东西分道出入，如两旅。",
+          "containing": [
+            "郊野"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "郊野"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 209,
+      "chapter": "马介甫",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13254,
+          "quote": "自诣城肆，市布帛，为易袍袴。",
+          "containing": [
+            "城肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "城肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 212,
+      "chapter": "绛妃",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13585,
+          "quote": "东篱处士，亦出茅庐；",
+          "containing": [
+            "茅庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "茅庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 212,
+      "chapter": "绛妃",
+      "word": "郊",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13536,
+          "quote": "翻柳浪于青郊，谬说为花寄信。",
+          "containing": [
+            "青郊"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "郊",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "青郊"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 213,
+      "chapter": "河间生",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13600,
+          "quote": "挽生臂，疾如乘风，可炊黍时，至一城市。",
+          "containing": [
+            "城市"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "城市"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 213,
+      "chapter": "河间生",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 13601,
+          "quote": "入酒肆，见坐客良多，聚饮颇哗。",
+          "containing": [
+            "酒肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "酒肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 233,
+      "chapter": "乱离二则",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 14824,
+          "quote": "时大兵凯旋，俘获妇口无算，插标市上，如卖牛马。",
+          "containing": [
+            "市上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 234,
+      "chapter": "豢蛇",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 14871,
+          "quote": "客惧，依道士肘腋而行，使送出谷口，乃归。",
+          "containing": [
+            "谷口"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "谷口"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 238,
+      "chapter": "考弊司",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 15106,
+          "quote": "徘徊廛肆之间，历两昏晓，凄意含酸，响肠鸣饿，进退无以自决。",
+          "containing": [
+            "廛肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "廛肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 238,
+      "chapter": "考弊司",
+      "word": "廛",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 15106,
+          "quote": "徘徊廛肆之间，历两昏晓，凄意含酸，响肠鸣饿，进退无以自决。",
+          "containing": [
+            "廛肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "廛",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "廛肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 240,
+      "chapter": "大人",
+      "word": "岩",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 15123,
+          "quote": "客曰：旧岁客云南，日暮失道，入大山中，绝壑巉岩，不可得出。",
+          "containing": [
+            "绝壑巉岩"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "岩",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "绝壑巉岩"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 256,
+      "chapter": "巩仙",
+      "word": "厅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 16323,
+          "quote": "伏身入，则光明洞彻，宽若厅堂，几案床榻，无物不有。",
+          "containing": [
+            "厅堂"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厅堂"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 258,
+      "chapter": "沂水秀才",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 16493,
+          "quote": "市井人作文语。",
+          "containing": [
+            "市井"
+          ]
+        },
+        {
+          "unit": 16504,
+          "quote": "市井恶谑。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 258,
+      "chapter": "沂水秀才",
+      "word": "井",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 16493,
+          "quote": "市井人作文语。",
+          "containing": [
+            "市井"
+          ]
+        },
+        {
+          "unit": 16504,
+          "quote": "市井恶谑。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 266,
+      "chapter": "青娥",
+      "word": "岩",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 17160,
+          "quote": "回首峭壁巉岩，无少隙缝，只影茕茕，罔所归适。",
+          "containing": [
+            "峭壁巉岩"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "岩",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "峭壁巉岩"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 266,
+      "chapter": "青娥",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 17118,
+          "quote": "山谷甚杂，又不可以极望。",
+          "containing": [
+            "山谷"
+          ]
+        },
+        {
+          "unit": 17176,
+          "quote": "母遣人穷搜山谷，并无踪绪。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 266,
+      "chapter": "青娥",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 17184,
+          "quote": "女谓生曰：「吾家茅田中，有雉抱八卵，其地可葬。",
+          "containing": [
+            "田中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 292,
+      "chapter": "画马",
+      "word": "廛",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 18797,
+          "quote": "时骑入市廛，观者无不称叹。",
+          "containing": [
+            "市廛"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "廛",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市廛"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 312,
+      "chapter": "嫦娥",
+      "word": "厅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 19654,
+          "quote": "父某甲，素无行，号奔而至，负尸入厅事，叫骂万端。",
+          "containing": [
+            "厅事"
+          ]
+        },
+        {
+          "unit": 19661,
+          "quote": "」乃入厅事抚尸，而婢已苏，随手而起。",
+          "containing": [
+            "厅事"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厅事"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 312,
+      "chapter": "嫦娥",
+      "word": "桥",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 19443,
+          "quote": "父与红桥下林妪有素。",
+          "containing": [
+            "红桥"
+          ]
+        },
+        {
+          "unit": 19444,
+          "quote": "一日，父子过红桥，遇之，固请过诸其家，瀹茗共话。",
+          "containing": [
+            "红桥"
+          ]
+        },
+        {
+          "unit": 19477,
+          "quote": "一日，偶经红桥，见嫦娥适在门内，疾趋过之。",
+          "containing": [
+            "红桥"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "桥",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "红桥"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 326,
+      "chapter": "鹿啣草",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 20941,
+          "quote": "众牝嗅之，知其死，分走谷中，啣异草置吻旁以熏之，顷刻复苏。",
+          "containing": [
+            "谷中"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "谷中"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 333,
+      "chapter": "顾生",
+      "word": "厅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 21158,
+          "quote": "有南北厅事，内以红毡贴地。",
+          "containing": [
+            "南北厅"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "南北厅"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 347,
+      "chapter": "元宝",
+      "word": "岩",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 22017,
+          "quote": "广东临江山崖巉岩，常有元宝嵌石上。",
+          "containing": [
+            "巉岩"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "岩",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "巉岩"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 355,
+      "chapter": "岳神",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 22101,
+          "quote": "既出，见药肆一人，绝肖所见。",
+          "containing": [
+            "药肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "药肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 357,
+      "chapter": "药僧",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 22275,
+          "quote": "从此为废物，日卧街上，多见之者。",
+          "containing": [
+            "街上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 358,
+      "chapter": "于中丞",
+      "word": "宅",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 22280,
+          "quote": "又出示谕阖城户口，各归第宅，候次日查点搜掘，务得赃物所在。",
+          "containing": [
+            "第宅"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "宅",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "第宅"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 391,
+      "chapter": "神女",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 23854,
+          "quote": "醉中雅爱乐之，并不问其何家，即街头市祝仪，投晚生刺焉。",
+          "containing": [
+            "街头"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街头"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 393,
+      "chapter": "三生",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 24289,
+          "quote": "一日，卧街头，有客自南中来，携金毛犬，大如狸。",
+          "containing": [
+            "街头"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街头"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 25221,
+          "quote": "若毛大者：刁猾无籍，市井凶徒。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 398,
+      "chapter": "臙脂",
+      "word": "井",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 25221,
+          "quote": "若毛大者：刁猾无籍，市井凶徒。",
+          "containing": [
+            "市井"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "井",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市井"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 403,
+      "chapter": "龙飞相公",
+      "word": "田",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 25767,
+          "quote": "一日，遇于田间，阳与语，绐窥眢井，因而堕之。",
+          "containing": [
+            "田间"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "田",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "田间"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 405,
+      "chapter": "五通",
+      "word": "肆",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 26053,
+          "quote": "弘于门外设典肆，是夜婢奔告之。",
+          "containing": [
+            "典肆"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "肆",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "典肆"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 406,
+      "chapter": "又",
+      "word": "舟",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 26144,
+          "quote": "至河，坐扁舟上，飘风堕笠，随波竟去。",
+          "containing": [
+            "舟上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "舟",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "舟上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 432,
+      "chapter": "张氏妇",
+      "word": "厨",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 28213,
+          "quote": "有厨舍一所，夜与夫掘坎深数尺，积茅焉；",
+          "containing": [
+            "厨舍"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "厨",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "厨舍"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 433,
+      "chapter": "于子游",
+      "word": "舟",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 28243,
+          "quote": "一秀才寄宿渔舟，沾酒独酌。",
+          "containing": [
+            "渔舟"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "舟",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "渔舟"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 440,
+      "chapter": "三仙",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 28770,
+          "quote": "及醒，红日已高，四顾并无院宇，主仆卧山谷中。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "山谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 446,
+      "chapter": "石清虚",
+      "word": "桥",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 29050,
+          "quote": "仆负石至河滨，息肩桥上，忽失手，堕诸河。",
+          "containing": [
+            "桥上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "桥",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "桥上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 452,
+      "chapter": "苗生",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 29443,
+          "quote": "生乃惊为神人，相待优渥，沽酒市饭，与共餐饮。",
+          "containing": [
+            "沽酒市"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "沽酒市"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 463,
+      "chapter": "薛慰娘",
+      "word": "街",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 29869,
+          "quote": "仲道虽于街头常遇，初未悉其名字。",
+          "containing": [
+            "街头"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "街",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "街头"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "庐",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 31115,
+          "quote": "至家门，则高庐焕映矣。",
+          "containing": [
+            "高庐"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "庐",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "高庐"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 480,
+      "chapter": "锦瑟",
+      "word": "谷",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 31070,
+          "quote": "奔二三里许，汗流竟体，始入深谷，释肩令坐。",
+          "containing": [
+            "深谷"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "谷",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "深谷"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    },
+    {
+      "chapter_id": 483,
+      "chapter": "李象先",
+      "word": "市",
+      "decision": "保留完整词；子词不单独计数",
+      "evidence": [
+        {
+          "unit": 31244,
+          "quote": "魂出栖坊上，下见市上行人，皆有火光出颠上，盖体中阳气也。",
+          "containing": [
+            "市上"
+          ]
+        }
+      ],
+      "protected_review": {
+        "status": "corrected",
+        "word": "市",
+        "kind": "spaces",
+        "note": "附件空间叙事框架审核通过；保留原文词形，纳入空间词。"
+      },
+      "replacement_terms": [
+        "市上"
+      ],
+      "action": "保留既有完整空间词，移除重复子词标注"
+    }
+  ],
+  "summary": {
+    "changed_annotations": 92,
+    "changed_chapters": 72,
+    "graph_space_vocabulary_unchanged": true,
+    "remaining_omissions": 369
+  }
+}

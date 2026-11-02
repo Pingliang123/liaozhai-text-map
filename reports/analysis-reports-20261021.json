@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T13:28:04.042Z",
+  "generated_at": "2026-11-02T13:41:47.598Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -151134,17 +151134,6 @@
       "chapter_id": 0,
       "chapter": "考城隍",
       "unit": 17,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊野"
-      ],
-      "excerpt": "」又勉励秀才数语，二公稽首并下，秀才握手，送诸郊野，自言：长山张某，以诗赠别，都忘其词，中有「有花有酒春常在，无烛无灯夜自明」之句。"
-    },
-    {
-      "chapter_id": 0,
-      "chapter": "考城隍",
-      "unit": 17,
       "term": "山",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -152483,17 +152472,6 @@
     {
       "chapter_id": 16,
       "chapter": "蛇人",
-      "unit": 620,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "大谷"
-      ],
-      "excerpt": "从此隐身大谷，必且为神龙，笥中何可以久居也？"
-    },
-    {
-      "chapter_id": 16,
-      "chapter": "蛇人",
       "unit": 634,
       "term": "山中",
       "exact_token": false,
@@ -152587,17 +152565,6 @@
     {
       "chapter_id": 19,
       "chapter": "雹神",
-      "unit": 725,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "天师垂思良久，乃顾而嘱曰：「其多降山谷，勿伤禾稼可也。"
-    },
-    {
-      "chapter_id": 19,
-      "chapter": "雹神",
       "unit": 727,
       "term": "庭",
       "exact_token": false,
@@ -152625,17 +152592,6 @@
         "庭树"
       ],
       "excerpt": "俄延逾刻，极力腾起，才高于庭树；"
-    },
-    {
-      "chapter_id": 19,
-      "chapter": "雹神",
-      "unit": 735,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田中"
-      ],
-      "excerpt": "是日果大雨雹，沟渠皆满，而田中仅数枚焉。"
     },
     {
       "chapter_id": 20,
@@ -153555,17 +153511,6 @@
       "chapter_id": 32,
       "chapter": "成仙",
       "unit": 1357,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "隐木市"
-      ],
-      "excerpt": "相传驾将出猎，成预隐木市中；"
-    },
-    {
-      "chapter_id": 32,
-      "chapter": "成仙",
-      "unit": 1357,
       "term": "市中",
       "exact_token": false,
       "embedded_in_tokens": [],
@@ -153645,17 +153590,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "周使探诸其家，家人方疑其在周所；"
-    },
-    {
-      "chapter_id": 32,
-      "chapter": "成仙",
-      "unit": 1376,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "壑谷"
-      ],
-      "excerpt": "周心知其异，遣人踪迹之，寺观壑谷，物色殆遍。"
     },
     {
       "chapter_id": 32,
@@ -154054,17 +153988,6 @@
       "chapter_id": 34,
       "chapter": "灵官",
       "unit": 1551,
-      "term": "穴",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "隐穴"
-      ],
-      "excerpt": "乃投水自濯讫，又蛰隐穴中几百日，垢浊始净。"
-    },
-    {
-      "chapter_id": 34,
-      "chapter": "灵官",
-      "unit": 1551,
       "term": "穴中",
       "exact_token": false,
       "embedded_in_tokens": [],
@@ -154347,17 +154270,6 @@
         "张氏"
       ],
       "excerpt": "又命以三百馈张氏，乃复还。"
-    },
-    {
-      "chapter_id": 35,
-      "chapter": "王兰",
-      "unit": 1613,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊外"
-      ],
-      "excerpt": "逾数日，张于郊外遇同乡人贺才。"
     },
     {
       "chapter_id": 35,
@@ -154788,17 +154700,6 @@
     {
       "chapter_id": 37,
       "chapter": "王成",
-      "unit": 1717,
-      "term": "店",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "客店"
-      ],
-      "excerpt": "入都，解装客店，主人深惜其晚。"
-    },
-    {
-      "chapter_id": 37,
-      "chapter": "王成",
       "unit": 1722,
       "term": "王",
       "exact_token": false,
@@ -154894,17 +154795,6 @@
         "王如其教"
       ],
       "excerpt": "」王如其教。"
-    },
-    {
-      "chapter_id": 37,
-      "chapter": "王成",
-      "unit": 1759,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街头"
-      ],
-      "excerpt": "既驯，主人令持向街头，赌酒食。"
     },
     {
       "chapter_id": 37,
@@ -155073,17 +154963,6 @@
     {
       "chapter_id": 37,
       "chapter": "王成",
-      "unit": 1811,
-      "term": "廛",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市廛"
-      ],
-      "excerpt": "」曰：「小人把向市廛，日得数金，易升斗粟，一家十余食指，无冻馁懮，是何宝如之？"
-    },
-    {
-      "chapter_id": 37,
-      "chapter": "王成",
       "unit": 1812,
       "term": "王",
       "exact_token": false,
@@ -155168,17 +155047,6 @@
         "良田"
       ],
       "excerpt": "妪命置良田三百亩，起屋作器，居然世家。"
-    },
-    {
-      "chapter_id": 38,
-      "chapter": "青凤",
-      "unit": 1842,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "第宅"
-      ],
-      "excerpt": "太原耿氏，故大家，第宅弘阔。"
     },
     {
       "chapter_id": 38,
@@ -155424,17 +155292,6 @@
       "chapter_id": 38,
       "chapter": "青凤",
       "unit": 1985,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "楼宅"
-      ],
-      "excerpt": "」女谓生曰：「君如念妾，还乞以楼宅相假，使妾得以申返哺之私。"
-    },
-    {
-      "chapter_id": 38,
-      "chapter": "青凤",
-      "unit": 1985,
       "term": "楼",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -155452,17 +155309,6 @@
         "朱门"
       ],
       "excerpt": "」女黯然曰：「父母贪赂，鬻妾朱门。"
-    },
-    {
-      "chapter_id": 39,
-      "chapter": "画皮",
-      "unit": 2003,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "敝庐"
-      ],
-      "excerpt": "」生言：「敝庐不远，即烦枉顾。"
     },
     {
       "chapter_id": 39,
@@ -156826,17 +156672,6 @@
     {
       "chapter_id": 47,
       "chapter": "婴宁",
-      "unit": 2569,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊野"
-      ],
-      "excerpt": "绝惠，十四入泮，母最爱之，寻常不令游郊野。"
-    },
-    {
-      "chapter_id": 47,
-      "chapter": "婴宁",
       "unit": 2571,
       "term": "吴",
       "exact_token": false,
@@ -157288,17 +157123,6 @@
     {
       "chapter_id": 47,
       "chapter": "婴宁",
-      "unit": 2799,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "庐舍"
-      ],
-      "excerpt": "寻至村所，庐舍全无，山花零落而已。"
-    },
-    {
-      "chapter_id": 47,
-      "chapter": "婴宁",
       "unit": 2800,
       "term": "吴",
       "exact_token": false,
@@ -157546,17 +157370,6 @@
     {
       "chapter_id": 48,
       "chapter": "聂小倩",
-      "unit": 2920,
-      "term": "厢",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "东厢"
-      ],
-      "excerpt": "诘旦，有兰溪生携一仆来候试，寓于东厢，至夜暴亡。"
-    },
-    {
-      "chapter_id": 48,
-      "chapter": "聂小倩",
       "unit": 2924,
       "term": "燕",
       "exact_token": false,
@@ -157651,17 +157464,6 @@
         "燕生"
       ],
       "excerpt": "」问：「何不惑燕生？"
-    },
-    {
-      "chapter_id": 48,
-      "chapter": "聂小倩",
-      "unit": 2940,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "安宅"
-      ],
-      "excerpt": "倘肯囊妾朽骨，归葬安宅，不啻再造。"
     },
     {
       "chapter_id": 48,
@@ -158070,17 +157872,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "河水倾泼丈余，鸭鸣犬吠满城中。"
-    },
-    {
-      "chapter_id": 50,
-      "chapter": "地震",
-      "unit": 3081,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "视街"
-      ],
-      "excerpt": "视街上，则男女裸聚，竞相告语，并忘其未衣也。"
     },
     {
       "chapter_id": 50,
@@ -158744,17 +158535,6 @@
     {
       "chapter_id": 55,
       "chapter": "水莽草",
-      "unit": 3271,
-      "term": "厨",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "入厨"
-      ],
-      "excerpt": "女便入厨下，代母执炊，供翁媪。"
-    },
-    {
-      "chapter_id": 55,
-      "chapter": "水莽草",
       "unit": 3275,
       "term": "祝母",
       "exact_token": false,
@@ -158880,17 +158660,6 @@
       "excerpt": "其子名鹗，字离尘，请诸寇翁，以三娘骸骨，与生合葬焉。"
     },
     {
-      "chapter_id": 56,
-      "chapter": "造畜",
-      "unit": 3307,
-      "term": "店",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "旅店"
-      ],
-      "excerpt": "扬州旅店中，有一人牵驴五头，暂絷枥下，云：「我少选即返。"
-    },
-    {
       "chapter_id": 57,
       "chapter": "凤阳士人",
       "unit": 3331,
@@ -158898,28 +158667,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "丽人牵坐路侧，自乃捉足，脱履相假。"
-    },
-    {
-      "chapter_id": 57,
-      "chapter": "凤阳士人",
-      "unit": 3364,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "此市"
-      ],
-      "excerpt": "」歌竟，笑曰：「此市井里巷之谣，不足污君听。"
-    },
-    {
-      "chapter_id": 57,
-      "chapter": "凤阳士人",
-      "unit": 3364,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "井里巷"
-      ],
-      "excerpt": "」歌竟，笑曰：「此市井里巷之谣，不足污君听。"
     },
     {
       "chapter_id": 57,
@@ -160565,17 +160312,6 @@
       "chapter_id": 68,
       "chapter": "莲香",
       "unit": 4222,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "青庐"
-      ],
-      "excerpt": "莲香扶新妇入青庐，搭面既揭，欢若生平。"
-    },
-    {
-      "chapter_id": 68,
-      "chapter": "莲香",
-      "unit": 4222,
       "term": "莲",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -161252,17 +160988,6 @@
     {
       "chapter_id": 70,
       "chapter": "九山王",
-      "unit": 4440,
-      "term": "厨",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "茶烟袅于厨"
-      ],
-      "excerpt": "酒鼎沸于廊下，茶烟袅于厨中。"
-    },
-    {
-      "chapter_id": 70,
-      "chapter": "九山王",
       "unit": 4445,
       "term": "李",
       "exact_token": false,
@@ -161483,17 +161208,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "加翁为「护国大将军」。"
-    },
-    {
-      "chapter_id": 70,
-      "chapter": "九山王",
-      "unit": 4485,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "军旅旌旗，弥满山谷。"
     },
     {
       "chapter_id": 70,
@@ -161850,17 +161564,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "」又熟视生，笑问：「何迕巧娘？"
-    },
-    {
-      "chapter_id": 74,
-      "chapter": "巧娘",
-      "unit": 4786,
-      "term": "厢",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "东厢"
-      ],
-      "excerpt": "」遂异生入东厢，探手 于裤夸而验之。"
     },
     {
       "chapter_id": 74,
@@ -162456,17 +162159,6 @@
     {
       "chapter_id": 79,
       "chapter": "红玉",
-      "unit": 5170,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "谷口"
-      ],
-      "excerpt": "适宵行，见儿啼谷口，抱养于秦。"
-    },
-    {
-      "chapter_id": 79,
-      "chapter": "红玉",
       "unit": 5193,
       "term": "田",
       "exact_token": false,
@@ -162494,17 +162186,6 @@
         "入寺"
       ],
       "excerpt": "房生与友人登牛山，入寺游瞩，忽椽间一黄砖堕，上盘一小蛇，细裁如蚓。"
-    },
-    {
-      "chapter_id": 80,
-      "chapter": "龙",
-      "unit": 5211,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "方至山半，闻寺中霹雳一声，震动山谷。"
     },
     {
       "chapter_id": 80,
@@ -163202,17 +162883,6 @@
         "胡媪"
       ],
       "excerpt": "胡生兄弟以及胡媪，时来望女，人人皆见之。"
-    },
-    {
-      "chapter_id": 86,
-      "chapter": "戏术",
-      "unit": 5615,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街上"
-      ],
-      "excerpt": "戏人以二席置街上，持一升入桶中；"
     },
     {
       "chapter_id": 87,
@@ -164575,17 +164245,6 @@
         "诸衢市"
       ],
       "excerpt": "寄货旅邸，访诸衢市。"
-    },
-    {
-      "chapter_id": 93,
-      "chapter": "金陵女子",
-      "unit": 6014,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "忽药肆一翁望见"
-      ],
-      "excerpt": "忽药肆一翁望见，曰：「婿至矣。"
     },
     {
       "chapter_id": 93,
@@ -166229,17 +165888,6 @@
     {
       "chapter_id": 99,
       "chapter": "夜叉国",
-      "unit": 6579,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "幽谷"
-      ],
-      "excerpt": "少年曳入幽谷一小石洞，洞外皆丛棘；"
-    },
-    {
-      "chapter_id": 99,
-      "chapter": "夜叉国",
       "unit": 6605,
       "term": "山中",
       "exact_token": false,
@@ -166906,17 +166554,6 @@
     {
       "chapter_id": 106,
       "chapter": "于江",
-      "unit": 7003,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田间"
-      ],
-      "excerpt": "乡民于江，父宿田间，为狼所食。"
-    },
-    {
-      "chapter_id": 106,
-      "chapter": "于江",
       "unit": 7011,
       "term": "草中",
       "exact_token": false,
@@ -167054,17 +166691,6 @@
         "丁登榻"
       ],
       "excerpt": "然后握丁登榻，煮藏酒，检《周礼》为觞政：任言是某册第几叶，第几人，即共翻阅。"
-    },
-    {
-      "chapter_id": 107,
-      "chapter": "小二",
-      "unit": 7097,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "营宅"
-      ],
-      "excerpt": "而从此渐购牛马，蓄厮婢，自营宅第。"
     },
     {
       "chapter_id": 107,
@@ -168729,30 +168355,8 @@
     {
       "chapter_id": 115,
       "chapter": "犬灯",
-      "unit": 7656,
-      "term": "厅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "厅堂"
-      ],
-      "excerpt": "系马而入，厅堂中酒肴已列。"
-    },
-    {
-      "chapter_id": 115,
-      "chapter": "犬灯",
       "unit": 7659,
       "term": "田陇",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田陇耳"
-      ],
-      "excerpt": "既出，则依然田陇耳。"
-    },
-    {
-      "chapter_id": 115,
-      "chapter": "犬灯",
-      "unit": 7659,
-      "term": "田",
       "exact_token": false,
       "embedded_in_tokens": [
         "田陇耳"
@@ -169457,17 +169061,6 @@
         "马天荣"
       ],
       "excerpt": "农子马天荣，年二十余。"
-    },
-    {
-      "chapter_id": 123,
-      "chapter": "毛狐",
-      "unit": 8056,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田间"
-      ],
-      "excerpt": "偶芸田间，见少妇盛妆，践禾越陌而过，貌赤色，致亦风流。"
     },
     {
       "chapter_id": 123,
@@ -170551,17 +170144,6 @@
         "冢室"
       ],
       "excerpt": "冢室故悍妒，李初未敢言妾，但托买婢。"
-    },
-    {
-      "chapter_id": 129,
-      "chapter": "青梅",
-      "unit": 8431,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市中无"
-      ],
-      "excerpt": "」居无何，市中无赖窥女美，每打门游语为戏，尼不能止。"
     },
     {
       "chapter_id": 129,
@@ -172810,17 +172392,6 @@
       "chapter_id": 135,
       "chapter": "促织",
       "unit": 9084,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市中游"
-      ],
-      "excerpt": "市中游侠儿，得佳者笼养之，昂其直，居为奇货。"
-    },
-    {
-      "chapter_id": 135,
-      "chapter": "促织",
-      "unit": 9084,
       "term": "市中",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -173704,28 +173275,6 @@
       "chapter_id": 147,
       "chapter": "续黄粱",
       "unit": 9583,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井小人"
-      ],
-      "excerpt": "有龙图学士包拯上疏，其略曰：「窃以曾某，原一饮赌无赖，市井小人。"
-    },
-    {
-      "chapter_id": 147,
-      "chapter": "续黄粱",
-      "unit": 9583,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井小人"
-      ],
-      "excerpt": "有龙图学士包拯上疏，其略曰：「窃以曾某，原一饮赌无赖，市井小人。"
-    },
-    {
-      "chapter_id": 147,
-      "chapter": "续黄粱",
-      "unit": 9583,
       "term": "市井",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -174252,17 +173801,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "再往兰若，则殿宇荒凉，问之居人，则寺中往往见狐貍。"
-    },
-    {
-      "chapter_id": 151,
-      "chapter": "辛十四娘",
-      "unit": 9870,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "青庐"
-      ],
-      "excerpt": "顷之门外哗然，跴屣出窥，则绣幰已驻于庭，双鬟扶女坐青庐中。"
     },
     {
       "chapter_id": 151,
@@ -174904,17 +174442,6 @@
         "杜问"
       ],
       "excerpt": "杜问所言，茫不记忆。"
-    },
-    {
-      "chapter_id": 157,
-      "chapter": "鬼作筵",
-      "unit": 10184,
-      "term": "厨",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "厨下"
-      ],
-      "excerpt": "至厨下，见二妇操刀砧于中，俱绀帔而绿缘之，呼我以嫂。"
     },
     {
       "chapter_id": 157,
@@ -175576,17 +175103,6 @@
     {
       "chapter_id": 163,
       "chapter": "寒月芙蕖",
-      "unit": 10324,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街头"
-      ],
-      "excerpt": "夜卧街头，离身数尺外，冰雪尽熔。"
-    },
-    {
-      "chapter_id": 163,
-      "chapter": "寒月芙蕖",
       "unit": 10325,
       "term": "市",
       "exact_token": false,
@@ -176077,17 +175593,6 @@
       "chapter_id": 164,
       "chapter": "酒狂",
       "unit": 10468,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊外"
-      ],
-      "excerpt": "」缪悉如命，乃促之行，送之郊外，又嘱曰：「必勿食言，累我无益。"
-    },
-    {
-      "chapter_id": 164,
-      "chapter": "酒狂",
-      "unit": 10468,
       "term": "缪",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -176187,17 +175692,6 @@
     {
       "chapter_id": 165,
       "chapter": "阳武侯",
-      "unit": 10490,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "荒田"
-      ],
-      "excerpt": "先生有荒田，公牧其处，辄见蛇兔斗草莱中；"
-    },
-    {
-      "chapter_id": 165,
-      "chapter": "阳武侯",
       "unit": 10491,
       "term": "宅",
       "exact_token": false,
@@ -176227,17 +175721,6 @@
         "赵城妪"
       ],
       "excerpt": "赵城妪，年七十余，止一子。"
-    },
-    {
-      "chapter_id": 166,
-      "chapter": "赵城虎",
-      "unit": 10541,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "隶集诸猎人，日夜伏山谷，冀得一虎，庶可塞责。"
     },
     {
       "chapter_id": 166,
@@ -177055,17 +176538,6 @@
         "吴媪居"
       ],
       "excerpt": "孜怒眦欲裂，即日赴都，询吴媪居，则车马方盈。"
-    },
-    {
-      "chapter_id": 171,
-      "chapter": "鸦头",
-      "unit": 10821,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊野"
-      ],
-      "excerpt": "」命持葬郊野。"
     },
     {
       "chapter_id": 171,
@@ -177952,17 +177424,6 @@
         "安遂命仆马"
       ],
       "excerpt": "安遂命仆马，寻途自往。"
-    },
-    {
-      "chapter_id": 181,
-      "chapter": "花姑子",
-      "unit": 11493,
-      "term": "岩",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "绝壁巉岩"
-      ],
-      "excerpt": "至则绝壁巉岩，竟无村落；"
     },
     {
       "chapter_id": 181,
@@ -180351,17 +179812,6 @@
     {
       "chapter_id": 192,
       "chapter": "莲花公主",
-      "unit": 12354,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "茅庐"
-      ],
-      "excerpt": "有茅庐三数间，姑同窜匿可乎？"
-    },
-    {
-      "chapter_id": 192,
-      "chapter": "莲花公主",
       "unit": 12364,
       "term": "室",
       "exact_token": false,
@@ -181992,17 +181442,6 @@
     {
       "chapter_id": 204,
       "chapter": "堪舆",
-      "unit": 13070,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "郊野"
-      ],
-      "excerpt": "日日连骑遍郊野，东西分道出入，如两旅。"
-    },
-    {
-      "chapter_id": 204,
-      "chapter": "堪舆",
       "unit": 13075,
       "term": "路侧",
       "exact_token": false,
@@ -182442,17 +181881,6 @@
         "杨翁"
       ],
       "excerpt": "且请杨翁与同食寝。"
-    },
-    {
-      "chapter_id": 209,
-      "chapter": "马介甫",
-      "unit": 13254,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "城肆"
-      ],
-      "excerpt": "自诣城肆，市布帛，为易袍袴。"
     },
     {
       "chapter_id": 209,
@@ -183511,17 +182939,6 @@
     {
       "chapter_id": 212,
       "chapter": "绛妃",
-      "unit": 13536,
-      "term": "郊",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "青郊"
-      ],
-      "excerpt": "翻柳浪于青郊，谬说为花寄信。"
-    },
-    {
-      "chapter_id": 212,
-      "chapter": "绛妃",
       "unit": 13537,
       "term": "田",
       "exact_token": false,
@@ -183582,17 +182999,6 @@
       "excerpt": "桑盖柳旌，用观兵于上苑。"
     },
     {
-      "chapter_id": 212,
-      "chapter": "绛妃",
-      "unit": 13585,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "茅庐"
-      ],
-      "excerpt": "东篱处士，亦出茅庐；"
-    },
-    {
       "chapter_id": 213,
       "chapter": "河间生",
       "unit": 13590,
@@ -183651,34 +183057,12 @@
       "chapter_id": 213,
       "chapter": "河间生",
       "unit": 13600,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "城市"
-      ],
-      "excerpt": "挽生臂，疾如乘风，可炊黍时，至一城市。"
-    },
-    {
-      "chapter_id": 213,
-      "chapter": "河间生",
-      "unit": 13600,
       "term": "生",
       "exact_token": false,
       "embedded_in_tokens": [
         "挽生臂"
       ],
       "excerpt": "挽生臂，疾如乘风，可炊黍时，至一城市。"
-    },
-    {
-      "chapter_id": 213,
-      "chapter": "河间生",
-      "unit": 13601,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "酒肆"
-      ],
-      "excerpt": "入酒肆，见坐客良多，聚饮颇哗。"
     },
     {
       "chapter_id": 213,
@@ -186065,17 +185449,6 @@
       "chapter_id": 233,
       "chapter": "乱离二则",
       "unit": 14824,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "标市"
-      ],
-      "excerpt": "时大兵凯旋，俘获妇口无算，插标市上，如卖牛马。"
-    },
-    {
-      "chapter_id": 233,
-      "chapter": "乱离二则",
-      "unit": 14824,
       "term": "市上",
       "exact_token": false,
       "embedded_in_tokens": [],
@@ -186111,17 +185484,6 @@
         "东室"
       ],
       "excerpt": "」蛇乃俯首入东室。"
-    },
-    {
-      "chapter_id": 234,
-      "chapter": "豢蛇",
-      "unit": 14871,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "谷口"
-      ],
-      "excerpt": "客惧，依道士肘腋而行，使送出谷口，乃归。"
     },
     {
       "chapter_id": 234,
@@ -186417,28 +185779,6 @@
       "excerpt": "入室促坐，相道姓名。"
     },
     {
-      "chapter_id": 238,
-      "chapter": "考弊司",
-      "unit": 15106,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "廛肆"
-      ],
-      "excerpt": "徘徊廛肆之间，历两昏晓，凄意含酸，响肠鸣饿，进退无以自决。"
-    },
-    {
-      "chapter_id": 238,
-      "chapter": "考弊司",
-      "unit": 15106,
-      "term": "廛",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "廛肆"
-      ],
-      "excerpt": "徘徊廛肆之间，历两昏晓，凄意含酸，响肠鸣饿，进退无以自决。"
-    },
-    {
       "chapter_id": 239,
       "chapter": "阎罗",
       "unit": 15115,
@@ -186448,17 +185788,6 @@
         "徐公星"
       ],
       "excerpt": "沂州徐公星，自言夜作阎罗王。"
-    },
-    {
-      "chapter_id": 240,
-      "chapter": "大人",
-      "unit": 15123,
-      "term": "岩",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "绝壑巉岩"
-      ],
-      "excerpt": "客曰：旧岁客云南，日暮失道，入大山中，绝壑巉岩，不可得出。"
     },
     {
       "chapter_id": 240,
@@ -189335,17 +188664,6 @@
     {
       "chapter_id": 256,
       "chapter": "巩仙",
-      "unit": 16323,
-      "term": "厅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "厅堂"
-      ],
-      "excerpt": "伏身入，则光明洞彻，宽若厅堂，几案床榻，无物不有。"
-    },
-    {
-      "chapter_id": 256,
-      "chapter": "巩仙",
       "unit": 16327,
       "term": "簷间",
       "exact_token": false,
@@ -189585,50 +188903,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "秀才掇内袖中。"
-    },
-    {
-      "chapter_id": 258,
-      "chapter": "沂水秀才",
-      "unit": 16493,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "市井人作文语。"
-    },
-    {
-      "chapter_id": 258,
-      "chapter": "沂水秀才",
-      "unit": 16493,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "市井人作文语。"
-    },
-    {
-      "chapter_id": 258,
-      "chapter": "沂水秀才",
-      "unit": 16504,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "市井恶谑。"
-    },
-    {
-      "chapter_id": 258,
-      "chapter": "沂水秀才",
-      "unit": 16504,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "市井恶谑。"
     },
     {
       "chapter_id": 259,
@@ -190539,17 +189813,6 @@
     {
       "chapter_id": 266,
       "chapter": "青娥",
-      "unit": 17118,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "山谷甚杂，又不可以极望。"
-    },
-    {
-      "chapter_id": 266,
-      "chapter": "青娥",
       "unit": 17132,
       "term": "房中",
       "exact_token": false,
@@ -190575,39 +189838,6 @@
         "离门"
       ],
       "excerpt": "赚生离门，父子阖扉去。"
-    },
-    {
-      "chapter_id": 266,
-      "chapter": "青娥",
-      "unit": 17160,
-      "term": "岩",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "峭壁巉岩"
-      ],
-      "excerpt": "回首峭壁巉岩，无少隙缝，只影茕茕，罔所归适。"
-    },
-    {
-      "chapter_id": 266,
-      "chapter": "青娥",
-      "unit": 17176,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "母遣人穷搜山谷，并无踪绪。"
-    },
-    {
-      "chapter_id": 266,
-      "chapter": "青娥",
-      "unit": 17184,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "茅田"
-      ],
-      "excerpt": "女谓生曰：「吾家茅田中，有雉抱八卵，其地可葬。"
     },
     {
       "chapter_id": 266,
@@ -194775,17 +194005,6 @@
     {
       "chapter_id": 292,
       "chapter": "画马",
-      "unit": 18797,
-      "term": "廛",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市廛"
-      ],
-      "excerpt": "时骑入市廛，观者无不称叹。"
-    },
-    {
-      "chapter_id": 292,
-      "chapter": "画马",
       "unit": 18798,
       "term": "晋",
       "exact_token": false,
@@ -195941,17 +195160,6 @@
       "chapter_id": 312,
       "chapter": "嫦娥",
       "unit": 19443,
-      "term": "桥",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "红桥"
-      ],
-      "excerpt": "父与红桥下林妪有素。"
-    },
-    {
-      "chapter_id": 312,
-      "chapter": "嫦娥",
-      "unit": 19443,
       "term": "林妪",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -196977,17 +196185,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "婢暴颠墀下，声如倾堵。"
-    },
-    {
-      "chapter_id": 312,
-      "chapter": "嫦娥",
-      "unit": 19654,
-      "term": "厅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "厅事"
-      ],
-      "excerpt": "父某甲，素无行，号奔而至，负尸入厅事，叫骂万端。"
     },
     {
       "chapter_id": 312,
@@ -201598,17 +200795,6 @@
       "chapter_id": 326,
       "chapter": "鹿啣草",
       "unit": 20941,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "走谷"
-      ],
-      "excerpt": "众牝嗅之，知其死，分走谷中，啣异草置吻旁以熏之，顷刻复苏。"
-    },
-    {
-      "chapter_id": 326,
-      "chapter": "鹿啣草",
-      "unit": 20941,
       "term": "谷中",
       "exact_token": false,
       "embedded_in_tokens": [],
@@ -202264,17 +201450,6 @@
         "门户"
       ],
       "excerpt": "一日，方凝神注之，忽觉身入宅中，三历门户，绝无人迹。"
-    },
-    {
-      "chapter_id": 333,
-      "chapter": "顾生",
-      "unit": 21158,
-      "term": "厅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "南北厅"
-      ],
-      "excerpt": "有南北厅事，内以红毡贴地。"
     },
     {
       "chapter_id": 333,
@@ -204737,17 +203912,6 @@
     {
       "chapter_id": 347,
       "chapter": "元宝",
-      "unit": 22017,
-      "term": "岩",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "巉岩"
-      ],
-      "excerpt": "广东临江山崖巉岩，常有元宝嵌石上。"
-    },
-    {
-      "chapter_id": 347,
-      "chapter": "元宝",
       "unit": 22018,
       "term": "崖下",
       "exact_token": false,
@@ -204839,17 +204003,6 @@
         "诣岳庙"
       ],
       "excerpt": "早诣岳庙，默作祈禳。"
-    },
-    {
-      "chapter_id": 355,
-      "chapter": "岳神",
-      "unit": 22101,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "药肆"
-      ],
-      "excerpt": "既出，见药肆一人，绝肖所见。"
     },
     {
       "chapter_id": 355,
@@ -205487,32 +204640,10 @@
       "chapter_id": 357,
       "chapter": "药僧",
       "unit": 22275,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "日卧街"
-      ],
-      "excerpt": "从此为废物，日卧街上，多见之者。"
-    },
-    {
-      "chapter_id": 357,
-      "chapter": "药僧",
-      "unit": 22275,
       "term": "街上",
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "从此为废物，日卧街上，多见之者。"
-    },
-    {
-      "chapter_id": 358,
-      "chapter": "于中丞",
-      "unit": 22280,
-      "term": "宅",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "第宅"
-      ],
-      "excerpt": "又出示谕阖城户口，各归第宅，候次日查点搜掘，务得赃物所在。"
     },
     {
       "chapter_id": 358,
@@ -209064,17 +208195,6 @@
       "chapter_id": 391,
       "chapter": "神女",
       "unit": 23854,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街头市"
-      ],
-      "excerpt": "醉中雅爱乐之，并不问其何家，即街头市祝仪，投晚生刺焉。"
-    },
-    {
-      "chapter_id": 391,
-      "chapter": "神女",
-      "unit": 23854,
       "term": "街头",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -209970,17 +209090,6 @@
         "肆中"
       ],
       "excerpt": "某生于北顺天府市肆中。"
-    },
-    {
-      "chapter_id": 393,
-      "chapter": "三生",
-      "unit": 24289,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街头"
-      ],
-      "excerpt": "一日，卧街头，有客自南中来，携金毛犬，大如狸。"
     },
     {
       "chapter_id": 393,
@@ -212417,28 +211526,6 @@
       "chapter_id": 398,
       "chapter": "臙脂",
       "unit": 25221,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "若毛大者：刁猾无籍，市井凶徒。"
-    },
-    {
-      "chapter_id": 398,
-      "chapter": "臙脂",
-      "unit": 25221,
-      "term": "井",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市井"
-      ],
-      "excerpt": "若毛大者：刁猾无籍，市井凶徒。"
-    },
-    {
-      "chapter_id": 398,
-      "chapter": "臙脂",
-      "unit": 25221,
       "term": "毛大",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -214087,17 +213174,6 @@
     {
       "chapter_id": 403,
       "chapter": "龙飞相公",
-      "unit": 25767,
-      "term": "田",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "田间"
-      ],
-      "excerpt": "一日，遇于田间，阳与语，绐窥眢井，因而堕之。"
-    },
-    {
-      "chapter_id": 403,
-      "chapter": "龙飞相公",
       "unit": 25768,
       "term": "井",
       "exact_token": false,
@@ -214523,17 +213599,6 @@
       "chapter_id": 405,
       "chapter": "五通",
       "unit": 26053,
-      "term": "肆",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "典肆"
-      ],
-      "excerpt": "弘于门外设典肆，是夜婢奔告之。"
-    },
-    {
-      "chapter_id": 405,
-      "chapter": "五通",
-      "unit": 26053,
       "term": "门",
       "exact_token": false,
       "embedded_in_tokens": [
@@ -214722,17 +213787,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "」婢既去，女笑曰：「适室中无人，遂偕婢从来。"
-    },
-    {
-      "chapter_id": 406,
-      "chapter": "又",
-      "unit": 26144,
-      "term": "舟",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "扁舟"
-      ],
-      "excerpt": "至河，坐扁舟上，飘风堕笠，随波竟去。"
     },
     {
       "chapter_id": 406,
@@ -219159,17 +218213,6 @@
     {
       "chapter_id": 432,
       "chapter": "张氏妇",
-      "unit": 28213,
-      "term": "厨",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "厨舍"
-      ],
-      "excerpt": "有厨舍一所，夜与夫掘坎深数尺，积茅焉；"
-    },
-    {
-      "chapter_id": 432,
-      "chapter": "张氏妇",
       "unit": 28215,
       "term": "灶下",
       "exact_token": false,
@@ -219204,17 +218247,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "海滨人说：「一日，海中忽有高山出，居人大骇。"
-    },
-    {
-      "chapter_id": 433,
-      "chapter": "于子游",
-      "unit": 28243,
-      "term": "舟",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "渔舟"
-      ],
-      "excerpt": "一秀才寄宿渔舟，沾酒独酌。"
     },
     {
       "chapter_id": 433,
@@ -220798,17 +219830,6 @@
     {
       "chapter_id": 440,
       "chapter": "三仙",
-      "unit": 28770,
-      "term": "谷",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "山谷"
-      ],
-      "excerpt": "及醒，红日已高，四顾并无院宇，主仆卧山谷中。"
-    },
-    {
-      "chapter_id": 440,
-      "chapter": "三仙",
       "unit": 28775,
       "term": "洞中",
       "exact_token": false,
@@ -221406,17 +220427,6 @@
     {
       "chapter_id": 446,
       "chapter": "石清虚",
-      "unit": 29050,
-      "term": "桥",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "肩桥"
-      ],
-      "excerpt": "仆负石至河滨，息肩桥上，忽失手，堕诸河。"
-    },
-    {
-      "chapter_id": 446,
-      "chapter": "石清虚",
       "unit": 29056,
       "term": "邢",
       "exact_token": false,
@@ -221999,17 +221009,6 @@
       "exact_token": false,
       "embedded_in_tokens": [],
       "excerpt": "约数里，马病，卧于途，坐待路侧。"
-    },
-    {
-      "chapter_id": 452,
-      "chapter": "苗生",
-      "unit": 29443,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "沽酒市"
-      ],
-      "excerpt": "生乃惊为神人，相待优渥，沽酒市饭，与共餐饮。"
     },
     {
       "chapter_id": 452,
@@ -223040,17 +222039,6 @@
         "薛即寅侯"
       ],
       "excerpt": "」众始知薛即寅侯也。"
-    },
-    {
-      "chapter_id": 463,
-      "chapter": "薛慰娘",
-      "unit": 29869,
-      "term": "街",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "街头"
-      ],
-      "excerpt": "仲道虽于街头常遇，初未悉其名字。"
     },
     {
       "chapter_id": 463,
@@ -227574,17 +226562,6 @@
     {
       "chapter_id": 480,
       "chapter": "锦瑟",
-      "unit": 31115,
-      "term": "庐",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "高庐"
-      ],
-      "excerpt": "至家门，则高庐焕映矣。"
-    },
-    {
-      "chapter_id": 480,
-      "chapter": "锦瑟",
       "unit": 31120,
       "term": "兰氏",
       "exact_token": false,
@@ -227735,17 +226712,6 @@
         "石公问金"
       ],
       "excerpt": "石公问金所自来。"
-    },
-    {
-      "chapter_id": 483,
-      "chapter": "李象先",
-      "unit": 31244,
-      "term": "市",
-      "exact_token": false,
-      "embedded_in_tokens": [
-        "市上"
-      ],
-      "excerpt": "魂出栖坊上，下见市上行人，皆有火光出颠上，盖体中阳气也。"
     },
     {
       "chapter_id": 484,
