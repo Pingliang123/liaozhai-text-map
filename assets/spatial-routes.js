@@ -1,6 +1,8 @@
 (function(root){'use strict';
 const compact=s=>String(s||'').replace(/\s/gu,'');
 const lexiconCache=new WeakMap();
+// Source offsets were produced in Python Unicode code points, not UTF-16 units.
+function sourceTokenWords(unit){const text=unit.text||unit.original||'',characters=[...text];return (unit.tokens||[]).map(t=>typeof t==='string'?t:characters.slice(t[0],t[1]).join('')).filter(Boolean);}
 function lexicon(chapter){
  if(lexiconCache.has(chapter))return lexiconCache.get(chapter);
  const remember=value=>(lexiconCache.set(chapter,value),value);
@@ -8,7 +10,7 @@ function lexicon(chapter){
  const units=chapter.source_units||chapter.units||[],source=compact(units.map(u=>u.text||u.original||'').join(''));
  const revised=String(chapter.segmentation_note||'').split(/[\s/|]+/u).filter(Boolean);
  if(revised.length&&revised.join('')===source)return remember({words:new Set(revised),basis:'与原文逐字对齐的已保存分词',strict:true});
- const words=units.flatMap(u=>(u.tokens||[]).map(t=>typeof t==='string'?t:(u.text||u.original||'').slice(t[0],t[1]))).filter(Boolean);
+ const words=units.flatMap(sourceTokenWords);
  return remember({words:new Set(words),basis:words.length?'原典词位分词（修订分词未全文对齐）':'无分词资料',strict:words.length>0});
 }
 function lexicalEndpoint(label,chapter,index=lexicon(chapter)){
@@ -23,7 +25,7 @@ function tokenUnits(chapter,index=lexicon(chapter)){
  const units=chapter.source_units||chapter.units||[];
  if(!index.strict)return units.map(()=>null);
  const source=compact(units.map(u=>u.text||u.original||'').join('')),revised=String(chapter.segmentation_note||'').split(/[\s/|]+/u).filter(Boolean);
- if(revised.join('')!==source)return units.map(u=>u.token_words||(u.tokens||[]).map(t=>typeof t==='string'?t:(u.text||u.original||'').slice(t[0],t[1])));
+ if(revised.join('')!==source)return units.map(u=>u.token_words||sourceTokenWords(u));
  let offset=0,tokenIndex=0,tokenEnd=0;const ends=revised.map(w=>(tokenEnd+=w.length));
  return units.map(u=>{const start=offset,end=start+compact(u.text||u.original||'').length,words=[];while(tokenIndex<revised.length&&ends[tokenIndex]<=end){if(ends[tokenIndex]-revised[tokenIndex].length>=start)words.push(revised[tokenIndex]);tokenIndex++;}offset=end;return words;});
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01T12:17:18.281Z",
+  "generated_at": "2026-11-02T10:02:18.564Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -284969,6 +284969,12 @@
             "layer": "space"
           },
           {
+            "id": "space:室",
+            "label": "室",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:门内",
             "label": "门内",
             "kind": "space",
@@ -285114,6 +285120,12 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
+          },
+          {
+            "id": "space:厅",
+            "label": "厅",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:院内",
@@ -285808,12 +285820,6 @@
           {
             "id": "space:门墙",
             "label": "门墙",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:室",
-            "label": "室",
             "kind": "space",
             "layer": "space"
           },
@@ -286842,6 +286848,12 @@
           {
             "id": "space:高堂",
             "label": "高堂",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:厨",
+            "label": "厨",
             "kind": "space",
             "layer": "space"
           },
@@ -288383,12 +288395,6 @@
             "level": "unknown"
           },
           {
-            "id": "space:厅",
-            "label": "厅",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
             "id": "space:室内",
             "label": "室内",
             "kind": "space",
@@ -288566,6 +288572,12 @@
             "layer": "space"
           },
           {
+            "id": "space:郡门外",
+            "label": "郡门外",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:大渊",
             "label": "大渊",
             "kind": "space",
@@ -288574,12 +288586,6 @@
           {
             "id": "space:渊上",
             "label": "渊上",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:乡土",
-            "label": "乡土",
             "kind": "space",
             "layer": "space"
           },
@@ -290793,12 +290799,6 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
-          },
-          {
-            "id": "space:厨",
-            "label": "厨",
-            "kind": "space",
-            "layer": "space"
           },
           {
             "id": "space:场屋",
@@ -295573,6 +295573,25 @@
             ]
           },
           {
+            "id": "place-space|place:青州|space:郡门外",
+            "source": "place:青州",
+            "target": "space:郡门外",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 1,
+            "chapters": [
+              112
+            ],
+            "evidence": [
+              {
+                "chapter_id": 112,
+                "chapter": "谕鬼",
+                "unit": 7566,
+                "excerpt": "青州石尚书茂华为诸生时，郡门外有大渊，不雨亦不涸。"
+              }
+            ]
+          },
+          {
             "id": "place-space|place:青州|space:大渊",
             "source": "place:青州",
             "target": "space:大渊",
@@ -298532,6 +298551,12 @@
             "layer": "space"
           },
           {
+            "id": "space:室",
+            "label": "室",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:门内",
             "label": "门内",
             "kind": "space",
@@ -298712,6 +298737,12 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 3
+          },
+          {
+            "id": "space:厅",
+            "label": "厅",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:院内",
@@ -299567,12 +299598,6 @@
           {
             "id": "space:门墙",
             "label": "门墙",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:室",
-            "label": "室",
             "kind": "space",
             "layer": "space"
           },
@@ -301224,6 +301249,12 @@
           {
             "id": "space:高堂",
             "label": "高堂",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:厨",
+            "label": "厨",
             "kind": "space",
             "layer": "space"
           },
@@ -304270,12 +304301,6 @@
             "chapter_id": 105
           },
           {
-            "id": "space:厅",
-            "label": "厅",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
             "id": "space:室内",
             "label": "室内",
             "kind": "space",
@@ -304712,6 +304737,12 @@
             "layer": "space"
           },
           {
+            "id": "space:郡门外",
+            "label": "郡门外",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:大渊",
             "label": "大渊",
             "kind": "space",
@@ -304726,6 +304757,13 @@
           {
             "id": "person:112:大寇",
             "label": "大寇",
+            "kind": "person",
+            "layer": "person",
+            "chapter_id": 112
+          },
+          {
+            "id": "person:112:石尚书",
+            "label": "石尚书",
             "kind": "person",
             "layer": "person",
             "chapter_id": 112
@@ -304750,12 +304788,6 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 112
-          },
-          {
-            "id": "space:乡土",
-            "label": "乡土",
-            "kind": "space",
-            "layer": "space"
           },
           {
             "id": "space:渊",
@@ -309326,12 +309358,6 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 219
-          },
-          {
-            "id": "space:厨",
-            "label": "厨",
-            "kind": "space",
-            "layer": "space"
           },
           {
             "id": "space:场屋",
@@ -316654,6 +316680,20 @@
           {
             "id": "person:412:颜氏",
             "label": "颜氏",
+            "kind": "person",
+            "layer": "person",
+            "chapter_id": 412
+          },
+          {
+            "id": "person:412:史公",
+            "label": "史公",
+            "kind": "person",
+            "layer": "person",
+            "chapter_id": 412
+          },
+          {
+            "id": "person:412:邑宰",
+            "label": "邑宰",
             "kind": "person",
             "layer": "person",
             "chapter_id": 412
@@ -331959,6 +331999,25 @@
             ]
           },
           {
+            "id": "person-context|person:410:冯|space:室",
+            "source": "person:410:冯",
+            "target": "space:室",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              410
+            ],
+            "evidence": [
+              {
+                "chapter_id": 410,
+                "chapter": "冯木匠",
+                "unit": 26591,
+                "excerpt": "既入室，家人皆莫之睹，冯始知其非人。"
+              }
+            ]
+          },
+          {
             "id": "person-context|person:411:马子才|place:顺天",
             "source": "person:411:马子才",
             "target": "place:顺天",
@@ -334940,6 +334999,25 @@
             ]
           },
           {
+            "id": "person-context|person:476:夏|space:室",
+            "source": "person:476:夏",
+            "target": "space:室",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              476
+            ],
+            "evidence": [
+              {
+                "chapter_id": 476,
+                "chapter": "纫针",
+                "unit": 30656,
+                "excerpt": "」夏骇为鬼，呼邻媪诘之，知其复活，喜内入室。"
+              }
+            ]
+          },
+          {
             "id": "person-context|person:476:王心斋|space:门内",
             "source": "person:476:王心斋",
             "target": "space:门内",
@@ -335618,11 +335696,11 @@
       },
       "place-space": {
         "nodes": 1588,
-        "edges": 186
+        "edges": 187
       },
       "person-context": {
-        "nodes": 3241,
-        "edges": 821
+        "nodes": 3244,
+        "edges": 823
       }
     }
   }

@@ -13,7 +13,7 @@
 |---|---:|---:|
 |chapter-place|891|786|
 |place-place|400|1656|
-|place-space|1588|186|
-|person-context|3241|821|
+|place-space|1588|187|
+|person-context|3244|823|
 
 候选与边界疑点保留原文证据，未自动覆盖人工修订。
