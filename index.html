@@ -663,8 +663,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
       save: (id, changes) => {
         const before = editable(id), valid = validate(id, changes), chapter = view(id);
         const stream = c => c.segmentation_note || chapter.source_units.map(u => {
-          const s=u.text || u.original, parts=[];let at=0;
-          for(const t of u.tokens || []) {const a=Array.isArray(t)?t[0]:t.start,b=Array.isArray(t)?t[1]:t.end;if(a>at)parts.push(s.slice(at,a));parts.push(s.slice(a,b));at=b;}if(at<s.length)parts.push(s.slice(at));return parts.join(' / ');
+          const s=[...(u.text || u.original)], parts=[];let at=0;
+          for(const t of u.tokens || []) {const a=Array.isArray(t)?t[0]:t.start,b=Array.isArray(t)?t[1]:t.end;if(a>at)parts.push(s.slice(at,a).join(''));parts.push(s.slice(a,b).join(''));at=b;}if(at<s.length)parts.push(s.slice(at).join(''));return parts.join(' / ');
         }).join('\n');
         const previous=stream(before).split(/[\s/|]+/u).filter(Boolean), tokens=stream(valid).split(/[\s/|]+/u).filter(Boolean);
         const raw=chapter.source_units.map(u=>u.text || u.original).join('').replace(/\s/gu,'');
