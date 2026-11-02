@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T13:41:47.598Z",
+  "generated_at": "2026-11-02T14:09:35.942Z",
   "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
@@ -166992,6 +166992,17 @@
     {
       "chapter_id": 108,
       "chapter": "庚娘",
+      "unit": 7171,
+      "term": "田庐",
+      "exact_token": false,
+      "embedded_in_tokens": [
+        "中田庐"
+      ],
+      "excerpt": "家中田庐，颇足赡给，保无虞也。"
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
       "unit": 7173,
       "term": "王",
       "exact_token": false,
@@ -186427,6 +186438,17 @@
       "chapter": "山市",
       "unit": 15409,
       "term": "市",
+      "exact_token": false,
+      "embedded_in_tokens": [
+        "奂山山市"
+      ],
+      "excerpt": "奂山山市，邑八景之一也。"
+    },
+    {
+      "chapter_id": 248,
+      "chapter": "山市",
+      "unit": 15409,
+      "term": "山市",
       "exact_token": false,
       "embedded_in_tokens": [
         "奂山山市"
@@ -221915,6 +221937,17 @@
     {
       "chapter_id": 463,
       "chapter": "薛慰娘",
+      "unit": 29830,
+      "term": "北渡",
+      "exact_token": false,
+      "embedded_in_tokens": [
+        "北渡三日"
+      ],
+      "excerpt": "北渡三日，女方醒。"
+    },
+    {
+      "chapter_id": 463,
+      "chapter": "薛慰娘",
       "unit": 29832,
       "term": "冢",
       "exact_token": false,
@@ -223791,6 +223824,17 @@
       "chapter": "寄生",
       "unit": 30220,
       "term": "庐",
+      "exact_token": false,
+      "embedded_in_tokens": [
+        "迳坐青庐"
+      ],
+      "excerpt": "二媪扶女，迳坐青庐，始知其闺秀也。"
+    },
+    {
+      "chapter_id": 466,
+      "chapter": "寄生",
+      "unit": 30220,
+      "term": "青庐",
       "exact_token": false,
       "embedded_in_tokens": [
         "迳坐青庐"
@@ -283497,6 +283541,12 @@
             "layer": "space"
           },
           {
+            "id": "space:东郊",
+            "label": "东郊",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:门外",
             "label": "门外",
             "kind": "space",
@@ -283558,6 +283608,12 @@
             "kind": "place",
             "layer": "place",
             "level": "unknown"
+          },
+          {
+            "id": "space:郊郭",
+            "label": "郊郭",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:后",
@@ -283921,6 +283977,12 @@
             "layer": "space"
           },
           {
+            "id": "space:肆中",
+            "label": "肆中",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:肩上",
             "label": "肩上",
             "kind": "space",
@@ -284040,6 +284102,12 @@
           {
             "id": "space:胡田村",
             "label": "胡田村",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:幽谷",
+            "label": "幽谷",
             "kind": "space",
             "layer": "space"
           },
@@ -284745,6 +284813,12 @@
             "layer": "space"
           },
           {
+            "id": "space:良田",
+            "label": "良田",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "place:太原",
             "label": "太原",
             "kind": "place",
@@ -285030,6 +285104,12 @@
           {
             "id": "space:西南山",
             "label": "西南山",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:谷底",
+            "label": "谷底",
             "kind": "space",
             "layer": "space"
           },
@@ -285901,6 +285981,12 @@
             "level": "prefecture"
           },
           {
+            "id": "space:居宅",
+            "label": "居宅",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:李第",
             "label": "李第",
             "kind": "space",
@@ -285971,6 +286057,12 @@
           {
             "id": "space:道侧",
             "label": "道侧",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:乡井",
+            "label": "乡井",
             "kind": "space",
             "layer": "space"
           },
@@ -286655,12 +286747,6 @@
             "layer": "space"
           },
           {
-            "id": "space:幽谷",
-            "label": "幽谷",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
             "id": "space:石洞",
             "label": "石洞",
             "kind": "space",
@@ -286870,6 +286956,12 @@
             "level": "prefecture"
           },
           {
+            "id": "space:田庐",
+            "label": "田庐",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:暗中",
             "label": "暗中",
             "kind": "space",
@@ -286878,6 +286970,12 @@
           {
             "id": "space:池中",
             "label": "池中",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:南郊",
+            "label": "南郊",
             "kind": "space",
             "layer": "space"
           },
@@ -288657,6 +288755,12 @@
             "level": "county"
           },
           {
+            "id": "space:廛间",
+            "label": "廛间",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:门舍",
             "label": "门舍",
             "kind": "space",
@@ -289220,6 +289324,12 @@
             "layer": "space"
           },
           {
+            "id": "space:厅事",
+            "label": "厅事",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "place:余杭",
             "label": "余杭",
             "kind": "place",
@@ -289239,6 +289349,12 @@
             "kind": "place",
             "layer": "place",
             "level": "county"
+          },
+          {
+            "id": "space:临街",
+            "label": "临街",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:娼楼",
@@ -289502,6 +289618,12 @@
             "level": "natural"
           },
           {
+            "id": "space:山市",
+            "label": "山市",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:孤塔",
             "label": "孤塔",
             "kind": "space",
@@ -289549,6 +289671,12 @@
           {
             "id": "space:僦生屋",
             "label": "僦生屋",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:市肆",
+            "label": "市肆",
             "kind": "space",
             "layer": "space"
           },
@@ -289674,6 +289802,12 @@
             "layer": "space"
           },
           {
+            "id": "space:田宅",
+            "label": "田宅",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:故宅",
             "label": "故宅",
             "kind": "space",
@@ -289757,12 +289891,6 @@
           {
             "id": "space:故里",
             "label": "故里",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:肆中",
-            "label": "肆中",
             "kind": "space",
             "layer": "space"
           },
@@ -290421,12 +290549,6 @@
           {
             "id": "space:丛柳下",
             "label": "丛柳下",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:厅事",
-            "label": "厅事",
             "kind": "space",
             "layer": "space"
           },
@@ -291281,6 +291403,12 @@
             "level": "unknown"
           },
           {
+            "id": "space:岩谷",
+            "label": "岩谷",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:洞外",
             "label": "洞外",
             "kind": "space",
@@ -292126,6 +292254,12 @@
             "layer": "space"
           },
           {
+            "id": "space:北渡",
+            "label": "北渡",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:浮家泛宅",
             "label": "浮家泛宅",
             "kind": "space",
@@ -292836,6 +292970,12 @@
             "kind": "place",
             "layer": "place",
             "level": "unknown"
+          },
+          {
+            "id": "space:竹桥",
+            "label": "竹桥",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "place:江村",
@@ -294824,6 +294964,25 @@
             ]
           },
           {
+            "id": "place-space|place:奂山|space:山市",
+            "source": "place:奂山",
+            "target": "space:山市",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 1,
+            "chapters": [
+              248
+            ],
+            "evidence": [
+              {
+                "chapter_id": 248,
+                "chapter": "山市",
+                "unit": 15409,
+                "excerpt": "奂山山市，邑八景之一也。"
+              }
+            ]
+          },
+          {
             "id": "place-space|place:石匣营|space:洞",
             "source": "place:石匣营",
             "target": "space:洞",
@@ -295394,6 +295553,25 @@
             ]
           },
           {
+            "id": "place-space|place:西安|space:东郊",
+            "source": "place:西安",
+            "target": "space:东郊",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 1,
+            "chapters": [
+              334
+            ],
+            "evidence": [
+              {
+                "chapter_id": 334,
+                "chapter": "陈锡九",
+                "unit": 21228,
+                "excerpt": "至西安，遍访居人，或言数年前有书生死于逆旅，葬之东郊，今冢已没。"
+              }
+            ]
+          },
+          {
             "id": "place-space|place:平乐|space:城门",
             "source": "place:平乐",
             "target": "space:城门",
@@ -295682,6 +295860,25 @@
             "id": "place-space|place:顺天|space:市",
             "source": "place:顺天",
             "target": "space:市",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 1,
+            "chapters": [
+              393
+            ],
+            "evidence": [
+              {
+                "chapter_id": 393,
+                "chapter": "三生",
+                "unit": 24288,
+                "excerpt": "某生于北顺天府市肆中。"
+              }
+            ]
+          },
+          {
+            "id": "place-space|place:顺天|space:肆中",
+            "source": "place:顺天",
+            "target": "space:肆中",
             "layer": "place-space",
             "relation": "地点—空间",
             "weight": 1,
@@ -296565,6 +296762,31 @@
             ]
           },
           {
+            "id": "place-space|place:竹桥|space:竹桥",
+            "source": "place:竹桥",
+            "target": "space:竹桥",
+            "layer": "place-space",
+            "relation": "地点—空间",
+            "weight": 2,
+            "chapters": [
+              464
+            ],
+            "evidence": [
+              {
+                "chapter_id": 464,
+                "chapter": "田子成",
+                "unit": 29908,
+                "excerpt": "千里云山飞不到，梦魂夜夜竹桥西。"
+              },
+              {
+                "chapter_id": 464,
+                "chapter": "田子成",
+                "unit": 29962,
+                "excerpt": "又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。"
+              }
+            ]
+          },
+          {
             "id": "place-space|place:江村|space:亭园",
             "source": "place:江村",
             "target": "space:亭园",
@@ -297107,6 +297329,12 @@
             "layer": "space"
           },
           {
+            "id": "space:东郊",
+            "label": "东郊",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:门外",
             "label": "门外",
             "kind": "space",
@@ -297196,6 +297424,12 @@
             "kind": "place",
             "layer": "place",
             "level": "unknown"
+          },
+          {
+            "id": "space:郊郭",
+            "label": "郊郭",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:后",
@@ -297629,6 +297863,12 @@
             "layer": "space"
           },
           {
+            "id": "space:肆中",
+            "label": "肆中",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:肩上",
             "label": "肩上",
             "kind": "space",
@@ -297769,6 +298009,12 @@
           {
             "id": "space:胡田村",
             "label": "胡田村",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:幽谷",
+            "label": "幽谷",
             "kind": "space",
             "layer": "space"
           },
@@ -298817,6 +299063,12 @@
             "chapter_id": 37
           },
           {
+            "id": "space:良田",
+            "label": "良田",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "place:太原",
             "label": "太原",
             "kind": "place",
@@ -299361,6 +299613,12 @@
           {
             "id": "space:西南山",
             "label": "西南山",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:谷底",
+            "label": "谷底",
             "kind": "space",
             "layer": "space"
           },
@@ -300848,6 +301106,12 @@
             "chapter_id": 70
           },
           {
+            "id": "space:居宅",
+            "label": "居宅",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "person:70:李",
             "label": "李",
             "kind": "person",
@@ -300976,6 +301240,12 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 72
+          },
+          {
+            "id": "space:乡井",
+            "label": "乡井",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "place:汾州",
@@ -302393,12 +302663,6 @@
             "layer": "space"
           },
           {
-            "id": "space:幽谷",
-            "label": "幽谷",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
             "id": "space:石洞",
             "label": "石洞",
             "kind": "space",
@@ -302846,6 +303110,12 @@
             "chapter_id": 108
           },
           {
+            "id": "space:田庐",
+            "label": "田庐",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:暗中",
             "label": "暗中",
             "kind": "space",
@@ -302854,6 +303124,12 @@
           {
             "id": "space:池中",
             "label": "池中",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:南郊",
+            "label": "南郊",
             "kind": "space",
             "layer": "space"
           },
@@ -306537,6 +306813,12 @@
             "chapter_id": 188
           },
           {
+            "id": "space:廛间",
+            "label": "廛间",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "person:188:陈",
             "label": "陈",
             "kind": "person",
@@ -307814,6 +308096,12 @@
             "layer": "space"
           },
           {
+            "id": "space:厅事",
+            "label": "厅事",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "person:221:秋容",
             "label": "秋容",
             "kind": "person",
@@ -307973,6 +308261,12 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 226
+          },
+          {
+            "id": "space:临街",
+            "label": "临街",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:娼楼",
@@ -308600,6 +308894,12 @@
             "level": "natural"
           },
           {
+            "id": "space:山市",
+            "label": "山市",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:孤塔",
             "label": "孤塔",
             "kind": "space",
@@ -308661,6 +308961,12 @@
           {
             "id": "space:僦生屋",
             "label": "僦生屋",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
+            "id": "space:市肆",
+            "label": "市肆",
             "kind": "space",
             "layer": "space"
           },
@@ -309045,6 +309351,12 @@
             "chapter_id": 256
           },
           {
+            "id": "space:田宅",
+            "label": "田宅",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "space:故宅",
             "label": "故宅",
             "kind": "space",
@@ -309268,12 +309580,6 @@
           {
             "id": "space:故里",
             "label": "故里",
-            "kind": "space",
-            "layer": "space"
-          },
-          {
-            "id": "space:肆中",
-            "label": "肆中",
             "kind": "space",
             "layer": "space"
           },
@@ -310998,12 +311304,6 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 312
-          },
-          {
-            "id": "space:厅事",
-            "label": "厅事",
-            "kind": "space",
-            "layer": "space"
           },
           {
             "id": "person:313:鞠乐如",
@@ -313184,6 +313484,12 @@
             "kind": "person",
             "layer": "person",
             "chapter_id": 375
+          },
+          {
+            "id": "space:岩谷",
+            "label": "岩谷",
+            "kind": "space",
+            "layer": "space"
           },
           {
             "id": "space:洞外",
@@ -315389,6 +315695,12 @@
             "chapter_id": 417
           },
           {
+            "id": "space:北渡",
+            "label": "北渡",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "person:417:向生",
             "label": "向生",
             "kind": "person",
@@ -317172,6 +317484,12 @@
             "chapter_id": 464
           },
           {
+            "id": "space:竹桥",
+            "label": "竹桥",
+            "kind": "space",
+            "layer": "space"
+          },
+          {
             "id": "person:464:少君",
             "label": "少君",
             "kind": "person",
@@ -318797,6 +319115,25 @@
             "id": "person-context|person:17:胡姓者|space:胡田村",
             "source": "person:17:胡姓者",
             "target": "space:胡田村",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              17
+            ],
+            "evidence": [
+              {
+                "chapter_id": 17,
+                "chapter": "斫蟒",
+                "unit": 656,
+                "excerpt": "胡田村胡姓者，兄弟采樵，深入幽谷。"
+              }
+            ]
+          },
+          {
+            "id": "person-context|person:17:胡姓者|space:幽谷",
+            "source": "person:17:胡姓者",
+            "target": "space:幽谷",
             "layer": "person-context",
             "relation": "人物—空间",
             "weight": 1,
@@ -326246,6 +326583,25 @@
             ]
           },
           {
+            "id": "person-context|person:283:刘|space:市肆",
+            "source": "person:283:刘",
+            "target": "space:市肆",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              283
+            ],
+            "evidence": [
+              {
+                "chapter_id": 283,
+                "chapter": "阿绣",
+                "unit": 18219,
+                "excerpt": "顾不敢言主人，旦起，访市肆，始返而诘刘曰：「夜与还往者，何人也？"
+              }
+            ]
+          },
+          {
             "id": "person-context|person:285:王公|space:家门",
             "source": "person:285:王公",
             "target": "space:家门",
@@ -331873,6 +332229,25 @@
             ]
           },
           {
+            "id": "person-context|person:438:琼华|space:北渡",
+            "source": "person:438:琼华",
+            "target": "space:北渡",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              438
+            ],
+            "evidence": [
+              {
+                "chapter_id": 438,
+                "chapter": "乐仲",
+                "unit": 28469,
+                "excerpt": "琼华挽劝之，怆然下刹，命舟北渡。"
+              }
+            ]
+          },
+          {
             "id": "person-context|person:438:琼华|space:棺内",
             "source": "person:438:琼华",
             "target": "space:棺内",
@@ -332975,6 +333350,25 @@
             ]
           },
           {
+            "id": "person-context|person:464:杜|space:竹桥",
+            "source": "person:464:杜",
+            "target": "space:竹桥",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              464
+            ],
+            "evidence": [
+              {
+                "chapter_id": 464,
+                "chapter": "田子成",
+                "unit": 29962,
+                "excerpt": "又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。"
+              }
+            ]
+          },
+          {
             "id": "person-context|person:465:王朗|place:洛阳",
             "source": "person:465:王朗",
             "target": "place:洛阳",
@@ -333085,6 +333479,25 @@
                 "chapter": "寄生",
                 "unit": 30172,
                 "excerpt": "女从门外过，媪故指挥云树以迟纤步，王孙窥觇尽悉，意颤不能自持。"
+              }
+            ]
+          },
+          {
+            "id": "person-context|person:466:闺秀|space:青庐",
+            "source": "person:466:闺秀",
+            "target": "space:青庐",
+            "layer": "person-context",
+            "relation": "人物—空间",
+            "weight": 1,
+            "chapters": [
+              466
+            ],
+            "evidence": [
+              {
+                "chapter_id": 466,
+                "chapter": "寄生",
+                "unit": 30220,
+                "excerpt": "二媪扶女，迳坐青庐，始知其闺秀也。"
               }
             ]
           },
@@ -334089,12 +334502,12 @@
         "edges": 1656
       },
       "place-space": {
-        "nodes": 1588,
-        "edges": 187
+        "nodes": 1604,
+        "edges": 191
       },
       "person-context": {
-        "nodes": 3244,
-        "edges": 823
+        "nodes": 3260,
+        "edges": 828
       }
     }
   }
