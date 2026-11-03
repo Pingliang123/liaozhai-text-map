@@ -1,0 +1,1401 @@
+{
+  "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
+  "policy": "仅移除已经被同一原文完整空间词替代的短词索引；人工接受、人工修订和原文均保留。",
+  "summary": {
+    "removed_redundant_short_indexes": 69,
+    "remaining_omissions": 300
+  },
+  "changes": [
+    {
+      "chapter_id": 2,
+      "chapter": "尸变",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "东郊"
+      ],
+      "evidence": [
+        {
+          "unit": 74,
+          "quote": "至东郊，瞥见兰若，闻木鱼声，乃急挝山门。",
+          "containing": [
+            "东郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 4,
+      "chapter": "瞳人语",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 120,
+          "quote": "清明前一日，偶步郊郭，见一小车，朱茀绣幰，青衣数辈，款段以从。",
+          "containing": [
+            "郊郭"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 13,
+      "chapter": "种梨",
+      "omitted_word": "肆",
+      "spatial_compounds": [
+        "肆中"
+      ],
+      "evidence": [
+        {
+          "unit": 483,
+          "quote": "肆中佣保者，见喋聒不堪，遂出钱市一枚，付道士，道士拜谢，谓众曰：「出家人不解吝惜，我有佳梨，请出供客。",
+          "containing": [
+            "肆中"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 17,
+      "chapter": "斫蟒",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "幽谷"
+      ],
+      "evidence": [
+        {
+          "unit": 656,
+          "quote": "胡田村胡姓者，兄弟采樵，深入幽谷。",
+          "containing": [
+            "幽谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 21,
+      "chapter": "娇娜",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 878,
+          "quote": "居半载，生欲翱翔郊郭，至门，则双扉外扃。",
+          "containing": [
+            "郊郭"
+          ]
+        },
+        {
+          "unit": 948,
+          "quote": "偶猎郊野，逢一美少年，跨骊驹，频频瞻顾。",
+          "containing": [
+            "郊野"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 37,
+      "chapter": "王成",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "良田"
+      ],
+      "evidence": [
+        {
+          "unit": 1833,
+          "quote": "妪命置良田三百亩，起屋作器，居然世家。",
+          "containing": [
+            "良田"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 47,
+      "chapter": "婴宁",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "谷底"
+      ],
+      "evidence": [
+        {
+          "unit": 2620,
+          "quote": "遥望谷底，丛花乱树中，隐隐有小里落。",
+          "containing": [
+            "谷底"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 70,
+      "chapter": "九山王",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "居宅"
+      ],
+      "evidence": [
+        {
+          "unit": 4424,
+          "quote": "而居宅故不甚广；",
+          "containing": [
+            "居宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 72,
+      "chapter": "张诚",
+      "omitted_word": "井",
+      "spatial_compounds": [
+        "乡井"
+      ],
+      "evidence": [
+        {
+          "unit": 4648,
+          "quote": "每刻刻念乡井，遂出籍，复故谱。",
+          "containing": [
+            "乡井"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 76,
+      "chapter": "口技",
+      "omitted_word": "市",
+      "spatial_compounds": [
+        "市廛"
+      ],
+      "evidence": [
+        {
+          "unit": 4975,
+          "quote": "昔王心逸尝言：在都偶过市廛，闻弦歌声，观者如堵。",
+          "containing": [
+            "市廛"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 76,
+      "chapter": "口技",
+      "omitted_word": "廛",
+      "spatial_compounds": [
+        "市廛"
+      ],
+      "evidence": [
+        {
+          "unit": 4975,
+          "quote": "昔王心逸尝言：在都偶过市廛，闻弦歌声，观者如堵。",
+          "containing": [
+            "市廛"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 83,
+      "chapter": "鲁公女",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 5414,
+          "quote": "闲游郊郭，因循而暗访之。",
+          "containing": [
+            "郊郭"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 107,
+      "chapter": "小二",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "涧谷"
+      ],
+      "evidence": [
+        {
+          "unit": 7105,
+          "quote": "乃责之曰：「远方人埋头涧谷，冀得相扶持；",
+          "containing": [
+            "涧谷"
+          ]
+        },
+        {
+          "unit": 7127,
+          "quote": "钱谷出入，以及婢仆业，凡五日一课；",
+          "containing": [
+            "钱谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 7171,
+          "quote": "家中田庐，颇足赡给，保无虞也。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "南郊"
+      ],
+      "evidence": [
+        {
+          "unit": 7212,
+          "quote": "终日间，得金百，于是葬诸南郊。",
+          "containing": [
+            "南郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 108,
+      "chapter": "庚娘",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 7171,
+          "quote": "家中田庐，颇足赡给，保无虞也。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 134,
+      "chapter": "公孙九娘",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "南郊"
+      ],
+      "evidence": [
+        {
+          "unit": 8939,
+          "quote": "以故伏刑东鬼，多葬南郊。",
+          "containing": [
+            "南郊"
+          ]
+        },
+        {
+          "unit": 9071,
+          "quote": "及抵南郊，日势已晚，息树下，趋诣丛葬所。",
+          "containing": [
+            "南郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 166,
+      "chapter": "赵城虎",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "东郊"
+      ],
+      "evidence": [
+        {
+          "unit": 10567,
+          "quote": "土人立「义虎祠」于东郊，至今犹存。",
+          "containing": [
+            "东郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 188,
+      "chapter": "长治女子",
+      "omitted_word": "廛",
+      "spatial_compounds": [
+        "廛间"
+      ],
+      "evidence": [
+        {
+          "unit": 12036,
+          "quote": "由是日持钵近廛间。",
+          "containing": [
+            "廛间"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 194,
+      "chapter": "黎氏",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "幽谷"
+      ],
+      "evidence": [
+        {
+          "unit": 12445,
+          "quote": "谢四望无人，近身侧，遽挲其腕，曳入幽谷，将以强合。",
+          "containing": [
+            "幽谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 203,
+      "chapter": "彭海秋",
+      "omitted_word": "井",
+      "spatial_compounds": [
+        "乡井"
+      ],
+      "evidence": [
+        {
+          "unit": 13011,
+          "quote": "因念独还乡井，恐丘家闻而致诘；",
+          "containing": [
+            "乡井"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 221,
+      "chapter": "小谢",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "庐舍"
+      ],
+      "evidence": [
+        {
+          "unit": 14197,
+          "quote": "被汝纠缠不了，奔驰百里外，始得一好庐舍，道人载与俱来矣。",
+          "containing": [
+            "庐舍"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 221,
+      "chapter": "小谢",
+      "omitted_word": "厅",
+      "spatial_compounds": [
+        "厅事"
+      ],
+      "evidence": [
+        {
+          "unit": 14015,
+          "quote": "生往除厅事。",
+          "containing": [
+            "厅事"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 224,
+      "chapter": "林氏",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "良田"
+      ],
+      "evidence": [
+        {
+          "unit": 14330,
+          "quote": "深愧钱镈不利，负此良田。",
+          "containing": [
+            "良田"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 226,
+      "chapter": "细侯",
+      "omitted_word": "街",
+      "spatial_compounds": [
+        "临街"
+      ],
+      "evidence": [
+        {
+          "unit": 14434,
+          "quote": "偶涉廛市，经临街阁下，忽有荔壳坠肩头。",
+          "containing": [
+            "临街"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 236,
+      "chapter": "菱角",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "涧谷"
+      ],
+      "evidence": [
+        {
+          "unit": 14965,
+          "quote": "母自戎马戒严，同俦人妇奔伏涧谷。",
+          "containing": [
+            "涧谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 248,
+      "chapter": "山市",
+      "omitted_word": "市",
+      "spatial_compounds": [
+        "山市"
+      ],
+      "evidence": [
+        {
+          "unit": 15409,
+          "quote": "奂山山市，邑八景之一也。",
+          "containing": [
+            "山市"
+          ]
+        },
+        {
+          "unit": 15413,
+          "quote": "无何，见宫殿数十所，碧瓦飞甍，始悟为山市。",
+          "containing": [
+            "山市"
+          ]
+        },
+        {
+          "unit": 15416,
+          "quote": "忽大风起，尘气莽莽然，城市依稀而已。",
+          "containing": [
+            "城市"
+          ]
+        },
+        {
+          "unit": 15429,
+          "quote": "又闻有早行者，见山上人烟市肆，与世无别，故又名「鬼市」云。",
+          "containing": [
+            "人烟市肆",
+            "鬼市"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 249,
+      "chapter": "江城",
+      "omitted_word": "市",
+      "spatial_compounds": [
+        "市肆"
+      ],
+      "evidence": [
+        {
+          "unit": 15435,
+          "quote": "初，东村有樊翁者，授童蒙于市肆，携家僦生屋。",
+          "containing": [
+            "市肆"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 257,
+      "chapter": "二商",
+      "omitted_word": "廛",
+      "spatial_compounds": [
+        "廛间"
+      ],
+      "evidence": [
+        {
+          "unit": 16474,
+          "quote": "从此弃贱业，使兄弟设肆廛间。",
+          "containing": [
+            "廛间"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 257,
+      "chapter": "二商",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "田宅"
+      ],
+      "evidence": [
+        {
+          "unit": 16463,
+          "quote": "又数年，大商卖其田宅，母得直，足自给，二商乃不复至。",
+          "containing": [
+            "田宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 262,
+      "chapter": "阿英",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "山谷"
+      ],
+      "evidence": [
+        {
+          "unit": 16744,
+          "quote": "」下座者曰：「昨自函谷来，被恶人伤右臂，不能同游，方用恨恨。",
+          "containing": [
+            "自函谷"
+          ]
+        },
+        {
+          "unit": 16846,
+          "quote": "玨大惧，率家人避山谷。",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 265,
+      "chapter": "牛成章",
+      "omitted_word": "肆",
+      "spatial_compounds": [
+        "肆中"
+      ],
+      "evidence": [
+        {
+          "unit": 16954,
+          "quote": "偶趋典肆，见主肆者绝类其父；",
+          "containing": [
+            "典肆",
+            "主肆者"
+          ]
+        },
+        {
+          "unit": 16971,
+          "quote": "妻虑肆中乏人，故止之。",
+          "containing": [
+            "肆中"
+          ]
+        },
+        {
+          "unit": 16972,
+          "quote": "牛乃率子纪理肆务；",
+          "containing": [
+            "肆务"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 275,
+      "chapter": "胡四娘",
+      "omitted_word": "厅",
+      "spatial_compounds": [
+        "厅事"
+      ],
+      "evidence": [
+        {
+          "unit": 17704,
+          "quote": "阍人既通，即有旧媪出，导入厅事，具酒馔，亦颇草草。",
+          "containing": [
+            "厅事"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 278,
+      "chapter": "柳生",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "庐舍"
+      ],
+      "evidence": [
+        {
+          "unit": 17845,
+          "quote": "」嘱骑者候于路，两人至旧处，庐舍已烬，于灰火中，取佩刀掘尺许，果得金；",
+          "containing": [
+            "庐舍"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 283,
+      "chapter": "阿绣",
+      "omitted_word": "市",
+      "spatial_compounds": [
+        "市肆"
+      ],
+      "evidence": [
+        {
+          "unit": 18162,
+          "quote": "」临行，所市物，女以纸代裹完好，已而以舌舐黏之。",
+          "containing": [
+            "所市物"
+          ]
+        },
+        {
+          "unit": 18166,
+          "quote": "以所市香帕脂粉等类，密置一箧，无人时，辄阖户自捡一过，触类凝思。",
+          "containing": [
+            "所市"
+          ]
+        },
+        {
+          "unit": 18219,
+          "quote": "顾不敢言主人，旦起，访市肆，始返而诘刘曰：「夜与还往者，何人也？",
+          "containing": [
+            "市肆"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 283,
+      "chapter": "阿绣",
+      "omitted_word": "肆",
+      "spatial_compounds": [
+        "市肆"
+      ],
+      "evidence": [
+        {
+          "unit": 18145,
+          "quote": "见杂货肆中一女子，姣丽无双，心爱好之。",
+          "containing": [
+            "杂货肆"
+          ]
+        },
+        {
+          "unit": 18146,
+          "quote": "潜至其肆，托言买扇。",
+          "containing": [
+            "潜至其肆"
+          ]
+        },
+        {
+          "unit": 18168,
+          "quote": "至则肆宇阖焉，失望而返。",
+          "containing": [
+            "肆宇阖焉"
+          ]
+        },
+        {
+          "unit": 18219,
+          "quote": "顾不敢言主人，旦起，访市肆，始返而诘刘曰：「夜与还往者，何人也？",
+          "containing": [
+            "市肆"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 286,
+      "chapter": "金和尚",
+      "omitted_word": "厅",
+      "spatial_compounds": [
+        "厅事"
+      ],
+      "evidence": [
+        {
+          "unit": 18533,
+          "quote": "僧舍其中：前有厅事，梁楹节棁，绘金碧，射人眼；",
+          "containing": [
+            "厅事"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 292,
+      "chapter": "画马",
+      "omitted_word": "市",
+      "spatial_compounds": [
+        "市廛"
+      ],
+      "evidence": [
+        {
+          "unit": 18797,
+          "quote": "时骑入市廛，观者无不称叹。",
+          "containing": [
+            "市廛"
+          ]
+        },
+        {
+          "unit": 18800,
+          "quote": "居半年，无耗，遂以八百金货于晋邸，乃自市健骡以归。",
+          "containing": [
+            "自市"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 293,
+      "chapter": "局诈",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "东郊"
+      ],
+      "evidence": [
+        {
+          "unit": 18893,
+          "quote": "偶适东郊，见工人掘土得古琴，遂以贱直得之。",
+          "containing": [
+            "东郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 316,
+      "chapter": "某乙",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "良田"
+      ],
+      "evidence": [
+        {
+          "unit": 19833,
+          "quote": "由此建楼阁、买良田，为子纳粟。",
+          "containing": [
+            "良田"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 317,
+      "chapter": "霍女",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 19920,
+          "quote": "妾虽陋，幸未老耄，有能以千金相赠者，便鬻妾去，此中妻室、田庐皆备焉。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 317,
+      "chapter": "霍女",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 19920,
+          "quote": "妾虽陋，幸未老耄，有能以千金相赠者，便鬻妾去，此中妻室、田庐皆备焉。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 321,
+      "chapter": "钱卜巫",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "田宅"
+      ],
+      "evidence": [
+        {
+          "unit": 20549,
+          "quote": "商瞿然不自安，尽货其田宅，往酬翁。",
+          "containing": [
+            "田宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 322,
+      "chapter": "姚安",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "田宅"
+      ],
+      "evidence": [
+        {
+          "unit": 20651,
+          "quote": "日日如是，不复可忍，于是鬻其田宅，将卜居他所。",
+          "containing": [
+            "田宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 322,
+      "chapter": "姚安",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "田宅"
+      ],
+      "evidence": [
+        {
+          "unit": 20651,
+          "quote": "日日如是，不复可忍，于是鬻其田宅，将卜居他所。",
+          "containing": [
+            "田宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 330,
+      "chapter": "陆押官",
+      "omitted_word": "街",
+      "spatial_compounds": [
+        "临街"
+      ],
+      "evidence": [
+        {
+          "unit": 21067,
+          "quote": "」遂遍邀诸侣赴临街店。",
+          "containing": [
+            "临街"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 334,
+      "chapter": "陈锡九",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "东郊"
+      ],
+      "evidence": [
+        {
+          "unit": 21228,
+          "quote": "至西安，遍访居人，或言数年前有书生死于逆旅，葬之东郊，今冢已没。",
+          "containing": [
+            "东郊"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 336,
+      "chapter": "于去恶",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 21385,
+          "quote": "顺治间，赴乡试，寓居郊郭。",
+          "containing": [
+            "郊郭"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 356,
+      "chapter": "小梅",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "第宅"
+      ],
+      "evidence": [
+        {
+          "unit": 22232,
+          "quote": "又欲瓜分第宅。",
+          "containing": [
+            "第宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "omitted_word": "岩",
+      "spatial_compounds": [
+        "岩谷"
+      ],
+      "evidence": [
+        {
+          "unit": 22939,
+          "quote": "时方严寒，既至，则气候温煦，山花遍岩谷。",
+          "containing": [
+            "岩谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 375,
+      "chapter": "安期岛",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "岩谷"
+      ],
+      "evidence": [
+        {
+          "unit": 22939,
+          "quote": "时方严寒，既至，则气候温煦，山花遍岩谷。",
+          "containing": [
+            "岩谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 380,
+      "chapter": "乔女",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "第宅"
+      ],
+      "evidence": [
+        {
+          "unit": 23437,
+          "quote": "」又数年，为乌头积粟数百石，乃聘于名族，治其第宅，析令归。",
+          "containing": [
+            "第宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 391,
+      "chapter": "神女",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "青庐"
+      ],
+      "evidence": [
+        {
+          "unit": 24013,
+          "quote": "公子辞而出，曰：「明夜七月初九，新月钩辰，天孙有少女下嫁，吉期也，可备青庐。",
+          "containing": [
+            "青庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 391,
+      "chapter": "神女",
+      "omitted_word": "廛",
+      "spatial_compounds": [
+        "市廛"
+      ],
+      "evidence": [
+        {
+          "unit": 23851,
+          "quote": "偶入郡，醉过市廛，闻高门中箫鼓如雷。",
+          "containing": [
+            "市廛"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 393,
+      "chapter": "三生",
+      "omitted_word": "肆",
+      "spatial_compounds": [
+        "肆中"
+      ],
+      "evidence": [
+        {
+          "unit": 24288,
+          "quote": "某生于北顺天府市肆中。",
+          "containing": [
+            "肆中"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 396,
+      "chapter": "素秋",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 24657,
+          "quote": "赴试入都，舍于郊郭。",
+          "containing": [
+            "郊郭"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 413,
+      "chapter": "齐天大圣",
+      "omitted_word": "郊",
+      "spatial_compounds": [
+        "郊郭"
+      ],
+      "evidence": [
+        {
+          "unit": 26922,
+          "quote": "一日，偶游郊郭，忽一褐衣人相之曰：「子何忧也？",
+          "containing": [
+            "郊郭"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 417,
+      "chapter": "白秋练",
+      "omitted_word": "渡",
+      "spatial_compounds": [
+        "北渡"
+      ],
+      "evidence": [
+        {
+          "unit": 27364,
+          "quote": "请勿想北渡矣！",
+          "containing": [
+            "北渡"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 435,
+      "chapter": "汪可受",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "涧谷"
+      ],
+      "evidence": [
+        {
+          "unit": 28282,
+          "quote": "稍长，辄思投身涧谷，又恐负豢养之恩，冥罚益甚，遂安之。",
+          "containing": [
+            "涧谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 438,
+      "chapter": "乐仲",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "庐舍"
+      ],
+      "evidence": [
+        {
+          "unit": 28510,
+          "quote": "觉世界光明，所居庐舍，尽为琼楼玉宇，移时始已。",
+          "containing": [
+            "庐舍"
+          ]
+        },
+        {
+          "unit": 28571,
+          "quote": "辛为顾移家，授庐赠婢。",
+          "containing": [
+            "授庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 438,
+      "chapter": "乐仲",
+      "omitted_word": "渡",
+      "spatial_compounds": [
+        "北渡"
+      ],
+      "evidence": [
+        {
+          "unit": 28469,
+          "quote": "琼华挽劝之，怆然下刹，命舟北渡。",
+          "containing": [
+            "北渡"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 443,
+      "chapter": "大男",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 28948,
+          "quote": "族人知大男已贵，反其田庐。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 443,
+      "chapter": "大男",
+      "omitted_word": "田",
+      "spatial_compounds": [
+        "田庐"
+      ],
+      "evidence": [
+        {
+          "unit": 28914,
+          "quote": "惟田产为子姪所阻，不得售。",
+          "containing": [
+            "惟田产"
+          ]
+        },
+        {
+          "unit": 28948,
+          "quote": "族人知大男已贵，反其田庐。",
+          "containing": [
+            "田庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 447,
+      "chapter": "曾友于",
+      "omitted_word": "宅",
+      "spatial_compounds": [
+        "田宅"
+      ],
+      "evidence": [
+        {
+          "unit": 29199,
+          "quote": "友于喜，归，共出田宅居成。",
+          "containing": [
+            "田宅"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 449,
+      "chapter": "二班",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "岩谷"
+      ],
+      "evidence": [
+        {
+          "unit": 29364,
+          "quote": "俄至一处，室傍岩谷。",
+          "containing": [
+            "岩谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 452,
+      "chapter": "苗生",
+      "omitted_word": "谷",
+      "spatial_compounds": [
+        "山谷"
+      ],
+      "evidence": [
+        {
+          "unit": 29451,
+          "quote": "」众不听，设「金谷之罚」。",
+          "containing": [
+            "金谷"
+          ]
+        },
+        {
+          "unit": 29461,
+          "quote": "苗不可复忍，遽效作龙吟，山谷响应；",
+          "containing": [
+            "山谷"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 463,
+      "chapter": "薛慰娘",
+      "omitted_word": "渡",
+      "spatial_compounds": [
+        "北渡"
+      ],
+      "evidence": [
+        {
+          "unit": 29820,
+          "quote": "女一日自金陵舅氏归，将媪问渡。",
+          "containing": [
+            "媪问渡"
+          ]
+        },
+        {
+          "unit": 29823,
+          "quote": "忽遇女，隐生诡谋，急招附渡。",
+          "containing": [
+            "附渡"
+          ]
+        },
+        {
+          "unit": 29830,
+          "quote": "北渡三日，女方醒。",
+          "containing": [
+            "北渡"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 464,
+      "chapter": "田子成",
+      "omitted_word": "桥",
+      "spatial_compounds": [
+        "竹桥"
+      ],
+      "evidence": [
+        {
+          "unit": 29908,
+          "quote": "千里云山飞不到，梦魂夜夜竹桥西。",
+          "containing": [
+            "竹桥"
+          ]
+        },
+        {
+          "unit": 29962,
+          "quote": "又悟杜夫人殁后，葬竹桥之西，故诗中忆之也。",
+          "containing": [
+            "竹桥"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    },
+    {
+      "chapter_id": 466,
+      "chapter": "寄生",
+      "omitted_word": "庐",
+      "spatial_compounds": [
+        "青庐"
+      ],
+      "evidence": [
+        {
+          "unit": 30220,
+          "quote": "二媪扶女，迳坐青庐，始知其闺秀也。",
+          "containing": [
+            "青庐"
+          ]
+        }
+      ],
+      "action": "remove_redundant_short_index"
+    }
+  ]
+}
