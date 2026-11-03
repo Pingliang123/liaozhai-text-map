@@ -1,9 +1,9 @@
 {
-  "revision_hash": "7f506e573d682dce13dee512f967f399687cde6cdcdf77aca1f997ab0210ae06",
+  "revision_hash": "fc459cff54c3754e4e69d2496aa90250eac17b90b6e5f0a4e0a85ae8b7659b78",
   "chapters": 491,
-  "place_nodes": 394,
-  "space_relations": 182,
-  "pending_space_occurrences": 3713,
+  "place_nodes": 393,
+  "space_relations": 189,
+  "pending_space_occurrences": 3817,
   "crosscheck": [
     {
       "word": "芙蓉",

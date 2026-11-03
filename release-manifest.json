@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11526971,
-      "sha256": "7f506e573d682dce13dee512f967f399687cde6cdcdf77aca1f997ab0210ae06"
+      "bytes": 11532832,
+      "sha256": "fc459cff54c3754e4e69d2496aa90250eac17b90b6e5f0a4e0a85ae8b7659b78"
     },
     {
       "path": "data.html",
@@ -523,8 +523,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33039668,
-      "sha256": "8b5a63d53d68c4d9012ab86bc4e94dd544cc6181c4e32296c8e855f8a35179c1"
+      "bytes": 33045529,
+      "sha256": "da1ed5852a79735a02a4183bddf9e3ef828525c492d3555c70ab0cd0c2b863da"
     },
     {
       "path": "github-login.js",
@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 279073,
-      "sha256": "7022b5a1055ada6da0dfb27e117212abaa2aab51363f0a31b2f45023637c152b"
+      "bytes": 279282,
+      "sha256": "9115f67c3cfa507afd1d2cf55fceb5271eb53dbfe020d0c833024f9bc63a0814"
     },
     {
       "path": "assets/chapter-references.js",
@@ -619,7 +619,7 @@
     {
       "path": "assets/research-lab/cases.html",
       "bytes": 1671,
-      "sha256": "83e69bec716741f7d3f6d7c1f1b3aba64f524979515c2ad71f2fb1ca3de244f4"
+      "sha256": "a31e6195b492b833f106d19a9d81f869e78b5f4ec4cd9d74b4ebe9dd4eb46169"
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
@@ -633,8 +633,8 @@
     },
     {
       "path": "assets/research-lab/data.json",
-      "bytes": 18464629,
-      "sha256": "36d58c98b20833ba0ce146339b352d299f61b8d2711d4c0131fbc2305b7af679"
+      "bytes": 18462641,
+      "sha256": "736f1f0c1621a37d77e0695c0e7d65025e3f92ad712a52dd85191d10db180fd1"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -653,8 +653,8 @@
     },
     {
       "path": "assets/research-lab/index.html",
-      "bytes": 4131,
-      "sha256": "28794d991dd5bf355506bc616d5b7be1d084be87bcde100ccb53d0bd0724c413"
+      "bytes": 6061,
+      "sha256": "ba93c7e6c95b88f13bb543d216ed3f9329772e6eeb740b467b8206ffe734558b"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -663,8 +663,8 @@
     },
     {
       "path": "assets/research-lab/map-runtime.js",
-      "bytes": 49656,
-      "sha256": "34998f3616aa24a247331769978f99e3c32aa0a26a5dfbf836d81920e7f8d747"
+      "bytes": 49690,
+      "sha256": "7136e6c4123903a0b11d474b25205aefc0f062cbe98da3f8eedb768d90ceded1"
     },
     {
       "path": "assets/research-lab/network-analysis.js",
@@ -678,8 +678,8 @@
     },
     {
       "path": "assets/research-lab/networkx-analysis.json",
-      "bytes": 1757555,
-      "sha256": "066bd0a65db6ac1bb42a1e14f5fac2fb6f4500cdfd4e8dfe03ef4ccee10d345d"
+      "bytes": 1783923,
+      "sha256": "6f3c0e2ee836cfb162a644c1cd53cd547c6376ec368c8de8ff7608f6774cf99e"
     },
     {
       "path": "assets/research-lab/place-level-colors.js",
@@ -689,7 +689,7 @@
     {
       "path": "assets/research-lab/place-levels.json",
       "bytes": 236987,
-      "sha256": "5e63f7a03b3e77c148780e0639f6ba94b384cdedde3f4a4531f178868632c782"
+      "sha256": "5b57bcf968a12e19452b9c3993f18191b6213122c4eba225acfc30dd5aaf4387"
     },
     {
       "path": "assets/research-lab/place-network.js",
@@ -738,8 +738,8 @@
     },
     {
       "path": "assets/research-lab/topics.json",
-      "bytes": 1597074,
-      "sha256": "3520d9f983885cd97517cd979f1fef7600caa0a06e14cd4d8242beae150f6d3a"
+      "bytes": 1597341,
+      "sha256": "8b6ce55cfdffee19bd619344e1c90ba3f0f86be44f205df073ccd9127d2c2543"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -758,8 +758,8 @@
     },
     {
       "path": "assets/spatial-routes.js",
-      "bytes": 9683,
-      "sha256": "8adcac9e15ab5669bc55315689e1ca7024a973706764cbbad00b201038ef3953"
+      "bytes": 9811,
+      "sha256": "02642904eb8348278f034eaa135f7385cd4efcff29a6d1d4264dd206ec777225"
     },
     {
       "path": "assets/place-node-merges.js",
@@ -768,8 +768,8 @@
     },
     {
       "path": "assets/publication-rebases.js",
-      "bytes": 92523,
-      "sha256": "4ff0fdc6992cea492111ec937fd2f0217228cf1c0e5eefd4fa3dadcbbab94084"
+      "bytes": 94626,
+      "sha256": "77ca163d955d5aa7876116481e95da6dead3e4b23283cf70bd86a9631da988d4"
     },
     {
       "path": "assets/chapter-search.css",
@@ -790,8 +790,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33039668,
-      "sha256": "8b5a63d53d68c4d9012ab86bc4e94dd544cc6181c4e32296c8e855f8a35179c1"
+      "bytes": 33045529,
+      "sha256": "da1ed5852a79735a02a4183bddf9e3ef828525c492d3555c70ab0cd0c2b863da"
     },
     {
       "path": "data.html",
@@ -815,18 +815,18 @@
     },
     {
       "path": "index.html",
-      "bytes": 279073,
-      "sha256": "7022b5a1055ada6da0dfb27e117212abaa2aab51363f0a31b2f45023637c152b"
+      "bytes": 279282,
+      "sha256": "9115f67c3cfa507afd1d2cf55fceb5271eb53dbfe020d0c833024f9bc63a0814"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11526971,
-      "sha256": "7f506e573d682dce13dee512f967f399687cde6cdcdf77aca1f997ab0210ae06"
+      "bytes": 11532832,
+      "sha256": "fc459cff54c3754e4e69d2496aa90250eac17b90b6e5f0a4e0a85ae8b7659b78"
     },
     {
       "path": "research-data.zip",
-      "bytes": 39212153,
-      "sha256": "45188e039dd947ae990988ff7dd4b26891319ea90ccb86fb95c9071108ada109"
+      "bytes": 39242663,
+      "sha256": "de6b5ed68b57380ef6f5d7a62d9223d9a3686878f163b1de683d7076cec7e949"
     }
   ]
 }
