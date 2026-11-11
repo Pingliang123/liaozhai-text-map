@@ -22,7 +22,7 @@ assert.ok(sceneValues[C.headers.indexOf('双端证据')].includes('金陵室内�
 const absentValues=C.headers.map(()=>'');E.completeScene(absentValues,{space:'未知寺',source_event:{unit:1}},fixture);
 assert.equal(absentValues[C.headers.indexOf('停留空间')],'','场景描述不能代替原文词项');
 const mentionValues=C.headers.map(()=>'');E.completeMentionTerms(mentionValues,{has_movement:false,source_event:{unit:1}},fixture);
-assert.equal(mentionValues[C.headers.indexOf('停留空间')],'室内','引句中可确认的空间词应作为空间提及回填');
+assert.equal(mentionValues[C.headers.indexOf('停留空间')],'室内、庭','引句中可确认的空间词应作为空间提及回填');
 const csv=E.toCsv([C.headers,['1','《測試》','原文「室中」,见']]);
 assert.ok(csv.startsWith('\ufeff篇号,篇名,'),'CSV 使用 UTF-8 BOM，便於 Excel 正確讀取中文');
 assert.ok(csv.includes('\r\n1,《測試》,"原文「室中」,见"\r\n'));

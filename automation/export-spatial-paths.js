@@ -99,7 +99,14 @@ function completeMentionTerms(values,row,chapter){
  const col=name=>C.headers.indexOf(name),event=row.source_event||{},position=(chapter.source_units||[]).findIndex(u=>u.unit===event.unit);
  if(position<0||row.has_movement||values[col('出发空间')]||values[col('到达空间')]||values[col('停留空间')])return;
  const tokenRows=R.tokenUnits(chapter,R.lexicon(chapter)),tokens=tokenRows[position]||[],places=new Set((chapter.places||[]).map(p=>p.word));
- const candidates=[...(chapter.space_words||[])].filter(w=>w.length>=2&&!places.has(w)&&tokens.includes(w));
+ const markers=new Set(['在','于','至','入','到','从','向','出','过','经','居','住','宿','寓','坐','卧','赴','登','临','行','循','绕']);
+ const locative=new Set(['中','内','外','上','下','边','旁','侧','前','后','间','里','头']);
+ const candidates=[...(chapter.space_words||[])].filter(w=>{
+  if(places.has(w)||!tokens.includes(w))return false;
+  if(w.length>=2)return true;
+  const i=tokens.indexOf(w),prev=tokens[i-1],next=tokens[i+1];
+  return markers.has(prev)||markers.has(next)||locative.has(prev)||locative.has(next);
+ });
  if(!candidates.length)return;
  const unique=[...new Set(candidates)];values[col('停留空间')]=unique.join('、');
  const evidence=chapter.source_units[position];
