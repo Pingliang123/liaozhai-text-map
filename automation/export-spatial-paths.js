@@ -72,6 +72,29 @@ function completeScene(values,row,chapter){
  values[col('参考地点')]=[...references].join('、');
  if(notes.length){values[col('分类依据')]+='。按场景与同篇已分词原文补入，见双端证据';values[col('双端证据')]+='；'+notes.join('；');}
 }
+function completeSourceTerms(values,row,chapter){
+ const col=name=>C.headers.indexOf(name),event=row.source_event||{},position=(chapter.source_units||[]).findIndex(u=>u.unit===event.unit);
+ if(position<0)return;
+ const tokenRows=R.tokenUnits(chapter,R.lexicon(chapter)),spaces=new Set(chapter.space_words||[]),places=new Set((chapter.places||[]).map(p=>p.word)),notes=[];
+ const exact=(term,idx)=>tokenRows[idx]&&tokenRows[idx].includes(term);
+ const spatialAt=idx=>[...spaces].filter(w=>exact(w,idx)).sort((a,b)=>b.length-a.length);
+ const placeAt=idx=>[...places].filter(w=>exact(w,idx)).sort((a,b)=>b.length-a.length);
+ const setRole=(role,term)=>{
+  const field=role+'空间';if(!term||values[col(field)])return;
+  values[col(field)]=term;const ps=placeAt(position);
+  if(ps.length===1&&!values[col(role+'空间所在地点')])values[col(role+'空间所在地点')]=ps[0];
+  notes.push(role+'空间据原文分词单元'+chapter.source_units[position].unit+'「'+chapter.source_units[position].text+'」补入');
+ };
+ const current=spatialAt(position);
+ if(!row.has_movement){if(current.length===1)setRole('停留',current[0]);}
+ else{
+  const from=String(row.from_space||''),to=String(row.to_space||'');
+  const fromTerm=current.find(w=>from.includes(w)||w===from),toTerm=current.find(w=>to.includes(w)||w===to);
+  if(fromTerm)setRole('出发',fromTerm);if(toTerm)setRole('到达',toTerm);
+  if(!values[col('到达空间')]&&current.length===1)setRole('到达',current[0]);
+ }
+ if(notes.length){values[col('分类依据')]+='。按引句分词回填';values[col('双端证据')]+='；'+notes.join('；');}
+}
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
  const narrative=loadNarrative(),places=model.places(),matrix=[C.headers],additions=[];let previous=[-1,-1],inferredLocations=0,closeReadRows=0;
@@ -93,6 +116,7 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
     values[at('双端证据')]='原文单元'+event.unit+'「'+event.quote+'」；漏收词项「'+event.missing_terms.join('、')+'」';
    }else{completeContext(values,row,chapter);completeScene(values,row,chapter);}
    completeChapter(values,row);
+   if(id>=3&&id<=52)completeSourceTerms(values,row,chapter);
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){
