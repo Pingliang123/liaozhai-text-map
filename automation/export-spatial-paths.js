@@ -95,6 +95,17 @@ function completeSourceTerms(values,row,chapter){
  }
  if(notes.length){values[col('分类依据')]+='。按引句分词回填';values[col('双端证据')]+='；'+notes.join('；');}
 }
+function completeMentionTerms(values,row,chapter){
+ const col=name=>C.headers.indexOf(name),event=row.source_event||{},position=(chapter.source_units||[]).findIndex(u=>u.unit===event.unit);
+ if(position<0||row.has_movement||values[col('出发空间')]||values[col('到达空间')]||values[col('停留空间')])return;
+ const tokenRows=R.tokenUnits(chapter,R.lexicon(chapter)),tokens=tokenRows[position]||[],places=new Set((chapter.places||[]).map(p=>p.word));
+ const candidates=[...(chapter.space_words||[])].filter(w=>w.length>=2&&!places.has(w)&&tokens.includes(w));
+ if(!candidates.length)return;
+ const unique=[...new Set(candidates)];values[col('停留空间')]=unique.join('、');
+ const evidence=chapter.source_units[position];
+ values[col('分类依据')]+='。按原文空间词提及回填';
+ values[col('双端证据')]+='；停留空间据原文分词单元'+evidence.unit+'「'+evidence.text+'」补入';
+}
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
  const narrative=loadNarrative(),places=model.places(),matrix=[C.headers],additions=[];let previous=[-1,-1],inferredLocations=0,closeReadRows=0;
@@ -116,7 +127,7 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
     values[at('双端证据')]='原文单元'+event.unit+'「'+event.quote+'」；漏收词项「'+event.missing_terms.join('、')+'」';
    }else{completeContext(values,row,chapter);completeScene(values,row,chapter);}
    completeChapter(values,row);
-   if(id>=3&&id<=490)completeSourceTerms(values,row,chapter);
+   if(id>=3&&id<=490){completeSourceTerms(values,row,chapter);completeMentionTerms(values,row,chapter);}
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){
@@ -130,4 +141,4 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
  return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations,addedSteps:additions.length,additions,closeReadRows};
 }
 if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);fs.writeFileSync(result.outputPath.replace(/\.csv$/u,'_新增步骤.csv'),toCsv([['篇号','篇名','原文单元','步骤类型','原遗漏词项','出发空间','到达空间','停留空间','原文','稳定步骤标识'],...result.additions]));console.log(JSON.stringify({outputPath:result.outputPath,steps:result.steps,addedSteps:result.addedSteps,chapters:result.chapters}));}
-module.exports={csvCell,toCsv,exportCsv,completeScene};
+module.exports={csvCell,toCsv,exportCsv,completeScene,completeMentionTerms};

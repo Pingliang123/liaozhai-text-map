@@ -1,9 +1,9 @@
 {
-  "input": "reports/聊齋空間路徑_第454-491篇原文回填.csv",
+  "input": "reports/聊齋空間路徑_全書原文回填最新版.csv",
   "chapters": 491,
-  "steps": 613,
-  "occurrences": 509,
-  "uniqueChapterWords": 266,
+  "steps": 8461,
+  "occurrences": 6606,
+  "uniqueChapterWords": 3472,
   "missingFromText": 0,
   "missingFromTokens": 0
 }
