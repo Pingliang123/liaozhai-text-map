@@ -41,6 +41,34 @@ function completeContext(values,row,chapter){
  }
  if(notes.length){values[col('分类依据')]+='。空间另据同篇场景承接推定';values[col('双端证据')]+='；'+notes.join('；');}
 }
+function completeScene(values,row,chapter){
+ const col=name=>C.headers.indexOf(name),scene=String(row.space||''),units=chapter.source_units||[],tokens=R.tokenUnits(chapter,R.lexicon(chapter));
+ const position=units.findIndex(u=>u.unit===row.source_event?.unit);
+ if(position<0||!scene)return;
+ const places=new Set(chapter.places.map(p=>p.word)),vocabulary=[...new Set([...(chapter.space_words||[]),...places])];
+ function terms(label){
+  const matches=vocabulary.filter(w=>w===label||(w.length>=2&&label.includes(w)));
+  return matches.filter(w=>!matches.some(other=>other!==w&&other.includes(w))).map(word=>{
+   for(let j=position;j>=0;j--)if(tokens[j]?.includes(word))return {word,unit:units[j]};
+   return null;
+  }).filter(Boolean);
+ }
+ const parts=scene.split(/\s*→\s*/u),roles=parts.length>1?[['出发',parts[0]],['到达',parts[parts.length-1]]]:!row.has_movement?[['停留',scene]]:[];
+ const notes=[];
+ for(const [role,label] of roles){
+  if(values[col(role+'空间')])continue;
+  const found=terms(label);if(!found.length||(role!=='停留'&&found.length!==1))continue;
+  values[col(role+'空间')]=found.map(x=>x.word).join('、');
+  for(const item of found){notes.push(role+'空间按场景「'+scene+'」及原文单元'+item.unit.unit+'「'+item.unit.text+'」补入');}
+ }
+ const references=new Set(String(values[col('参考地点')]||'').split('、').filter(Boolean));
+ for(const item of terms(scene).filter(x=>places.has(x.word))){
+  if(references.has(item.word))continue;
+  references.add(item.word);notes.push('场景参考地点「'+item.word+'」据原文单元'+item.unit.unit+'「'+item.unit.text+'」补入');
+ }
+ values[col('参考地点')]=[...references].join('、');
+ if(notes.length){values[col('分类依据')]+='。按场景与同篇已分词原文补入，见双端证据';values[col('双端证据')]+='；'+notes.join('；');}
+}
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
  const narrative=loadNarrative(),places=model.places(),matrix=[C.headers];let previous=[-1,-1],inferredLocations=0;
@@ -50,6 +78,7 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
    const values=C.values(row,chapter,R);if(values.length!==C.headers.length)throw new Error('欄位數不一致：'+chapter.chapter+' 第'+(i+1)+'步');
    if(id>=0&&id<491)inferredLocations+=C.groups(row,chapter,R).filter(group=>group.locationSource==='篇内前文最近明确地名（上下文承接）').length;
    completeContext(values,row,chapter);
+   completeScene(values,row,chapter);
    if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(values);
   });
  }
@@ -57,4 +86,4 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
  return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations};
 }
 if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇；第1–491篇篇內推定所在地點 '+result.inferredLocations+' 項：'+result.outputPath);}
-module.exports={csvCell,toCsv,exportCsv};
+module.exports={csvCell,toCsv,exportCsv,completeScene};
