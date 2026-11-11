@@ -16,6 +16,13 @@ function eventTokens(row,index){
  return new Set(source.flatMap(r=>r.tokens).filter(token=>token&&quote.includes(token)&&index.lex.words.has(token)));
 }
 function contextPlaces(tokens,index){return [...new Set(index.places)].filter(word=>tokens.has(word));}
+function priorPlace(row,index,quote){
+ const event=row.source_event||{},units=index.rows;let start=Number(event.unit);
+ if(!Number.isFinite(start)){const i=units.findIndex(r=>String(r.unit.text||'').includes(quote));start=i<0?Infinity:units[i].id;}
+ const prior=units.filter(r=>r.id<=start).reverse();
+ for(const r of prior){const found=[...new Set(r.tokens.filter(t=>index.places.includes(t)))];if(found.length===1)return found[0];if(found.length>1)return '';}
+ return '';
+}
 function nearestPlace(space,places,quote){
  if(!places.length)return '';
  if(places.length===1)return places[0];
@@ -57,12 +64,11 @@ function groups(row,chapter,routes){
   const chapterRealms=[...new Set(index.realmEvidence.map(e=>e.realm).filter(realm=>REALMS.has(realm)))],stepRealm=role==='stay'?(row.has_movement?(event.space_realm==='异境'&&chapterRealms.length===1?'异境':''):(event.space_realm||row.classification?.realm)):'',rawRealm=event[prefix+'_realm']||review[prefix+'_realm']||stepRealm;
   const evidencedRealm=word?worldFor(role,subject,'',row,index):'';
   let candidateLocation=!word?'':role==='stay'?staying.map(w=>nearestPlace(w,places,quote)).filter(Boolean).filter((w,i,a)=>a.indexOf(w)===i).join('、'):nearestPlace(word,places,quote),locationSource=candidateLocation?'同句原文':'';
-  // In chapters 21–70 only, inherit a setting when the whole chapter has exactly
-  // one explicitly annotated place and the source quote contains the tokenized space.
-  // Ambiguous multi-place chapters and explicitly otherworldly endpoints stay blank.
+  // In chapters 21–170, carry forward the latest unambiguous place stated in the source.
+  // Ambiguous place mentions and explicitly otherworldly endpoints stay blank.
   const chapterId=Number(row.chapter_id);
-  if(word&&!candidateLocation&&chapterId>=20&&chapterId<70&&index.places.length===1&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
-   candidateLocation=index.places[0];locationSource='篇内唯一明确地名（上下文承接）';
+  if(word&&!candidateLocation&&chapterId>=20&&chapterId<170&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
+   const inherited=priorPlace(row,index,quote);if(inherited){candidateLocation=inherited;locationSource='篇内前文最近明确地名（上下文承接）';}
   }
   const location=(rawRealm==='异境'&&!evidencedRealm||['天界','地界'].includes(evidencedRealm)&&candidateLocation!==subject)?'':candidateLocation;
   const realm=word?evidencedRealm||worldFor(role,subject,location,row,index):'';
@@ -72,11 +78,11 @@ function groups(row,chapter,routes){
 function values(row,chapter,routes){
  const event=row.source_event||{},groupsValue=groups(row,chapter,routes),review=row.endpoint_review||event.endpoint_review||'';
  const evidenceParts=typeof review==='object'?[review.quote,review.reason].filter(Boolean):[];
- for(const group of groupsValue)if(group.locationSource==='篇内唯一明确地名（上下文承接）'){
+ for(const group of groupsValue)if(group.locationSource==='篇内前文最近明确地名（上下文承接）'){
   const index=indexFor(chapter,routes),anchor=index.rows.find(r=>r.tokens.includes(group.location));
   if(anchor)evidenceParts.push('所在地点篇内依据（前文原句）：'+anchor.unit.text);
  }
- const basis=groupsValue.some(g=>g.locationSource==='篇内唯一明确地名（上下文承接）')?'空间词取自本步原文分词；所在地点承接本篇唯一明确地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
+ const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'空间词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
  return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,(row.places||[]).join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
 }
 const api={headers,groups,values};if(typeof module!=='undefined')module.exports=api;else root.GhostPathColumns=api;
