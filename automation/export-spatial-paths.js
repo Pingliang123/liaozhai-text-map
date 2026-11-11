@@ -10,18 +10,36 @@ function loadNarrative(){
  if(!script)throw new Error('找不到篇目敘事路徑資料模組');
  vm.runInContext(script,context);return context.GhostMapNarrative;
 }
+function priorPlaceEvidence(chapter,event,routes){
+ const places=(chapter.places||[]).map(p=>typeof p==='string'?p:p.word).filter(Boolean),units=chapter.source_units||chapter.units||[],lex=routes.lexicon(chapter),tokens=routes.tokenUnits(chapter,lex);
+ let start=units.findIndex(unit=>String(unit.text||'').includes(String(event.quote||'')));
+ if(start<0){const unitId=Number(event.unit),found=units.findIndex((unit,i)=>Number(unit.unit??unit.id??i)===unitId);start=found<0?units.length-1:found;}
+ const earlier=units.map((unit,i)=>({unit,tokens:tokens[i]||[]})).slice(0,start+1).reverse();
+ for(const row of earlier){const found=[...new Set(row.tokens.filter(token=>places.includes(token)))];if(found.length===1)return {place:found[0],text:String(row.unit.text||'')};if(found.length>1)return null;}
+ if(places.length===1){const anchor=units.find(unit=>String(unit.text||'').includes(places[0]));if(anchor)return {place:places[0],text:String(anchor.text||'')};}
+ return null;
+}
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
- const narrative=loadNarrative(),places=model.places(),matrix=[C.headers];let previous=[-1,-1];
+ const narrative=loadNarrative(),places=model.places(),matrix=[C.headers];let previous=[-1,-1],inferredLocations=0;
  for(const id of model.ids){const chapter=model.view(id),events=narrative.rows(model,[chapter],places);
   events.forEach((event,i)=>{const row={...event,chapter_id:id,chapter:chapter.chapter,step:i+1,source_event:event,endpoint_review:event.endpoint_review,has_movement:event.transition_kind==='movement'};
    const order=[id,i+1];if(order[0]<previous[0]||(order[0]===previous[0]&&order[1]<=previous[1]))throw new Error('路徑步驟順序錯誤');previous=order;
    const values=C.values(row,chapter,R);if(values.length!==C.headers.length)throw new Error('欄位數不一致：'+chapter.chapter+' 第'+(i+1)+'步');
+   if(id>=20&&id<70)inferredLocations+=C.groups(row,chapter,R).filter(group=>group.locationSource==='篇内唯一明确地名（上下文承接）').length;
+   // Chapters 21–70: carry forward an unambiguous place established earlier in the same original text.
+   if(id>=20&&id<70){const context=priorPlaceEvidence(chapter,event,R);if(context){for(const role of ['出發','到達','停留']){
+     const spaceIndex=C.headers.indexOf(role+'空间'),locationIndex=C.headers.indexOf(role+'空间所在地点'),realmIndex=C.headers.indexOf(role+'世界分类');
+     if(values[spaceIndex]&&!values[locationIndex]){values[locationIndex]=context.place;inferredLocations++;if(!values[realmIndex])values[realmIndex]='人間';
+      const evidenceIndex=C.headers.indexOf('雙端證據'),note='篇內推定：前文原句「'+context.text+'」提及地點「'+context.place+'」';
+      values[evidenceIndex]=[values[evidenceIndex],note].filter(Boolean).join('；');
+     }
+    }}}
    if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(values);
   });
  }
  fs.mkdirSync(path.dirname(outputPath),{recursive:true});fs.writeFileSync(outputPath,toCsv(matrix),'utf8');
- return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length};
+ return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations};
 }
-if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇：'+result.outputPath);}
-module.exports={csvCell,toCsv,exportCsv};
+if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇；第21–70篇篇內推定所在地點 '+result.inferredLocations+' 項：'+result.outputPath);}
+module.exports={csvCell,toCsv,exportCsv,priorPlaceEvidence};
