@@ -116,7 +116,7 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
     values[at('双端证据')]='原文单元'+event.unit+'「'+event.quote+'」；漏收词项「'+event.missing_terms.join('、')+'」';
    }else{completeContext(values,row,chapter);completeScene(values,row,chapter);}
    completeChapter(values,row);
-   if(id>=3&&id<=152)completeSourceTerms(values,row,chapter);
+   if(id>=3&&id<=202)completeSourceTerms(values,row,chapter);
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){

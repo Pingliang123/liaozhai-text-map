@@ -1,9 +1,9 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
 const {exportBatch}=require('./export-batch-spatial-report');
-const out=path.join(os.tmpdir(),'liaozhai-batch-104-153.csv'),result=exportBatch(104,153,out);
+const out=path.join(os.tmpdir(),'liaozhai-batch-154-203.csv'),result=exportBatch(154,203,out);
 assert.equal(result.chapters,50);assert.ok(result.steps>0);
 const body=fs.readFileSync(out,'utf8');assert.ok(body.startsWith('\ufeff篇号,篇名,'));
 assert.ok(body.includes('按引句分词回填'),'批次应包含原文分词回填证据');
 fs.rmSync(out,{force:true});
-console.log('PASS 第104–153篇批次导出与原文分词回填核对');
+console.log('PASS 第154–203篇批次导出与原文分词回填核对');
