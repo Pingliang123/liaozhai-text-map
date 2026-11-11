@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('node:assert/strict'),C=require('../assets/path-columns'),R=require('../assets/spatial-routes');
+const chapter={source_tokens:['室','庭','济南'],places:[{word:'济南'}],space_words:['室','庭']};
+const moving={chapter_id:0,has_movement:true,quote:'济南室至庭',from_space:'室',to_space:'庭',space:'庭',from_access:'私人',classification:{access:'公共',realm:'异境'},source_event:{from_location:'济南',from_realm:'人间',to_realm:'异境'}};
+const g=C.groups(moving,chapter,R);assert.equal(g[0].location,'济南');assert.equal(g[0].realm,'人间');assert.equal(g[1].realm,'');assert.equal(g[2].word,'');
+const stay=C.groups({...moving,has_movement:false,space:'室'},chapter,R);assert.equal(stay[0].word,'');assert.equal(stay[2].word,'室');
+assert.equal(C.groups({...moving,from_space:'赴济南'},chapter,R)[0].word,'');
+assert.equal(C.headers.length,C.values(moving,chapter,R).length);
+for(const old of ['出发类型','到达类型','出发世界','使用方式','世界分类'])assert.ok(!C.headers.includes(old));
+console.log('PASS directional CSV groups, exact tokens, stays and realm evidence');
