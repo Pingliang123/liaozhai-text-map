@@ -136,6 +136,7 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
    completeChapter(values,row,()=>{
     if(id>=3&&id<=490){completeSourceTerms(values,row,chapter);completeMentionTerms(values,row,chapter);}
    });
+   if(id>=3)completeSharedAccess(values);
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){
@@ -149,4 +150,18 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
  return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations,addedSteps:additions.length,additions,closeReadRows};
 }
 if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);fs.writeFileSync(result.outputPath.replace(/\.csv$/u,'_新增步骤.csv'),toCsv([['篇号','篇名','原文单元','步骤类型','原遗漏词项','出发空间','到达空间','停留空间','原文','稳定步骤标识'],...result.additions]));console.log(JSON.stringify({outputPath:result.outputPath,steps:result.steps,addedSteps:result.addedSteps,chapters:result.chapters}));}
-module.exports={csvCell,toCsv,exportCsv,completeScene,completeMentionTerms};
+function completeSharedAccess(values){
+ const col=name=>C.headers.indexOf(name);
+ const roles=['出发','到达','停留'];
+ const read=(role,field)=>values[col(role+field)];
+ for(const role of roles){
+  const space=read(role,'空间'),place=read(role,'空间所在地点'),world=read(role,'世界分类');
+  if(!space||space.includes('、')||!place||!world||read(role,'使用方式')||!values[col('原文')].includes(space))continue;
+  const matches=roles.filter(other=>read(other,'空间')===space&&read(other,'空间所在地点')===place&&read(other,'世界分类')===world);
+  const uses=new Set(matches.map(other=>read(other,'使用方式')).filter(Boolean));
+  if(uses.size!==1)continue;
+  values[col(role+'使用方式')]=[...uses][0];
+  values[col('双端证据')]+='；'+role+'使用方式据同一步骤同地同界的「'+space+'」推定。';
+ }
+}
+module.exports={csvCell,toCsv,exportCsv,completeScene,completeMentionTerms,completeSharedAccess};

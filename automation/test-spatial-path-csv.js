@@ -24,6 +24,14 @@ assert.equal(absentValues[C.headers.indexOf('停留空间')],'','场景描述不
 const mentionValues=C.headers.map(()=>'');E.completeMentionTerms(mentionValues,{has_movement:false,source_event:{unit:1}},fixture);
 assert.equal(mentionValues[C.headers.indexOf('停留空间')],'室内、庭','引句中可确认的空间词应作为空间提及回填');
 const csv=E.toCsv([C.headers,['1','《測試》','原文「室中」,见']]);
+const same=C.headers.map(()=>'');
+for(const role of ['停留','到达']){
+ for(const [field,value] of Object.entries({'空间':'卧室','空间所在地点':'济南','世界分类':'人间'}))same[C.headers.indexOf(role+field)]=value;
+}
+same[C.headers.indexOf('原文')]='入卧室。';same[C.headers.indexOf('停留使用方式')]='私人';
+const another=same.slice();another[C.headers.indexOf('到达世界分类')]='地界';
+E.completeSharedAccess(another);assert.equal(another[C.headers.indexOf('到达使用方式')],'');
+E.completeSharedAccess(same);assert.equal(same[C.headers.indexOf('到达使用方式')],'私人');
 assert.ok(csv.startsWith('\ufeff篇号,篇名,'),'CSV 使用 UTF-8 BOM，便於 Excel 正確讀取中文');
 assert.ok(csv.includes('\r\n1,《測試》,"原文「室中」,见"\r\n'));
 const result=E.exportCsv(undefined,require('node:os').tmpdir()+'\\liaozhai-spatial-paths-test.csv');
