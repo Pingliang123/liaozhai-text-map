@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045529,
-      "sha256": "4380f17fca0d418a94d5b6699b13fe80e6991bd709a9ce58f61deb1e5068e6a8"
+      "sha256": "1a218e685c3803c0fbc3864dd2b27f8be886cd117047d51c9309a3c9940df1ed"
     },
     {
       "path": "github-login.js",
@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 279282,
-      "sha256": "9115f67c3cfa507afd1d2cf55fceb5271eb53dbfe020d0c833024f9bc63a0814"
+      "bytes": 278743,
+      "sha256": "b5eaceefb13addc309348e62287ef36ce165317b590ec6bc0e0891078a104d32"
     },
     {
       "path": "assets/chapter-references.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18462641,
-      "sha256": "da18e8766a3d14eb148ce0f633e43fd28f2fb7a1e5c67276c73cf340c4bbfee0"
+      "sha256": "1f802a474dab81bf60e8c968a3bec04687e3af998c281bdaf9dbd357234c4575"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597341,
-      "sha256": "21a6fd35fb466da813d906475a0951c3ebf17efc47c0fde4877eb5bead39b837"
+      "sha256": "33a470310f0eddfda2422515a4f10ad531828dd9a7af483d2c881e624860866a"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -780,6 +780,11 @@
       "path": "assets/chapter-search.js",
       "bytes": 8702,
       "sha256": "2837269b864315ebfbb7dfbbbf9d35c721bd9663ddd23efff0119173972f4aa7"
+    },
+    {
+      "path": "assets/path-columns.js",
+      "bytes": 6207,
+      "sha256": "8bc89fb15c5d48cd7035a01f01ba5972fba5607c0df62ac2d68ce200edc82e9a"
     }
   ],
   "artifacts": [
@@ -791,7 +796,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045529,
-      "sha256": "4380f17fca0d418a94d5b6699b13fe80e6991bd709a9ce58f61deb1e5068e6a8"
+      "sha256": "1a218e685c3803c0fbc3864dd2b27f8be886cd117047d51c9309a3c9940df1ed"
     },
     {
       "path": "data.html",
@@ -815,8 +820,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 279282,
-      "sha256": "9115f67c3cfa507afd1d2cf55fceb5271eb53dbfe020d0c833024f9bc63a0814"
+      "bytes": 278743,
+      "sha256": "b5eaceefb13addc309348e62287ef36ce165317b590ec6bc0e0891078a104d32"
     },
     {
       "path": "manual-revisions.json",
@@ -825,8 +830,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39242669,
-      "sha256": "f2a8ffdb49754c945db0011d3eb5c8c77aba0f0c21af8ee1282c7878a2268c07"
+      "bytes": 39245058,
+      "sha256": "c2e646c4ac746cf99d32c8432fb86170b813e565457596981792adc9e7fd140e"
     }
   ]
 }
