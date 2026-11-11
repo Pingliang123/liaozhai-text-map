@@ -25,7 +25,11 @@ function priorPlace(row,index,quote){
  const event=row.source_event||{},units=index.rows;let start=Number(event.unit);
  if(!Number.isFinite(start)){const i=units.findIndex(r=>String(r.unit.text||'').includes(quote));if(i<0)return '';start=units[i].id;}
  const prior=units.filter(r=>r.id<=start).reverse();
- for(const r of prior){const found=[...new Set(r.tokens.filter(t=>index.places.includes(t)))];if(found.length===1)return found[0];if(found.length>1)return '';}
+ for(const r of prior){
+  const text=String(r.unit.text||'');
+  if(/自言|籍贯|祖籍|故里|同乡|缺一/u.test(text))continue;
+  const found=[...new Set(r.tokens.filter(t=>index.places.includes(t)))];if(found.length===1)return found[0];if(found.length>1)return '';
+ }
  return '';
 }
 function nearestPlace(space,places,quote){
