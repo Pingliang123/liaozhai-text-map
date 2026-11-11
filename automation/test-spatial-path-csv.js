@@ -1,5 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),C=require('../assets/path-columns'),E=require('./export-spatial-paths');
+const A=require('./audit-exported-spaces');
+assert.deepEqual(A.parseCsv('\ufeffa,b\r\n"含,逗号","引号""及\n换行"\r\n'),[['a','b'],['含,逗号','引号"及\n换行']]);
 assert.equal(E.csvCell('plain'),'plain');
 assert.equal(E.csvCell('有,逗號'),'"有,逗號"');
 assert.equal(E.csvCell('有"引號'),'"有""引號"');

@@ -1,0 +1,9 @@
+{
+  "input": "reports/聊齋空間路徑_場景核對補全.csv",
+  "chapters": 491,
+  "steps": 7222,
+  "occurrences": 4197,
+  "uniqueChapterWords": 2626,
+  "missingFromText": 0,
+  "missingFromTokens": 0
+}
