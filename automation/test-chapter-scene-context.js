@@ -25,4 +25,17 @@ assert.equal(underworld.到达空间,'冥府');assert.equal(underworld.到达世
 const fresh=createChapterContext(chapter,new Set(['济南','河南'])),empty=C.headers.map(()=>'');
 fresh(empty,{source_event:{unit:999},quote:'未知引句',actors:'甲'});
 assert.equal(empty[C.headers.indexOf('停留空间')],'');
+const lateChapter={...chapter,source_units:[{unit:1,text:'甲在济南居卧室。',tokens:['甲','在','济南','居','卧室','。']},...chapter.source_units.slice(1)]};
+const late=createChapterContext(lateChapter,new Set(['济南','河南'])),lateValues=C.headers.map(()=>'');
+late(lateValues,{source_event:{unit:2},quote:'甲与客谈。',transition_kind:'mention'},()=>{
+ lateValues[C.headers.indexOf('停留空间')]='卧室';
+});
+assert.equal(lateValues[C.headers.indexOf('停留空间所在地点')],'济南','后补空间也应获得前文地名');
+assert.equal(lateValues[C.headers.indexOf('停留世界分类')],'人间');
+const ghostValues=C.headers.map(()=>'');
+late(ghostValues,{source_event:{unit:5},quote:'甲入冥府。',transition_kind:'mention'},()=>{
+ ghostValues[C.headers.indexOf('停留空间')]='冥府';
+});
+assert.equal(ghostValues[C.headers.indexOf('停留世界分类')],'地界');
+assert.equal(ghostValues[C.headers.indexOf('停留空间所在地点')],'','异境不能继承人间地名');
 console.log('PASS 全篇场景承接、人物连续性、时间跳跃及异境地理隔离');

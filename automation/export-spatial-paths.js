@@ -133,8 +133,9 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
     values[at('分类依据')]='全文补录：该原文单元存在未被已有引句覆盖的空间词。出发、到达、停留按原句动词与词项的直接搭配提取；仅提及空间的步骤在场景栏列词。';
     values[at('双端证据')]='原文单元'+event.unit+'「'+event.quote+'」；漏收词项「'+event.missing_terms.join('、')+'」';
    }else{completeContext(values,row,chapter);completeScene(values,row,chapter);}
-   completeChapter(values,row);
-   if(id>=3&&id<=490){completeSourceTerms(values,row,chapter);completeMentionTerms(values,row,chapter);}
+   completeChapter(values,row,()=>{
+    if(id>=3&&id<=490){completeSourceTerms(values,row,chapter);completeMentionTerms(values,row,chapter);}
+   });
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){

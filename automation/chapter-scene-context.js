@@ -44,7 +44,7 @@ function createChapterContext(chapter, geographicNames = new Set()) {
   const word = destinations[0];
   setting = {word,unit:unit.unit,quote:unit.text,actors:new Set(tokens.filter(w => people.has(w))),realm:realm(word)};
  }
- return function complete(values, row) {
+ return function complete(values, row, fillSource) {
   const position = units.findIndex(u => u.unit === row.source_event?.unit);
   if(position < 0) return;
   while(cursor < position) { advance(units[cursor], tokenRows[cursor] || []); cursor++; }
@@ -90,6 +90,22 @@ function createChapterContext(chapter, geographicNames = new Set()) {
    if(quote.includes(active)) setting = {word:active,unit:units[position].unit,quote,actors:currentActors,realm:values[col(destination?'到达世界分类':'停留世界分类')]||realm(active)};
    else if(setting && active === setting.word) setting.actors = new Set([...setting.actors,...currentActors]);
   } else if(row.has_movement) setting = null;
+  if(fillSource){
+   fillSource();
+   for(const role of ['出发','到达','停留']){
+    const word=values[col(role+'空间')];if(!word)continue;
+    const world=values[col(role+'世界分类')]||realm(word);
+    if(world&&!values[col(role+'世界分类')])values[col(role+'世界分类')]=world;
+    const anchor=geographicNames.has(word)?{word,unit:units[position].unit,quote}:role==='出发'?previousRegion:region;
+    const located=anchor&&new RegExp('(?:居|住|寓|宿|至|抵|到|在|于)(?:于|其)?'+escape(anchor.word),'u').test(anchor.quote);
+    const key={出发:'from',到达:'to',停留:'space'}[role];
+    if(!values[col(role+'空间所在地点')]&&anchor&&(located||anchor.word===word)&&!['天界','地界'].includes(world)&&row.source_event?.[key+'_realm']!=='异境'){
+     values[col(role+'空间所在地点')]=anchor.word;
+     if(!world)values[col(role+'世界分类')]='人间';
+     notes.push(role+'所在地据明确居住或到达语句「'+anchor.word+'」，单元'+anchor.unit+'「'+anchor.quote+'」');
+    }
+   }
+  }
   if(notes.length) {
    values[col('分类依据')] += '。按整篇情节及人物场景连续性补充，见双端证据';
    values[col('双端证据')] += '；' + notes.join('；');
