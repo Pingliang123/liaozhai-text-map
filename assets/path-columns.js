@@ -16,6 +16,11 @@ function eventTokens(row,index){
  return new Set(source.flatMap(r=>r.tokens).filter(token=>token&&quote.includes(token)&&index.lex.words.has(token)));
 }
 function contextPlaces(tokens,index){return [...new Set(index.places)].filter(word=>tokens.has(word));}
+function directPlaces(row,chapter,routes){
+ const index=indexFor(chapter,routes),quote=String(row.quote||''),tokens=eventTokens(row,index);
+ const hits=[...new Set(index.places)].filter(w=>w&&quote.includes(w)&&(w.length>1||tokens.has(w)));
+ return hits.filter(w=>!hits.some(longer=>longer!==w&&longer.includes(w))).sort((a,b)=>quote.indexOf(a)-quote.indexOf(b));
+}
 function priorPlace(row,index,quote){
  const event=row.source_event||{},units=index.rows;let start=Number(event.unit);
  if(!Number.isFinite(start)){const i=units.findIndex(r=>String(r.unit.text||'').includes(quote));if(i<0)return '';start=units[i].id;}
@@ -52,7 +57,12 @@ function worldFor(role,space,location,row,index){
 }
 function groups(row,chapter,routes){
  const index=indexFor(chapter,routes),quote=String(row.quote||''),tokens=eventTokens(row,index),spaces=[...index.spaces].filter(w=>tokens.has(w)),places=contextPlaces(tokens,index),event=row.source_event||{},review=row.endpoint_review||event.endpoint_review||{};
- const valid=w=>w&&index.lex.words.has(w)&&tokens.has(w)?w:'';
+ const valid=w=>{
+  if(w&&index.lex.words.has(w)&&tokens.has(w))return w;
+  const hits=index.places.filter(p=>p&&String(w||'').includes(p)&&index.lex.words.has(p)&&tokens.has(p));
+  const longest=[...new Set(hits)].filter(p=>!hits.some(other=>other!==p&&other.includes(p)));
+  return longest.length===1?longest[0]:'';
+ };
  const raw={from:row.from_space,to:row.to_space};
  const endpoint={from:valid(raw.from),to:valid(raw.to)};
  const staying=[...new Set(spaces.filter(w=>w!==endpoint.from&&w!==endpoint.to))];
@@ -82,6 +92,7 @@ function groups(row,chapter,routes){
 }
 function values(row,chapter,routes){
  const event=row.source_event||{},groupsValue=groups(row,chapter,routes),review=row.endpoint_review||event.endpoint_review||'';
+ const references=[...new Set([...(row.places||[]),...directPlaces(row,chapter,routes)])];
  const evidenceParts=typeof review==='object'?[review.quote,review.reason].filter(Boolean):[];
  for(const group of groupsValue)if(group.locationSource==='篇内前文最近明确地名（上下文承接）'){
   const index=indexFor(chapter,routes),eventUnit=Number(event.unit),anchor=index.rows.filter(r=>(!Number.isFinite(eventUnit)||r.id<=eventUnit)&&r.tokens.includes(group.location)).slice(-1)[0];
@@ -89,7 +100,7 @@ function values(row,chapter,routes){
  }
  for(const group of groupsValue)if(group.accessSource)evidenceParts.push('使用方式推定：原文空间词「'+group.word+'」按其明确用途归为'+group.access);
  const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'空间词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
- return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,(row.places||[]).join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
+ return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,references.join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
 }
-const api={headers,groups,values};if(typeof module!=='undefined')module.exports=api;else root.GhostPathColumns=api;
+const api={headers,groups,values,directPlaces};if(typeof module!=='undefined')module.exports=api;else root.GhostPathColumns=api;
 })(globalThis);
