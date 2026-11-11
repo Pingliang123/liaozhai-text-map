@@ -18,7 +18,7 @@ function eventTokens(row,index){
 function contextPlaces(tokens,index){return [...new Set(index.places)].filter(word=>tokens.has(word));}
 function priorPlace(row,index,quote){
  const event=row.source_event||{},units=index.rows;let start=Number(event.unit);
- if(!Number.isFinite(start)){const i=units.findIndex(r=>String(r.unit.text||'').includes(quote));start=i<0?Infinity:units[i].id;}
+ if(!Number.isFinite(start)){const i=units.findIndex(r=>String(r.unit.text||'').includes(quote));if(i<0)return '';start=units[i].id;}
  const prior=units.filter(r=>r.id<=start).reverse();
  for(const r of prior){const found=[...new Set(r.tokens.filter(t=>index.places.includes(t)))];if(found.length===1)return found[0];if(found.length>1)return '';}
  return '';
@@ -31,6 +31,10 @@ function nearestPlace(space,places,quote){
  return ranked.length===1||ranked[0].distance<ranked[1].distance?ranked[0].word:'';
 }
 function escapeRegExp(value){return value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function inferredAccess(word){
+ const categories=word.split('、').map(w=>/^(卧室|寝室|闺房|闺中|寝处|卧榻|床上|床下|榻上)$/u.test(w)?'私人':/^(官署|府廨|公堂|衙门|街市|市集|大街)$/u.test(w)?'公共':/^(旷野|郊野|山谷|深山|幽谷|荒野|林中|野外)$/u.test(w)?'开放自然':'');
+ return categories.length&&categories.every(c=>c&&c===categories[0])?categories[0]:'';
+}
 function worldFor(role,space,location,row,index){
  const event=row.source_event||{},review=row.endpoint_review||event.endpoint_review||{},quote=String(row.quote||''),prefix=role==='stay'?'space':role;
  const chapterRealms=[...new Set(index.realmEvidence.map(e=>e.realm).filter(realm=>REALMS.has(realm)))];
@@ -64,24 +68,26 @@ function groups(row,chapter,routes){
   const chapterRealms=[...new Set(index.realmEvidence.map(e=>e.realm).filter(realm=>REALMS.has(realm)))],stepRealm=role==='stay'?(row.has_movement?(event.space_realm==='异境'&&chapterRealms.length===1?'异境':''):(event.space_realm||row.classification?.realm)):'',rawRealm=event[prefix+'_realm']||review[prefix+'_realm']||stepRealm;
   const evidencedRealm=word?worldFor(role,subject,'',row,index):'';
   let candidateLocation=!word?'':role==='stay'?staying.map(w=>nearestPlace(w,places,quote)).filter(Boolean).filter((w,i,a)=>a.indexOf(w)===i).join('、'):nearestPlace(word,places,quote),locationSource=candidateLocation?'同句原文':'';
-  // In chapters 21–470, carry forward the latest unambiguous place stated in the source.
+  // In chapters 1–491, carry forward the latest unambiguous place stated in the source.
   // Ambiguous place mentions and explicitly otherworldly endpoints stay blank.
   const chapterId=Number(row.chapter_id);
-  if(word&&!candidateLocation&&chapterId>=20&&chapterId<470&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
+  if(word&&!candidateLocation&&chapterId>=0&&chapterId<491&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
    const inherited=priorPlace(row,index,quote);if(inherited){candidateLocation=inherited;locationSource='篇内前文最近明确地名（上下文承接）';}
   }
   const location=(rawRealm==='异境'&&!evidencedRealm||['天界','地界'].includes(evidencedRealm)&&candidateLocation!==subject)?'':candidateLocation;
   const realm=word?evidencedRealm||worldFor(role,subject,location,row,index):'';
-  return {word,access:['私人','开放自然','公共','混合'].includes(access)?access:'',location,locationSource:location?locationSource:'',realm};
+  const savedAccess=['私人','开放自然','公共','混合'].includes(access)?access:'',fallback=word&&!savedAccess?inferredAccess(word):'';
+  return {word,access:savedAccess||fallback,accessSource:fallback?'按原文空间词用途推定':'',location,locationSource:location?locationSource:'',realm};
  });
 }
 function values(row,chapter,routes){
  const event=row.source_event||{},groupsValue=groups(row,chapter,routes),review=row.endpoint_review||event.endpoint_review||'';
  const evidenceParts=typeof review==='object'?[review.quote,review.reason].filter(Boolean):[];
  for(const group of groupsValue)if(group.locationSource==='篇内前文最近明确地名（上下文承接）'){
-  const index=indexFor(chapter,routes),anchor=index.rows.find(r=>r.tokens.includes(group.location));
+  const index=indexFor(chapter,routes),eventUnit=Number(event.unit),anchor=index.rows.filter(r=>(!Number.isFinite(eventUnit)||r.id<=eventUnit)&&r.tokens.includes(group.location)).slice(-1)[0];
   if(anchor)evidenceParts.push('所在地点篇内依据（前文原句）：'+anchor.unit.text);
  }
+ for(const group of groupsValue)if(group.accessSource)evidenceParts.push('使用方式推定：原文空间词「'+group.word+'」按其明确用途归为'+group.access);
  const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'空间词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
  return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,(row.places||[]).join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
 }
