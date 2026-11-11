@@ -64,10 +64,10 @@ function groups(row,chapter,routes){
   const chapterRealms=[...new Set(index.realmEvidence.map(e=>e.realm).filter(realm=>REALMS.has(realm)))],stepRealm=role==='stay'?(row.has_movement?(event.space_realm==='异境'&&chapterRealms.length===1?'异境':''):(event.space_realm||row.classification?.realm)):'',rawRealm=event[prefix+'_realm']||review[prefix+'_realm']||stepRealm;
   const evidencedRealm=word?worldFor(role,subject,'',row,index):'';
   let candidateLocation=!word?'':role==='stay'?staying.map(w=>nearestPlace(w,places,quote)).filter(Boolean).filter((w,i,a)=>a.indexOf(w)===i).join('、'):nearestPlace(word,places,quote),locationSource=candidateLocation?'同句原文':'';
-  // In chapters 21–170, carry forward the latest unambiguous place stated in the source.
+  // In chapters 21–270, carry forward the latest unambiguous place stated in the source.
   // Ambiguous place mentions and explicitly otherworldly endpoints stay blank.
   const chapterId=Number(row.chapter_id);
-  if(word&&!candidateLocation&&chapterId>=20&&chapterId<170&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
+  if(word&&!candidateLocation&&chapterId>=20&&chapterId<270&&rawRealm!=='异境'&&!['天界','地界'].includes(evidencedRealm)){
    const inherited=priorPlace(row,index,quote);if(inherited){candidateLocation=inherited;locationSource='篇内前文最近明确地名（上下文承接）';}
   }
   const location=(rawRealm==='异境'&&!evidencedRealm||['天界','地界'].includes(evidencedRealm)&&candidateLocation!==subject)?'':candidateLocation;

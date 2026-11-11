@@ -17,12 +17,12 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
   events.forEach((event,i)=>{const row={...event,chapter_id:id,chapter:chapter.chapter,step:i+1,source_event:event,endpoint_review:event.endpoint_review,has_movement:event.transition_kind==='movement'};
    const order=[id,i+1];if(order[0]<previous[0]||(order[0]===previous[0]&&order[1]<=previous[1]))throw new Error('路徑步驟順序錯誤');previous=order;
    const values=C.values(row,chapter,R);if(values.length!==C.headers.length)throw new Error('欄位數不一致：'+chapter.chapter+' 第'+(i+1)+'步');
-   if(id>=20&&id<170)inferredLocations+=C.groups(row,chapter,R).filter(group=>group.locationSource==='篇内前文最近明确地名（上下文承接）').length;
+   if(id>=20&&id<270)inferredLocations+=C.groups(row,chapter,R).filter(group=>group.locationSource==='篇内前文最近明确地名（上下文承接）').length;
    if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(values);
   });
  }
  fs.mkdirSync(path.dirname(outputPath),{recursive:true});fs.writeFileSync(outputPath,toCsv(matrix),'utf8');
  return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations};
 }
-if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇；第21–170篇篇內推定所在地點 '+result.inferredLocations+' 項：'+result.outputPath);}
+if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇；第21–270篇篇內推定所在地點 '+result.inferredLocations+' 項：'+result.outputPath);}
 module.exports={csvCell,toCsv,exportCsv};
