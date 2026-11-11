@@ -1,8 +1,8 @@
 {
-  "input": "reports\\聊齋空間路徑_整篇場景承接補充.csv",
+  "input": "reports\\聊齋空間路徑_逐篇核讀前三篇.csv",
   "chapters": 491,
   "steps": 8461,
-  "occurrences": 5338,
+  "occurrences": 5379,
   "uniqueChapterWords": 2800,
   "missingFromText": 0,
   "missingFromTokens": 0
