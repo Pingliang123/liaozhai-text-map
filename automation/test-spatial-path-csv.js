@@ -1,6 +1,12 @@
 'use strict';
 const assert=require('node:assert/strict'),C=require('../assets/path-columns'),E=require('./export-spatial-paths');
 const A=require('./audit-exported-spaces');
+const S=require('./supplement-source-steps');
+const uncovered={chapter_id:0,source_units:[{unit:1,text:'入卧室。',tokens:['入','卧室','。']}],space_words:['卧室'],places:[],people:[]};
+assert.equal(S.supplement(uncovered,[])[0].to_space,'卧室');
+assert.equal(S.supplement(uncovered,[{unit:1,quote:'入卧室。'}]).length,0,'已覆盖的词项不能重复补步');
+const mention={...uncovered,source_units:[{unit:1,text:'卧室寂静。',tokens:['卧室','寂静','。']}]};
+assert.equal(S.supplement(mention,[])[0].source_roles.stay,'','空间描写不能凭空变成人物停留');
 assert.deepEqual(A.parseCsv('\ufeffa,b\r\n"含,逗号","引号""及\n换行"\r\n'),[['a','b'],['含,逗号','引号"及\n换行']]);
 assert.equal(E.csvCell('plain'),'plain');
 assert.equal(E.csvCell('有,逗號'),'"有,逗號"');
@@ -19,6 +25,6 @@ const csv=E.toCsv([C.headers,['1','《測試》','原文「室中」,见']]);
 assert.ok(csv.startsWith('\ufeff篇号,篇名,'),'CSV 使用 UTF-8 BOM，便於 Excel 正確讀取中文');
 assert.ok(csv.includes('\r\n1,《測試》,"原文「室中」,见"\r\n'));
 const result=E.exportCsv(undefined,require('node:os').tmpdir()+'\\liaozhai-spatial-paths-test.csv');
-assert.equal(result.chapters,491);assert.equal(result.steps,7222);assert.equal(result.columns,C.headers.length);assert.ok(result.inferredLocations>0,'第1–491篇应补入有前文原文锚点支持的所在地点');
-const fs=require('node:fs');try{const body=fs.readFileSync(result.outputPath,'utf8');assert.ok(body.startsWith('\ufeff'));assert.ok(body.includes('空间另据同篇场景承接推定'));assert.ok(body.includes('及同篇原文推定（单元'));assert.equal(body.split('\r\n').length-2,7222);}finally{fs.rmSync(result.outputPath,{force:true});}
-console.log('PASS 全書路徑 CSV 編碼、轉義、欄數及 7,222 步匯出核對');
+assert.equal(result.chapters,491);assert.equal(result.steps,7222+result.addedSteps);assert.equal(result.columns,C.headers.length);assert.ok(result.inferredLocations>0,'第1–491篇应补入有前文原文锚点支持的所在地点');
+const fs=require('node:fs');try{const body=fs.readFileSync(result.outputPath,'utf8');assert.ok(body.startsWith('\ufeff'));assert.ok(body.includes('空间另据同篇场景承接推定'));assert.ok(body.includes('及同篇原文推定（单元'));assert.equal(body.split('\r\n').length-2,result.steps);}finally{fs.rmSync(result.outputPath,{force:true});}
+console.log('PASS 全書路徑 CSV 編碼、轉義、欄數及 原有及新增步驟匯出核對');

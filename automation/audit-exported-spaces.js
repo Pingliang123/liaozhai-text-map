@@ -27,8 +27,8 @@ function audit(input='reports/聊齋空間路徑_場景核對補全.csv'){
   }
  }
  const headings=['篇号','篇名','步骤','字段','空间词','同篇全文出现','完整分词出现','原文单元','原文证据'];
- fs.writeFileSync('reports/匯出空間詞全文核對.csv',E.toCsv([headings,...out]));
- fs.writeFileSync('reports/匯出空間詞全文核對異常.csv',E.toCsv([headings,...issues]));
+ fs.writeFileSync('reports/匯出空間詞全文核對.csv',E.toCsv([headings,...out]).replace(/\r\n/gu,'\n'));
+ fs.writeFileSync('reports/匯出空間詞全文核對異常.csv',E.toCsv([headings,...issues]).replace(/\r\n/gu,'\n'));
  const summary={input,chapters:chapters.size,steps:rows.length,occurrences:out.length,uniqueChapterWords:new Set(out.map(r=>r[0]+'\t'+r[4])).size,missingFromText:issues.filter(r=>r[5]==='否').length,missingFromTokens:issues.filter(r=>r[6]==='否').length};
  fs.writeFileSync('reports/匯出空間詞全文核對.json',JSON.stringify(summary,null,2)+'\n');console.log(JSON.stringify(summary));
  return issues;

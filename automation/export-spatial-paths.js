@@ -1,5 +1,6 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const S=require('./supplement-source-steps');
 const root=path.resolve(__dirname,'..'),M=require('./ghost_map_model'),R=require('../assets/spatial-routes'),C=require('../assets/path-columns');
 function csvCell(value){const text=String(value??'');return /[",\r\n]/u.test(text)?'"'+text.replace(/"/gu,'""')+'"':text;}
 function toCsv(rows){return '\ufeff'+rows.map(row=>row.map(csvCell).join(',')).join('\r\n')+'\r\n';}
@@ -71,19 +72,27 @@ function completeScene(values,row,chapter){
 }
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
- const narrative=loadNarrative(),places=model.places(),matrix=[C.headers];let previous=[-1,-1],inferredLocations=0;
- for(const id of model.ids){const chapter=model.view(id),events=narrative.rows(model,[chapter],places);
+ const narrative=loadNarrative(),places=model.places(),matrix=[C.headers],additions=[];let previous=[-1,-1],inferredLocations=0;
+ for(const id of model.ids){const chapter=model.view(id),existing=narrative.rows(model,[chapter],places),extra=S.supplement(chapter,existing),events=[...existing,...extra].sort((a,b)=>Number(a.unit)-Number(b.unit));
+  for(const e of extra)additions.push([id+1,chapter.chapter,e.unit,e.transition_kind,e.missing_terms.join('、'),e.from_space,e.to_space,e.source_roles.stay,e.quote,e.step_id]);
   events.forEach((event,i)=>{const row={...event,chapter_id:id,chapter:chapter.chapter,step:i+1,source_event:event,endpoint_review:event.endpoint_review,has_movement:event.transition_kind==='movement'};
    const order=[id,i+1];if(order[0]<previous[0]||(order[0]===previous[0]&&order[1]<=previous[1]))throw new Error('路徑步驟順序錯誤');previous=order;
    const values=C.values(row,chapter,R);if(values.length!==C.headers.length)throw new Error('欄位數不一致：'+chapter.chapter+' 第'+(i+1)+'步');
    if(id>=0&&id<491)inferredLocations+=C.groups(row,chapter,R).filter(group=>group.locationSource==='篇内前文最近明确地名（上下文承接）').length;
-   completeContext(values,row,chapter);
-   completeScene(values,row,chapter);
+   if(event.source_supplement){
+    const at=name=>C.headers.indexOf(name);
+    for(const [role,key] of [['出发','from'],['到达','to'],['停留','stay']]){
+     const term=event.source_roles[key];values[at(role+'空间')]=term;
+     if(!term)for(const suffix of ['使用方式','空间所在地点','世界分类'])values[at(role+suffix)]='';
+    }
+    values[at('分类依据')]='全文补录：该原文单元存在未被已有引句覆盖的空间词。出发、到达、停留按原句动词与词项的直接搭配提取；仅提及空间的步骤在场景栏列词。';
+    values[at('双端证据')]='原文单元'+event.unit+'「'+event.quote+'」；漏收词项「'+event.missing_terms.join('、')+'」';
+   }else{completeContext(values,row,chapter);completeScene(values,row,chapter);}
    if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(values);
   });
  }
  fs.mkdirSync(path.dirname(outputPath),{recursive:true});fs.writeFileSync(outputPath,toCsv(matrix),'utf8');
- return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations};
+ return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations,addedSteps:additions.length,additions};
 }
-if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);console.log('已匯出 '+result.steps+' 步、'+result.columns+' 欄、'+result.chapters+' 篇；第1–491篇篇內推定所在地點 '+result.inferredLocations+' 項：'+result.outputPath);}
+if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);fs.writeFileSync(result.outputPath.replace(/\.csv$/u,'_新增步骤.csv'),toCsv([['篇号','篇名','原文单元','步骤类型','原遗漏词项','出发空间','到达空间','停留空间','原文','稳定步骤标识'],...result.additions]));console.log(JSON.stringify({outputPath:result.outputPath,steps:result.steps,addedSteps:result.addedSteps,chapters:result.chapters}));}
 module.exports={csvCell,toCsv,exportCsv,completeScene};
