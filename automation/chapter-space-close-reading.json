@@ -1,0 +1,908 @@
+{
+  "version": 1,
+  "reviewed_chapters": [
+    0,
+    1,
+    2
+  ],
+  "reviews": [
+    {
+      "chapter_id": 0,
+      "unit_start": 0,
+      "unit_end": 3,
+      "roles": {},
+      "reason": "病卧处未具名。原文河南为待授城隍任所，长山为张生籍贯，均不能作为宋公病卧处。",
+      "evidence_units": [
+        0,
+        1,
+        10,
+        17
+      ],
+      "type": "空间提及"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 4,
+      "unit_end": 4,
+      "roles": {
+        "from": {
+          "space": "路",
+          "access": "开放自然",
+          "realm": "地界",
+          "place": ""
+        },
+        "to": {
+          "space": "城郭",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        }
+      },
+      "reason": "乘马至城郭。结合已卒三日、诸神考选及阳算，将魂赴试空间归地界，属于三界解释性推定。",
+      "evidence_units": [
+        4,
+        10,
+        14,
+        19
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 5,
+      "unit_end": 5,
+      "roles": {
+        "from": {
+          "space": "城郭",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        },
+        "to": {
+          "space": "府廨",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        },
+        "stay": {
+          "space": "宫室",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        }
+      },
+      "reason": "由城郭入府廨，宫室属于同一考选建筑。地界为魂赴试语境推定，地理所在未具名。",
+      "evidence_units": [
+        4,
+        5,
+        19
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 6,
+      "unit_end": 9,
+      "roles": {
+        "stay": {
+          "space": "簷下",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        }
+      },
+      "reason": "宋公与秀才并坐簷下应试。呈殿上指文卷呈递，原文尚未说人物登殿，故保留簷下停留。",
+      "evidence_units": [
+        6,
+        7,
+        8
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 10,
+      "unit_end": 16,
+      "roles": {
+        "from": {
+          "space": "簷下",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        },
+        "to": {
+          "space": "殿上",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        },
+        "stay": {
+          "space": "殿上",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        }
+      },
+      "reason": "诸神召公上后议任职和母寿，承接殿上场景。河南是未赴任的拟授职所在地。",
+      "evidence_units": [
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 17,
+      "unit_end": 17,
+      "roles": {
+        "from": {
+          "space": "殿上",
+          "access": "公共",
+          "realm": "地界",
+          "place": ""
+        },
+        "to": {
+          "space": "郊野",
+          "access": "开放自然",
+          "realm": "地界",
+          "place": ""
+        },
+        "stay": {
+          "space": "郊野",
+          "access": "开放自然",
+          "realm": "地界",
+          "place": ""
+        }
+      },
+      "reason": "二公由殿上下来，张生送至郊野并赠别。长山仅为张生自报籍贯。",
+      "evidence_units": [
+        17
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 18,
+      "unit_end": 19,
+      "roles": {
+        "from": {
+          "space": "郊野",
+          "access": "开放自然",
+          "realm": "地界",
+          "place": ""
+        },
+        "to": {
+          "space": "里",
+          "access": "混合",
+          "realm": "人间",
+          "place": ""
+        },
+        "stay": {
+          "space": "里",
+          "access": "混合",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "自郊野别去、抵里而梦寤，写还魂返回乡里。里没有可对应的具名地名。",
+      "evidence_units": [
+        17,
+        18,
+        19
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 20,
+      "unit_end": 21,
+      "roles": {
+        "from": {
+          "space": "棺中",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "母闻棺中呻吟并扶出，能确认棺中为出发容器，扶出后的具体房舍未命名。长山为询访张生之地。",
+      "evidence_units": [
+        20,
+        21
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 22,
+      "unit_end": 22,
+      "roles": {
+        "to": {
+          "space": "室",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        },
+        "stay": {
+          "space": "室",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "九年后入室而殁，室为宋公生前所在房舍，没有具名地理对应。",
+      "evidence_units": [
+        22
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 0,
+      "unit_start": 23,
+      "unit_end": 24,
+      "roles": {
+        "from": {
+          "space": "门内",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        },
+        "to": {
+          "space": "堂",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        },
+        "stay": {
+          "space": "堂",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "岳家在城中西门内，宋公登岳家之堂行礼。人物为神而显现于人间岳家，城中未具名。堂是原文完整分词，补录为空间。",
+      "evidence_units": [
+        23
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 25,
+      "unit_end": 31,
+      "roles": {
+        "stay": {
+          "space": "屋",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "静修的屋未在篇首先命名，按同一连续事件后文扣门、绕屋推定为屋中修习。此项属整篇上下文推定。",
+      "evidence_units": [
+        25,
+        27,
+        29,
+        35
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 32,
+      "unit_end": 33,
+      "roles": {
+        "from": {
+          "space": "耳",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        },
+        "to": {
+          "space": "地上",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        },
+        "stay": {
+          "space": "地上",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "小人自耳中出并旋转地上。耳为身体容器空间，原文分词是耳与中，故采用原词耳。夜叉是形貌比喻，场所仍属人间。",
+      "evidence_units": [
+        32,
+        33
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 34,
+      "unit_end": 34,
+      "roles": {
+        "stay": {
+          "space": "地上",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "凝神观察承接小人在地上旋转。",
+      "evidence_units": [
+        33,
+        34
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 35,
+      "unit_end": 35,
+      "roles": {
+        "stay": {
+          "space": "屋、门",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "同一场景含邻人扣门、小人绕屋及谭静观。屋、门均为原文完整词项，各人物的相对位置须据原句区分。",
+      "evidence_units": [
+        35
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 36,
+      "unit_end": 36,
+      "roles": {
+        "stay": {
+          "space": "屋",
+          "access": "私人",
+          "realm": "人间",
+          "place": ""
+        }
+      },
+      "reason": "谭在小人消失后即得颠疾，未写离屋，按本场景承接推定。",
+      "evidence_units": [
+        35,
+        36
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 1,
+      "unit_start": 37,
+      "unit_end": 37,
+      "roles": {},
+      "reason": "医药半年属于时间概括，全文没有说明半年中的治疗或居住地点。",
+      "evidence_units": [
+        37
+      ],
+      "type": "情节转换"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 38,
+      "unit_end": 38,
+      "roles": {},
+      "reason": "开篇交代阳信及蔡店，属于籍贯与地域介绍，没有实际停留动作。",
+      "evidence_units": [
+        38
+      ],
+      "type": "空间提及"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 39,
+      "unit_end": 44,
+      "roles": {
+        "stay": {
+          "space": "临路店",
+          "access": "公共",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "父子在蔡店设临路店，四客来投宿并请求收留。店的商业接待空间归公共，尚未移动至停尸庐。",
+      "evidence_units": [
+        38,
+        39,
+        40,
+        41,
+        44
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 45,
+      "unit_end": 45,
+      "roles": {
+        "stay": {
+          "space": "室中",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "此处叙述子妇停尸室中，属于停尸空间，区别于后文供客人睡卧的复室。",
+      "evidence_units": [
+        45
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 46,
+      "unit_end": 46,
+      "roles": {
+        "from": {
+          "space": "临路店",
+          "access": "公共",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "庐",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "翁自客店导四客穿衢前往停尸处，后句明确入其庐。临路店与庐同属蔡店，是上下文定位推定。",
+      "evidence_units": [
+        39,
+        46,
+        47
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 47,
+      "unit_end": 48,
+      "roles": {
+        "to": {
+          "space": "庐",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "stay": {
+          "space": "庐",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "入庐见灯案及覆盖逝者的帐衣，尚为庐的停尸部分。",
+      "evidence_units": [
+        47,
+        48
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 49,
+      "unit_end": 51,
+      "roles": {
+        "stay": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "寝所在复室中有连榻，四客就枕。结合女尸随后渐入卧室，卧室与此寝所对应，属篇内同指推定。",
+      "evidence_units": [
+        49,
+        50,
+        53
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 52,
+      "unit_end": 52,
+      "roles": {
+        "stay": {
+          "space": "灵前",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "女尸在停尸空间揭衾起，灵前为本句明示空间。",
+      "evidence_units": [
+        52
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 53,
+      "unit_end": 53,
+      "roles": {
+        "from": {
+          "space": "室中",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "stay": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "尸从停尸的外部室中下床，渐入客人卧室。两处室中不可合为同一房间。",
+      "evidence_units": [
+        45,
+        49,
+        52,
+        53
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 54,
+      "unit_end": 57,
+      "roles": {
+        "stay": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "女尸入卧室后逐客吹气，客人覆首闭息，均承接客人卧室。",
+      "evidence_units": [
+        53,
+        55,
+        56,
+        57
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 58,
+      "unit_end": 58,
+      "roles": {
+        "from": {
+          "space": "房",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "室中",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "女尸出客人房，听得纸衾声，推定回停尸室中。房与卧室在该句同指，保留原文用词。",
+      "evidence_units": [
+        45,
+        48,
+        53,
+        58
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 59,
+      "unit_end": 66,
+      "roles": {
+        "stay": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "此组从尚醒客人的观察视角展开，客仍在卧室，女尸在其间往返。没有把客的窥视写成离开卧室。",
+      "evidence_units": [
+        59,
+        60,
+        63,
+        64,
+        65,
+        66
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 67,
+      "unit_end": 70,
+      "roles": {
+        "from": {
+          "space": "卧室",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "村中",
+          "access": "公共",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "客著裤奔出、拔关而出，尸驰从之，后句明确奔入村中。以村中作到达空间属连续逃跑过程推定。",
+      "evidence_units": [
+        67,
+        69,
+        70,
+        71
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 71,
+      "unit_end": 73,
+      "roles": {
+        "from": {
+          "space": "村中",
+          "access": "公共",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "东郊",
+          "access": "开放自然",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "望邑城路窜去写朝县城方向逃跑，后句才至东郊。原文没有说已经到达邑城，故不用邑城作实际到达点。",
+      "evidence_units": [
+        71,
+        73,
+        74
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 74,
+      "unit_end": 77,
+      "roles": {
+        "from": {
+          "space": "村中",
+          "access": "公共",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "东郊",
+          "access": "开放自然",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "stay": {
+          "space": "山门",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "至东郊见兰若并挝山门，道人未纳，客停留寺门外。东郊以阳信县城为参照，蔡店是此前村落，不扩张为县城东郊所在地名。",
+      "evidence_units": [
+        38,
+        73,
+        74,
+        75
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 78,
+      "unit_end": 86,
+      "roles": {
+        "stay": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "客与尸隔白杨周旋，白杨位于兰若门外。以门外概括树旁场景，仍为人间。",
+      "evidence_units": [
+        74,
+        78,
+        83,
+        84,
+        86
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 87,
+      "unit_end": 88,
+      "roles": {
+        "from": {
+          "space": "兰若",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "to": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "stay": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "道人从寺中出，见倒卧客人于寺门外。出发兰若由原文木鱼声、道人不纳和随后负入共同支持。",
+      "evidence_units": [
+        74,
+        75,
+        87,
+        89
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 89,
+      "unit_end": 90,
+      "roles": {
+        "from": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "to": {
+          "space": "兰若",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "stay": {
+          "space": "兰若",
+          "access": "混合",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "道人负客入寺，终夜始苏，饮汤问状在兰若内承接。寺为宗教公共场所而临时用于救治留宿，使用方式按混合推定。",
+      "evidence_units": [
+        87,
+        89,
+        90
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 91,
+      "unit_end": 97,
+      "roles": {
+        "stay": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "道人见树上僵女，县宰亲来质验及拔女手均承接寺门外白杨处。没有原文支持转至官署。",
+      "evidence_units": [
+        78,
+        86,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "type": "场景标注"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 98,
+      "unit_end": 99,
+      "roles": {
+        "from": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        },
+        "to": {
+          "space": "家",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        }
+      },
+      "reason": "县宰在寺外遣役探翁家。翁家为蔡店客店家庭，去向依据前文地域及本句家。",
+      "evidence_units": [
+        38,
+        39,
+        93,
+        98
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 100,
+      "unit_end": 100,
+      "roles": {
+        "from": {
+          "space": "家",
+          "access": "私人",
+          "realm": "人间",
+          "place": "蔡店"
+        },
+        "to": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "翁随役前往寺外并舁尸归。该单元含往返两段，本记录只写随役赴寺，舁尸归的反向行程在依据中保留。",
+      "evidence_units": [
+        98,
+        99,
+        100
+      ],
+      "type": "人物移动"
+    },
+    {
+      "chapter_id": 2,
+      "unit_start": 101,
+      "unit_end": 102,
+      "roles": {
+        "stay": {
+          "space": "门外",
+          "access": "公共",
+          "realm": "人间",
+          "place": "阳信"
+        }
+      },
+      "reason": "客向宰哭告及领牒的现场未写转场，按县宰寺外质验后的连续情节推定。归乡目的地没有具名，不虚指蔡店或阳信为客人故乡。",
+      "evidence_units": [
+        93,
+        98,
+        101,
+        102
+      ],
+      "type": "场景标注"
+    }
+  ]
+}
