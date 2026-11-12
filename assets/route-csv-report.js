@@ -52,7 +52,18 @@
   const metric=select('统计方式',[['count','标注次数'],['chapters','涉及篇数']]);
   const status=el('p'),charts=el('div'),evidence=el('div');charts.className='report-charts';
   host.append(controls,status,charts,evidence);
+  const download=el('button','导出空间路径 CSV');
+  download.disabled=true;controls.append(download);
+  const full=el('a','下载全书空间路径 CSV');full.href=url;full.download='聊斋空间路径.csv';controls.append(full);
   let rows=null,loading=false;
+  download.onclick=()=>{
+   if(!rows)return;
+   const filtered=rows.filter(row=>!chapter.value||row.篇号===chapter.value);
+   const headers=Object.keys(rows[0]||{});
+   const cell=value=>'"'+String(value??'').replace(/^[=+@-]/u,"'$&").replace(/"/gu,'""')+'"';
+   const csv='\ufeff'+[headers,...filtered.map(row=>headers.map(key=>row[key]))].map(row=>row.map(cell).join(',')).join('\r\n');
+   const link=el('a');link.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));link.download='聊斋空间路径.csv';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);
+  };
   function show(group){
    evidence.replaceChildren(el('h3',group.label));
    const unique=[...new Map(group.entries.map(item=>[item.row.篇号+'/'+item.row.步骤+'/'+item.role,item])).values()];
@@ -63,6 +74,9 @@
      const item=el('details'),heading=el('summary','《'+row.篇名+'》第'+row.步骤+'步 · '+entryRole);
      item.append(heading,el('p',row.人物||'未填写人物'),el('blockquote',row.原文),el('p',row.双端证据));
      const button=el('button','打开篇目');button.onclick=()=>open(Number(row.篇号)-1);item.append(button);evidence.insertBefore(item,more);
+     const network=el('a','查看本篇空间网络');
+     network.href='assets/research-lab/?tab=relations&mode=paths&chapter='+(Number(row.篇号)-1);
+     item.append(network);
     }
     cursor+=20;more.hidden=cursor>=unique.length;
    }
@@ -94,6 +108,7 @@
    try{
     const response=await fetch(url);if(!response.ok)throw Error('HTTP '+response.status);
     rows=parse(await response.text());
+    download.disabled=false;
     const chapters=[...new Map(rows.map(row=>[row.篇号,row.篇名])).entries()];
     for(const [number,title] of chapters){const option=el('option',number+' '+title);option.value=number;chapter.append(option);}
     render();

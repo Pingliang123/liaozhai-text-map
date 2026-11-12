@@ -44,9 +44,31 @@ function mount(container,chapters,options={}){
  for(const c of chapters){const o=el('option',c.title);o.value=String(c.id);pick.append(o);}
  const params=new URLSearchParams(root.location?.search||''),requested=params.get('chapter')||params.get('scene'),place=params.get('place');if(chapters.some(c=>String(c.id)===requested))pick.value=requested;else if(place){const c=chapters.find(c=>c.places.some(w=>(c.place_aliases?.[w]||w)===place));if(c)pick.value=String(c.id);}
  label.append(pick);container.append(label,out);
+ let csvRows=null;
+ const routeStatus=el('p','正在关联空间路径资料…');container.append(routeStatus);
+ if(root.GhostRouteCsvReport&&root.GhostCsvRouteNetwork)fetch('../../reports/聊齋空間路徑_精簡版.csv').then(response=>{
+  if(!response.ok)throw Error('HTTP '+response.status);return response.text();
+ }).then(text=>{
+  csvRows=root.GhostRouteCsvReport.parse(text);
+  if(container.isConnected!==false){routeStatus.textContent='空间路径资料已关联';draw();}
+ }).catch(error=>{routeStatus.textContent='路径资料读取失败：'+error.message;});
  function draw(){
   out.replaceChildren();const c=chapters.find(c=>String(c.id)===pick.value);if(!c){out.append(el('p','当前筛选范围没有篇目。'));return;}
-  const graph=build(c,options);out.append(el('h3','《'+c.title+'》'+(options.paths?'人物路径':'空间网络')));
+  let graph=build(c,options);
+  if(csvRows)graph=root.GhostCsvRouteNetwork.combine(build(c,{...options,paths:false}),c,csvRows,options.paths);
+  out.append(el('h3','《'+c.title+'》'+(options.paths?'人物路径':'空间网络')));
+  if(csvRows){
+   const download=el('a','下载全书空间路径 CSV');download.href='../../reports/聊齋空間路徑_精簡版.csv';download.download='聊斋空间路径.csv';out.append(download);
+   const detail=el('details');detail.append(el('summary','本篇空间路径 · '+graph.csvRows.length+' 步'));
+   detail.ontoggle=()=>{
+    if(!detail.open||detail.dataset.loaded)return;detail.dataset.loaded='1';
+    for(const row of graph.csvRows){
+     const item=el('details');item.append(el('summary','第'+row.步骤+'步 · '+row.人物));
+     for(const role of ['出发','到达','停留'])if(row[role+'空间'])item.append(el('p',role+' '+row[role+'空间']+' · '+(row[role+'空间所在地点']||'所在地未填写')+' · '+(row[role+'世界分类']||'世界未填写')));
+     item.append(el('blockquote',row.原文),el('p',row.双端证据));detail.append(item);
+    }
+   };out.append(detail);
+  }
   if(options.paths){const all=el('a','查看本篇全部空间词（'+c.spaces.length+'）');const url=new URL(root.location?.href||'https://pingliang123.github.io/liaozhai-text-map/assets/research-lab/');url.searchParams.set('mode','places');url.searchParams.set('chapter',String(c.id));url.searchParams.delete('scene');all.href=url.href;out.append(all);}
   if(c.token_basis?.includes('未全文对齐'))out.append(el('p','本篇修订分词未与全文对齐，暂用原典词位分词；修订记录保留。'));
   if(c.lexical_omissions?.length){const note=el('details');note.append(el('summary','未对齐分词的词项 · '+c.lexical_omissions.length),el('p',c.lexical_omissions.map(r=>r.word).join('、')),el('p','保留在修订资料中；请在文本与修订中核对分词边界后再进入网络。'));out.append(note);}
@@ -54,7 +76,7 @@ function mount(container,chapters,options={}){
   if(!graph.nodes.length){out.append(el('p','本篇尚无地点或空间词标注。'));return;}
   if(options.paths){
    const complete=el('section');complete.className='chapter-complete-spaces';complete.append(el('h4','全部空间词 · '+c.spaces.length));out.append(complete);
-   root.GhostBookNetwork.mount(complete,[c],()=>{},{graph:build(c),lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',spreadLayout:true,realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'线表示文本关联；下方另列人物移动顺序。'});
+   root.GhostBookNetwork.mount(complete,[c],()=>{},{graph:csvRows?root.GhostCsvRouteNetwork.combine(build(c),c,csvRows,false):build(c),lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',spreadLayout:true,realmColors:true,chapterSpatial:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'线表示文本关联；下方另列人物移动顺序。'});
    const list=el('p','全部空间词：'+[...new Set(c.spaces||[])].join('、'));list.className='chapter-space-list';complete.append(list);
    renderOrdered(out,graph,c,options);
   }

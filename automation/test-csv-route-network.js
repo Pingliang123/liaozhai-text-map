@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {combine}=require('../assets/research-lab/csv-route-network');
+const chapter={id:0,title:'测试',units:[{text:'济南入室至庭。'}],places:['济南'],place_aliases:{}};
+const graph={nodes:[],edges:[],itinerary:[]};
+const row={'篇号':'1','篇名':'测试','步骤':'3','人物':'甲','原文':'济南入室至庭。','步骤类型':'人物移动','出发空间':'室','到达空间':'庭','停留空间':'庭','出发世界分类':'人间','到达世界分类':'人间','停留世界分类':'人间','出发空间所在地点':'济南','到达空间所在地点':'济南','停留空间所在地点':'济南','双端证据':'原文'};
+const actual=combine(graph,chapter,[row],true);
+assert.equal(actual.itinerary[0].order,3);
+assert.equal(actual.edges.filter(e=>e.directed).length,1);
+assert.ok(actual.edges.some(e=>e.relation==='location'));
+assert.equal(combine(graph,chapter,[{...row,原文:'未出现'}],true).edges.length,0);
+assert.equal(combine(graph,chapter,[{...row,到达空间:''}],true).itinerary.length,0);
+assert.equal(combine(graph,chapter,[row],false).edges.filter(e=>e.directed).length,0);
+console.log('PASS CSV路径与网络共用证据、次序、所在地及缺端点处理');
