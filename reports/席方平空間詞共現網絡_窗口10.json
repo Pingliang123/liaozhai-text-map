@@ -1,0 +1,539 @@
+{
+  "method": "10 non-punctuation tokens, occurrence pairs counted once",
+  "window": 10,
+  "seed": 42,
+  "community_algorithm": "networkx.louvain_communities",
+  "nodes": [
+    {
+      "word": "东墀",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "东壁",
+      "frequency": 1,
+      "strength": 2,
+      "community": 3
+    },
+    {
+      "word": "东安",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "东岳",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "冥府",
+      "frequency": 1,
+      "strength": 1,
+      "community": 4
+    },
+    {
+      "word": "冥界",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "北门",
+      "frequency": 1,
+      "strength": 2,
+      "community": 5
+    },
+    {
+      "word": "升堂",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "地下",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "城中",
+      "frequency": 1,
+      "strength": 1,
+      "community": 0
+    },
+    {
+      "word": "堂",
+      "frequency": 2,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "堂上",
+      "frequency": 2,
+      "strength": 1,
+      "community": 1
+    },
+    {
+      "word": "官廨",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "当堂",
+      "frequency": 1,
+      "strength": 1,
+      "community": 3
+    },
+    {
+      "word": "楼阁",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "横路",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "殿",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "狱中",
+      "frequency": 1,
+      "strength": 2,
+      "community": 2
+    },
+    {
+      "word": "狱门",
+      "frequency": 1,
+      "strength": 2,
+      "community": 2
+    },
+    {
+      "word": "簷下",
+      "frequency": 1,
+      "strength": 2,
+      "community": 2
+    },
+    {
+      "word": "西江",
+      "frequency": 1,
+      "strength": 1,
+      "community": 3
+    },
+    {
+      "word": "路侧",
+      "frequency": 1,
+      "strength": 1,
+      "community": 4
+    },
+    {
+      "word": "逆旅",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "途中",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "道左",
+      "frequency": 1,
+      "strength": 0,
+      "community": null
+    },
+    {
+      "word": "郡司",
+      "frequency": 4,
+      "strength": 2,
+      "community": 3
+    },
+    {
+      "word": "门",
+      "frequency": 2,
+      "strength": 3,
+      "community": 4
+    },
+    {
+      "word": "门中",
+      "frequency": 1,
+      "strength": 1,
+      "community": 4
+    },
+    {
+      "word": "门阈",
+      "frequency": 1,
+      "strength": 2,
+      "community": 4
+    },
+    {
+      "word": "阎摩殿",
+      "frequency": 1,
+      "strength": 1,
+      "community": 0
+    },
+    {
+      "word": "阳界",
+      "frequency": 1,
+      "strength": 1,
+      "community": 5
+    },
+    {
+      "word": "阳间",
+      "frequency": 1,
+      "strength": 1,
+      "community": 5
+    },
+    {
+      "word": "阴曹",
+      "frequency": 1,
+      "strength": 2,
+      "community": 5
+    },
+    {
+      "word": "鬼上堂",
+      "frequency": 1,
+      "strength": 1,
+      "community": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "东壁",
+      "target": "西江",
+      "weight": 1
+    },
+    {
+      "source": "东壁",
+      "target": "郡司",
+      "weight": 1
+    },
+    {
+      "source": "冥府",
+      "target": "门",
+      "weight": 1
+    },
+    {
+      "source": "北门",
+      "target": "阳界",
+      "weight": 1
+    },
+    {
+      "source": "北门",
+      "target": "阴曹",
+      "weight": 1
+    },
+    {
+      "source": "城中",
+      "target": "阎摩殿",
+      "weight": 1
+    },
+    {
+      "source": "堂上",
+      "target": "鬼上堂",
+      "weight": 1
+    },
+    {
+      "source": "当堂",
+      "target": "郡司",
+      "weight": 1
+    },
+    {
+      "source": "狱中",
+      "target": "狱门",
+      "weight": 1
+    },
+    {
+      "source": "狱中",
+      "target": "簷下",
+      "weight": 1
+    },
+    {
+      "source": "狱门",
+      "target": "簷下",
+      "weight": 1
+    },
+    {
+      "source": "路侧",
+      "target": "门",
+      "weight": 1
+    },
+    {
+      "source": "门",
+      "target": "门阈",
+      "weight": 1
+    },
+    {
+      "source": "门中",
+      "target": "门阈",
+      "weight": 1
+    },
+    {
+      "source": "阳间",
+      "target": "阴曹",
+      "weight": 1
+    }
+  ],
+  "isolates": [
+    "东墀",
+    "东安",
+    "东岳",
+    "冥界",
+    "升堂",
+    "地下",
+    "堂",
+    "官廨",
+    "楼阁",
+    "横路",
+    "殿",
+    "逆旅",
+    "途中",
+    "道左"
+  ],
+  "evidence": [
+    {
+      "source": "狱中",
+      "target": "狱门",
+      "first": 91,
+      "second": 93,
+      "distance": 2,
+      "first_unit": 24507,
+      "second_unit": 24508,
+      "context": "入城其父已收狱中至狱门遥见父卧簷下似甚狼狈"
+    },
+    {
+      "source": "狱中",
+      "target": "簷下",
+      "first": 91,
+      "second": 95,
+      "distance": 4,
+      "first_unit": 24507,
+      "second_unit": 24508,
+      "context": "入城其父已收狱中至狱门遥见父卧簷下似甚狼狈举目见子潸然涕流"
+    },
+    {
+      "source": "狱门",
+      "target": "簷下",
+      "first": 93,
+      "second": 95,
+      "distance": 2,
+      "first_unit": 24508,
+      "second_unit": 24508,
+      "context": "其父已收狱中至狱门遥见父卧簷下似甚狼狈举目见子潸然涕流"
+    },
+    {
+      "source": "门",
+      "target": "冥府",
+      "first": 200,
+      "second": 207,
+      "distance": 7,
+      "first_unit": 24521,
+      "second_unit": 24522,
+      "context": "押送归家役至门辞去席不肯入遁赴冥府诉郡邑之酷贪"
+    },
+    {
+      "source": "鬼上堂",
+      "target": "堂上",
+      "first": 493,
+      "second": 497,
+      "distance": 4,
+      "first_unit": 24558,
+      "second_unit": 24559,
+      "context": "矣板解两身俱仆鬼上堂大声以报堂上传呼令合身来"
+    },
+    {
+      "source": "阳界",
+      "target": "北门",
+      "first": 563,
+      "second": 566,
+      "distance": 3,
+      "first_unit": 24567,
+      "second_unit": 24568,
+      "context": "讼矣冥王立命送还阳界隶率出北门指示归途反身遂"
+    },
+    {
+      "source": "北门",
+      "target": "阴曹",
+      "first": 566,
+      "second": 574,
+      "distance": 8,
+      "first_unit": 24568,
+      "second_unit": 24569,
+      "context": "王立命送还阳界隶率出北门指示归途反身遂去席念阴曹之暗昧尤甚"
+    },
+    {
+      "source": "阴曹",
+      "target": "阳间",
+      "first": 574,
+      "second": 581,
+      "distance": 7,
+      "first_unit": 24569,
+      "second_unit": 24569,
+      "context": "途反身遂去席念阴曹之暗昧尤甚于阳间奈无路可达"
+    },
+    {
+      "source": "路侧",
+      "target": "门",
+      "first": 741,
+      "second": 751,
+      "distance": 10,
+      "first_unit": 24589,
+      "second_unit": 24591,
+      "context": "席故蹇缓行数步辄憩路侧鬼含怒不敢复言约半日至一村一门半辟鬼引与共坐席便"
+    },
+    {
+      "source": "门",
+      "target": "门阈",
+      "first": 751,
+      "second": 758,
+      "distance": 7,
+      "first_unit": 24591,
+      "second_unit": 24592,
+      "context": "约半日至一村一门半辟鬼引与共坐席便据门阈二鬼乘其不备推入门中"
+    },
+    {
+      "source": "门阈",
+      "target": "门中",
+      "first": 758,
+      "second": 763,
+      "distance": 5,
+      "first_unit": 24592,
+      "second_unit": 24593,
+      "context": "辟鬼引与共坐席便据门阈二鬼乘其不备推入门中惊定自视身已生"
+    },
+    {
+      "source": "郡司",
+      "target": "当堂",
+      "first": 925,
+      "second": 928,
+      "distance": 3,
+      "first_unit": 24607,
+      "second_unit": 24608,
+      "context": "人出则冥王及郡司城隍也当堂对勘席所言"
+    },
+    {
+      "source": "西江",
+      "target": "东壁",
+      "first": 1008,
+      "second": 1015,
+      "distance": 7,
+      "first_unit": 24618,
+      "second_unit": 24619,
+      "context": "蝼蚁之微生可悯当掬西江之水为尔湔肠即烧东壁之床请君入瓮城隍郡司"
+    },
+    {
+      "source": "东壁",
+      "target": "郡司",
+      "first": 1015,
+      "second": 1020,
+      "distance": 5,
+      "first_unit": 24619,
+      "second_unit": 24620,
+      "context": "水为尔湔肠即烧东壁之床请君入瓮城隍郡司为小民父母之官"
+    },
+    {
+      "source": "阎摩殿",
+      "target": "城中",
+      "first": 1161,
+      "second": 1171,
+      "distance": 10,
+      "first_unit": 24638,
+      "second_unit": 24639,
+      "context": "多诈金光盖地因使阎摩殿上尽是阴霾铜臭熏天遂教枉死城中全无日月余腥"
+    }
+  ],
+  "positions": {
+    "门中": [
+      -1.363027718295288,
+      1.05
+    ],
+    "门": [
+      -1.0398761644798662,
+      0.5585667753995864
+    ],
+    "冥府": [
+      -1.0954153698563487,
+      0.27675130056005787
+    ],
+    "门阈": [
+      -1.2141104604905921,
+      0.8235341464389637
+    ],
+    "路侧": [
+      -0.7875702868779058,
+      0.5411477776013921
+    ],
+    "郡司": [
+      -0.12428922290934682,
+      0.7306612343537711
+    ],
+    "西江": [
+      0.35,
+      0.4228569592521221
+    ],
+    "东壁": [
+      0.12428922290934682,
+      0.569338765646229
+    ],
+    "当堂": [
+      -0.35,
+      0.8771430407478781
+    ],
+    "北门": [
+      1.2242897566383997,
+      0.7250017479260542
+    ],
+    "阳界": [
+      1.4500000000000002,
+      0.8612049494995053
+    ],
+    "阳间": [
+      0.7500000000000001,
+      0.4387950505004947
+    ],
+    "阴曹": [
+      0.9757102433616005,
+      0.5749982520739458
+    ],
+    "簷下": [
+      -1.2223811535963245,
+      -0.26887040404552776
+    ],
+    "狱中": [
+      -0.7500000000000001,
+      -0.7194388688813934
+    ],
+    "狱门": [
+      -1.3276188464036756,
+      -0.9616907270730788
+    ],
+    "阎摩殿": [
+      -0.3499999999999999,
+      -0.2560405013508068
+    ],
+    "城中": [
+      0.35,
+      -1.0439594986491934
+    ],
+    "鬼上堂": [
+      0.7500000000000002,
+      -0.2560405013508068
+    ],
+    "堂上": [
+      1.4500000000000002,
+      -1.0439594986491934
+    ]
+  }
+}
