@@ -2456,7 +2456,6 @@ section,details,#save-chapter{scroll-margin-top:90px}
   }
   function renderReports(){
     if(reportDraft || $('reports-screen').hidden) return;
-    $('route-csv-report').open=true;
     if(!auditReports) auditReports=GhostMapAuditReports.mount({model,container:$('event-audit-reports'),bars:reportBars,pie:reportPie,
       chapter:()=>$('report-chapter').value,
       canEdit:()=>!state.dirty&&!reportDraft,
