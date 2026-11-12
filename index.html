@@ -83,6 +83,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 
 <script src="assets/spatial-routes.js?v=02642904eb83"></script>
 <script src="assets/path-columns.js?v=20261112-compact"></script>
+<script src="assets/route-csv-report.js?v=20261112"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>狐</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -198,7 +199,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <div id="report-summary" class="chips"></div><div class="toolbar"><label>表格视图 <select id="report-view"><option value="words">按词汇总</option><option value="records">逐篇记录</option></select></label><button id="report-add">新增本篇词语</button></div><div id="report-new"></div>
 <details><summary>统计图表 · 当前筛选范围</summary><div class="report-charts"><div><h3>词频前 12 名</h3><div id="report-frequency-chart"></div></div><div><h3>人物序列 / 审核状态</h3><div id="report-category-chart"></div></div></div></details>
 <div id="event-audit-reports"></div>
-<details id="path-report-panel"><summary>各篇空间变化的比较</summary>
+<details id="route-csv-report"></details>
+<details id="path-report-panel" hidden><summary>各篇空间变化的比较</summary>
 <p class="muted">以下统计以各篇已经保存的情节步骤为依据，可按篇目和路径筛选，词语表的类别与搜索条件则另行计算。</p>
 <div class="toolbar"><label>路径范围 <select id="path-scope"><option value="all">全部路径步骤</option><option value="movement">人物移动</option><option value="scene">其他情节步骤</option></select></label><label>排名依据 <select id="path-metric"><option value="chapters">涉及篇数</option><option value="count">步骤次数</option></select></label><input id="path-search" type="search" aria-label="搜索路径" placeholder="篇名、人物、空间或原文"><button id="path-export">导出路径 CSV</button></div>
 <div id="path-summary" class="chips" role="status" aria-live="polite"></div>
@@ -2375,6 +2377,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     vocabularySection.scrollIntoView({block:'start'});
   }
   let auditReports=null;
+  GhostRouteCsvReport.mount($('route-csv-report'),{
+    url:'reports/聊齋空間路徑_精簡版.csv',
+    bars:reportBars,pie:reportPie,
+    open:id=>{if(!reportDraft&&chooseChapter(id,true))reveal('workspace');}
+  });
   const reportStatuses={retained:'现有（未人工确认）',pending:'待核候选',accepted:'人工保留',rejected:'人工排除',excluded:'已核对排除',corrected:'已修正／改类',removed:'当前修订已移除'};
   function reportData(){if(!reportRows) reportRows=R.rows(base,model);return reportRows;}
   function reportBars(container,values){
@@ -2449,6 +2456,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   }
   function renderReports(){
     if(reportDraft || $('reports-screen').hidden) return;
+    $('route-csv-report').open=true;
     if(!auditReports) auditReports=GhostMapAuditReports.mount({model,container:$('event-audit-reports'),bars:reportBars,pie:reportPie,
       chapter:()=>$('report-chapter').value,
       canEdit:()=>!state.dirty&&!reportDraft,
