@@ -171,9 +171,60 @@
       "word": "楼阁",
       "count": 1,
       "kind": "空间词"
+    },
+    {
+      "word": "铁床",
+      "count": 1,
+      "kind": "空间词"
+    },
+    {
+      "word": "村",
+      "count": 1,
+      "kind": "空间词"
+    },
+    {
+      "word": "家",
+      "count": 6,
+      "kind": "空间词"
     }
   ],
   "edges": [
+    {
+      "source": "狱中",
+      "target": "簷下",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "其父已收狱中。至狱门，遥见父卧簷下",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "狱中",
+      "target": "狱门",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "其父已收狱中。至狱门",
+          "interpretation": "边界关联"
+        }
+      ],
+      "relation": "边界关联"
+    },
+    {
+      "source": "狱中",
+      "target": "阴曹",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "其父已收狱中",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
     {
       "source": "狱门",
       "target": "簷下",
@@ -183,7 +234,8 @@
           "unit": 24508,
           "text": "至狱门，遥见父卧簷下，似甚狼狈；举目见子，潸然涕流。"
         }
-      ]
+      ],
+      "relation": "同句段共现"
     },
     {
       "source": "门",
@@ -194,7 +246,80 @@
           "unit": 24591,
           "text": "约半日，至一村，一门半辟，鬼引与共坐；席便据门阈。"
         }
-      ]
+      ],
+      "relation": "同句段共现"
+    },
+    {
+      "source": "冥府",
+      "target": "阴曹",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "席不肯入，遁赴冥府",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "冥府",
+      "target": "堂上",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "升堂，见冥王有怒色",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "冥府",
+      "target": "北门",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "冥王立命送还阳界。隶率出北门",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "冥府",
+      "target": "逆旅",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "逆旅主人告曰",
+          "interpretation": "场景关联"
+        }
+      ],
+      "relation": "场景关联"
+    },
+    {
+      "source": "东墀",
+      "target": "堂上",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "两鬼捽席下，见东墀有铁床",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "东墀",
+      "target": "铁床",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "见东墀有铁床",
+          "interpretation": "明确包含"
+        }
+      ],
+      "relation": "明确包含"
     },
     {
       "source": "阳间",
@@ -205,7 +330,44 @@
           "unit": 24569,
           "text": "席念阴曹之暗昧尤甚于阳间，奈无路可达帝听。"
         }
-      ]
+      ],
+      "relation": "同句段共现"
+    },
+    {
+      "source": "门阈",
+      "target": "村",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "至一村，一门半辟，鬼引与共坐；席便据门阈",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "门中",
+      "target": "村",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "二鬼乘其不备，推入门中",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
+    },
+    {
+      "source": "官廨",
+      "target": "当堂",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "当堂对勘，席所言皆不妄",
+          "interpretation": "归属推定"
+        }
+      ],
+      "relation": "归属推定"
     },
     {
       "source": "东壁",
@@ -216,7 +378,8 @@
           "unit": 24618,
           "text": "当掬西江之水，为尔湔肠；即烧东壁之床，请君入瓮。"
         }
-      ]
+      ],
+      "relation": "同句段共现"
     },
     {
       "source": "城中",
@@ -227,33 +390,36 @@
           "unit": 24638,
           "text": "金光盖地，因使阎摩殿上，尽是阴霾；铜臭熏天，遂教枉死城中，全无日月。"
         }
-      ]
+      ],
+      "relation": "同句段共现"
+    },
+    {
+      "source": "楼阁",
+      "target": "家",
+      "weight": 1,
+      "quotes": [
+        {
+          "text": "楼阁田产，尽为席有",
+          "interpretation": "产权关联"
+        }
+      ],
+      "relation": "产权关联"
     }
   ],
   "isolates": [
     "东安",
     "地下",
-    "狱中",
     "郡司",
-    "冥府",
-    "逆旅",
     "升堂",
-    "东墀",
-    "堂上",
     "堂",
     "鬼上堂",
     "阳界",
-    "北门",
     "路侧",
-    "门中",
     "横路",
     "道左",
     "殿",
-    "官廨",
-    "当堂",
     "冥界",
     "东岳",
-    "途中",
-    "楼阁"
+    "途中"
   ]
 }
