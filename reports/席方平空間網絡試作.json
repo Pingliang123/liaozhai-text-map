@@ -1,0 +1,294 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "word": "家",
+      "context": "席家",
+      "realm": "人间",
+      "count": 7
+    },
+    {
+      "id": "city",
+      "word": "城",
+      "context": "冥城",
+      "realm": "地界",
+      "count": 2
+    },
+    {
+      "id": "prison",
+      "word": "狱门",
+      "context": "",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "eaves",
+      "word": "簷下",
+      "context": "父亲停留",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "county",
+      "word": "门",
+      "context": "城隍遣役所至家门",
+      "realm": "人间",
+      "count": 2
+    },
+    {
+      "id": "prefect",
+      "word": "郡司",
+      "context": "受理诉状的机构",
+      "realm": "地界",
+      "count": 4
+    },
+    {
+      "id": "court",
+      "word": "堂上",
+      "context": "冥王审判",
+      "realm": "地界",
+      "count": 2
+    },
+    {
+      "id": "inn",
+      "word": "逆旅",
+      "context": "",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "east",
+      "word": "东墀",
+      "context": "",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "bed",
+      "word": "铁床",
+      "context": "",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "north",
+      "word": "北门",
+      "context": "",
+      "realm": "地界",
+      "count": 1
+    },
+    {
+      "id": "road",
+      "word": "路侧",
+      "context": "",
+      "realm": "未明",
+      "count": 1
+    },
+    {
+      "id": "village",
+      "word": "村",
+      "context": "转生村落",
+      "realm": "人间",
+      "count": 1
+    },
+    {
+      "id": "door",
+      "word": "门中",
+      "context": "转生入口",
+      "realm": "人间",
+      "count": 1
+    },
+    {
+      "id": "office",
+      "word": "官廨",
+      "context": "二郎审判",
+      "realm": "未明",
+      "count": 1
+    },
+    {
+      "id": "return",
+      "word": "途中",
+      "context": "父子归途",
+      "realm": "未明",
+      "count": 1
+    }
+  ],
+  "relations": [
+    {
+      "source": "home",
+      "target": "city",
+      "kind": "推定",
+      "quote": "盖魂已离舍矣"
+    },
+    {
+      "source": "city",
+      "target": "prison",
+      "kind": "移动",
+      "quote": "至狱门"
+    },
+    {
+      "source": "prison",
+      "target": "eaves",
+      "kind": "关联",
+      "quote": "遥见父卧簷下"
+    },
+    {
+      "source": "prison",
+      "target": "prefect",
+      "kind": "推定",
+      "quote": "冥行百余里"
+    },
+    {
+      "source": "prefect",
+      "target": "county",
+      "kind": "推定",
+      "quote": "城隍恐其再讼，遣役押送归家"
+    },
+    {
+      "source": "county",
+      "target": "court",
+      "kind": "推定",
+      "quote": "席不肯入，遁赴冥府"
+    },
+    {
+      "source": "court",
+      "target": "inn",
+      "kind": "关联",
+      "quote": "逆旅主人告曰"
+    },
+    {
+      "source": "court",
+      "target": "east",
+      "kind": "移动",
+      "quote": "两鬼捽席下，见东墀有铁床"
+    },
+    {
+      "source": "east",
+      "target": "bed",
+      "kind": "移动",
+      "quote": "鬼脱席衣，掬置其上"
+    },
+    {
+      "source": "bed",
+      "target": "court",
+      "kind": "移动",
+      "quote": "复至堂上"
+    },
+    {
+      "source": "court",
+      "target": "north",
+      "kind": "移动",
+      "quote": "隶率出北门"
+    },
+    {
+      "source": "north",
+      "target": "court",
+      "kind": "推定",
+      "quote": "捽回复见冥王"
+    },
+    {
+      "source": "court",
+      "target": "road",
+      "kind": "推定",
+      "quote": "行数步，辄憩路侧"
+    },
+    {
+      "source": "road",
+      "target": "village",
+      "kind": "移动",
+      "quote": "约半日，至一村"
+    },
+    {
+      "source": "village",
+      "target": "door",
+      "kind": "移动",
+      "quote": "推入门中"
+    },
+    {
+      "source": "door",
+      "target": "office",
+      "kind": "推定",
+      "quote": "九王既去，席从二郎至一官廨"
+    },
+    {
+      "source": "office",
+      "target": "return",
+      "kind": "推定",
+      "quote": "因使两人送之归里"
+    },
+    {
+      "source": "return",
+      "target": "home",
+      "kind": "移动",
+      "quote": "既至家，席先苏"
+    }
+  ],
+  "layout": "spring_layout",
+  "seed": 42,
+  "positions": {
+    "home": [
+      -0.5157304291327983,
+      0.7199750435454604
+    ],
+    "city": [
+      -0.19627030193948566,
+      0.7706429716341374
+    ],
+    "prison": [
+      0.12990034035888673,
+      0.6685019033538686
+    ],
+    "eaves": [
+      0.3020563461239643,
+      1.0
+    ],
+    "county": [
+      0.351963965642361,
+      -0.07390733808146946
+    ],
+    "prefect": [
+      0.2825325760795291,
+      0.31871848681241527
+    ],
+    "court": [
+      0.3517659714147581,
+      -0.4944640648542514
+    ],
+    "inn": [
+      0.2885036469275727,
+      -0.9052823589183024
+    ],
+    "east": [
+      0.4888559051437312,
+      -0.7372957082055621
+    ],
+    "bed": [
+      0.6090818704171608,
+      -0.6542566661927999
+    ],
+    "north": [
+      0.5297967730185248,
+      -0.4406769981578047
+    ],
+    "road": [
+      -0.04125029532823043,
+      -0.4501528794798921
+    ],
+    "village": [
+      -0.39003990540669675,
+      -0.32352485796106545
+    ],
+    "door": [
+      -0.6578937093349964,
+      -0.10145669344653885
+    ],
+    "office": [
+      -0.791584490545655,
+      0.19717194887281397
+    ],
+    "return": [
+      -0.7416882634386263,
+      0.5060072110789904
+    ]
+  }
+}
