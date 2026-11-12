@@ -863,11 +863,28 @@ section,details,#save-chapter{scroll-margin-top:90px}
     // A saved segmentation is an explicitly edited token stream; untouched units use their offsets.
     const strip=s=>s.replace(/[\s/|]+/gu,'');
     if(c.segmentation_note && strip(c.segmentation_note)===strip(source(c))){for(const w of c.segmentation_note.split(/[\s/|]+/u)) add(w.trim());}
-    else for(const u of c.source_units){const text=u.text||u.original||'';for(const t of u.tokens||[]) add(text.slice(Array.isArray(t)?t[0]:t.start,Array.isArray(t)?t[1]:t.end));}
+    else for(const u of c.source_units){const text=Array.from(u.text||u.original||'');for(const t of u.tokens||[]) add(typeof t==='string'?t:text.slice(Array.isArray(t)?t[0]:t.start,Array.isArray(t)?t[1]:t.end).join(''));}
     return out;
   }
   function active(c,kind){
     return kind==='people' ? c.people.map(p=>p.word) : kind==='places' ? c.places.map(p=>p.word) : kind==='times' ? Object.keys(c.years||{}) : c.space_words||[];
+  }
+  const allTokenCache=new WeakMap();
+  function allTokens(model,chapterId=''){
+    const out=[];
+    for(const id of model.ids){
+      if(chapterId!==''&&id!==Number(chapterId))continue;
+      const c=model.view(id);
+      if(!allTokenCache.has(c)){
+        const text=source(c);
+        allTokenCache.set(c,[...tokenCounts(c)].map(([word,frequency])=>{
+          const at=text.indexOf(word);
+          return {word,frequency,mentions:count(text,word),kind:'tokens',key:'tokens:'+word,chapter_id:id,chapter:c.chapter,present:true,status:'retained',context:text.slice(Math.max(0,at-35),at+word.length+65)};
+        }));
+      }
+      out.push(...allTokenCache.get(c));
+    }
+    return out;
   }
   function rows(base,model){
     const placeReason = (word,chapter) => (typeof module!=='undefined' && module.exports ? require('./ghost_map_model.js') : root.GhostMapModel).placeWordReason(word,chapter);
@@ -885,8 +902,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const out=[];
     for(const id of model.ids){
       const c=model.view(id), entries=byChapter.get(id), text=source(c), tokens=tokensByChapter.get(id);
-      for(const kind of Object.keys(KINDS)) for(const word of active(originals.get(id),kind)) if(!entries.has(kind+':'+word)) entries.set(kind+':'+word,{kind,word});
-      for(const kind of Object.keys(KINDS)) for(const word of active(c,kind)) entries.set(kind+':'+word,{...entries.get(kind+':'+word),kind,word});
+      for(const kind of ['people','places','times','spaces']) for(const word of active(originals.get(id),kind)) if(!entries.has(kind+':'+word)) entries.set(kind+':'+word,{kind,word});
+      for(const kind of ['people','places','times','spaces']) for(const word of active(c,kind)) entries.set(kind+':'+word,{...entries.get(kind+':'+word),kind,word});
       for(const key of Object.keys(c.lexical_reviews||{})){const split=key.indexOf(':');if(!entries.has(key)) entries.set(key,{kind:key.slice(0,split),word:key.slice(split+1)});}
       for(const [key,row] of entries){
         const present=active(c,row.kind).includes(row.word), review=c.lexical_reviews?.[key], person=row.kind==='people'?c.people.find(p=>p.word===row.word):null;
@@ -983,7 +1000,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     model.save(row.chapter_id,d);
     return model.document();
   }
-  const api={KINDS,source,count,tokenCounts,rows,aggregate,pathRows,aggregatePaths,revise};
+  const api={KINDS,source,count,tokenCounts,allTokens,rows,aggregate,pathRows,aggregatePaths,revise};
   if(typeof module!=='undefined'&&module.exports) module.exports=api;
   root.GhostMapReports=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
@@ -2452,6 +2469,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('path-table').replaceChildren(table);
   }
   function reportEditor(row){
+    if(row.kind==='tokens')return button('修改本篇分词',()=>{if(!reportDraft&&chooseChapter(row.chapter_id,true))reveal('segmentation-panel');});
     const entrance=element('div');entrance.append(button('在词汇表中修改',()=>openVocabulary({chapter:row.chapter_id,kind:row.kind,word:row.word,scope:row.present?'active':'all'})));return entrance;
   }
   function renderReports(){
@@ -2467,10 +2485,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('report-chapter').replaceChildren(element('option',{value:''},'全书'),...ids.map(id=>element('option',{value:String(id)},'#'+(id+1)+' '+model.view(id).chapter)));$('report-chapter').value=old||'';
     const kind=$('report-kind').value||'spaces',chapter=$('report-chapter').value,q=model.simplify($('report-search').value||'').trim(),status=$('report-state').value||'active',type=$('report-type').value;
     $('report-type').disabled=kind!=='people';
-    $('report-add').disabled=kind==='all';
+    $('report-add').disabled=kind==='all'||kind==='tokens';
+    $('report-state').disabled=kind==='tokens';
     if($('report-type').parentNode) $('report-type').parentNode.hidden=kind!=='people';
-    reportMatches=reportData().filter(r=>(kind==='all'||r.kind===kind) && (!chapter||r.chapter_id===Number(chapter)) && (!q||[r.word,r.chapter,r.review?.note||''].some(s=>s.includes(q))) &&
-      (status==='all'||status==='active'&&r.present||status==='pending'&&r.status==='pending'||status==='reviewed'&&(['accepted','rejected','corrected','removed'].includes(r.status))) &&
+    reportMatches=(kind==='tokens'?R.allTokens(model,chapter):reportData()).filter(r=>(kind==='all'||r.kind===kind) && (!chapter||r.chapter_id===Number(chapter)) && (!q||[r.word,r.chapter,r.review?.note||''].some(s=>s.includes(q))) &&
+      (kind==='tokens'||status==='all'||status==='active'&&r.present||status==='pending'&&r.status==='pending'||status==='reviewed'&&(['accepted','rejected','corrected','removed'].includes(r.status))) &&
       (kind!=='people'||!type||(type==='unknown'?!Object.keys(r.person?.person_types||{}).length:r.person?.person_types?.[type]>0)));
     const sort=$('report-sort').value||'frequency';
     reportMatches.sort((a,b)=>sort==='word'?a.word.localeCompare(b.word,'zh')||a.chapter_id-b.chapter_id:sort==='chapter'?a.chapter_id-b.chapter_id||b.frequency-a.frequency:(b[sort]||0)-(a[sort]||0)||b.mentions-a.mentions||a.chapter_id-b.chapter_id);
@@ -2504,8 +2523,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
     }
     if(!reportMatches.length){const tr=element('tr');tr.append(element('td',{colspan:6},'当前条件没有数据；可切换「待核候选」或选择其他篇目。'));body.append(tr);}
   }
-  $('report-kind').prepend(element('option',{value:'all'},'四类全部'));
-  $('report-kind').value='all';
+  R.KINDS.tokens='全部词汇';
+  $('report-kind').prepend(element('option',{value:'tokens'},'全部词汇'),element('option',{value:'all'},'四类词汇'));
+  $('report-kind').value='tokens';
   $('report-jump').addEventListener('change',()=>{if(reportDraft)return;reportPage=Math.max(0,(Number($('report-jump').value)||1)-1);renderReports();});
   for(const id of ['report-kind','report-chapter','report-state','report-type','report-sort','report-view','report-size']) $(id).addEventListener('change',()=>{reportPage=0;renderReports();});
   $('report-search').addEventListener('input',GhostMapAuditReports.debounce(()=>{reportPage=0;renderReports();}));
