@@ -106,5 +106,15 @@ function values(row,chapter,routes){
  const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'空间词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
  return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,references.join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
 }
-const api={headers,groups,values,directPlaces};if(typeof module!=='undefined')module.exports=api;else root.GhostPathColumns=api;
+const omittedHeaders=new Set(['参考地点','边界／媒介','空间叙事功能','稳定步骤标识']);
+const exportHeaders=headers.filter(name=>!omittedHeaders.has(name));
+function exportValues(internalValues){
+ const value=name=>String(internalValues[headers.indexOf(name)]||'');
+ const evidence=[value('双端证据')];
+ for(const name of ['参考地点','边界／媒介','空间叙事功能']){
+  if(value(name))evidence.push(name+'：'+value(name));
+ }
+ return headers.flatMap((name,index)=>omittedHeaders.has(name)?[]:[name==='双端证据'?evidence.filter(Boolean).join('；'):internalValues[index]]);
+}
+const api={headers,exportHeaders,exportValues,groups,values,directPlaces};if(typeof module!=='undefined')module.exports=api;else root.GhostPathColumns=api;
 })(globalThis);

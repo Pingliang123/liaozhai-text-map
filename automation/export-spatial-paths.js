@@ -115,7 +115,7 @@ function completeMentionTerms(values,row,chapter){
 }
 function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=path.join(root,'reports','聊齋空間路徑.csv')){
  const pack=JSON.parse(fs.readFileSync(packagePath,'utf8')),model=M.create(pack.base);model.importDocument(pack.revisions);
- const narrative=loadNarrative(),places=model.places(),matrix=[C.headers],additions=[];let previous=[-1,-1],inferredLocations=0,closeReadRows=0;
+ const narrative=loadNarrative(),places=model.places(),matrix=[C.exportHeaders],additions=[];let previous=[-1,-1],inferredLocations=0,closeReadRows=0;
  for(const id of model.ids){const chapter=model.view(id),existing=narrative.rows(model,[chapter],places),extra=S.supplement(chapter,existing),events=[...existing,...extra].sort((a,b)=>Number(a.unit)-Number(b.unit));
   const geographicNames=new Set(places.filter(p=>Number.isFinite(p.lon)&&Number.isFinite(p.lat)).flatMap(p=>[p.name,...(p.merged_names||[])]));
   const completeChapter=createChapterContext(chapter,geographicNames);
@@ -146,11 +146,11 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
     const value=String(values[C.headers.indexOf(role+suffix)]||'');
     for(const word of value.split('、').filter(Boolean))if(!chapterText.includes(word))throw new Error('补值不见于本篇全文：'+chapter.chapter+' '+word);
    }
-   if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(values);
+   if(values[C.headers.indexOf('原文')]!==row.quote)throw new Error('原文引句遺失：'+chapter.chapter+' 第'+(i+1)+'步');matrix.push(C.exportValues(values));
   });
  }
  fs.mkdirSync(path.dirname(outputPath),{recursive:true});fs.writeFileSync(outputPath,toCsv(matrix),'utf8');
- return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations,addedSteps:additions.length,additions,closeReadRows};
+ return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.exportHeaders.length,inferredLocations,addedSteps:additions.length,additions,closeReadRows};
 }
 if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);fs.writeFileSync(result.outputPath.replace(/\.csv$/u,'_新增步骤.csv'),toCsv([['篇号','篇名','原文单元','步骤类型','原遗漏词项','出发空间','到达空间','停留空间','原文','稳定步骤标识'],...result.additions]));console.log(JSON.stringify({outputPath:result.outputPath,steps:result.steps,addedSteps:result.addedSteps,chapters:result.chapters}));}
 function completeExplicitArrival(values,row,chapter){

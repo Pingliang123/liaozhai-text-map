@@ -41,6 +41,15 @@ assert.ok(csv.startsWith('\ufeff篇号,篇名,'),'CSV 使用 UTF-8 BOM，便於 
 assert.ok(csv.includes('\r\n1,《測試》,"原文「室中」,见"\r\n'));
 const result=E.exportCsv(undefined,require('node:os').tmpdir()+'\\liaozhai-spatial-paths-test.csv');
 assert.equal(result.closeReadRows,50,'前三篇50条现有步骤应全部经过逐篇核读规则');
-assert.equal(result.chapters,491);assert.equal(result.steps,7222+result.addedSteps);assert.equal(result.columns,C.headers.length);assert.ok(result.inferredLocations>0,'第1–491篇应补入有前文原文锚点支持的所在地点');
+assert.equal(result.chapters,491);assert.equal(result.steps,7222+result.addedSteps);assert.equal(result.columns,C.exportHeaders.length);assert.ok(result.inferredLocations>0,'第1–491篇应补入有前文原文锚点支持的所在地点');
+assert.equal(C.exportHeaders.length,21);
+for(const name of ['参考地点','边界／媒介','空间叙事功能','稳定步骤标识'])assert.ok(!C.exportHeaders.includes(name));
+const original=C.headers.map(()=>'');
+for(const [name,value] of Object.entries({'原文':'抵金陵。','参考地点':'金陵','空间叙事功能':'引出相遇','稳定步骤标识':'internal-id','双端证据':'原文证据'}))original[C.headers.indexOf(name)]=value;
+const projected=C.exportValues(original);
+assert.equal(projected[C.exportHeaders.indexOf('原文')],'抵金陵。');
+assert.ok(projected[C.exportHeaders.indexOf('双端证据')].includes('引出相遇'));
+assert.ok(projected[C.exportHeaders.indexOf('双端证据')].includes('金陵'));
+assert.ok(!projected.includes('internal-id'));
 const fs=require('node:fs');try{const body=fs.readFileSync(result.outputPath,'utf8');assert.ok(body.startsWith('\ufeff'));assert.ok(body.includes('空间另据同篇场景承接推定'));assert.ok(body.includes('及同篇原文推定（单元'));assert.equal(body.split('\r\n').length-2,result.steps);}finally{fs.rmSync(result.outputPath,{force:true});}
 console.log('PASS 全書路徑 CSV 編碼、轉義、欄數及 原有及新增步驟匯出核對');
