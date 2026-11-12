@@ -88,12 +88,12 @@ for ident,word,context,realm in nodes:
  x,y=pos[ident]
  label=word+" ["+str(G.nodes[ident]["count"])+"]"+("\n"+context if context else "")
  ax.annotate(label,(x,y),xytext=(0,22),textcoords="offset points",ha="center",va="bottom",fontproperties=font,fontsize=11,bbox=dict(boxstyle="round,pad=0.25",fc="#faf8f1",ec="none",alpha=.92))
-ax.set_title("《席方平》空间关系网络 · 原文核读试作",fontproperties=font,fontsize=23,pad=28)
+ax.set_title("《席方平》空间路径图 · 原文核读试作",fontproperties=font,fontsize=23,pad=28)
 ax.axis("off")
 fig.text(.05,.075,"蓝色＝人间　紫色＝地界　灰色＝归属未明\n实线箭头＝明确移动　虚线箭头＝上下文推定　点线＝场所关联",fontproperties=font,fontsize=12)
 fig.text(.05,.025,"节点面积与括号数字按含该词的原文单元数计算。位置采用加权力导向布局（seed=42）。线长为布局结果，无地理／时间单位。\n本图为核读试作。郡司按受理诉状的机构理解。神祇出现处的三界归属待核。",fontproperties=font,fontsize=10,color="#55584f")
 fig.subplots_adjust(bottom=.17,top=.9,left=.06,right=.94)
-out=ROOT/"reports"/"席方平空間網絡試作"
+out=ROOT/"reports"/"席方平空間路徑圖"
 fig.savefig(str(out)+".png",dpi=180)
 fig.savefig(str(out)+".svg")
 Path(str(out)+".json").write_text(json.dumps({"nodes":[dict(id=n,**d) for n,d in G.nodes(data=True)],"relations":records,"layout":"spring_layout","seed":42,"positions":{n:list(map(float,p)) for n,p in pos.items()}},ensure_ascii=False,indent=2),encoding="utf-8")
