@@ -13,8 +13,39 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 os.chdir(ROOT)
-script="""const d=require('./assets/research-lab/data.json'),C=require('./assets/research-lab/chapter-spaces'),A=require('./assets/research-lab/network-analysis'),R=require('./assets/route-csv-report'),X=require('./assets/research-lab/csv-route-network'),fs=require('fs');const c=d.chapters.find(c=>c.id===395);const csv=R.parse(fs.readFileSync('reports/聊齋空間路徑_精簡版.csv','utf8'));const graph=X.combine(C.build(c),c,csv,false);console.log(JSON.stringify(graph));"""
+script="""const d=require('./assets/research-lab/data.json'),C=require('./assets/research-lab/chapter-spaces'),A=require('./assets/research-lab/network-analysis'),R=require('./assets/route-csv-report'),X=require('./assets/research-lab/csv-route-network'),fs=require('fs');const c=d.chapters.find(c=>c.id===395);const csv=R.parse(fs.readFileSync('reports/聊齋空間路徑_精簡版.csv','utf8'));const graph=X.combine(C.build(c),c,csv,false);console.log(JSON.stringify({...graph,source_units:c.units}));"""
 raw=json.loads(subprocess.check_output(["node","-e",script],encoding="utf-8"))
+evidence_weighted="--evidence-weight" in sys.argv
+weight_audit=[]
+if evidence_weighted:
+ source="".join(u["text"] for u in raw["source_units"])
+ pairs={}
+ for edge in raw["edges"]:
+  key=tuple(sorted((edge["source"],edge["target"])))
+  pairs.setdefault(key,[]).append(edge)
+ for key,records in pairs.items():
+  spans=[]
+  for edge in records:
+   if edge.get("relation")=="places":continue
+   for evidence in edge.get("evidence",[]):
+    quote=evidence.get("text","").strip()
+    if not quote:continue
+    start=source.find(quote)
+    if start>=0:spans.append((start,start+len(quote),quote))
+    else:
+     fragments=[part.strip() for part in quote.splitlines() if part.strip() not in ("","…")]
+     located=[(source.find(part),len(part)) for part in fragments]
+     if located and all(at>=0 for at,length in located):
+      spans.append((min(at for at,length in located),max(at+length for at,length in located),quote))
+  merged=[]
+  for start,end,quote in sorted(set(spans)):
+   if merged and start<merged[-1][1]:
+    merged[-1]=(merged[-1][0],max(end,merged[-1][1]))
+   else:merged.append((start,end))
+  weight=max(1,len(merged))
+  for edge in records:edge["weight"]=weight
+  weight_audit.append(dict(source=key[0],target=key[1],old_weight=1,new_weight=weight,independent_evidence=[source[a:b] for a,b in merged],fallback=not bool(merged)))
+ assert all(row["new_weight"]>=1 for row in weight_audit)
 G=nx.Graph()
 G.add_nodes_from(n["id"] for n in raw["nodes"])
 for edge in raw["edges"]:
@@ -83,15 +114,21 @@ ax.set_aspect("equal")
 ax.grid(alpha=.12)
 ax.set_xlabel("网络距离坐标 1",fontproperties=font,fontsize=12)
 ax.set_ylabel("网络距离坐标 2",fontproperties=font,fontsize=12)
-ax.set_title("《席方平》现有空间网络 · 网络距离投影",fontproperties=font,fontsize=22,pad=25)
+ax.set_title("《席方平》现有空间网络 · "+("证据重算权重" if evidence_weighted else "网络距离投影"),fontproperties=font,fontsize=22,pad=25)
 isolates=[nodes[n]["label"] for group in components[1:] for n in sorted(group)]
 fig.text(.06,.14,"边的目标距离＝1／既有权重；节点间目标距离＝加权最短路径。坐标由二维度量 MDS 拟合。",fontproperties=font,fontsize=12)
 fig.text(.06,.10,"坐标单位为网络距离；方向与原点由算法确定。归一化距离拟合误差＝"+format(normalized_stress,".3f")+"（0 为完全拟合）。",fontproperties=font,fontsize=11)
 fig.text(.06,.06,"保留原有 "+str(len(raw["nodes"]))+" 节点、"+str(len(raw["edges"]))+" 条记录。主连通组显示 "+str(len(ids))+" 节点。其余节点："+("、".join(isolates) or "无"),fontproperties=font,fontsize=11)
 fig.text(.06,.025,"平行关联不累加为新权重，距离取最强单条关系。原有混合关系仍沿用；本图度量其网络结构，二维线长只近似目标距离。",fontproperties=font,fontsize=10)
-out=ROOT/"reports"/"席方平現有網絡_距離意義示例"
+out=ROOT/"reports"/("席方平現有網絡_證據權重試算" if evidence_weighted else "席方平現有網絡_距離意義示例")
 fig.savefig(str(out)+".png",dpi=180)
 fig.savefig(str(out)+".svg")
-record=dict(method="metric MDS of weighted shortest-path distances",distance_rule="1/weight, strongest parallel tie",normalized_stress=normalized_stress,nodes=raw["nodes"],edges=raw["edges"],positions={n:list(map(float,p)) for n,p in positions.items()},excluded_components=isolates)
+record=dict(method="metric MDS of weighted shortest-path distances",distance_rule="1/weight, strongest parallel tie",weight_audit=weight_audit,normalized_stress=normalized_stress,nodes=raw["nodes"],edges=raw["edges"],positions={n:list(map(float,p)) for n,p in positions.items()},excluded_components=isolates)
 Path(str(out)+".json").write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding="utf-8")
 print(json.dumps(dict(nodes=len(raw["nodes"]),edge_records=len(raw["edges"]),shown=len(ids),stress=normalized_stress,isolates=isolates,weights=sorted(set(e["weight"] for e in raw["edges"]))),ensure_ascii=False))
+if evidence_weighted:
+ import csv
+ with Path(str(out)+"_權重核對.csv").open("w",encoding="utf-8-sig",newline="") as stream:
+  writer=csv.writer(stream);writer.writerow(["词一","词二","原权重","新权重","独立原文证据","保留原权重"])
+  for row in weight_audit:writer.writerow([row["source"],row["target"],row["old_weight"],row["new_weight"],"\n".join(row["independent_evidence"]),row["fallback"]])
+ print(json.dumps({"changed_pairs":sum(row["new_weight"]!=row["old_weight"] for row in weight_audit),"pairs":len(weight_audit),"fallback":sum(row["fallback"] for row in weight_audit)}))
