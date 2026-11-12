@@ -25,6 +25,11 @@ const mentionValues=C.headers.map(()=>'');E.completeMentionTerms(mentionValues,{
 assert.equal(mentionValues[C.headers.indexOf('停留空间')],'室内、庭','引句中可确认的空间词应作为空间提及回填');
 const csv=E.toCsv([C.headers,['1','《測試》','原文「室中」,见']]);
 const same=C.headers.map(()=>'');
+for(const [quote,tokens,want] of [['抵家，母喜。',['抵','家','，','母','喜','。'],'家'],['抵家，母喜。',['抵家','，','母','喜','。'],''],['欲抵家。',['欲','抵','家','。'],'']]){
+ const cells=C.headers.map(()=>'');
+ E.completeExplicitArrival(cells,{quote,source_event:{unit:1}},{source_units:[{unit:1,text:quote,tokens}],places:[],space_words:[]});
+ assert.equal(cells[C.headers.indexOf('到达空间')],want);
+}
 for(const role of ['停留','到达']){
  for(const [field,value] of Object.entries({'空间':'卧室','空间所在地点':'济南','世界分类':'人间'}))same[C.headers.indexOf(role+field)]=value;
 }

@@ -136,7 +136,10 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
    completeChapter(values,row,()=>{
     if(id>=3&&id<=490){completeSourceTerms(values,row,chapter);completeMentionTerms(values,row,chapter);}
    });
-   if(id>=3)completeSharedAccess(values);
+   if(id>=3){
+    completeExplicitArrival(values,row,chapter);
+    completeSharedAccess(values);
+   }
    if(applyCloseReading(values,row,chapter))closeReadRows++;
    const chapterText=(chapter.source_units||[]).map(u=>u.text||'').join('');
    for(const role of ['出发','到达','停留'])for(const suffix of ['空间','空间所在地点']){
@@ -150,6 +153,33 @@ function exportCsv(packagePath=path.join(root,'data-package.json'),outputPath=pa
  return {outputPath,chapters:model.ids.length,steps:matrix.length-1,columns:C.headers.length,inferredLocations,addedSteps:additions.length,additions,closeReadRows};
 }
 if(require.main===module){const result=exportCsv(process.argv[2],process.argv[3]);fs.writeFileSync(result.outputPath.replace(/\.csv$/u,'_新增步骤.csv'),toCsv([['篇号','篇名','原文单元','步骤类型','原遗漏词项','出发空间','到达空间','停留空间','原文','稳定步骤标识'],...result.additions]));console.log(JSON.stringify({outputPath:result.outputPath,steps:result.steps,addedSteps:result.addedSteps,chapters:result.chapters}));}
+function completeExplicitArrival(values,row,chapter){
+ const arrival=C.headers.indexOf('到达空间');
+ if(values[arrival])return;
+ const quote=String(row.quote||'');
+ const pattern=/(?:^|[。，；])(?:既|遂|乃|及|忽|生|女|周|生渐|反身)?(?:至|抵|入)(家中|家|室|寺|门)(?=[。，；]|$)/gu;
+ const units=chapter.source_units||[];
+ const start=units.findIndex(u=>u.unit===row.source_event?.unit);
+ if(start<0)return;
+ const tokens=R.tokenUnits(chapter,R.lexicon(chapter));
+ const found=new Map();
+ for(const match of quote.matchAll(pattern)){
+  const preceding=quote.slice(0,match.index);
+  if(preceding.lastIndexOf('「')>preceding.lastIndexOf('」'))continue;
+  const word=match[1],phrase=match[0].replace(/^[。，；]/u,'');
+  for(let j=start;j<Math.min(units.length,start+12);j++){
+   if(!quote.includes(units[j].text)&&!units[j].text.includes(quote))continue;
+   const parts=tokens[j]||[];
+   if(parts.some((token,i)=>token===word&&parts.slice(Math.max(0,i-4),i+1).join('').endsWith(phrase))){
+    found.set(word,units[j]);break;
+   }
+  }
+ }
+ if(found.size!==1)return;
+ const [[word,unit]]=found;
+ values[arrival]=word;
+ values[C.headers.indexOf('双端证据')]+='；到达空间据原文单元'+unit.unit+'「'+unit.text+'」的到达动词与分词「'+word+'」补入。';
+}
 function completeSharedAccess(values){
  const col=name=>C.headers.indexOf(name);
  const roles=['出发','到达','停留'];
@@ -164,4 +194,4 @@ function completeSharedAccess(values){
   values[col('双端证据')]+='；'+role+'使用方式据同一步骤同地同界的「'+space+'」推定。';
  }
 }
-module.exports={csvCell,toCsv,exportCsv,completeScene,completeMentionTerms,completeSharedAccess};
+module.exports={csvCell,toCsv,exportCsv,completeScene,completeMentionTerms,completeSharedAccess,completeExplicitArrival};
