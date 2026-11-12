@@ -93,6 +93,7 @@ jobs:
           node automation/test-route-coverage.js
           node automation/test-path-columns.js
           node automation/test-route-csv-report.js
+          node automation/test-all-token-report.js
           node automation/test-map-place-visibility.js
 
           node automation/test-place-node-merges.js
