@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),crypto=require('crypto');
 const old=require('../reports/spatial-distinctiveness-results.json');
 const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} != ${b}`);
-for(const [name,k] of [['five',5],['three',3]]){
+for(const [name,k] of [['five',5],['three',3],['six',6]]){
 const r=require(`../reports/spatial-topics-${name}-results.json`);
 test(`${k} topics: model provenance and complete vocabulary accounting`,()=>{
  assert.equal(r.source_sha256,crypto.createHash('sha256').update(fs.readFileSync(require.resolve('../data-package.json'))).digest('hex'));
@@ -55,4 +55,16 @@ test('three and five topics use identical document vocabulary and initial priors
  assert.equal(three.parameters.alpha,50/5);
  assert.equal(three.parameters.beta,1/5);
  close(three.five_topic_comparison.three_mean_top20_jaccard,three.seed_stability.reduce((s,r)=>s+r.mean_top20_jaccard,0)/2);
+});
+test('six-topic comparison retains identical inputs and correctly summarizes each run',()=>{
+ const six=require('../reports/spatial-topics-six-results.json');
+ assert.equal(six.parameters.alpha,10);assert.equal(six.parameters.beta,.2);
+ for(const row of six.topic_count_comparison){
+  const name={3:'three',5:'five',6:'six'}[row.topics];
+  const other=require(`../reports/spatial-topics-${name}-results.json`);
+  assert.deepEqual(six.input,other.input);
+  assert.deepEqual(six.word_classification.map(w=>[w.word,w.frequency]),other.word_classification.map(w=>[w.word,w.frequency]));
+  close(row.mean_top20_jaccard,other.seed_stability.reduce((s,r)=>s+r.mean_top20_jaccard,0)/2);
+  close(row.mean_hard_agreement,other.seed_stability.reduce((s,r)=>s+r.vocabulary_hard_label_agreement,0)/2);
+ }
 });
