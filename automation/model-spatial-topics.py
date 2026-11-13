@@ -1,5 +1,5 @@
-"""Five-topic LDA following Tutorial 4; no manual word groups enter training."""
-import pathlib, sys, json, hashlib, collections, itertools, platform
+"""Three/five-topic LDA following Tutorial 4; manual groups never enter training."""
+import pathlib, sys, json, hashlib, collections, itertools, platform, argparse
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'.network-runtime/topic-libs'))
 import matplotlib
@@ -11,6 +11,7 @@ from importlib.metadata import version
 
 PARAMS=dict(n_topics=5,iterations=200,burnin=10,min_word_length=1,max_vocab_size=50000,
             min_word_count=1,alpha=None,beta=None,estimate_alpha=1,log_interval=None)
+K=5
 
 def prepare(source,comparison,audited=True):
     drops={}
@@ -29,14 +30,15 @@ def fit(docs,seed):
     m=LDAGibbsSampler(**PARAMS,random_state=seed)
     m.fit(docs)
     assert len(m.vocabulary)==len(set(w for d in docs for w in d))
-    assert m.theta.shape==(len(docs),5)
+    assert m.theta.shape==(len(docs),PARAMS['n_topics'])
     assert np.allclose(m.phi.sum(axis=1),1) and np.allclose(m.theta.sum(axis=1),1)
     return m
 
 def align(reference,other):
     assert reference.vocabulary==other.vocabulary
     similarity=np.sqrt(reference.phi)@np.sqrt(other.phi).T
-    permutation=max(itertools.permutations(range(5)),key=lambda p:sum(similarity[i,p[i]] for i in range(5)))
+    k=reference.n_topics
+    permutation=max(itertools.permutations(range(k)),key=lambda p:sum(similarity[i,p[i]] for i in range(k)))
     detail=[]
     for i,j in enumerate(permutation):
         a={reference.id_to_word[k] for k in np.argsort(-reference.phi[i])[:20]}
@@ -45,6 +47,14 @@ def align(reference,other):
     return list(permutation),detail
 
 def main():
+    global K
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--topics',type=int,choices=[3,5],default=5)
+    K=parser.parse_args().topics
+    PARAMS['n_topics']=K
+    if K==3:
+        # Retain the effective five-topic initial priors, isolating the change in K.
+        PARAMS.update(alpha=10.,beta=.2)
     package_hash=hashlib.sha256((ROOT/'data-package.json').read_bytes()).hexdigest()
     source=json.loads((ROOT/'.network-runtime/spatial-distinctiveness-source.json').read_text(encoding='utf-8'))
     old=json.loads((ROOT/'reports/spatial-distinctiveness-results.json').read_text(encoding='utf-8'))
@@ -78,7 +88,7 @@ def main():
                       'topic_probabilities':posterior[:,i].tolist(),'manual_groups':[g for g,ws in old['word_groups'].items() if w in ws],
                       'examples':evidence})
     topics=[]
-    for t in range(5):
+    for t in range(K):
         top_indices=np.argsort(-ref.phi[t])[:20]
         topics.append({'id':t+1,'token_assignment_share':float(prior[t]),
                        'top_words':[{'word':ref.id_to_word[i],'probability':float(ref.phi[t,i])} for i in top_indices],
@@ -86,14 +96,14 @@ def main():
     comparisons=[];gold=[];pred=[]
     for gi,(group,ws) in enumerate(old['word_groups'].items()):
         present=[w for w in ws if w in ref.word_to_id]
-        distribution=np.zeros(5)
+        distribution=np.zeros(K)
         for w in present:
             wi=ref.word_to_id[w];distribution+=posterior[:,wi]*freq[w]
             gold.append(gi);pred.append(int(hard[wi]))
         distribution/=sum(freq[w] for w in present)
         comparisons.append({'manual_group':group,'present_words':present,'absent_words':[w for w in ws if w not in present],
                              'frequency_weighted_topic_share':distribution.tolist(),
-                             'words_by_dominant_topic':{str(t+1):[w for w in present if hard[ref.word_to_id[w]]==t] for t in range(5)}})
+                             'words_by_dominant_topic':{str(t+1):[w for w in present if hard[ref.word_to_id[w]]==t] for t in range(K)}})
     # Sensitivity to the earlier 室/穴 exclusions, without using the manual groups.
     _,raw_docs,raw_empty=prepare(source,old,audited=False)
     raw_model=fit(raw_docs,42)
@@ -102,9 +112,9 @@ def main():
     b=np.array([raw_model.phi[:,raw_model.word_to_id[w]] for w in shared]).T
     a/=a.sum(axis=1,keepdims=True);b/=b.sum(axis=1,keepdims=True)
     sim=np.sqrt(a)@np.sqrt(b).T
-    perm=max(itertools.permutations(range(5)),key=lambda p:sum(sim[i,p[i]] for i in range(5)))
+    perm=max(itertools.permutations(range(K)),key=lambda p:sum(sim[i,p[i]] for i in range(K)))
     raw_sensitivity={'raw_documents':len(raw_docs),'raw_tokens':sum(map(len,raw_docs)),'shared_vocabulary':len(shared),
-                     'matched_hellinger_affinity':[float(sim[i,perm[i]]) for i in range(5)]}
+                     'matched_hellinger_affinity':[float(sim[i,perm[i]]) for i in range(K)]}
     event_comparison=[]
     for event in ['人','鬼','狐','妖','神']:
         mask=np.array([event in c['events'] for c in chapters])
@@ -124,13 +134,24 @@ def main():
             'normalized_mutual_information':float(normalized_mutual_info_score(gold,pred))},
         'seed_stability':stability,'unfiltered_sensitivity':raw_sensitivity,
         'event_topic_comparison':event_comparison,
-        'limitations':['K=5 is requested, not selected as optimal. Topics are probabilistic and need interpretation.',
+        'limitations':[f'K={K} is requested, not selected as optimal. Topics are probabilistic and need interpretation.',
                        'Training is restricted to current annotated exact-token spatial vocabulary; not the complete semantic spatial inventory.',
                        'Short sparse chapter documents and annotation omissions can destabilize topics.',
                        'Manual groups and event labels are not used for training. Manual groups enter post-hoc comparison only.',
                        'Primary input excludes previously audited non-spatial 室/穴 uses; separate raw-input sensitivity is provided.',
                        'Per-word dominant topics are a summary of soft topic probabilities, not exclusive semantic definitions.']}
-    out=ROOT/'reports/spatial-topics-five-results.json'
+    if K==3:
+        five=json.loads((ROOT/'reports/spatial-topics-five-results.json').read_text(encoding='utf-8'))
+        assert five['source_sha256']==package_hash
+        assert five['input']==result['input'],'Three/five models have unequal inputs'
+        result['five_topic_comparison']={'same_input':True,
+            'five_mean_top20_jaccard':float(np.mean([s['mean_top20_jaccard'] for s in five['seed_stability']])),
+            'three_mean_top20_jaccard':float(np.mean([s['mean_top20_jaccard'] for s in stability])),
+            'five_mean_hard_agreement':float(np.mean([s['vocabulary_hard_label_agreement'] for s in five['seed_stability']])),
+            'three_mean_hard_agreement':float(np.mean([s['vocabulary_hard_label_agreement'] for s in stability])),
+            'initial_alpha_per_topic':10.,'initial_beta':.2,
+            'note':'Fewer topics can mechanically improve assignment agreement. Stability alone does not establish optimal K.'}
+    out=ROOT/f"reports/spatial-topics-{'three' if K==3 else 'five'}-results.json"
     out.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     write_report(result)
     print(json.dumps({'documents':len(docs),'vocabulary':len(freq),'tokens':sum(map(len,docs)),'fixed_seed_repeat_test':'passed','metrics':result['manual_comparison_metrics']},ensure_ascii=False))
@@ -141,45 +162,55 @@ def write_report(result):
     font=FontProperties(fname='C:/Windows/Fonts/msyh.ttc')
     matrix=np.array([r['frequency_weighted_topic_share'] for r in result['manual_comparison']])*100
     fig,ax=plt.subplots(figsize=(10,6));im=ax.imshow(matrix,cmap='YlGnBu',vmin=0,vmax=100)
-    ax.set_xticks(range(5),[f'模型主题{i+1}' for i in range(5)],fontproperties=font,fontsize=11)
+    label='三' if K==3 else '五'
+    ax.set_xticks(range(K),[f'模型主题{i+1}' for i in range(K)],fontproperties=font,fontsize=11)
     ax.set_yticks(range(5),[r['manual_group'] for r in result['manual_comparison']],fontproperties=font,fontsize=11)
-    for i,j in itertools.product(range(5),repeat=2):ax.text(j,i,f'{matrix[i,j]:.1f}%',ha='center',va='center',color='white' if matrix[i,j]>55 else '#182f41',fontsize=12)
-    ax.set_title('人工词群在五个LDA主题中的分布',fontproperties=font,fontsize=17,pad=20)
+    for i,j in itertools.product(range(5),range(K)):ax.text(j,i,f'{matrix[i,j]:.1f}%',ha='center',va='center',color='white' if matrix[i,j]>55 else '#182f41',fontsize=12)
+    ax.set_title(f'人工词群在{label}个LDA主题中的分布',fontproperties=font,fontsize=17,pad=20)
     fig.colorbar(im,ax=ax,label='%')
     fig.text(.12,.035,'按人工词群成员在语料中的词频加权。每行合计100%；不是篇目命中率。\n主题编号只对应种子42的本次模型；没有预先规定主题含义。',fontproperties=font,fontsize=10)
     fig.subplots_adjust(left=.19,right=.94,top=.86,bottom=.18)
-    fig.savefig(ROOT/'reports/空間詞五主題_人工分組對照.png',dpi=160)
+    fig.savefig(ROOT/f'reports/空間詞{label}主題_人工分組對照.png',dpi=160)
     plt.close(fig)
-    lines=['# 空間詞五主題：模型分類完整名單','',
+    lines=[f'# 空間詞{label}主題：模型分類完整名單','',
            f"資料：{result['input']['nonempty_documents']}篇非空文檔，{result['input']['spatial_token_occurrences']}個空間詞次，{result['input']['vocabulary_size']}種詞。",'',
            '每篇為一份文檔，只使用既有空間標注與完整分詞對齊後的詞。沿用前輪室、穴的語義排除；不套用五組人工詞表。',
-           '依附件使用 qhchina LDAGibbsSampler：五主題、200輪、burn-in 10、主種子42；另以7、123檢查穩定性。單字保留，不刪短篇。',
-           '主題為混合概率；以下主題歸屬只是該詞最高概率的一項，不代表唯一詞義。五主題是本次指定數量，未證明最優。',
+           f'依附件使用 qhchina LDAGibbsSampler：{label}主題、200輪、burn-in 10、主種子42；另以7、123檢查穩定性。單字保留，不刪短篇。',
+           f'主題為混合概率；以下主題歸屬只是該詞最高概率的一項，不代表唯一詞義。{label}主題是本次指定數量，未證明最優。',
            '高概率詞使用模型P(詞|主題)排序；完整名單用P(主題|詞)分配，以P(詞|主題)乘模型抽樣詞位占比後歸一化估算。兩種概率的分母不同，不能混為一談。',
-           '方法參照附件與[官方說明](https://www.qhchina.org/docs/topic_modeling/ldagibbssampler/)。alpha初值50/5=10，beta=1/5=0.2；alpha沿用套件預設逐輪估計，最終值記錄於JSON。','',
+           '方法參照附件與[官方說明](https://www.qhchina.org/docs/topic_modeling/ldagibbssampler/)。與五主題保持相同初值：每主題alpha=10、beta=0.2；alpha沿用套件預設逐輪估計，最終值記錄於JSON。三主題不另使用50/3、1/3的預設初值。','',
            '## 模型主題','']
     for t in result['topics']:
         lines.extend([f"### 主題{t['id']}",'',
                       '高概率詞：'+'、'.join(w['word'] for w in t['top_words']),
                       '', '代表篇目：'+'、'.join(c['title'] for c in t['representative_chapters']),''])
     lines.extend(['## 與原人工詞群對照','','數值為人工詞群成員的詞頻加權主題占比，不是前輪篇目命中率。','',
-                  '| 人工詞群 | 主題1 | 主題2 | 主題3 | 主題4 | 主題5 |','|---|---:|---:|---:|---:|---:|'])
+                  '| 人工詞群 |'+'|'.join(f' 主題{i+1} ' for i in range(K))+'|','|---|'+'---:|'*K])
     for r in result['manual_comparison']:lines.append('|'+r['manual_group']+'|'+'|'.join(f'{x*100:.1f}%' for x in r['frequency_weighted_topic_share'])+'|')
     metrics=result['manual_comparison_metrics']
     lines.extend(['',f"人工詞表內可比較的{metrics['word_memberships_compared']}項詞成員：ARI={metrics['adjusted_rand_index']:.3f}；NMI={metrics['normalized_mutual_information']:.3f}。這些數字只比較分類吻合度，不是顯著性檢驗。",'',
                   '## 如何理解本次結果','',
-                  '結果不是原人工五組的重現。房室詞與大部分門戶詞共同進入主題1，並與市、田、途中等日常詞混合；主題1占抽樣詞位的一半以上，不能把它直接命名為純粹的「私人空間」。',
-                  '舟水詞在主題4較集中，但該主題也包含樓、樓上、樓下等詞。山穴詞拆開：洞、山洞偏主題3，山中、山、穴的整體主題權重則另有分布。冥府稱謂也沒有形成統一、獨立的一個主題。',
+                  *( ['結果不是原人工五組的重現。房室詞與大部分門戶詞共同進入主題1，並與市、田、途中等日常詞混合；主題1占抽樣詞位的一半以上，不能把它直接命名為純粹的「私人空間」。',
+                       '舟水詞在主題4較集中，但該主題也包含樓、樓上、樓下等詞。山穴詞拆開：洞、山洞偏主題3，山中、山、穴的整體主題權重則另有分布。冥府稱謂也沒有形成統一、獨立的一個主題。'] if K==5 else
+                     ['本次僅減少模型主題數，未按人工五組重新篩詞。主題1以室、門、市、田等高頻日常詞為主，占抽樣詞位62.3%，是廣泛的共同背景，不能等同於私人空間。',
+                      '主題2集中舟、舟中、水中、渡、船等詞，也包含家、祠、樓閣；主題3混合樓、洞、井、殿、宮、寺。只能作暫時的描述，不應直接把模型三主題命名為人間、天界、地界。',
+                      '人工房室與門戶的詞頻加權主題權重，分別98.5%、92.2%落在主題1；舟水97.2%落在主題2。山穴與冥府稱謂仍分散，未成為各自獨立的主題。',
+                      '三主題整體種子穩定性較五主題高，但主題3對種子123的前20詞Jaccard僅0.176，細節仍不穩定。不能單憑三類較易一致，就認定三主題最佳。']),
                   '原詞群的語義相似性，與模型依篇內共現得到的組織不是同一回事。房室與門戶相近，可能反映它們共同構成場景；這本身不能證明跨越邊界的情節或作者意圖。',
                   f"輸入中有{result['input']['documents_under_10_spatial_tokens']}篇不足10個有效空間詞次，另有{len(result['input']['empty_documents'])}篇沒有可用詞。這主要是現有標注及分詞對齊後的稀疏性，不能解釋成這些篇目原文沒有空間描寫。",
-                  '本次指定五主題並不代表全書恰有五種自然空間類型。三個種子的差異如下；目前不適合自動覆蓋原詞類、三界歸屬或人工修訂。','',
+                  f'本次指定{label}主題並不代表全書恰有{label}種自然空間類型。三個種子的差異如下；目前不適合自動覆蓋原詞類、三界歸屬或人工修訂。','',
                   '## 種子穩定性','','使用完整詞概率分布的Hellinger親和度配對主題，再比較各主題前20詞的Jaccard重合度。0為不重合，1為完全重合；未只挑選最像人工詞表的種子。',''])
-    for s in result['seed_stability']:lines.append(f"- 種子{s['seed']}：五組前20詞平均Jaccard={s['mean_top20_jaccard']:.3f}；全詞表最高概率主題一致率={s['vocabulary_hard_label_agreement']:.1%}。")
+    for s in result['seed_stability']:lines.append(f"- 種子{s['seed']}：{label}組前20詞平均Jaccard={s['mean_top20_jaccard']:.3f}；全詞表最高概率主題一致率={s['vocabulary_hard_label_agreement']:.1%}。")
+    if K==3:
+        comp=result['five_topic_comparison']
+        lines.extend(['','## 與五主題的穩定性比較','',
+                      f"相同輸入、相同種子對照：前20詞平均Jaccard，五主題{comp['five_mean_top20_jaccard']:.3f}、三主題{comp['three_mean_top20_jaccard']:.3f}；全詞表最高概率主題一致率，五主題{comp['five_mean_hard_agreement']:.1%}、三主題{comp['three_mean_hard_agreement']:.1%}。",
+                      '較少的類別本來就容易增加歸類一致率；三種子結果也不是最優主題數的充分證據。'])
     lines.extend(['','## 各異事類型的模型主題分布','','每篇等權，平均其主題概率；類型可以重疊。分母僅包括有可用空間詞的443篇。這不是原人工詞群的命中率，也未做顯著性檢驗。','',
-                  '| 類型 | 有效篇數 | 主題1 | 主題2 | 主題3 | 主題4 | 主題5 |','|---|---:|---:|---:|---:|---:|---:|'])
+                  '| 類型 | 有效篇數 |'+'|'.join(f' 主題{i+1} ' for i in range(K))+'|','|---|---:|'+'---:|'*K])
     for r in result['event_topic_comparison']:lines.append('|'+r['event']+'|'+str(r['documents'])+'|'+'|'.join(f'{x*100:.1f}%' for x in r['mean_topic_weights'])+'|')
-    lines.extend(['','## 完整詞項名單','','按最高概率主題分列；括號依次為最高主題概率、空間詞次、篇數。完整五主題概率及原文例句見同目錄JSON。',''])
-    for t in range(1,6):
+    lines.extend(['','## 完整詞項名單','',f'按最高概率主題分列；括號依次為最高主題概率、空間詞次、篇數。完整{label}主題概率及原文例句見同目錄JSON。',''])
+    for t in range(1,K+1):
         lines.extend([f'### 主題{t}詞項',''])
         for w in sorted([w for w in result['word_classification'] if w['dominant_topic']==t],key=lambda w:(-w['frequency'],w['word'])):
             lines.append(f"- {w['word']}（{max(w['topic_probabilities']):.1%}；{w['frequency']}次；{w['chapter_count']}篇）")
@@ -189,8 +220,8 @@ def write_report(result):
                   '只有空間詞，不含其他動詞、人物與事件，模型不能直接回答空間敘事功能。分類差異也不表示人工語義分類毫無價值；LDA發現的是共現模式。','',
                   '## 重算','',
                   '隔離依賴：`python -m pip install --target .network-runtime/topic-libs qhchina==0.2.7`。其他實際版本見JSON。',
-                  '依次執行 `node automation/analyze-spatial-distinctiveness.js`、`python -X utf8 automation/model-spatial-topics.py`、`node --test automation/test-spatial-topics.js`。',
+                  f'依次執行 `node automation/analyze-spatial-distinctiveness.js`、`python -X utf8 automation/model-spatial-topics.py --topics {K}`、`node --test automation/test-spatial-topics.js`。',
                   '固定種子42另訓練一次，斷言兩次詞—主題計數完全一致；並測試完整詞表計數、概率歸一化、人工詞表對照計算與資料包指紋。未修改原人工修訂或發布網站。'])
-    (ROOT/'reports/空間詞五主題_分類名單.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    (ROOT/f'reports/空間詞{label}主題_分類名單.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 if __name__=='__main__':main()
