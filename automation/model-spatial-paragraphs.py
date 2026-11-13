@@ -7,7 +7,18 @@ from tqdm.auto import tqdm
 topicmodels.tqdm=functools.partial(tqdm,disable=True)
 logging.getLogger('qhchina').setLevel(logging.WARNING)
 K=5
-NAMES={3:('three','三'),4:('four','四'),5:('five','五')}
+NAMES={3:('three','三'),4:('four','四'),5:('five','五'),10:('ten','十')}
+
+def align_topics(reference,other):
+    from scipy.optimize import linear_sum_assignment
+    assert reference.vocabulary==other.vocabulary
+    similarity=np.sqrt(reference.phi)@np.sqrt(other.phi).T
+    rows,cols=linear_sum_assignment(-similarity)
+    permutation=cols[np.argsort(rows)].tolist();detail=[]
+    for i,j in enumerate(permutation):
+        a=set(np.argsort(-reference.phi[i])[:20]);b=set(np.argsort(-other.phi[j])[:20])
+        detail.append({'reference_topic':i+1,'matched_topic':j+1,'hellinger_affinity':float(similarity[i,j]),'top20_jaccard':len(a&b)/len(a|b)})
+    return permutation,detail
 
 def is_content(ch):
     # Align textual characters, ignoring punctuation/spacing and inline note numbers.
@@ -71,13 +82,13 @@ def prepare(source,old):
 
 def main():
     global K
-    parser=argparse.ArgumentParser();parser.add_argument('--topics',type=int,choices=[3,4,5],default=5)
+    parser=argparse.ArgumentParser();parser.add_argument('--topics',type=int,choices=list(NAMES),default=5)
     K=parser.parse_args().topics
     base['PARAMS']['n_topics']=K
     if K!=5:base['PARAMS'].update(alpha=10.,beta=.2)
     source=json.loads((ROOT/'.network-runtime/spatial-paragraph-input.json').read_text(encoding='utf-8'))
     old=json.loads((ROOT/'reports/spatial-distinctiveness-results.json').read_text(encoding='utf-8'))
-    previous=json.loads((ROOT/f"reports/spatial-topics-{NAMES[K if K!=4 else 5][0]}-results.json").read_text(encoding='utf-8'))
+    previous=json.loads((ROOT/f"reports/spatial-topics-{NAMES[K if K in [3,5] else 5][0]}-results.json").read_text(encoding='utf-8'))
     fingerprint=hashlib.sha256((ROOT/'data-package.json').read_bytes()).hexdigest()
     assert source['source_sha256']==old['source_sha256']==previous['source_sha256']==fingerprint
     documents,chapter_docs,empty,audit=prepare(source,old)
@@ -92,7 +103,7 @@ def main():
     ref=models[42];prob=ref.phi*(ref.n_t/ref.n_t.sum())[:,None];prob/=prob.sum(axis=0,keepdims=True)
     stability=[]
     for seed in [7,123]:
-        permutation,detail=base['align'](ref,models[seed])
+        permutation,detail=align_topics(ref,models[seed])
         other=models[seed].phi*(models[seed].n_t/models[seed].n_t.sum())[:,None]
         hard=other[np.array(permutation)].argmax(axis=0)
         stability.append({'seed':seed,'topics':detail,'mean_top20_jaccard':float(np.mean([d['top20_jaccard'] for d in detail])),
@@ -130,12 +141,13 @@ def main():
             'three_mean_top20_jaccard':float(np.mean([s['mean_top20_jaccard'] for s in stability]))}
     (ROOT/f'reports/spatial-paragraph-{NAMES[K][0]}-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     report(result,previous)
-    if K==4:
-        path=ROOT/'reports/段落空間詞_四主題報告.md'
+    if K in [4,10]:
+        label=NAMES[K][1]
+        path=ROOT/f'reports/段落空間詞_{label}主題報告.md'
         text=path.read_text(encoding='utf-8')
         start=text.index('## 本次觀察');end=text.index('## 人工詞群對照',start)
-        text=text[:start]+'## 本次觀察\n\n本次為段落四主題，未預設語義類別。代表詞見上表。與段落三、五主題保持相同詞序列及每主題初始先驗。\n\n'+text[end:]
-        text=text.replace('與相同主題數的篇目模型只改文檔邊界','本次未建立篇目四主題對照，不能視作與篇目模型的單因素比較').replace('篇目模型','篇目五主題模型')
+        text=text[:start]+f'## 本次觀察\n\n本次為段落{label}主題，未預設語義類別。代表詞見上表。與段落三、五主題保持相同詞序列及每主題初始先驗；總alpha濃度隨主題數改變。\n\n'+text[end:]
+        text=text.replace('與相同主題數的篇目模型只改文檔邊界',f'本次未建立篇目{label}主題對照，不能視作與篇目模型的單因素比較').replace('篇目模型','篇目五主題模型')
         path.write_text(text,encoding='utf-8')
     print(json.dumps({'input':result['input'],'words':[[w['word'] for w in t['top_words'][:10]] for t in topics],'stability':[s['mean_top20_jaccard'] for s in stability]},ensure_ascii=False))
 
@@ -145,8 +157,8 @@ def report(r,previous):
     font=FontProperties(fname='C:/Windows/Fonts/msyh.ttc')
     label=NAMES[K][1]
     rows=r['manual_comparison'];matrix=np.array([x['topic_shares'] for x in rows])*100
-    fig,ax=plt.subplots(figsize=(11,6.5));im=ax.imshow(matrix,cmap='YlGnBu',vmin=0,vmax=100,aspect='auto')
-    labels=[f"主题{t['id']}\n"+'／'.join(w['word'] for w in t['top_words'][:3]) for t in r['topics']]
+    fig,ax=plt.subplots(figsize=(max(11,K*1.45),6.5));im=ax.imshow(matrix,cmap='YlGnBu',vmin=0,vmax=100,aspect='auto')
+    labels=[f"主题{t['id']}\n"+ ('\n' if K>=10 else '／').join(w['word'] for w in t['top_words'][:3]) for t in r['topics']]
     ax.set_xticks(range(K),labels,fontproperties=font,fontsize=10);ax.set_yticks(range(5),[x['group'] for x in rows],fontproperties=font,fontsize=11)
     for i in range(5):
         for j in range(K):ax.text(j,i,f'{matrix[i,j]:.1f}%',ha='center',va='center',color='white' if matrix[i,j]>55 else '#183947')
