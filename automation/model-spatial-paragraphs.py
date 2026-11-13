@@ -7,7 +7,7 @@ from tqdm.auto import tqdm
 topicmodels.tqdm=functools.partial(tqdm,disable=True)
 logging.getLogger('qhchina').setLevel(logging.WARNING)
 K=5
-NAMES={3:('three','三'),5:('five','五')}
+NAMES={3:('three','三'),4:('four','四'),5:('five','五')}
 
 def is_content(ch):
     # Align textual characters, ignoring punctuation/spacing and inline note numbers.
@@ -71,13 +71,13 @@ def prepare(source,old):
 
 def main():
     global K
-    parser=argparse.ArgumentParser();parser.add_argument('--topics',type=int,choices=[3,5],default=5)
+    parser=argparse.ArgumentParser();parser.add_argument('--topics',type=int,choices=[3,4,5],default=5)
     K=parser.parse_args().topics
     base['PARAMS']['n_topics']=K
-    if K==3:base['PARAMS'].update(alpha=10.,beta=.2)
+    if K!=5:base['PARAMS'].update(alpha=10.,beta=.2)
     source=json.loads((ROOT/'.network-runtime/spatial-paragraph-input.json').read_text(encoding='utf-8'))
     old=json.loads((ROOT/'reports/spatial-distinctiveness-results.json').read_text(encoding='utf-8'))
-    previous=json.loads((ROOT/f'reports/spatial-topics-{NAMES[K][0]}-results.json').read_text(encoding='utf-8'))
+    previous=json.loads((ROOT/f"reports/spatial-topics-{NAMES[K if K!=4 else 5][0]}-results.json").read_text(encoding='utf-8'))
     fingerprint=hashlib.sha256((ROOT/'data-package.json').read_bytes()).hexdigest()
     assert source['source_sha256']==old['source_sha256']==previous['source_sha256']==fingerprint
     documents,chapter_docs,empty,audit=prepare(source,old)
@@ -130,6 +130,13 @@ def main():
             'three_mean_top20_jaccard':float(np.mean([s['mean_top20_jaccard'] for s in stability]))}
     (ROOT/f'reports/spatial-paragraph-{NAMES[K][0]}-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     report(result,previous)
+    if K==4:
+        path=ROOT/'reports/段落空間詞_四主題報告.md'
+        text=path.read_text(encoding='utf-8')
+        start=text.index('## 本次觀察');end=text.index('## 人工詞群對照',start)
+        text=text[:start]+'## 本次觀察\n\n本次為段落四主題，未預設語義類別。代表詞見上表。與段落三、五主題保持相同詞序列及每主題初始先驗。\n\n'+text[end:]
+        text=text.replace('與相同主題數的篇目模型只改文檔邊界','本次未建立篇目四主題對照，不能視作與篇目模型的單因素比較').replace('篇目模型','篇目五主題模型')
+        path.write_text(text,encoding='utf-8')
     print(json.dumps({'input':result['input'],'words':[[w['word'] for w in t['top_words'][:10]] for t in topics],'stability':[s['mean_top20_jaccard'] for s in stability]},ensure_ascii=False))
 
 def report(r,previous):

@@ -3,11 +3,13 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const old=require('../reports/spatial-distinctiveness-results.json');
 const close=(a,b)=>assert.ok(Number.isFinite(a)&&Math.abs(a-b)<1e-8,`${a} != ${b}`);
 const counter=words=>{const result={};for(const w of words)result[w]=(result[w]||0)+1;return result;};
-for(const [name,k] of [['five',5],['three',3]]){
-const r=require(`../reports/spatial-paragraph-${name}-results.json`),baseline=require(`../reports/spatial-topics-${name}-results.json`);
+for(const [name,k] of [['five',5],['three',3],['four',4]]){
+const r=require(`../reports/spatial-paragraph-${name}-results.json`),baseline=require(`../reports/spatial-topics-${k===4?'five':name}-results.json`);
 test(`${k} paragraph topics: changes boundaries without replacing words or parameters`,()=>{
  assert.equal(r.source_sha256,crypto.createHash('sha256').update(fs.readFileSync(require.resolve('../data-package.json'))).digest('hex'));
- assert.deepEqual(r.parameters,baseline.parameters);assert.deepEqual(r.seeds,baseline.seeds);
+ if(k!==4)assert.deepEqual(r.parameters,baseline.parameters);
+ else {assert.equal(r.parameters.n_topics,4);assert.equal(r.parameters.alpha,10);assert.equal(r.parameters.beta,.2);}
+ assert.deepEqual(r.seeds,baseline.seeds);
  assert.equal(r.input.tokens,baseline.input.spatial_token_occurrences);assert.equal(r.input.vocabulary,baseline.input.vocabulary_size);
  assert.equal(r.input.chapters,baseline.input.nonempty_documents);
  const all=r.documents.flatMap(d=>d.spatial_tokens);
