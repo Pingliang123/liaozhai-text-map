@@ -45,3 +45,17 @@ test('reference word probabilities and manual-group weighted comparisons reconci
   }
  }
 });
+test('before/after plot uses actual seed42 probabilities without relabeling topics',()=>{
+ const plot=require('../reports/spatial-prior-group-comparison.json');
+ assert.equal(plot.source_sha256,r.source_sha256);assert.equal(plot.seed,42);
+ assert.deepEqual(plot.panels.map(p=>p.setting),['baseline','both_low_fixed']);
+ for(const p of plot.panels){
+  const source=r.experiments.find(e=>e.id===p.setting);
+  plot.groups.forEach((group,i)=>{
+   const expected=source.reference_group_distribution.find(g=>g.group===group).topic_shares;
+   p.matrix[i].forEach((x,j)=>close(x,expected[j]));
+   close(p.matrix[i].reduce((a,b)=>a+b,0),1);
+  });
+  assert.equal(p.topic_labels.length,5);
+ }
+});
