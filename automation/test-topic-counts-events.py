@@ -26,4 +26,15 @@ class AssociationTests(unittest.TestCase):
   for r in d['associations']:
    self.assertEqual(r['n_label']+r['n_other'],491)
    self.assertTrue(.0002<=r['permutation_p']<=1);self.assertTrue(r['permutation_p']<=r['global_bh_q']+1e-10)
+ def test_combined_input_effects_and_global_correction(self):
+  d=json.loads((ROOT/'reports/place-space-topic-counts-events.json').read_text(encoding='utf8'))
+  src=json.loads((ROOT/'.network-runtime/place-space-topic-input.json').read_text(encoding='utf8'))
+  cs=[c for c in src['chapters']if c['tokens']]
+  lengths=np.array([c['full_word_count']for c in cs]);strata=np.searchsorted(np.quantile(lengths,[.25,.5,.75]),lengths,side='right')
+  labels=np.array([[e in c['events']for e in d['types']]for c in cs],dtype=float)
+  for m in d['models']:
+   observed=M['adjusted_effect'](np.array([c['weights']for c in m['chapters']]),labels,strata)
+   saved=np.array([r['length_adjusted_difference']for r in d['associations']if r['k']==m['k']]).reshape(m['k'],5)
+   np.testing.assert_allclose(observed,saved)
+  np.testing.assert_allclose(M['bh']([r['permutation_p']for r in d['associations']]),[r['global_bh_q']for r in d['associations']])
 if __name__=='__main__':unittest.main()
