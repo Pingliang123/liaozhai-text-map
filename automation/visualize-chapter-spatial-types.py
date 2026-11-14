@@ -51,7 +51,25 @@ function info(p){tip.textContent=`《${p.title}》｜${p.events.join('、')}｜�
 function draw(){svg.replaceChildren();const q=document.querySelector('#search').value.trim();let pts=D.points.filter(p=>p.events.some(e=>enabled.has(e)));pts.sort((a,b)=>Number(a.title.includes(q))-Number(b.title.includes(q)));for(const p of pts){const g=document.createElementNS(ns,'g'),x=60+(p.x-xmin)*scale,y=650-(p.y-ymin)*scale,r=q&&p.title.includes(q)?11:6;g.setAttribute('opacity',q&&!p.title.includes(q)?'.12':'.85');
 for(let i=0;i<p.events.length;i++){let node;if(p.events.length===1){node=document.createElementNS(ns,'circle');node.setAttribute('cx',x);node.setAttribute('cy',y);node.setAttribute('r',r)}else{node=document.createElementNS(ns,'path');let a=2*Math.PI*i/p.events.length,b=2*Math.PI*(i+1)/p.events.length;node.setAttribute('d',`M ${x} ${y} L ${x+r*Math.cos(a)} ${y+r*Math.sin(a)} A ${r} ${r} 0 0 1 ${x+r*Math.cos(b)} ${y+r*Math.sin(b)} Z`)}node.setAttribute('fill',D.colors[p.events[i]]);node.setAttribute('stroke','white');node.setAttribute('stroke-width','.4');g.append(node)}g.onmouseenter=()=>info(p);g.onclick=()=>info(p);svg.append(g)}if(q){const hits=D.points.filter(p=>p.title.includes(q));tip.textContent=hits.length?hits.map(p=>`《${p.title}》：${p.events.join('、')}，最高主题${p.dominant_topic}`).join('\\n'):'未找到篇名'}}
 document.querySelector('#search').oninput=draw;draw();</script>'''.replace('PAYLOAD',payload)
+    page=page.replace('<input id="search"', '<label>着色方式：<select id="mode"><option value="topics">五主题分组</option><option value="events">异事类型对照</option></select></label><input id="search"')
+    page=page.replace('每点一篇；多类型按颜色等分。位置是五主题概率的PCA投影，不是地理位置。相同位置可能重叠。','每点一篇。先按五主题着色，再切换异事类型比较；两种视图位置完全相同。位置是主题概率的PCA投影，不是地理位置。相同位置可能重叠。')
+    script=(ROOT/'automation/chapter-topic-view.js').read_text(encoding='utf-8').replace('PAYLOAD',payload)
+    page=page.split('<script>')[0]+'<script>'+script+'</script>'
     (ROOT/'reports/篇目空間主題_互動圖.html').write_text(page,encoding='utf-8')
+    fig,axes=plt.subplots(1,2,figsize=(16,8),sharex=True,sharey=True)
+    topic_colors=['#397d9a','#d68a2c','#8263ad','#329b78','#bc586d']
+    for ax,mode in zip(axes,['topics','events']):
+        for p in sorted(points,key=lambda p:p['token_count']):
+            colors=[topic_colors[p['dominant_topic']-1]] if mode=='topics' else [COLORS[e] for e in p['events']]
+            for i,color in enumerate(colors):ax.add_patch(Wedge((p['x'],p['y']),.012,360*i/len(colors),360*(i+1)/len(colors),facecolor=color,edgecolor='white',linewidth=.2,alpha=.8))
+        ax.set_xlim(xy[:,0].min()-.06,xy[:,0].max()+.06);ax.set_ylim(xy[:,1].min()-.06,xy[:,1].max()+.06);ax.set_aspect('equal');ax.grid(alpha=.12)
+        ax.set_title('五主题分组' if mode=='topics' else '异事类型对照',fontproperties=font,fontsize=16)
+        handles=[Patch(color=color,label=f'主题{i+1}') for i,color in enumerate(topic_colors)] if mode=='topics' else [Patch(color=color,label=e) for e,color in COLORS.items()]
+        ax.legend(handles=handles,prop=font,fontsize=9,loc='upper left')
+        ax.set_xlabel('PC1',fontsize=11)
+    axes[0].set_ylabel('PC2');fig.suptitle('相同篇目、相同坐标：两种着色方式',fontproperties=font,fontsize=20)
+    fig.text(.08,.04,'每点一篇；左图按最高主题概率归组，右图按既有异事类型着色。颜色未参与坐标计算。\n二维PCA保留70.1%变异；点可能重叠。不是五团独立类别，也不是地理地图。',fontproperties=font,fontsize=10)
+    fig.tight_layout(rect=[0,.09,1,.94]);fig.savefig(ROOT/'reports/篇目空間主題_雙視圖.png',dpi=160);plt.close(fig)
     print(json.dumps({'points':len(points),'explained_variance':pca.explained_variance_ratio_.tolist(),'multitype':sum(len(p['events'])>1 for p in points)},ensure_ascii=False))
 
 if __name__=='__main__':main()

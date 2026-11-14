@@ -6,3 +6,15 @@ test('all modeled chapters retain probabilities and reproducible PCA coordinates
  a.deepEqual(r.unassigned,s.input.empty_documents);
  a.ok(r.explained_variance_ratio.reduce((a,b)=>a+b,0)<=1.00000001);
 });
+test('interactive mode switches colors while retaining every chapter coordinate',()=>{
+ const fs=require('fs'),vm=require('vm');
+ class Element{constructor(){this.children=[];this.attrs={};this.value='';}append(x){this.children.push(x)}replaceChildren(){this.children=[]}setAttribute(k,v){this.attrs[k]=String(v)}querySelector(){return this.input||(this.input={})}}
+ const elements=Object.fromEntries(['plot','tip','mode','legend','search'].map(k=>[k,new Element()]));elements.mode.value='topics';
+ const document={querySelector:s=>elements[s.slice(1)],createElement:()=>new Element(),createElementNS:()=>new Element()};
+ const page=fs.readFileSync(require.resolve('../reports/篇目空間主題_互動圖.html'),'utf8'),script=page.split('<script>')[1].split('</script>')[0];
+ const context=vm.createContext({document,Math,Set,Object,Number});new vm.Script(script).runInContext(context);
+ const coordinates=()=>elements.plot.children.map(g=>[g.attrs['data-id'],g.attrs['data-x'],g.attrs['data-y']]).sort((a,b)=>Number(a[0])-Number(b[0]));
+ const before=coordinates();a.equal(before.length,443);a.equal(elements.legend.children.length,5);
+ elements.mode.value='events';elements.mode.onchange();a.deepEqual(coordinates(),before);a.equal(elements.legend.children.length,6);
+ elements.search.value='黄英';elements.search.oninput();a.ok(elements.tip.textContent.includes('黄英'));
+});
