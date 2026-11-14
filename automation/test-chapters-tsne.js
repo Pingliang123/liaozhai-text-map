@@ -6,6 +6,27 @@ test('t-SNE changes coordinates without changing labels or probabilities',()=>{
  a.deepEqual(t.unassigned,p.unassigned);a.equal(t.parameters.random_state,42);
  a.ok(t.trustworthiness_10_neighbors>=0&&t.trustworthiness_10_neighbors<=1);
 });
+test('three-topic projection preserves chapter model weights and event labels',()=>{
+ const three=require('../reports/chapter-spatial-types-tsne-three.json');
+ const source=require('../reports/spatial-topics-three-results.json');
+ a.equal(three.topic_count,3);a.equal(three.source_sha256,source.source_sha256);
+ a.equal(three.points.length,source.chapter_topics.length);
+ const events=new Map(p.points.map(point=>[point.id,point.events]));
+ three.points.forEach((point,i)=>{
+  const{x,y,events:labels,dominant_topic,...rest}=point;
+  a.deepEqual(rest,source.chapter_topics[i]);a.deepEqual(labels,events.get(point.id));
+  a.equal(dominant_topic,point.weights.indexOf(Math.max(...point.weights))+1);
+  a.equal(point.weights.length,3);a.ok(Number.isFinite(x)&&Number.isFinite(y));
+ });
+ a.deepEqual(three.unassigned,source.input.empty_documents);
+ const html=fs.readFileSync(require.resolve('../reports/篇目空間主題_三主題_tSNE互動圖.html'),'utf8');
+ const script=html.split('<script>')[1].split('</script>')[0];new vm.Script(script);
+ a.deepEqual(JSON.parse(script.slice(script.indexOf('const D=')+8,script.indexOf(',ns='))),three);
+ const palette=JSON.parse(script.match(/const topicColors=(\{[^;]+);/)[1]);
+ a.equal(Object.keys(palette).length,3);
+ a.ok(html.includes('三主题分组')&&html.includes('异事类型对照'));
+ a.ok(!html.includes('五主题')&&!html.includes('PCA'));
+});
 test('interactive alternative embeds actual t-SNE coordinates and both color modes',()=>{
  const html=fs.readFileSync(require.resolve('../reports/篇目空間主題_tSNE互動圖.html'),'utf8');
  const script=html.split('<script>')[1].split('</script>')[0];new vm.Script(script);
