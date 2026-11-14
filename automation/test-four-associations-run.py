@@ -1,0 +1,6 @@
+import runpy,json
+from pathlib import Path
+m=runpy.run_path('automation/compare-topic-counts-events.py');np=m['np'];d=json.load(open('reports/place-space-four-topic-results.json',encoding='utf8'));src=json.load(open('.network-runtime/place-space-topic-input.json',encoding='utf8'));lookup={c['id']:c for c in src['chapters']};types=['人','鬼','妖','神'];labels=np.array([[e in p['events']for e in types]for p in d['points']],dtype=float);lengths=np.array([lookup[p['id']]['full_word_count']for p in d['points']]);strata=np.searchsorted(np.quantile(lengths,[.25,.5,.75]),lengths,side='right');eff,ps=m['test_associations'](np.array([p['weights']for p in d['points']]),labels,strata);qs=m['bh'](ps.flatten()).reshape(4,4)
+rows=[{'topic':i+1,'type':e,'n':int(labels[:,j].sum()),'difference':float(eff[i,j]),'p':float(ps[i,j]),'q16':float(qs[i,j])}for i in range(4)for j,e in enumerate(types)]
+out={'source_sha256':d['source_sha256'],'method':'Fox OR demon per chapter, four overlapping labels. 4999 within-length-quartile permutations; BH over 16 tests only. Exploratory; not corrected over all previous experiments.','rows':rows}
+Path('reports/place-space-four-associations.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(sorted(rows,key=lambda r:r['p'])[:4],ensure_ascii=False))
