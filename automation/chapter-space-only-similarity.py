@@ -50,5 +50,6 @@ const xs=D.chapters.map(c=>c.x),ys=D.chapters.map(c=>c.y),xmin=Math.min(...xs),y
 function map(){const ctx=$('map').getContext('2d');ctx.clearRect(0,0,1000,650);for(const c of D.chapters){const[x,y]=pos(c);ctx.beginPath();ctx.arc(x,y,c.id===selected?7:3,0,Math.PI*2);ctx.fillStyle=c.id===selected?'#cf572d':'#397d9a88';ctx.fill()}}
 function nearest(e){const r=$('map').getBoundingClientRect(),x=(e.clientX-r.left)*1000/r.width,y=(e.clientY-r.top)*650/r.height;return D.chapters.map(c=>{const[a,b]=pos(c);return {c,d:Math.hypot(a-x,b-y)}}).sort((a,b)=>a.d-b.d)[0]}
 $('map').onmousemove=e=>{const n=nearest(e);if(n.d<15)$('tip').textContent=`《${n.c.title}》：${n.c.words}种词`};$('map').onclick=e=>{const n=nearest(e);if(n.d<15){selected=n.c.id;$('search').value='';options()}};$('search').oninput=options;$('chapter').onchange=()=>{selected=Number($('chapter').value);show()};$('metric').onchange=show;options();</script>'''.replace('PAYLOAD',payload)
+ page=(ROOT/'automation/space-similarity-view.html').read_text(encoding='utf8').replace('PAYLOAD',payload)
  (ROOT/'reports/篇目純空間詞_相似度互動圖.html').write_text(page,encoding='utf8');print(json.dumps({'chapters':len(cs),'pairs':len(cs)*(len(cs)-1)//2,'types':len(vocab)}))
 if __name__=='__main__':main()
