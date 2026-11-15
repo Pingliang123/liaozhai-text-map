@@ -1,0 +1,8 @@
+{
+  "method": "Each chapter top5 raw-frequency cosine neighbors; fraction sharing at least one event label. Complete multilabel rows permuted 4999 times within spatial-token-count quartiles. Directed neighbor pairs, not unique pairs.",
+  "observed": 0.3742663656884876,
+  "null_mean": 0.3265010564189587,
+  "p": 0.0008,
+  "seed": 42,
+  "neighbor_selections": 2215
+}

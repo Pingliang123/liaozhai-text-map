@@ -20,12 +20,11 @@ def main():
  full=s['chapters'];valid=[i for i,c in enumerate(full) if c['tokens']];missing=[i for i,c in enumerate(full) if not c['tokens']]
  matrix=np.full((len(full),len(full)),np.nan);matrix[np.ix_(valid,valid)]=a
  display=[valid[int(i)] for i in order]+missing
- font=FontProperties(fname='C:/Windows/Fonts/msyh.ttc');fig,ax=plt.subplots(figsize=(11,10));cmap=plt.get_cmap('YlGnBu').copy();cmap.set_bad('#dddddd')
- im=ax.imshow(matrix[np.ix_(display,display)],vmin=0,vmax=1,cmap=cmap,interpolation='nearest');ax.set_xticks([]);ax.set_yticks([])
+ font=FontProperties(fname='C:/Windows/Fonts/msyh.ttc');fig,ax=plt.subplots(figsize=(44,43));cmap=plt.get_cmap('YlGnBu').copy();cmap.set_bad('#dddddd')
+ im=ax.imshow(matrix[np.ix_(display,display)],vmin=0,vmax=1,cmap=cmap,interpolation='nearest');ax.set_xticks(range(len(display)),[full[i]['title'] for i in display],rotation=90,fontproperties=font,fontsize=4);ax.set_yticks(range(len(display)),[full[i]['title'] for i in display],fontproperties=font,fontsize=4)
  ax.set_title('全书空间词相似度 · 491篇',fontproperties=font,fontsize=18,pad=16)
  cb=fig.colorbar(im,ax=ax,shrink=.65,ticks=[0,.5,1]);cb.set_label('相似度',fontproperties=font)
- fig.text(.12,.025,'深色更相似　灰色：48篇暂无有效词项',fontproperties=font,fontsize=11)
- fig.tight_layout(rect=[0,.05,1,1]);fig.savefig(ROOT/'reports/全書空間詞_原始詞頻相似度.png',dpi=200);plt.close(fig)
+ fig.tight_layout(rect=[0,.05,1,1]);fig.savefig(ROOT/'reports/全書空間詞_原始詞頻相似度.png',dpi=160);fig.savefig(ROOT/'reports/全書空間詞_原始詞頻相似度.svg');plt.close(fig)
  records=[[None if np.isnan(v) else round(float(v),8) for v in row]for row in matrix]
  (ROOT/'reports/chapter-space-raw-frequency-similarity.json').write_text(json.dumps({'source_sha256':s['source_sha256'],'method':'Cosine similarity of raw spatial token count vectors; no TF-IDF; average linkage on 1-cosine.','chapters':[{'id':c['id'],'title':c['title']}for c in full],'missing_chapter_ids':[full[i]['id']for i in missing],'order':display,'similarity':records},ensure_ascii=False),encoding='utf8')
 if __name__=='__main__':main()
