@@ -1,0 +1,24 @@
+[
+  {
+    "corpus": "place-space",
+    "chapters": 471,
+    "selections": 2355,
+    "shared_any": 0.3774946921443737,
+    "identical_label_set": 0.19235668789808918,
+    "null_mean": 0.3274229368166627,
+    "permutation_p": 0.0004,
+    "method": "Top5 raw-frequency cosine neighbors; directed selections. Any shared label as primary test; identical label set descriptive. Full cleaned chapter token quartiles; permute entire label rows 4999 times; seed42.",
+    "bh_q_two_tests": 0.0008
+  },
+  {
+    "corpus": "allword",
+    "chapters": 491,
+    "selections": 2455,
+    "shared_any": 0.380040733197556,
+    "identical_label_set": 0.14786150712830956,
+    "null_mean": 0.3694754429500971,
+    "permutation_p": 0.2818,
+    "method": "Top5 raw-frequency cosine neighbors; directed selections. Any shared label as primary test; identical label set descriptive. Full cleaned chapter token quartiles; permute entire label rows 4999 times; seed42.",
+    "bh_q_two_tests": 0.2818
+  }
+]
