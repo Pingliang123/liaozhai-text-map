@@ -1,0 +1,2 @@
+import runpy,pathlib,json
+R=pathlib.Path(__file__).resolve().parents[1];m=runpy.run_path(str(R/'automation/draw-space-frequency-similarity.py'));np=m['np'];a=m['compute']([['室','室','门'],['室','门','门']]);np.testing.assert_allclose(a[0,1],.8);d=json.load(open(R/'reports/chapter-space-raw-frequency-similarity.json',encoding='utf8'));a=np.array(d['similarity']);assert a.shape==(443,443);np.testing.assert_allclose(a,a.T);np.testing.assert_allclose(np.diag(a),1);print('Raw-frequency similarity checks passed')
