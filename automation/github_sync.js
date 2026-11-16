@@ -98,6 +98,12 @@
     }
     return {sync,async pull(){if(running)await running.catch(()=>{});if(options.hasDraft())throw new Error('请先保存或取消当前输入。');const incoming=await remote(connected());await options.apply(incoming.doc);ancestor=clone(incoming.doc);pendingCommit=null;options.onAncestor?.(clone(ancestor));status('已载入云端版本；原本机修订请从刚下载的备份核对。');},connect(value){if(!value||/\s/.test(value))throw new Error('请输入有效的 GitHub 授权令牌。');token=value;},async disconnect(){token='';await options.cloud?.logout();status('已退出 GitHub；本机仍可保存，云端修订可继续读取。');},connected};
   }
+  async function ancestorStore(key,value){
+    if(!root.indexedDB){if(value===undefined)return root.localStorage?.getItem(key);root.localStorage?.setItem(key,value);return;}
+    return new Promise((resolve,reject)=>{const r=root.indexedDB.open('liaozhai-cloud-ancestor-v2',1);
+      r.onupgradeneeded=()=>r.result.createObjectStore('documents');r.onerror=()=>reject(r.error);
+      r.onsuccess=()=>{const db=r.result,tx=db.transaction('documents',value===undefined?'readonly':'readwrite'),store=tx.objectStore('documents'),q=value===undefined?store.get(key):store.put(value,key);let result;q.onsuccess=()=>result=q.result;tx.oncomplete=()=>{db.close();resolve(result)};tx.onerror=tx.onabort=()=>{db.close();reject(tx.error)}};});
+  }
   async function mount(options) {
     const button=document.getElementById('save-github');if(!button)return;
     const panel=document.createElement('details'), title=document.createElement('summary'); title.textContent='云端同步';panel.append(title);
@@ -125,13 +131,14 @@
     const key='liaozhai-cloud-ancestor-v1-'+options.base.corpus_id;
     // A legacy browser has no known cloud ancestor; absent old rows must not
     // delete corrections already saved by a different device.
-    let ancestor=options.initialAncestor;try{const saved=localStorage.getItem(key);if(saved){options.validate(JSON.parse(saved));ancestor=JSON.parse(saved);}}catch(_){}
+    let ancestor=options.initialAncestor;try{const saved=await ancestorStore(key)||localStorage.getItem(key);if(saved){options.validate(JSON.parse(saved));ancestor=JSON.parse(saved);}}catch(_){}
     let applying=false,timer;
     const client=create({...options,ancestor,cloud:transport,
       apply:async doc=>{applying=true;try{await options.apply(doc);}finally{applying=false;}},
-      onAncestor:doc=>{try{localStorage.setItem(key,JSON.stringify(doc));}catch(_){}},
+      onAncestor:doc=>{ancestorStore(key,JSON.stringify(doc)).catch(()=>{});},
       status:(message,error)=>{status.textContent=message;status.style.color=error?'#a12828':'';}});
-    const run=()=>client.sync().catch(()=>{});
+    let retries=0,retryTimer;
+    const run=()=>{clearTimeout(retryTimer);return client.sync().then(()=>{retries=0;}).catch(error=>{if(retries<3&&/fetch|network|网络|timeout|超时|HTTP 5|HTTP 429/i.test(error.message)){retryTimer=setTimeout(run,[10000,30000,90000][retries++]);}});};
     connect.addEventListener('click',()=>{try{client.connect(input.value.trim());input.value='';run();}catch(error){status.textContent=error.message;}});
     disconnect.addEventListener('click',()=>{client.disconnect().catch(error=>{status.textContent=error.message;});input.value='';button.textContent='登入 GitHub';});
     pull.addEventListener('click',()=>{
@@ -146,7 +153,7 @@
       if(transport.connected()){run();return;}
       transport.login().then(()=>{button.textContent='立即同步';run();}).catch(error=>{status.textContent=error.message;});
     });
-    window.addEventListener('ghostmap:revision-saved',()=>{if(applying)return;clearTimeout(timer);timer=setTimeout(run,1500);});
+    window.addEventListener('ghostmap:revision-saved',()=>{if(applying)return;clearTimeout(timer);timer=setTimeout(run,8000);});
     window.addEventListener('online',run);
     let lastCheck=Date.now();document.addEventListener('visibilitychange',()=>{if(!document.hidden&&Date.now()-lastCheck>60000){lastCheck=Date.now();run();}});
     setInterval(()=>{if(!document.hidden){lastCheck=Date.now();run();}},300000);
@@ -154,5 +161,5 @@
     if(transport)try{await transport.restore();if(transport.connected())button.textContent='立即同步';}catch(error){status.textContent=error.message;}
     run();return client;
   }
-  const api={create,mount,encode,decode};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapSync=api;
+  const api={create,mount,encode,decode,ancestorStore};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapSync=api;
 })(globalThis);

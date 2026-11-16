@@ -25,6 +25,21 @@ async function rebasePublished(local,published,env=root){
  if(!cryptoAPI?.subtle)return result;
  const hash=async value=>Array.from(new Uint8Array(await cryptoAPI.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(stable(value))||'undefined'))),b=>b.toString(16).padStart(2,'0')).join('');
  let copied=false;
+ const recovery=typeof module!=='undefined'?require('./type-snapshot-recovery'):env.GhostTypeSnapshotRecovery;
+ if(recovery&&local.overrides.length===recovery.override_count&&recovery.ancestors.includes(await hash(local))){
+  const rows=new Map(local.overrides.map(r=>[r.chapter_id,r]));
+  for(const remote of published.overrides){
+   const row=rows.get(remote.chapter_id),types=remote.changes.event_types;
+   if(types===undefined||same(row?.changes.event_types,types))continue;
+   rows.set(remote.chapter_id,{...(row||{chapter_id:remote.chapter_id}),changes:{...remote.changes,...(row?.changes||{}),event_types:types}});
+   result.applied.push({chapter_id:remote.chapter_id,field:'event_types'});
+  }
+  result.document={...local,overrides:[...rows.values()].sort((a,b)=>a.chapter_id-b.chapter_id)};
+  result.version=recovery.version;copied=true;
+  // Continue known-field rebases using the recovered snapshot.
+  local=result.document;
+ }
+
  for(const rule of registry.chapters){
   const row=local.overrides.find(r=>r.chapter_id===rule.chapter_id),remote=published.overrides.find(r=>r.chapter_id===rule.chapter_id);
   // A deleted override can be an intentional reset; never reintroduce it.
