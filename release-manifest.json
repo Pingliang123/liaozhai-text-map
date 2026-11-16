@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11532400,
-      "sha256": "e19e5d51beffc6873448e06bf0bf558d0d6ed79784d2f8fd7f286b267d7fbfcf"
+      "bytes": 11532768,
+      "sha256": "68c96c4f9832f1e8d8a2ed434bee4991792d76907ec5774e8b5deeaaf3ad9a90"
     },
     {
       "path": "data.html",
@@ -523,8 +523,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33045097,
-      "sha256": "dbb92ff7a547f4d01c1b143b3e9b13cdc5d87bf9f21064920755028b71bb9dee"
+      "bytes": 33045465,
+      "sha256": "cd2516e12d635562daab61b0292a9c4d9ee4cc0ee49282dcaf4a0072cf5e37c3"
     },
     {
       "path": "github-login.js",
@@ -544,7 +544,7 @@
     {
       "path": "index.html",
       "bytes": 281080,
-      "sha256": "1ec1d919a6917f390e7c22ac93e8e8b2f9f9402c56f2a7b130e0990f522fdf53"
+      "sha256": "b6176885ad2d59dbc6d1a4a7ce222c5ef1bae3d81440f209da8dcf4a8bf88055"
     },
     {
       "path": "assets/chapter-references.js",
@@ -619,7 +619,7 @@
     {
       "path": "assets/research-lab/cases.html",
       "bytes": 1738,
-      "sha256": "a11c0710440e7dbbc48e007455bff8c9cabf31b8650e542c7e9578eb4aee7685"
+      "sha256": "688ddc0601a6278df3d8e033e81b9b1068a273e44f69ef00220a992fc2d273b9"
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
@@ -633,8 +633,8 @@
     },
     {
       "path": "assets/research-lab/data.json",
-      "bytes": 18462317,
-      "sha256": "1ba1a8f42fd280f404dadbc370037c2ab0516a34ef814984e49c5bf440656ccf"
+      "bytes": 18462593,
+      "sha256": "be1877f484469b2686d61351e2e835481e240eebbea8f0e8658fe8337a17d329"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 6250,
-      "sha256": "3e3f9a67787b39b9eeb1756ef42ab7e5b165a270ff87b326446a5cd5c667eb4b"
+      "sha256": "bc6b9d519b16cefbba2fd4806c784fe96a3b2702154d7a813adf2891cbc840cf"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -689,7 +689,7 @@
     {
       "path": "assets/research-lab/place-levels.json",
       "bytes": 236987,
-      "sha256": "c64465d0e440b319e1c58b813ac0a83cf67b73e0a484fea3ba6f1ba0bfbcb0da"
+      "sha256": "c1f7ec655ade75340bf0cf2e18245fe0c5e1f35aadcb85c4ee387ba4caa25ded"
     },
     {
       "path": "assets/research-lab/place-network.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597341,
-      "sha256": "1efb134082dcf813413dee24b37c5aa2530f5fd3bc8fc818957f80af410ed3d4"
+      "sha256": "517e4e4ded69f65e00ff8270f3326437aa034034d232064cdb6b205a28a175db"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -768,8 +768,8 @@
     },
     {
       "path": "assets/publication-rebases.js",
-      "bytes": 103197,
-      "sha256": "c75ad0f7e0b31cc922aa77e3a67a18c40cde771a027b5c80e269e6f40da20d1f"
+      "bytes": 106416,
+      "sha256": "21f1648d698040f1c1f324165f7143245de745328ae916f02555c771f41f55af"
     },
     {
       "path": "assets/chapter-search.css",
@@ -810,8 +810,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33045097,
-      "sha256": "dbb92ff7a547f4d01c1b143b3e9b13cdc5d87bf9f21064920755028b71bb9dee"
+      "bytes": 33045465,
+      "sha256": "cd2516e12d635562daab61b0292a9c4d9ee4cc0ee49282dcaf4a0072cf5e37c3"
     },
     {
       "path": "data.html",
@@ -836,17 +836,17 @@
     {
       "path": "index.html",
       "bytes": 281080,
-      "sha256": "1ec1d919a6917f390e7c22ac93e8e8b2f9f9402c56f2a7b130e0990f522fdf53"
+      "sha256": "b6176885ad2d59dbc6d1a4a7ce222c5ef1bae3d81440f209da8dcf4a8bf88055"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11532400,
-      "sha256": "e19e5d51beffc6873448e06bf0bf558d0d6ed79784d2f8fd7f286b267d7fbfcf"
+      "bytes": 11532768,
+      "sha256": "68c96c4f9832f1e8d8a2ed434bee4991792d76907ec5774e8b5deeaaf3ad9a90"
     },
     {
       "path": "research-data.zip",
-      "bytes": 39254397,
-      "sha256": "de910b7b4cf70c60009594e50142e7d52e99b98d1994ad0de959bd542ac1d707"
+      "bytes": 39254908,
+      "sha256": "e47d8e5ff1173d01a8a2f8ac7527f270a40f66e4b8ce2434bed0268c85a012de"
     }
   ]
 }
