@@ -1850,10 +1850,16 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if (layer === 'review-unknown') return G.placeLevel(p) === 'unknown';
     return G.placeLevel(p) === layer || p.scale_category === layer;
   }
+  let placeFilterCache;
   function currentPlaces() {
-    return allPlaces().filter(matchesLayer)
+    const places = allPlaces();
+    const key = JSON.stringify(['place-layer','map-search','event-filter','place-count-scope'].map(id => $(id).value));
+    if (placeFilterCache?.places === places && placeFilterCache.key === key) return placeFilterCache.rows;
+    const rows = places.filter(matchesLayer)
       .map(p => {const chapters=filteredChapters(p);return {...p,chapters,context_chapters:chapters.length?[]:filteredChapters(p,true)};})
       .filter(p => p.chapters.length || p.context_chapters.length);
+    placeFilterCache = {places, key, rows};
+    return rows;
   }
   function renderPlace() {
     const out = $('place-detail'); out.replaceChildren();
@@ -2584,7 +2590,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     else if(currentResearch==='candidate-review')renderCandidateList();
   }
   function refreshMapResults(){
-    const places = currentPlaces().sort((a,b)=>G.levelRank(a)-G.levelRank(b) || a.name.localeCompare(b.name,'zh'));
+    const places = currentPlaces().slice().sort((a,b)=>G.levelRank(a)-G.levelRank(b) || a.name.localeCompare(b.name,'zh'));
     const symbols={province:'◇ ',settlement:'○ ',natural:'△ ',cultural:'□ ',ambiguous:'□ '};
     $('place-select').replaceChildren(element('option', {value: ''}, '选择地点'), ...places.map(p => element('option', {value: p.id, 'data-place-name': p.name,'data-place-aliases':JSON.stringify(p.merged_names||[p.name])}, (symbols[p.scale_category] || '')+p.name + '〔'+(p.level_label || M.LEVELS[G.placeLevel(p)])+(p.location_audit?.status==='ambiguous'?'；同名待核':'')+'〕 · ' + p.chapters.length + ' 篇'+(p.context_chapters.length?'（下级 '+p.context_chapters.length+' 篇）':''))));
     $('place-select').value = state.place || '';
@@ -2838,10 +2844,16 @@ section,details,#save-chapter{scroll-margin-top:90px}
     locationDirty=true;pickingLocation=false;$('cancel-pick-location').hidden=true;map.style.cursor='';
     $('location-coordinates').open=true;reveal('location-panel');message('location-status','已选近似位置，请核对区域说明后保存定位信息。');
   },true);
+  let paintPending = false;
+  function scheduleMapPaint() {
+    if (paintPending) return;
+    paintPending = true;
+    requestAnimationFrame(() => { paintPending = false; paintMap(); });
+  }
   map.addEventListener('wheel', event => {
     if (event.ctrlKey) return;
     const anchor = mapXY(event); if (anchor[0] > drawWidth()) return;
-    event.preventDefault(); state.transform = G.zoomAt(state.transform, Math.exp(-event.deltaY * .0015), anchor); paintMap();
+    event.preventDefault(); state.transform = G.zoomAt(state.transform, Math.exp(-event.deltaY * .0015), anchor); scheduleMapPaint();
   }, {passive: false});
   map.addEventListener('pointerdown', event => {
     if (event.button !== 0 || mapXY(event)[0] > drawWidth()) return;
@@ -2851,7 +2863,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if (!drag || event.pointerId !== drag.id) return;
     const point = mapXY(event), dx = point[0] - drag.start[0], dy = point[1] - drag.start[1];
     if (Math.hypot(dx, dy) > 4) drag.moved = true;
-    if (drag.moved) { suppressClick = true; state.transform = {...drag.transform, x: drag.transform.x + dx, y: drag.transform.y + dy}; paintMap(); }
+    if (drag.moved) { suppressClick = true; state.transform = {...drag.transform, x: drag.transform.x + dx, y: drag.transform.y + dy}; scheduleMapPaint(); }
   });
   const endDrag = event => { if (drag && drag.id === event.pointerId) { suppressClick = drag.moved; drag = null; } };
   window.addEventListener('pointerup', endDrag); window.addEventListener('pointercancel', endDrag);

@@ -1,6 +1,6 @@
 (function(root){'use strict';
 async function load(url='data-package.json',request=root.fetch.bind(root)){
- const response=await request(url,{cache:'no-store'});if(!response.ok)throw Error('总资料包读取失败：HTTP '+response.status);
+ const response=await request(url,{cache:'no-cache'});if(!response.ok)throw Error('总资料包读取失败：HTTP '+response.status);
  const bundle=await response.json();if(bundle.package_type!=='liaozhai-text-map'||bundle.package_version!==1||!Array.isArray(bundle.base?.chapter_overview)||!Array.isArray(bundle.revisions?.overrides))throw Error('总资料包格式不完整');
  return bundle;
 }
