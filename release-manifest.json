@@ -508,8 +508,8 @@
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11532832,
-      "sha256": "fc459cff54c3754e4e69d2496aa90250eac17b90b6e5f0a4e0a85ae8b7659b78"
+      "bytes": 11532400,
+      "sha256": "e19e5d51beffc6873448e06bf0bf558d0d6ed79784d2f8fd7f286b267d7fbfcf"
     },
     {
       "path": "data.html",
@@ -523,8 +523,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33045529,
-      "sha256": "70b7d98db3f5b3b03c709635222531b8d19070a993e0b3c7de4be3314670b2da"
+      "bytes": 33045097,
+      "sha256": "dbb92ff7a547f4d01c1b143b3e9b13cdc5d87bf9f21064920755028b71bb9dee"
     },
     {
       "path": "github-login.js",
@@ -544,7 +544,7 @@
     {
       "path": "index.html",
       "bytes": 281080,
-      "sha256": "509de2c5cd6f93cf7aba19702a08b8dbb52a813622122bf84d1919e2e5a71ab2"
+      "sha256": "1ec1d919a6917f390e7c22ac93e8e8b2f9f9402c56f2a7b130e0990f522fdf53"
     },
     {
       "path": "assets/chapter-references.js",
@@ -619,7 +619,7 @@
     {
       "path": "assets/research-lab/cases.html",
       "bytes": 1738,
-      "sha256": "2e119e9c5445c1431092761a8fdfffd8298287f5d79432fc2e88570638f07734"
+      "sha256": "a11c0710440e7dbbc48e007455bff8c9cabf31b8650e542c7e9578eb4aee7685"
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
@@ -633,8 +633,8 @@
     },
     {
       "path": "assets/research-lab/data.json",
-      "bytes": 18462641,
-      "sha256": "91aa9c142932770e532aedc8509e0bbb4dc18ff165765f4076c7bd8aea671ed9"
+      "bytes": 18462317,
+      "sha256": "1ba1a8f42fd280f404dadbc370037c2ab0516a34ef814984e49c5bf440656ccf"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 6250,
-      "sha256": "a9c722a4224777a2924af9055f372e391c17086dfdf523e13d8e0b8dfab0a352"
+      "sha256": "3e3f9a67787b39b9eeb1756ef42ab7e5b165a270ff87b326446a5cd5c667eb4b"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -689,7 +689,7 @@
     {
       "path": "assets/research-lab/place-levels.json",
       "bytes": 236987,
-      "sha256": "5b57bcf968a12e19452b9c3993f18191b6213122c4eba225acfc30dd5aaf4387"
+      "sha256": "c64465d0e440b319e1c58b813ac0a83cf67b73e0a484fea3ba6f1ba0bfbcb0da"
     },
     {
       "path": "assets/research-lab/place-network.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597341,
-      "sha256": "e68ed5a40ec52f9fd54e2947170f5fdd5c19edecafb259e6524e6883d32ea873"
+      "sha256": "1efb134082dcf813413dee24b37c5aa2530f5fd3bc8fc818957f80af410ed3d4"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -768,8 +768,8 @@
     },
     {
       "path": "assets/publication-rebases.js",
-      "bytes": 94626,
-      "sha256": "77ca163d955d5aa7876116481e95da6dead3e4b23283cf70bd86a9631da988d4"
+      "bytes": 103197,
+      "sha256": "c75ad0f7e0b31cc922aa77e3a67a18c40cde771a027b5c80e269e6f40da20d1f"
     },
     {
       "path": "assets/chapter-search.css",
@@ -810,8 +810,8 @@
     },
     {
       "path": "data-package.json",
-      "bytes": 33045529,
-      "sha256": "70b7d98db3f5b3b03c709635222531b8d19070a993e0b3c7de4be3314670b2da"
+      "bytes": 33045097,
+      "sha256": "dbb92ff7a547f4d01c1b143b3e9b13cdc5d87bf9f21064920755028b71bb9dee"
     },
     {
       "path": "data.html",
@@ -836,17 +836,17 @@
     {
       "path": "index.html",
       "bytes": 281080,
-      "sha256": "509de2c5cd6f93cf7aba19702a08b8dbb52a813622122bf84d1919e2e5a71ab2"
+      "sha256": "1ec1d919a6917f390e7c22ac93e8e8b2f9f9402c56f2a7b130e0990f522fdf53"
     },
     {
       "path": "manual-revisions.json",
-      "bytes": 11532832,
-      "sha256": "fc459cff54c3754e4e69d2496aa90250eac17b90b6e5f0a4e0a85ae8b7659b78"
+      "bytes": 11532400,
+      "sha256": "e19e5d51beffc6873448e06bf0bf558d0d6ed79784d2f8fd7f286b267d7fbfcf"
     },
     {
       "path": "research-data.zip",
-      "bytes": 39253478,
-      "sha256": "d5bac76d7860bb071fabf6e1defbc360b1d0df5ee90f294316e2ce0899fb23b3"
+      "bytes": 39254397,
+      "sha256": "de910b7b4cf70c60009594e50142e7d52e99b98d1994ad0de959bd542ac1d707"
     }
   ]
 }
