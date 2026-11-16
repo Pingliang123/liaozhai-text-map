@@ -5,7 +5,7 @@
 <title>聊斋文本地图</title>
 <link rel="stylesheet" href="assets/chapter-search.css?v=1af857fe202f"><script defer src="assets/chapter-search.js?v=2837269b8643"></script>
 <link rel="stylesheet" href="assets/vocabulary-grid.css?v=c186cd83d5db">
-<script src="assets/vocabulary-grid.js?v=88446994c737"></script>
+<script src="assets/vocabulary-grid.js?v=320dcbee8ac2"></script>
 <script src="assets/otherworld-map.js?v=f62eb27fd6d4"></script>
 <style>
 :root{font-family:system-ui,"Microsoft JhengHei",sans-serif;color:#243d39;background:#f4f3ed;--ghost:#7042b8;--monster:#d85e00;--god:#008477;--line:#ccd6cf}
@@ -82,8 +82,8 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <main>
 
 <script src="assets/spatial-routes.js?v=02642904eb83"></script>
-<script src="assets/path-columns.js?v=dd57a02e9936"></script>
-<script src="assets/route-csv-report.js?v=8e0618a801d1"></script>
+<script src="assets/path-columns.js?v=22b584c87f6a"></script>
+<script src="assets/route-csv-report.js?v=f121b26771a8"></script>
 <section id="map-section" class="panel" aria-labelledby="map-heading">
 <h2 id="map-heading">地图</h2><p class="muted">放大查看府县、村镇，或搜索地名与篇目。</p><details class="help"><summary>地图说明</summary><p class="warning">地图采用现代参考点与清代历史检索参考点，不重建清代疆界。地名提及／籍贯不等于事发地；区域汇总不证明故事发生于该省。密集地点随缩放展开，标记保持地理位置，标签细线连接所属标记。人物、异事类型与三界标记仍含待核候选。</p><p class="muted">层级优先按CHGIS 1820参考年类型；散州按县级显示，直隶州按府级显示，资料不足者标待核。1820不等于故事发生年代。省域、山川及文化区域的点仅表示范围参考。省域虚线来自现代行政区 GeoJSON，仅作区域参照，不代表清代疆界。</p></details>
 <div class="toolbar"><label class="sr-only" for="map-search">搜寻地名或篇目</label><input id="map-search" type="search" placeholder="搜寻地名或相关篇目"><label>地点 <select id="place-select"><option value="">选择地点</option></select></label><label>异事类型 <select id="event-filter"><option value="">全部（含未标记）</option><option>人</option><option>鬼</option><option>狐</option><option>妖</option><option>神</option></select></label><label><input id="show-labels" type="checkbox" checked>显示地名</label><label><input id="show-region-boundaries" type="checkbox" checked>显示省域虚线</label></div>
@@ -130,7 +130,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <div class="toolbar"><button id="save-location" class="primary" type="button">保存定位信息</button><button id="discard-location" type="button">取消未保存输入</button><button id="reset-location" type="button">恢复此地原始定位</button></div>
 <p id="location-status" role="status" aria-live="polite"></p>
 </details>
-<details id="unmapped-panel"><summary>未定位地点与历史检索</summary><p class="muted">未定位词及撤下的错配点均保留在此，撤下原因见各词条。历史检索优先采用1820清代参考年；结果中的同名、泛称及空间词仍需结合原文判定。填写区域、层级和来源后，可补充坐标重新加入地图。</p><label>搜寻 <input id="unmapped-search" type="search" placeholder="地点词"></label><div id="unmapped-list" class="place-list"></div></details>
+<details id="unmapped-panel"><summary>未定位地点与历史检索</summary><p class="muted">未定位词及撤下的错配点均保留在此，撤下原因见各词条。历史检索优先采用1820清代参考年；结果中的同名、泛称及场所词仍需结合原文判定。填写区域、层级和来源后，可补充坐标重新加入地图。</p><label>搜寻 <input id="unmapped-search" type="search" placeholder="地点词"></label><div id="unmapped-list" class="place-list"></div></details>
 
 </section>
 <section id="workspace" hidden class="panel" aria-labelledby="workspace-heading">
@@ -154,10 +154,10 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <details class="editor-group" id="time-panel"><summary>时间词</summary>
 <label for="time-editor">每行一词</label><textarea id="time-editor" aria-describedby="time-editor-help"></textarea><p id="time-editor-help" class="muted">包括纪年、年龄与时长；历史年份另在年表核对。</p>
 </details>
-<details class="editor-group" id="space-panel"><summary>空间词 · 场景与内部空间</summary>
+<details class="editor-group" id="space-panel"><summary>场所词 · 场景与内部空间</summary>
 <label for="space-editor">每行一词，例如野、城隍庙、廊、室；须见于本篇原文。</label><textarea id="space-editor" aria-describedby="space-help"></textarea>
-<p id="space-help" class="muted">地名记录名称，空间词记录场景。</p>
-<details><summary>空间词原文与分类</summary><div id="space-evidence"></div></details>
+<p id="space-help" class="muted">空间词分为地点词与场所词。地点词指济南、泰山等地名；场所词指室、门外、寺庙等场所。</p>
+<details><summary>场所词原文与分类</summary><div id="space-evidence"></div></details>
 </details>
 <details class="editor-group" id="people-panel"><summary>人物 · 称呼、身份与依据</summary>
 <h3 id="person-editor">人物修订入口</h3>
@@ -178,7 +178,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <div class="toolbar"><input id="research-search" type="search" aria-label="搜索研究篇目" placeholder="搜索篇名（繁简均可）"><label>路径状态 <select id="research-path-filter"><option value="">全部篇目</option><option value="has">已有路径</option><option value="missing">尚无路径</option><option value="ai-pending">AI待完成</option></select></label></div>
 <p id="research-scope" class="muted"></p><div id="research-network"></div>
 <p><a id="chapter-spatial-network" href="assets/research-lab/?tab=relations">查看本篇空间网络 ↗</a> · <a href="assets/research-lab/?tab=words">词汇比较 ↗</a> · <a href="assets/research-lab/?tab=topics">地区与主题 ↗</a></p>
-<details class="help"><summary>阅读说明</summary><p>各篇步骤依原文叙述次序排列，以人物移动与情节变化观察空间如何展开。地区比较统计包含相应空间词的篇数，具体场景与地区之间的关系，仍须结合各篇记载辨析。</p></details>
+<details class="help"><summary>阅读说明</summary><p>各篇步骤依原文叙述次序排列，以人物移动与情节变化观察空间如何展开。地区比较统计包含相应场所词的篇数，具体场景与地区之间的关系，仍须结合各篇记载辨析。</p></details>
 </details>
 <details hidden class="research-page" id="research-library"><summary>研究文档</summary><p class="muted">此处收录研究文献与阶段性报告。报告中的统计反映撰写时的资料，后续修订见数据报表；文献则可与原文相互参照，用以考察空间描写及其叙事作用。</p><div id="research-documents"></div></details>
 <details hidden class="research-page" id="book-synthesis"><summary>全书空间综合分析 · 关系网络与研究线索</summary><div id="book-synthesis-content"></div></details>
@@ -194,7 +194,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </section>
 <section id="reports-screen" class="panel" hidden aria-label="数据报表">
 <h2>数据报表</h2><p class="muted">本表按篇目整理人物、地点、空间与时间词，可据原文改正误词，或补入遗漏的词语。每行的修改分别保存于其所属篇目。</p>
-<div class="toolbar"><label>类别 <select id="report-kind"><option value="spaces">空间词</option><option value="times">时间词</option><option value="places">地点词</option><option value="people">人物词</option></select></label><label>篇目 <select id="report-chapter"><option value="">全书</option></select></label><label>状态 <select id="report-state"><option value="active">现有数据</option><option value="pending">待核候选</option><option value="reviewed">人工已处理</option><option value="all">全部</option></select></label><label>人物序列 <select id="report-type"><option value="">全部</option><option>人</option><option>鬼</option><option>妖</option><option>神</option><option value="unknown">未标注</option></select></label><input id="report-search" type="search" aria-label="搜索报表" placeholder="词语、篇名或审核说明"><label>排序 <select id="report-sort"><option value="frequency">分词词频</option><option value="mentions">原文次数</option><option value="word">词语</option><option value="chapter">篇序</option></select></label><button id="report-export">导出当前表格 CSV</button></div>
+<div class="toolbar"><label>类别 <select id="report-kind"><option value="spaces">场所词</option><option value="times">时间词</option><option value="places">地点词</option><option value="people">人物词</option></select></label><label>篇目 <select id="report-chapter"><option value="">全书</option></select></label><label>状态 <select id="report-state"><option value="active">现有数据</option><option value="pending">待核候选</option><option value="reviewed">人工已处理</option><option value="all">全部</option></select></label><label>人物序列 <select id="report-type"><option value="">全部</option><option>人</option><option>鬼</option><option>妖</option><option>神</option><option value="unknown">未标注</option></select></label><input id="report-search" type="search" aria-label="搜索报表" placeholder="词语、篇名或审核说明"><label>排序 <select id="report-sort"><option value="frequency">分词词频</option><option value="mentions">原文次数</option><option value="word">词语</option><option value="chapter">篇序</option></select></label><button id="report-export">导出当前表格 CSV</button></div>
 <p id="report-status" role="status" aria-live="polite"></p><details class="help"><summary>统计口径</summary><p class="muted">此处分别列出分词词频与原文次数：前者按分词结果中的完整词项计数，后者在原文中查找相同字串，每次命中后从该字串末尾继续查找。人物可有多种身份，故各身份分别计入；跨篇同名人物仍按各篇处理。改正词语后，词频须待分词修订通过全文对齐后才会更新；误词即使未见于原文，亦可排除。</p></details>
 <div id="report-summary" class="chips"></div><div class="toolbar"><label>表格视图 <select id="report-view"><option value="words">按词汇总</option><option value="records">逐篇记录</option></select></label><button id="report-add">新增本篇词语</button></div><div id="report-new"></div>
 <details><summary>统计图表 · 当前筛选范围</summary><div class="report-charts"><div><h3>词频前 12 名</h3><div id="report-frequency-chart"></div></div><div><h3>人物序列 / 审核状态</h3><div id="report-category-chart"></div></div></div></details>
@@ -227,7 +227,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 <script id="map-data" type="application/json">{"external":"assets/map-base.json?v=380bb8842ac1","sha256":"380bb8842ac140e5d96b8cc4a13dc6ec21aebbc717e7f85f8220eccf0e2d3af6","corpus_id":"5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea"}</script>
 <script src="assets/data-loader.js?v=33ab7af17c12"></script>
 <script src="assets/publication-rebases.js?v=77ca163d955d"></script><script src="assets/type-snapshot-recovery.js?v=f60e42fffdfc"></script>
-<script src="assets/corpus-store.js?v=00ad0835ba6b"></script><script src="audit-reports.js?v=1fbd2f9cf8fb"></script><script src="assets/place-crosscheck.js?v=41e3b3fb771b"></script><script src="assets/place-review.js?v=57f4daf54bcc"></script>
+<script src="assets/corpus-store.js?v=00ad0835ba6b"></script><script src="audit-reports.js?v=5103d46155e7"></script><script src="assets/place-crosscheck.js?v=41e3b3fb771b"></script><script src="assets/place-review.js?v=2adfc1cb7419"></script>
 <script src="assets/chapter-references.js?v=c9f8f95e0529"></script>
 <script>globalThis.GhostMapPlaceReview={"reviewed_on":"2026-10-16","method":"逐项对照267个含东西南北中候选词的原文语境；专名、相对空间、误切词与待考区域分别处理。","spaces":{"东北":"东北","东原":"东原","东厢":"东厢","东口":"东口","东头":"东头","东山":"东山","东山之阳":"东山之阳","东山人":"东山","东岳庙":"东岳庙","东座":"东座","东邻":"东邻","东郭":"东郭","东野":"东野","东门":"东门","北堂":"北堂","北壁":"北壁","北庵":"北庵","北郭":"北郭","北门":"北门","北山":"北山","南丛":"城南丛葬处","南垣":"南垣","南城":"南城","南屋":"南屋","南山":"南山","南扉":"南扉","南舍":"南舍","南荡":"南荡","南郭":"南郭","城中":"城中","寺西":"寺西","山南":"山南","庙东":"庙东","祠西":"祠西","西城":"西城","西壁":"西壁","西山":"西山","西巷":"西巷","西鄙":"西鄙","西门":"西门","观中":"观","益都之西山":"西山","适西山":"西山","邑之东山":"东山","邑北山":"北山","邑南":"邑南","邑西":"邑西","郡北":"郡北","郡南":"郡南","云霄":"天空／高空意象","村外":"村外","山村":"山村","村落":"村落","郊外":"郊外","乡中":"乡中","予乡":"予乡","关":"关","内城":"内城","北岸":"北岸","北边":"北边","北邻":"北邻","北里":"北里","南郊":"南郊","东郊":"东郊","城东":"城东","城南":"城南","城市":"城市","县":"县","别村":"别村","近村":"近村","邻村":"邻村","某村":"某村","北村":"北村","南村":"南村","东村":"东村","西村":"西村","城北村":"城北村","都北":"都北","郡城":"郡城","邑城":"邑城","邑中":"邑中","贵邑":"贵邑","敝里":"敝里","里":"里","里中":"里中","里落":"里落","里门":"里门","故乡":"故乡","桑梓":"桑梓","海上":"海上","海外":"海外","海滨":"海滨","湖东":"湖东","河滨":"河滨","河干":"河干","岛":"岛","岛岸":"岛岸","大岛":"大岛","大山":"大山","涧谷":"涧谷","苍林":"苍林","绝壑巉岩":"绝壑巉岩","西南山":"西南山","西道":"西道","西邑":"西邑","西土":"西土","西塞":"西塞","北塞":"北塞","北地":"北地","边":"边","边外":"边外","塞上":"塞上","竹桥之西":"竹桥之西","莲峰下":"莲峰下","镇之南山":"镇之南山","御沟":"御沟","柳堤":"柳堤","水关":"水关","文场":"文场","古战场":"古战场","五都之市":"五都之市","罗家":"罗家","墓":"墓","郊路":"郊路","谷口":"谷口"},"replacements":{"东平人":"东平","东昌人":"东昌","东村业":"东村","东村人":"东村","宿东村":"东村","北顺":"顺天府","河南人":"河南","泛西湖":"西湖","真西湖":"西湖","西安市":"西安","济南乡":"济南","秦中者":"秦中","至西村":"西村","道南村":"南村","间西村":"西村"},"exclude":{"南宫":"本书相关语境为“捷南宫”，指科举登第，不能定位为河北南宫县。","西池":"一处是赋题“西池桃花赋”，一处是人物“麻西池”；不能据此建立故事地名。","北闱":"“入／赴／试北闱”为赴试表述，不作独立地名。"},"chapter_exclusions":{"邵士梅":{"东海":"原文“高东海”是人名；本篇不据此计入东海地名。"},"鸦头":{"中原":"“勾栏中原无情好”中的“中原”跨越“中／原”两个词，不是地域中原。"},"岳神":{"东岳":"“东岳天子”是神祇称号，本篇不据此认定人物抵达泰山。"},"布客":{"山东":"原文为“蒿里山／东四司”，不是山东省；本篇地理联系仍依据长清、泰安、泰山。"}},"pending":{"东山望村":"“居东山望村”须辨东山与望村的结构，暂不扩充定位。","东村":"各篇方向性村名不能视为同一村；保留篇内候选，不统一定位。","南村":"各篇村名指向未必一致，保留篇内候选，不统一定位。","西村":"多篇局部村名，须分别考证，不能凭同词跨篇合村。","北村":"各篇所在地不同，保留篇内村名候选，不统一定位。","东疃":"村名候选，具体位置待考。","北里":"《刘夫人》乡里称谓，是否专名待考，暂不定位。","西塞":"军事语境中的西部边塞区域，不是可直接定位的单一地点。","西疆":"西部边疆区域，具体范围待考。","西邑":"济之西邑，所指县邑待考。","南服":"南方地区泛称，范围未定。","南中":"南方区域称谓，逐篇范围可能不同。","海东":"海东指向须结合篇内行程考证。","海南":"《仙人岛》海南为异境叙述，不能自动对应现代海南省。","海中市":"《罗刹海市》海上市集，作为篇内异境空间，不配现代坐标。","东岳":"既有庙宇、神祇与冥府行政空间语境，不能把每次提及都当作到访泰山。","南岳":"祭山与神职语境须分别核对。","西江":"河流、地域、典故语境并存，不能共用单一水域点推断路线。","西湖":"真实湖泊与幻化再现并存，保留地名但须区分故事中的实际移动。","都中":"都城代称，逐篇确认朝代与所指，不自动统一为北京。","济东":"“济东观察”为官职辖域线索，不能等同事件发生地。"},"chapter_spaces":{"罗刹海市":["南岛","海中市"],"韩方":["南乡"],"于去恶":["西池"]}};
 (function (root) {
@@ -240,9 +240,9 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function placeWordReason(word, chapter='') {
     if(PLACE_REVIEW.chapter_exclusions?.[chapter]?.[word]) return PLACE_REVIEW.chapter_exclusions[chapter][word];
     if(PLACE_REVIEW.exclude?.[word]) return PLACE_REVIEW.exclude[word];
-    if(PLACE_REVIEW.spaces?.[word]) return '相对方位／篇内空间，改列空间词：'+PLACE_REVIEW.spaces[word];
+    if(PLACE_REVIEW.spaces?.[word]) return '相对方位／篇内空间，改列场所词：'+PLACE_REVIEW.spaces[word];
     if(PLACE_REVIEW.replacements?.[word]) return '误切片语，修正为：'+PLACE_REVIEW.replacements[word];
-    if(word==='北山') return '未具名山地场景，归为空间词。';
+    if(word==='北山') return '未具名山地场景，归为场所词。';
     if(word==='北闱' || word==='北闈') return '赴试表述，不作独立地名。';
     return /^[东西南北東](?:去|行|距|走|往)?[一二三四五六七八九十百千万萬两兩数數几幾\d]+(?:余|餘|多)?里(?:许|許)?$/.test(word)
       ? '方位与距离片语，描述位置关系，不是地理专名。' : '';
@@ -457,11 +457,11 @@ section,details,#save-chapter{scroll-margin-top:90px}
       assert(result.places.every(p => p.word), '地点不可为空');
       assert(new Set(result.places.map(p => name(p.word))).size === result.places.length, '地点不可重复');
       const spaces = input.space_words === undefined ? view(id).space_words || [] : input.space_words;
-      assert(Array.isArray(spaces) && spaces.length <= 500, '空间词格式错误');
+      assert(Array.isArray(spaces) && spaces.length <= 500, '场所词格式错误');
       const transferred=input.places.filter(p=>!decision(input,p.word)).map(p=>PLACE_REVIEW.spaces?.[p.word]).filter(w=>w&&source.includes(w));
-      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '空间词', 100)))];
-      assert(result.space_words.every(w => w && source.includes(w)), '空间词必须在本篇简体原文中出现');
-      assert(new Set(result.space_words).size === result.space_words.length, '空间词不可重复');
+      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '场所词', 100)))];
+      assert(result.space_words.every(w => w && source.includes(w)), '场所词必须在本篇简体原文中出现');
+      assert(new Set(result.space_words).size === result.space_words.length, '场所词不可重复');
       const narrative = input.narrative_events === undefined ? view(id).narrative_events || [] : input.narrative_events;
       assert(Array.isArray(narrative) && narrative.length <= 100, '情节路径格式错误');
       result.narrative_events = narrative.map((row,index) => {
@@ -855,7 +855,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </script>
 <script>(function(root){
   'use strict';
-  const KINDS={spaces:'空间词',times:'时间词',places:'地点词',people:'人物词'};
+  const KINDS={spaces:'场所词',times:'时间词',places:'地点词',people:'人物词'};
   const clone=x=>JSON.parse(JSON.stringify(x));
   function source(c){return c.source_units.map(u=>u.text||u.original||'').join('');}
   function count(text,word){return word ? text.split(word).length-1 : 0;}
@@ -977,7 +977,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     if(status==='accepted' && (!word || !source(model.view(row.chapter_id)).includes(word))) throw new Error('保留的词必须出现在本篇原文中；请先对照原文修正词语。');
     if(status==='accepted' && kind==='places') {
       const reason=(typeof module!=='undefined' && module.exports ? require('./ghost_map_model.js') : root.GhostMapModel).placeWordReason(word,model.view(row.chapter_id).chapter);
-      if(reason) throw new Error(reason+' 请改为空间词或修正为原文中的具名地点。');
+      if(reason) throw new Error(reason+' 请改为场所词或修正为原文中的具名地点。');
     }
     if(status!=='pending'){
       if(row.kind==='people') d.people=d.people.filter(p=>p.word!==row.word);
@@ -1149,7 +1149,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   'use strict';
   const $ = id => document.getElementById(id);
   const researchPages = ['research-hub', 'book-synthesis', 'chronology-panel', 'candidate-review', 'research-library'];
-  const editorPages = [['place-panel', '地点与分类'], ['people-panel', '人物'], ['space-panel', '空间词'], ['time-panel', '时间词'], ['realm-review', '三界关系'], ['narrative-panel', '情节路径'], ['segmentation-panel', '分词']];
+  const editorPages = [['place-panel', '地点与分类'], ['people-panel', '人物'], ['space-panel', '场所词'], ['time-panel', '时间词'], ['realm-review', '三界关系'], ['narrative-panel', '情节路径'], ['segmentation-panel', '分词']];
   let currentEditor = 'place-panel';
   let currentResearch = 'research-unified';
   function showEditor(id) {
@@ -1908,7 +1908,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
     const spaceSummary = element('details');
     spaceSummary.append(element('summary', {}, '所涉篇目的空间特征（' + spaces.size + ' 种词）'),
       element('p', {class: 'muted'}, '按涉及篇数统计，含候选与人工保留词；场景所属地区待原文核对。'));
-    spaceSummary.append(element('p', {}, [...spaces].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([word, count]) => word + '：' + count + ' 篇').join('、') || '暂无保留的空间词'));
+    spaceSummary.append(element('p', {}, [...spaces].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([word, count]) => word + '：' + count + ' 篇').join('、') || '暂无保留的场所词'));
     out.append(spaceSummary);
     const list = element('div', {class: 'chapters'});
     for (const c of chapters) {
@@ -2117,20 +2117,20 @@ section,details,#save-chapter{scroll-margin-top:90px}
       }
     }
     const sorted = map => [...map].sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
-    out.append(element('p', {class:'muted'}, '以下以已保存的修订为依据，每个词在同一篇中计一次，用以比较各篇的空间描写。地点与空间词同见于一篇，其具体联系仍须由原文说明。'));
+    out.append(element('p', {class:'muted'}, '以下以已保存的修订为依据，每个词在同一篇中计一次，用以比较各篇的空间描写。地点与场所词同见于一篇，其具体联系仍须由原文说明。'));
     const chips = element('div', {class:'chips'});
-    for (const [label, value] of [['篇目', chapters.length], ['有空间词篇目', chapters.filter(c => c.space_words?.length).length], ['地点词', places.size], ['空间词', terms.size]]) chips.append(element('span', {class:'chip'}, label + '：' + value));
+    for (const [label, value] of [['篇目', chapters.length], ['有场所词篇目', chapters.filter(c => c.space_words?.length).length], ['地点词', places.size], ['场所词', terms.size]]) chips.append(element('span', {class:'chip'}, label + '：' + value));
     out.append(chips);
-    const top = element('details'); top.open = true; top.append(element('summary', {}, '常见空间词（按涉及篇数）'));
-    top.append(element('p', {}, sorted(terms).slice(0,40).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无空间词'));
+    const top = element('details'); top.open = true; top.append(element('summary', {}, '常见场所词（按涉及篇数）'));
+    top.append(element('p', {}, sorted(terms).slice(0,40).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无场所词'));
     out.append(top);
-    const rel = element('details'); rel.append(element('summary', {}, '同篇出现的地点与空间词'));
+    const rel = element('details'); rel.append(element('summary', {}, '同篇出现的地点与场所词'));
     for (const [name, row] of [...places].sort((a,b) => b[1].chapters-a[1].chapters || a[0].localeCompare(b[0]))) {
-      const item = element('details'); item.append(element('summary', {}, name + ' · ' + row.chapters + '篇'), element('p', {}, sorted(row.words).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无空间词')); rel.append(item);
+      const item = element('details'); item.append(element('summary', {}, name + ' · ' + row.chapters + '篇'), element('p', {}, sorted(row.words).map(([w,n]) => w + '：' + n + '篇').join('、') || '暂无场所词')); rel.append(item);
     }
     out.append(rel);
     const groups = element('details'); groups.append(element('summary', {}, '三界与异事类型的空间特点'));
-    for (const [group, values] of axes) groups.append(element('p', {}, group + '：' + (sorted(values).slice(0,30).map(([w,n]) => w + ' ' + n + '篇').join('、') || '暂无空间词')));
+    for (const [group, values] of axes) groups.append(element('p', {}, group + '：' + (sorted(values).slice(0,30).map(([w,n]) => w + ' ' + n + '篇').join('、') || '暂无场所词')));
     out.append(groups);
     const themes = new Map(), analysed = chapters.filter(c => c.narrative_analysis);
     for (const c of analysed) for (const motif of c.narrative_analysis.motifs) {
@@ -2417,7 +2417,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
   function reportPie(container,values,title='路径步骤类型占比'){
     container.replaceChildren(); const total=values.reduce((sum,item)=>sum+item[1],0);
     if(!total){container.append(element('p',{class:'muted'},'当前范围暂无数据。'));return;}
-    const colors=['#7042b8','#d85e00','#008477','#176bb0','#b88627','#657668']; let cursor=0;
+    const colors=GhostMapAuditReports.colors(values.length); let cursor=0;
     const segments=values.map(([label,value],index)=>{const start=cursor;cursor+=value/total*100;return colors[index%colors.length]+' '+start+'% '+cursor+'%';});
     const pie=element('div',{class:'report-pie',role:'img','aria-label':title});pie.style.background='conic-gradient('+segments.join(',')+')';container.append(pie);
     const legend=element('div',{class:'report-pie-legend'});values.forEach(([label,value],index)=>{const item=element('span');const swatch=element('i');swatch.style.background=colors[index%colors.length];item.append(swatch,element('span',{},label+' '+value+'（'+(value/total*100).toFixed(1)+'%）'));legend.append(item);});container.append(legend);

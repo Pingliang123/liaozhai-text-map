@@ -91,7 +91,7 @@ function groups(row,chapter,routes){
   const location=(rawRealm==='异境'&&!evidencedRealm||['天界','地界'].includes(evidencedRealm)&&candidateLocation!==subject)?'':candidateLocation;
   const realm=word?evidencedRealm||worldFor(role,subject,location,row,index):'';
   const savedAccess=['私人','开放自然','公共','混合'].includes(access)?access:'',fallback=word&&!savedAccess?inferredAccess(word):'';
-  return {word,access:savedAccess||fallback,accessSource:fallback?'按原文空间词用途推定':'',location,locationSource:location?locationSource:'',realm};
+  return {word,access:savedAccess||fallback,accessSource:fallback?'按原文场所词用途推定':'',location,locationSource:location?locationSource:'',realm};
  });
 }
 function values(row,chapter,routes){
@@ -102,8 +102,8 @@ function values(row,chapter,routes){
   const index=indexFor(chapter,routes),eventUnit=Number(event.unit),anchor=index.rows.filter(r=>(!Number.isFinite(eventUnit)||r.id<=eventUnit)&&r.tokens.includes(group.location)).slice(-1)[0];
   if(anchor)evidenceParts.push('所在地点篇内依据（前文原句）：'+anchor.unit.text);
  }
- for(const group of groupsValue)if(group.accessSource)evidenceParts.push('使用方式推定：原文空间词「'+group.word+'」按其明确用途归为'+group.access);
- const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'空间词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
+ for(const group of groupsValue)if(group.accessSource)evidenceParts.push('使用方式推定：原文场所词「'+group.word+'」按其明确用途归为'+group.access);
+ const basis=groupsValue.some(g=>g.locationSource==='篇内前文最近明确地名（上下文承接）')?'场所词取自本步原文分词；所在地承接前文最近且无歧义的地名，见双端证据':'仅列出本步骤引句中出现的原文词项；地点与三界按原文证据填写';
  return [row.chapter_id+1,row.chapter,row.step,row.actors,...groupsValue.flatMap(g=>[g.word,g.access,g.location,g.realm]),row.space,({movement:'人物移动',plot:'情节转换',mention:'空间提及',scene:'场景标注'})[row.transition_kind]||'待核',basis,references.join('、'),row.boundary_medium||'',row.narrative_role||'',row.quote,row.step_id,evidenceParts.join('；')||row.quote||''];
 }
 const omittedHeaders=new Set(['参考地点','边界／媒介','空间叙事功能','稳定步骤标识']);

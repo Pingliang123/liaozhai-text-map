@@ -1,5 +1,9 @@
 (function(root){
   'use strict';
+  function colors(count) {
+    const palette=['#4e79a7','#f28e2b','#59a14f','#e15759','#b07aa1','#76b7b2','#edc949','#a1be33','#9c755f','#ff9da7','#1f3c88','#a6cee3','#b15928','#b2df8a','#6a3d9a','#fb9a99','#8c6d31','#cab2d6','#008b8b','#999999'];
+    return Array.from({length:count},(_,i)=>i<palette.length?palette[i]:'hsl('+((i*137.508)%360)+',60%,40%)');
+  }
   const TYPES=['人','鬼','狐','妖','神'];
   function chapterChoices(model,query='',status='all'){
     query=model.simplify(query).trim();
@@ -55,7 +59,7 @@
     let data=null,loading=false,recordPage=0;
     const recordSearch=el('input','',{type:'search',placeholder:'词语、篇名或原文','aria-label':'搜索本轮修订'}),recordFilter=el('select','',{'aria-label':'修订类别'});
     for(const [key,title] of [['','全部'],['term','词语'],['segmentation','分词'],['event','异事类型'],['held','未套用']])recordFilter.append(el('option',title,{value:key}));
-    const stateNames={applied:'已套用',unchanged:'无变化',held:'未套用',uncertain:'未定'},kindNames={person:'人物词',place:'地点词',space:'空间词',time:'时间词',none:'移除'},actions={add:'新增',remove:'移除',reclassify:'改类',uncertain:'未定'};
+    const stateNames={applied:'已套用',unchanged:'无变化',held:'未套用',uncertain:'未定'},kindNames={person:'人物词',place:'地点词',space:'场所词',time:'时间词',none:'移除'},actions={add:'新增',remove:'移除',reclassify:'改类',uncertain:'未定'};
     const list=value=>Array.isArray(value)?value:value?[String(value)]:[];
     function renderRecords(){
       if(!data)return;recordBody.replaceChildren();const q=model.simplify(recordSearch.value.trim());
@@ -82,5 +86,5 @@
     });
     return {render(){renderEvents();renderRecords();}};
   }
-  const api={eventRows,eventStats,validateTypes,csv,mount,chapterChoices,debounce};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapAuditReports=api;
+  const api={colors,eventRows,eventStats,validateTypes,csv,mount,chapterChoices,debounce};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.GhostMapAuditReports=api;
 })(globalThis);

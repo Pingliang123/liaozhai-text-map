@@ -1,6 +1,6 @@
 (function(root){
   'use strict';
-  const kinds={places:'地点词',spaces:'空间词',people:'人物词',times:'时间词',none:'无类别'};
+  const kinds={places:'地点词',spaces:'场所词',people:'人物词',times:'时间词',none:'无类别'};
   function filter(rows,{kind='',chapter='',query='',scope='active',unmapped=new Set(),normalize=x=>x}={}){
     return rows.filter(r=>(!kind||r.kind===kind)&&(!chapter||String(r.chapter_id)===String(chapter))&&
       (!query||(r.word+' '+r.chapter).includes(query))&&

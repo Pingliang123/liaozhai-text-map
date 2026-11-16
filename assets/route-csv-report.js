@@ -89,7 +89,7 @@
    const data=aggregate(filtered,roles,metric.value);
    status.textContent=new Set(filtered.map(row=>row.篇号)).size+' 篇 · '+filtered.length+' 个步骤。按有值的空间角色计数，同一步骤可计入多个角色。数据来自已核对路径 CSV。';
    charts.replaceChildren();evidence.replaceChildren();
-   for(const [key,title,isPie] of [['spaces','空间词前 12 名'],['places','所在地前 12 名'],['transitions','出发 → 到达前 12 名'],['access','空间使用方式',true],['worlds','三界分类',true]]){
+   for(const [key,title,isPie] of [['spaces','场所词前 12 名'],['places','所在地前 12 名'],['transitions','出发 → 到达前 12 名'],['access','空间使用方式',true],['worlds','三界分类',true]]){
     const card=el('div'),plot=el('div');card.append(el('h3',title),plot);
     const groups=data[key],shown=isPie?groups:groups.slice(0,12);
     if(isPie)pie(plot,shown.map(group=>[group.label,group.value]),title);
