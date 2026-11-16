@@ -1,7 +1,7 @@
 'use strict';
 const input=require('../.network-runtime/latest-place-space-input.json');
 const fs=require('fs'),M=require('./ghost_map_model'),R=require('../assets/spatial-routes'),crypto=require('crypto');
-const raw=fs.readFileSync('.network-runtime/latest-live-package.json'),p=JSON.parse(raw),d=require('../reports/最新五主題_類型對照.json'),m=M.create(p.base);m.importDocument(p.revisions);
+const raw=fs.readFileSync('.network-runtime/latest-live-package.json'),p=JSON.parse(raw),d=JSON.parse(fs.readFileSync(process.argv[2]||'reports/最新五主題_類型對照.json','utf8')),m=M.create(p.base);m.importDocument(p.revisions);
 if(crypto.createHash('sha256').update(raw).digest('hex')!==d.source_sha256)throw Error('来源版本不一致');
 for(const t of d.topics)for(const r of t.representatives){
  const c=m.view(r.id),words=new Set(t.words.map(x=>x.word)),units=R.tokenUnits(c,R.lexicon(c));
@@ -14,5 +14,5 @@ for(const t of d.topics)for(const r of t.representatives){
  }
  r.evidence=candidates;
 }
-fs.writeFileSync('reports/最新五主題_類型對照.json',JSON.stringify(d,null,2));
+fs.writeFileSync(process.argv[2]||'reports/最新五主題_類型對照.json',JSON.stringify(d,null,2));
 console.log('Representative chapters',d.topics.reduce((n,t)=>n+t.representatives.length,0));
