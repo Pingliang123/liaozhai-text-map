@@ -1,0 +1,662 @@
+{
+  "exported_at": "2026-11-16T06:23:29.482Z",
+  "complete_snapshot": true,
+  "user_overrides": 328,
+  "published_overrides": 491,
+  "differences": [
+    {
+      "id": 8,
+      "title": "捉狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 26,
+      "title": "狐入瓶",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 34,
+      "title": "灵官",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 35,
+      "title": "王兰",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 37,
+      "title": "王成",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 38,
+      "title": "青凤",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 67,
+      "title": "酒友",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 68,
+      "title": "莲香",
+      "user": [
+        "妖",
+        "神",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "神",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 70,
+      "title": "九山王",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 71,
+      "title": "遵化署狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 73,
+      "title": "汾州狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 77,
+      "title": "狐联",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 78,
+      "title": "潍水狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 79,
+      "title": "红玉",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 85,
+      "title": "胡氏",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 88,
+      "title": "伏狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 92,
+      "title": "黄九郎",
+      "user": [
+        "妖",
+        "神",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "神",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 104,
+      "title": "汪士秀",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "妖",
+        "鬼"
+      ],
+      "user_override": true
+    },
+    {
+      "id": 115,
+      "title": "犬灯",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 123,
+      "title": "毛狐",
+      "user": [
+        "妖",
+        "神"
+      ],
+      "published": [
+        "狐",
+        "神"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 143,
+      "title": "雨钱",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 151,
+      "title": "辛十四娘",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 154,
+      "title": "捉鬼射狐",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 158,
+      "title": "胡四相公",
+      "user": [
+        "妖",
+        "神",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "神",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 170,
+      "title": "秦生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 174,
+      "title": "封三娘",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 177,
+      "title": "农人",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 195,
+      "title": "荷花三娘子",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "妖",
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 198,
+      "title": "上仙",
+      "user": [
+        "妖",
+        "神"
+      ],
+      "published": [
+        "狐",
+        "神"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 201,
+      "title": "郭生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 213,
+      "title": "河间生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 229,
+      "title": "刘亮采",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 246,
+      "title": "冷生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 247,
+      "title": "狐惩淫",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 255,
+      "title": "邵女",
+      "user": [
+        "人"
+      ],
+      "published": [
+        "妖",
+        "鬼"
+      ],
+      "user_override": true
+    },
+    {
+      "id": 274,
+      "title": "颠道人",
+      "user": [
+        "神"
+      ],
+      "published": [
+        "人"
+      ],
+      "user_override": true
+    },
+    {
+      "id": 281,
+      "title": "甄后",
+      "user": [
+        "妖",
+        "神",
+        "鬼"
+      ],
+      "published": [
+        "妖",
+        "狐",
+        "神",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 284,
+      "title": "杨疤眼",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 285,
+      "title": "小翠",
+      "user": [
+        "妖",
+        "神",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "神",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 312,
+      "title": "嫦娥",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 315,
+      "title": "盗户",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 366,
+      "title": "王子安",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 369,
+      "title": "金陵乙",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 383,
+      "title": "陵县狐",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 386,
+      "title": "真生",
+      "user": [
+        "妖",
+        "神"
+      ],
+      "published": [
+        "狐",
+        "神"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 388,
+      "title": "彭二挣",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 390,
+      "title": "牛同人",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 394,
+      "title": "长亭",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 417,
+      "title": "白秋练",
+      "user": [
+        "妖",
+        "神"
+      ],
+      "published": [
+        "神"
+      ],
+      "user_override": true
+    },
+    {
+      "id": 426,
+      "title": "司训",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 428,
+      "title": "织成",
+      "user": [
+        "神"
+      ],
+      "published": [
+        "鬼"
+      ],
+      "user_override": true
+    },
+    {
+      "id": 468,
+      "title": "褚遂良",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 472,
+      "title": "姬生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 486,
+      "title": "浙东生",
+      "user": [
+        "妖"
+      ],
+      "published": [
+        "狐"
+      ],
+      "user_override": false
+    },
+    {
+      "id": 488,
+      "title": "一员官",
+      "user": [
+        "妖",
+        "鬼"
+      ],
+      "published": [
+        "狐",
+        "鬼"
+      ],
+      "user_override": false
+    }
+  ]
+}
