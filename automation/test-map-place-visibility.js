@@ -4,8 +4,8 @@ const html=fs.readFileSync('index.html','utf8'),context={};vm.createContext(cont
 const source=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(x=>x[1]).find(x=>x.includes('const api = {COLORS, projection'));
 vm.runInContext(source,context);const G=context.GhostMapGeometry,p=require('../data-package.json'),m=M.create(p.base);m.importDocument(p.revisions);
 const before=JSON.stringify(m.document());
-context.allPlaces=()=>m.places();context.matchesLayer=()=>true;context.filteredChapters=(p,aggregate=false)=>m.atPlace(p,aggregate);
-const start=html.indexOf('  function currentPlaces()'),end=html.indexOf('\n  function renderPlace()',start);vm.runInContext(html.slice(start,end),context);
+context.$=()=>({value:''});context.allPlaces=()=>m.places();context.matchesLayer=()=>true;context.filteredChapters=(p,aggregate=false)=>m.atPlace(p,aggregate);
+const start=html.indexOf('  let placeFilterCache;'),end=html.indexOf('\n  function renderPlace()',start);vm.runInContext(html.slice(start,end),context);
 const points=context.currentPlaces();
 for(const word of ['江苏','安徽','四川','甘肃']){const p=points.find(p=>p.name===word);assert(p,'保留下级有关联篇目的省域');assert.equal(p.chapters.length,0,'不伪造直接提及');assert(p.context_chapters.length>0);}
 assert(points.some(p=>p.name==='吕宋国'));
