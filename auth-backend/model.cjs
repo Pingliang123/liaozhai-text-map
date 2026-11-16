@@ -8,9 +8,9 @@
   function placeWordReason(word, chapter='') {
     if(PLACE_REVIEW.chapter_exclusions?.[chapter]?.[word]) return PLACE_REVIEW.chapter_exclusions[chapter][word];
     if(PLACE_REVIEW.exclude?.[word]) return PLACE_REVIEW.exclude[word];
-    if(PLACE_REVIEW.spaces?.[word]) return '相对方位／篇内空间，改列空间词：'+PLACE_REVIEW.spaces[word];
+    if(PLACE_REVIEW.spaces?.[word]) return '相对方位／篇内空间，改列场所词：'+PLACE_REVIEW.spaces[word];
     if(PLACE_REVIEW.replacements?.[word]) return '误切片语，修正为：'+PLACE_REVIEW.replacements[word];
-    if(word==='北山') return '未具名山地场景，归为空间词。';
+    if(word==='北山') return '未具名山地场景，归为场所词。';
     if(word==='北闱' || word==='北闈') return '赴试表述，不作独立地名。';
     return /^[东西南北東](?:去|行|距|走|往)?[一二三四五六七八九十百千万萬两兩数數几幾\d]+(?:余|餘|多)?里(?:许|許)?$/.test(word)
       ? '方位与距离片语，描述位置关系，不是地理专名。' : '';
@@ -225,11 +225,11 @@
       assert(result.places.every(p => p.word), '地点不可为空');
       assert(new Set(result.places.map(p => name(p.word))).size === result.places.length, '地点不可重复');
       const spaces = input.space_words === undefined ? view(id).space_words || [] : input.space_words;
-      assert(Array.isArray(spaces) && spaces.length <= 500, '空间词格式错误');
+      assert(Array.isArray(spaces) && spaces.length <= 500, '场所词格式错误');
       const transferred=input.places.filter(p=>!decision(input,p.word)).map(p=>PLACE_REVIEW.spaces?.[p.word]).filter(w=>w&&source.includes(w));
-      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '空间词', 100)))];
-      assert(result.space_words.every(w => w && source.includes(w)), '空间词必须在本篇简体原文中出现');
-      assert(new Set(result.space_words).size === result.space_words.length, '空间词不可重复');
+      result.space_words = [...new Set([...spaces,...transferred].map(w => text(w, '场所词', 100)))];
+      assert(result.space_words.every(w => w && source.includes(w)), '场所词必须在本篇简体原文中出现');
+      assert(new Set(result.space_words).size === result.space_words.length, '场所词不可重复');
       const narrative = input.narrative_events === undefined ? view(id).narrative_events || [] : input.narrative_events;
       assert(Array.isArray(narrative) && narrative.length <= 100, '情节路径格式错误');
       result.narrative_events = narrative.map((row,index) => {
