@@ -1,0 +1,1 @@
+(function(root){const data={"version":"package5-event-types-20261116","override_count":328,"ancestors":["c5c5a1beada928fc6c51e4935a3235376834dc0033eab9d39dc0d530ab198423"]};if(typeof module!=='undefined')module.exports=data;else root.GhostTypeSnapshotRecovery=data;})(globalThis);
