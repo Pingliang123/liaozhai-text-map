@@ -1,0 +1,2635 @@
+{
+  "source_sha256": "4380f17fca0d418a94d5b6699b13fe80e6991bd709a9ce58f61deb1e5068e6a8",
+  "method": "Raw spatial word count cosine; no places or TF-IDF. Descriptive selection: cosine>=.5, both >=5 unique words and >=10 tokens, >=2 shared words. No literary theme or significance inference.",
+  "eligible_pairs": 46,
+  "rows": [
+    {
+      "ids": [
+        104,
+        417
+      ],
+      "titles": [
+        "汪士秀",
+        "白秋练"
+      ],
+      "similarity": 0.8235641989143285,
+      "unique_words": [
+        7,
+        13
+      ],
+      "token_counts": [
+        15,
+        23
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "湖中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            9
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.984375
+    },
+    {
+      "ids": [
+        417,
+        428
+      ],
+      "titles": [
+        "白秋练",
+        "织成"
+      ],
+      "similarity": 0.7693218186208296,
+      "unique_words": [
+        13,
+        15
+      ],
+      "token_counts": [
+        23,
+        28
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "湖中",
+          "counts": [
+            1,
+            4
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            9,
+            7
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            4
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.84
+    },
+    {
+      "ids": [
+        203,
+        417
+      ],
+      "titles": [
+        "彭海秋",
+        "白秋练"
+      ],
+      "similarity": 0.764093177458341,
+      "unique_words": [
+        18,
+        13
+      ],
+      "token_counts": [
+        28,
+        23
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            9
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9264705882352942
+    },
+    {
+      "ids": [
+        317,
+        417
+      ],
+      "titles": [
+        "霍女",
+        "白秋练"
+      ],
+      "similarity": 0.7537783614444091,
+      "unique_words": [
+        23,
+        13
+      ],
+      "token_counts": [
+        34,
+        23
+      ],
+      "events": [
+        [
+          "人"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            8,
+            9
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.96
+    },
+    {
+      "ids": [
+        104,
+        428
+      ],
+      "titles": [
+        "汪士秀",
+        "织成"
+      ],
+      "similarity": 0.7448594322222765,
+      "unique_words": [
+        7,
+        15
+      ],
+      "token_counts": [
+        15,
+        28
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [
+        "鬼"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "水中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "水面",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "湖中",
+          "counts": [
+            1,
+            4
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            7
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.8596491228070176
+    },
+    {
+      "ids": [
+        203,
+        428
+      ],
+      "titles": [
+        "彭海秋",
+        "织成"
+      ],
+      "similarity": 0.7302967433402214,
+      "unique_words": [
+        18,
+        15
+      ],
+      "token_counts": [
+        28,
+        28
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "水中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            7
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            4
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            3,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.765625
+    },
+    {
+      "ids": [
+        104,
+        203
+      ],
+      "titles": [
+        "汪士秀",
+        "彭海秋"
+      ],
+      "similarity": 0.730062876250182,
+      "unique_words": [
+        7,
+        18
+      ],
+      "token_counts": [
+        15,
+        28
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "水中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            7
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9607843137254902
+    },
+    {
+      "ids": [
+        54,
+        417
+      ],
+      "titles": [
+        "张老相公",
+        "白秋练"
+      ],
+      "similarity": 0.7286524160629289,
+      "unique_words": [
+        8,
+        13
+      ],
+      "token_counts": [
+        10,
+        23
+      ],
+      "events": [
+        [
+          "妖",
+          "神"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            3,
+            9
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9310344827586207
+    },
+    {
+      "ids": [
+        255,
+        363
+      ],
+      "titles": [
+        "邵女",
+        "张鸿渐"
+      ],
+      "similarity": 0.7151332219343158,
+      "unique_words": [
+        7,
+        19
+      ],
+      "token_counts": [
+        11,
+        27
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "狐",
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "家中",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "楼阁",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            3,
+            7
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.75
+    },
+    {
+      "ids": [
+        401,
+        490
+      ],
+      "titles": [
+        "仇大娘",
+        "人妖"
+      ],
+      "similarity": 0.6943650748294137,
+      "unique_words": [
+        19,
+        7
+      ],
+      "token_counts": [
+        28,
+        11
+      ],
+      "events": [
+        [
+          "人"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [
+        "人"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "家中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "田",
+          "counts": [
+            6,
+            3
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            4,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "田",
+      "largest_dot_product_share": 0.6666666666666666
+    },
+    {
+      "ids": [
+        203,
+        317
+      ],
+      "titles": [
+        "彭海秋",
+        "霍女"
+      ],
+      "similarity": 0.6931810730249349,
+      "unique_words": [
+        18,
+        23
+      ],
+      "token_counts": [
+        28,
+        34
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            8
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            3,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9032258064516129
+    },
+    {
+      "ids": [
+        417,
+        465
+      ],
+      "titles": [
+        "白秋练",
+        "王桂庵"
+      ],
+      "similarity": 0.690626360377083,
+      "unique_words": [
+        13,
+        20
+      ],
+      "token_counts": [
+        23,
+        25
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            9,
+            4
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            2,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.8181818181818182
+    },
+    {
+      "ids": [
+        54,
+        428
+      ],
+      "titles": [
+        "张老相公",
+        "织成"
+      ],
+      "similarity": 0.6634034720037775,
+      "unique_words": [
+        8,
+        15
+      ],
+      "token_counts": [
+        10,
+        28
+      ],
+      "events": [
+        [
+          "妖",
+          "神"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "渡",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            3,
+            7
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            4
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.8076923076923077
+    },
+    {
+      "ids": [
+        317,
+        428
+      ],
+      "titles": [
+        "霍女",
+        "织成"
+      ],
+      "similarity": 0.653197264742181,
+      "unique_words": [
+        23,
+        15
+      ],
+      "token_counts": [
+        34,
+        28
+      ],
+      "events": [
+        [
+          "人"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "渡",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            8,
+            7
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            4
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "船头",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.875
+    },
+    {
+      "ids": [
+        54,
+        317
+      ],
+      "titles": [
+        "张老相公",
+        "霍女"
+      ],
+      "similarity": 0.6500000000000001,
+      "unique_words": [
+        8,
+        23
+      ],
+      "token_counts": [
+        10,
+        34
+      ],
+      "events": [
+        [
+          "妖",
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "渡",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            3,
+            8
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9230769230769231
+    },
+    {
+      "ids": [
+        54,
+        203
+      ],
+      "titles": [
+        "张老相公",
+        "彭海秋"
+      ],
+      "similarity": 0.6428695435311895,
+      "unique_words": [
+        8,
+        18
+      ],
+      "token_counts": [
+        10,
+        28
+      ],
+      "events": [
+        [
+          "妖",
+          "神"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            3,
+            7
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9130434782608695
+    },
+    {
+      "ids": [
+        20,
+        248
+      ],
+      "titles": [
+        "狐嫁女",
+        "山市"
+      ],
+      "similarity": 0.6141922686399941,
+      "unique_words": [
+        8,
+        10
+      ],
+      "token_counts": [
+        10,
+        14
+      ],
+      "events": [
+        [
+          "狐"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "楼",
+          "counts": [
+            3,
+            4
+          ]
+        },
+        {
+          "word": "楼上",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "楼",
+      "largest_dot_product_share": 0.9230769230769231
+    },
+    {
+      "ids": [
+        20,
+        409
+      ],
+      "titles": [
+        "狐嫁女",
+        "葛巾"
+      ],
+      "similarity": 0.6141922686399941,
+      "unique_words": [
+        8,
+        13
+      ],
+      "token_counts": [
+        10,
+        16
+      ],
+      "events": [
+        [
+          "狐"
+        ],
+        [
+          "鬼",
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "楼",
+          "counts": [
+            3,
+            4
+          ]
+        },
+        {
+          "word": "楼下",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "楼",
+      "largest_dot_product_share": 0.9230769230769231
+    },
+    {
+      "ids": [
+        356,
+        392
+      ],
+      "titles": [
+        "小梅",
+        "湘裙"
+      ],
+      "similarity": 0.6127555276542501,
+      "unique_words": [
+        14,
+        17
+      ],
+      "token_counts": [
+        21,
+        25
+      ],
+      "events": [
+        [
+          "鬼",
+          "狐"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [
+        "鬼"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            5,
+            3
+          ]
+        },
+        {
+          "word": "室中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "市",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "田",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "门外",
+          "counts": [
+            2,
+            4
+          ]
+        }
+      ],
+      "largest_dot_product_word": "室",
+      "largest_dot_product_share": 0.5
+    },
+    {
+      "ids": [
+        203,
+        465
+      ],
+      "titles": [
+        "彭海秋",
+        "王桂庵"
+      ],
+      "similarity": 0.6111265087983809,
+      "unique_words": [
+        18,
+        20
+      ],
+      "token_counts": [
+        28,
+        25
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            4
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            3,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.8
+    },
+    {
+      "ids": [
+        428,
+        465
+      ],
+      "titles": [
+        "织成",
+        "王桂庵"
+      ],
+      "similarity": 0.6056978774101716,
+      "unique_words": [
+        15,
+        20
+      ],
+      "token_counts": [
+        28,
+        25
+      ],
+      "events": [
+        [
+          "鬼"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            4
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            4,
+            2
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            2,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.7368421052631579
+    },
+    {
+      "ids": [
+        20,
+        38
+      ],
+      "titles": [
+        "狐嫁女",
+        "青凤"
+      ],
+      "similarity": 0.6035098490754185,
+      "unique_words": [
+        8,
+        13
+      ],
+      "token_counts": [
+        10,
+        17
+      ],
+      "events": [
+        [
+          "狐"
+        ],
+        [
+          "鬼",
+          "狐"
+        ]
+      ],
+      "shared_types": [
+        "狐"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "楼",
+          "counts": [
+            3,
+            3
+          ]
+        },
+        {
+          "word": "楼上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "楼下",
+          "counts": [
+            1,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "楼",
+      "largest_dot_product_share": 0.6923076923076923
+    },
+    {
+      "ids": [
+        109,
+        255
+      ],
+      "titles": [
+        "宫梦弼",
+        "邵女"
+      ],
+      "similarity": 0.6000991981489792,
+      "unique_words": [
+        13,
+        7
+      ],
+      "token_counts": [
+        14,
+        11
+      ],
+      "events": [
+        [
+          "鬼"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [
+        "鬼"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "家中",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            2,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.5454545454545454
+    },
+    {
+      "ids": [
+        54,
+        465
+      ],
+      "titles": [
+        "张老相公",
+        "王桂庵"
+      ],
+      "similarity": 0.5856516070822727,
+      "unique_words": [
+        8,
+        20
+      ],
+      "token_counts": [
+        10,
+        25
+      ],
+      "events": [
+        [
+          "妖",
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "江中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            3,
+            4
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.8
+    },
+    {
+      "ids": [
+        417,
+        423
+      ],
+      "titles": [
+        "白秋练",
+        "陈云栖"
+      ],
+      "similarity": 0.582921932850343,
+      "unique_words": [
+        13,
+        14
+      ],
+      "token_counts": [
+        23,
+        17
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "窗外",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            9,
+            3
+          ]
+        },
+        {
+          "word": "逆旅",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9310344827586207
+    },
+    {
+      "ids": [
+        363,
+        480
+      ],
+      "titles": [
+        "张鸿渐",
+        "锦瑟"
+      ],
+      "similarity": 0.5704202749096375,
+      "unique_words": [
+        19,
+        27
+      ],
+      "token_counts": [
+        27,
+        41
+      ],
+      "events": [
+        [
+          "狐",
+          "神"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "床上",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            7,
+            6
+          ]
+        },
+        {
+          "word": "阶下",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.8936170212765957
+    },
+    {
+      "ids": [
+        39,
+        356
+      ],
+      "titles": [
+        "画皮",
+        "小梅"
+      ],
+      "similarity": 0.5672816854423363,
+      "unique_words": [
+        15,
+        14
+      ],
+      "token_counts": [
+        20,
+        21
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "鬼",
+          "狐"
+        ]
+      ],
+      "shared_types": [
+        "鬼"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "内室",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "室",
+          "counts": [
+            3,
+            5
+          ]
+        },
+        {
+          "word": "市",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "门外",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "室",
+      "largest_dot_product_share": 0.6818181818181818
+    },
+    {
+      "ids": [
+        109,
+        363
+      ],
+      "titles": [
+        "宫梦弼",
+        "张鸿渐"
+      ],
+      "similarity": 0.5559454491816203,
+      "unique_words": [
+        13,
+        19
+      ],
+      "token_counts": [
+        14,
+        27
+      ],
+      "events": [
+        [
+          "鬼"
+        ],
+        [
+          "狐",
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "室中",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "家中",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            2,
+            7
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.7368421052631579
+    },
+    {
+      "ids": [
+        363,
+        377
+      ],
+      "titles": [
+        "张鸿渐",
+        "云萝公主"
+      ],
+      "similarity": 0.5495951187197243,
+      "unique_words": [
+        19,
+        20
+      ],
+      "token_counts": [
+        27,
+        34
+      ],
+      "events": [
+        [
+          "狐",
+          "神"
+        ],
+        [
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "床上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "楼阁",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            7,
+            5
+          ]
+        },
+        {
+          "word": "门外",
+          "counts": [
+            1,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.8333333333333334
+    },
+    {
+      "ids": [
+        317,
+        465
+      ],
+      "titles": [
+        "霍女",
+        "王桂庵"
+      ],
+      "similarity": 0.5466081666101212,
+      "unique_words": [
+        23,
+        20
+      ],
+      "token_counts": [
+        34,
+        25
+      ],
+      "events": [
+        [
+          "人"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [
+        "人"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            8,
+            4
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "船",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9142857142857143
+    },
+    {
+      "ids": [
+        363,
+        414
+      ],
+      "titles": [
+        "张鸿渐",
+        "青蛙神"
+      ],
+      "similarity": 0.5439580966939495,
+      "unique_words": [
+        19,
+        12
+      ],
+      "token_counts": [
+        27,
+        13
+      ],
+      "events": [
+        [
+          "狐",
+          "神"
+        ],
+        [
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "家中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "楼阁",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            7,
+            2
+          ]
+        },
+        {
+          "word": "门外",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.7777777777777778
+    },
+    {
+      "ids": [
+        203,
+        478
+      ],
+      "titles": [
+        "彭海秋",
+        "粉蝶"
+      ],
+      "similarity": 0.5378528742004771,
+      "unique_words": [
+        18,
+        11
+      ],
+      "token_counts": [
+        28,
+        12
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "村中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            7,
+            2
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.7777777777777778
+    },
+    {
+      "ids": [
+        417,
+        478
+      ],
+      "titles": [
+        "白秋练",
+        "粉蝶"
+      ],
+      "similarity": 0.5372153093502536,
+      "unique_words": [
+        13,
+        11
+      ],
+      "token_counts": [
+        23,
+        12
+      ],
+      "events": [
+        [
+          "神"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "神"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            9,
+            2
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            2,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9
+    },
+    {
+      "ids": [
+        255,
+        377
+      ],
+      "titles": [
+        "邵女",
+        "云萝公主"
+      ],
+      "similarity": 0.5367450401216933,
+      "unique_words": [
+        7,
+        20
+      ],
+      "token_counts": [
+        11,
+        34
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "妖"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "楼阁",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            3,
+            5
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.6818181818181818
+    },
+    {
+      "ids": [
+        117,
+        255
+      ],
+      "titles": [
+        "狐妾",
+        "邵女"
+      ],
+      "similarity": 0.5361109642475097,
+      "unique_words": [
+        13,
+        7
+      ],
+      "token_counts": [
+        16,
+        11
+      ],
+      "events": [
+        [
+          "狐"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "家中",
+          "counts": [
+            4,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            1,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "家中",
+      "largest_dot_product_share": 0.6153846153846154
+    },
+    {
+      "ids": [
+        38,
+        409
+      ],
+      "titles": [
+        "青凤",
+        "葛巾"
+      ],
+      "similarity": 0.5263968047576972,
+      "unique_words": [
+        13,
+        13
+      ],
+      "token_counts": [
+        17,
+        16
+      ],
+      "events": [
+        [
+          "鬼",
+          "狐"
+        ],
+        [
+          "鬼",
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "鬼"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "楼",
+          "counts": [
+            3,
+            4
+          ]
+        },
+        {
+          "word": "楼下",
+          "counts": [
+            3,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "楼",
+      "largest_dot_product_share": 0.8
+    },
+    {
+      "ids": [
+        99,
+        104
+      ],
+      "titles": [
+        "夜叉国",
+        "汪士秀"
+      ],
+      "similarity": 0.526373839724128,
+      "unique_words": [
+        19,
+        7
+      ],
+      "token_counts": [
+        29,
+        15
+      ],
+      "events": [
+        [
+          "妖"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [
+        "妖"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "水中",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            5,
+            7
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9459459459459459
+    },
+    {
+      "ids": [
+        117,
+        399
+      ],
+      "titles": [
+        "狐妾",
+        "阿纤"
+      ],
+      "similarity": 0.5237849266164972,
+      "unique_words": [
+        13,
+        14
+      ],
+      "token_counts": [
+        16,
+        16
+      ],
+      "events": [
+        [
+          "狐"
+        ],
+        [
+          "妖"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "家中",
+          "counts": [
+            4,
+            3
+          ]
+        },
+        {
+          "word": "途中",
+          "counts": [
+            1,
+            1
+          ]
+        }
+      ],
+      "largest_dot_product_word": "家中",
+      "largest_dot_product_share": 0.9230769230769231
+    },
+    {
+      "ids": [
+        99,
+        124
+      ],
+      "titles": [
+        "夜叉国",
+        "翩翩"
+      ],
+      "similarity": 0.5217491947499509,
+      "unique_words": [
+        19,
+        9
+      ],
+      "token_counts": [
+        29,
+        12
+      ],
+      "events": [
+        [
+          "妖"
+        ],
+        [
+          "鬼"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "山中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "洞",
+          "counts": [
+            6,
+            3
+          ]
+        },
+        {
+          "word": "洞口",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "洞",
+      "largest_dot_product_share": 0.8571428571428571
+    },
+    {
+      "ids": [
+        255,
+        480
+      ],
+      "titles": [
+        "邵女",
+        "锦瑟"
+      ],
+      "similarity": 0.5204472455316336,
+      "unique_words": [
+        7,
+        27
+      ],
+      "token_counts": [
+        11,
+        41
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [
+        "妖",
+        "鬼"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            3,
+            6
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.782608695652174
+    },
+    {
+      "ids": [
+        39,
+        377
+      ],
+      "titles": [
+        "画皮",
+        "云萝公主"
+      ],
+      "similarity": 0.5138701197773616,
+      "unique_words": [
+        15,
+        20
+      ],
+      "token_counts": [
+        20,
+        34
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "妖"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "南院",
+          "counts": [
+            1,
+            3
+          ]
+        },
+        {
+          "word": "室",
+          "counts": [
+            3,
+            2
+          ]
+        },
+        {
+          "word": "市",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            2
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            2,
+            5
+          ]
+        },
+        {
+          "word": "门外",
+          "counts": [
+            1,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.38461538461538464
+    },
+    {
+      "ids": [
+        356,
+        490
+      ],
+      "titles": [
+        "小梅",
+        "人妖"
+      ],
+      "similarity": 0.5092856112633843,
+      "unique_words": [
+        14,
+        7
+      ],
+      "token_counts": [
+        21,
+        11
+      ],
+      "events": [
+        [
+          "鬼",
+          "狐"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            5,
+            1
+          ]
+        },
+        {
+          "word": "家中",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "市",
+          "counts": [
+            2,
+            2
+          ]
+        },
+        {
+          "word": "田",
+          "counts": [
+            2,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "田",
+      "largest_dot_product_share": 0.375
+    },
+    {
+      "ids": [
+        255,
+        414
+      ],
+      "titles": [
+        "邵女",
+        "青蛙神"
+      ],
+      "similarity": 0.50709255283711,
+      "unique_words": [
+        7,
+        12
+      ],
+      "token_counts": [
+        11,
+        13
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "妖",
+          "神"
+        ]
+      ],
+      "shared_types": [
+        "妖"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "家中",
+          "counts": [
+            2,
+            1
+          ]
+        },
+        {
+          "word": "楼阁",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            3,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "门",
+      "largest_dot_product_share": 0.6666666666666666
+    },
+    {
+      "ids": [
+        429,
+        465
+      ],
+      "titles": [
+        "竹青",
+        "王桂庵"
+      ],
+      "similarity": 0.5060608273474738,
+      "unique_words": [
+        12,
+        20
+      ],
+      "token_counts": [
+        18,
+        25
+      ],
+      "events": [
+        [
+          "人",
+          "神"
+        ],
+        [
+          "人"
+        ]
+      ],
+      "shared_types": [
+        "人"
+      ],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "家门",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "舟",
+          "counts": [
+            5,
+            4
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9523809523809523
+    },
+    {
+      "ids": [
+        108,
+        417
+      ],
+      "titles": [
+        "庚娘",
+        "白秋练"
+      ],
+      "similarity": 0.502518907629606,
+      "unique_words": [
+        13,
+        13
+      ],
+      "token_counts": [
+        14,
+        23
+      ],
+      "events": [
+        [
+          "鬼"
+        ],
+        [
+          "神"
+        ]
+      ],
+      "shared_types": [],
+      "exact_types": false,
+      "shared_words": [
+        {
+          "word": "舟",
+          "counts": [
+            2,
+            9
+          ]
+        },
+        {
+          "word": "舟中",
+          "counts": [
+            1,
+            2
+          ]
+        }
+      ],
+      "largest_dot_product_word": "舟",
+      "largest_dot_product_share": 0.9
+    },
+    {
+      "ids": [
+        39,
+        255
+      ],
+      "titles": [
+        "画皮",
+        "邵女"
+      ],
+      "similarity": 0.5014858873767987,
+      "unique_words": [
+        15,
+        7
+      ],
+      "token_counts": [
+        20,
+        11
+      ],
+      "events": [
+        [
+          "鬼",
+          "妖"
+        ],
+        [
+          "鬼",
+          "妖"
+        ]
+      ],
+      "shared_types": [
+        "妖",
+        "鬼"
+      ],
+      "exact_types": true,
+      "shared_words": [
+        {
+          "word": "室",
+          "counts": [
+            3,
+            2
+          ]
+        },
+        {
+          "word": "榻上",
+          "counts": [
+            1,
+            1
+          ]
+        },
+        {
+          "word": "门",
+          "counts": [
+            2,
+            3
+          ]
+        }
+      ],
+      "largest_dot_product_word": "室",
+      "largest_dot_product_share": 0.46153846153846156
+    }
+  ]
+}
