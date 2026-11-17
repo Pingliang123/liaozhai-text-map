@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045249,
-      "sha256": "09243dcc74b6e53cf931e584ac4ea5f849d3553875e362cb629cde38c70ce0a4"
+      "sha256": "e2169f995c863e3d515877322532f973dfd70ba01a1131524107198580429781"
     },
     {
       "path": "github-login.js",
@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 281080,
-      "sha256": "c7569e03e00655d101a9af5d645a3d1b7319676b35f672742b495f0410ac0d66"
+      "bytes": 281019,
+      "sha256": "f9871425c0afd9be4ce026620a1e6ca5dc8d93cdf9fc2f74d05a8057ea6c6045"
     },
     {
       "path": "assets/chapter-references.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18462431,
-      "sha256": "c65fe7e8f2170a119f31d54e125f9534e4ddb93065ce2d9333fb6aeb82894195"
+      "sha256": "106f1ebd75d0d7179ff09b21ea3e95b755a8860fe430e0935ac8d1c61d44f02b"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597341,
-      "sha256": "307b340ed4936be51f008c0e76227f42fa1ce8e8bc501141abdfdc26b85ba40f"
+      "sha256": "c53b7cc52781acb5f841e4c902a1f2cf91fbdd6510d87430c3b0389075798d04"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -811,7 +811,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045249,
-      "sha256": "09243dcc74b6e53cf931e584ac4ea5f849d3553875e362cb629cde38c70ce0a4"
+      "sha256": "e2169f995c863e3d515877322532f973dfd70ba01a1131524107198580429781"
     },
     {
       "path": "data.html",
@@ -835,8 +835,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 281080,
-      "sha256": "c7569e03e00655d101a9af5d645a3d1b7319676b35f672742b495f0410ac0d66"
+      "bytes": 281019,
+      "sha256": "f9871425c0afd9be4ce026620a1e6ca5dc8d93cdf9fc2f74d05a8057ea6c6045"
     },
     {
       "path": "manual-revisions.json",
@@ -845,8 +845,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39254495,
-      "sha256": "9233e5e5439e08ca41fef3a3fa689f0f478bd10794bb9c429e295d04ebab89e2"
+      "bytes": 39254447,
+      "sha256": "98317f4899a4805966f0cf1555e1c2d232d0394f662d7092db21090e30ed0749"
     }
   ]
 }
