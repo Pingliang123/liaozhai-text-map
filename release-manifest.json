@@ -1,7 +1,7 @@
 {
   "format": "liaozhai-public-release-v1",
   "counts": {
-    "chapters": 491,
+    "chapters": 492,
     "manual_chapters": 491,
     "manual_locations": 143
   },
@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 33071338,
-      "sha256": "bf77f8f0cdc73298ece2e0e5ac7cc5b81f4be911c073596f5943e3fee7212cc8"
+      "sha256": "ddced03aa6fe37fb8a87e584e59a5b957e80e27950b37bbe999bf513a52d4b27"
     },
     {
       "path": "github-login.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18475301,
-      "sha256": "8516d28564a6cb4f7aeeffda3d73c9df4b80e959e59f93d917f582b92c074a1f"
+      "sha256": "7fb7d0d48f92ede0dbaf73943520f69145fddb1013a1c2983496c48835f30a14"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1609320,
-      "sha256": "f72427e087efa10502c8f2f4cf283ec0deb86703204ee2147dbcdf550cf84304"
+      "sha256": "adb11e9cb8d21f489262bb74356dd5bfa8b68bae605b89cd53039e111d7ac6ef"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -811,7 +811,7 @@
     {
       "path": "data-package.json",
       "bytes": 33071338,
-      "sha256": "bf77f8f0cdc73298ece2e0e5ac7cc5b81f4be911c073596f5943e3fee7212cc8"
+      "sha256": "ddced03aa6fe37fb8a87e584e59a5b957e80e27950b37bbe999bf513a52d4b27"
     },
     {
       "path": "data.html",
@@ -846,7 +846,7 @@
     {
       "path": "research-data.zip",
       "bytes": 39305467,
-      "sha256": "f833ac6ccd70f3875847d74fc5e1419be9bad0fb0897b8dd759beaeadc657b6a"
+      "sha256": "8920af05bb241ceaa2d76c05b6f0e208cf9d6f5250705ea19389f513980a0584"
     }
   ]
 }
