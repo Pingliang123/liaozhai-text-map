@@ -37,7 +37,11 @@ def finalize(root):
     temporary.replace(archive)
     manifest = json.loads((root / 'release-manifest.json').read_text(encoding='utf-8'))
     manifest['research_files'] = [row for row in manifest.get('research_files', []) if row['path'] not in OBSOLETE_ARCHIVE_FILES]
-    manifest['counts'].update(manual_chapters=len(bundle['revisions']['overrides']), manual_locations=len(bundle['revisions']['place_locations']))
+    manifest['counts'].update(
+        chapters=len(bundle['base']['chapter_overview']),
+        manual_chapters=len(bundle['revisions']['overrides']),
+        manual_locations=len(bundle['revisions']['place_locations']),
+    )
     research = {row['path']: row for row in manifest.get('research_files', [])}
     for name, file in current_files.items():
         data = file.read_bytes()
