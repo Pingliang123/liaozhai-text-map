@@ -43,9 +43,9 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: read
     steps:
       - uses: actions/checkout@v4
         with:
@@ -190,8 +190,33 @@ jobs:
           cp reports/unmapped-changes-20261021.md reports/unmapped-changes-20261021.json public/reports/
           cp reports/otherworld-hierarchy-review-20261021.md reports/otherworld-hierarchy-review-20261021.json public/reports/
           touch public/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: public
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Wait for the uploaded Pages artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in {1..12}; do
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
+              --jq '.artifacts[] | select(.expired == false) | .id' | grep -q '^[0-9]'; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "::error::The uploaded github-pages artifact did not become visible."
+          exit 1
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
