@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045249,
-      "sha256": "20eefe8ba5ffb49dbf23be8b5832edad774ed90d222a911bd29992b8c02b3177"
+      "sha256": "e41096da74e34546d63a90719ab908712a88a4cbbd5a84106f535f0097aeace0"
     },
     {
       "path": "github-login.js",
@@ -543,8 +543,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 281019,
-      "sha256": "f9871425c0afd9be4ce026620a1e6ca5dc8d93cdf9fc2f74d05a8057ea6c6045"
+      "bytes": 281927,
+      "sha256": "b41700bfd6cb97395dd42492e5a60f3336cd01a57efb84709fd297c28b292e51"
     },
     {
       "path": "assets/chapter-references.js",
@@ -619,7 +619,7 @@
     {
       "path": "assets/research-lab/cases.html",
       "bytes": 1738,
-      "sha256": "88703faa444b3fda6ecc4e451331f5cf726a84a0735a5666e2a78cf0ce2f75b1"
+      "sha256": "c8a75f8173eac378394ee16e444a52ca9c925ad37685eef6755b2e9ca23c4a35"
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18462431,
-      "sha256": "0df4ae5b9f3f166e370716d20091a946f9770ad19b9e98650c2c06cd479e0e08"
+      "sha256": "bbf2ed9f35770648ffc9c0258a0b49421a4d8acd8b03954e2091947558dc8203"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 6250,
-      "sha256": "0883ef078965af548fef726ed97365f1b18fe08968375c844ce3f20c24afe488"
+      "sha256": "ddb8c5715638f61804bb296625a9d0272622c802ac7441068527e6fd991cb5b2"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1597341,
-      "sha256": "6a56e076de01307379f5ef875fbb6ff14223db16cadbc6239a209dc716aa7705"
+      "sha256": "86127472a7f17f494766b9a78115756bb5245dd5ce0dcaff80776d6fc7305ca5"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -768,8 +768,8 @@
     },
     {
       "path": "assets/publication-rebases.js",
-      "bytes": 106419,
-      "sha256": "a403af6af5d49a196acc2bcbe2c62855cfbef438a58da282434ff7af93fe17ac"
+      "bytes": 156258,
+      "sha256": "6afd21c04840b64de59a05dccedc974ae4f38ca05d382b41e4c49d3427b85f85"
     },
     {
       "path": "assets/chapter-search.css",
@@ -811,7 +811,7 @@
     {
       "path": "data-package.json",
       "bytes": 33045249,
-      "sha256": "20eefe8ba5ffb49dbf23be8b5832edad774ed90d222a911bd29992b8c02b3177"
+      "sha256": "e41096da74e34546d63a90719ab908712a88a4cbbd5a84106f535f0097aeace0"
     },
     {
       "path": "data.html",
@@ -835,8 +835,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 281019,
-      "sha256": "f9871425c0afd9be4ce026620a1e6ca5dc8d93cdf9fc2f74d05a8057ea6c6045"
+      "bytes": 281927,
+      "sha256": "b41700bfd6cb97395dd42492e5a60f3336cd01a57efb84709fd297c28b292e51"
     },
     {
       "path": "manual-revisions.json",
@@ -845,8 +845,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39254447,
-      "sha256": "8e7a9866e8ec1d767a7fead9f5e6e53d30952f786f2686a88e2246e8ba6ef16f"
+      "bytes": 39269514,
+      "sha256": "5ae879c9aadaa9b7df82194d8dac6139618a081e5a976c02028289ef6efb730e"
     }
   ]
 }
