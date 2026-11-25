@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T03:30:55.822Z",
-  "source_sha256": "107055875f09e532dbcc4fbffe5de2eea7fe48e41e0683a065563e6e8d96ae5e",
+  "generated_at": "2026-11-25T10:54:07.928Z",
+  "source_sha256": "fef0944f2f8de695c6a2ff5813b0296357e075600e9734c2c7f79907f167ee19",
   "corpus_id": "5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea",
   "storage": "data-package.json",
-  "chapters": 491,
+  "chapters": 492,
   "candidates": {
     "otherworld": [
       {
@@ -727,7 +727,7 @@
         "term": "室",
         "kind": "空间",
         "existing": true,
-        "mentions": 463,
+        "mentions": 467,
         "chapters": [
           0,
           2,
@@ -939,7 +939,8 @@
           484,
           486,
           489,
-          490
+          490,
+          491
         ],
         "evidence": [
           {
@@ -961,13 +962,13 @@
             "excerpt": "」时翁有子妇新死，停尸室中，子出购材木未归。"
           }
         ],
-        "chapter_count": 211
+        "chapter_count": 212
       },
       {
         "term": "山",
         "kind": "空间",
         "existing": true,
-        "mentions": 385,
+        "mentions": 388,
         "chapters": [
           0,
           2,
@@ -1143,7 +1144,8 @@
           478,
           479,
           482,
-          489
+          489,
+          491
         ],
         "evidence": [
           {
@@ -1165,13 +1167,13 @@
             "excerpt": "至东郊，瞥见兰若，闻木鱼声，乃急挝山门。"
           }
         ],
-        "chapter_count": 175
+        "chapter_count": 176
       },
       {
         "term": "堂",
         "kind": "空间",
         "existing": true,
-        "mentions": 184,
+        "mentions": 185,
         "chapters": [
           0,
           10,
@@ -1281,7 +1283,8 @@
           477,
           480,
           481,
-          485
+          485,
+          491
         ],
         "evidence": [
           {
@@ -1303,13 +1306,13 @@
             "excerpt": "堂上四官，皆赤衣，东西相向坐。"
           }
         ],
-        "chapter_count": 109
+        "chapter_count": 110
       },
       {
         "term": "市",
         "kind": "空间",
         "existing": true,
-        "mentions": 156,
+        "mentions": 157,
         "chapters": [
           13,
           21,
@@ -1406,7 +1409,8 @@
           477,
           482,
           483,
-          490
+          490,
+          491
         ],
         "evidence": [
           {
@@ -1428,13 +1432,13 @@
             "excerpt": "且尽，把核于手，解肩上镵坎地上深数寸，纳之，而覆以土，向市人索汤沃灌。"
           }
         ],
-        "chapter_count": 96
+        "chapter_count": 97
       },
       {
         "term": "路",
         "kind": "空间",
         "existing": true,
-        "mentions": 147,
+        "mentions": 148,
         "chapters": [
           0,
           2,
@@ -1528,7 +1532,8 @@
           463,
           466,
           477,
-          489
+          489,
+          491
         ],
         "evidence": [
           {
@@ -1550,13 +1555,13 @@
             "excerpt": "遂望邑城路，极力窜去。"
           }
         ],
-        "chapter_count": 93
+        "chapter_count": 94
       },
       {
         "term": "庭",
         "kind": "空间",
         "existing": true,
-        "mentions": 133,
+        "mentions": 135,
         "chapters": [
           7,
           19,
@@ -1650,7 +1655,8 @@
           466,
           468,
           474,
-          480
+          480,
+          491
         ],
         "evidence": [
           {
@@ -1672,7 +1678,7 @@
             "excerpt": "俄延逾刻，极力腾起，才高于庭树；"
           }
         ],
-        "chapter_count": 93
+        "chapter_count": 94
       },
       {
         "term": "屋",
@@ -1789,6 +1795,103 @@
           }
         ],
         "chapter_count": 87
+      },
+      {
+        "term": "门外",
+        "kind": "空间",
+        "existing": true,
+        "mentions": 81,
+        "chapters": [
+          2,
+          32,
+          39,
+          46,
+          47,
+          55,
+          59,
+          68,
+          74,
+          79,
+          80,
+          81,
+          88,
+          89,
+          92,
+          112,
+          117,
+          120,
+          126,
+          134,
+          135,
+          145,
+          147,
+          151,
+          157,
+          158,
+          163,
+          171,
+          174,
+          181,
+          193,
+          203,
+          209,
+          215,
+          217,
+          221,
+          236,
+          238,
+          249,
+          262,
+          266,
+          271,
+          275,
+          282,
+          286,
+          322,
+          324,
+          329,
+          334,
+          356,
+          360,
+          363,
+          369,
+          377,
+          384,
+          392,
+          396,
+          398,
+          405,
+          414,
+          446,
+          447,
+          456,
+          466,
+          474,
+          476,
+          487,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 2,
+            "chapter": "尸变",
+            "unit": 78,
+            "excerpt": "门外有白杨，围四五尺许，因以树自幛；"
+          },
+          {
+            "chapter_id": 32,
+            "chapter": "成仙",
+            "unit": 1451,
+            "excerpt": "成在门外，以剑击之，断其肩臂。"
+          },
+          {
+            "chapter_id": 39,
+            "chapter": "画皮",
+            "unit": 2035,
+            "excerpt": "一更许，闻门外戢戢有声。"
+          }
+        ],
+        "chapter_count": 68
       },
       {
         "term": "海",
@@ -1983,102 +2086,6 @@
         "chapter_count": 67
       },
       {
-        "term": "门外",
-        "kind": "空间",
-        "existing": true,
-        "mentions": 80,
-        "chapters": [
-          2,
-          32,
-          39,
-          46,
-          47,
-          55,
-          59,
-          68,
-          74,
-          79,
-          80,
-          81,
-          88,
-          89,
-          92,
-          112,
-          117,
-          120,
-          126,
-          134,
-          135,
-          145,
-          147,
-          151,
-          157,
-          158,
-          163,
-          171,
-          174,
-          181,
-          193,
-          203,
-          209,
-          215,
-          217,
-          221,
-          236,
-          238,
-          249,
-          262,
-          266,
-          271,
-          275,
-          282,
-          286,
-          322,
-          324,
-          329,
-          334,
-          356,
-          360,
-          363,
-          369,
-          377,
-          384,
-          392,
-          396,
-          398,
-          405,
-          414,
-          446,
-          447,
-          456,
-          466,
-          474,
-          476,
-          487
-        ],
-        "evidence": [
-          {
-            "chapter_id": 2,
-            "chapter": "尸变",
-            "unit": 78,
-            "excerpt": "门外有白杨，围四五尺许，因以树自幛；"
-          },
-          {
-            "chapter_id": 32,
-            "chapter": "成仙",
-            "unit": 1451,
-            "excerpt": "成在门外，以剑击之，断其肩臂。"
-          },
-          {
-            "chapter_id": 39,
-            "chapter": "画皮",
-            "unit": 2035,
-            "excerpt": "一更许，闻门外戢戢有声。"
-          }
-        ],
-        "chapter_count": 67
-      },
-      {
         "term": "房",
         "kind": "空间",
         "existing": true,
@@ -2177,7 +2184,7 @@
         "term": "斋",
         "kind": "空间",
         "existing": true,
-        "mentions": 101,
+        "mentions": 102,
         "chapters": [
           6,
           21,
@@ -2242,7 +2249,8 @@
           472,
           476,
           478,
-          484
+          484,
+          491
         ],
         "evidence": [
           {
@@ -2264,7 +2272,7 @@
             "excerpt": "一日，早至斋，见案头有函书，缄封甚固，签题「仲氏启」。"
           }
         ],
-        "chapter_count": 64
+        "chapter_count": 65
       },
       {
         "term": "楼",
@@ -2537,6 +2545,92 @@
         "chapter_count": 58
       },
       {
+        "term": "江",
+        "kind": "空间",
+        "existing": true,
+        "mentions": 138,
+        "chapters": [
+          5,
+          33,
+          54,
+          55,
+          56,
+          59,
+          63,
+          70,
+          82,
+          91,
+          104,
+          106,
+          108,
+          118,
+          124,
+          139,
+          148,
+          164,
+          171,
+          183,
+          191,
+          192,
+          203,
+          212,
+          249,
+          259,
+          265,
+          273,
+          278,
+          296,
+          317,
+          321,
+          331,
+          333,
+          345,
+          347,
+          356,
+          371,
+          372,
+          373,
+          376,
+          382,
+          391,
+          395,
+          405,
+          406,
+          414,
+          416,
+          417,
+          423,
+          429,
+          431,
+          448,
+          463,
+          464,
+          465,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 5,
+            "chapter": "画壁",
+            "unit": 149,
+            "excerpt": "江西孟龙潭与朱孝廉客都中，偶涉一兰若，殿宇禅舍，俱不甚弘敞，惟一老僧挂褡其中。"
+          },
+          {
+            "chapter_id": 33,
+            "chapter": "新郎",
+            "unit": 1491,
+            "excerpt": "江南梅孝廉耦长，言其乡孙公，为德州宰，鞫一奇案。"
+          },
+          {
+            "chapter_id": 54,
+            "chapter": "张老相公",
+            "unit": 3183,
+            "excerpt": "适将嫁女，携眷至江南，躬市奁妆。"
+          }
+        ],
+        "chapter_count": 57
+      },
+      {
         "term": "河",
         "kind": "空间",
         "existing": true,
@@ -2621,91 +2715,6 @@
           }
         ],
         "chapter_count": 57
-      },
-      {
-        "term": "江",
-        "kind": "空间",
-        "existing": true,
-        "mentions": 136,
-        "chapters": [
-          5,
-          33,
-          54,
-          55,
-          56,
-          59,
-          63,
-          70,
-          82,
-          91,
-          104,
-          106,
-          108,
-          118,
-          124,
-          139,
-          148,
-          164,
-          171,
-          183,
-          191,
-          192,
-          203,
-          212,
-          249,
-          259,
-          265,
-          273,
-          278,
-          296,
-          317,
-          321,
-          331,
-          333,
-          345,
-          347,
-          356,
-          371,
-          372,
-          373,
-          376,
-          382,
-          391,
-          395,
-          405,
-          406,
-          414,
-          416,
-          417,
-          423,
-          429,
-          431,
-          448,
-          463,
-          464,
-          465
-        ],
-        "evidence": [
-          {
-            "chapter_id": 5,
-            "chapter": "画壁",
-            "unit": 149,
-            "excerpt": "江西孟龙潭与朱孝廉客都中，偶涉一兰若，殿宇禅舍，俱不甚弘敞，惟一老僧挂褡其中。"
-          },
-          {
-            "chapter_id": 33,
-            "chapter": "新郎",
-            "unit": 1491,
-            "excerpt": "江南梅孝廉耦长，言其乡孙公，为德州宰，鞫一奇案。"
-          },
-          {
-            "chapter_id": 54,
-            "chapter": "张老相公",
-            "unit": 3183,
-            "excerpt": "适将嫁女，携眷至江南，躬市奁妆。"
-          }
-        ],
-        "chapter_count": 56
       },
       {
         "term": "舟",
@@ -4368,7 +4377,7 @@
         "term": "店",
         "kind": "空间",
         "existing": true,
-        "mentions": 10,
+        "mentions": 11,
         "chapters": [
           2,
           13,
@@ -4376,7 +4385,8 @@
           47,
           56,
           146,
-          330
+          330,
+          491
         ],
         "evidence": [
           {
@@ -4398,7 +4408,7 @@
             "excerpt": "好事者，于临路店，索得沸沈，道士接浸坎处。"
           }
         ],
-        "chapter_count": 7
+        "chapter_count": 8
       },
       {
         "term": "公堂",
@@ -4889,7 +4899,7 @@
         "term": "公子",
         "kind": "person",
         "existing": true,
-        "mentions": 171,
+        "mentions": 172,
         "chapters": [
           15,
           21,
@@ -4923,7 +4933,8 @@
           445,
           448,
           462,
-          466
+          466,
+          491
         ],
         "evidence": [
           {
@@ -4945,7 +4956,7 @@
             "excerpt": "公子命弹湘妃。"
           }
         ],
-        "chapter_count": 33
+        "chapter_count": 34
       },
       {
         "term": "小生",
@@ -8807,6 +8818,39 @@
         "chapter_count": 4
       },
       {
+        "term": "异史氏",
+        "kind": "person",
+        "existing": true,
+        "mentions": 4,
+        "chapters": [
+          18,
+          66,
+          434,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 18,
+            "chapter": "犬奸",
+            "unit": 687,
+            "excerpt": "异史氏为之判曰：「会于濮上，古所交讥；"
+          },
+          {
+            "chapter_id": 66,
+            "chapter": "侠女",
+            "unit": 3932,
+            "excerpt": "异史氏曰：「人必室有侠女，而后可以畜娈童也。"
+          },
+          {
+            "chapter_id": 434,
+            "chapter": "男妾",
+            "unit": 28276,
+            "excerpt": "异史氏白：「苟遇知音，即予以南威不易。"
+          }
+        ],
+        "chapter_count": 4
+      },
+      {
         "term": "忽一女子",
         "kind": "person",
         "existing": false,
@@ -9231,6 +9275,39 @@
             "chapter": "罗祖",
             "unit": 15876,
             "excerpt": "明日，谓妻曰：「我往致主命，暮不能归，勿伺也。"
+          }
+        ],
+        "chapter_count": 4
+      },
+      {
+        "term": "逼女",
+        "kind": "person",
+        "existing": false,
+        "mentions": 4,
+        "chapters": [
+          46,
+          317,
+          398,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 46,
+            "chapter": "陆判",
+            "unit": 2483,
+            "excerpt": "贼窥而艳之，遂阴访居里，乘夜梯入，穴寝门，杀一婢于床下，逼女与淫；"
+          },
+          {
+            "chapter_id": 317,
+            "chapter": "霍女",
+            "unit": 20019,
+            "excerpt": "先是，阿美既归，方向父母泣诉，忽大郎将舆登门，按剑相胁，逼女风走。"
+          },
+          {
+            "chapter_id": 398,
+            "chapter": "臙脂",
+            "unit": 25107,
+            "excerpt": "逼女，女哭而实告之；"
           }
         ],
         "chapter_count": 4
@@ -10967,38 +11044,6 @@
         "chapter_count": 3
       },
       {
-        "term": "异史氏",
-        "kind": "person",
-        "existing": true,
-        "mentions": 3,
-        "chapters": [
-          18,
-          66,
-          434
-        ],
-        "evidence": [
-          {
-            "chapter_id": 18,
-            "chapter": "犬奸",
-            "unit": 687,
-            "excerpt": "异史氏为之判曰：「会于濮上，古所交讥；"
-          },
-          {
-            "chapter_id": 66,
-            "chapter": "侠女",
-            "unit": 3932,
-            "excerpt": "异史氏曰：「人必室有侠女，而后可以畜娈童也。"
-          },
-          {
-            "chapter_id": 434,
-            "chapter": "男妾",
-            "unit": 28276,
-            "excerpt": "异史氏白：「苟遇知音，即予以南威不易。"
-          }
-        ],
-        "chapter_count": 3
-      },
-      {
         "term": "徒以有老母",
         "kind": "person",
         "existing": false,
@@ -11346,6 +11391,38 @@
             "chapter": "曾友于",
             "unit": 29139,
             "excerpt": "翁初死未殓，两眶中泪出如沈，有子六，莫解所以。"
+          }
+        ],
+        "chapter_count": 3
+      },
+      {
+        "term": "有秀才",
+        "kind": "person",
+        "existing": false,
+        "mentions": 3,
+        "chapters": [
+          98,
+          400,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 98,
+            "chapter": "白于玉",
+            "unit": 6303,
+            "excerpt": "一夜，月明之下，有秀才造谒，白皙短须，细腰长爪。"
+          },
+          {
+            "chapter_id": 400,
+            "chapter": "瑞云",
+            "unit": 25450,
+            "excerpt": "一日，有秀才投贽，坐语少时，便起，以一指按女额曰：「可惜，可惜！"
+          },
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "邑有吴生字安仁，三十丧偶，独宿空斋。有秀才来与谈，遂相知悦。从一小奴，名鬼头，亦与吴僮报儿善。久而知其为狐。吴远游，必与俱，同室之中，人不能睹。吴"
           }
         ],
         "chapter_count": 3
@@ -12215,38 +12292,6 @@
         "chapter_count": 3
       },
       {
-        "term": "逼女",
-        "kind": "person",
-        "existing": false,
-        "mentions": 3,
-        "chapters": [
-          46,
-          317,
-          398
-        ],
-        "evidence": [
-          {
-            "chapter_id": 46,
-            "chapter": "陆判",
-            "unit": 2483,
-            "excerpt": "贼窥而艳之，遂阴访居里，乘夜梯入，穴寝门，杀一婢于床下，逼女与淫；"
-          },
-          {
-            "chapter_id": 317,
-            "chapter": "霍女",
-            "unit": 20019,
-            "excerpt": "先是，阿美既归，方向父母泣诉，忽大郎将舆登门，按剑相胁，逼女风走。"
-          },
-          {
-            "chapter_id": 398,
-            "chapter": "臙脂",
-            "unit": 25107,
-            "excerpt": "逼女，女哭而实告之；"
-          }
-        ],
-        "chapter_count": 3
-      },
-      {
         "term": "遍体生",
         "kind": "person",
         "existing": false,
@@ -12274,6 +12319,38 @@
             "chapter": "乐仲",
             "unit": 28447,
             "excerpt": "」抚摩既已，遍体生凉。"
+          }
+        ],
+        "chapter_count": 3
+      },
+      {
+        "term": "邑诸生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 3,
+        "chapters": [
+          1,
+          70,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 1,
+            "chapter": "耳中人",
+            "unit": 25,
+            "excerpt": "谭晋玄，邑诸生也，笃信导引之术，寒暑不辍；"
+          },
+          {
+            "chapter_id": 70,
+            "chapter": "九山王",
+            "unit": 4422,
+            "excerpt": "曹州李姓者，邑诸生。"
+          },
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "余乡王子巽者，邑诸生。有族先生在都为旗籍太史，将往探讯。治装北上，出济南，行数里，有一人跨黑卫驰与同行，时以闲语相引，王颇与"
           }
         ],
         "chapter_count": 3
@@ -16995,6 +17072,31 @@
         "chapter_count": 2
       },
       {
+        "term": "捽女",
+        "kind": "person",
+        "existing": false,
+        "mentions": 2,
+        "chapters": [
+          171,
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 171,
+            "chapter": "鸦头",
+            "unit": 10737,
+            "excerpt": "」妮子益忿，捽女断衿。"
+          },
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "女子又啼，宁死不归。内奔出妪婢，捽女令入。女子卧地，哭益哀。秀才劝重价货吴生，主人俯首曰：「作老娘三十年，今日倒绷孩儿，亦复何说。」遂依秀才"
+          }
+        ],
+        "chapter_count": 2
+      },
+      {
         "term": "授童",
         "kind": "person",
         "existing": false,
@@ -17365,31 +17467,6 @@
             "chapter": "小梅",
             "unit": 22182,
             "excerpt": "第以日近姊夫，有男女之嫌，故托为神道，闭内室中，其实何神。"
-          }
-        ],
-        "chapter_count": 2
-      },
-      {
-        "term": "有秀才",
-        "kind": "person",
-        "existing": false,
-        "mentions": 2,
-        "chapters": [
-          98,
-          400
-        ],
-        "evidence": [
-          {
-            "chapter_id": 98,
-            "chapter": "白于玉",
-            "unit": 6303,
-            "excerpt": "一夜，月明之下，有秀才造谒，白皙短须，细腰长爪。"
-          },
-          {
-            "chapter_id": 400,
-            "chapter": "瑞云",
-            "unit": 25450,
-            "excerpt": "一日，有秀才投贽，坐语少时，便起，以一指按女额曰：「可惜，可惜！"
           }
         ],
         "chapter_count": 2
@@ -19540,31 +19617,6 @@
             "chapter": "单父宰",
             "unit": 21990,
             "excerpt": "邑有王生者，娶月余而出其妻。"
-          }
-        ],
-        "chapter_count": 2
-      },
-      {
-        "term": "邑诸生",
-        "kind": "person",
-        "existing": false,
-        "mentions": 2,
-        "chapters": [
-          1,
-          70
-        ],
-        "evidence": [
-          {
-            "chapter_id": 1,
-            "chapter": "耳中人",
-            "unit": 25,
-            "excerpt": "谭晋玄，邑诸生也，笃信导引之术，寒暑不辍；"
-          },
-          {
-            "chapter_id": 70,
-            "chapter": "九山王",
-            "unit": 4422,
-            "excerpt": "曹州李姓者，邑诸生。"
           }
         ],
         "chapter_count": 2
@@ -22831,6 +22883,24 @@
             "chapter": "贾儿",
             "unit": 2211,
             "excerpt": "一私北郭王氏妇，一宿东村某翁家。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "一少女",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "，坐良久，狐不至。倏闻壁上小扉，有指弹之声。吴拔关探视，一少女艳妆遽入，自扃门户，向吴展笑，佳丽如仙。吴喜致研诘，则主人之子妇也。遂与狎，大相爱悦。女忽潸然泣下。吴惊"
           }
         ],
         "chapter_count": 1
@@ -28884,6 +28954,24 @@
         "chapter_count": 1
       },
       {
+        "term": "主人遣以饵君",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "大相爱悦。女忽潸然泣下。吴惊问之，女曰：「不敢隐匿，妾实主人遣以饵君者。曩时入室，即被掩执，不知今宵，何久不至？」又呜咽曰：「妾良家女，情所不甘。今已倾心于君，乞垂拔救！」"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "主仅能让六子",
         "kind": "person",
         "existing": false,
@@ -33276,6 +33364,24 @@
         "chapter_count": 1
       },
       {
+        "term": "人情鬼",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31639,
+            "excerpt": "异史氏曰：人情鬼蜮，所在皆然；南北冲衢，其害尤烈。如强弓怒马，御人于国门之外者，夫人而知之矣。或有劙囊刺橐，攫货于市，行"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "人慕小寰之子",
         "kind": "person",
         "existing": false,
@@ -34284,6 +34390,24 @@
         "chapter_count": 1
       },
       {
+        "term": "今已倾心于君",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "，不知今宵，何久不至？」又呜咽曰：「妾良家女，情所不甘。今已倾心于君，乞垂拔救！」吴闻骇惧，计无所出，但遣速去，女惟俯首泣。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "今已往生",
         "kind": "person",
         "existing": false,
@@ -34909,6 +35033,24 @@
             "chapter": "汤公",
             "unit": 6050,
             "excerpt": "宣圣言：「名籍之落，仍得帝君。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "从一小奴",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "吴生字安仁，三十丧偶，独宿空斋。有秀才来与谈，遂相知悦。从一小奴，名鬼头，亦与吴僮报儿善。久而知其为狐。吴远游，必与俱，同室之中，人不能睹。吴客都中，将旋里，闻王生遭念"
           }
         ],
         "chapter_count": 1
@@ -40692,6 +40834,24 @@
         "chapter_count": 1
       },
       {
+        "term": "何意吴生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31653,
+            "excerpt": "，云是得之山东王姓者。盖其党羽甚众，逆旅主人，皆其一类。何意吴生所遇，即王子巽连天呼苦之人，不亦快哉！旨哉古言：「骑者善堕。」"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "何敢遂媵吾女",
         "kind": "person",
         "existing": false,
@@ -41268,6 +41428,24 @@
         "chapter_count": 1
       },
       {
+        "term": "余乡王子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "余乡王子巽者，邑诸生。有族先生在都为旗籍太史，将往探讯。治装北上，出济南，行数里，有一人跨黑卫驰与同行，时以闲语"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "余当抉眸子",
         "kind": "person",
         "existing": false,
@@ -41569,6 +41747,24 @@
             "chapter": "蹇偿债",
             "unit": 10109,
             "excerpt": "乡人王卓，佣居公家。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "佳丽如仙",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "弹之声。吴拔关探视，一少女艳妆遽入，自扃门户，向吴展笑，佳丽如仙。吴喜致研诘，则主人之子妇也。遂与狎，大相爱悦。女忽潸然泣下。吴惊问之，女曰：「不敢隐匿，妾实主人遣以饵"
           }
         ],
         "chapter_count": 1
@@ -45588,6 +45784,24 @@
         "chapter_count": 1
       },
       {
+        "term": "先有客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31641,
+            "excerpt": "甚缓。王遂先驱，相去渐远。晚投旅邸，既入舍，则壁下一床，先有客解装其上。王问主人，即有一人入，携之而出，曰：「但请安置，当即移他所。」王视之则许。王止与同舍，许遂止，"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "先父",
         "kind": "person",
         "existing": true,
@@ -47946,6 +48160,24 @@
         "chapter_count": 1
       },
       {
+        "term": "内奔出妪婢",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "女子又啼，宁死不归。内奔出妪婢，捽女令入。女子卧地，哭益哀。秀才劝重价货吴生，主人俯首曰：「作老娘三十年，今日倒绷孩儿，亦复何说。」遂"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "内有褚生",
         "kind": "person",
         "existing": false,
@@ -49255,6 +49487,24 @@
             "chapter": "陈云栖",
             "unit": 27773,
             "excerpt": "果尔，则为母也妇；"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "则主人之子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "少女艳妆遽入，自扃门户，向吴展笑，佳丽如仙。吴喜致研诘，则主人之子妇也。遂与狎，大相爱悦。女忽潸然泣下。吴惊问之，女曰：「不敢隐匿，妾实主人遣以饵君者。曩时入室，即被掩执"
           }
         ],
         "chapter_count": 1
@@ -51708,6 +51958,24 @@
         "chapter_count": 1
       },
       {
+        "term": "劝重价货吴生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "，宁死不归。内奔出妪婢，捽女令入。女子卧地，哭益哀。秀才劝重价货吴生，主人俯首曰：「作老娘三十年，今日倒绷孩儿，亦复何说。」遂依秀才言。吴固不肯破重资，秀才调停主客间，议定"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "功妻",
         "kind": "person",
         "existing": false,
@@ -53976,6 +54244,24 @@
         "chapter_count": 1
       },
       {
+        "term": "即有秀才",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "」主人张目不能语。吴闻窃感佩，而不知何人。初，肆门将闭，即有秀才共一仆来，就外舍宿。携有香酝，遍酌同舍，劝黄及主人尤殷。两人辞欲起，秀才牵裾，苦不令去。后乘间得遁，操杖"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "即有贵客",
         "kind": "person",
         "existing": false,
@@ -54115,6 +54401,24 @@
             "chapter": "考弊司",
             "unit": 15052,
             "excerpt": "鬼王色变曰：「此有成例，即父命所不敢承！"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "即王子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31653,
+            "excerpt": "王姓者。盖其党羽甚众，逆旅主人，皆其一类。何意吴生所遇，即王子巽连天呼苦之人，不亦快哉！旨哉古言：「骑者善堕。」"
           }
         ],
         "chapter_count": 1
@@ -55884,6 +56188,24 @@
         "chapter_count": 1
       },
       {
+        "term": "又有吴生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31645,
+            "excerpt": "后数年，又有吴生之事："
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "又有鸭鬼",
         "kind": "person",
         "existing": false,
@@ -56347,6 +56669,24 @@
             "chapter": "姊妹易嫁",
             "unit": 9485,
             "excerpt": "又请以长女妻儿，母谢不敢。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "又谓女子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "窗窥之，则狐友也，心窃喜。又见主人意稍夺，乃大言以恐之。又谓女子：「何默不一言？」女啼曰：「恨不如人，为人驱役贱务！」主人闻之，面如死灰。秀才叱骂曰：「尔辈禽兽之情，亦"
           }
         ],
         "chapter_count": 1
@@ -57450,6 +57790,24 @@
         "chapter_count": 1
       },
       {
+        "term": "可佐君子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31648,
+            "excerpt": "日。」黄遂拉与共寓，向吴曰：「此史郎，我中表弟，亦文士，可佐君子谈骚雅，夜话当不寥落。」乃出金资，治具共饮。少年风流蕴藉，遂与吴大相爱悦，饮间，辄目示吴作觞弊，罚黄，强"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "可即送君",
         "kind": "person",
         "existing": false,
@@ -58237,6 +58595,24 @@
             "chapter": "王桂庵",
             "unit": 30088,
             "excerpt": "逾十月，生一子，名曰寄生。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "名鬼",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "，三十丧偶，独宿空斋。有秀才来与谈，遂相知悦。从一小奴，名鬼头，亦与吴僮报儿善。久而知其为狐。吴远游，必与俱，同室之中，人不能睹。吴客都中，将旋里，闻王生遭念秧之祸"
           }
         ],
         "chapter_count": 1
@@ -59340,6 +59716,24 @@
         "chapter_count": 1
       },
       {
+        "term": "君客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "不敢交睫，遂致白昼迷闷。」王故问：「念秧何说？」许曰：「君客时少，未知险诈。今有匪类，以甘言诱行旅，夤缘与同休止，因而乘机骗赚。昨有葭莩亲，以此丧资斧。吾等皆宜警备"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "君家娘子",
         "kind": "person",
         "existing": false,
@@ -59947,6 +60341,24 @@
             "chapter": "陆判",
             "unit": 2503,
             "excerpt": "」吴夜梦女曰：「儿为苏溪杨大年所贼，无与朱孝廉。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "吴客",
+        "kind": "person",
+        "existing": true,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "儿善。久而知其为狐。吴远游，必与俱，同室之中，人不能睹。吴客都中，将旋里，闻王生遭念秧之祸，因戒僮警备。狐笑曰：「勿须，此行无不利。」"
           }
         ],
         "chapter_count": 1
@@ -68484,6 +68896,24 @@
         "chapter_count": 1
       },
       {
+        "term": "如欲质之公",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "我等客数辈，必不坐视凶暴。如两人中有一逃者，抵罪安所辞？如欲质之公庭耶，帷薄不修，适以取辱。且尔宿行旅，明明陷诈，安保女子无异言？」主人张目不能语。吴闻窃感佩，而不知何人"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "如见有采菱女",
         "kind": "person",
         "existing": false,
@@ -70896,6 +71326,24 @@
         "chapter_count": 1
       },
       {
+        "term": "妾良家女",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31650,
+            "excerpt": "。曩时入室，即被掩执，不知今宵，何久不至？」又呜咽曰：「妾良家女，情所不甘。今已倾心于君，乞垂拔救！」吴闻骇惧，计无所出，但遣速去，女惟俯首泣。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "妾良家子",
         "kind": "person",
         "existing": false,
@@ -72439,6 +72887,24 @@
             "chapter": "娇娜",
             "unit": 886,
             "excerpt": "公子曰：「儿前夜思先生清恙，娇娜妹子能疗之。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "娇婉若女子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31641,
+            "excerpt": "沙，使人薅恼。」因取红巾拭面，叹咤不已。听其语，操南音，娇婉若女子。王心好之，稍为慰藉。少年曰：「适先驰出，眷口久望不来，何仆辈亦无至者？日已将暮，奈何！」迟留瞻望，行甚"
           }
         ],
         "chapter_count": 1
@@ -74581,6 +75047,24 @@
             "chapter": "果报",
             "unit": 30461,
             "excerpt": "安丘某生，通卜筮之术。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "安保女子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "欲质之公庭耶，帷薄不修，适以取辱。且尔宿行旅，明明陷诈，安保女子无异言？」主人张目不能语。吴闻窃感佩，而不知何人。初，肆门将闭，即有秀才共一仆来，就外舍宿。携有香酝，遍"
           }
         ],
         "chapter_count": 1
@@ -79747,6 +80231,24 @@
             "chapter": "王者",
             "unit": 27563,
             "excerpt": "自分留鞹异域，已无生望，因念进退一死，亦姑听之。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "已有客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31641,
+            "excerpt": "坐谈。少间，又有携装入者，见王、许在舍，返身遽出，曰：「已有客在。」王审视，则途中少年也。王未言，许急起曳留之，少年遂坐。许乃展问邦族，少年又以途中言为许告。俄顷，解"
           }
         ],
         "chapter_count": 1
@@ -94422,24 +94924,6 @@
         "chapter_count": 1
       },
       {
-        "term": "捽女",
-        "kind": "person",
-        "existing": false,
-        "mentions": 1,
-        "chapters": [
-          171
-        ],
-        "evidence": [
-          {
-            "chapter_id": 171,
-            "chapter": "鸦头",
-            "unit": 10737,
-            "excerpt": "」妮子益忿，捽女断衿。"
-          }
-        ],
-        "chapter_count": 1
-      },
-      {
         "term": "授庐赠婢",
         "kind": "person",
         "existing": false,
@@ -102468,6 +102952,24 @@
         "chapter_count": 1
       },
       {
+        "term": "有我等客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "不听，推门愈急。劝者曰：「请问主人，意将何为？如欲杀耶，有我等客数辈，必不坐视凶暴。如两人中有一逃者，抵罪安所辞？如欲质之公庭耶，帷薄不修，适以取辱。且尔宿行旅，明明陷"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "有掠取妇女",
         "kind": "person",
         "existing": false,
@@ -102499,6 +103001,24 @@
             "chapter": "神女",
             "unit": 23921,
             "excerpt": "有数女骑来，内一女郎，即曩年车中人也。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "有族先生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "余乡王子巽者，邑诸生。有族先生在都为旗籍太史，将往探讯。治装北上，出济南，行数里，有一人跨黑卫驰与同行，时以闲语相引，王颇与问答。其人"
           }
         ],
         "chapter_count": 1
@@ -107508,6 +108028,24 @@
         "chapter_count": 1
       },
       {
+        "term": "此史郎",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31648,
+            "excerpt": "：「何时离都？」答云：「昨日。」黄遂拉与共寓，向吴曰：「此史郎，我中表弟，亦文士，可佐君子谈骚雅，夜话当不寥落。」乃出金资，治具共饮。少年风流蕴藉，遂与吴大相爱悦，饮"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "此名仙",
         "kind": "person",
         "existing": false,
@@ -107832,6 +108370,24 @@
         "chapter_count": 1
       },
       {
+        "term": "此客子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31651,
+            "excerpt": "人闻之，面如死灰。秀才叱骂曰：「尔辈禽兽之情，亦已毕露。此客子所共愤者！」黄及主人皆释刀杖，长跪而请。吴亦启户出，顿大怒詈，秀才又劝止吴，两始和解。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "此小女",
         "kind": "person",
         "existing": false,
@@ -107881,6 +108437,24 @@
             "chapter": "雹神",
             "unit": 29573,
             "excerpt": "太史笑曰：「此岂广武君作怪耶！"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "此当取偿许君",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31643,
+            "excerpt": "测。我辈乃文字交，无不相顾。适局中我赢得如干数，可相抵。此当取偿许君者，今请易之。便令许偿佟，君偿我。不过暂掩人耳目，过此仍以相还。终不然，以道义之交，遂实取君偿耶？」王故"
           }
         ],
         "chapter_count": 1
@@ -108547,6 +109121,24 @@
             "chapter": "葛巾",
             "unit": 26484,
             "excerpt": "」临别，索如意，曰：「此非妾物，乃玉版所遗。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "此非鬼",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31639,
+            "excerpt": "人而知之矣。或有劙囊刺橐，攫货于市，行人回首，财货已空，此非鬼蜮之尤者耶？乃又有萍水相逢，甘言如醴，其来也渐，其入也深。误认倾盖之交，遂罹丧资之祸。随机设阱，情状不一"
           }
         ],
         "chapter_count": 1
@@ -120090,6 +120682,24 @@
         "chapter_count": 1
       },
       {
+        "term": "盖鬼头知女",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "不平。适与鬼头计，反身索得。」遂以金置几上。吴惊问其故，盖鬼头知女止一兄，远出十余年不返，遂幻化作其兄状，使报儿冒弟行，入门索姊妹。主人惶恐，诡托病殂。二僮欲质官，主人益"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "盗入生",
         "kind": "person",
         "existing": false,
@@ -122173,6 +122783,24 @@
             "chapter": "胡氏",
             "unit": 5530,
             "excerpt": "秀才自言胡氏，遂纳贽馆之。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "秀才调停主客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "，今日倒绷孩儿，亦复何说。」遂依秀才言。吴固不肯破重资，秀才调停主客间，议定五十金。人财交付后，晨钟已动，乃共促装，载女子以行。女未经鞍马，驰驱颇殆。午间稍息憩，将行，唤报"
           }
         ],
         "chapter_count": 1
@@ -124405,6 +125033,24 @@
             "chapter": "婴宁",
             "unit": 2832,
             "excerpt": "细视非女，则一枯木卧墙边，所接乃水淋窍也。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "细诘女子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31653,
+            "excerpt": "吴归，琴瑟綦笃。家益富。细诘女子，曩美少年即其夫，盖史即金也。袭一槲绸帔，云是得之山东王姓者。盖其党羽甚众，逆旅主人，皆其一类。何意吴生"
           }
         ],
         "chapter_count": 1
@@ -131754,6 +132400,24 @@
         "chapter_count": 1
       },
       {
+        "term": "蛮公子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31642,
+            "excerpt": "，王辞不解。许乃与少年相对呼卢，又阴嘱王曰：「君勿漏言。蛮公子颇充裕，年又雏，未必深解五木诀。我赢些须，明当奉屈耳。」二人乃入隔舍。旋闻轰赌甚闹，王潜窥之，见栖霞隶亦"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "蜂入生",
         "kind": "person",
         "existing": false,
@@ -131983,6 +132647,24 @@
             "chapter": "姊妹易嫁",
             "unit": 9510,
             "excerpt": "居无何，毛郎补博士弟子，往应乡试。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "被令公",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "，时以闲语相引，王颇与问答。其人自言：「张姓。为栖霞隶，被令公差赴都。」称谓㧑卑，祗奉殷勤，相从数十里，约以同宿。王在前则策蹇迫及，在后则祗候道左。仆疑之，因厉色拒去"
           }
         ],
         "chapter_count": 1
@@ -134449,6 +135131,24 @@
             "chapter": "青娥",
             "unit": 17034,
             "excerpt": "见一总角书生，酣眠绣榻，细审，识为霍生。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "识其门客",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31640,
+            "excerpt": "吾等皆宜警备。」王颔之。先是，临淄宰与王有旧，曾入其幕，识其门客，果有许姓，遂不复疑。因道寒温，兼询其兄况。许约暮共主人，王诺之。仆终疑其伪，阴与主谋，迟留不进，相失，"
           }
         ],
         "chapter_count": 1
@@ -138342,6 +139042,24 @@
         "chapter_count": 1
       },
       {
+        "term": "载女子",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "调停主客间，议定五十金。人财交付后，晨钟已动，乃共促装，载女子以行。女未经鞍马，驰驱颇殆。午间稍息憩，将行，唤报儿，不知所往。日已夕，尚无踪响，颇怀疑讶，遂以问狐。狐"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "载妾",
         "kind": "person",
         "existing": false,
@@ -139525,6 +140243,24 @@
             "chapter": "云翠仙",
             "unit": 13675,
             "excerpt": "适与子家道不相称。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "适与鬼",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "始至。吴诘之，报儿笑曰：「公子以五十金肥奸伧，窃所不平。适与鬼头计，反身索得。」遂以金置几上。吴惊问其故，盖鬼头知女止一兄，远出十余年不返，遂幻化作其兄状，使报儿冒弟"
           }
         ],
         "chapter_count": 1
@@ -141150,6 +141886,24 @@
         "chapter_count": 1
       },
       {
+        "term": "遂依秀才",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31652,
+            "excerpt": "，主人俯首曰：「作老娘三十年，今日倒绷孩儿，亦复何说。」遂依秀才言。吴固不肯破重资，秀才调停主客间，议定五十金。人财交付后，晨钟已动，乃共促装，载女子以行。女未经鞍马，"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
         "term": "遂促妻",
         "kind": "person",
         "existing": false,
@@ -141415,6 +142169,24 @@
             "chapter": "青蛙神",
             "unit": 27003,
             "excerpt": "今老幼皆已温饱，遂如鸮鸟生翼，欲啄母睛耶！"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "遂实取君",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31643,
+            "excerpt": "偿我。不过暂掩人耳目，过此仍以相还。终不然，以道义之交，遂实取君偿耶？」王故长厚，遂信之。少年出，以相易之谋告佟。乃对众发王装物，估入己橐，佟乃转索许、张而去。"
           }
         ],
         "chapter_count": 1
@@ -143521,6 +144293,24 @@
             "chapter": "考城隍",
             "unit": 0,
             "excerpt": "予姊夫之祖，宋公讳焘，邑廪生。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "邑有吴生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "邑有吴生字安仁，三十丧偶，独宿空斋。有秀才来与谈，遂相知悦。从一小奴，名鬼头，亦与吴僮报儿善。久而知其为狐。吴远"
           }
         ],
         "chapter_count": 1
@@ -146311,6 +147101,24 @@
             "chapter": "毛狐",
             "unit": 8088,
             "excerpt": "马曰：「闻狐仙皆国色，殊亦不然。"
+          }
+        ],
+        "chapter_count": 1
+      },
+      {
+        "term": "闻王生",
+        "kind": "person",
+        "existing": false,
+        "mentions": 1,
+        "chapters": [
+          491
+        ],
+        "evidence": [
+          {
+            "chapter_id": 491,
+            "chapter": "念秧",
+            "unit": 31646,
+            "excerpt": "。吴远游，必与俱，同室之中，人不能睹。吴客都中，将旋里，闻王生遭念秧之祸，因戒僮警备。狐笑曰：「勿须，此行无不利。」"
           }
         ],
         "chapter_count": 1
@@ -232801,6 +233609,13 @@
             "kind": "chapter",
             "layer": "chapter",
             "chapter_id": 490
+          },
+          {
+            "id": "chapter:491",
+            "label": "念秧",
+            "kind": "chapter",
+            "layer": "chapter",
+            "chapter_id": 491
           }
         ],
         "edges": [
@@ -333502,7 +334317,7 @@
     },
     "stats": {
       "chapter-place": {
-        "nodes": 891,
+        "nodes": 892,
         "edges": 786
       },
       "place-place": {
