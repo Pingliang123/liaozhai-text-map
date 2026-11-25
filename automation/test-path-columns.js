@@ -16,7 +16,7 @@ for(const old of ['出发类型','到达类型','出发世界','使用方式','�
 assert.equal(C.headers.filter(x=>x.endsWith('空间所在地点')).length,3);assert.equal(C.headers.filter(x=>x.endsWith('世界分类')).length,3);
 const unknownPosition={...moving,quote:'室中未知片段',source_event:{}};
 assert.equal(C.groups(unknownPosition,chapter,R)[0].location,'','未定位原文位置时不得从后文取地名');
-const pack=require('../data-package.json'),model=M.create(pack.base);model.importDocument(pack.revisions);const originalDocument=JSON.stringify(model.document());assert.equal(model.ids.length,491,'核对总资料包全部篇目');
+const pack=require('../data-package.json'),model=M.create(pack.base);model.importDocument(pack.revisions);const originalDocument=JSON.stringify(model.document());assert.equal(model.ids.length,pack.base.chapter_overview.length,'核对总资料包全部篇目');
 const context={GhostSpatialRoutes:R};vm.createContext(context);const html=fs.readFileSync('index.html','utf8');
 const narrative=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]).find(s=>s.includes('else root.GhostMapNarrative=api'));assert.ok(narrative);vm.runInContext(narrative,context);
 const rows=[],places=model.places();for(const id of model.ids){const c=model.view(id);context.GhostMapNarrative.rows(model,[c],places).forEach((event,i)=>rows.push({...event,chapter_id:id,chapter:c.chapter,step:i+1,source_event:event,endpoint_review:event.endpoint_review,has_movement:event.transition_kind==='movement'}));}

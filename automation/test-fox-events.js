@@ -1,6 +1,33 @@
 'use strict';
 const assert=require('node:assert/strict'),cp=require('node:child_process'),M=require('./ghost_map_model'),A=require('../audit-reports'),D=require('../assets/research-lab/current-data'),S=require('../assets/corpus-store'),pack=require('../data-package.json');
-(async()=>{assert(M.EVENTS.includes('狐'));assert.deepEqual(A.validateTypes(['狐','妖']),{狐:1,妖:1});assert.throws(()=>A.validateTypes(['人','狐']));const old=JSON.parse(cp.execFileSync('git',['show','75cceb4:manual-revisions.json'],{maxBuffer:100000000})),m=M.create(pack.base);m.importDocument(pack.revisions);const report=require('../reports/fox-event-split-20261029.json');const F=require('./split-fox-events');for(const row of report.rows)assert.deepEqual(F.classify(row.before,row.id),row.after);assert.deepEqual(F.classify({妖:1},51),{妖:1});assert.deepEqual(F.classify({妖:1},405),{妖:1});assert.deepEqual(F.classify({妖:1},195),{狐:1,妖:1});
+(async()=>{assert(M.EVENTS.includes('狐'));assert.deepEqual(A.validateTypes(['狐','妖']),{狐:1,妖:1});assert.deepEqual(A.validateTypes(['人','狐']),{人:1,狐:1});const old=JSON.parse(cp.execFileSync('git',['show','75cceb4:manual-revisions.json'],{maxBuffer:100000000})),m=M.create(pack.base);m.importDocument(pack.revisions);const report=require('../reports/fox-event-split-20261029.json');const F=require('./split-fox-events');for(const row of report.rows)assert.deepEqual(F.classify(row.before,row.id),row.after);assert.deepEqual(F.classify({妖:1},51),{妖:1});assert.deepEqual(F.classify({妖:1},405),{妖:1});assert.deepEqual(F.classify({妖:1},195),{狐:1,妖:1});
 
 const rebased=await S.rebasePublished(old,pack.revisions);for(const row of report.rows)assert.deepEqual(rebased.document.overrides.find(r=>r.chapter_id===row.id).changes.event_types,pack.revisions.overrides.find(r=>r.chapter_id===row.id).changes.event_types);const edited=structuredClone(old);edited.overrides.find(r=>r.chapter_id===38).changes.event_types={人:1};assert.deepEqual((await S.rebasePublished(edited,pack.revisions)).document.overrides.find(r=>r.chapter_id===38).changes.event_types,{人:1});
-const snapshots=D.snapshot(m);for(const c of snapshots)assert.deepEqual(new Set(c.events),new Set(Object.keys(m.view(c.id).event_types)));assert(A.eventStats([{types:['狐']}]).counts.some(([t,n])=>t==='狐'&&n===1));console.log('PASS 狐独立保存、混合类型、排除字面误判、全部非类型资料不变、旧快照及人工分歧、统计与实验室一致');})().catch(e=>{console.error(e);process.exitCode=1;});
+const snapshots=D.snapshot(m);for(const c of snapshots)assert.deepEqual(new Set(c.events),new Set(Object.keys(m.view(c.id).event_types)));assert(A.eventStats([{types:['狐']}]).counts.some(([t,n])=>t==='狐'&&n===1));console.log('PASS 狐独立保存、混合类型、排除字面误判、全部非类型资料不变、旧快照及人工分歧、统计与实验室一致');
+const baseline=require('node:child_process').execFileSync('git',['show','40da2fe:manual-revisions.json'],{maxBuffer:30000000});
+const previousDocument=JSON.parse(baseline);
+const newChapter=pack.base.chapter_overview.find(row=>row.chapter==='念秧');
+assert(newChapter.source_units.map(u=>u.original).join('').includes('則狐友也'));
+assert.equal(newChapter.source_units.length,15);
+assert.equal(newChapter.source_units.flatMap(u=>u.tokens).length,0);
+assert(m.view(newChapter.chapter_id).event_types.狐);
+const reviewedTitles=['金陵女子','白于玉','小髻','阿霞','云翠仙','沂水秀才','郭秀才','胡四娘','霍女','绩女','房文淑','一员官'];
+const previousTypes=new Map(previousDocument.overrides.map(r=>[r.chapter_id,r.changes.event_types]));
+const catalogueIds=reviewedTitles.map(title=>m.ids.find(id=>m.view(id).chapter===title));
+for(const id of catalogueIds)assert.deepEqual(m.view(id).event_types,{...previousTypes.get(id),狐:1});
+const previousBase={...pack.base,source_sha256:previousDocument.source_sha256,
+ chapter_overview:pack.base.chapter_overview.filter(row=>row.chapter_id!==newChapter.chapter_id)};
+const imported=S.effectiveBase(pack.base,previousBase);
+assert.deepEqual(imported.chapter_overview.slice(0,-1),previousBase.chapter_overview);
+assert.equal(imported.chapter_overview.at(-1).chapter_id,newChapter.chapter_id);
+assert.equal(S.effectiveBase(pack.base,imported).chapter_overview.length,imported.chapter_overview.length);
+const browser=await S.rebasePublished(previousDocument,pack.revisions);
+assert.equal(browser.applied.filter(r=>r.field==='event_types').length,catalogueIds.length);
+const editedBrowser=structuredClone(previousDocument);
+const humanWithNewEdit=editedBrowser.overrides.find(r=>r.chapter_id===catalogueIds[0]);
+humanWithNewEdit.changes.event_types={鬼:1};
+const guarded=await S.rebasePublished(editedBrowser,pack.revisions);
+assert.deepEqual(guarded.document.overrides.find(r=>r.chapter_id===catalogueIds[0]).changes.event_types,{鬼:1});
+assert.equal(A.eventRows(m,'','','狐').length,90);
+console.log('PASS 补录念秧、保留既有类型、报表及旧本机资料同步');
+})().catch(e=>{console.error(e);process.exitCode=1;});

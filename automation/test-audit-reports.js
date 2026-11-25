@@ -8,7 +8,7 @@ assert.deepEqual(stats.counts,[['人',1],['鬼',1],['狐',0],['妖',1],['神',0]
 assert.equal(stats.combinations.reduce((sum,r)=>sum+r[1],0),3);
 assert.deepEqual(A.eventRows(model,'','济南','鬼').map(r=>r.chapter_id),[33]);
 assert.equal(A.eventRows(model,'0').length,1);assert.equal(A.eventRows(model,'','','未定')[0].chapter_id,34);
-assert.throws(()=>A.validateTypes(['人','鬼']));assert.deepEqual(A.validateTypes(['鬼','神']),{鬼:1,神:1});assert.deepEqual(A.validateTypes([]),{});
+assert.deepEqual(A.validateTypes(['人','鬼']),{人:1,鬼:1});assert.deepEqual(A.validateTypes(['鬼','神']),{鬼:1,神:1});assert.deepEqual(A.validateTypes([]),{});
 assert(A.csv([['=SUM(A1)','a"b']]).includes("'=SUM"));
 const root=path.resolve(__dirname,'..'),html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 assert(html.includes('id="event-audit-reports"'));assert(html.includes('auditReports.render()'));assert(html.includes('audit-reports.js?v='));

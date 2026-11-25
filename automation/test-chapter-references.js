@@ -2,8 +2,15 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const data=JSON.parse(fs.readFileSync('assets/chapter-references.json','utf8'));
 const bundle=JSON.parse(fs.readFileSync('data-package.json','utf8'));
-assert.equal(Object.keys(data.chapters).length,491);assert.deepEqual(data.unmatched,[]);
-for(const c of bundle.base.chapter_overview){const r=data.chapters[c.chapter_id];assert(r);assert(r.translation.length);assert(r.introduction.length);assert(r.source_files.length);}
+assert.deepEqual(data.unmatched,[]);
+for(const c of bundle.base.chapter_overview){
+  const r=data.chapters[c.chapter_id];
+  if(bundle.base.appended_chapter_ids?.includes(c.chapter_id)&&!r){
+    assert(c.source_url&&c.source_units.length);
+    continue;
+  }
+  assert(r);assert(r.translation.length);assert(r.introduction.length);assert(r.source_files.length);
+}
 assert.notEqual(data.chapters[19].source_files[0],data.chapters[456].source_files[0],'Same-title stories retain distinct sources');
 assert.equal(data.chapters[144].title,'妾击贼');
 assert(data.chapters[0].translation.join('').includes('这里记述的只是个大略情况'),'All segmented translations are retained');
@@ -27,5 +34,5 @@ pending.then(()=>{
   assert.equal(translated.children.length,data.chapters[0].translation.length+1,'Every translation paragraph is directly rendered beside original');
   assert(translated.children[1].textContent.includes('我姐夫'));
   assert(!content.style.cssText.includes('overflow'),'Reading is not trapped in a nested scroll area');
-  console.log('PASS: all 491 references, distinct homonyms, complete segmented translations and chapter switching');
+  console.log('PASS: all existing references, distinct homonyms, complete segmented translations and chapter switching');
 }).catch(e=>{console.error(e);process.exitCode=1;});

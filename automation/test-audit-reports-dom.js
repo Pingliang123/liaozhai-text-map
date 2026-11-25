@@ -21,14 +21,14 @@ const panel=A.mount({model,container,chapter:()=>scope,canEdit:()=>allow,bars:(_
   panel.render();assert.equal(pieValues.reduce((n,r)=>n+r[1],0),3);assert(barValues.some(r=>r[0]==='未定'&&r[1]===1));
   const events=container.children[0],filter=events.querySelectorAll('select')[0];filter.value='鬼';await filter.dispatch('change');
   assert.equal(events.querySelectorAll('tbody')[0].children.length,1);
-  const inputs=events.querySelectorAll('tbody')[0].querySelectorAll('input');inputs[0].checked=true;await inputs[0].dispatch('change');assert(inputs.slice(1).every(n=>!n.checked));
+  const inputs=events.querySelectorAll('tbody')[0].querySelectorAll('input');inputs[0].checked=true;await inputs[0].dispatch('change');assert.deepEqual(inputs.filter(n=>n.checked).map(n=>n.value),['人','鬼','妖']);
   const save=events.querySelectorAll('button').find(n=>n.textContent==='保存');allow=false;await save.dispatch('click');assert.equal(saves,0);
-  allow=true;await save.dispatch('click');assert.equal(saves,1);assert.deepEqual(model.view(33).event_types,{人:1});
+  allow=true;await save.dispatch('click');assert.equal(saves,1);assert.deepEqual(model.view(33).event_types,{人:1,鬼:1,妖:1});
   scope='34';panel.render();assert.equal(events.querySelectorAll('tbody')[0].children[0].children[0].attributes.colspan,'4');
   filter.value='';await filter.dispatch('change');assert.equal(events.querySelectorAll('tbody')[0].children.length,1);
   await events.querySelectorAll('button').find(n=>n.textContent==='查看原文').dispatch('click');assert.deepEqual(lastOpen,[34,'workspace']);
   const records=container.children[1];scope='';global.fetch=async()=>({ok:true,json:async()=>({entries:[{chapter_id:33,chapter:'乙',kind:'term',proposal:{term:'济南',category:'place',action:'add',quote:'至济南',reason:'地名'},state:'applied',reason:''}]})});
   records.open=true;await records.dispatch('toggle');assert(records.querySelectorAll('table').length===1);
   await records.querySelectorAll('button').find(n=>n.textContent==='核对 / 修改').dispatch('click');assert.deepEqual(lastOpen,[33,'place-panel']);
-  console.log('PASS: table filtering, scoped charts, type exclusivity, draft lock, save, records load and edit links');
+  console.log('PASS: table filtering, scoped charts, overlapping types, draft lock, save, records load and edit links');
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -21,7 +21,7 @@
     const combinations=new Map();for(const r of rows){const key=r.types.join('／')||'未定';combinations.set(key,(combinations.get(key)||0)+1);}
     return {counts:[...TYPES,'未定'].map(t=>[t,rows.filter(r=>t==='未定'?!r.types.length:r.types.includes(t)).length]),combinations:[...combinations],total:rows.length};
   }
-  function validateTypes(types){if(types.some(t=>!TYPES.includes(t))||new Set(types).size!==types.length||types.includes('人')&&types.length>1)throw Error('人类仅用于无人外主体作用的故事；鬼、狐、妖、神可以多选。');return Object.fromEntries(types.map(t=>[t,1]));}
+  function validateTypes(types){if(types.some(t=>!TYPES.includes(t))||new Set(types).size!==types.length)throw Error('请选择有效且不重复的异事类型。');return Object.fromEntries(types.map(t=>[t,1]));}
   function csv(rows){const safe=v=>'"'+String(v??'').replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"';return '\ufeff'+rows.map(row=>row.map(safe).join(',')).join('\r\n');}
   function mount(options){
     const {model,container,bars,pie,save,open,canEdit,chapter}=options;
@@ -47,7 +47,7 @@
       for(const r of rows.slice(page*25,page*25+25)){
         const tr=el('tr'),td=el('td'),edit=el('details'),content=el('div','',{class:'report-editor'}),checks=el('div','',{class:'checkboxes'}),status=el('p','',{role:'status'});
         edit.append(el('summary','修改类型'));
-        for(const t of TYPES){const label=el('label'),input=el('input','',{type:'checkbox',value:t});input.checked=r.types.includes(t);input.addEventListener('change',()=>{if(input.checked)for(const other of checks.querySelectorAll('input'))if(t==='人'?other.value!=='人':other.value==='人')other.checked=false;});label.append(input,doc.createTextNode(t));checks.append(label);}
+        for(const t of TYPES){const label=el('label'),input=el('input','',{type:'checkbox',value:t});input.checked=r.types.includes(t);label.append(input,doc.createTextNode(t));checks.append(label);}
         content.append(checks,button('保存',()=>{if(!canEdit()){status.textContent='请先保存或取消其他编辑。';return;}try{const d=model.editable(r.chapter_id);d.event_types=validateTypes([...checks.querySelectorAll('input:checked')].map(n=>n.value));save(r.chapter_id,d);renderEvents();}catch(error){status.textContent=error.message;}}),status);edit.append(content);td.append(edit,button('查看原文',()=>open(r.chapter_id,'workspace')));
         tr.append(el('td','#'+(r.chapter_id+1)+' '+r.chapter),el('td',r.types.join('／')||'未定'),el('td',r.places.join('、')||'—'),td);tbody.append(tr);
       }

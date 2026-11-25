@@ -8,7 +8,22 @@ function effectiveBase(published,local){
  if(!local)return published;
  // Imported packages may contain an obsolete geographic registry. Annotations
  // live in revisions, not base; keep them while using current geography.
- return local.source_sha256===published.source_sha256?{...local,places:published.places,place_hierarchy:published.place_hierarchy,place_equivalences:published.place_equivalences,place_node_aliases:{...(local.place_node_aliases||{}),...(published.place_node_aliases||{})}}:local;
+ const sameSource=local.source_sha256===published.source_sha256;
+ const appendOnly=local.corpus_id===published.corpus_id
+  && published.appended_from_source_sha256===local.source_sha256;
+ if(!sameSource&&!appendOnly)return local;
+ const chapterIds=new Set(local.chapter_overview.map(chapter=>chapter.chapter_id));
+ const newChapters=appendOnly?published.chapter_overview.filter(chapter=>
+  published.appended_chapter_ids?.includes(chapter.chapter_id)&&!chapterIds.has(chapter.chapter_id)):[];
+ return {...local,...(appendOnly?{
+  chapter_overview:[...local.chapter_overview,...newChapters],
+  source_sha256:published.source_sha256,
+  compatible_source_sha256:published.compatible_source_sha256,
+  appended_chapter_ids:published.appended_chapter_ids,
+  narrative_coverage:published.narrative_coverage
+ }:{}),places:published.places,place_hierarchy:published.place_hierarchy,
+ place_equivalences:published.place_equivalences,
+ place_node_aliases:{...(local.place_node_aliases||{}),...(published.place_node_aliases||{})}};
 }
 function retainMissing(local,published){
  if(local?.complete_snapshot===true||!Array.isArray(local?.overrides)||!Array.isArray(published?.overrides)||published.overrides.length<20||local.overrides.length>=published.overrides.length/2)return local;
@@ -20,7 +35,7 @@ const same=(a,b)=>JSON.stringify(stable(a))===JSON.stringify(stable(b));
 async function rebasePublished(local,published,env=root){
  const registry=typeof module!=='undefined'?require('./publication-rebases'):env.GhostPublicationRebases;
  const result={document:local,applied:[],preserved:[],version:registry?.version||''};
- if(!registry||![local,published].every(d=>d?.corpus_id===registry.corpus_id&&d.source_sha256===registry.source_sha256&&Array.isArray(d.overrides)))return result;
+ if(!registry||![local,published].every(d=>d?.corpus_id===registry.corpus_id&&(d.source_sha256===registry.source_sha256||registry.compatible_source_sha256?.includes(d.source_sha256))&&Array.isArray(d.overrides)))return result;
  const cryptoAPI=env.crypto||root.crypto||(typeof module!=='undefined'?require('node:crypto').webcrypto:null);
  if(!cryptoAPI?.subtle)return result;
  const hash=async value=>Array.from(new Uint8Array(await cryptoAPI.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(stable(value))||'undefined'))),b=>b.toString(16).padStart(2,'0')).join('');
