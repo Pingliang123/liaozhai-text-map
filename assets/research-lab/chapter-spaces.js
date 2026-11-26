@@ -5,6 +5,11 @@ function build(chapter,options={}){
  for(const graph of [graphs.placesAll,graphs.spaces])for(const n of graph.nodes){const id=n.realm==='otherworld'?'space:'+n.label:n.id;aliases.set(n.id,id);nodes.set(id,{...n,id,kind:n.realm==='otherworld'?'space':n.kind,degree:0});}
  // Keep every annotated space visible, including spaces with no supported place attribution.
  for(const word of chapter.spaces){const id='space:'+word;if(!nodes.has(id))nodes.set(id,{id,label:word,kind:'space',degree:0,realm:P.otherworld.has(word)?'otherworld':'human'});}
+ // Display-only annotations have no source token or inferred route.
+ if(chapter.id===442&&chapter.title==='王十'&&!nodes.has('space:逆旅')){
+  nodes.set('space:逆旅',{id:'space:逆旅',label:'逆旅',kind:'space',degree:0,realm:'human',
+   editorialNote:'逆旅：人工补注。现有底本未见此词，也未交代投宿，暂不连线。'});
+ }
  const pairs=new Map();
  for(const e of [...graphs.placesAll.edges,...graphs.spaces.edges]){const source=aliases.get(e.source)||e.source,target=aliases.get(e.target)||e.target;if(source===target)continue;const key=JSON.stringify([source,target].sort());let edge=pairs.get(key);if(!edge){edge={...e,source,target,evidence:[],weight:1};pairs.set(key,edge);}const seen=new Set(edge.evidence.map(r=>JSON.stringify([r.chapterId,r.unit,r.text])));for(const r of e.evidence){const k=JSON.stringify([r.chapterId,r.unit,r.text]);if(!seen.has(k)){seen.add(k);edge.evidence.push(r);}}}
  for(const e of pairs.values()){edges.push(e);for(const id of [e.source,e.target])nodes.get(id).degree++;}
@@ -71,6 +76,7 @@ function mount(container,chapters,options={}){
   let graph=build(c,options);
   if(csvRows)graph=root.GhostCsvRouteNetwork.combine(build(c,{...options,paths:false}),c,csvRows,options.paths);
   out.append(el('h3','《'+c.title+'》'+(options.paths?'人物路径':'空间网络')));
+  for(const node of graph.nodes)if(node.editorialNote)out.append(el('p',node.editorialNote));
   if(csvRows){
    const download=el('a','下载全书空间路径 CSV');download.href='../../reports/聊齋空間路徑_精簡版.csv';download.download='聊斋空间路径.csv';out.append(download);
    const detail=el('details');detail.append(el('summary','本篇空间路径 · '+graph.csvRows.length+' 步'));
@@ -96,7 +102,7 @@ function mount(container,chapters,options={}){
   }
   else root.GhostBookNetwork.mount(out,[c],()=>{},{graph,lexical:true,simple:true,readable:true,allowAll:true,initialView:'all',realmColors:true,levelColors:!!root.GhostPlaceLevelColors,levelRecords:options.placeRecords||{},chapterSpatial:true,networkTitle:'《'+c.title+'》地点与空间网络',relationLegend:'节点取自原典分词；线表示同篇关联或场景归属，不表示移动顺序。点线查看原文。'});
   const read=el('a','原文与修订 ↗');read.href='../../index.html?chapter='+encodeURIComponent(c.id)+'#workspace';container.dataset&&(container.dataset.chapter=String(c.id));out.append(read);
-  const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree);const totalSpaces=new Set(c.spaces||[]).size;const summary=el('p','场所词总数：'+totalSpaces+'；已显示全部场所词。'+(unassigned.length?'其中归属未明：'+unassigned.length+'。':''));summary.className='chapter-space-count';out.append(summary);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
+  const unassigned=graph.nodes.filter(n=>n.kind==='space'&&!n.degree&&!n.editorialNote);const totalSpaces=new Set(c.spaces||[]).size;const summary=el('p','场所词总数：'+totalSpaces+'；已显示全部场所词。'+(unassigned.length?'其中归属未明：'+unassigned.length+'。':''));summary.className='chapter-space-count';out.append(summary);if(unassigned.length){const details=el('details');details.append(el('summary','归属未明的空间 · '+unassigned.length));details.ontoggle=()=>{if(!details.open||details.dataset?.loaded)return;if(details.dataset)details.dataset.loaded='1';details.ontoggle=null;for(const n of unassigned){details.append(el('strong',n.label));for(const u of c.units.filter(u=>u.text.includes(n.label)))details.append(el('blockquote',u.text));}};out.append(details);}
  }
  pick.onchange=()=>{if(root.history){const url=new URL(root.location.href);url.searchParams.set('scene',pick.value);root.history.replaceState(null,'',url);}draw();};draw();
  return {select:pick,refresh(records){options.placeRecords=records;draw();},selectChapter(id){if(chapters.some(c=>String(c.id)===String(id))){pick.value=String(id);draw();}}};

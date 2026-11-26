@@ -24,7 +24,12 @@ for(const graph of [baseGraph,join.combine(baseGraph,wang,csv,false),join.combin
  const matches=graph.nodes.filter(n=>n.label==='奈河');
  assert.deepEqual(matches.map(n=>[n.id,n.realm]),[['space:奈河','otherworld']]);
  assert(graph.edges.some(e=>[e.source,e.target].includes(matches[0].id)));
- assert(!graph.nodes.some(n=>n.label==='逆旅'));
+ const inn=graph.nodes.filter(n=>n.label==='逆旅');
+ assert.equal(inn.length,1);
+ assert(inn[0].editorialNote.includes('人工补注'));
+ assert.equal(inn[0].degree,0);
+ assert(!graph.edges.some(e=>[e.source,e.target].includes(inn[0].id)));
+ assert(!wang.spaces.includes('逆旅'),'人工补注不计入场所词');
  assert(graph.edges.every(e=>e.source!=='place:奈河'&&e.target!=='place:奈河'));
 }
 for(const c of D.snapshot(m)){const graph=C.build(c),ids=new Set(graph.nodes.map(n=>n.id));assert.equal(ids.size,graph.nodes.length);for(const e of graph.edges){assert(ids.has(e.source)&&ids.has(e.target));assert(e.evidence.every(r=>r.chapterId===c.id));}}
