@@ -5,7 +5,16 @@ for(const c of chapters){const raw=model.view(c.id),tokens=Routes.lexicon(raw).w
  for(const w of [...c.places,...c.spaces,...c.times,...c.people.map(p=>p.word)])assert(tokens.has(w),c.title+'词项不在分词：'+w);
  for(const u of c.units)for(const w of u.token_words||[])assert(u.text.includes(w),'词项必须来自对应原文单位');
  const graph=C.build(c);assert(graph.edges.every(e=>!e.directed),'篇目空间图只能展示地点与空间关系');
- for(const n of graph.nodes){const originals=Object.keys(c.place_aliases).filter(w=>c.place_aliases[w]===n.label);assert(tokens.has(n.label)||originals.some(w=>tokens.has(w)),c.title+'生成了分词之外的节点：'+n.label);}
+ for(const n of graph.nodes){
+  if(n.editorialNote){
+   assert.deepEqual([c.id,c.title,n.id,n.label],[442,'王十','space:逆旅','逆旅'],'仅允许明确核准的人工补注');
+   assert(!c.spaces.includes(n.label),'人工补注不计入场所词');
+   assert(!graph.edges.some(e=>e.source===n.id||e.target===n.id),'人工补注不得形成原文关系');
+   continue;
+  }
+  const originals=Object.keys(c.place_aliases).filter(w=>c.place_aliases[w]===n.label);
+  assert(tokens.has(n.label)||originals.some(w=>tokens.has(w)),c.title+'生成了分词之外的节点：'+n.label);
+ }
  const paths=C.build(c,{paths:true});for(const step of paths.itinerary){assert(tokens.has(step.from)||Object.values(c.place_aliases).includes(step.from));assert(tokens.has(step.to)||Object.values(c.place_aliases).includes(step.to));for(const actor of step.actors)assert(tokens.has(actor));drawn++;}
  missing+=c.lexical_omissions.length;
 }
