@@ -13,6 +13,20 @@ assert(other.edges.every(e=>e.evidence.every(r=>r.chapterId===1)));
 assert.equal(JSON.stringify(chapter),before,'Graph never writes annotations');
 const pack=require('../data-package.json'),M=require('./ghost_map_model'),D=require('../assets/research-lab/current-data');
 const m=M.create(pack.base);m.importDocument(pack.revisions);
+const wang=D.snapshot(m).find(c=>c.title==='王十');
+const original=m.view(wang.id);
+const supplement=pack.base.chapter_overview.find(c=>c.chapter_id===wang.id).original_supplement;
+assert(![...original.source_units.map(u=>u.original),...(supplement?.original||[])].join('').includes('逆旅'));
+const csv=require('../assets/route-csv-report').parse(require('node:fs').readFileSync(require('node:path').join(__dirname,'../reports/聊齋空間路徑_精簡版.csv'),'utf8'));
+const baseGraph=C.build(wang);
+const join=require('../assets/research-lab/csv-route-network');
+for(const graph of [baseGraph,join.combine(baseGraph,wang,csv,false),join.combine(baseGraph,wang,csv,true)]){
+ const matches=graph.nodes.filter(n=>n.label==='奈河');
+ assert.deepEqual(matches.map(n=>[n.id,n.realm]),[['space:奈河','otherworld']]);
+ assert(graph.edges.some(e=>[e.source,e.target].includes(matches[0].id)));
+ assert(!graph.nodes.some(n=>n.label==='逆旅'));
+ assert(graph.edges.every(e=>e.source!=='place:奈河'&&e.target!=='place:奈河'));
+}
 for(const c of D.snapshot(m)){const graph=C.build(c),ids=new Set(graph.nodes.map(n=>n.id));assert.equal(ids.size,graph.nodes.length);for(const e of graph.edges){assert(ids.has(e.source)&&ids.has(e.target));assert(e.evidence.every(r=>r.chapterId===c.id));}}
 console.log('PASS all chapter spatial graphs, source attribution, otherworlds and unchanged manual data');
 const journey=C.build({...chapter,units:[{id:0,text:'甲至乙。乙还甲。甲复至乙。'}],route_steps:[{from_space:'甲',to_space:'乙',transition_kind:'movement',quote:'甲至乙。',actors:'张生',index:0},{from_space:'乙',to_space:'甲',transition_kind:'movement',quote:'乙还甲。',actors:'张生',index:1},{from_space:'甲',to_space:'乙',transition_kind:'movement',quote:'甲复至乙。',actors:'张生',index:2}]},{paths:true});

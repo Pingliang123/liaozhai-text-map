@@ -12,8 +12,22 @@ function build(chapter,options={}){
   const R=typeof module!=='undefined'?require('./relation-network'):root.GhostRelationNetwork;
   const Merge=typeof module!=='undefined'?require('../place-node-merges'):root.GhostPlaceNodeMerges;
   const related=Merge.graph(R.build([chapter],'chapter'),chapter.place_aliases||{});
-  for(const n of related.nodes)if(!nodes.has(n.id))nodes.set(n.id,n);
-  for(const e of related.edges){const key=JSON.stringify([e.source,e.target].sort());if(!pairs.has(key)){pairs.set(key,e);edges.push({...e,relation:'chapter',directed:false});}}
+  for(const n of related.nodes){
+   // The lexical chapter graph can also register the name as a geographic
+   // place. The evidenced otherworld identity takes precedence in this chapter.
+   const otherworld=nodes.get('space:'+n.label);
+   if(n.kind==='place'&&otherworld?.realm==='otherworld')aliases.set(n.id,otherworld.id);
+   const id=aliases.get(n.id)||n.id;
+   if(!nodes.has(id))nodes.set(id,{...n,id});
+  }
+  for(const e of related.edges){
+   const source=aliases.get(e.source)||e.source,target=aliases.get(e.target)||e.target;
+   if(source===target)continue;
+   const key=JSON.stringify([source,target].sort());
+   if(!pairs.has(key)){pairs.set(key,e);edges.push({...e,source,target,relation:'chapter',directed:false});}
+  }
+  for(const n of nodes.values())n.degree=0;
+  for(const e of edges){nodes.get(e.source).degree++;nodes.get(e.target).degree++;}
   return {nodes:[...nodes.values()],edges,itinerary:[],mode:'chapter-spaces',pending:graphs.pending};
  }
  const routes=chapter.route_steps||P.uniqueSteps(chapter.steps),moves=new Map(),itinerary=[];
