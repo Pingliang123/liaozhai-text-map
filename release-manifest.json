@@ -524,7 +524,7 @@
     {
       "path": "data-package.json",
       "bytes": 33077180,
-      "sha256": "4919485e173ab493186798a0f2cab1b56bb5d251b228d810967a69b9b178c130"
+      "sha256": "0a224ec16a5dd4c57c5982969241c3861d465b19ae2d37b632aef229e3d75f0e"
     },
     {
       "path": "github-login.js",
@@ -623,8 +623,8 @@
     },
     {
       "path": "assets/research-lab/chapter-spaces.js",
-      "bytes": 15560,
-      "sha256": "f61bdf036d9b23eb0829f2a0522d705f9c3d7228389868c62eacb98263f0a3d1"
+      "bytes": 16643,
+      "sha256": "ff86be88af49005abf11996cc23637d680cd2d89aba55017e3b4c9516a6b0ea3"
     },
     {
       "path": "assets/research-lab/current-data.js",
@@ -634,7 +634,7 @@
     {
       "path": "assets/research-lab/data.json",
       "bytes": 18475301,
-      "sha256": "5b2fc05c3ae2686b6ff8299979e3f4c1bd460a28ac9305b4334685d7990d48f4"
+      "sha256": "906d3dbab8b890bb730e332e98b6835425f044a3094a6972573715a7e8c746f1"
     },
     {
       "path": "assets/research-lab/edge-style.js",
@@ -654,7 +654,7 @@
     {
       "path": "assets/research-lab/index.html",
       "bytes": 6250,
-      "sha256": "38028365e3ed5ca5e717184349d2d25b4fab2b1eb079d21f217c09533c415c5c"
+      "sha256": "d7534ab72ec40439ae99d8df9304f7d61fa5f0a6de2119b3ede4b922a0ff3621"
     },
     {
       "path": "assets/research-lab/lab.js",
@@ -739,7 +739,7 @@
     {
       "path": "assets/research-lab/topics.json",
       "bytes": 1609320,
-      "sha256": "b04d94bf3b750e595958f93859cf6e31050ad47e1ab70c983be040d9c07c2d11"
+      "sha256": "8867e87ae99cf2a9f06e53939551e0d7cb37959b1f709d3c6389d7de439723ad"
     },
     {
       "path": "assets/research-lab/tutorial-network.js",
@@ -811,7 +811,7 @@
     {
       "path": "data-package.json",
       "bytes": 33077180,
-      "sha256": "4919485e173ab493186798a0f2cab1b56bb5d251b228d810967a69b9b178c130"
+      "sha256": "0a224ec16a5dd4c57c5982969241c3861d465b19ae2d37b632aef229e3d75f0e"
     },
     {
       "path": "data.html",
@@ -845,8 +845,8 @@
     },
     {
       "path": "research-data.zip",
-      "bytes": 39311054,
-      "sha256": "7f7220e70f63d2e7b412d7c5fda9d7649914d17bf5d79139b252b4d5c903bd23"
+      "bytes": 39311413,
+      "sha256": "51814bbf5d9837fa7708c51934e57f18d1eb265cb0756eb892b04e944ac71607"
     }
   ]
 }
