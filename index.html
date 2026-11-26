@@ -224,7 +224,7 @@ section,details,#save-chapter{scroll-margin-top:90px}
 </main>
 <footer><a href="data.html">资料下载</a> · <a href="https://pingliang123.github.io/digital-humanities-lab/">研究主页</a><p>修订先保存到本机；登入 GitHub 后自动同步。</p></footer>
 <script id="published-revisions" type="application/json">{"external":"manual-revisions.json?v=c66ab51950c4","sha256":"c66ab51950c4dbc1c5bc6ad4955aef1000601f456e847f341fe9f0a9f5a98126"}</script>
-<script id="map-data" type="application/json">{"external":"assets/map-base.json?v=4f022c9636cb","sha256":"4f022c9636cb34dbf7ea36628536e783390855d9e0fea5313201ea7487eb7a2c","corpus_id":"5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea"}</script>
+<script id="map-data" type="application/json">{"external":"assets/map-base.json?v=510646efcc8e","sha256":"510646efcc8e52b0773d17d9a2fd1b0739e2c9800a2cdb3992247160bc1cb4b1","corpus_id":"5e607bb3e777f65905fc612146368b1b368fdc83d2939c6c2b9216b7f27c76ea"}</script>
 <script src="assets/data-loader.js?v=33ab7af17c12"></script>
 <script src="assets/publication-rebases.js?v=84b5012fecb9"></script><script src="assets/type-snapshot-recovery.js?v=f60e42fffdfc"></script>
 <script src="assets/corpus-store.js?v=e5976b87c464"></script><script src="audit-reports.js?v=38e51429f914"></script><script src="assets/place-crosscheck.js?v=41e3b3fb771b"></script><script src="assets/place-review.js?v=2adfc1cb7419"></script>
@@ -1523,9 +1523,16 @@ section,details,#save-chapter{scroll-margin-top:90px}
     $('people-editor').replaceChildren(...c.people.map(personRow));
     $('evidence-editor').replaceChildren(...c.realm_evidence.map(e => evidenceRow(e, changes.evidence_review[e.id])));
     if (!c.realm_evidence.length) $('evidence-editor').append(element('p', {class: 'muted'}, '未找到指定三界地名的明确词形；不捏造具名目的地。可在三界与修订理由中记录叙事判读。'));
-    $('original-text').value = c.source_units.map(u => u.text || u.original).join(c.source_url ? '\n\n' : '');
+    const supplement = embedded.chapter_overview.find(row => row.chapter_id === c.chapter_id)?.original_supplement;
+    const sourceSeparator = c.source_url ? '\n\n' : '';
+    const fullOriginal = (body, tail = []) => [body, ...tail].join('\n\n');
+    if (supplement) {
+      summary.append(element('p', {class: 'muted'}, supplement.note),
+        element('a', {href: supplement.source_url, target: '_blank', rel: 'noopener noreferrer'}, '查看篇末补录来源'));
+    }
+    $('original-text').value = fullOriginal(c.source_units.map(u => u.text || u.original).join(sourceSeparator), supplement?.text);
     if(window.GhostMapReferences && !$('workspace').hidden) window.GhostMapReferences.render(c.chapter_id);
-    $('traditional-text').value = c.source_units.map(u => u.original).join(c.source_url ? '\n\n' : '');
+    $('traditional-text').value = fullOriginal(c.source_units.map(u => u.original).join(sourceSeparator), supplement?.original);
     $('segmentation-editor').value = changes.segmentation_note || segmented(c);
     message('edit-status', model.hasEdit(state.chapter) ? '已载入本篇修订。' : '候选待核。');
     if (projection && !$('map-section').hidden) { renderMovement(); paintMap(); }
